@@ -171,6 +171,9 @@
 		new /datum/data/vendor_equipment("Survival Knife",				/obj/item/kitchen/knife/combat/survival,							500),
 		new	/datum/data/vendor_equipment("Seclite", 					/obj/item/flashlight/seclite,										500),
 		new /datum/data/vendor_equipment("Advanced Ore Scanner",		/obj/item/t_scanner/adv_mining_scanner,								800),
+		new /datum/data/vendor_equipment("Scanner",						/obj/item/pinpointer/deepcore,										200),		// WS edit - Deepcore
+		new /datum/data/vendor_equipment("Advanced Scanner",			/obj/item/pinpointer/deepcore/advanced,								800),		// WS edit - Deepcore
+		new /datum/data/vendor_equipment("Advanced Scanner",			/obj/item/deepcorecapsule,											800),		// WS edit - Deepcore
 		new /datum/data/vendor_equipment("Jaunter",						/obj/item/wormhole_jaunter,											750),
 		new /datum/data/vendor_equipment("Tracking Implant Kit", 		/obj/item/storage/box/minertracker,									1000),
 		new /datum/data/vendor_equipment("Expanded E. Oxygen Tank",		/obj/item/tank/internals/emergency_oxygen/engi,						1000),
