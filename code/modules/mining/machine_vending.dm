@@ -143,6 +143,9 @@
 		new /datum/data/vendor_equipment("Fulton Extraction Pack",		/obj/item/extraction_pack,											1000),
 		new /datum/data/vendor_equipment("Jaunter",						/obj/item/wormhole_jaunter,											750),
 		new /datum/data/vendor_equipment("Advanced Ore Scanner",		/obj/item/t_scanner/adv_mining_scanner,								800),
+		new /datum/data/vendor_equipment("Scanner",						/obj/item/pinpointer/deepcore,										200),		// WS edit - Deepcore
+		new /datum/data/vendor_equipment("Advanced Scanner",			/obj/item/pinpointer/deepcore/advanced,								800),		// WS edit - Deepcore
+		new /datum/data/vendor_equipment("Advanced Scanner",			/obj/item/deepcorecapsule,											800),		// WS edit - Deepcore
 		new /datum/data/vendor_equipment("Explorer's Webbing",			/obj/item/storage/belt/mining,										500),
 		new /datum/data/vendor_equipment("Jump Boots",					/obj/item/clothing/shoes/bhop,										2000),
 		new /datum/data/vendor_equipment("Proto-Kinetic Crusher",		/obj/item/kinetic_crusher,								800),
