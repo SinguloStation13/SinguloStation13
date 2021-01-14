@@ -3567,7 +3567,7 @@
 #include "waspstation\code\modules\mining\deepcore\equipment.dm"
 #include "waspstation\code\modules\mining\deepcore\hopper.dm"
 #include "waspstation\code\modules\mining\deepcore\hub.dm"
+#include "waspstation\code\modules\mining\deepcore\ore_vein.dm"
 #include "waspstation\code\modules\research\designs\machine_designs.dm"
 #include "waspstation\code\modules\research\techweb\all_nodes.dm"
-#include "waspstation\game\area\dcm\ore_vein.dm"
 // END_INCLUDE
