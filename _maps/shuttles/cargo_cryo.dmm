@@ -1,0 +1,209 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/open/space/basic,
+/area/template_noop)
+"f" = (
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "Supply_Out_Conveyor"
+	},
+/obj/machinery/door/poddoor{
+	id = "SupplyShuttle_In_Poddoor";
+	name = "Supply Dock Loading Door"
+	},
+/turf/open/floor/plating,
+/area/shuttle/supply)
+"h" = (
+/turf/open/floor/mineral/titanium,
+/area/shuttle/supply)
+"j" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/supply)
+"m" = (
+/obj/effect/turf_decal/lumos/loading_area{
+	dir = 8
+	},
+/turf/open/floor/mineral/titanium,
+/area/shuttle/supply)
+"w" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/shuttle/engine/heater,
+/turf/open/floor/plating/airless,
+/area/shuttle/supply)
+"x" = (
+/obj/machinery/door/airlock/shuttle/glass{
+	name = "Supply Shuttle Airlock"
+	},
+/obj/docking_port/mobile/supply{
+	dir = 4;
+	dwidth = 4
+	},
+/turf/open/floor/plating,
+/area/shuttle/supply)
+"z" = (
+/obj/machinery/button/door{
+	id = "SupplyShuttle_In_Poddoor";
+	name = "Loading Doors";
+	pixel_x = -24;
+	pixel_y = 9
+	},
+/obj/machinery/button/door{
+	id = "SupplyShuttle_Out_Poddoor";
+	name = "Loading Doors";
+	pixel_x = -24;
+	pixel_y = -9
+	},
+/turf/open/floor/mineral/titanium,
+/area/shuttle/supply)
+"D" = (
+/obj/machinery/door/airlock/shuttle/glass{
+	name = "Supply Shuttle Airlock"
+	},
+/turf/open/floor/plating,
+/area/shuttle/supply)
+"H" = (
+/obj/machinery/light,
+/turf/open/floor/mineral/titanium,
+/area/shuttle/supply)
+"I" = (
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/supply)
+"M" = (
+/obj/structure/shuttle/engine/propulsion,
+/turf/open/floor/plating/airless,
+/area/shuttle/supply)
+"N" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/mineral/titanium,
+/area/shuttle/supply)
+"Q" = (
+/obj/effect/spawner/structure/window/shuttle,
+/turf/open/floor/plating/airless,
+/area/shuttle/supply)
+"W" = (
+/obj/machinery/conveyor{
+	dir = 8;
+	id = "Supply_In_Conveyor"
+	},
+/obj/machinery/door/poddoor{
+	id = "SupplyShuttle_Out_Poddoor";
+	name = "Supply Dock Loading Door"
+	},
+/turf/open/floor/plating,
+/area/shuttle/supply)
+"X" = (
+/obj/effect/turf_decal/loading_area{
+	dir = 8
+	},
+/turf/open/floor/mineral/titanium,
+/area/shuttle/supply)
+"Y" = (
+/obj/structure/shuttle/engine/heater,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/open/floor/plating/airless,
+/area/shuttle/supply)
+
+(1,1,1) = {"
+a
+I
+I
+f
+x
+j
+D
+W
+I
+I
+I
+a
+"}
+(2,1,1) = {"
+I
+I
+h
+m
+h
+z
+h
+X
+h
+h
+w
+M
+"}
+(3,1,1) = {"
+Q
+h
+h
+h
+h
+h
+h
+h
+h
+h
+Y
+M
+"}
+(4,1,1) = {"
+Q
+h
+h
+h
+H
+I
+N
+h
+h
+h
+I
+a
+"}
+(5,1,1) = {"
+Q
+h
+h
+h
+h
+h
+h
+h
+h
+h
+Y
+M
+"}
+(6,1,1) = {"
+I
+I
+h
+h
+h
+h
+h
+h
+h
+h
+w
+M
+"}
+(7,1,1) = {"
+a
+I
+I
+I
+I
+I
+I
+I
+I
+I
+I
+a
+"}

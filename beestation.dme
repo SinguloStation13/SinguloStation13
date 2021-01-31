@@ -3553,4 +3553,8 @@
 #include "interface\interface.dm"
 #include "interface\stylesheet.dm"
 #include "interface\skin.dmf"
+#include "singulostation\code\datums\shuttles.dm"
+#include "singulostation\code\datums\mapgen\Asteroidgens\AsteroidGenerator.dm"
+#include "singulostation\code\game\area\Space_Station_13_areas.dm"
+#include "singulostation\code\game\area\areas\asteroid.dm"
 // END_INCLUDE
