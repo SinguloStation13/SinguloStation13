@@ -26,3 +26,11 @@
 			adjust_nutrition(-(HUNGER_FACTOR/10))
 			if(m_intent == MOVE_INTENT_RUN)
 				adjust_nutrition(-(HUNGER_FACTOR/10))
+		if(mobility_flags & MOBILITY_STAND) //singulo start - Tripping
+			var/trip_chance
+			var/turf/T = get_turf(NewLoc)
+			for(var/obj/item/I in T.contents)
+				trip_chance += (I.w_class/4)-0.25
+			if(prob(20*log(trip_chance+0.5)))
+				Knockdown(3 SECONDS)
+				to_chat(src, "<span class='warning'>You trip over all the items on the ground.</span>") //singulo end - Tripping
