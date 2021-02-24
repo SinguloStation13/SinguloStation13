@@ -1,3 +1,4 @@
+/* Singulostation begin - Cryogenic freezers change
 /*
  * Cryogenic refrigeration unit. Basically a despawner.
  * Stealing a lot of concepts/code from sleepers due to massive laziness.
@@ -407,3 +408,4 @@ GLOBAL_LIST_EMPTY(cryopod_computers)
 //Attacks/effects.
 /obj/machinery/cryopod/blob_act()
 	return //Sorta gamey, but we don't really want these to be destroyed.
+*/ //Singulostation end
