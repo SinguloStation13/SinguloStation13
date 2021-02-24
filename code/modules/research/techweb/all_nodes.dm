@@ -637,8 +637,8 @@
 	display_name = "Cryostasis Technology"
 	description = "Smart freezing of objects to preserve them!"
 	prereq_ids = list("adv_engi", "biotech")
-	design_ids = list("splitbeaker", "noreactsyringe", "cryotube", "cryo_Grenade", "stasis")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2000)
+	design_ids = list("splitbeaker", "noreactsyringe", "cryotube", "cryo_Grenade", "stasis", "cryogenicpod", "cryogenicpodcontrol") // SinguloStation13 Edit (Cryogenic freezers change - added cryogenic pods to research)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2000) // SinguloStation13 Edit (Cryogenic freezers change - Tech more expensive for new shit)
 	export_price = 4000
 
 /datum/techweb_node/subdermal_implants

@@ -341,6 +341,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 5
 	},
+/obj/effect/landmark/observer_start,
 /turf/open/floor/plasteel,
 /area/crew_quarters/cryochamber)
 "fK" = (
@@ -684,7 +685,7 @@
 /area/crew_quarters/cryochamber)
 "oP" = (
 /obj/machinery/airalarm/directional/east,
-/obj/machinery/cryopod,
+/obj/machinery/cryopod/latejoin,
 /turf/open/floor/plasteel,
 /area/crew_quarters/cryochamber)
 "oS" = (
@@ -736,6 +737,7 @@
 "pT" = (
 /obj/effect/landmark/start/cyborg,
 /obj/machinery/computer/cryopod{
+	dir = 8;
 	pixel_x = 32
 	},
 /turf/open/floor/plasteel,
@@ -1650,6 +1652,7 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
 	dir = 4
 	},
+/obj/effect/landmark/latejoin,
 /turf/open/floor/plasteel,
 /area/crew_quarters/cryochamber)
 "MX" = (
@@ -1712,7 +1715,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/machinery/cryopod,
+/obj/machinery/cryopod/latejoin,
 /turf/open/floor/plasteel,
 /area/crew_quarters/cryochamber)
 "Os" = (
@@ -1720,7 +1723,7 @@
 	dir = 4;
 	pixel_x = 24
 	},
-/obj/machinery/cryopod,
+/obj/machinery/cryopod/latejoin,
 /turf/open/floor/plasteel,
 /area/crew_quarters/cryochamber)
 "Ou" = (
