@@ -95,6 +95,7 @@
 	alpha = 150
 	rad_flags = RAD_PROTECT_CONTENTS | RAD_NO_CONTAMINATE
 	rad_insulation = RAD_LIGHT_INSULATION
+	//More vars and some procs in singulostation/code/game/objects/structures/holosign.dm
 
 /obj/structure/holosign/barrier/atmos/robust
 	name = "holo blast door"
@@ -108,6 +109,7 @@
 	var/turf/local = get_turf(loc)
 	ADD_TRAIT(local, TRAIT_FIREDOOR_STOP, TRAIT_GENERIC)
 	air_update_turf(TRUE)
+	timerid = QDEL_IN(src, duration) //Singulo edit - Nerfs holofirelocks and plastic flaps
 
 /obj/structure/holosign/barrier/atmos/Destroy()
 	var/turf/local = get_turf(loc)
