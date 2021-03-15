@@ -432,11 +432,25 @@
 /obj/item/storage/bag/construction/ComponentInitialize()
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	STR.max_combined_w_class = 100
-	STR.max_items = 50
-	STR.max_w_class = WEIGHT_CLASS_SMALL
+	STR.max_combined_w_class = 400       //Singulostation edit - Buff construction bags
+	STR.max_items = 300                   //Singulostation edit - Buff construction bags
+	STR.max_w_class = WEIGHT_CLASS_NORMAL //Singulostation edit - Buff construction bags
 	STR.insert_preposition = "in"
-	STR.can_hold = typecacheof(list(/obj/item/stack/ore/bluespace_crystal, /obj/item/assembly, /obj/item/stock_parts, /obj/item/reagent_containers/glass/beaker, /obj/item/stack/cable_coil, /obj/item/circuitboard, /obj/item/electronics))
+	//Singulostation begin - Buff construction bags
+	STR.can_hold = typecacheof(list(
+		/obj/item/stack/ore/bluespace_crystal,
+		/obj/item/stack/sheet,
+		/obj/item/stack/tile,
+		/obj/item/stack/rods,
+		/obj/item/assembly,
+		/obj/item/stock_parts,
+		/obj/item/reagent_containers/glass/beaker,
+		/obj/item/stack/cable_coil,
+		/obj/item/circuitboard,
+		/obj/item/electronics,
+		/obj/item/wallframe/camera
+		))
+	//Singulostation end
 
 // -----------------------------
 //           mail bag
