@@ -1545,6 +1545,7 @@
 		"mechanicalpinches",
 		"searingtool",
 		"wirebrush_adv",
+		"advancedmultitool", //Singulostation edit - Advanced multitool
 	)
 	prereq_ids = list("adv_engi")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
