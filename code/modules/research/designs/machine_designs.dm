@@ -294,7 +294,7 @@
 	name = "Machine Design (Circuit Imprinter Board)"
 	desc = "The circuit board for a circuit imprinter."
 	id = "circuit_imprinter"
-	build_path = /obj/item/circuitboard/machine/circuit_imprinter
+	build_path = /obj/item/circuitboard/machine/circuit_imprinter/department //Singulostation edit - Printable techfabs and protolathes
 	category = list("Research Machinery")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
 

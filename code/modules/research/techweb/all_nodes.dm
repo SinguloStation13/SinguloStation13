@@ -427,6 +427,20 @@
 		"suit_storage_unit",
 		"tesla_coil",
 		"thermomachine",
+		//Singulostation begin - Printable techfabs and protolathes
+		"techfab_departmental_engineering",
+		"techfab_departmental_science",
+		"techfab_departmental_medical",
+		"techfab_departmental_cargo",
+		"techfab_departmental_security",
+		"techfab_departmental_service", 
+		"protolathe_departmental_engineering",
+		"protolathe_departmental_science",
+		"protolathe_departmental_medical",
+		"protolathe_departmental_cargo",
+		"protolathe_departmental_security",
+		"protolathe_departmental_service",
+		//Singulostation end - Printable techfabs and protolathes
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 7500)
 	export_price = 5000
