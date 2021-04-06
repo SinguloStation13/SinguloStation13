@@ -340,14 +340,17 @@ GLOBAL_LIST_EMPTY(cryopod_computers)
 	var/mob/living/L = M
 	if (ishuman(L))
 		L.SetSleeping(5 SECONDS)
+	M.forceMove(get_turf(src))
 	if(icon_state == "cryopod-open") //Don't stack people inside cryopods
 		close_machine(M, TRUE)
-	else
-		M.forceMove(get_turf(src))
 
 /obj/machinery/cryopod/latejoin/Initialize()
 	. = ..()
 	new /obj/effect/landmark/latejoin(src)
+
+/obj/machinery/cryopod/latejoin/Destroy()
+	SSjob.latejoin_trackers -= src
+	. = ..()
 
 /obj/machinery/cryopod/close_machine(mob/user, exiting = FALSE)
 	active = !exiting //If we exit, don't immediately try to put us into cryo thanks.
