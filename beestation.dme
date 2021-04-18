@@ -3560,6 +3560,7 @@
 #include "singulostation\code\game\area\Space_Station_13_areas.dm"
 #include "singulostation\code\game\area\areas\asteroid.dm"
 #include "singulostation\code\game\machinery\cryopod.dm"
+#include "singulostation\code\game\machinery\doors\airlock_electronics.dm"
 #include "singulostation\code\game\objects\obj_defense.dm"
 #include "singulostation\code\game\objects\effects\displacement.dm"
 #include "singulostation\code\game\objects\items\devices\multitool_advanced.dm"
