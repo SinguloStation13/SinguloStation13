@@ -27,6 +27,8 @@
 	var/located_dist
 	var/obj/effect/landmark/located_vein
 	for(var/obj/effect/landmark/I in GLOB.ore_vein_landmarks)
+		if(I.z != src.z) // SinguloStation edit - Make pinpointers target same Z
+			continue
 		if(located_vein)
 			var/new_dist = get_dist(here, get_turf(I))
 			if(new_dist < located_dist)
@@ -48,6 +50,8 @@
 	//Sorts vein artifacts by ore type
 	var/viens_by_type = list()
 	for(var/obj/effect/landmark/ore_vein/I in GLOB.ore_vein_landmarks)
+		if(I.z != src.z) // SinguloStation edit - Make pinpointers target same Z
+			continue
 		if(islist(viens_by_type[I.resource]))
 			var/list/L = viens_by_type[I.resource]
 			L += I
