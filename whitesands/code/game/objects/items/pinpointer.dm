@@ -27,7 +27,7 @@
 	var/located_dist
 	var/obj/effect/landmark/located_vein
 	for(var/obj/effect/landmark/I in GLOB.ore_vein_landmarks)
-		if(I.z != src.z) // SinguloStation edit - Make pinpointers target same Z
+		if(I.z != here.z) // SinguloStation edit - Make pinpointers target same Z
 			continue
 		if(located_vein)
 			var/new_dist = get_dist(here, get_turf(I))
@@ -47,10 +47,11 @@
 	custom_premium_price = 600
 
 /obj/item/pinpointer/deepcore/advanced/LocateVein(mob/living/user)
+	var/turf/here = get_turf(src) // SinguloStation edit - Make pinpointers target same Z
 	//Sorts vein artifacts by ore type
 	var/viens_by_type = list()
 	for(var/obj/effect/landmark/ore_vein/I in GLOB.ore_vein_landmarks)
-		if(I.z != src.z) // SinguloStation edit - Make pinpointers target same Z
+		if(I.z != here.z) // SinguloStation edit - Make pinpointers target same Z
 			continue
 		if(islist(viens_by_type[I.resource]))
 			var/list/L = viens_by_type[I.resource]
@@ -61,7 +62,6 @@
 	if(!A || QDELETED(src) || !user || !user.is_holding(src) || user.incapacitated())
 		return
 	//Searches for nearest ore vein as usual
-	var/turf/here = get_turf(src)
 	var/located_dist
 	var/obj/effect/landmark/located_vein
 	for(var/obj/effect/landmark/I in viens_by_type[A])
