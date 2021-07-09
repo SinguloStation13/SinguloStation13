@@ -84,13 +84,14 @@
 //all the dispenser stations
 
 /obj/structure/c_transit_tube/station/dispenser
-	icon_state = "closed_dispenser0"
+	icon_state = "open_dispenser0" //Singulostation edit - Buildable transit tube dispenser stations
 	name = "unattached dispenser station"
 	build_type = /obj/structure/transit_tube/station/dispenser
 	flipped_build_type = /obj/structure/transit_tube/station/dispenser/flipped
+	base_icon = "open_dispenser" //Singulostation edit - Buildable transit tube dispenser stations 
 
 /obj/structure/c_transit_tube/station/dispenser/flipped
-	icon_state = "closed_station1"
+	icon_state = "open_dispenser1" //Singulostation edit - Buildable transit tube dispenser stations
 	flipped = 1
 	build_type = /obj/structure/transit_tube/station/dispenser/flipped
 	flipped_build_type = /obj/structure/transit_tube/station/dispenser
@@ -99,13 +100,14 @@
 
 /obj/structure/c_transit_tube/station/dispenser/reverse
 	name = "unattached terminus dispenser station"
-	icon_state = "closed_terminus0"
+	icon = 'singulostation/icons/obj/atmospherics/pipes/transit_tube.dmi' //Singulostation edit - Buildable transit tube dispenser stations
+	icon_state = "open_terminusdispenser0" //Singulostation edit - Buildable transit tube dispenser stations
 	build_type = /obj/structure/transit_tube/station/dispenser/reverse
 	flipped_build_type = /obj/structure/transit_tube/station/dispenser/reverse/flipped
-	base_icon = "closed_terminus"
+	base_icon = "open_terminusdispenser" //Singulostation edit - Buildable transit tube dispenser stations 
 
 /obj/structure/c_transit_tube/station/dispenser/reverse/flipped
-	icon_state = "closed_terminus1"
+	icon_state = "open_terminusdispenser1" //Singulostation edit - Buildable transit tube dispenser stations
 	flipped = 1
 	build_type = /obj/structure/transit_tube/station/dispenser/reverse/flipped
 	flipped_build_type = /obj/structure/transit_tube/station/dispenser/reverse
