@@ -32,6 +32,7 @@
 	var/produced_power
 	var/energy_to_raise = 32
 	var/energy_to_lower = -20
+	var/decay_timer //Singulostation edit - Tesla decay
 
 /obj/singularity/energy_ball/Initialize(mapload, starting_energy = 50, is_miniball = FALSE)
 	miniball = is_miniball
@@ -106,6 +107,9 @@
 
 /obj/singularity/energy_ball/proc/handle_energy()
 	if(energy >= energy_to_raise)
+		if(decay_timer)//Singulostation edit - Tesla decay
+			deltimer(decay_timer)
+			decay_timer = 0
 		energy_to_lower = energy_to_raise - 20
 		energy_to_raise = energy_to_raise * 1.25
 
@@ -119,8 +123,19 @@
 		var/Orchiectomy_target = pick(orbiting_balls)
 		qdel(Orchiectomy_target)
 
-	else if(orbiting_balls.len)
+	else //Singulostation edit - Tesla decay
 		dissipate() //sing code has a much better system.
+
+	if(!QDELETED(src) && !decay_timer && energy < energy_to_lower && !orbiting_balls.len) //Singulostation start - Tesla decay
+		decay_timer = addtimer(CALLBACK(src, .proc/decay, 6), rand(6, 9) SECONDS, TIMER_STOPPABLE)
+
+/obj/singularity/energy_ball/proc/decay(cycles)
+	explosion(src, 1, 2, 3, 4, 0)
+	if(cycles)
+		decay_timer = addtimer(CALLBACK(src, .proc/decay, cycles - 1), rand(cycles + 3, (cycles * 2) + 3) SECONDS, TIMER_STOPPABLE)
+	else
+		qdel(src)
+//Singulostation end
 
 /obj/singularity/energy_ball/proc/new_mini_ball()
 	if(!loc)
