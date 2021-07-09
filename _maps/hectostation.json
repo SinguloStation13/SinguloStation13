@@ -1,0 +1,11 @@
+{
+    "map_name": "HectoStation",
+    "map_path": "map_files/HectoStation",
+    "map_file": "HectoStation.dmm",
+    "shuttles": {
+	    "cargo": "cargo_con",
+	    "ferry": "ferry_fancy",
+	    "whiteship": "whiteship_meta",
+	    "emergency": "emergency_box"
+    }
+}
