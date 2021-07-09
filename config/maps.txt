@@ -27,3 +27,7 @@ endmap
 
 map multiz_debug
 endmap
+
+map etastation
+	voteable
+endmap
