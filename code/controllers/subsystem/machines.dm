@@ -22,6 +22,10 @@ SUBSYSTEM_DEF(machines)
 			NewPN.add_cable(PC)
 			propagate_network(PC,PC.powernet)
 
+			// Singulostation edit - powernet signal to machines on init
+			for(var/obj/machinery/power/machine in NewPN.nodes)
+				SEND_SIGNAL(machine, COMSIG_MACHINE_POWERNET_ROUNDSTART_INIT)
+
 /datum/controller/subsystem/machines/stat_entry(msg)
 	msg = "M:[length(processing)]|PN:[length(powernets)]"
 	return ..()
@@ -57,6 +61,10 @@ SUBSYSTEM_DEF(machines)
 			var/datum/powernet/NewPN = new()
 			NewPN.add_cable(PC)
 			propagate_network(PC,PC.powernet)
+
+			// Singulostation edit - powernet signal to machines on init
+			for(var/obj/machinery/power/machine in NewPN.nodes)
+				SEND_SIGNAL(machine, COMSIG_MACHINE_POWERNET_ROUNDSTART_INIT)
 
 /datum/controller/subsystem/machines/Recover()
 	if (istype(SSmachines.processing))

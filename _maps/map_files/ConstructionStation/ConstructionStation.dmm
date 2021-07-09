@@ -1511,7 +1511,7 @@
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
-/obj/machinery/power/solar_control,
+/obj/machinery/power/solar_control/auto_connect,
 /turf/open/floor/plating,
 /area/engine/storage_shared)
 "Hr" = (

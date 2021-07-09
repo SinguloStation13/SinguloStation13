@@ -436,6 +436,12 @@
 ///from base power_change() when power is restored
 #define COMSIG_MACHINERY_POWER_RESTORED "machinery_power_restored"
 
+// /obj/machinery/power signals
+
+// Singulostation edit - powernet signal to machines on init
+///from /datum/controller/subsystem/machines/proc/makepowernets()
+#define COMSIG_MACHINE_POWERNET_ROUNDSTART_INIT "machine_powernet_roundstart_init"
+
 // /obj/machinery/power/supermatter_crystal signals
 /// from /obj/machinery/power/supermatter_crystal/process_atmos(); when the SM delam reaches the point of sounding alarms
 #define COMSIG_SUPERMATTER_DELAM_START_ALARM "sm_delam_start_alarm"
