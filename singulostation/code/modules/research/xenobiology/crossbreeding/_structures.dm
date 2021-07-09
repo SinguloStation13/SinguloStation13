@@ -199,6 +199,16 @@ GLOBAL_LIST_EMPTY(bluespace_slime_crystals)
 			gas.set_temperature(gas.return_temperature() + deltaTemperature)
 			T.air_update_turf()
 
+//Singulostation begin - Buffed blue pylon to allow canister refill
+/obj/structure/slime_crystal/blue/attacked_by(obj/item/I, mob/living/user)
+	if(istype(I,/obj/item/tank/internals))
+		var/obj/item/tank/internals/tank = I
+		to_chat(user, "<span class = 'notice'>[src] takes [I] and replaces its air with Oxygen.")
+		tank.air_contents.set_moles(/datum/gas/oxygen, (12*ONE_ATMOSPHERE)*tank.volume/(R_IDEAL_GAS_EQUATION*T20C))
+		return
+	return ..()
+//Singulostation end
+
 /obj/structure/slime_crystal/metal
 	colour = "metal"
 
