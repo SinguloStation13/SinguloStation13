@@ -157,6 +157,9 @@
 	var/grill = FALSE
 	var/fire_stack_strength = 5
 
+/obj/structure/bonfire/bluespace
+	//needs_oxygen = FALSE
+
 /obj/structure/bonfire/dense
 	density = TRUE
 

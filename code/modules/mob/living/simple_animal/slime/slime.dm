@@ -493,3 +493,6 @@
 
 /mob/living/simple_animal/slime/random/Initialize(mapload, new_colour, new_is_adult)
 	. = ..(mapload, pick(slime_colours), prob(50))
+
+/mob/living/simple_animal/slime/rainbow/Initialize(mapload, new_colour="rainbow", new_is_adult)
+	. = ..(mapload, new_colour, new_is_adult)

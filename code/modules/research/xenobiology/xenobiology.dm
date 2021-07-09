@@ -17,6 +17,7 @@
 	var/list/activate_reagents = list() ///Reagents required for activation
 	var/recurring = FALSE
 	var/research ///Research point value for slime cores. These are defines stored in [/__DEFINES/research] - the actual values are updated there.
+	var/color_slime	///the color of the extract and the slime it came from
 
 /obj/item/slime_extract/examine(mob/user)
 	. = ..()
@@ -91,6 +92,7 @@
 	name = "grey slime extract"
 	icon_state = "grey slime extract"
 	effectmod = "reproductive"
+	color_slime = "grey"
 	activate_reagents = list(/datum/reagent/blood,/datum/reagent/toxin/plasma,/datum/reagent/water)
 	research = SLIME_RESEARCH_TIER_0
 
@@ -117,6 +119,7 @@
 	name = "gold slime extract"
 	icon_state = "gold slime extract"
 	effectmod = "symbiont"
+	color_slime = "gold"
 	activate_reagents = list(/datum/reagent/blood,/datum/reagent/toxin/plasma,/datum/reagent/water)
 	research = SLIME_RESEARCH_TIER_4
 
@@ -147,6 +150,7 @@
 	name = "silver slime extract"
 	icon_state = "silver slime extract"
 	effectmod = "consuming"
+	color_slime = "silver"
 	activate_reagents = list(/datum/reagent/toxin/plasma,/datum/reagent/water)
 	research = SLIME_RESEARCH_TIER_2
 
@@ -173,6 +177,7 @@
 	name = "metal slime extract"
 	icon_state = "metal slime extract"
 	effectmod = "industrial"
+	color_slime = "metal"
 	activate_reagents = list(/datum/reagent/toxin/plasma,/datum/reagent/water)
 	research = SLIME_RESEARCH_TIER_1
 
@@ -198,6 +203,7 @@
 	name = "purple slime extract"
 	icon_state = "purple slime extract"
 	effectmod = "regenerative"
+	color_slime = "purple"
 	activate_reagents = list(/datum/reagent/blood,/datum/reagent/toxin/plasma)
 	research = SLIME_RESEARCH_TIER_1
 
@@ -218,6 +224,7 @@
 	name = "dark purple slime extract"
 	icon_state = "dark purple slime extract"
 	effectmod = "self-sustaining"
+	color_slime = "darkpurple"
 	activate_reagents = list(/datum/reagent/toxin/plasma)
 	research = SLIME_RESEARCH_TIER_2
 
@@ -242,6 +249,7 @@
 	name = "orange slime extract"
 	icon_state = "orange slime extract"
 	effectmod = "burning"
+	color_slime = "orange"
 	activate_reagents = list(/datum/reagent/blood,/datum/reagent/toxin/plasma,/datum/reagent/water)
 	research = SLIME_RESEARCH_TIER_1
 
@@ -263,6 +271,7 @@
 	name = "yellow slime extract"
 	icon_state = "yellow slime extract"
 	effectmod = "charged"
+	color_slime = "yellow"
 	activate_reagents = list(/datum/reagent/blood,/datum/reagent/toxin/plasma,/datum/reagent/water)
 	research = SLIME_RESEARCH_TIER_2
 
@@ -297,6 +306,7 @@
 	name = "red slime extract"
 	icon_state = "red slime extract"
 	effectmod = "sanguine"
+	color_slime = "red"
 	activate_reagents = list(/datum/reagent/blood,/datum/reagent/toxin/plasma,/datum/reagent/water)
 	research = SLIME_RESEARCH_TIER_4
 
@@ -318,6 +328,7 @@
 	name = "blue slime extract"
 	icon_state = "blue slime extract"
 	effectmod = "stabilized"
+	color_slime = "blue"
 	activate_reagents = list(/datum/reagent/blood,/datum/reagent/toxin/plasma,/datum/reagent/water)
 	research = SLIME_RESEARCH_TIER_1
 
@@ -339,6 +350,7 @@
 	name = "dark blue slime extract"
 	icon_state = "dark blue slime extract"
 	effectmod = "chilling"
+	color_slime = "darkblue"
 	activate_reagents = list(/datum/reagent/toxin/plasma,/datum/reagent/water)
 	research = SLIME_RESEARCH_TIER_2
 
@@ -363,6 +375,7 @@
 	name = "pink slime extract"
 	icon_state = "pink slime extract"
 	effectmod = "gentle"
+	color_slime = "pink"
 	activate_reagents = list(/datum/reagent/blood,/datum/reagent/toxin/plasma)
 	research = SLIME_RESEARCH_TIER_4
 
@@ -392,6 +405,7 @@
 	name = "green slime extract"
 	icon_state = "green slime extract"
 	effectmod = "mutative"
+	color_slime = "green"
 	activate_reagents = list(/datum/reagent/blood,/datum/reagent/toxin/plasma,/datum/reagent/uranium/radium)
 	research = SLIME_RESEARCH_TIER_4
 
@@ -417,6 +431,7 @@
 	name = "light pink slime extract"
 	icon_state = "light pink slime extract"
 	effectmod = "loyal"
+	color_slime = "lightpink"
 	activate_reagents = list(/datum/reagent/toxin/plasma)
 	research = SLIME_RESEARCH_TIER_5
 
@@ -442,6 +457,7 @@
 	name = "black slime extract"
 	icon_state = "black slime extract"
 	effectmod = "transformative"
+	color_slime = "black"
 	activate_reagents = list(/datum/reagent/toxin/plasma)
 	research = SLIME_RESEARCH_TIER_5
 
@@ -464,6 +480,7 @@
 	name = "oil slime extract"
 	icon_state = "oil slime extract"
 	effectmod = "detonating"
+	color_slime = "oil"
 	activate_reagents = list(/datum/reagent/blood,/datum/reagent/toxin/plasma)
 	research = SLIME_RESEARCH_TIER_5
 
@@ -488,6 +505,7 @@
 	name = "adamantine slime extract"
 	icon_state = "adamantine slime extract"
 	effectmod = "crystalline"
+	color_slime = "adamantine"
 	activate_reagents = list(/datum/reagent/toxin/plasma)
 	research = SLIME_RESEARCH_TIER_5
 
@@ -518,6 +536,7 @@
 	name = "bluespace slime extract"
 	icon_state = "bluespace slime extract"
 	effectmod = "warping"
+	color_slime = "bluespace"
 	activate_reagents = list(/datum/reagent/blood,/datum/reagent/toxin/plasma)
 	var/teleport_ready = FALSE
 	var/teleport_x = 0
@@ -555,6 +574,7 @@
 	name = "pyrite slime extract"
 	icon_state = "pyrite slime extract"
 	effectmod = "prismatic"
+	color_slime = "pyrite"
 	activate_reagents = list(/datum/reagent/blood,/datum/reagent/toxin/plasma)
 	research = SLIME_RESEARCH_TIER_3
 
@@ -583,6 +603,7 @@
 	name = "cerulean slime extract"
 	icon_state = "cerulean slime extract"
 	effectmod = "recurring"
+	color_slime = "cerulean"
 	activate_reagents = list(/datum/reagent/blood,/datum/reagent/toxin/plasma)
 	research = SLIME_RESEARCH_TIER_3
 
@@ -604,6 +625,7 @@
 	name = "sepia slime extract"
 	icon_state = "sepia slime extract"
 	effectmod = "lengthened"
+	color_slime = "sepia"
 	activate_reagents = list(/datum/reagent/blood,/datum/reagent/toxin/plasma,/datum/reagent/water)
 	research = SLIME_RESEARCH_TIER_3
 
@@ -627,6 +649,7 @@
 	name = "rainbow slime extract"
 	icon_state = "rainbow slime extract"
 	effectmod = "hyperchromatic"
+	color_slime = "rainbow"
 	activate_reagents = list(/datum/reagent/blood,/datum/reagent/toxin/plasma,"lesser plasma",/datum/reagent/toxin/slimejelly,"holy water and uranium") //Curse this snowflake reagent list.
 	research = SLIME_RESEARCH_TIER_RAINBOW
 
