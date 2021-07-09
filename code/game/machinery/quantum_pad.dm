@@ -125,9 +125,15 @@
 	doteleport(user, target_pad)
 
 /obj/machinery/quantumpad/proc/sparks()
+	// Singulostation begin - Temporary removal of quantum pad sparks
+	// This change shouldn't really exist, but quantum sparks are
+	// for some reason stubbornly refusing to qdel and garbage collect
+	/*
 	var/datum/effect_system/spark_spread/quantum/s = new /datum/effect_system/spark_spread/quantum
 	s.set_up(5, 1, get_turf(src))
 	s.start()
+	*/
+	// Singulostation end - Temporary removal of quantum pad sparks
 
 /obj/machinery/quantumpad/attack_ghost(mob/dead/observer/ghost)
 	. = ..()
