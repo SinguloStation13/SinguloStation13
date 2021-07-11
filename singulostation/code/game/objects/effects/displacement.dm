@@ -1,4 +1,4 @@
-/obj/effect/displacement
+/obj/effect/abstract/displacement
 	icon = 'singulostation/icons/effects/displacements.dmi'
 	icon_state = "none"
 	anchored = TRUE
@@ -9,7 +9,7 @@
 	var/rt_name
 	var/atom/movable/parent
 
-/obj/effect/displacement/Initialize(mapload, atom/movable/AM)
+/obj/effect/abstract/displacement/Initialize(mapload, atom/movable/AM)
 	. = ..()
 	parent = AM
 	rt_name = "[alias][ref(src)]"
@@ -18,23 +18,14 @@
 	if(duration)
 		timerid = QDEL_IN(src, duration)
 
-/obj/effect/displacement/Destroy()
+/obj/effect/abstract/displacement/Destroy()
 	. = ..()
 	if(!QDELETED(parent))
 		parent.remove_filter(rt_name)
 	if(timerid)
 		deltimer(timerid)
 
-/obj/effect/displacement/singularity_act()
-	return
-
-/obj/effect/displacement/singularity_pull()
-	return
-
-/obj/effect/displacement/ex_act()
-	return
-
-/obj/effect/displacement/dust
+/obj/effect/abstract/displacement/dust
 	icon_state = "dust"
 	alias = "*dust_rt"
 	duration = 14

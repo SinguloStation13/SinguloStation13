@@ -285,6 +285,16 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 /// Trait associated to lacking electrical power.
 #define POWER_LACK_TRAIT "power-lack"
 
+// SinguloStation 13 traits begin
+// This place is for trait defines that are used in edits of upstream code.
+// Why? Because files are included in tgstation.dme in alphabetical order
+// so singulo/__DEFINES comes after all tg files (but before whitesands files)
+
+// We're currently going through dust()
+#define TRAIT_DUSTING	"dusting"
+
+// SinguloStation 13 traits end
+
 // unique trait sources, still defines
 #define CLONING_POD_TRAIT "cloning-pod"
 #define STATUE_MUTE "statue"

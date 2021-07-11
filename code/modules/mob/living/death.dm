@@ -27,7 +27,14 @@
 	return
 
 /mob/living/dust(just_ash, drop_items, force)
-	Stun(100, ignore_canstun=TRUE) // Singulo edit - Dust animation
+	// Singulo edit begin - Dust animation
+	if(HAS_TRAIT(src, TRAIT_DUSTING))
+		return
+	Stun(100, ignore_canstun=TRUE)
+	anchored = TRUE
+	density = FALSE
+	ADD_TRAIT(src, TRAIT_DUSTING, "living_dust")
+	// Singulo end - Dust animation
 
 	if(drop_items)
 		unequip_everything()
@@ -42,8 +49,8 @@
 /mob/living/proc/dust_animation() //Singulo edit - Dust animation
 	var/icon/I = new(icon)
 	if(I.Width() > 32 || I.Height() > 32)
-		return 0;
-	var/obj/effect/displacement/D = new /obj/effect/displacement/dust/(loc, src)
+		return 5
+	var/obj/effect/abstract/displacement/dust/D = new(loc, src)
 	return D.duration
 
 /mob/living/proc/spawn_dust(just_ash = FALSE)
