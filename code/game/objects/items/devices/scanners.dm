@@ -148,7 +148,8 @@ GENE SCANNER
 		mob_status = "<span class='alert'><b>Deceased</b></span>"
 		oxy_loss = max(rand(1, 40), oxy_loss, (300 - (tox_loss + fire_loss + brute_loss))) // Random oxygen loss
 
-	if(ishuman(M))
+// Singulostation edit
+	if(ishuman(M) || istype(M,/mob/living/carbon/monkey))
 		var/mob/living/carbon/human/H = M
 		if(H.undergoing_cardiac_arrest() && H.stat != DEAD)
 			render_list += "<span class='alert'>Subject suffering from heart attack: Apply defibrillation or other electric shock immediately!</span>\n"
@@ -348,8 +349,25 @@ GENE SCANNER
 		if(blood_id)
 			if(ishuman(C))
 				var/mob/living/carbon/human/H = C
+// Singulostation edit
 				if(H.bleed_rate)
-					render_list += "<span class='alert ml-1'><b>Subject is bleeding!</b></span>\n"
+					var/bleedtext = ""
+					if(H.bleed_rate <= 5)
+						bleedtext = "Negligible"
+					else if(H.bleed_rate <= 10)
+						bleedtext = "Minor"
+					else if(H.bleed_rate <= 15)
+						bleedtext = "Moderate"
+					else if(H.bleed_rate <= 20)
+						bleedtext = "Serious"
+					else if(H.bleed_rate <= 30)
+						bleedtext = "Critical!"
+					else if(H.bleed_rate > 30)
+						bleedtext = "Extreme!"
+					var/bandagetext = ""
+					if(H.bleedsuppress)
+						bandagetext = "Bandaged"
+					render_list += "<span class='alert ml-1'><b>Subject is bleeding! [bleedtext ? "([bleedtext])" : ""][bandagetext ? "(Bandaged)" : ""]!</b></span>\n"
 			var/blood_percent =  round((C.blood_volume / BLOOD_VOLUME_NORMAL)*100)
 			var/blood_type = C.dna.blood_type
 			if(blood_id != /datum/reagent/blood) // special blood substance
