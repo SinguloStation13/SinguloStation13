@@ -15,7 +15,7 @@
 	bleedsuppress = 0
 	if(stat != DEAD && bleed_rate)
 		to_chat(src, "<span class='warning'>The blood soaks through your bandage.</span>")
-
+	visible_message("<span class='warning'>[src.name]'s bandage falls off.</span>", ignored_mobs = list(src)) // Singulo edit - visible emote when someones bandage ends and falls off
 
 /mob/living/carbon/monkey/handle_blood()
 	if(bodytemperature >= TCRYO && !(HAS_TRAIT(src, TRAIT_HUSK))) //cryosleep or husked people do not pump the blood.
