@@ -905,16 +905,23 @@ DEFINE_BITFIELD(turret_flags, list(
 	if (issilicon(user))
 		return attack_hand(user)
 
-	if ( get_dist(src, user) == 0 )		// trying to unlock the interface
-		if (allowed(usr))
-			if(obj_flags & EMAGGED)
-				to_chat(user, "<span class='warning'>The turret control is unresponsive!</span>")
-				return
+// SinguloStation edit
+	togglelock(user)		// trying to unlock the interface
 
-			locked = !locked
-			to_chat(user, "<span class='notice'>You [ locked ? "lock" : "unlock"] the panel.</span>")
-		else
-			to_chat(user, "<span class='alert'>Access denied.</span>")
+/obj/machinery/turretid/proc/togglelock(mob/user)
+	if (allowed(user))
+		if(obj_flags & EMAGGED)
+			to_chat(user, "<span class='notice'>The turret control is unresponsive.</span>")
+			return
+		locked = !locked
+		to_chat(user, "<span class='notice'>You [ locked ? "lock" : "unlock"] the panel.</span>")
+	else
+		to_chat(user, "<span class='warning'>Access denied.</span>")
+
+/obj/machinery/turretid/AltClick(mob/user)
+	if(machine_stat & BROKEN)
+		return
+	togglelock(user)
 
 /obj/machinery/turretid/emag_act(mob/user)
 	if(obj_flags & EMAGGED)
