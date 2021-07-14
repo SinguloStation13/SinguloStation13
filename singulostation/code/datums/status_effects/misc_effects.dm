@@ -16,7 +16,7 @@
 	alert_type = /atom/movable/screen/alert/status_effect/cryo_protection
 
 /datum/status_effect/cryo_protection/on_apply()
-	//owner.PermaSleeping() //TODO: Port or replace PermaSleeping
+	owner.PermaSleeping()
 	owner.status_flags |= GODMODE
 	if(ishuman(owner))
 		owner.reagents.clear_reagents()
@@ -26,7 +26,7 @@
 
 //Copy pasted effects from on_apply since i don't wanna do tick() in on_apply and risk some sub-shenanigens happening
 /datum/status_effect/cryo_protection/tick()
-	//owner.PermaSleeping()
+	owner.PermaSleeping()
 	//owner.status_flags |= GODMODE //In case any item/ status effects wearing off while in cryogenetic freeze causes GODMODE to disable.
 	if(ishuman(owner))
 		owner.reagents.clear_reagents() //Don't want smoke grenades or other shit doing stuff on the inhabitants
