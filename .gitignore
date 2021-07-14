@@ -1,8 +1,5 @@
 ###Files and folders specified here will never be tracked.
 
-tools*
-dependencies*
-
 #Ignore everything in datafolder and subdirectories
 /data/**/*
 /tmp/**/*
