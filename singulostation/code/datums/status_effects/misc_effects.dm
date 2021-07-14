@@ -16,7 +16,9 @@
 	alert_type = /obj/screen/alert/status_effect/cryo_protection
 
 /datum/status_effect/cryo_protection/on_apply()
-	owner.PermaSleeping()
+	owner.PermaCryoSleeping()
+	owner.apply_status_effect(STATUS_EFFECT_STASIS, STASIS_MACHINE_EFFECT)
+	owner.ExtinguishMob()
 	owner.status_flags |= GODMODE
 	if(ishuman(owner))
 		owner.reagents.clear_reagents()
@@ -26,7 +28,6 @@
 
 //Copy pasted effects from on_apply since i don't wanna do tick() in on_apply and risk some sub-shenanigens happening
 /datum/status_effect/cryo_protection/tick()
-	owner.PermaSleeping()
 	//owner.status_flags |= GODMODE //In case any item/ status effects wearing off while in cryogenetic freeze causes GODMODE to disable.
 	if(ishuman(owner))
 		owner.reagents.clear_reagents() //Don't want smoke grenades or other shit doing stuff on the inhabitants
@@ -35,12 +36,13 @@
 	return ..()
 
 /datum/status_effect/cryo_protection/on_remove()
+	owner.remove_status_effect(STATUS_EFFECT_STASIS, STASIS_MACHINE_EFFECT)
 	owner.status_flags &= ~GODMODE
 	if(isliving(owner))
 		if (iscarbon(owner))
-			owner.SetSleeping(5 SECONDS)
+			owner.SetCryoSleeping(5 SECONDS)
 		else
-			owner.SetSleeping(0 SECONDS)
+			owner.SetCryoSleeping(0 SECONDS)
 
 	REMOVE_TRAIT(owner, TRAIT_PACIFISM, /datum/status_effect/cryo_protection)
 	owner.visible_message("<span class='notice'>[owner] emerges from cryogenetic freeze, waking from his slumber.</span>")

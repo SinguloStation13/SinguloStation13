@@ -338,7 +338,7 @@ GLOBAL_LIST_EMPTY(cryopod_computers)
 /obj/machinery/cryopod/JoinPlayerHere(mob/M, buckle)
 	var/mob/living/L = M
 	if (ishuman(L))
-		L.SetSleeping(5 SECONDS)
+		L.SetCryoSleeping(5 SECONDS)
 	M.forceMove(get_turf(src))
 	if(icon_state == "cryopod-open") //Don't stack people inside cryopods
 		close_machine(M, TRUE)
