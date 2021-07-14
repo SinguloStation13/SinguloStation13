@@ -1,7 +1,7 @@
 /obj/item/pinpointer/deepcore
 	name = "deep core pinpointer"
 	desc = "A handheld dowsing utility for locating material deep beneath the surface."
-	icon = 'waspstation/icons/obj/mining.dmi'
+	icon = 'whitesands/icons/obj/mining.dmi'
 	icon_state = "miningpinpointing"
 	custom_price = 300
 	custom_premium_price = 300
