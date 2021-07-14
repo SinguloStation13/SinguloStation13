@@ -31,15 +31,14 @@ SUBSYSTEM_DEF(atoms)
 	var/list/mapload_arg = list(TRUE)
 	if(atoms)
 		count = atoms.len
-		for(var/I in atoms)
-			var/atom/A = I
-			if(!(A.flags_1 & INITIALIZED_1))
-				InitAtom(I, mapload_arg)
+		for(var/atom/A in atoms)
+			if(!QDELETED(A) && !(A.flags_1 & INITIALIZED_1))
+				InitAtom(A, mapload_arg)
 				CHECK_TICK
 	else
 		count = 0
 		for(var/atom/A in world)
-			if(!(A.flags_1 & INITIALIZED_1))
+			if(!QDELETED(A) && !(A.flags_1 & INITIALIZED_1))
 				InitAtom(A, mapload_arg)
 				++count
 				CHECK_TICK
@@ -50,9 +49,9 @@ SUBSYSTEM_DEF(atoms)
 	initialized = INITIALIZATION_INNEW_REGULAR
 
 	if(late_loaders.len)
-		for(var/I in late_loaders)
-			var/atom/A = I
-			A.LateInitialize()
+		for(var/atom/A in late_loaders)
+			if(!QDELETED(A))
+				A.LateInitialize()
 		testing("Late initialized [late_loaders.len] atoms")
 		late_loaders.Cut()
 
