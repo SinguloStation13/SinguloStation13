@@ -479,7 +479,7 @@ GLOBAL_LIST_INIT(cable_coil_recipes, list (new/datum/stack_recipe("cable restrai
 	item_state = "coil"
 	lefthand_file = 'icons/mob/inhands/equipment/tools_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/tools_righthand.dmi'
-	max_amount = MAXCOIL
+	max_amount = MAXCOIL * 10 //Singulostation edit - Cable coil buffs
 	amount = MAXCOIL
 	merge_type = /obj/item/stack/cable_coil // This is here to let its children merge between themselves
 	var/cable_color = "red"
@@ -496,6 +496,20 @@ GLOBAL_LIST_INIT(cable_coil_recipes, list (new/datum/stack_recipe("cable restrai
 	full_w_class = WEIGHT_CLASS_SMALL
 	grind_results = list(/datum/reagent/copper = 2) //2 copper per cable in the coil
 	usesound = 'sound/items/deconstruct.ogg'
+
+//Singulostation begin - Cable coil buffs
+/obj/item/stack/cable_coil/verb/cable_recolor()
+	set name = "Change color"
+	set category = "Object"
+	set src in view(1)
+
+	if(!ishuman(usr))
+		return
+
+	var/selected_color = input(usr,"Pick a cable color.","Cable Color") in list("red","yellow","green","blue","pink","orange","cyan","white")
+	item_color = selected_color
+	update_icon()
+//Singulostation end - Cable coil buffs
 
 /obj/item/stack/cable_coil/cyborg
 	is_cyborg = 1
