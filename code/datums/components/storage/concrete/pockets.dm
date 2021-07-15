@@ -32,7 +32,7 @@
 
 /datum/component/storage/concrete/pockets/exo/cloak
 	max_items = 1
-	max_w_class = WEIGHT_CLASS_NORMAL
+	max_w_class = WEIGHT_CLASS_SMALL // Singulostation edit - Changed WEIGHT_CLASS_NORMAL to WEIGHT_CLASS_SMALL
 	quickdraw = TRUE
 
 /datum/component/storage/concrete/pockets/exo/large
