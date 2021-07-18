@@ -82,12 +82,14 @@
 	req_components = list(/obj/item/reagent_containers/glass/beaker = 4,
 		/obj/item/stock_parts/micro_laser = 2)
 
+//Singulostation edit start - Made void thrusters *much* more expensive, as a way to balance.
 /obj/item/circuitboard/machine/shuttle/engine/void
 	name = "Void Thruster (Machine Board)"
 	build_path = /obj/machinery/power/shuttle/engine/void
-	req_components = list(/obj/item/stock_parts/capacitor/quadratic = 2,
-		/obj/item/stack/cable_coil = 5,
-		/obj/item/stock_parts/micro_laser/quadultra = 1)
+	req_components = list(/obj/item/stock_parts/capacitor/quadratic = 40,
+		/obj/item/stack/cable_coil = 25,
+		/obj/item/stock_parts/micro_laser/quadultra = 20)
+//Singulostation edit end
 
 /obj/item/circuitboard/machine/shuttle/heater
 	name = "Fueled Engine Heater (Machine Board)"
