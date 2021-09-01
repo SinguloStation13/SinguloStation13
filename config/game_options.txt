@@ -99,7 +99,7 @@ NO_INTERCEPT_REPORT
 ## Default probablity is 1, increase to make that mode more likely to be picked.
 ## Set to 0 to disable that mode.
 
-PROBABILITY DYNAMIC 1
+PROBABILITY DYNAMIC 0
 PROBABILITY TRAITOR 0
 PROBABILITY CULT 0
 PROBABILITY TRAITORCHAN 0
@@ -110,6 +110,11 @@ PROBABILITY NUCLEAR 0
 PROBABILITY CLOCKCULT 0
 PROBABILITY SECRET_EXTENDED 0
 PROBABILITY CLOWNOPS 0
+PROBABILITY CLOCKCULT 0
+PROBABILITY MONKEY 0
+PROBABILITY GANG 0
+PROBABILITY METEOR 0
+PROBABILITY SECRET_EXTENDED 0
 PROBABILITY DEVIL 0
 PROBABILITY DEVIL_AGENTS 0
 PROBABILITY GANG 0
@@ -121,7 +126,7 @@ PROBABILITY WIZARD 0
 PROBABILITY REVOLUTION 0
 
 ## Creates issues when NO_INTERCEPT_REPORT is enabled
-PROBABILITY EXTENDED 0
+PROBABILITY EXTENDED 1
 
 ## You probably want to keep sandbox off by default for secret and random.
 PROBABILITY SANDBOX 0
@@ -266,7 +271,7 @@ PROTECT_HEADS_FROM_ANTAGONIST
 #ENFORCE_HUMAN_AUTHORITY
 
 ## If late-joining players have a chance to become a traitor/changeling
-ALLOW_LATEJOIN_ANTAGONISTS
+#ALLOW_LATEJOIN_ANTAGONISTS
 
 ## The minimum amount of players for malfunctioning AI to be occur.
 MALF_AI_MINIMUM_POP 30
@@ -600,7 +605,7 @@ ARRIVALS_SHUTTLE_DOCK_WINDOW 55
 
 ## How many wirechewing rodents you want to spawn on exposed maintenane wires at the start of the round. You may wish to set this to 0 if you're testing powernets.
 
-MICE_ROUNDSTART 10
+MICE_ROUNDSTART 2
 
 ## If the percentage of players alive (doesn't count conversions) drops below this threshold the emergency shuttle will be forcefully called (provided it can be)
 #EMERGENCY_SHUTTLE_AUTOCALL_THRESHOLD 0.2
