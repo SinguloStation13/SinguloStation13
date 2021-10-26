@@ -19,12 +19,6 @@
 "j" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/shuttle/supply)
-"m" = (
-/obj/effect/turf_decal/lumos/loading_area{
-	dir = 8
-	},
-/turf/open/floor/mineral/titanium,
-/area/shuttle/supply)
 "w" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -127,7 +121,7 @@ a
 I
 I
 h
-m
+X
 h
 z
 h
