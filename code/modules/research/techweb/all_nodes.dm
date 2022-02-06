@@ -1,4 +1,11 @@
 
+//Singulostation begin - Technology tweaks
+/*
+This file contains multiple changes to make technology more suited to SinguloStation Blue.
+Instead of sprinkling comments around the file, the changes are noted down here:
+
+*/
+
 //Current rate: 135000 research points in 90 minutes
 
 //Base Nodes
