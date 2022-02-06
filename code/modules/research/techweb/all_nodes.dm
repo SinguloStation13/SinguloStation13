@@ -9,6 +9,10 @@ Instead of sprinkling comments around the file, the changes are noted down here:
  - Tech tier lowered from 3 to 1
  - Dependencies removed - can be researched roundstart
  - Cost halved from 10000 to 5000
+- Plasma Refining has been moved up
+ - Tech tier lowered from 4 to 2
+ - Added dependency on basic_plasma
+ - No longer a hidden research
 */
 
 //Current rate: 135000 research points in 90 minutes
@@ -356,14 +360,13 @@ Instead of sprinkling comments around the file, the changes are noted down here:
 
 /datum/techweb_node/plasma_refiner
 	id = "plasmarefiner"
-	tech_tier = 4
+	tech_tier = 2
 	display_name = "Plasma Refining"
 	description = "Development of a machine capable of safely and efficently converting plasma from a solid state to a gaseous state."
-	prereq_ids = list("basic_shuttle")
+	prereq_ids = list("basic_shuttle", "basic_plasma")
 	design_ids = list("plasma_refiner")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 7500)
 	export_price = 5000
-	hidden = TRUE
 
 /////////////////////////integrated circuits tech/////////////////////////
 
