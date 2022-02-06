@@ -13,6 +13,7 @@ Instead of sprinkling comments around the file, the changes are noted down here:
  - Tech tier lowered from 4 to 2
  - Added dependency on basic_plasma
  - No longer a hidden research
+- Nullspace Breaching now depends on Bluespace Travel
 */
 
 //Current rate: 135000 research points in 90 minutes
@@ -353,7 +354,7 @@ Instead of sprinkling comments around the file, the changes are noted down here:
 	id = "nullspacebreaching"
 	display_name = "Nullspace Breaching"
 	description = "Research into voidspace tunnelling, allowing us to significantly reduce flight times."
-	prereq_ids = list("basic_shuttle", "alientech")
+	prereq_ids = list("basic_shuttle", "bluespace_travel", "alientech")
 	design_ids = list("engine_void", "wingpack_ayy")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 12500)
 	export_price = 5000
