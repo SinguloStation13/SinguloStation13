@@ -507,7 +507,7 @@ GLOBAL_LIST_INIT(cable_coil_recipes, list (new/datum/stack_recipe("cable restrai
 		return
 
 	var/selected_color = input(usr,"Pick a cable color.","Cable Color") in list("red","yellow","green","blue","pink","orange","cyan","white")
-	item_color = selected_color
+	cable_color = selected_color
 	update_icon()
 //Singulostation end - Cable coil buffs
 
