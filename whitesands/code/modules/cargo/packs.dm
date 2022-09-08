@@ -144,7 +144,7 @@
 	desc = "A science hardsuit for added safety during explosives test or for scientific activies outside of the station! Requires science access to open."
 	cost = 7500
 	access = ACCESS_RESEARCH
-	contains = list(/obj/item/clothing/suit/space/hardsuit/rd)
+	contains = list(/obj/item/clothing/suit/space/hardsuit/research_director) //Singulostation edit - fix prototype hardsuit typepath
 	crate_name = "science hardsuit crate"
 
 //////////////////////////////////////////////////////////////////////////////
