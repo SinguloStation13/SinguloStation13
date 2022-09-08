@@ -770,7 +770,7 @@ GLOBAL_LIST_INIT(WALLITEMS_INVERSE, typecacheof(list(
 
 
 /proc/gotwallitem(loc, dir, var/check_external = 0)
-	var/locdir = get_step(loc, dir)
+	var/locdir = get_step(loc, turn(dir, 180)) //SinguloStation13 Edit
 	for(var/obj/O in loc)
 		if(is_type_in_typecache(O, GLOB.WALLITEMS) && check_external != 2)
 			//Direction works sometimes

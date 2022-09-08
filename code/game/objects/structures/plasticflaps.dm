@@ -89,6 +89,8 @@
 
 	else if(isliving(A)) // You Shall Not Pass!
 		var/mob/living/M = A
+		if(ishuman(A)) //Singulo edit - nerfs holofans and plastic flaps
+			return FALSE //Singulo edit - nerfs holofans and plastic flaps
 		if(isbot(A)) //Bots understand the secrets
 			return TRUE
 		if(M.buckled && istype(M.buckled, /mob/living/simple_animal/bot/mulebot)) // mulebot passenger gets a free pass.

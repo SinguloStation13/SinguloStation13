@@ -20,6 +20,7 @@
 	mobchatspan = "monkeyhive"
 	ai_controller = /datum/ai_controller/monkey
 	faction = list("neutral", "monkey")
+	appearance_flags = KEEP_TOGETHER|TILE_BOUND|PIXEL_SCALE //Singulostation edit - Dust animation
 
 GLOBAL_LIST_INIT(strippable_monkey_items, create_strippable_list(list(
 	/datum/strippable_item/hand/left,
