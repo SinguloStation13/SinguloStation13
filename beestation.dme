@@ -822,7 +822,6 @@
 #include "code\game\machinery\airlock_cycle_control.dm"
 #include "code\game\machinery\announcement_system.dm"
 #include "code\game\machinery\aug_manipulator.dm"
-#include "code\game\machinery\autodoc.dm"
 #include "code\game\machinery\bank_machine.dm"
 #include "code\game\machinery\Beacon.dm"
 #include "code\game\machinery\buttons.dm"
@@ -3554,4 +3553,7 @@
 #include "interface\interface.dm"
 #include "interface\stylesheet.dm"
 #include "interface\skin.dmf"
+#include "singulostation\code\game\machinery\autodoc.dm"
+#include "singulostation\code\game\objects\items\circuitboards\machine_circuitboards.dm"
+#include "singulostation\code\modules\research\designs\machine_designs.dm"
 // END_INCLUDE
