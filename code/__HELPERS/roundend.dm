@@ -300,7 +300,7 @@
 
 	if(CONFIG_GET(flag/automapvote))
 		if((world.time - SSticker.round_start_time) >= (CONFIG_GET(number/automapvote_threshold) MINUTES))
-			SSvote.initiate_vote("map", "BeeBot", forced=TRUE, popup=TRUE) //automatic map voting
+			SSvote.initiate_vote("map", "SinguloMirrorbot", forced=TRUE, popup=TRUE) //automatic map voting
 
 	sleep(50)
 	ready_for_reboot = TRUE
