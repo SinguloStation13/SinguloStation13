@@ -10,7 +10,7 @@ import operator
 blacklist = [
 	"ss13-beebot",
 	"dependabot[bot]",
-	"SinguloMirrorbot
+	"SinguloMirrorbot"
 ]
 
 parser = argparse.ArgumentParser()
