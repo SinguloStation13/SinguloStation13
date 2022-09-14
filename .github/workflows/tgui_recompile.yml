@@ -12,8 +12,8 @@ on:
 
 # Config
 env:
-  COMMIT_NAME: 'ss13-beebot'
-  COMMIT_EMAIL: '56381746+ss13-beebot@users.noreply.github.com'
+  COMMIT_NAME: 'SinguloMirrorbot'
+  COMMIT_EMAIL: 'singulostation@gmail.com'
   DEFAULT_BRANCH: 'master'
   TOKEN: '${{ secrets.CL_TOKEN }}'
 
