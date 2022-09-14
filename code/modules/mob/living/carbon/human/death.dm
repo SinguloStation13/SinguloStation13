@@ -8,6 +8,7 @@
 		if(GIB_TYPE_ROBOTIC)
 			new /obj/effect/temp_visual/gib_animation(loc, "gibbed-r")
 
+/*Singulostation begin - Dust animation
 /mob/living/carbon/human/dust_animation()
 	if(!dna)
 		new /obj/effect/temp_visual/dust_animation(loc, "dust-h")
@@ -17,6 +18,7 @@
 			new /obj/effect/temp_visual/dust_animation(loc, "dust-h")
 		if(GIB_TYPE_ROBOTIC)
 			new /obj/effect/temp_visual/dust_animation(loc, "dust-r")
+*///Singulostation end
 
 /mob/living/carbon/human/spawn_gibs(with_bodyparts)
 	if(!dna)

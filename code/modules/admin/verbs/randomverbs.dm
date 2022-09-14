@@ -1079,6 +1079,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 		return
 
 	var/list/punishment_list = list(ADMIN_PUNISHMENT_LIGHTNING, ADMIN_PUNISHMENT_BRAINDAMAGE, ADMIN_PUNISHMENT_GIB, ADMIN_PUNISHMENT_BSA, ADMIN_PUNISHMENT_FIREBALL, ADMIN_PUNISHMENT_ROD, ADMIN_PUNISHMENT_SUPPLYPOD_QUICK, ADMIN_PUNISHMENT_SUPPLYPOD, ADMIN_PUNISHMENT_MAZING, ADMIN_PUNISHMENT_FLOORCLUWNE, ADMIN_PUNISHMENT_CLUWNE, ADMIN_PUNISHMENT_IMMERSE, ADMIN_PUNISHMENT_GHOST, ADMIN_PUNISHMENT_DEMOCRACY, ADMIN_PUNISHMENT_ANARCHY, ADMIN_PUNISHMENT_TOE, ADMIN_PUNISHMENT_TOEPLUS, ADMIN_PUNISHMENT_CRYO)
+	punishment_list -= ADMIN_PUNISHMENT_CRYO // Singulostation edit - Cryogenic freezers change - remove forcecryo
 	if(istype(target, /mob/living/carbon))
 		punishment_list += ADMIN_PUNISHMENT_NUGGET
 	var/punishment = input("Choose a punishment", "DIVINE SMITING") as null|anything in sortList(punishment_list)
@@ -1204,7 +1205,10 @@ Traitors and the like can also be revived with the previous role mostly intact.
 			 "right" = CALLBACK(GLOBAL_PROC, .proc/_step, target, EAST)), 10))
 
 		if(ADMIN_PUNISHMENT_CRYO)
-			forcecryo(target)
+			// Singulostation begin - cryogenic freezers change - remove forcecryo
+			//forcecryo(target) 
+			to_chat(usr, "<span class='warning'>Force cryo is not implemented. This message should not be reachable.</span>")
+			// Singulostation end
 
 	punish_log(target, punishment)
 

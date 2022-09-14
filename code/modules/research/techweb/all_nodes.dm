@@ -160,7 +160,9 @@
 	design_ids = list("solarcontrol", "recharger", "powermonitor", "rped", "pacman", "adv_capacitor", "adv_scanning", "emitter", "high_cell", "adv_matter_bin", "scanner_gate",
 	"atmosalerts", "atmos_control", "recycler", "autolathe", "high_micro_laser", "nano_mani", "mesons", "thermomachine", "rad_collector", "machine_igniter", "mass_driver", "tesla_coil", "grounding_rod",
 	"apc_control", "cell_charger", "power control", "airlock_board", "firelock_board", "aac_electronics", "airalarm_electronics", "firealarm_electronics", "cell_charger", "stack_console", "stack_machine",
-	"oxygen_tank", "plasma_tank", "emergency_oxygen", "emergency_oxygen_engi", "plasmaman_tank_belt", "plasmaman_tank", "antivirus2", "researchdisk_locator")
+	"oxygen_tank", "plasma_tank", "emergency_oxygen", "emergency_oxygen_engi", "plasmaman_tank_belt", "plasmaman_tank", "antivirus2", "researchdisk_locator",
+	"techfab_departmental_engineering", "techfab_departmental_science", "techfab_departmental_medical", "techfab_departmental_cargo", "techfab_departmental_security", "techfab_departmental_service", //Singulostation edit - Printable techfabs and protolathes
+	"protolathe_departmental_engineering", "protolathe_departmental_science", "protolathe_departmental_medical", "protolathe_departmental_cargo", "protolathe_departmental_security", "protolathe_departmental_service") //Singulostation edit - Printable techfabs and protolathes
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 7500)
 	export_price = 5000
 
@@ -637,8 +639,8 @@
 	display_name = "Cryostasis Technology"
 	description = "Smart freezing of objects to preserve them!"
 	prereq_ids = list("adv_engi", "biotech")
-	design_ids = list("splitbeaker", "noreactsyringe", "cryotube", "cryo_Grenade", "stasis")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2000)
+	design_ids = list("splitbeaker", "noreactsyringe", "cryotube", "cryo_Grenade", "stasis", "cryogenicpod", "cryogenicpodcontrol") // SinguloStation13 Edit (Cryogenic freezers change - added cryogenic pods to research)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2000) // SinguloStation13 Edit (Cryogenic freezers change - Tech more expensive for new shit)
 	export_price = 4000
 
 /datum/techweb_node/subdermal_implants
@@ -781,7 +783,9 @@
 	tech_tier = 3
 	display_name = "Experimental Tools"
 	description = "Highly advanced tools."
-	design_ids = list("exwelder", "jawsoflife", "handdrill", "laserscalpel", "mechanicalpinches", "searingtool", "wirebrush_adv")
+	design_ids = list("exwelder", "jawsoflife", "handdrill", "laserscalpel", "mechanicalpinches", "searingtool", "wirebrush_adv",
+		"advancedmultitool", //Singulostation edit - Advanced multitool
+	)
 	prereq_ids = list("adv_engi")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 	export_price = 5000

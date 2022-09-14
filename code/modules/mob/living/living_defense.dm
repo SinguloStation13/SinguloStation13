@@ -321,6 +321,8 @@
 			return TRUE
 
 /mob/living/ex_act(severity, target, origin)
+	if(status_flags & GODMODE) // SinguloStation13 Edit (Cryogenic freezers change - Explosion proof if Godmode is enabled)
+		return
 	if(origin && istype(origin, /datum/spacevine_mutation) && isvineimmune(src))
 		return
 	..()
@@ -348,6 +350,8 @@
 		return shock_damage
 
 /mob/living/emp_act(severity)
+	if(status_flags & GODMODE) // SinguloStation13 Edit (Cryogenic freezers change - EMP proof if Godmode is enabled)
+		return EMP_PROTECT_SELF | EMP_PROTECT_CONTENTS | EMP_PROTECT_WIRES
 	. = ..()
 	if(. & EMP_PROTECT_CONTENTS)
 		return

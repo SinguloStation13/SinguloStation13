@@ -10,8 +10,10 @@
 /mob/living/silicon/robot/spawn_dust()
 	new /obj/effect/decal/remains/robot(loc)
 
+/*Singulostation begin - Dust animation
 /mob/living/silicon/robot/dust_animation()
 	new /obj/effect/temp_visual/dust_animation(loc, "dust-r")
+*///Singulostation end
 
 /mob/living/silicon/robot/death(gibbed)
 	if(stat == DEAD)
