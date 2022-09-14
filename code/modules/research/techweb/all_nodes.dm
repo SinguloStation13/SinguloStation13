@@ -345,6 +345,7 @@
 		"surgery_revival",
 		"surgery_vein_thread",
 		"surgery_viral_bond",
+		"autodoc", //Singulostation edit; adds autodoc
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
 	export_price = 5000
