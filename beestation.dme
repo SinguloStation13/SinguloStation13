@@ -3557,7 +3557,6 @@
 #include "interface\skin.dmf"
 #include "singulostation\code\game\machinery\autodoc.dm"
 #include "singulostation\code\game\objects\items\circuitboards\machine_circuitboards.dm"
-#include "singulostation\code\modules\research\designs\machine_designs.dm"
 #include "singulostation\code\_DEFINES\status_effects.dm"
 #include "singulostation\code\datums\shuttles.dm"
 #include "singulostation\code\datums\mapgen\Asteroidgens\AsteroidGenerator.dm"
