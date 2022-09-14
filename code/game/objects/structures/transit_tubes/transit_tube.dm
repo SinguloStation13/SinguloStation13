@@ -8,7 +8,6 @@
 	layer = LOW_ITEM_LAYER
 	anchored = TRUE
 	climbable = TRUE
-	pass_flags_self = PASSGLASS
 	var/tube_construction = /obj/structure/c_transit_tube
 	var/list/tube_dirs //list of directions this tube section can connect to.
 	var/exit_delay = 1
@@ -53,7 +52,7 @@
 
 // Called to check if a pod should stop upon entering this tube.
 /obj/structure/transit_tube/proc/should_stop_pod(pod, from_dir)
-	return 0
+	return FALSE
 
 // Called when a pod stops in this tube section.
 /obj/structure/transit_tube/proc/pod_stopped(pod, from_dir)
@@ -65,18 +64,18 @@
 
 	for(var/direction in tube_dirs)
 		if(direction == from_dir)
-			return 1
+			return TRUE
 
-	return 0
+	return FALSE
 
 
 
 /obj/structure/transit_tube/proc/has_exit(in_dir)
 	for(var/direction in tube_dirs)
 		if(direction == in_dir)
-			return 1
+			return TRUE
 
-	return 0
+	return FALSE
 
 
 

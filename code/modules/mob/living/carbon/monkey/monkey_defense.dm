@@ -150,6 +150,8 @@
 
 
 /mob/living/carbon/monkey/ex_act(severity, target, origin)
+	if(status_flags & GODMODE) // SinguloStation13 Edit (Cryogenic freezers change - Explosion proof if Godmode is enabled)
+		return
 	if(origin && istype(origin, /datum/spacevine_mutation) && isvineimmune(src))
 		return
 	..()

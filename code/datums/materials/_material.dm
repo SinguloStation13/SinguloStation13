@@ -23,6 +23,8 @@ Simple datum which is instanced once per type and is used for every object of sa
 	var/sheet_type
 	///The type of coin this material spawns. This should be replaced as soon as possible by greyscale coins.
 	var/coin_type
+	/// WS - The type of ore this material is derrived from. Used by deepcore
+	var/ore_type
 	///This is a modifier for force, and resembles the strength of the material
 	var/strength_modifier = 1
 	///This is a modifier for integrity, and resembles the strength of the material

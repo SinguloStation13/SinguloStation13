@@ -1,3 +1,4 @@
+/* Singulostation begin - Cryogenic freezers change - remove forcecryo
 /proc/forcecryo(mob/target)
 	var/turf/T = get_turf(target)
 	new /obj/effect/temp_visual/tornado(T)
@@ -7,3 +8,4 @@
 			C.close_machine(target)
 			C.despawn_occupant()
 			break
+*/
