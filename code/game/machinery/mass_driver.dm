@@ -1,7 +1,7 @@
 /obj/machinery/mass_driver
 	name = "mass driver"
 	desc = "The finest in spring-loaded piston toy technology, now on a space station near you."
-	icon = 'icons/obj/stationobjs.dmi'
+	icon = 'singulostation/icons/obj/mass_driver.dmi' // Singulo edit - diagonal mass drivers
 	icon_state = "mass_driver"
 	use_power = IDLE_POWER_USE
 	idle_power_usage = 2
@@ -71,3 +71,6 @@
 	if(stat & (BROKEN|NOPOWER))
 		return
 	drive()
+
+// More procs at /singulostation/code/game/machinery/mass_driver.dm
+// ~ MaltVinegar
