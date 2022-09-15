@@ -17,6 +17,7 @@
 /obj/machinery/mass_driver/Initialize(mapload)
 	. = ..()
 	wires = new /datum/wires/mass_driver(src)
+	transform = matrix().Turn(dir2angle(dir))
 
 /obj/machinery/mass_driver/Destroy()
 	QDEL_NULL(wires)
