@@ -17,7 +17,7 @@
 /obj/machinery/mass_driver/Initialize(mapload)
 	. = ..()
 	wires = new /datum/wires/mass_driver(src)
-	transform = matrix().Turn(dir2angle(dir))
+	transform = matrix().Turn(dir2angle(dir)) // Singulo edit - diagonal mass driver
 
 /obj/machinery/mass_driver/Destroy()
 	QDEL_NULL(wires)
