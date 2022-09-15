@@ -13,7 +13,7 @@ on:
 # Config
 env:
   COMMIT_NAME: 'SinguloMirrorbot'
-  COMMIT_EMAIL: 'singulostation@gmail.com'
+  COMMIT_EMAIL: '113081593+SinguloMirrorbot@users.noreply.github.com'
   DEFAULT_BRANCH: 'master'
   TOKEN: '${{ secrets.CL_TOKEN }}'
 

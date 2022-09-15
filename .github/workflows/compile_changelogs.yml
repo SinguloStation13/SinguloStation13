@@ -25,7 +25,7 @@ jobs:
         run: python tools/changelog/ss13_genchangelog.py html/changelog.html html/changelogs
       - name: Commit
         run: |
-          git config --local user.email "singulostation@gmail.com"
+          git config --local user.email "113081593+SinguloMirrorbot@users.noreply.github.com"
           git config --local user.name "SinguloMirrorbot"
           git pull origin master
           git commit -m "Automatic changelog compile [ci skip]" -a || true
