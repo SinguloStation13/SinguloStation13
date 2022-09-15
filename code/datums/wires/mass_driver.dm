@@ -3,7 +3,7 @@
 	proper_name = "Mass Driver"
 
 /datum/wires/mass_driver/New(atom/holder)
-	wires = list(WIRE_LAUNCH, WIRE_INTERFACE)
+	wires = list(WIRE_LAUNCH, WIRE_INTERFACE) // Singulo edit - diagonal mass driver
 	..()
 
 /datum/wires/mass_driver/on_pulse(wire)
