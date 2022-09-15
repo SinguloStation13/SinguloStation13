@@ -73,5 +73,4 @@
 		return
 	drive()
 
-// More procs at /singulostation/code/game/machinery/mass_driver.dm
-// ~ MaltVinegar
+// See more at /singulostation/code/game/machinery/mass_driver.dm
