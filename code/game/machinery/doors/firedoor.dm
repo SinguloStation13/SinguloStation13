@@ -77,6 +77,7 @@
 	affecting_areas.Cut()
 	return ..()
 
+// Singulo start - Monstermos
 /obj/machinery/door/firedoor/Bumped(atom/movable/AM)
 	if(panel_open || operating || welded || (stat & NOPOWER))
 		return
@@ -92,7 +93,7 @@
 			open()
 			return TRUE
 	return FALSE
-
+//Singulo end
 
 /obj/machinery/door/firedoor/power_change()
 	if(powered(power_channel))
@@ -106,6 +107,7 @@
 	if(.)
 		return
 
+// Singulo start - monstermos
 	if (!welded && !operating)
 		if (stat & NOPOWER)
 			user.visible_message("[user] tries to open \the [src] manually.",
@@ -122,6 +124,7 @@
 		else
 			close()
 		return TRUE
+// Singulo end
 
 	if(operating || !density)
 		return
