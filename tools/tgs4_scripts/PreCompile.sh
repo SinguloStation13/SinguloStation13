@@ -82,7 +82,7 @@ else
 fi
 
 echo "Deploying Auxmos..."
-git checkout "$AUXMOS_VERSION"
+git checkout "v$AUXMOS_VERSION"
 if [ -d "build" ]; then
 	rm -R build
 fi
