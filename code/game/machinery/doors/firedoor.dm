@@ -82,13 +82,13 @@
 		return
 	if(ismob(AM))
 		var/mob/user = AM
-		if(allow_hand_open(user))
+		if(check_safety(user))
 			add_fingerprint(user)
 			open()
 			return TRUE
 	if(ismecha(AM))
 		var/obj/mecha/M = AM
-		if(M.occupant && allow_hand_open(M.occupant))
+		if(M.occupant && check_safety(M.occupant))
 			open()
 			return TRUE
 	return FALSE
@@ -112,7 +112,7 @@
 						 "You operate the manual lever on \the [src].")
 			if (!do_after(user, 30, TRUE, src))
 				return FALSE
-		else if (density && !allow_hand_open(user))
+		else if (density && !check_safety(user))
 			return FALSE
 
 		add_fingerprint(user)
@@ -223,7 +223,7 @@
 /obj/machinery/door/firedoor/try_to_crowbar(obj/item/I, mob/user)
 	if(welded || operating)
 		return
-	
+
 	if(density)
 		if(!(stat & NOPOWER))
 			LAZYADD(access_log, "MOTOR_ERR:|MOTOR CONTROLLER REPORTED BACKDRIVE|T_OFFSET:[DisplayTimeText(world.time - SSticker.round_start_time)]")
@@ -244,7 +244,6 @@
 		open()
 	else
 		close()
-
 
 /obj/machinery/door/firedoor/proc/check_safety(mob/user, check_alarm = TRUE)
 	var/area/A = get_area(src)
