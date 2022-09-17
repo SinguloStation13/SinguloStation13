@@ -3,7 +3,7 @@
 	proper_name = "Mass Driver"
 
 /datum/wires/mass_driver/New(atom/holder)
-	wires = list(WIRE_LAUNCH, WIRE_INTERFACE) // Singulo edit - diagonal mass driver
+	wires = list(WIRE_LAUNCH, WIRE_MOTOR1, WIRE_MOTOR2) // Singulo edit - diagonal mass driver
 	..()
 
 /datum/wires/mass_driver/on_pulse(wire)
@@ -15,8 +15,11 @@
 	switch(wire)
 		if(WIRE_LAUNCH)
 			M.drive()
-		if(WIRE_INTERFACE)
+		if(WIRE_MOTOR1)
 			M.setDir(turn(M.dir, -45))
+			M.transform = matrix().Turn(dir2angle(M.dir))
+		if(WIRE_MOTOR2)
+			M.setDir(turn(M.dir, 45))
 			M.transform = matrix().Turn(dir2angle(M.dir))
 
 	M.use_power(M.active_power_usage)
