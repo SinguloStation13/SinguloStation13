@@ -1,0 +1,4 @@
+author: Orchidthederg
+delete-after: true
+changes:
+  - rscadd: Ported the Autodoc from SSB
