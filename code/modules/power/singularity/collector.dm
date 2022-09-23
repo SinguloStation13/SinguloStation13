@@ -75,7 +75,7 @@
 			var/datum/bank_account/D = SSeconomy.get_dep_account(ACCOUNT_ENG)
 			if(D)
 				D.adjust_money(bitcoins_mined*RAD_COLLECTOR_MINING_CONVERSION_RATE)
-			SSresearch.science_tech.add_point_type(TECHWEB_POINT_TYPE_DEFAULT, bitcoins_mined*RAD_COLLECTOR_MINING_CONVERSION_RATE)
+			SSresearch.science_tech.add_point_type(TECHWEB_POINT_TYPE_DISCOVERY, bitcoins_mined*RAD_COLLECTOR_MINING_CONVERSION_RATE) // Singlo edit - makes rad collectors gen discovery points
 			stored_energy-=bitcoins_mined
 
 /obj/machinery/power/rad_collector/interact(mob/user)
