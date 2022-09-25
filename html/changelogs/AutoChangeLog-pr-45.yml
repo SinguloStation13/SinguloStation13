@@ -1,5 +1,0 @@
-author: SinguloMirrorbot
-delete-after: true
-changes:
-  - tweak: Blacklists certain items from Pun-Pun's mask/hat saving functionality (notably
-      facehuggers and chameleon clothing)
