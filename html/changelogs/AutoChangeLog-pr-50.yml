@@ -1,4 +1,0 @@
-author: SinguloMirrorbot
-delete-after: true
-changes:
-  - bugfix: Fixed another runtime with the MedHUD SSD indicator on mind transfer.
