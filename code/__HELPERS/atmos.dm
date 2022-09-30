@@ -93,7 +93,7 @@
  * check_external = truthy if we should be checking against items coming out of the wall, rather than visually on top of the wall.
 **/
 /proc/check_wall_item(floor_loc, dir_toward_wall, check_external = 0)
-	var/wall_loc = get_step(floor_loc, dir_toward_wall)
+	var/wall_loc = get_step(floor_loc, turn(dir_toward_wall, 180)) //SinguloStation13 Edit
 	for(var/obj/checked_object in floor_loc)
 		if(is_type_in_typecache(checked_object, GLOB.WALLITEMS_INTERIOR) && !check_external)
 			//Direction works sometimes
