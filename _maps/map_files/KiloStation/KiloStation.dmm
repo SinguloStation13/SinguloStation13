@@ -75407,7 +75407,10 @@
 /turf/open/space/basic,
 /area/space/nearstation)
 "cow" = (
+<<<<<<< HEAD
 /obj/structure/grille,
+=======
+>>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 /turf/closed/wall/r_wall,
 /area/space/nearstation)
 "cox" = (
