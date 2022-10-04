@@ -1,5 +1,0 @@
-author: SinguloMirrorbot
-delete-after: true
-changes:
-  - bugfix: Fixed an oversight, now buttons inside shuttles no longer have their electronics
-      sold!
