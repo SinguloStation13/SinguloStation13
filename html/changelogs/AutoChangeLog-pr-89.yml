@@ -1,4 +1,0 @@
-author: SinguloMirrorbot
-delete-after: true
-changes:
-  - bugfix: Vent pumps no longer runtime if their vents are empty
