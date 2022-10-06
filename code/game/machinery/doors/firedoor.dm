@@ -79,7 +79,7 @@
 
 // Singulo start - Monstermos
 /obj/machinery/door/firedoor/Bumped(atom/movable/AM)
-	if(panel_open || operating || welded || (stat & NOPOWER))
+	if(panel_open || operating || welded || (machine_stat & NOPOWER))
 		return
 	if(ismob(AM))
 		var/mob/user = AM
@@ -109,7 +109,7 @@
 
 // Singulo start - monstermos
 	if (!welded && !operating)
-		if (stat & NOPOWER)
+		if (machine_stat & NOPOWER)
 			user.visible_message("[user] tries to open \the [src] manually.",
 						 "You operate the manual lever on \the [src].")
 			if (!do_after(user, 30, TRUE, src))
