@@ -61,7 +61,7 @@ GLOBAL_LIST_EMPTY(cryopod_computers)
 
 /obj/machinery/computer/cryopod/process()
 
-	if(stat & (BROKEN)) //Eject everyone if the console gets borked
+	if(machine_stat & (BROKEN)) //Eject everyone if the console gets borked
 		for (var/mob/living/L in frozen_crew)
 			eject_from_storage(L)
 
@@ -96,7 +96,7 @@ GLOBAL_LIST_EMPTY(cryopod_computers)
 
 /obj/machinery/computer/cryopod/update_icon_state()
 	icon = 'icons/obj/Cryogenic2.dmi'
-	if(stat & (NOPOWER|BROKEN))
+	if(machine_stat & (NOPOWER|BROKEN))
 		icon_state = "cellconsole"
 		return
 	if(highlighted_item_inside)
@@ -319,7 +319,7 @@ GLOBAL_LIST_EMPTY(cryopod_computers)
 //Returns TRUE is the
 /obj/machinery/cryopod/proc/check_control_computer(var/announce = FALSE)
 	if(control_computer) //we got a linked one
-		if(stat & (NOPOWER|BROKEN)) //It's unusable right now.
+		if(machine_stat & (NOPOWER|BROKEN)) //It's unusable right now.
 			if(announce)
 				say("Warning: Linked cryogenic console at ([control_computer.x] : [control_computer.y]) is unavailable! Cryogenic freezer inoperable!")
 			return FALSE //We do not spontaniously relink the cryopods to a new console because of a power outage.
@@ -327,7 +327,7 @@ GLOBAL_LIST_EMPTY(cryopod_computers)
 	for(var/M in GLOB.cryopod_computers)
 		var/obj/machinery/computer/cryopod/C = M
 		if(get_area(C) == get_area(src))
-			if(!(stat & (NOPOWER|BROKEN))) //This one is usable
+			if(!(machine_stat & (NOPOWER|BROKEN))) //This one is usable
 				control_computer = C
 				control_computer.cryopods += src
 				return TRUE

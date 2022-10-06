@@ -1,0 +1,4 @@
+author: SinguloMirrorbot
+delete-after: true
+changes:
+  - refactor: Refactors the signals files to split them down into submodules.
