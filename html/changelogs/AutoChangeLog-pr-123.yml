@@ -1,0 +1,4 @@
+author: SinguloMirrorbot
+delete-after: true
+changes:
+  - bugfix: Balloon alerts aren't offset to the left anymore
