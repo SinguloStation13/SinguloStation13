@@ -1,5 +1,0 @@
-author: SinguloMirrorbot
-delete-after: true
-changes:
-  - bugfix: Fixed having nonexistent species data blocking Character Setup from opening
-      by setting the slot to a random existing species.
