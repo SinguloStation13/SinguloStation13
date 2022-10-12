@@ -1262,6 +1262,36 @@
 "aiu" = (
 /turf/closed/wall,
 /area/maintenance/department/security/brig)
+<<<<<<< HEAD
+=======
+"aiv" = (
+/obj/structure/table/glass,
+/obj/item/storage/backpack/duffelbag/sec/surgery{
+	pixel_y = 5
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/security/execution/transfer)
+"aix" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/execution/transfer)
+"aiz" = (
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/execution/transfer)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "aiA" = (
 /turf/closed/wall/r_wall,
 /area/security/execution/transfer)
@@ -1345,6 +1375,31 @@
 /obj/structure/closet/secure_closet/brig,
 /turf/open/floor/plasteel/dark,
 /area/security/prison)
+<<<<<<< HEAD
+=======
+"ajf" = (
+/obj/machinery/door/airlock/security/glass{
+	name = "Prison Wing";
+	req_access_txt = "1"
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/plasteel,
+/area/security/prison)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "ajg" = (
 /obj/structure/rack,
 /obj/item/gun/energy/ionrifle,
@@ -1838,6 +1893,7 @@
 	},
 /turf/open/floor/carpet,
 /area/crew_quarters/heads/hos)
+<<<<<<< HEAD
 "alO" = (
 /obj/structure/table,
 /obj/item/surgicaldrill,
@@ -1851,6 +1907,8 @@
 /obj/effect/turf_decal/tile/yellow,
 /turf/open/floor/plasteel/dark,
 /area/chapel/office)
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "alV" = (
 /obj/machinery/atmospherics/components/unary/tank/air{
 	dir = 1
@@ -2084,6 +2142,75 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/heads/hos)
+<<<<<<< HEAD
+=======
+"anS" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/obj/machinery/keycard_auth{
+	pixel_y = -24
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/heads/hos)
+"anT" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/heads/hos)
+"anU" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/machinery/camera{
+	c_tag = "Head of Security's Office";
+	dir = 1
+	},
+/obj/item/radio/intercom{
+	dir = 4;
+	pixel_y = -27
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/heads/hos)
+"anV" = (
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/obj/machinery/power/apc{
+	name = "Head of Security's Office APC";
+	pixel_y = -24
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/heads/hos)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "anX" = (
 /turf/closed/wall/r_wall,
 /area/teleporter)
@@ -3335,8 +3462,24 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/showroomfloor,
 /area/security/warden)
+=======
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/plasteel,
+/area/security/brig)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "awO" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/southleft{
@@ -4917,6 +5060,24 @@
 	},
 /turf/open/floor/carpet,
 /area/crew_quarters/heads/captain)
+<<<<<<< HEAD
+=======
+"aFy" = (
+/obj/structure/disposalpipe/segment,
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/heads/captain)
+"aFz" = (
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/heads/captain)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "aFB" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/brigdoor{
@@ -5169,11 +5330,15 @@
 /obj/effect/turf_decal/loading_area{
 	dir = 1
 	},
+<<<<<<< HEAD
 /obj/machinery/door/poddoor/shutters/window/preopen{
 	id = "hopqueue";
 	name = "HoP Queue Shutters"
 	},
 /turf/open/floor/plasteel/dark,
+=======
+/turf/open/floor/plasteel,
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 /area/hallway/primary/central)
 "aHj" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -5419,6 +5584,7 @@
 	},
 /turf/open/space,
 /area/solar/port)
+<<<<<<< HEAD
 "aIB" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -5426,6 +5592,8 @@
 /obj/effect/turf_decal/tile/yellow/half/contrasted,
 /turf/open/floor/plasteel/dark,
 /area/bridge)
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "aID" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/preopen{
@@ -6291,9 +6459,12 @@
 /obj/item/radio/intercom{
 	pixel_y = -28
 	},
+<<<<<<< HEAD
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/cafeteria)
 "aNb" = (
@@ -6301,6 +6472,20 @@
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/cafeteria)
 "aNc" = (
+<<<<<<< HEAD
+=======
+/obj/structure/toilet{
+	dir = 4
+	},
+/obj/effect/landmark/start/assistant,
+/turf/open/floor/plasteel/freezer,
+/area/crew_quarters/toilet/auxiliary)
+"aNd" = (
+/obj/machinery/light/small,
+/turf/open/floor/plasteel/freezer,
+/area/crew_quarters/toilet/auxiliary)
+"aNf" = (
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 /obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/plating{
 	icon_state = "panelscorched"
@@ -6952,6 +7137,20 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
+<<<<<<< HEAD
+=======
+"aPV" = (
+/obj/structure/filingcabinet/security,
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/security/checkpoint/supply)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "aPW" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -8182,6 +8381,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
 	},
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
@@ -8193,6 +8393,13 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel,
+=======
+/turf/open/floor/plasteel/dark,
+/area/janitor)
+"aVW" = (
+/obj/machinery/vending/wardrobe/chef_wardrobe,
+/turf/open/floor/plasteel/freezer,
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 /area/crew_quarters/kitchen)
 "aVZ" = (
 /obj/machinery/gibber,
@@ -8361,8 +8568,14 @@
 /area/crew_quarters/bar)
 "aXc" = (
 /obj/structure/disposalpipe/segment{
+<<<<<<< HEAD
 	dir = 10
 	},
+=======
+	dir = 4
+	},
+/obj/machinery/light/small,
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/bar)
 "aXh" = (
@@ -8536,6 +8749,161 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
 	},
+<<<<<<< HEAD
+=======
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/door/firedoor,
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/bar)
+"aYe" = (
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/structure/displaycase/forsale/kitchen,
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/bar)
+"aYf" = (
+/obj/structure/table/reinforced,
+/obj/item/book/manual/wiki/barman_recipes,
+/obj/item/reagent_containers/glass/rag,
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/bar)
+"aYg" = (
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/bar)
+"aYh" = (
+/obj/structure/table/reinforced,
+/obj/item/instrument/guitar,
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/bar)
+"aYi" = (
+/obj/structure/table/reinforced,
+/obj/structure/disposalpipe/segment,
+/obj/item/kirbyplants{
+	icon_state = "plant-18";
+	pixel_y = 10
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/bar)
+"aYj" = (
+/obj/machinery/door/airlock{
+	name = "Theatre Storage";
+	req_access_txt = "46"
+	},
+/obj/structure/disposalpipe/segment,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/theatre)
+"aYk" = (
+/obj/structure/disposalpipe/trunk{
+	dir = 1
+	},
+/obj/machinery/disposal/bin,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/theatre)
+"aYl" = (
+/obj/structure/table/wood,
+/obj/item/soap,
+/obj/item/bikehorn,
+/obj/item/toy/cattoy,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/theatre)
+"aYm" = (
+/obj/structure/closet/crate/wooden/toy,
+/obj/item/lipstick/random,
+/obj/item/clothing/gloves/color/rainbow,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/theatre)
+"aYn" = (
+/obj/machinery/requests_console{
+	department = "Cargo Bay";
+	departmentType = 2;
+	pixel_x = -32
+	},
+/obj/machinery/computer/cargo{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 /turf/open/floor/plasteel,
 /area/security/main)
 "aYv" = (
@@ -8948,6 +9316,7 @@
 /turf/closed/wall,
 /area/maintenance/solars/starboard)
 "baH" = (
+<<<<<<< HEAD
 /obj/machinery/light/small{
 	dir = 1
 	},
@@ -8957,6 +9326,11 @@
 /obj/machinery/power/terminal{
 	dir = 8
 	},
+=======
+/obj/structure/rack,
+/obj/item/clothing/mask/gas,
+/obj/item/multitool,
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 /turf/open/floor/plating,
 /area/maintenance/solars/starboard)
 "baJ" = (
@@ -8968,6 +9342,66 @@
 "baK" = (
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
+<<<<<<< HEAD
+=======
+"baQ" = (
+/obj/machinery/computer/secure_data{
+	dir = 4
+	},
+/obj/machinery/button/door{
+	id = "papersplease";
+	name = "Shutters Control Button";
+	pixel_x = -26;
+	pixel_y = 6;
+	req_access_txt = "1"
+	},
+/obj/machinery/button/flasher{
+	id = "brigentry";
+	pixel_x = -26;
+	pixel_y = -4
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/security/checkpoint/customs)
+"baR" = (
+/obj/item/pen,
+/obj/structure/table,
+/obj/item/paper_bin{
+	layer = 2.9
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/security/checkpoint/customs)
+"baS" = (
+/obj/structure/chair/office,
+/obj/effect/landmark/event_spawn,
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/security/checkpoint/customs)
+"baT" = (
+/obj/machinery/recharger{
+	pixel_y = 4
+	},
+/obj/structure/table,
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/security/checkpoint/customs)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "baX" = (
 /obj/vehicle/ridden/janicart,
 /obj/structure/disposalpipe/segment,
@@ -9400,10 +9834,15 @@
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "bdh" = (
+<<<<<<< HEAD
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
 	},
 /obj/effect/spawner/structure/window/reinforced,
+=======
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable/yellow,
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 /turf/open/floor/plating,
 /area/hallway/primary/central)
 "bdi" = (
@@ -10368,6 +10807,7 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel/dark,
 /area/science/robotics/mechbay)
+<<<<<<< HEAD
 "bix" = (
 /obj/item/kirbyplants{
 	icon_state = "plant-21";
@@ -10375,6 +10815,8 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/chapel/office)
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "biH" = (
 /obj/machinery/power/solar{
 	id = "portsolar";
@@ -10397,6 +10839,7 @@
 	},
 /turf/open/floor/plasteel/grimy,
 /area/crew_quarters/lounge)
+<<<<<<< HEAD
 "biQ" = (
 /obj/structure/table,
 /obj/item/storage/firstaid/fire{
@@ -10411,6 +10854,12 @@
 /obj/machinery/door/window/southleft{
 	name = "First-Aid Supplies";
 	req_access_txt = "5"
+=======
+"biO" = (
+/obj/structure/table/glass,
+/obj/item/healthanalyzer{
+	layer = 3.1
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 	},
 /obj/effect/turf_decal/tile/blue/half/contrasted{
 	dir = 4
@@ -12259,9 +12708,38 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
+<<<<<<< HEAD
 /turf/open/floor/plating/airless,
 /area/space/nearstation)
 "buI" = (
+=======
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/science/explab)
+"buy" = (
+/obj/item/kirbyplants/photosynthetic{
+	pixel_y = 10
+	},
+/obj/effect/turf_decal/tile/purple,
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/science/explab)
+"buz" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/science/explab)
+"buC" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/plating/airless,
+/area/space/nearstation)
+"buD" = (
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 /obj/item/kirbyplants{
 	icon_state = "plant-16"
 	},
@@ -13985,6 +14463,23 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
+<<<<<<< HEAD
+=======
+"bHa" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = 28
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/medbay/central)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "bHc" = (
 /obj/machinery/computer/med_data,
 /obj/machinery/status_display/evac{
@@ -14239,6 +14734,7 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
+<<<<<<< HEAD
 "bJN" = (
 /obj/machinery/vending/wardrobe/sec_wardrobe,
 /obj/effect/turf_decal/tile/red/half/contrasted{
@@ -14246,6 +14742,92 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/customs)
+=======
+"bJD" = (
+/obj/structure/sign/departments/engineering{
+	pixel_y = -32
+	},
+/obj/effect/turf_decal/tile/green,
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/aft)
+"bJE" = (
+/obj/effect/turf_decal/stripes/corner,
+/obj/effect/turf_decal/tile/green,
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/aft)
+"bJH" = (
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -29
+	},
+/obj/machinery/camera{
+	c_tag = "Research Division Entrance";
+	dir = 1
+	},
+/obj/machinery/light,
+/obj/effect/turf_decal/tile/green,
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/aft)
+"bJJ" = (
+/obj/effect/turf_decal/tile/green,
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/plasteel,
+/area/hallway/primary/aft)
+"bJK" = (
+/obj/machinery/space_heater,
+/obj/structure/sign/poster/random{
+	pixel_y = -32
+	},
+/obj/effect/turf_decal/tile/green,
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/aft)
+"bJL" = (
+/obj/machinery/portable_atmospherics/canister/air,
+/obj/effect/turf_decal/tile/green,
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/aft)
+"bJM" = (
+/obj/machinery/portable_atmospherics/canister/air,
+/obj/structure/sign/poster/random{
+	pixel_x = 32
+	},
+/obj/structure/sign/poster/random{
+	pixel_y = -32
+	},
+/obj/effect/turf_decal/tile/green,
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/aft)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "bJO" = (
 /obj/machinery/door/airlock/atmos{
 	name = "Toxins Storage";
@@ -15271,6 +15853,20 @@
 /obj/machinery/meter,
 /turf/open/floor/plasteel,
 /area/engine/atmos)
+<<<<<<< HEAD
+=======
+"bRB" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/yellow,
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/green/visible,
+/turf/open/floor/plasteel,
+/area/engine/atmos)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "bRC" = (
 /obj/structure/lattice,
 /turf/open/space,
@@ -15611,6 +16207,115 @@
 /obj/item/electronics/airlock,
 /turf/open/floor/plasteel/dark,
 /area/storage/tech)
+<<<<<<< HEAD
+=======
+"bTw" = (
+/obj/structure/rack,
+/obj/item/stock_parts/subspace/filter,
+/obj/item/stock_parts/subspace/filter,
+/obj/item/stock_parts/subspace/treatment,
+/obj/item/stock_parts/subspace/treatment,
+/obj/item/stock_parts/subspace/transmitter,
+/obj/item/stock_parts/subspace/transmitter,
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/green,
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/storage/tech)
+"bTx" = (
+/obj/structure/rack,
+/obj/item/stock_parts/subspace/ansible,
+/obj/item/stock_parts/subspace/ansible,
+/obj/item/stock_parts/subspace/crystal,
+/obj/item/stock_parts/subspace/crystal,
+/obj/machinery/light{
+	light_color = "#cee5d2"
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/green,
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/storage/tech)
+"bTy" = (
+/obj/structure/rack,
+/obj/item/stock_parts/subspace/amplifier,
+/obj/item/stock_parts/subspace/amplifier,
+/obj/item/stock_parts/subspace/analyzer,
+/obj/item/stock_parts/subspace/analyzer,
+/obj/effect/turf_decal/tile/green{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/green,
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/storage/tech)
+"bTz" = (
+/obj/structure/rack,
+/obj/item/storage/toolbox/electrical{
+	pixel_x = 2;
+	pixel_y = 4
+	},
+/obj/item/clothing/gloves/color/yellow,
+/obj/item/t_scanner,
+/obj/effect/turf_decal/tile/green{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/green,
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/storage/tech)
+"bTA" = (
+/obj/structure/rack,
+/obj/item/storage/toolbox/electrical{
+	pixel_x = 2;
+	pixel_y = 4
+	},
+/obj/item/multitool,
+/obj/machinery/requests_console{
+	department = "Tech storage";
+	pixel_y = -32
+	},
+/obj/item/clothing/glasses/meson/engine,
+/obj/effect/turf_decal/tile/green{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/green,
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/storage/tech)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "bTC" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -18607,6 +19312,44 @@
 "cnW" = (
 /turf/open/floor/engine,
 /area/engine/supermatter)
+<<<<<<< HEAD
+=======
+"cod" = (
+/obj/structure/table,
+/obj/item/clothing/under/color/grey,
+/obj/machinery/power/apc{
+	dir = 1;
+	name = "Dormitory APC";
+	pixel_y = 24
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
+/obj/structure/sign/poster/official/random{
+	pixel_x = 32
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/turf/open/floor/plasteel/cafeteria,
+/area/crew_quarters/dorms)
+"cog" = (
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/yellow,
+/obj/machinery/atmospherics/pipe/simple/general/visible{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/maintenance/disposal/incinerator)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "coj" = (
 /obj/structure/chair/fancy/comfy{
 	dir = 8
@@ -19708,6 +20451,7 @@
 "cyB" = (
 /turf/closed/wall,
 /area/library/lounge)
+<<<<<<< HEAD
 "cyC" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 6
@@ -19742,6 +20486,8 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/ai_upload)
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "cyM" = (
 /turf/closed/mineral,
 /area/chapel/asteroid/monastery)
@@ -21004,6 +21750,17 @@
 "cZy" = (
 /obj/structure/cable/yellow{
 	icon_state = "0-2"
+<<<<<<< HEAD
+=======
+	},
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable/yellow,
+/turf/open/floor/plating,
+/area/security/prison)
+"cZK" = (
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 	},
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable/yellow,
@@ -21900,7 +22657,11 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/white,
+<<<<<<< HEAD
 /area/security/brig)
+=======
+/area/medical/medbay/central)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "dvK" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable/yellow{
@@ -21913,6 +22674,7 @@
 /obj/structure/cable/yellow,
 /turf/open/floor/plating,
 /area/crew_quarters/heads/hos)
+<<<<<<< HEAD
 "dwh" = (
 /obj/machinery/photocopier,
 /obj/machinery/airalarm{
@@ -21932,6 +22694,11 @@
 	},
 /obj/machinery/light,
 /obj/effect/turf_decal/tile/blue/half/contrasted{
+=======
+"dvX" = (
+/obj/machinery/meter,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 	dir = 8
 	},
 /turf/open/floor/plasteel,
@@ -22296,6 +23063,7 @@
 	pixel_y = -24
 	},
 /obj/structure/cable/yellow,
+<<<<<<< HEAD
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 1
 	},
@@ -22307,6 +23075,10 @@
 /obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/nuke_storage)
+=======
+/turf/open/floor/plasteel/freezer,
+/area/crew_quarters/kitchen)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "dJc" = (
 /obj/machinery/light{
 	dir = 1
@@ -22431,6 +23203,7 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/chapel/main/monastery)
+<<<<<<< HEAD
 "dOD" = (
 /obj/structure/bed,
 /obj/machinery/flasher{
@@ -22473,6 +23246,8 @@
 	dir = 1
 	},
 /area/hallway/secondary/entry)
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "dPO" = (
 /obj/machinery/power/terminal{
 	dir = 8
@@ -22480,9 +23255,12 @@
 /obj/structure/cable/yellow{
 	icon_state = "6-8"
 	},
+<<<<<<< HEAD
 /obj/structure/cable/cyan{
 	icon_state = "0-4"
 	},
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 /turf/open/floor/plating,
 /area/maintenance/department/chapel/monastery)
 "dPS" = (
@@ -24153,6 +24931,19 @@
 	},
 /turf/open/floor/wood,
 /area/crew_quarters/bar)
+<<<<<<< HEAD
+=======
+"eIz" = (
+/obj/effect/turf_decal/tile/yellow,
+/obj/item/radio/intercom{
+	dir = 8;
+	freerange = 1;
+	name = "Station Intercom (Telecomms)";
+	pixel_x = 26
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/aft)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "eIL" = (
 /obj/effect/turf_decal/tile/green{
 	dir = 1
@@ -25352,6 +26143,7 @@
 /obj/effect/mapping_helpers/airlock/abandoned,
 /turf/open/floor/plating,
 /area/storage/emergency/starboard)
+<<<<<<< HEAD
 "foR" = (
 /obj/structure/filingcabinet,
 /obj/machinery/requests_console{
@@ -25368,6 +26160,8 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/medical)
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "fpF" = (
 /obj/structure/disposalpipe/segment{
 	dir = 5
@@ -26621,16 +27415,44 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/department/science)
+<<<<<<< HEAD
+=======
+"gcn" = (
+/obj/effect/turf_decal/tile/yellow,
+/obj/effect/turf_decal/tile/yellow{
+	dir = 8
+	},
+/obj/machinery/computer/atmos_control/tank/nitrogen_tank{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/green/visible{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 5
+	},
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/white/corner{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/engine/atmos)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "gco" = (
 /obj/machinery/power/smes,
 /obj/structure/cable/yellow,
 /turf/open/floor/plating,
 /area/maintenance/solars/port)
+<<<<<<< HEAD
 "gcA" = (
 /obj/machinery/suit_storage_unit/engine,
 /obj/effect/turf_decal/tile/yellow/half/contrasted,
 /turf/open/floor/plasteel/dark,
 /area/engine/engine_smes)
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "gcD" = (
 /obj/machinery/holopad,
 /obj/structure/cable/yellow{
@@ -27419,6 +28241,7 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
+<<<<<<< HEAD
 "gBb" = (
 /obj/structure/bed,
 /obj/effect/landmark/start/janitor,
@@ -27441,6 +28264,31 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/heads/hos)
+=======
+"gBa" = (
+/obj/structure/table,
+/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/rods/fifty,
+/obj/item/stack/cable_coil,
+/obj/machinery/power/apc/highcap/ten_k{
+	areastring = "/area/engine/engine_smes";
+	dir = 8;
+	name = "Engine Room APC";
+	pixel_x = -24
+	},
+/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/cable_coil,
+/obj/effect/turf_decal/tile/yellow{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 8
+	},
+/obj/structure/cable/yellow,
+/turf/open/floor/plasteel/dark,
+/area/engine/engine_smes)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "gBf" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-4"
@@ -28583,6 +29431,7 @@
 /obj/structure/cable/yellow,
 /turf/open/floor/plating,
 /area/hallway/primary/central)
+<<<<<<< HEAD
 "hng" = (
 /obj/machinery/power/apc{
 	areastring = "/area/tcommsat/computer";
@@ -28604,6 +29453,8 @@
 	},
 /turf/open/floor/plasteel,
 /area/tcommsat/computer)
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "hnu" = (
 /obj/machinery/computer/warrant{
 	dir = 8
@@ -29635,6 +30486,7 @@
 /obj/effect/turf_decal/stripes/white/line,
 /turf/open/floor/plasteel,
 /area/engine/atmos)
+<<<<<<< HEAD
 "hSj" = (
 /obj/machinery/atmospherics/pipe/simple/green/visible,
 /obj/effect/turf_decal/tile/yellow/half/contrasted,
@@ -29645,6 +30497,28 @@
 /obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
 /turf/open/floor/plasteel/dark,
 /area/hallway/secondary/exit/departure_lounge)
+=======
+"hRQ" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple,
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/structure/rack,
+/obj/item/stock_parts/cell/high,
+/obj/item/assembly/signaler{
+	pixel_x = -8;
+	pixel_y = 5
+	},
+/obj/item/assembly/igniter,
+/turf/open/floor/plasteel/white,
+/area/science/explab)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "hSG" = (
 /obj/structure/disposalpipe/segment,
 /turf/closed/wall,
@@ -30835,6 +31709,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/plasteel/white,
 /area/science/shuttledock)
+<<<<<<< HEAD
 "iAv" = (
 /obj/machinery/teleport/station,
 /obj/effect/turf_decal/delivery,
@@ -30843,6 +31718,8 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/teleporter)
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "iAB" = (
 /obj/structure/table/wood,
 /obj/item/flashlight/lamp/green{
@@ -31189,6 +32066,7 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/bridge)
+<<<<<<< HEAD
 "iHw" = (
 /obj/machinery/computer/crew{
 	dir = 1
@@ -31196,6 +32074,8 @@
 /obj/effect/turf_decal/tile/blue/anticorner/contrasted,
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "iHx" = (
 /obj/structure/table/wood,
 /obj/item/storage/box/seccarts{
@@ -31208,6 +32088,7 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/heads/hos)
+<<<<<<< HEAD
 "iHA" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 9
@@ -31235,6 +32116,8 @@
 /obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
 /turf/open/floor/plasteel/dark,
 /area/library/lounge)
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "iHH" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
@@ -31325,12 +32208,40 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/plating,
 /area/maintenance/department/engine)
+<<<<<<< HEAD
 "iLN" = (
 /obj/machinery/light,
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/tile/purple,
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
+=======
+"iLP" = (
+/obj/machinery/vending/wallmed{
+	pixel_y = 28
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 1
+	},
+/obj/effect/turf_decal/box,
+/obj/structure/closet/l3closet/virology,
+/obj/item/storage/box/masks,
+/obj/item/storage/box/gloves,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 6
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "iLV" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -32703,6 +33614,7 @@
 /obj/structure/sign/warning/vacuum/external,
 /turf/open/floor/plating,
 /area/hallway/secondary/entry)
+<<<<<<< HEAD
 "jzC" = (
 /obj/structure/table/wood,
 /obj/item/instrument/trombone,
@@ -32734,6 +33646,17 @@
 	pixel_y = 26
 	},
 /turf/open/floor/plasteel/freezer,
+=======
+"jAt" = (
+/obj/machinery/door/airlock/maintenance{
+	name = "Kitchen Maintenance";
+	req_access_txt = "28"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating,
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 /area/crew_quarters/kitchen)
 "jAw" = (
 /obj/machinery/turretid{
@@ -32769,6 +33692,37 @@
 /obj/machinery/power/smes{
 	charge = 5e+006
 	},
+<<<<<<< HEAD
+=======
+/obj/structure/disposalpipe/segment,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 1
+	},
+/obj/machinery/door/airlock/command/glass{
+	name = "Bridge";
+	req_access_txt = "19"
+	},
+/obj/effect/turf_decal/delivery,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/turf/open/floor/plasteel/dark,
+/area/bridge)
+"jAI" = (
+/obj/machinery/power/smes{
+	charge = 5e+006
+	},
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 /obj/structure/cable/yellow,
 /turf/open/floor/plating,
 /area/tcommsat/computer)
@@ -33034,6 +33988,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
+<<<<<<< HEAD
 "jIy" = (
 /obj/machinery/light{
 	dir = 4
@@ -33076,6 +34031,8 @@
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/office)
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "jJM" = (
 /obj/machinery/mech_bay_recharge_port,
 /obj/structure/cable/yellow,
@@ -33747,6 +34704,7 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
 /turf/open/floor/grass,
 /area/hydroponics)
+<<<<<<< HEAD
 "kdp" = (
 /obj/machinery/door/poddoor/incinerator_atmos_main,
 /turf/open/floor/engine/vacuum,
@@ -33790,6 +34748,23 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/engineering)
+=======
+"keh" = (
+/obj/machinery/power/apc{
+	name = "Security Checkpoint APC";
+	pixel_y = -24
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/structure/cable/yellow,
+/turf/open/floor/plasteel,
+/area/security/checkpoint/customs)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "keJ" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
@@ -34126,6 +35101,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD
 /area/engine/atmos)
 "klW" = (
 /obj/effect/turf_decal/stripes/line{
@@ -34137,6 +35113,9 @@
 /obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
 /turf/open/floor/plasteel/dark,
 /area/library/lounge)
+=======
+/area/hallway/primary/aft)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "klX" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
@@ -35500,6 +36479,25 @@
 /obj/machinery/door/airlock/maintenance_hatch{
 	name = "MiniSat Maintenance";
 	req_access_txt = "65"
+<<<<<<< HEAD
+=======
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating,
+/area/ai_monitored/turret_protected/AIsatextAP)
+"kUP" = (
+/obj/machinery/door/airlock/command/glass{
+	name = "Control Room";
+	req_access_txt = "19; 61"
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -36344,6 +37342,7 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
+<<<<<<< HEAD
 "ltM" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
@@ -36357,6 +37356,14 @@
 "ltW" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
+=======
+"ltT" = (
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 1
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -36887,6 +37894,7 @@
 /obj/structure/cable/yellow,
 /turf/open/floor/plating,
 /area/hallway/primary/central)
+<<<<<<< HEAD
 "lIx" = (
 /obj/machinery/door/window/southleft{
 	base_state = "right";
@@ -36909,6 +37917,8 @@
 /obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "lIF" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -37597,6 +38607,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD
 /area/construction/mining/aux_base)
 "meD" = (
 /obj/structure/table/wood,
@@ -37608,6 +38619,9 @@
 /obj/item/pen,
 /turf/open/floor/carpet/black,
 /area/chapel/office)
+=======
+/area/hallway/primary/aft)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "meE" = (
 /obj/structure/chair/fancy/comfy{
 	color = "#666666";
@@ -37864,6 +38878,7 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/department/engine)
+<<<<<<< HEAD
 "mjz" = (
 /obj/structure/closet/l3closet/virology,
 /obj/effect/turf_decal/box,
@@ -37911,6 +38926,8 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "mkQ" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -37919,6 +38936,7 @@
 /obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel/grimy,
 /area/ai_monitored/turret_protected/aisat_interior)
+<<<<<<< HEAD
 "mln" = (
 /obj/machinery/camera{
 	c_tag = "Brig Cells"
@@ -37934,6 +38952,30 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/security/brig)
+=======
+"mlq" = (
+/obj/item/soap/nanotrasen,
+/obj/item/clothing/neck/stethoscope,
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 5
+	},
+/obj/item/soap/nanotrasen,
+/obj/item/clothing/neck/stethoscope,
+/obj/structure/table/glass,
+/obj/item/storage/box/masks,
+/turf/open/floor/plasteel/white,
+/area/medical/medbay/central)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "mlr" = (
 /obj/structure/lattice,
 /obj/structure/disposalpipe/junction/yjunction{
@@ -38522,6 +39564,7 @@
 	pixel_x = 3;
 	pixel_y = -2
 	},
+<<<<<<< HEAD
 /obj/machinery/power/apc{
 	areastring = "/area/medical/sleeper";
 	dir = 4;
@@ -38530,6 +39573,34 @@
 	},
 /obj/structure/cable/yellow,
 /obj/effect/turf_decal/tile/blue/half/contrasted{
+=======
+/area/hallway/secondary/exit/departure_lounge)
+"mCV" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit/departure_lounge)
+"mFc" = (
+/obj/item/gps{
+	gpstag = "RD0"
+	},
+/obj/item/assembly/prox_sensor{
+	pixel_x = -8;
+	pixel_y = 4
+	},
+/obj/item/clothing/ears/earmuffs,
+/obj/structure/table/glass,
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 	dir = 8
 	},
 /turf/open/floor/plasteel/white,
@@ -38549,7 +39620,11 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD
 /area/quartermaster/office)
+=======
+/area/hallway/primary/aft)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "mFw" = (
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
@@ -38802,6 +39877,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/kitchen)
+<<<<<<< HEAD
 "mLB" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
@@ -38818,6 +39894,25 @@
 /obj/effect/turf_decal/tile/blue/fourcorners/contrasted,
 /turf/open/floor/plasteel,
 /area/medical/sleeper)
+=======
+"mLo" = (
+/obj/machinery/power/apc{
+	dir = 8;
+	name = "Security Post - Cargo APC";
+	pixel_x = -24
+	},
+/obj/structure/closet/secure_closet/security/cargo,
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/structure/cable/yellow,
+/turf/open/floor/plasteel,
+/area/security/checkpoint/supply)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "mLX" = (
 /obj/machinery/door/airlock/public/glass{
 	name = "Art Storage"
@@ -38921,6 +40016,7 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/department/engine)
+<<<<<<< HEAD
 "mOy" = (
 /obj/structure/table,
 /obj/item/clothing/under/costume/maid,
@@ -38931,10 +40027,22 @@
 /obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
 /turf/open/floor/plasteel/dark,
 /area/janitor)
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "mOB" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/disposalpipe/segment{
 	dir = 4
+<<<<<<< HEAD
+=======
+	},
+/turf/open/floor/plating,
+/area/maintenance/department/engine)
+"mOH" = (
+/obj/machinery/button/ignition/incinerator/atmos{
+	pixel_x = 26;
+	pixel_y = -6
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 	},
 /turf/open/floor/plating,
 /area/maintenance/department/engine)
@@ -40262,6 +41370,7 @@
 	},
 /turf/open/floor/plating,
 /area/chapel/dock)
+<<<<<<< HEAD
 "nEg" = (
 /obj/structure/disposalpipe/segment{
 	dir = 5
@@ -40273,6 +41382,8 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "nEA" = (
 /obj/machinery/atmospherics/pipe/manifold/general/visible{
 	dir = 4
@@ -40381,6 +41492,7 @@
 	dir = 1
 	},
 /area/hallway/secondary/exit/departure_lounge)
+<<<<<<< HEAD
 "nGz" = (
 /obj/effect/turf_decal/tile/red/anticorner/contrasted{
 	dir = 1
@@ -40445,6 +41557,15 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/virology)
+=======
+"nGY" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
+/turf/open/floor/plasteel,
+/area/hallway/primary/central)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "nIm" = (
 /obj/machinery/computer/security/telescreen{
 	dir = 8;
@@ -41357,7 +42478,18 @@
 	dir = 5
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+<<<<<<< HEAD
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+=======
+/turf/open/floor/plasteel,
+/area/crew_quarters/heads/chief)
+"oex" = (
+/obj/structure/lattice,
+/turf/open/space/basic,
+/area/space)
+"ofY" = (
+/obj/effect/turf_decal/tile/neutral{
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/brown/half/contrasted{
@@ -41392,6 +42524,7 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/engineering)
+<<<<<<< HEAD
 "ohT" = (
 /obj/structure/table,
 /obj/item/stack/sheet/glass/fifty,
@@ -41414,6 +42547,12 @@
 /obj/effect/turf_decal/tile/blue/half/contrasted,
 /turf/open/floor/plasteel/white,
 /area/medical/sleeper)
+=======
+"ohf" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/turf/open/floor/plating/airless,
+/area/space/nearstation)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "oiL" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/general/visible,
@@ -41501,12 +42640,15 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/virology)
+<<<<<<< HEAD
 "olu" = (
 /obj/effect/turf_decal/tile/brown/half/contrasted{
 	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/miningdock)
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "olL" = (
 /obj/machinery/power/emitter/anchored{
 	dir = 1;
@@ -41521,6 +42663,7 @@
 /obj/structure/cable/yellow,
 /turf/open/floor/plating,
 /area/security/execution/transfer)
+<<<<<<< HEAD
 "olZ" = (
 /obj/structure/filingcabinet,
 /obj/machinery/computer/security/telescreen{
@@ -41541,6 +42684,8 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/maintenance/disposal/incinerator)
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "omr" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
@@ -42024,6 +43169,39 @@
 	name = "Common Channel";
 	pixel_x = -27;
 	pixel_y = -9
+<<<<<<< HEAD
+=======
+	},
+/obj/item/radio/intercom{
+	freerange = 1;
+	listening = 0;
+	name = "Custom Channel";
+	pixel_y = -31
+	},
+/obj/item/radio/intercom{
+	freerange = 1;
+	frequency = 1447;
+	name = "Private Channel";
+	pixel_x = 27;
+	pixel_y = -9
+	},
+/obj/machinery/newscaster{
+	pixel_x = -28;
+	pixel_y = -28
+	},
+/obj/machinery/requests_console{
+	department = "AI";
+	departmentType = 5;
+	pixel_x = 28;
+	pixel_y = -28
+	},
+/turf/open/floor/circuit,
+/area/ai_monitored/turret_protected/ai)
+"ozt" = (
+/obj/effect/turf_decal/tile/purple,
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 	},
 /obj/item/radio/intercom{
 	freerange = 1;
@@ -42400,7 +43578,11 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD
 /area/hallway/primary/central)
+=======
+/area/engine/atmos)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "oGR" = (
 /obj/item/kirbyplants,
 /obj/machinery/power/apc{
@@ -43019,6 +44201,15 @@
 "oWH" = (
 /obj/machinery/camera{
 	c_tag = "Bridge Starboard Exterior";
+<<<<<<< HEAD
+=======
+	dir = 1
+	},
+/turf/open/space,
+/area/space)
+"oWZ" = (
+/obj/effect/turf_decal/tile/green{
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 	dir = 1
 	},
 /turf/open/space,
@@ -43606,10 +44797,16 @@
 /obj/structure/grille,
 /turf/open/space,
 /area/space/nearstation)
+<<<<<<< HEAD
 "pni" = (
 /obj/structure/sign/directions/medical{
 	pixel_x = 32;
 	pixel_y = -8
+=======
+"pmZ" = (
+/obj/machinery/light{
+	dir = 1
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 	},
 /obj/structure/sign/directions/science{
 	pixel_x = 32
@@ -44566,17 +45763,24 @@
 	},
 /turf/open/floor/wood,
 /area/crew_quarters/heads/hop)
+<<<<<<< HEAD
 "pIj" = (
 /obj/effect/turf_decal/tile/red/half/contrasted{
 	dir = 8
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/engineering)
+=======
+"pIh" = (
+/turf/open/floor/plating/airless,
+/area/maintenance/disposal/incinerator)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "pIv" = (
 /obj/structure/cable/yellow{
 	icon_state = "0-2"
 	},
 /obj/effect/spawner/structure/window/reinforced,
+<<<<<<< HEAD
 /turf/open/floor/plating,
 /area/security/warden)
 "pID" = (
@@ -44650,6 +45854,11 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
+=======
+/obj/structure/cable/yellow,
+/turf/open/floor/plating,
+/area/security/warden)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "pKd" = (
 /obj/effect/spawner/lootdrop/maintenance/two,
 /obj/structure/closet/crate,
@@ -44987,6 +46196,7 @@
 /obj/structure/grille,
 /turf/open/space/basic,
 /area/space/nearstation)
+<<<<<<< HEAD
 "pWf" = (
 /obj/structure/reagent_dispensers/peppertank{
 	pixel_x = -32
@@ -44997,6 +46207,8 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/science)
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "pWm" = (
 /obj/machinery/door/window/southleft{
 	dir = 4;
@@ -45104,6 +46316,7 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/department/engine)
+<<<<<<< HEAD
 "pXQ" = (
 /obj/structure/chair/stool,
 /obj/effect/turf_decal/tile/purple/half/contrasted{
@@ -45140,6 +46353,8 @@
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/office)
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "pYv" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/plasteel,
@@ -45166,6 +46381,7 @@
 /mob/living/simple_animal/butterfly,
 /turf/open/floor/grass,
 /area/hallway/primary/central)
+<<<<<<< HEAD
 "pZu" = (
 /obj/machinery/atmospherics/components/trinary/filter/atmos/co2{
 	dir = 1
@@ -45179,6 +46395,20 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/department/crew_quarters/bar)
+=======
+"pZK" = (
+/obj/machinery/power/apc/highcap/five_k{
+	name = "Auxiliary Restrooms APC";
+	pixel_y = -24
+	},
+/obj/item/soap/nanotrasen,
+/obj/machinery/shower{
+	dir = 8
+	},
+/obj/structure/cable/yellow,
+/turf/open/floor/plasteel/freezer,
+/area/crew_quarters/toilet/auxiliary)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "pZO" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
@@ -45643,12 +46873,37 @@
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/medical/virology)
+<<<<<<< HEAD
 "qmq" = (
 /obj/structure/table,
 /obj/item/storage/box/disks,
 /obj/item/flashlight/pen,
 /obj/item/flashlight/pen,
 /obj/effect/turf_decal/tile/purple/half/contrasted{
+=======
+"qlL" = (
+/obj/machinery/power/apc{
+	areastring = "/area/storage/tech";
+	name = "Tech Storage APC";
+	pixel_y = -24
+	},
+/obj/structure/closet/crate/solarpanel_small,
+/obj/effect/turf_decal/tile/green{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/green,
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+	},
+/obj/structure/cable/yellow,
+/turf/open/floor/plasteel/dark,
+/area/storage/tech)
+"qmy" = (
+/obj/effect/turf_decal/tile/neutral{
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 	dir = 1
 	},
 /turf/open/floor/plasteel/white,
@@ -46589,6 +47844,7 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/engine/engineering)
+<<<<<<< HEAD
 "qTu" = (
 /obj/structure/table/reinforced,
 /obj/item/paper_bin{
@@ -46600,6 +47856,8 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "qTG" = (
 /obj/machinery/power/solar{
 	id = "starboardsolar";
@@ -46632,6 +47890,12 @@
 /turf/open/floor/plating,
 /area/maintenance/department/engine)
 "qTS" = (
+<<<<<<< HEAD
+=======
+/obj/structure/disposalpipe/segment{
+	dir = 10
+	},
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 /obj/machinery/power/apc{
 	dir = 4;
 	name = "Bar APC";
@@ -48306,6 +49570,7 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel/dark,
 /area/engine/engineering)
+<<<<<<< HEAD
 "rOq" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -48319,6 +49584,8 @@
 /obj/effect/turf_decal/tile/green/fourcorners/contrasted,
 /turf/open/floor/plasteel/white,
 /area/medical/virology)
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "rPa" = (
 /obj/machinery/computer/mech_bay_power_console{
 	dir = 1
@@ -48326,6 +49593,7 @@
 /obj/structure/cable/yellow,
 /turf/open/floor/plasteel/dark,
 /area/science/robotics/mechbay)
+<<<<<<< HEAD
 "rPg" = (
 /obj/structure/cable/cyan{
 	icon_state = "4-10"
@@ -48352,6 +49620,8 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "rPK" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -50088,6 +51358,7 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/department/engine)
+<<<<<<< HEAD
 "sMj" = (
 /obj/machinery/computer/secure_data,
 /obj/structure/reagent_dispensers/peppertank{
@@ -50111,6 +51382,8 @@
 	},
 /turf/open/floor/plasteel,
 /area/storage/primary)
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "sMo" = (
 /obj/structure/cable/cyan{
 	icon_state = "1-2"
@@ -50204,6 +51477,7 @@
 /obj/structure/cable/yellow,
 /turf/open/floor/plasteel/dark,
 /area/library)
+<<<<<<< HEAD
 "sNS" = (
 /obj/structure/table,
 /obj/structure/window/reinforced,
@@ -50224,6 +51498,8 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/science/xenobiology)
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "sOC" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -52028,6 +53304,7 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/science/explab)
+<<<<<<< HEAD
 "tUz" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -52042,6 +53319,8 @@
 	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/heads/chief)
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "tVK" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/plasteel,
@@ -52221,10 +53500,36 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/science/explab)
+<<<<<<< HEAD
 "uaJ" = (
 /obj/machinery/atmospherics/pipe/simple/general/visible,
 /obj/machinery/meter,
 /obj/effect/turf_decal/stripes/line{
+=======
+"uaQ" = (
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/obj/machinery/door/poddoor/preopen{
+	id = "Secure Gate";
+	name = "brig shutters"
+	},
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable/yellow,
+/turf/open/floor/plating,
+/area/security/brig)
+"uaU" = (
+/obj/structure/table/glass,
+/obj/item/folder/white,
+/obj/item/clothing/glasses/hud/health,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
@@ -52582,6 +53887,7 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/security/brig)
+<<<<<<< HEAD
 "umB" = (
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
@@ -52602,6 +53908,14 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
 	},
+=======
+"umH" = (
+/obj/machinery/power/apc{
+	name = "Cafeteria APC";
+	pixel_y = -24
+	},
+/obj/structure/cable/yellow,
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/cafeteria)
 "und" = (
@@ -52863,6 +54177,7 @@
 /obj/structure/cable/yellow,
 /turf/open/floor/engine,
 /area/science/xenobiology)
+<<<<<<< HEAD
 "uuG" = (
 /obj/machinery/atmospherics/components/trinary/filter/atmos/plasma{
 	dir = 1
@@ -52870,6 +54185,8 @@
 /obj/effect/turf_decal/tile/yellow/half/contrasted,
 /turf/open/floor/plasteel,
 /area/engine/atmos)
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "uuS" = (
 /obj/structure/chair,
 /obj/structure/disposalpipe/segment{
@@ -52879,6 +54196,7 @@
 /area/lawoffice)
 "uvq" = (
 /obj/structure/table,
+<<<<<<< HEAD
 /obj/machinery/microwave,
 /turf/open/floor/plating,
 /area/maintenance/department/science)
@@ -52892,6 +54210,11 @@
 /obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/bar)
+=======
+/obj/item/dice/d20,
+/turf/open/floor/plating,
+/area/maintenance/department/science)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "uwz" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -52965,6 +54288,19 @@
 /obj/machinery/power/solar{
 	id = "starboardsolar";
 	name = "Starboard Solar Array"
+<<<<<<< HEAD
+=======
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plasteel/airless/solarpanel,
+/area/solar/starboard)
+"uyF" = (
+/obj/item/kirbyplants/random,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 	},
 /obj/structure/cable{
 	icon_state = "0-8"
@@ -52978,11 +54314,29 @@
 /obj/effect/turf_decal/tile/purple/half/contrasted{
 	dir = 4
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/white,
 /area/science/xenobiology)
 "uzd" = (
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
+=======
+/turf/open/floor/plasteel,
+/area/hallway/primary/central)
+"uzd" = (
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 9
+	},
+/turf/open/floor/plasteel/white,
+/area/science/shuttledock)
+"uzq" = (
+/obj/structure/sign/map{
+	icon_state = "map-pubby";
+	pixel_y = 32
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 9
@@ -53757,6 +55111,7 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
 /turf/open/floor/plating,
 /area/maintenance/department/security/brig)
+<<<<<<< HEAD
 "vdB" = (
 /obj/machinery/atmospherics/components/binary/pump{
 	dir = 1
@@ -53789,6 +55144,12 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/department/chapel/monastery)
+=======
+"vdJ" = (
+/obj/structure/cable/yellow,
+/turf/closed/wall,
+/area/security/execution/transfer)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "vdW" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -54201,9 +55562,42 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+<<<<<<< HEAD
 /obj/machinery/door/airlock/research/glass{
 	name = "science shuttle dock";
 	req_one_access_txt = "49"
+=======
+/obj/machinery/shower{
+	dir = 8;
+	name = "emergency shower"
+	},
+/obj/effect/turf_decal/stripes/end{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/turf/open/floor/noslip/dark,
+/area/security/brig)
+"vsH" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/research/glass{
+	name = "science shuttle dock";
+	req_one_access_txt = "49"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/science/shuttledock)
+"vtd" = (
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -54894,6 +56288,7 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/department/security/brig)
+<<<<<<< HEAD
 "vLN" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
 	dir = 1
@@ -54904,6 +56299,8 @@
 /obj/effect/turf_decal/tile/green/fourcorners/contrasted,
 /turf/open/floor/plasteel/white,
 /area/medical/virology)
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "vLZ" = (
 /obj/machinery/door/poddoor/preopen{
 	id = "xenobio2";
@@ -55635,7 +57032,11 @@
 "wiT" = (
 /obj/effect/spawner/room/fivexthree,
 /turf/open/floor/plating,
+<<<<<<< HEAD
 /area/maintenance/department/science)
+=======
+/area/maintenance/department/crew_quarters/dorms)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "wiX" = (
 /obj/structure/closet/crate/freezer/surplus_limbs,
 /obj/item/reagent_containers/glass/beaker/synthflesh,
@@ -55644,6 +57045,7 @@
 	},
 /turf/open/floor/plasteel/freezer,
 /area/medical/surgery)
+<<<<<<< HEAD
 "wji" = (
 /obj/machinery/light,
 /obj/effect/turf_decal/tile/blue/half/contrasted{
@@ -55651,6 +57053,8 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/ai_upload)
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "wjA" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
@@ -56084,6 +57488,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD
 /area/hallway/primary/aft)
 "wzI" = (
 /obj/machinery/requests_console{
@@ -56101,6 +57506,9 @@
 	},
 /turf/open/floor/plasteel,
 /area/tcommsat/computer)
+=======
+/area/engine/atmos)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "wAx" = (
 /obj/structure/grille/broken,
 /obj/structure/lattice,
@@ -56350,9 +57758,29 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 4
 	},
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
 /turf/open/floor/plasteel/dark,
 /area/library/lounge)
+=======
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit/departure_lounge)
+"wFc" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/door/poddoor/preopen{
+	id = "misclab";
+	name = "test chamber blast door"
+	},
+/obj/structure/cable/yellow,
+/turf/open/floor/plating,
+/area/science/xenobiology)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "wGm" = (
 /obj/effect/landmark/event_spawn,
 /obj/effect/decal/cleanable/dirt,
@@ -57505,6 +58933,7 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
+<<<<<<< HEAD
 "xii" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -57521,6 +58950,18 @@
 	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/theatre)
+=======
+"xim" = (
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "xjc" = (
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
@@ -58748,6 +60189,7 @@
 /obj/structure/sign/poster/official/random{
 	pixel_y = -32
 	},
+<<<<<<< HEAD
 /obj/machinery/light/small,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
@@ -58770,6 +60212,10 @@
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/dorms)
+=======
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "xRf" = (
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "hop";
@@ -58782,6 +60228,7 @@
 /obj/structure/cable/yellow,
 /turf/open/floor/plating,
 /area/crew_quarters/heads/hop)
+<<<<<<< HEAD
 "xRL" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -24
@@ -58795,6 +60242,8 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "xRX" = (
 /mob/living/carbon/monkey,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
@@ -59304,11 +60753,14 @@
 /obj/structure/cable/yellow,
 /turf/open/floor/engine,
 /area/science/xenobiology)
+<<<<<<< HEAD
 "ygh" = (
 /obj/structure/closet/crate/freezer/blood,
 /obj/effect/turf_decal/tile/blue/fourcorners/contrasted,
 /turf/open/floor/plasteel/white,
 /area/medical/surgery)
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 "ygu" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -70369,6 +71821,10 @@ aCa
 aIr
 bRC
 pmj
+<<<<<<< HEAD
+=======
+aaa
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 aaa
 aaa
 aaa
@@ -70451,6 +71907,10 @@ aaa
 aaa
 aaa
 aaa
+<<<<<<< HEAD
+=======
+aaa
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 cyM
 cyM
 fIT
@@ -70959,6 +72419,10 @@ lRL
 bZY
 bZY
 aaa
+<<<<<<< HEAD
+=======
+aaa
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 cyM
 cyM
 cyM
@@ -71202,6 +72666,12 @@ aaa
 aaa
 aaa
 aaa
+<<<<<<< HEAD
+=======
+aaa
+cyM
+cyM
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 cyM
 bZY
 bZY
@@ -71215,6 +72685,10 @@ csC
 kDf
 bix
 bZY
+<<<<<<< HEAD
+=======
+bZY
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 cyM
 cyM
 cyM
@@ -71459,6 +72933,11 @@ aaa
 aaa
 aaa
 aaa
+<<<<<<< HEAD
+=======
+cyM
+bZY
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 bZY
 bZY
 pps
@@ -71473,6 +72952,10 @@ ctr
 cdo
 vfL
 bZY
+<<<<<<< HEAD
+=======
+bZY
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 cyM
 cyM
 cyM
@@ -72487,10 +73970,13 @@ aaa
 aaa
 cyM
 cyM
+<<<<<<< HEAD
 bZY
 bZY
 bZY
 bZY
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 bZY
 bZY
 csh
@@ -72744,9 +74230,17 @@ aaa
 aaa
 cyM
 cyM
+<<<<<<< HEAD
 cqW
 cyM
 cyM
+=======
+bZY
+bZY
+bZY
+bZY
+bZY
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 bZY
 tCx
 giI
@@ -73001,18 +74495,27 @@ aaa
 bNs
 cyM
 cqW
+<<<<<<< HEAD
 cyM
 cyM
 bOw
+=======
+cqW
+cyM
+cyM
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 bZY
 giI
 bZY
+<<<<<<< HEAD
 bZY
 bZY
 acQ
 bZY
 bZY
 bZY
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 cyM
 bWV
 cfC
@@ -73258,6 +74761,7 @@ aaa
 bNs
 cyM
 cyM
+<<<<<<< HEAD
 bOw
 bOw
 bOw
@@ -73270,6 +74774,20 @@ vCE
 ceB
 cyM
 cyM
+=======
+cyM
+cyM
+bOw
+bZY
+pkM
+bZY
+bZY
+bZY
+tCx
+bZY
+bZY
+bZY
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 cyM
 bWV
 bWV
@@ -73431,6 +74949,7 @@ aaa
 pmj
 aed
 pmj
+<<<<<<< HEAD
 aht
 pmj
 pmj
@@ -73441,6 +74960,18 @@ pmj
 pmj
 aht
 aht
+=======
+aht
+pmj
+pmj
+pmj
+aht
+pmj
+pmj
+pmj
+aaa
+aaa
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 azH
 aaa
 aaa
@@ -73515,7 +75046,11 @@ aaa
 bNs
 cqW
 bOw
+<<<<<<< HEAD
 bOw
+=======
+cyM
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 bOw
 bOw
 bOw
@@ -73781,7 +75316,11 @@ bUC
 bOw
 ceB
 naa
+<<<<<<< HEAD
 bZY
+=======
+ceB
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 cyM
 cyM
 cyM
@@ -74785,6 +76324,10 @@ aaa
 aaa
 aaa
 aaa
+<<<<<<< HEAD
+=======
+aaa
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 pmj
 aaa
 aaa
@@ -77019,7 +78562,11 @@ aaa
 afU
 afU
 pfz
+<<<<<<< HEAD
 afU
+=======
+vdJ
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 afU
 afU
 gYA
@@ -80882,6 +82429,7 @@ nat
 ajM
 amg
 amg
+<<<<<<< HEAD
 ayQ
 amg
 ayQ
@@ -80891,6 +82439,16 @@ amd
 nPR
 ajM
 ajM
+=======
+anB
+ana
+pIv
+apI
+siG
+alv
+asx
+aty
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 ajM
 ajM
 mNf
@@ -82718,9 +84276,15 @@ lzq
 aQz
 aGK
 aXK
+<<<<<<< HEAD
 cKb
 cVX
 vSA
+=======
+aYK
+cNL
+keh
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 aXK
 bdf
 bdf
@@ -83182,8 +84746,12 @@ aaa
 aaa
 pmj
 bRC
+<<<<<<< HEAD
 aiQ
 aiQ
+=======
+agP
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 agQ
 aiQ
 ahL
@@ -83193,6 +84761,7 @@ ahL
 ahL
 ahL
 ahL
+<<<<<<< HEAD
 ahL
 amg
 pIv
@@ -83200,6 +84769,15 @@ aos
 aFd
 amg
 htc
+=======
+aml
+ana
+pIv
+aos
+pIv
+apO
+ekV
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 arp
 lHg
 pgz
@@ -83951,6 +85529,10 @@ cFB
 aaa
 aaa
 aaa
+<<<<<<< HEAD
+=======
+aaa
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 pmj
 aaa
 agQ
@@ -84207,6 +85789,11 @@ aaa
 aaa
 aaa
 aaa
+<<<<<<< HEAD
+=======
+cFB
+pmj
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 aaa
 pmj
 bRC
@@ -84465,11 +86052,19 @@ aaa
 aaa
 aaa
 aaa
+<<<<<<< HEAD
 aaa
 aaa
 bRC
 aaa
 aiQ
+=======
+pmj
+bRC
+agP
+cnN
+ahq
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 cnT
 aOM
 aQB
@@ -84722,6 +86317,10 @@ aaa
 aaa
 aaa
 aaa
+<<<<<<< HEAD
+=======
+pmj
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 aaa
 aaa
 pmj
@@ -84979,6 +86578,10 @@ aaa
 aaa
 aaa
 aaa
+<<<<<<< HEAD
+=======
+pmj
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 aaa
 aaa
 pmj
@@ -85236,6 +86839,10 @@ aaa
 aaa
 aaa
 aaa
+<<<<<<< HEAD
+=======
+pmj
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 aaa
 aaa
 pmj
@@ -85493,6 +87100,10 @@ aaa
 aaa
 aaa
 aaa
+<<<<<<< HEAD
+=======
+pmj
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 aaa
 aaa
 pmj
@@ -85603,6 +87214,7 @@ bDi
 bDi
 bXk
 oAW
+<<<<<<< HEAD
 bXk
 aht
 aht
@@ -85610,6 +87222,15 @@ aht
 aht
 bRC
 bRC
+=======
+hTr
+aaa
+aaa
+aaa
+eNF
+aaa
+aaa
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 aaa
 aaa
 aaa
@@ -85750,6 +87371,7 @@ aaa
 aaa
 aaa
 aaa
+<<<<<<< HEAD
 aaa
 aaa
 aaa
@@ -85759,6 +87381,17 @@ aaa
 aaa
 bRC
 aiQ
+=======
+pmj
+bRC
+agP
+agQ
+agQ
+agQ
+agP
+agP
+agP
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 ajs
 aiR
 akU
@@ -85792,8 +87425,13 @@ ney
 ezV
 mhT
 umH
+<<<<<<< HEAD
 dRn
 aPz
+=======
+aKP
+aPy
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 lxE
 aRL
 aSD
@@ -86010,10 +87648,17 @@ aaa
 aaa
 aaa
 aaa
+<<<<<<< HEAD
 aaa
 aaa
 aaa
 aaa
+=======
+bRC
+bRC
+bRC
+bRC
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 bRC
 bRC
 ajs
@@ -86408,6 +88053,10 @@ aaa
 aaa
 aaa
 aaa
+<<<<<<< HEAD
+=======
+aaa
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 bRC
 aaa
 aaa
@@ -86789,7 +88438,11 @@ aaa
 bRC
 ajs
 iHx
+<<<<<<< HEAD
 lYh
+=======
+akX
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 alJ
 amy
 alJ
@@ -86863,7 +88516,11 @@ bkh
 vcg
 dPC
 bFO
+<<<<<<< HEAD
 ugn
+=======
+iLP
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 eZm
 nms
 bEr
@@ -86922,6 +88579,10 @@ aaa
 aaa
 aaa
 aaa
+<<<<<<< HEAD
+=======
+aaa
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 bRC
 aaa
 aaa
@@ -87074,10 +88735,17 @@ axp
 aHO
 aIO
 unN
+<<<<<<< HEAD
 aKT
 aPz
 aLL
 nGY
+=======
+aKQ
+aLG
+pZK
+aKQ
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 aPA
 hSI
 aRN
@@ -87155,6 +88823,10 @@ bXk
 aht
 aht
 aht
+<<<<<<< HEAD
+=======
+aht
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 bRC
 bRC
 bRC
@@ -87624,6 +89296,7 @@ miP
 qNn
 tdH
 udN
+<<<<<<< HEAD
 kAx
 lNg
 pXn
@@ -87637,6 +89310,21 @@ oAk
 geH
 idG
 bkL
+=======
+eQS
+oKU
+vtd
+oXt
+dGV
+vWQ
+xZN
+oTE
+uYr
+dvw
+qyt
+oXt
+mlq
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 bjc
 gsW
 bPB
@@ -88448,6 +90136,11 @@ ahi
 aaa
 aaa
 aaa
+<<<<<<< HEAD
+=======
+aaa
+aaa
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 pWb
 aaa
 aaa
@@ -88596,7 +90289,10 @@ aht
 aYP
 cej
 bRC
+<<<<<<< HEAD
 atY
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 arA
 arA
 vcu
@@ -88705,6 +90401,11 @@ cdm
 aht
 aht
 aht
+<<<<<<< HEAD
+=======
+aht
+aht
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 pWb
 aaa
 aaa
@@ -89219,6 +90920,10 @@ bXk
 bRC
 aht
 aht
+<<<<<<< HEAD
+=======
+aht
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 pWb
 aaa
 aaa
@@ -89472,10 +91177,17 @@ mrO
 mrO
 aLs
 nsL
+<<<<<<< HEAD
 bXk
 bRC
 aaa
 aaa
+=======
+cbj
+cdm
+cdm
+aht
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 pWb
 aaa
 aaa
@@ -89624,9 +91336,14 @@ aht
 aht
 aht
 bRC
+<<<<<<< HEAD
 bRC
 arO
 hzL
+=======
+aqJ
+arK
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 asS
 asS
 eeC
@@ -89640,10 +91357,17 @@ aCK
 wji
 aAB
 aGo
+<<<<<<< HEAD
 bdh
 aHV
 aIO
 dXB
+=======
+aHf
+wKT
+aIW
+dRO
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 bdh
 ovF
 aKT
@@ -89898,10 +91622,16 @@ aEF
 aAB
 aGp
 aHX
+<<<<<<< HEAD
 aHV
 aIO
 dXB
 aHX
+=======
+aIW
+dRO
+bdh
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 pZp
 aKT
 qFF
@@ -89987,9 +91717,15 @@ dZj
 hLD
 ftY
 mZR
+<<<<<<< HEAD
 bRC
 aaa
 aaa
+=======
+ahi
+cdm
+aht
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 pWb
 aaa
 aaa
@@ -90157,8 +91893,13 @@ aGq
 aIW
 onV
 aIX
+<<<<<<< HEAD
 hdU
 bHT
+=======
+dRO
+bdh
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 vfP
 aKT
 qFF
@@ -90216,10 +91957,17 @@ mBL
 bSH
 obc
 bQr
+<<<<<<< HEAD
 kDG
 twj
 ppo
 lWn
+=======
+bUP
+bVL
+bWv
+gBa
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 bYf
 eRo
 bZI
@@ -90412,10 +92160,16 @@ aEH
 aAB
 aGr
 aHX
+<<<<<<< HEAD
 aHV
 aDZ
 dXB
 aHX
+=======
+aIW
+dRO
+bdh
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 wcX
 aKT
 loV
@@ -90652,7 +92406,11 @@ aht
 aht
 aht
 bRC
+<<<<<<< HEAD
 bRC
+=======
+aqJ
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 arO
 lci
 asS
@@ -90669,10 +92427,15 @@ wji
 aAB
 aGs
 aIY
+<<<<<<< HEAD
 aHV
 aDZ
 dXB
 aIY
+=======
+dRO
+bdh
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 cNN
 aKT
 loV
@@ -90684,6 +92447,16 @@ pkv
 aPE
 aWh
 qTS
+<<<<<<< HEAD
+=======
+aYd
+aYZ
+bag
+cpo
+cpt
+bah
+bag
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 aPE
 aYZ
 anI
@@ -91018,6 +92791,10 @@ mZR
 bRC
 aaa
 aaa
+<<<<<<< HEAD
+=======
+aaa
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 pWb
 aaa
 aaa
@@ -91242,7 +93019,11 @@ xDz
 bRm
 gHX
 bSK
+<<<<<<< HEAD
 kDV
+=======
+qlL
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 bQr
 yer
 ejQ
@@ -91532,6 +93313,10 @@ jMx
 bRC
 aaa
 aaa
+<<<<<<< HEAD
+=======
+aaa
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 pWb
 aaa
 aaa
@@ -91680,7 +93465,10 @@ aht
 aht
 aht
 bRC
+<<<<<<< HEAD
 atY
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 arA
 arA
 bBD
@@ -92041,8 +93829,13 @@ qmQ
 ciI
 ftb
 dfr
+<<<<<<< HEAD
 cnW
 dak
+=======
+kzB
+mZR
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 bRC
 aaa
 aaa
@@ -92554,9 +94347,15 @@ ulY
 ulY
 hGe
 prr
+<<<<<<< HEAD
 mZR
 mZR
 mZR
+=======
+bXk
+aht
+aht
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 bRC
 aaa
 aaa
@@ -92725,7 +94524,11 @@ enW
 xRf
 aGv
 lIk
+<<<<<<< HEAD
 mIo
+=======
+qdy
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 aDZ
 dXB
 aKZ
@@ -93801,7 +95604,11 @@ ooB
 bBp
 tZr
 bIv
+<<<<<<< HEAD
 fzi
+=======
+bJE
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 bJP
 bJP
 bJP
@@ -93813,10 +95620,17 @@ bQE
 bSa
 bJP
 bJP
+<<<<<<< HEAD
 kTe
 nIT
 tGJ
 jlb
+=======
+bJP
+vRL
+bJP
+bJP
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 bJP
 bJP
 bXk
@@ -94023,9 +95837,15 @@ aSa
 jCx
 aUf
 aUf
+<<<<<<< HEAD
 xii
 mhM
 pPT
+=======
+aWq
+vWb
+aYl
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 aUf
 bap
 bbw
@@ -94330,8 +96150,13 @@ dNr
 csl
 cFh
 adp
+<<<<<<< HEAD
 bQI
 tOv
+=======
+bWJ
+bXs
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 bJP
 bRC
 bJP
@@ -94829,7 +96654,11 @@ hEW
 opK
 eGg
 bRW
+<<<<<<< HEAD
 etO
+=======
+bJH
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 bJP
 bJP
 bOj
@@ -94840,7 +96669,11 @@ bJP
 bJP
 bJP
 bJP
+<<<<<<< HEAD
 iot
+=======
+bTK
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 acV
 qHk
 ycS
@@ -95086,9 +96919,15 @@ hYE
 bAt
 nRj
 bRX
+<<<<<<< HEAD
 irB
 bJP
 tBN
+=======
+cqE
+bJP
+bLY
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 doH
 cGs
 vkU
@@ -95343,9 +97182,15 @@ bAu
 bAu
 bfO
 cqx
+<<<<<<< HEAD
 cCx
 bJP
 lba
+=======
+bJJ
+bJP
+bTH
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 wQV
 lyl
 bQI
@@ -95600,9 +97445,15 @@ rKf
 vJc
 rVQ
 bIC
+<<<<<<< HEAD
 lHj
 bJP
 hHo
+=======
+bJK
+bJP
+bMa
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 jvz
 vkz
 bRw
@@ -95813,10 +97664,17 @@ hzm
 aJf
 aKb
 aLe
+<<<<<<< HEAD
 qza
 kmC
 nwl
 oTX
+=======
+aMd
+aND
+aOO
+mLo
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 aRf
 pYs
 aPY
@@ -95857,9 +97715,15 @@ uUf
 bBz
 bHr
 bID
+<<<<<<< HEAD
 cdv
 bJP
 dDC
+=======
+bJL
+bJP
+bTH
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 jvz
 iVp
 fjD
@@ -96103,6 +97967,7 @@ bqi
 bmM
 sse
 bku
+<<<<<<< HEAD
 vaZ
 sJZ
 uMB
@@ -96117,6 +97982,22 @@ xwr
 jWW
 bJP
 dDC
+=======
+bvF
+rCM
+nCh
+bAx
+bBA
+bBA
+bBA
+bBA
+bBA
+bHs
+bBA
+bJM
+bJP
+bTH
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 jvz
 wXl
 ohT
@@ -96364,6 +98245,7 @@ bvG
 vni
 byO
 bAy
+<<<<<<< HEAD
 sIg
 hID
 ryf
@@ -96374,6 +98256,18 @@ uLo
 bJP
 bJP
 ihx
+=======
+bBB
+bCN
+bDK
+bEZ
+bGe
+bHt
+bIE
+bJP
+bJP
+bTH
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 jvz
 bMf
 xML
@@ -96629,7 +98523,11 @@ bBo
 bCO
 bBo
 bJP
+<<<<<<< HEAD
 thW
+=======
+bKS
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 kom
 xrs
 bPU
@@ -96886,7 +98784,11 @@ aht
 aht
 aaa
 bJP
+<<<<<<< HEAD
 xBO
+=======
+bKT
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 bMf
 iBB
 bMf
@@ -97423,9 +99325,15 @@ bYw
 mQp
 bYw
 bYw
+<<<<<<< HEAD
 qFJ
 qFJ
 aaa
+=======
+bYw
+bYw
+aht
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 pmj
 aaa
 aaa
@@ -97672,6 +99580,7 @@ bUw
 bVj
 adr
 jHn
+<<<<<<< HEAD
 vJw
 bYw
 sNs
@@ -97683,6 +99592,19 @@ xOz
 vip
 mHb
 aht
+=======
+tYk
+bYv
+bZf
+bZO
+caI
+cbA
+ccp
+aac
+aae
+mHb
+aaa
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 pmj
 aaa
 aaa
@@ -98194,7 +100116,11 @@ kmU
 sDn
 rqx
 nEA
+<<<<<<< HEAD
 iVi
+=======
+ots
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 oiL
 ceA
 aht
@@ -98693,14 +100619,24 @@ bLa
 bRC
 bNn
 bRC
+<<<<<<< HEAD
 dpb
 bRC
 bNn
 bRC
+=======
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 bLa
 bRC
 bNn
 bRC
+<<<<<<< HEAD
+=======
+bLa
+bRC
+bNn
+bRC
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 aht
 qFJ
 hVl
@@ -98933,6 +100869,7 @@ wTo
 vXy
 wDl
 byY
+<<<<<<< HEAD
 kGF
 joG
 rkt
@@ -98940,6 +100877,15 @@ fcR
 jtu
 bGl
 bRC
+=======
+bAC
+bBH
+kED
+diy
+bCT
+bGj
+buz
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 bRC
 bJP
 bLb
@@ -99222,7 +101168,11 @@ caN
 rQL
 qFJ
 jcB
+<<<<<<< HEAD
 qFJ
+=======
+bYw
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 bRC
 aht
 pWb
@@ -99453,8 +101403,13 @@ oYp
 obe
 hii
 bGl
+<<<<<<< HEAD
 bRC
 aaa
+=======
+buz
+bRC
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 bJP
 bLd
 bLe
@@ -99711,7 +101666,11 @@ rAp
 bCV
 bAF
 bHy
+<<<<<<< HEAD
 aaa
+=======
+bRC
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 bJP
 bLe
 bMk
@@ -99987,8 +101946,31 @@ bJP
 bJP
 bJP
 aaa
+<<<<<<< HEAD
 qFJ
 qFJ
+=======
+bJP
+bJP
+bJP
+bJP
+bJP
+bJP
+bJP
+bJP
+bJP
+bJP
+bJP
+bJP
+bJP
+bJP
+bJP
+bJP
+bJP
+aaa
+aaa
+bYw
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 caQ
 qFJ
 qFJ
@@ -100244,7 +102226,11 @@ aaa
 aaa
 bRC
 bRC
+<<<<<<< HEAD
 buC
+=======
+bRC
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 qFJ
 wit
 qFJ
@@ -100500,6 +102486,14 @@ pmj
 pmj
 pmj
 pmj
+<<<<<<< HEAD
+=======
+aaa
+aaa
+aaa
+aaa
+aaa
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 aaa
 buC
 jKU
@@ -100751,6 +102745,14 @@ aaa
 aaa
 aaa
 bRC
+<<<<<<< HEAD
+=======
+aaa
+aaa
+aaa
+bRC
+aaa
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 aaa
 aaa
 aaa
@@ -107165,8 +109167,13 @@ lWy
 lWy
 bwm
 huJ
+<<<<<<< HEAD
 rNB
 aht
+=======
+bwm
+pmj
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 aaa
 aed
 aaa
@@ -107422,7 +109429,11 @@ lWy
 lWy
 bwm
 huJ
+<<<<<<< HEAD
 bwm
+=======
+rNB
+>>>>>>> 5d0bc6f4b1 (The NEW-scaster (Newscaster TGUI + Bounty Board) (#7779))
 pmj
 aaa
 aaa
