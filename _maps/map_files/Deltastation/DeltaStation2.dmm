@@ -105312,15 +105312,6 @@
 	dir = 1
 	},
 /area/hallway/secondary/entry)
-"sAJ" = (
-/obj/structure/disposalpipe/segment,
-/obj/effect/turf_decal/tile/red,
-/obj/effect/turf_decal/tile/red{
-	dir = 4
-	},
-/obj/structure/bed/double,
-/turf/open/floor/plasteel,
-/area/security/brig)
 "sBn" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable{
@@ -170469,7 +170460,7 @@ njU
 ljq
 bJy
 bNl
-sAJ
+bNl
 bNl
 bNl
 bNl
