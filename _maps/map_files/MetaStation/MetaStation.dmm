@@ -3833,10 +3833,6 @@
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plating,
 /area/maintenance/disposal)
-"ako" = (
-/obj/structure/lattice,
-/turf/closed/wall,
-/area/maintenance/port/fore)
 "akt" = (
 /obj/structure/table,
 /obj/item/clothing/gloves/color/latex,
@@ -20057,10 +20053,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/customs)
-"bpu" = (
-/obj/structure/lattice,
-/turf/closed/wall/r_wall,
-/area/space/nearstation)
 "bpv" = (
 /obj/structure/sign/warning/securearea{
 	pixel_y = 32
@@ -22720,16 +22712,6 @@
 	dir = 1
 	},
 /area/engine/atmos)
-"bzi" = (
-/obj/structure/lattice,
-/obj/structure/grille,
-/turf/closed/wall/r_wall,
-/area/space/nearstation)
-"bzj" = (
-/obj/structure/grille,
-/obj/structure/lattice,
-/turf/closed/wall/r_wall,
-/area/space/nearstation)
 "bzn" = (
 /obj/machinery/computer/message_monitor{
 	dir = 4
@@ -23190,13 +23172,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/atmos)
-<<<<<<< HEAD
-"bAR" = (
-/obj/structure/grille,
-/turf/closed/wall/r_wall,
-/area/engine/atmos)
-=======
->>>>>>> f5c6ef3f73 (more Meta area fixes (#7811))
 "bAS" = (
 /obj/structure/window/reinforced{
 	dir = 1;
@@ -23787,17 +23762,6 @@
 /obj/machinery/atmospherics/pipe/simple/orange/visible,
 /turf/open/space,
 /area/space/nearstation)
-<<<<<<< HEAD
-"bCA" = (
-/obj/machinery/meter,
-/obj/machinery/atmospherics/pipe/simple/yellow/visible{
-	dir = 4
-	},
-/obj/structure/grille,
-/turf/closed/wall/r_wall,
-/area/engine/atmos)
-=======
->>>>>>> f5c6ef3f73 (more Meta area fixes (#7811))
 "bCB" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/atmos/mix_output{
 	dir = 8
@@ -24412,17 +24376,6 @@
 	},
 /turf/open/space,
 /area/space/nearstation)
-<<<<<<< HEAD
-"bFZ" = (
-/obj/machinery/meter,
-/obj/machinery/atmospherics/pipe/simple/green/visible{
-	dir = 4
-	},
-/obj/structure/grille,
-/turf/closed/wall/r_wall,
-/area/engine/atmos)
-=======
->>>>>>> f5c6ef3f73 (more Meta area fixes (#7811))
 "bGa" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/atmos/mix_input{
 	dir = 8
@@ -25106,7 +25059,6 @@
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
 	},
-/obj/machinery/light,
 /turf/open/floor/plasteel,
 /area/crew_quarters/bar)
 "bIu" = (
@@ -25277,19 +25229,6 @@
 "bJd" = (
 /turf/open/floor/engine/n2o,
 /area/engine/atmos)
-"bJe" = (
-/obj/structure/lattice,
-/obj/structure/grille,
-/obj/structure/lattice,
-/obj/structure/lattice,
-/turf/closed/wall/r_wall,
-/area/space/nearstation)
-"bJf" = (
-/obj/structure/lattice,
-/obj/structure/grille,
-/obj/structure/lattice,
-/turf/closed/wall/r_wall,
-/area/space/nearstation)
 "bJg" = (
 /obj/machinery/telecomms/message_server/preset,
 /turf/open/floor/circuit/telecomms/mainframe,
@@ -25875,15 +25814,6 @@
 	},
 /turf/open/floor/engine/n2o,
 /area/engine/atmos)
-<<<<<<< HEAD
-"bKK" = (
-/obj/structure/grille,
-/obj/structure/lattice,
-/obj/structure/lattice,
-/turf/closed/wall/r_wall,
-/area/space/nearstation)
-=======
->>>>>>> f5c6ef3f73 (more Meta area fixes (#7811))
 "bKL" = (
 /obj/machinery/telecomms/processor/preset_two,
 /turf/open/floor/circuit/telecomms/mainframe,
@@ -26193,7 +26123,7 @@
 /obj/structure/table,
 /obj/machinery/microwave{
 	pixel_x = -3;
-	pixel_y = 4
+	pixel_y = 6
 	},
 /obj/machinery/button/door{
 	id = "kitchenwindow";
@@ -26207,7 +26137,7 @@
 /obj/structure/table,
 /obj/machinery/microwave{
 	pixel_x = -3;
-	pixel_y = 4
+	pixel_y = 6
 	},
 /obj/machinery/button/door{
 	id = "kitchen";
@@ -26219,9 +26149,6 @@
 /obj/machinery/light_switch{
 	pixel_x = 6;
 	pixel_y = 26
-	},
-/obj/machinery/light{
-	dir = 1
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/kitchen)
@@ -39892,13 +39819,6 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/aft)
-<<<<<<< HEAD
-"cDL" = (
-/obj/structure/lattice,
-/turf/closed/wall/r_wall,
-/area/medical/virology)
-=======
->>>>>>> f5c6ef3f73 (more Meta area fixes (#7811))
 "cDM" = (
 /obj/structure/disposalpipe/segment{
 	dir = 9
@@ -55939,10 +55859,6 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/plasteel,
 /area/security/brig)
-"hZi" = (
-/obj/structure/lattice,
-/turf/closed/wall,
-/area/science/shuttledock)
 "hZn" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -66981,10 +66897,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/science/server)
-"ovZ" = (
-/obj/structure/lattice,
-/turf/closed/wall,
-/area/crew_quarters/cryopods)
 "owl" = (
 /obj/machinery/door/airlock/maintenance{
 	name = "Storage Room";
@@ -76216,16 +76128,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
-"tYI" = (
-/obj/effect/turf_decal/tile/bar,
-/obj/effect/turf_decal/tile/bar{
-	dir = 1
-	},
-/obj/machinery/light{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/crew_quarters/bar)
 "tYS" = (
 /obj/machinery/hydroponics/constructable,
 /obj/effect/turf_decal/stripes/line{
@@ -94462,7 +94364,7 @@ aRG
 aRG
 aRG
 aof
-ako
+dne
 aRG
 dne
 aRG
@@ -96769,7 +96671,7 @@ aaa
 aaa
 aaa
 aaa
-ako
+dne
 aRG
 aRG
 aRG
@@ -97026,7 +96928,7 @@ aaa
 aaa
 aaa
 aaa
-ako
+dne
 dne
 dne
 vfy
@@ -101993,11 +101895,7 @@ cKs
 avr
 cBR
 cBR
-<<<<<<< HEAD
-cDL
-=======
 cBR
->>>>>>> f5c6ef3f73 (more Meta area fixes (#7811))
 cBR
 cBR
 cDG
@@ -102253,11 +102151,7 @@ cBR
 cvn
 cBR
 cBR
-<<<<<<< HEAD
-cIy
-=======
 kvP
->>>>>>> f5c6ef3f73 (more Meta area fixes (#7811))
 cIr
 cIr
 xOG
@@ -117584,7 +117478,7 @@ aaa
 aaa
 aaf
 aaa
-ovZ
+wLz
 wLz
 wLz
 wLz
@@ -117841,7 +117735,7 @@ aaa
 aaa
 aaf
 aaa
-ovZ
+wLz
 sGK
 koT
 iMM
@@ -118412,7 +118306,7 @@ bAn
 sQH
 bwO
 whD
-tYI
+bwO
 bBT
 bKj
 bLK
@@ -122306,7 +122200,7 @@ fmT
 vlA
 dQI
 iHM
-hZi
+mjJ
 aaa
 aaa
 aaa
@@ -125119,11 +125013,7 @@ cjc
 bxc
 aaf
 aaa
-<<<<<<< HEAD
-bzi
-=======
 beq
->>>>>>> f5c6ef3f73 (more Meta area fixes (#7811))
 aaa
 aai
 aaa
@@ -125380,15 +125270,9 @@ ckG
 bxc
 aaf
 aaa
-<<<<<<< HEAD
-bzi
-aaa
-bzj
-=======
 beq
 aaa
 beq
->>>>>>> f5c6ef3f73 (more Meta area fixes (#7811))
 aaf
 aaf
 aaf
@@ -125643,15 +125527,9 @@ cjc
 bxc
 aaf
 aaa
-<<<<<<< HEAD
-bzi
-aaa
-bzj
-=======
 beq
 aaa
 beq
->>>>>>> f5c6ef3f73 (more Meta area fixes (#7811))
 aaa
 aaa
 aaa
@@ -125906,15 +125784,9 @@ bxc
 bxc
 aaf
 aaf
-<<<<<<< HEAD
-bzi
-aaa
-bzj
-=======
 beq
 aaa
 beq
->>>>>>> f5c6ef3f73 (more Meta area fixes (#7811))
 aaf
 aaa
 aaa
@@ -126169,11 +126041,7 @@ cjf
 bxc
 aaf
 aaa
-<<<<<<< HEAD
-bzi
-=======
 beq
->>>>>>> f5c6ef3f73 (more Meta area fixes (#7811))
 aaa
 aai
 aaa
@@ -126430,15 +126298,9 @@ ckH
 bxc
 aaf
 aaa
-<<<<<<< HEAD
-bzi
-aaa
-bzj
-=======
 beq
 aaa
 beq
->>>>>>> f5c6ef3f73 (more Meta area fixes (#7811))
 aaa
 aaa
 aaa
@@ -126695,11 +126557,7 @@ aaf
 aaa
 aai
 aaa
-<<<<<<< HEAD
-bzj
-=======
 beq
->>>>>>> f5c6ef3f73 (more Meta area fixes (#7811))
 aaf
 aaa
 aaa
@@ -126954,15 +126812,9 @@ bxc
 bxc
 aaf
 aaf
-<<<<<<< HEAD
-bzi
-aaa
-bzj
-=======
 beq
 aaa
 beq
->>>>>>> f5c6ef3f73 (more Meta area fixes (#7811))
 aaa
 aaa
 aaa
@@ -127217,11 +127069,7 @@ ckI
 bxc
 aaf
 aaa
-<<<<<<< HEAD
-bzj
-=======
 beq
->>>>>>> f5c6ef3f73 (more Meta area fixes (#7811))
 aaf
 aai
 aaf
@@ -127478,15 +127326,9 @@ ckJ
 bxc
 aaf
 aaa
-<<<<<<< HEAD
-bzi
-aaa
-bzj
-=======
 beq
 aaa
 beq
->>>>>>> f5c6ef3f73 (more Meta area fixes (#7811))
 aaa
 aaa
 aaa
@@ -127741,11 +127583,7 @@ ckI
 bxc
 aaf
 aaa
-<<<<<<< HEAD
-bJf
-=======
 beq
->>>>>>> f5c6ef3f73 (more Meta area fixes (#7811))
 aaf
 beq
 aaf
@@ -128004,11 +127842,7 @@ aaf
 aaa
 aaf
 aaa
-<<<<<<< HEAD
-bzj
-=======
 beq
->>>>>>> f5c6ef3f73 (more Meta area fixes (#7811))
 aaa
 aaa
 aaa
@@ -128263,15 +128097,9 @@ aaf
 aaf
 aaf
 aaf
-<<<<<<< HEAD
-bzj
-bzj
-bzj
-=======
 beq
 beq
 beq
->>>>>>> f5c6ef3f73 (more Meta area fixes (#7811))
 aaf
 aaf
 aaf
@@ -130780,17 +130608,6 @@ aaa
 aaf
 aaa
 aaa
-<<<<<<< HEAD
-bpu
-bpu
-bpu
-bpu
-svg
-bpu
-bpu
-bpu
-bpu
-=======
 beq
 beq
 beq
@@ -130800,7 +130617,6 @@ beq
 beq
 beq
 beq
->>>>>>> f5c6ef3f73 (more Meta area fixes (#7811))
 svg
 lMJ
 aaa
@@ -130822,36 +130638,6 @@ aaf
 aaf
 aaf
 aai
-<<<<<<< HEAD
-bzj
-bzj
-bzj
-bzj
-bzj
-bJe
-bzj
-bzj
-aai
-bzj
-bzj
-bzj
-bKK
-bzj
-bzj
-bzj
-bzj
-bJe
-bzj
-aai
-bzj
-aaf
-aaf
-aai
-bzj
-aai
-bzj
-bzj
-=======
 beq
 beq
 beq
@@ -130880,7 +130666,6 @@ beq
 aai
 beq
 beq
->>>>>>> f5c6ef3f73 (more Meta area fixes (#7811))
 aaf
 aaf
 aaa
@@ -131366,27 +131151,6 @@ aaa
 aaf
 aaf
 aai
-<<<<<<< HEAD
-bzi
-bzi
-bzi
-bzi
-bzi
-bzi
-bJf
-bzi
-bzi
-bzi
-bzi
-bzi
-bzi
-bJf
-bzi
-bzi
-bzi
-bzi
-bJf
-=======
 beq
 beq
 beq
@@ -131406,7 +131170,6 @@ beq
 beq
 beq
 beq
->>>>>>> f5c6ef3f73 (more Meta area fixes (#7811))
 aaf
 aaf
 aaf
@@ -131902,29 +131665,6 @@ aaa
 aaf
 aaf
 aai
-<<<<<<< HEAD
-bzj
-bzj
-aai
-bzj
-siF
-bzj
-bzj
-bKK
-bzj
-bzj
-bzj
-bzj
-siF
-aai
-bzj
-bzj
-bzj
-bzj
-bKK
-bzj
-bzj
-=======
 beq
 beq
 aai
@@ -131946,7 +131686,6 @@ beq
 beq
 beq
 beq
->>>>>>> f5c6ef3f73 (more Meta area fixes (#7811))
 anS
 aaa
 aaa
