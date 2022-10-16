@@ -11952,11 +11952,6 @@
 /turf/open/floor/plasteel/dark,
 /area/quartermaster/exploration_prep)
 "dbi" = (
-<<<<<<< HEAD
-/obj/structure/grille,
-/turf/closed/wall,
-/area/space/nearstation)
-=======
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
@@ -11974,7 +11969,6 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/plasteel/white,
 /area/science/explab)
->>>>>>> 9f7c532e18 (CorgStation BeeForum Smoothening 2 (#7790))
 "dbq" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible,
 /obj/machinery/atmospherics/pipe/simple/cyan/visible{
