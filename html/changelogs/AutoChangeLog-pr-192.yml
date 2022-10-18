@@ -1,0 +1,5 @@
+author: SinguloMirrorbot
+delete-after: true
+changes:
+  - bugfix: the text "real_feedback" is no longer yielded when cleaning a rune with
+      a nullrod
