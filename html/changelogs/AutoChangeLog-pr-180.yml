@@ -1,0 +1,4 @@
+author: SinguloMirrorbot
+delete-after: true
+changes:
+  - bugfix: Fixed a parallax runtime involving null clients
