@@ -1,0 +1,4 @@
+author: SinguloMirrorbot
+delete-after: true
+changes:
+  - bugfix: Purchased character slots will become available immediately
