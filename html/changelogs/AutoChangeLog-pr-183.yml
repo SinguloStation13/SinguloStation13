@@ -1,5 +1,0 @@
-author: SinguloMirrorbot
-delete-after: true
-changes:
-  - bugfix: Hiveminds can properly get Assert Dominance now
-  - bugfix: Awakened vessels are properly affected by One Mind

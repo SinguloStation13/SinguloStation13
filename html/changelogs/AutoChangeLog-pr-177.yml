@@ -1,4 +1,0 @@
-author: SinguloMirrorbot
-delete-after: true
-changes:
-  - bugfix: Repairing prosthetic limbs with non-welding tool welders works now

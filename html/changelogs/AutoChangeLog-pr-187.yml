@@ -1,4 +1,0 @@
-author: SinguloMirrorbot
-delete-after: true
-changes:
-  - bugfix: Romerol properly pulls ghosts now

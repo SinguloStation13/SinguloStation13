@@ -1,5 +1,0 @@
-author: SinguloMirrorbot
-delete-after: true
-changes:
-  - balance: The movespeed of vehicles has been modified to be proportional to the
-      configuration run delay value.

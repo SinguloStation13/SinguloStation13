@@ -1,4 +1,0 @@
-author: SinguloMirrorbot
-delete-after: true
-changes:
-  - bugfix: Fixed some runtimes in Cyborg Self Monitoring and Robot Control.
