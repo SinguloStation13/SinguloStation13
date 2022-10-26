@@ -26244,15 +26244,15 @@
 /turf/open/space,
 /area/space/nearstation)
 "csA" = (
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "engsm";
-	name = "Radiation Chamber Shutters"
-	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
+	},
+/obj/machinery/door/poddoor/shutters/radiation/preopen{
+	id = "engsm";
+	name = "Radiation Chamber Shutters"
 	},
 /turf/open/floor/plating,
 /area/engine/supermatter)
@@ -28204,16 +28204,16 @@
 /turf/open/floor/engine,
 /area/engine/engineering)
 "cEt" = (
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "engsm";
-	name = "Radiation Chamber Shutters"
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
+	},
+/obj/machinery/door/poddoor/shutters/radiation/preopen{
+	id = "engsm";
+	name = "Radiation Chamber Shutters"
 	},
 /turf/open/floor/plating,
 /area/engine/supermatter)
@@ -28272,16 +28272,16 @@
 /turf/open/floor/engine,
 /area/engine/supermatter)
 "cEA" = (
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "engsm";
-	name = "Radiation Chamber Shutters"
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
+	},
+/obj/machinery/door/poddoor/shutters/radiation/preopen{
+	id = "engsm";
+	name = "Radiation Chamber Shutters"
 	},
 /turf/open/floor/plating,
 /area/engine/supermatter)
@@ -28328,10 +28328,6 @@
 /turf/open/space,
 /area/space/nearstation)
 "cEM" = (
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "engsm";
-	name = "Radiation Chamber Shutters"
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -28340,13 +28336,13 @@
 	icon_state = "4-8"
 	},
 /obj/item/tank/internals/plasma,
-/turf/open/floor/plating,
-/area/engine/supermatter)
-"cET" = (
-/obj/machinery/door/poddoor/shutters/preopen{
+/obj/machinery/door/poddoor/shutters/radiation/preopen{
 	id = "engsm";
 	name = "Radiation Chamber Shutters"
 	},
+/turf/open/floor/plating,
+/area/engine/supermatter)
+"cET" = (
 /obj/effect/decal/cleanable/oil,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/line{
@@ -28354,6 +28350,10 @@
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
+	},
+/obj/machinery/door/poddoor/shutters/radiation/preopen{
+	id = "engsm";
+	name = "Radiation Chamber Shutters"
 	},
 /turf/open/floor/plating,
 /area/engine/supermatter)
@@ -28430,15 +28430,15 @@
 	},
 /area/science/research)
 "cFj" = (
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "engsm";
-	name = "Radiation Chamber Shutters"
-	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
+	},
+/obj/machinery/door/poddoor/shutters/radiation/preopen{
+	id = "engsm";
+	name = "Radiation Chamber Shutters"
 	},
 /turf/open/floor/plating,
 /area/engine/supermatter)
@@ -36295,6 +36295,37 @@
 	},
 /turf/open/floor/plasteel,
 /area/storage/primary)
+<<<<<<< HEAD
+=======
+"hfE" = (
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plasteel,
+/area/science/misc_lab)
+"hfS" = (
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
+"hfY" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 1
+	},
+/obj/structure/table/glass,
+/obj/machinery/reagentgrinder,
+/obj/item/stack/sheet/mineral/plasma/five,
+/obj/machinery/requests_console{
+	department = "Medbay";
+	departmentType = 1;
+	name = "Medbay RC";
+	pixel_x = 30;
+	pixel_y = 1
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/virology)
+>>>>>>> d86158393b ([Port-ish]Buildable shutters, filling cabinet recipe and dedicated category for crafting structures (#7813))
 "hgc" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/yellow{
