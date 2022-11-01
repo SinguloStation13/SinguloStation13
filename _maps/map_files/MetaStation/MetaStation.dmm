@@ -38137,6 +38137,7 @@
 /turf/open/floor/plasteel,
 /area/science/mixing)
 "cyA" = (
+<<<<<<< HEAD
 /obj/structure/closet/wardrobe/science_white,
 /obj/structure/window/reinforced{
 	dir = 4
@@ -38148,6 +38149,39 @@
 /obj/machinery/firealarm{
 	pixel_y = 24
 	},
+=======
+/obj/machinery/firealarm{
+	pixel_y = 26
+	},
+/obj/effect/turf_decal/trimline/purple/filled/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/bot,
+/obj/structure/closet/l3closet/scientist,
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
+"cyB" = (
+/obj/structure/sign/poster/official/random{
+	pixel_y = 32
+	},
+/obj/effect/turf_decal/trimline/purple/filled/line{
+	dir = 1
+	},
+/obj/structure/closet/l3closet/scientist,
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
+"cyC" = (
+/obj/machinery/processor/slime,
+/obj/effect/turf_decal/trimline/purple/filled/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
+"cyE" = (
+/obj/machinery/computer/camera_advanced/xenobio,
+>>>>>>> 4db9d32b16 (ffs (#7999))
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
@@ -82628,11 +82662,18 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/maintenance/department/science)
+=======
+/obj/machinery/monkey_recycler,
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
+>>>>>>> 4db9d32b16 (ffs (#7999))
 "xEi" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
