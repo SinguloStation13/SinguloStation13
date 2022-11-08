@@ -1,4 +1,16 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+<<<<<<< HEAD
+=======
+"ab" = (
+/obj/effect/turf_decal/delivery,
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/mineral/titanium,
+/area/shuttle/escape)
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 "aH" = (
 /obj/structure/chair/fancy/sofa/corp{
 	color = "#7fb3d5";
@@ -39,7 +51,14 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
 	},
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
+=======
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "dR" = (
@@ -192,9 +211,23 @@
 	pixel_x = 4;
 	pixel_y = 4
 	},
+<<<<<<< HEAD
 /obj/item/storage/firstaid/regular,
 /obj/item/crowbar/large,
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
+=======
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/corner,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "gH" = (
@@ -300,8 +333,36 @@
 	},
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
+<<<<<<< HEAD
 "mY" = (
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
+=======
+"lQ" = (
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/turf/open/floor/mineral/titanium/white,
+/area/shuttle/escape)
+"mW" = (
+/obj/effect/turf_decal/delivery,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/mineral/titanium,
+/area/shuttle/escape)
+"nw" = (
+/obj/effect/turf_decal/stripes/corner,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "nA" = (
@@ -401,8 +462,23 @@
 /obj/machinery/light{
 	dir = 4
 	},
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
 /turf/open/floor/mineral/plastitanium/red/brig,
+=======
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/corner,
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/mineral/titanium,
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 /area/shuttle/escape)
 "sz" = (
 /obj/structure/table,
@@ -413,7 +489,14 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
+=======
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "tr" = (
@@ -565,6 +648,7 @@
 /obj/structure/chair/fancy/shuttle{
 	dir = 8
 	},
+<<<<<<< HEAD
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
 	},
@@ -573,6 +657,13 @@
 	},
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
 /turf/open/floor/mineral/plastitanium/red/brig,
+=======
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/mineral/titanium,
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 /area/shuttle/escape)
 "wD" = (
 /obj/structure/chair/fancy/shuttle{
@@ -584,10 +675,17 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
+<<<<<<< HEAD
 /obj/machinery/keycard_auth{
 	pixel_x = -24
 	},
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
+=======
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "xX" = (
@@ -614,6 +712,21 @@
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/pod/dark,
 /area/shuttle/escape)
+<<<<<<< HEAD
+=======
+"yh" = (
+/obj/effect/turf_decal/delivery,
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/mineral/titanium,
+/area/shuttle/escape)
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 "yi" = (
 /obj/structure/table,
 /obj/item/storage/toolbox/emergency{
@@ -697,7 +810,21 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/escape)
+<<<<<<< HEAD
 "zZ" = (
+=======
+"zS" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/mineral/titanium,
+/area/shuttle/escape)
+"Aa" = (
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
 	},
@@ -923,6 +1050,23 @@
 	},
 /turf/open/floor/pod/dark,
 /area/shuttle/escape)
+<<<<<<< HEAD
+=======
+"Ij" = (
+/obj/effect/turf_decal/arrows{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/corner,
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/mineral/titanium,
+/area/shuttle/escape)
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 "Ix" = (
 /obj/effect/turf_decal/delivery,
 /obj/effect/turf_decal/stripes/corner{
@@ -933,6 +1077,38 @@
 	},
 /turf/open/floor/pod/dark,
 /area/shuttle/escape)
+<<<<<<< HEAD
+=======
+"Iz" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/mineral/titanium,
+/area/shuttle/escape)
+"IB" = (
+/obj/effect/turf_decal/arrows{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/mineral/titanium,
+/area/shuttle/escape)
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 "IP" = (
 /obj/machinery/computer/crew,
 /obj/effect/turf_decal/bot,
@@ -1107,6 +1283,23 @@
 	},
 /turf/open/floor/pod/dark,
 /area/shuttle/escape)
+<<<<<<< HEAD
+=======
+"NG" = (
+/obj/effect/turf_decal/arrows{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/corner,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/mineral/titanium,
+/area/shuttle/escape)
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 "NK" = (
 /obj/structure/tank_dispenser/oxygen{
 	layer = 2.7;
@@ -1130,10 +1323,32 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/stripes/corner{
+<<<<<<< HEAD
 	dir = 4
 	},
 /obj/effect/turf_decal/stripes/corner,
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
+=======
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/mineral/titanium,
+/area/shuttle/escape)
+"PQ" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "PU" = (
@@ -1162,9 +1377,124 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/escape)
+<<<<<<< HEAD
 "RX" = (
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/escape)
+=======
+"Rq" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/mineral/titanium,
+/area/shuttle/escape)
+"Rz" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/mineral/titanium,
+/area/shuttle/escape)
+"RL" = (
+/obj/effect/turf_decal/arrows{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/mineral/titanium,
+/area/shuttle/escape)
+"RX" = (
+/turf/open/floor/mineral/titanium/white,
+/area/shuttle/escape)
+"Sc" = (
+/obj/item/storage/box/zipties{
+	pixel_y = 4
+	},
+/obj/item/restraints/handcuffs,
+/obj/item/restraints/handcuffs,
+/obj/effect/turf_decal/stripes/line{
+	dir = 10
+	},
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium/red/brig,
+/area/shuttle/escape)
+"SQ" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/mineral/titanium,
+/area/shuttle/escape)
+"TI" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/mineral/titanium,
+/area/shuttle/escape)
+"TN" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/mineral/titanium,
+/area/shuttle/escape)
+"TO" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 10
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/mineral/titanium,
+/area/shuttle/escape)
+"Ua" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/mineral/titanium,
+/area/shuttle/escape)
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 "Uy" = (
 /obj/structure/sign/nanotrasen,
 /turf/closed/wall/mineral/titanium/nodiagonal,

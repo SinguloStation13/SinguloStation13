@@ -7,6 +7,7 @@
 "aA" = (
 /obj/machinery/door/airlock/shuttle,
 /turf/open/floor/mineral/plastitanium,
+<<<<<<< HEAD
 /area/shuttle/exploration)
 "aO" = (
 /obj/machinery/light{
@@ -17,6 +18,8 @@
 	},
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
 /turf/open/floor/mineral/titanium,
+=======
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 /area/shuttle/exploration)
 "aS" = (
 /obj/structure/bed,
@@ -71,12 +74,15 @@
 "dH" = (
 /obj/machinery/computer/crew,
 /turf/open/floor/mineral/plastitanium,
+<<<<<<< HEAD
 /area/shuttle/exploration)
 "dL" = (
 /obj/structure/table/reinforced,
 /obj/item/toy/plush/beeplushie,
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
 /turf/open/floor/mineral/titanium,
+=======
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 /area/shuttle/exploration)
 "dT" = (
 /obj/machinery/atmospherics/pipe/manifold/purple/visible{
@@ -101,6 +107,7 @@
 	dir = 4
 	},
 /turf/open/floor/carpet,
+<<<<<<< HEAD
 /area/shuttle/exploration)
 "eJ" = (
 /obj/machinery/light{
@@ -114,6 +121,8 @@
 /obj/effect/turf_decal/bot,
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
 /turf/open/floor/mineral/titanium,
+=======
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 /area/shuttle/exploration)
 "fo" = (
 /obj/structure/table/reinforced,
@@ -192,15 +201,19 @@
 	},
 /obj/effect/spawner/lootdrop/minor/kittyears_or_rabbitears,
 /turf/open/floor/wood,
+<<<<<<< HEAD
 /area/shuttle/exploration)
 "iy" = (
 /obj/machinery/vending/boozeomat/pubby_maint,
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
 /turf/open/floor/mineral/titanium,
+=======
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 /area/shuttle/exploration)
 "iF" = (
 /turf/closed/wall/r_wall/syndicate,
 /area/shuttle/exploration)
+<<<<<<< HEAD
 "kt" = (
 /obj/structure/table/reinforced,
 /obj/item/stack/sheet/mineral/plastitanium{
@@ -233,6 +246,41 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/techmaint,
+=======
+"jB" = (
+/obj/structure/table/reinforced,
+/obj/item/reagent_containers/glass/rag{
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/food/drinks/shaker{
+	pixel_x = 4;
+	pixel_y = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/turf/open/floor/mineral/titanium,
+/area/shuttle/exploration)
+"jP" = (
+/obj/machinery/vending/boozeomat/pubby_maint,
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/turf/open/floor/mineral/titanium,
+/area/shuttle/exploration)
+"kB" = (
+/obj/structure/railing/corner{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/turf/open/floor/mineral/titanium,
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 /area/shuttle/exploration)
 "kV" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -376,6 +424,7 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/techmaint,
 /area/shuttle/exploration)
+<<<<<<< HEAD
 "vp" = (
 /obj/structure/tank_dispenser/oxygen,
 /obj/effect/turf_decal/delivery,
@@ -532,6 +581,12 @@
 	},
 /obj/structure/sign/poster/official/random{
 	pixel_x = -32
+=======
+"vh" = (
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 	},
 /turf/open/floor/plasteel/grid/steel,
 /area/shuttle/exploration)
@@ -558,6 +613,7 @@
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/exploration)
+<<<<<<< HEAD
 "Df" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -576,6 +632,227 @@
 /obj/machinery/light,
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
 /turf/open/floor/mineral/titanium,
+=======
+"vp" = (
+/obj/structure/tank_dispenser/oxygen,
+/obj/effect/turf_decal/delivery,
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/corner,
+/obj/structure/sign/warning/vacuum/external{
+	pixel_x = 32
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/exploration)
+"vA" = (
+/obj/structure/reagent_dispensers/fueltank,
+/obj/effect/turf_decal/delivery,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/machinery/firealarm{
+	pixel_y = 26
+	},
+/turf/open/floor/plasteel/grid/steel,
+/area/shuttle/exploration)
+"wy" = (
+/obj/effect/decal/cleanable/glass,
+/obj/structure/chair/fancy/shuttle{
+	dir = 8
+	},
+/turf/open/floor/carpet,
+/area/shuttle/exploration)
+"xd" = (
+/obj/structure/reagent_dispensers/watertank,
+/obj/effect/turf_decal/delivery,
+/obj/structure/extinguisher_cabinet{
+	pixel_y = 30
+	},
+/turf/open/floor/plasteel/grid/steel,
+/area/shuttle/exploration)
+"xe" = (
+/obj/structure/fans/tiny,
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/sand,
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "exploration"
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/shuttle/exploration)
+"xC" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/loading_area{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
+	},
+/turf/open/floor/plasteel/grid/steel,
+/area/shuttle/exploration)
+"xL" = (
+/obj/machinery/vending/cigarette,
+/obj/effect/turf_decal/bot,
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/turf/open/floor/mineral/titanium,
+/area/shuttle/exploration)
+"yx" = (
+/obj/structure/chair/office{
+	dir = 4;
+	name = "tactical swivel chair"
+	},
+/obj/effect/decal/cleanable/oil/streak,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/techmaint,
+/area/shuttle/exploration)
+"yV" = (
+/obj/structure/lattice/catwalk/over,
+/obj/machinery/power/port_gen/pacman,
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
+/obj/structure/sign/warning/nosmoking/circle{
+	pixel_y = 32
+	},
+/turf/open/floor/plating,
+/area/shuttle/exploration)
+"zd" = (
+/obj/effect/turf_decal/tile/neutral/tile_side{
+	dir = 4
+	},
+/obj/structure/table/reinforced,
+/obj/item/stack/sheet/mineral/plastitanium{
+	amount = 30
+	},
+/obj/item/stack/cable_coil/red,
+/obj/item/assembly/prox_sensor{
+	desc = "Used for scanning and alerting when someone enters a certain proximity. This one is slightly shifted to the left.";
+	pixel_x = -6;
+	pixel_y = 6
+	},
+/obj/item/storage/belt/utility{
+	pixel_y = -3
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/generic{
+	pixel_x = -12;
+	pixel_y = 14
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/structure/sign/poster/contraband/random{
+	pixel_y = 32
+	},
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plasteel/techmaint,
+/area/shuttle/exploration)
+"zC" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/structure/closet/crate/large,
+/obj/effect/spawner/lootdrop/maintenance/three,
+/obj/effect/spawner/lootdrop/ruinloot/medical,
+/turf/open/floor/plasteel/grid/steel,
+/area/shuttle/exploration)
+"zG" = (
+/obj/machinery/door/airlock/shuttle,
+/turf/open/floor/mineral/titanium,
+/area/shuttle/exploration)
+"Ai" = (
+/obj/machinery/atmospherics/components/unary/portables_connector/visible{
+	dir = 4
+	},
+/obj/machinery/portable_atmospherics/canister/toxins,
+/obj/effect/turf_decal/bot,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/shuttle/exploration)
+"BP" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/plasteel/grid/steel,
+/area/shuttle/exploration)
+"BR" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/turf/open/floor/mineral/titanium,
+/area/shuttle/exploration)
+"BT" = (
+/obj/effect/turf_decal/box,
+/obj/machinery/atmospherics/pipe/manifold/purple/visible{
+	dir = 1
+	},
+/turf/open/floor/plasteel/techmaint,
+/area/shuttle/exploration)
+"Cf" = (
+/obj/effect/turf_decal/box,
+/obj/structure/closet/crate/critter,
+/mob/living/simple_animal/chicken/turkey{
+	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0);
+	desc = "A veteran of Nanotrasen's Animal Experimentation Program that attempted to replicate the organic space suit that some hostile entities are known to have exhibited, Tom now serves Nanotrasen as the mascot of the Exploration Crew.";
+	dir = 4;
+	health = 200;
+	maxHealth = 200;
+	melee_damage = 5;
+	minbodytemp = 2.7;
+	name = "Tom"
+	},
+/obj/structure/sign/poster/official/random{
+	pixel_x = -32
+	},
+/turf/open/floor/plasteel/grid/steel,
+/area/shuttle/exploration)
+"Cj" = (
+/turf/open/floor/carpet,
+/area/shuttle/exploration)
+"Cx" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/structure/table/reinforced,
+/obj/machinery/cell_charger,
+/obj/item/stock_parts/cell/high,
+/obj/item/stock_parts/cell/high{
+	pixel_x = 7;
+	pixel_y = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/techmaint,
+/area/shuttle/exploration)
+"Df" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/exploration)
+"DG" = (
+/obj/machinery/door/airlock/external/glass,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 /area/shuttle/exploration)
 "Fm" = (
 /obj/structure/railing/corner{
@@ -605,6 +882,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/stripes/line{
+<<<<<<< HEAD
 	dir = 8
 	},
 /turf/open/floor/plasteel/grid/steel,
@@ -631,6 +909,29 @@
 	pixel_x = 24
 	},
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
+=======
+	dir = 8
+	},
+/turf/open/floor/plasteel/grid/steel,
+/area/shuttle/exploration)
+"GJ" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/grid/steel,
+/area/shuttle/exploration)
+"HU" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/techmaint,
+/area/shuttle/exploration)
+"IC" = (
+/obj/structure/table,
+/obj/machinery/chem_dispenser/drinks/beer{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 /turf/open/floor/mineral/titanium,
 /area/shuttle/exploration)
 "IM" = (
@@ -648,6 +949,7 @@
 /obj/machinery/door/airlock/shuttle,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/exploration)
+<<<<<<< HEAD
 "JR" = (
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/glass/rag{
@@ -658,6 +960,17 @@
 	pixel_y = 1
 	},
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
+=======
+"JM" = (
+/obj/structure/table,
+/obj/machinery/chem_dispenser/drinks{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 /turf/open/floor/mineral/titanium,
 /area/shuttle/exploration)
 "Kh" = (
@@ -666,6 +979,7 @@
 	},
 /obj/machinery/light,
 /turf/open/floor/mineral/plastitanium,
+<<<<<<< HEAD
 /area/shuttle/exploration)
 "Kj" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -729,6 +1043,95 @@
 	},
 /obj/structure/window/reinforced{
 	dir = 8
+=======
+/area/shuttle/exploration)
+"Kj" = (
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
+/obj/machinery/door/airlock/external/glass,
+/obj/effect/turf_decal/delivery,
+/obj/docking_port/mobile{
+	dir = 8;
+	dwidth = 14;
+	height = 11;
+	id = "exploration";
+	name = "Exploration Shuttle";
+	port_direction = 3;
+	shuttle_object_type = /datum/orbital_object/shuttle/custom_shuttle;
+	width = 22
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/exploration)
+"Lx" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 10
+	},
+/obj/machinery/button/door{
+	desc = "A remote control switch.";
+	id = "exploration";
+	name = "Exploration Shuttle Shutters";
+	pixel_x = -24
+	},
+/turf/open/floor/plasteel/grid/steel,
+/area/shuttle/exploration)
+"LM" = (
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/plasteel/grid/steel,
+/area/shuttle/exploration)
+"Nj" = (
+/obj/effect/turf_decal/box,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/sand,
+/obj/structure/extinguisher_cabinet{
+	pixel_x = 24
+	},
+/turf/open/floor/plasteel/grid/steel,
+/area/shuttle/exploration)
+"Nt" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/exploration)
+"Nv" = (
+/obj/machinery/telecomms/relay/preset/exploration,
+/obj/effect/turf_decal/delivery,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/door/window,
+/turf/open/floor/plasteel/techmaint,
+/area/shuttle/exploration)
+"NI" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/turf/open/floor/mineral/titanium,
+/area/shuttle/exploration)
+"Oa" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 6
+	},
+/turf/open/floor/plasteel/grid/steel,
+/area/shuttle/exploration)
+"Og" = (
+/obj/structure/window/reinforced/survival_pod{
+	dir = 1
+	},
+/obj/machinery/atmospherics/components/unary/shuttle/heater{
+	dir = 1
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 	},
 /obj/structure/window/reinforced{
 	dir = 4
@@ -848,11 +1251,30 @@
 /obj/item/reagent_containers/spray/cleaner,
 /turf/open/floor/plasteel/grid/steel,
 /area/shuttle/exploration)
+<<<<<<< HEAD
 "Sw" = (
 /obj/machinery/door/airlock/shuttle,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
+=======
+"Sv" = (
+/obj/structure/railing/corner{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/turf/open/floor/mineral/titanium,
+/area/shuttle/exploration)
+"Sw" = (
+/obj/machinery/door/airlock/shuttle,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
@@ -864,8 +1286,33 @@
 "SO" = (
 /turf/open/floor/wood,
 /area/shuttle/exploration)
+<<<<<<< HEAD
 "Tf" = (
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
+=======
+"Tj" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/turf/open/floor/mineral/titanium,
+/area/shuttle/exploration)
+"TI" = (
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = 24
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 /turf/open/floor/mineral/titanium,
 /area/shuttle/exploration)
 "TJ" = (
@@ -876,6 +1323,32 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/stairs,
 /area/shuttle/exploration)
+<<<<<<< HEAD
+=======
+"Ug" = (
+/obj/structure/chair/stool/bar,
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/turf/open/floor/mineral/titanium,
+/area/shuttle/exploration)
+"Us" = (
+/obj/structure/table/reinforced,
+/obj/item/storage/firstaid/regular{
+	pixel_x = -3;
+	pixel_y = 9
+	},
+/obj/item/toy/cards/deck{
+	pixel_x = 2
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/turf/open/floor/mineral/titanium,
+/area/shuttle/exploration)
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 "UN" = (
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/food/drinks/britcup{
@@ -892,6 +1365,18 @@
 	pixel_y = 7
 	},
 /turf/open/floor/carpet,
+<<<<<<< HEAD
+=======
+/area/shuttle/exploration)
+"Vz" = (
+/obj/structure/chair/stool/bar,
+/obj/effect/decal/cleanable/vomit,
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/turf/open/floor/mineral/titanium,
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 /area/shuttle/exploration)
 "VZ" = (
 /turf/open/floor/mineral/titanium,
@@ -915,6 +1400,7 @@
 "Xd" = (
 /obj/structure/chair/fancy/shuttle{
 	dir = 4
+<<<<<<< HEAD
 	},
 /turf/open/floor/carpet,
 /area/shuttle/exploration)
@@ -925,6 +1411,10 @@
 	},
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
 /turf/open/floor/mineral/titanium,
+=======
+	},
+/turf/open/floor/carpet,
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 /area/shuttle/exploration)
 "Xm" = (
 /obj/structure/closet/crate,
@@ -964,6 +1454,7 @@
 	},
 /turf/open/floor/plasteel/techmaint,
 /area/shuttle/exploration)
+<<<<<<< HEAD
 "XD" = (
 /obj/structure/table,
 /obj/machinery/chem_dispenser/drinks/beer{
@@ -972,18 +1463,38 @@
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/exploration)
+=======
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 "XP" = (
 /obj/structure/chair/fancy/shuttle{
 	dir = 8
 	},
 /turf/open/floor/carpet,
 /area/shuttle/exploration)
+<<<<<<< HEAD
 "YJ" = (
 /obj/structure/railing/corner{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
+=======
+"YA" = (
+/obj/structure/table/reinforced,
+/obj/item/toy/plush/beeplushie,
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/turf/open/floor/mineral/titanium,
+/area/shuttle/exploration)
+"YN" = (
+/obj/machinery/light,
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 /turf/open/floor/mineral/titanium,
 /area/shuttle/exploration)
 "Zf" = (
@@ -1171,12 +1682,21 @@ VZ
 VZ
 Fm
 TJ
+<<<<<<< HEAD
 It
 eJ
 Tf
 Tf
 Tf
 Tf
+=======
+Sv
+NI
+vh
+vh
+vh
+vh
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 JF
 ZU
 HU
@@ -1195,12 +1715,21 @@ BR
 BR
 Pb
 Rm
+<<<<<<< HEAD
 YJ
 Iv
 Tf
 Mk
 CZ
 Mk
+=======
+kB
+TI
+vh
+Ug
+Vz
+Ug
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 nG
 Nv
 Gb
@@ -1221,10 +1750,17 @@ nG
 nG
 Sw
 nG
+<<<<<<< HEAD
 Tf
 wo
 JR
 dL
+=======
+vh
+Us
+jB
+YA
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 nG
 Xo
 HU
@@ -1245,12 +1781,21 @@ nG
 RB
 SO
 nG
+<<<<<<< HEAD
 aO
 Tf
 Tf
 Ec
 nG
 kt
+=======
+Tj
+vh
+vh
+YN
+nG
+zd
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 yx
 sy
 WU
@@ -1269,10 +1814,17 @@ nG
 ik
 aS
 nG
+<<<<<<< HEAD
 eM
 Xk
 XD
 iy
+=======
+xL
+JM
+IC
+jP
+>>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 nG
 Cx
 ck
