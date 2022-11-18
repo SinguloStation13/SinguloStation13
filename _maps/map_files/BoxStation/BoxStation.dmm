@@ -1029,8 +1029,19 @@
 	dir = 4;
 	network = list("ss13, engine")
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/showroomfloor,
 /area/security/main)
+=======
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 10
+	},
+/turf/open/floor/plating,
+/area/maintenance/central)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "acQ" = (
 /obj/structure/table/wood,
 /obj/item/folder/red,
@@ -3348,6 +3359,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
@@ -3363,6 +3375,13 @@
 /obj/item/stack/rods/fifty,
 /turf/open/floor/plasteel,
 /area/storage/tools)
+=======
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/bridge)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "alg" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/cable{
@@ -9338,10 +9357,19 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
 	},
+<<<<<<< HEAD
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel,
+=======
+/obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
+/obj/effect/turf_decal/trimline/dark_blue/filled/line,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/dark,
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 /area/bridge)
 "aSv" = (
 /obj/structure/table/reinforced,
@@ -11594,6 +11622,7 @@
 	dir = 4;
 	pixel_x = -24
 	},
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "bbW" = (
@@ -14007,6 +14036,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
+"bma" = (
+/obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai_upload)
 "bmh" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -14046,6 +14082,7 @@
 "bmx" = (
 /turf/closed/wall,
 /area/crew_quarters/heads/captain)
+<<<<<<< HEAD
 "bmz" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -14082,6 +14119,8 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
+=======
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "bmF" = (
 /obj/structure/bed/roller,
 /obj/effect/turf_decal/tile/blue{
@@ -14506,6 +14545,7 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/plasteel,
 /area/quartermaster/office)
+<<<<<<< HEAD
 "boW" = (
 /obj/structure/disposalpipe/segment{
 	dir = 6
@@ -14613,6 +14653,8 @@
 	},
 /turf/open/floor/carpet/royalblue,
 /area/crew_quarters/heads/captain)
+=======
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "bpk" = (
 /obj/structure/closet/secure_closet/captains,
 /turf/open/floor/carpet/royalblue,
@@ -15323,13 +15365,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/office)
-"btz" = (
-/obj/structure/disposalpipe/segment,
-/obj/effect/turf_decal/tile/brown{
-	dir = 8
-	},
-/turf/open/floor/plasteel,
-/area/hallway/primary/central)
 "btA" = (
 /obj/machinery/camera/autoname,
 /turf/open/floor/plasteel/white,
@@ -15480,12 +15515,15 @@
 /turf/open/floor/plasteel/white,
 /area/medical/chemistry)
 "buy" = (
-/obj/structure/disposalpipe/segment,
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/manifold4w/supply/hidden/layer2,
+/obj/structure/disposalpipe/sorting/mail{
+	dir = 1;
+	sortType = 15
+	},
 /turf/open/floor/plasteel,
 /area/quartermaster/office)
 "buB" = (
@@ -17158,9 +17196,8 @@
 /turf/open/floor/plasteel,
 /area/security/checkpoint/science)
 "bCd" = (
-/obj/structure/disposalpipe/sorting/mail{
-	dir = 8;
-	sortType = 15
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
@@ -18066,6 +18103,7 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/aft)
+<<<<<<< HEAD
 "bHe" = (
 /obj/machinery/power/apc/auto_name/west{
 	pixel_x = -24
@@ -18080,6 +18118,15 @@
 	},
 /turf/open/floor/plasteel,
 /area/science/storage)
+=======
+"bHq" = (
+/obj/machinery/door/firedoor,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/office)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "bHs" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -19377,6 +19424,40 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/atmos)
+<<<<<<< HEAD
+=======
+"bNY" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 1
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plasteel,
+/area/hallway/primary/central)
+"bOa" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = 28
+	},
+/obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
+/obj/effect/turf_decal/trimline/dark_blue/filled/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/dark_blue/filled/line{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/teleporter)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "bOc" = (
 /obj/machinery/atmospherics/components/binary/pump{
 	dir = 1;
@@ -26820,7 +26901,8 @@
 "cvv" = (
 /obj/structure/lattice,
 /obj/machinery/camera/autoname{
-	dir = 5
+	dir = 5;
+	network = list("minisat")
 	},
 /turf/open/space,
 /area/space/nearstation)
@@ -27585,6 +27667,9 @@
 /area/quartermaster/storage)
 "cBq" = (
 /obj/effect/landmark/event_spawn,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/plasteel,
 /area/quartermaster/office)
 "cBr" = (
@@ -28717,6 +28802,33 @@
 	},
 /turf/closed/wall/r_wall,
 /area/engine/engineering)
+<<<<<<< HEAD
+=======
+"cGG" = (
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
+/obj/machinery/door/airlock/external{
+	name = "Port Docking Bay 2"
+	},
+/obj/machinery/atmospherics/pipe/layer_manifold{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/hallway/secondary/entry)
+"cGH" = (
+/obj/machinery/door/airlock/maintenance{
+	req_access_txt = "12"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/maintenance/central)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "cGM" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible,
 /turf/open/floor/plating/airless,
@@ -30486,6 +30598,15 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/exit)
+<<<<<<< HEAD
+=======
+"dus" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/crew_quarters/heads/hop)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "duz" = (
 /obj/machinery/door/airlock/maintenance_hatch{
 	name = "MiniSat Maintenance";
@@ -30709,8 +30830,16 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
 	},
+<<<<<<< HEAD
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
+=======
+/obj/effect/turf_decal/tile/blue/opposingcorners{
+	dir = 1
+	},
+/turf/open/floor/plasteel/white,
+/area/crew_quarters/heads/cmo)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "dCJ" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -31027,6 +31156,25 @@
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/exploration_dock)
+<<<<<<< HEAD
+=======
+"dOZ" = (
+/obj/machinery/computer/card/minor/cmo{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue/opposingcorners{
+	dir = 1
+	},
+/turf/open/floor/plasteel/white,
+/area/crew_quarters/heads/cmo)
+"dPd" = (
+/obj/structure/transit_tube/curved/flipped{
+	dir = 1
+	},
+/obj/structure/lattice,
+/turf/open/space,
+/area/space/nearstation)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "dPe" = (
 /obj/structure/bed/roller,
 /obj/structure/window/reinforced{
@@ -31055,8 +31203,13 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
 	},
+<<<<<<< HEAD
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
+=======
+/turf/open/floor/plasteel/white,
+/area/crew_quarters/heads/cmo)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "dPD" = (
 /obj/structure/cable/yellow{
 	icon_state = "2-4"
@@ -31612,10 +31765,27 @@
 /obj/structure/disposalpipe/segment{
 	dir = 10
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/grimy,
 /area/chapel/office)
 "eeI" = (
 /obj/structure/disposalpipe/segment,
+=======
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plasteel,
+/area/hallway/primary/central)
+"efF" = (
+/obj/machinery/door/airlock/command/glass{
+	name = "Bridge";
+	req_access_txt = "19"
+	},
+/obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/machinery/door/firedoor,
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
@@ -31937,6 +32107,25 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /turf/open/floor/plasteel/freezer,
 /area/crew_quarters/toilet/locker)
+<<<<<<< HEAD
+=======
+"epj" = (
+/obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
+/obj/effect/turf_decal/trimline/dark_blue/filled/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/dark_blue/filled/warning{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 6
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai_upload)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "epG" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -32238,6 +32427,27 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/fore)
+<<<<<<< HEAD
+=======
+"exD" = (
+/obj/structure/disposalpipe/segment{
+	dir = 6
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/central)
+"exE" = (
+/obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plasteel/dark,
+/area/hallway/secondary/command)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "exO" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -32261,6 +32471,44 @@
 /obj/structure/sign/warning/securearea,
 /turf/closed/wall/r_wall,
 /area/ai_monitored/turret_protected/ai)
+<<<<<<< HEAD
+=======
+"eyd" = (
+/obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
+/obj/effect/turf_decal/trimline/dark_blue/filled/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/dark_blue/filled/warning{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 10
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai_upload)
+"eyj" = (
+/obj/machinery/door/airlock/maintenance{
+	name = "Mech Bay Maintenance";
+	req_access_txt = "29"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/maintenance/aft)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "eym" = (
 /obj/machinery/newscaster{
 	pixel_y = 32
@@ -32441,7 +32689,7 @@
 	},
 /obj/machinery/camera/autoname{
 	dir = 4;
-	network = list("ss13, engine")
+	network = list("minisat")
 	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/bar)
@@ -33068,7 +33316,50 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
 	dir = 8
 	},
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+=======
+/obj/machinery/door/airlock/command/glass{
+	name = "Bridge";
+	req_access_txt = "19"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
+/obj/effect/turf_decal/tile/dark_blue/fourcorners/contrasted,
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/bridge)
+"fem" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/tile/blue/opposingcorners{
+	dir = 1
+	},
+/turf/open/floor/plasteel/cafeteria,
+/area/security/prison)
+"few" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 	dir = 8
 	},
 /turf/open/floor/plating,
@@ -33565,6 +33856,22 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/atmos)
+<<<<<<< HEAD
+=======
+"ftu" = (
+/obj/structure/sign/departments/minsky/supply/cargo{
+	pixel_x = -32
+	},
+/obj/machinery/camera/autoname{
+	dir = 4;
+	network = list("ss13, engine")
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/central)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "ftG" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -33671,6 +33978,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 10
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/office)
@@ -33864,11 +34174,20 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD
 /area/hallway/primary/central)
 "fCL" = (
 /obj/structure/closet/masks,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
+=======
+/area/quartermaster/storage)
+"fCg" = (
+/obj/structure/lattice,
+/obj/machinery/camera/autoname{
+	dir = 4;
+	network = list("minisat")
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
@@ -34594,8 +34913,30 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD
 /obj/structure/disposalpipe/segment,
 /obj/effect/turf_decal/tile/red{
+=======
+/obj/item/computer_hardware/hard_drive/role/medical{
+	pixel_x = 6;
+	pixel_y = 3
+	},
+/obj/item/computer_hardware/hard_drive/role/medical,
+/obj/item/computer_hardware/hard_drive/role/chemistry{
+	pixel_y = 2
+	},
+/obj/structure/extinguisher_cabinet{
+	pixel_y = -31
+	},
+/obj/item/gun/syringe,
+/obj/effect/turf_decal/tile/blue/opposingcorners{
+	dir = 1
+	},
+/turf/open/floor/plasteel/white,
+/area/crew_quarters/heads/cmo)
+"gds" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
@@ -34632,8 +34973,22 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 1
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel,
 /area/crew_quarters/theatre)
+=======
+/obj/effect/turf_decal/trimline/dark_blue/filled/line{
+	dir = 10
+	},
+/obj/effect/turf_decal/trimline/dark_blue/filled/warning{
+	dir = 8
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/bridge)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "gdS" = (
 /obj/structure/closet/emcloset,
 /turf/open/floor/plasteel,
@@ -35380,6 +35735,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 10
 	},
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
 /turf/open/floor/plasteel/dark,
 /area/gateway)
 "gEX" = (
@@ -35581,9 +35939,23 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
+<<<<<<< HEAD
 /obj/item/kirbyplants/random,
 /turf/open/floor/plasteel,
 /area/crew_quarters/fitness)
+=======
+/obj/effect/turf_decal/trimline/dark_blue/filled/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/dark_blue/filled/line,
+/obj/effect/turf_decal/trimline/dark_blue/filled/warning,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/storage/eva)
+"gMk" = (
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plasteel,
+/area/hallway/primary/central)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "gMy" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 10
@@ -35819,6 +36191,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 4
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "gUp" = (
@@ -35840,6 +36213,11 @@
 	},
 /turf/open/floor/plasteel,
 /area/bridge)
+=======
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
+/turf/open/floor/wood,
+/area/crew_quarters/heads/hop)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "gUz" = (
 /obj/effect/landmark/start/assistant,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -36281,6 +36659,7 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/plasteel/white,
 /area/medical/sleeper)
+<<<<<<< HEAD
 "hfo" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -36288,6 +36667,17 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/engineering)
+=======
+"hfr" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/maintenance/central)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "hfu" = (
 /obj/effect/landmark/start/assistant,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
@@ -36646,6 +37036,7 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/fore/secondary)
+<<<<<<< HEAD
 "hsE" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/yellow{
@@ -36662,6 +37053,15 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/engineering)
+=======
+"hsH" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plating,
+/area/ai_monitored/turret_protected/ai_upload)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "hsU" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -36823,6 +37223,24 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+<<<<<<< HEAD
+=======
+	dir = 5
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai_upload)
+"hzi" = (
+/obj/structure/disposalpipe/segment{
+	dir = 9
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/central)
+"hzA" = (
+/obj/effect/turf_decal/trimline/dark_blue/filled/line{
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 	dir = 1
 	},
 /obj/structure/sign/departments/minsky/research/genetics{
@@ -36912,6 +37330,32 @@
 /obj/item/storage/box/disks_nanite,
 /turf/open/floor/plasteel/dark,
 /area/science/nanite)
+<<<<<<< HEAD
+=======
+"hBX" = (
+/mob/living/simple_animal/bot/cleanbot,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat/service)
+"hCs" = (
+/obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/hallway/secondary/command)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "hCC" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
@@ -37112,6 +37556,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
@@ -37125,6 +37570,14 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/processing)
+=======
+/obj/effect/turf_decal/trimline/dark_blue/filled/line,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/bridge)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "hIk" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
@@ -37272,6 +37725,58 @@
 	},
 /turf/open/floor/circuit,
 /area/ai_monitored/turret_protected/aisat/hallway)
+<<<<<<< HEAD
+=======
+"hNU" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+/turf/open/floor/plating,
+/area/ai_monitored/turret_protected/ai_upload)
+"hNY" = (
+/obj/structure/disposalpipe/segment,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 1
+	},
+/obj/machinery/door/airlock/maintenance{
+	req_access_txt = "12"
+	},
+/turf/open/floor/plating,
+/area/maintenance/port)
+"hOe" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/science/research)
+"hOh" = (
+/obj/structure/filingcabinet/chestdrawer,
+/obj/structure/sign/poster/official/random{
+	pixel_x = 32
+	},
+/turf/open/floor/carpet,
+/area/vacant_room/office)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "hOm" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -37428,7 +37933,7 @@
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
 "hVa" = (
-/turf/open/floor/plasteel/cafeteria,
+/turf/open/floor/plasteel/white,
 /area/crew_quarters/heads/cmo)
 "hVd" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
@@ -37584,10 +38089,77 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel,
 /area/security/courtroom)
+<<<<<<< HEAD
+=======
+"hXW" = (
+/obj/structure/chair/stool,
+/obj/effect/landmark/start/clown,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red/opposingcorners,
+/obj/effect/turf_decal/tile/blue/opposingcorners{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/crew_quarters/theatre)
+"hYn" = (
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 10
+	},
+/turf/open/floor/plating,
+/area/maintenance/port/aft)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "hYs" = (
 /obj/machinery/ecto_sniffer,
 /turf/open/floor/plasteel/white,
 /area/science/robotics/lab)
+<<<<<<< HEAD
+=======
+"hYC" = (
+/obj/effect/turf_decal/tile/dark_blue/fourcorners/contrasted,
+/obj/effect/turf_decal/siding/dark_blue{
+	dir = 8
+	},
+/obj/machinery/power/apc/highcap/five_k{
+	areastring = "/area/ai_monitored/turret_protected/ai_upload";
+	name = "Upload APC";
+	pixel_y = -24
+	},
+/obj/machinery/camera/motion{
+	c_tag = "AI Upload Chamber - Starboard";
+	dir = 1;
+	network = list("aiupload")
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/grid/steel,
+/area/ai_monitored/turret_protected/ai_upload)
+"hYQ" = (
+/obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
+/obj/effect/turf_decal/trimline/dark_blue/filled/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/dark_blue/filled/line{
+	dir = 8
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/storage/eva)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "hYU" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
 	dir = 1
@@ -37622,11 +38194,31 @@
 "hZk" = (
 /turf/open/floor/plasteel,
 /area/science/nanite)
+<<<<<<< HEAD
 "hZB" = (
 /obj/effect/landmark/event_spawn,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
+=======
+"hZm" = (
+/obj/machinery/keycard_auth{
+	pixel_x = 24
+	},
+/obj/structure/disposalpipe/segment,
+/obj/machinery/button/door{
+	id = "quarantineshutters";
+	name = "Quarantine Lockdown";
+	pixel_x = 24;
+	pixel_y = -10;
+	req_access_txt = "39"
+	},
+/obj/effect/turf_decal/tile/blue/opposingcorners{
+	dir = 1
+	},
+/turf/open/floor/plasteel/white,
+/area/crew_quarters/heads/cmo)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "hZH" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -38450,6 +39042,24 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 1
 	},
+<<<<<<< HEAD
+=======
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/effect/turf_decal/trimline/dark_blue/filled/warning{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/storage/eva)
+"iBG" = (
+/obj/machinery/navbeacon{
+	codes_txt = "patrol;next_patrol=AftH";
+	location = "AIW"
+	},
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "iBQ" = (
@@ -38827,6 +39437,19 @@
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
+<<<<<<< HEAD
+=======
+"iOf" = (
+/obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
+/obj/effect/turf_decal/trimline/dark_blue/filled/shrink_ccw{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/dark_blue/filled/warning{
+	dir = 9
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai_upload)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "iOu" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 1
@@ -39035,6 +39658,9 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/maintenance/starboard)
 "iXc" = (
@@ -39089,7 +39715,29 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
 	dir = 1
 	},
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+=======
+/turf/open/floor/carpet/blue,
+/area/crew_quarters/heads/hop)
+"iYy" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/machinery/turretid{
+	control_area = "/area/ai_monitored/turret_protected/aisat/atmos";
+	name = "Atmospherics Turret Control";
+	pixel_x = -27;
+	req_access = null;
+	req_access_txt = "65"
+	},
+/obj/machinery/camera/autoname{
+	c_tag = null;
+	dir = 4;
+	network = list("minisat")
+	},
+/obj/effect/turf_decal/tile/blue{
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 	dir = 1
 	},
 /obj/structure/cable/yellow{
@@ -39311,6 +39959,7 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
+<<<<<<< HEAD
 "jdI" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -39326,6 +39975,33 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
+=======
+"jeB" = (
+/obj/structure/table,
+/obj/machinery/recharger{
+	pixel_y = 4
+	},
+/obj/effect/turf_decal/tile/red/anticorner/contrasted{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/security/checkpoint/engineering)
+"jeC" = (
+/obj/machinery/light,
+/obj/machinery/door_timer{
+	id = "Cell 1";
+	name = "Cell 1";
+	pixel_y = -32
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/tile/red/half/contrasted{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/security/brig)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "jeH" = (
 /obj/structure/disposalpipe/segment{
 	dir = 9
@@ -39962,6 +40638,73 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/fore/secondary)
+<<<<<<< HEAD
+=======
+"jyQ" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 5
+	},
+/turf/open/floor/engine,
+/area/science/misc_lab)
+"jyZ" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/airalarm/directional/north,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light{
+	dir = 1;
+	light_color = "#c1caff"
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
+/turf/open/floor/carpet,
+/area/quartermaster/exploration_prep)
+"jzf" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 9
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/turf/open/floor/plasteel/cafeteria,
+/area/hallway/secondary/entry)
+"jzA" = (
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
+/obj/machinery/door/airlock/command/glass{
+	name = "Bridge";
+	req_access_txt = "19"
+	},
+/obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
+/obj/effect/turf_decal/tile/dark_blue/fourcorners/contrasted,
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/turf/open/floor/plasteel/dark,
+/area/bridge)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "jzB" = (
 /obj/structure/sink{
 	dir = 4;
@@ -40051,6 +40794,9 @@
 	dir = 8
 	},
 /obj/machinery/door/firedoor,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/plasteel,
 /area/quartermaster/office)
 "jCH" = (
@@ -40208,6 +40954,34 @@
 	},
 /turf/open/floor/plasteel,
 /area/tcommsat/computer)
+<<<<<<< HEAD
+=======
+"jKf" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/circuit,
+/area/ai_monitored/turret_protected/ai_upload)
+"jKn" = (
+/obj/effect/turf_decal/trimline/dark_blue/filled/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/dark_blue/filled/line,
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/heads/hop)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "jKE" = (
 /obj/structure/chair/stool{
 	dir = 1
@@ -40615,7 +41389,47 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/open/floor/plasteel,
+<<<<<<< HEAD
 /area/engine/engineering)
+=======
+/area/hallway/primary/fore)
+"jXb" = (
+/obj/effect/turf_decal/tile/neutral/half/contrasted{
+	dir = 1
+	},
+/obj/machinery/airalarm{
+	pixel_y = 26
+	},
+/obj/machinery/camera/motion{
+	c_tag = "AI Upload Foyer";
+	dir = 6;
+	network = list("aiupload")
+	},
+/obj/item/kirbyplants/photosynthetic{
+	layer = 3.1
+	},
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai_upload_foyer)
+"jYf" = (
+/obj/machinery/computer/med_data,
+/obj/machinery/airalarm{
+	pixel_y = 23
+	},
+/obj/effect/turf_decal/tile/blue/opposingcorners{
+	dir = 1
+	},
+/turf/open/floor/plasteel/white,
+/area/crew_quarters/heads/cmo)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "jYO" = (
 /obj/machinery/disposal/bin,
 /obj/structure/disposalpipe/trunk,
@@ -41334,6 +42148,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
 	},
+<<<<<<< HEAD
 /turf/open/floor/plating,
 /area/security/processing)
 "kvU" = (
@@ -41356,6 +42171,20 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plating,
 /area/medical/medbay/central)
+=======
+/obj/machinery/requests_console{
+	announcementConsole = 1;
+	department = "Head of Personnel's Desk";
+	departmentType = 5;
+	name = "Head of Personnel RC";
+	pixel_y = 30
+	},
+/obj/structure/disposalpipe/trunk{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/crew_quarters/heads/hop)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "kwA" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 8
@@ -41653,8 +42482,13 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 1
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
+=======
+/turf/open/floor/plasteel/white,
+/area/crew_quarters/heads/cmo)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "kEB" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 5
@@ -41845,9 +42679,15 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/port)
+<<<<<<< HEAD
 "kJA" = (
 /obj/structure/cable/yellow{
 	icon_state = "2-4"
+=======
+"kJC" = (
+/obj/structure/sign/plaques/kiddie{
+	pixel_y = 32
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 	},
 /turf/open/floor/wood,
 /area/bridge/meeting_room)
@@ -42013,7 +42853,8 @@
 	dir = 4
 	},
 /obj/machinery/camera/autoname{
-	dir = 1
+	dir = 1;
+	network = list("minisat")
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
@@ -42383,6 +43224,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "kYc" = (
@@ -42391,6 +43233,13 @@
 	},
 /obj/effect/turf_decal/tile/green{
 	dir = 1
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/dark_blue/filled/line{
+	dir = 9
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 	},
 /obj/structure/window/reinforced/spawner/north,
 /turf/open/floor/plasteel/white/side,
@@ -42409,8 +43258,64 @@
 /obj/machinery/camera/autoname{
 	dir = 1
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/white,
 /area/medical/virology)
+=======
+/obj/structure/table/wood,
+/obj/item/clothing/gloves/color/black,
+/obj/item/lighter{
+	pixel_x = -8;
+	pixel_y = 4
+	},
+/obj/item/storage/fancy/cigarettes/cigars/havana{
+	pixel_x = 2;
+	pixel_y = 10
+	},
+/turf/open/floor/wood,
+/area/crew_quarters/heads/captain)
+"kZb" = (
+/obj/structure/table/reinforced,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "briggate";
+	name = "security shutters"
+	},
+/obj/machinery/door/window/southleft{
+	base_state = "right";
+	icon_state = "right";
+	name = "Brig Desk";
+	req_access_txt = "1"
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/plasteel/dark,
+/area/security/brig)
+"kZO" = (
+/obj/machinery/door/airlock/command{
+	name = "Head of Personnel";
+	req_access_txt = "57"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/lattice/catwalk/over,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plating,
+/area/crew_quarters/heads/hop)
+"lad" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/structure/chair,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red/half/contrasted{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "lag" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -42944,8 +43849,19 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 1
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/white,
 /area/medical/virology)
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/hallway/secondary/command)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "luc" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/wall,
@@ -43019,7 +43935,34 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD
 /obj/effect/turf_decal/pool{
+=======
+/obj/structure/table,
+/obj/machinery/cell_charger{
+	pixel_y = 1
+	},
+/obj/machinery/light/small,
+/turf/open/floor/plasteel/dark,
+/area/storage/tech)
+"lww" = (
+/obj/structure/table,
+/obj/machinery/microwave{
+	pixel_y = 4
+	},
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = -24
+	},
+/obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/aisat_interior)
+"lwA" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 	dir = 4
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
@@ -43170,6 +44113,19 @@
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/miningdock)
+<<<<<<< HEAD
+=======
+"lAL" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/tile/dark_blue,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/central)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "lAN" = (
 /obj/item/reagent_containers/glass/bottle/bromine{
 	pixel_x = -6
@@ -43324,6 +44280,48 @@
 /obj/machinery/atmospherics/pipe/simple/general/visible,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+<<<<<<< HEAD
+=======
+	dir = 6
+	},
+/obj/effect/landmark/event_spawn,
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/heads/hop)
+"lCw" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral/half/contrasted{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/bridge)
+"lCB" = (
+/obj/effect/turf_decal/stripes/corner,
+/obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
+/obj/structure/sign/warning/nosmoking{
+	pixel_x = 32;
+	pixel_y = -32
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/item/paper/crumpled,
+/turf/open/floor/plasteel/dark,
+/area/engine/gravity_generator)
+"lDC" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/advanced_airlock_controller{
+	dir = 8;
+	pixel_x = 24
+	},
+/obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2{
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
@@ -43386,6 +44384,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/office)
@@ -43614,7 +44615,62 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+<<<<<<< HEAD
 /obj/effect/turf_decal/stripes/line{
+=======
+/obj/machinery/power/apc/auto_name/north{
+	pixel_y = 24
+	},
+/obj/effect/turf_decal/tile/neutral/anticorner/contrasted{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/crew_quarters/dorms)
+"lOA" = (
+/obj/structure/filingcabinet{
+	pixel_x = 8
+	},
+/turf/open/floor/carpet/blue,
+/area/crew_quarters/heads/hop)
+"lOF" = (
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 5
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 8
+	},
+/turf/open/floor/plating{
+	icon_state = "platingdmg3"
+	},
+/area/maintenance/starboard/aft)
+"lPA" = (
+/obj/structure/disposalpipe/segment,
+/obj/item/radio/intercom{
+	pixel_x = 25
+	},
+/obj/machinery/camera/autoname{
+	dir = 9
+	},
+/obj/effect/turf_decal/tile/blue/opposingcorners{
+	dir = 1
+	},
+/turf/open/floor/plasteel/white,
+/area/crew_quarters/heads/cmo)
+"lPJ" = (
+/obj/machinery/computer/security/telescreen/interrogation{
+	pixel_y = 30
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -44152,6 +45208,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
+<<<<<<< HEAD
 /area/science/misc_lab)
 "mfQ" = (
 /obj/item/clipboard{
@@ -44174,6 +45231,22 @@
 /obj/structure/table/wood,
 /turf/open/floor/plasteel/grimy,
 /area/vacant_room/office)
+=======
+/area/security/brig)
+"mfX" = (
+/obj/machinery/light,
+/obj/effect/turf_decal/trimline/dark_blue/filled/line,
+/turf/open/floor/plasteel/dark,
+/area/hallway/primary/central)
+"mgh" = (
+/obj/machinery/suit_storage_unit/standard_unit,
+/obj/effect/turf_decal/tile/black/fourcorners,
+/obj/item/radio/intercom{
+	pixel_x = -26
+	},
+/turf/open/floor/plasteel/grid/steel,
+/area/ai_monitored/storage/eva)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "mgt" = (
 /turf/closed/wall,
 /area/crew_quarters/cryopods)
@@ -44288,8 +45361,16 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
 	},
+<<<<<<< HEAD
 /turf/open/floor/plating,
 /area/quartermaster/storage)
+=======
+/obj/machinery/light/small,
+/turf/open/floor/plasteel/stairs{
+	dir = 4
+	},
+/area/crew_quarters/heads/hop)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "mkF" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
@@ -44405,7 +45486,20 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/dark,
+<<<<<<< HEAD
 /area/security/brig)
+=======
+/area/engine/engineering)
+"mod" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/structure/chair/stool{
+	dir = 1
+	},
+/turf/open/floor/plasteel/cafeteria_red,
+/area/crew_quarters/bar)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "moo" = (
 /obj/structure/disposalpipe/sorting/mail{
 	dir = 1;
@@ -44575,7 +45669,8 @@
 "mvl" = (
 /obj/machinery/light/small,
 /obj/machinery/camera/autoname{
-	dir = 1
+	dir = 1;
+	network = list("minisat")
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
@@ -45158,6 +46253,25 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/engineering)
+<<<<<<< HEAD
+=======
+"mNB" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/starboard)
+"mOB" = (
+/obj/machinery/power/apc/auto_name/east,
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/obj/effect/turf_decal/tile/blue/opposingcorners{
+	dir = 1
+	},
+/turf/open/floor/plasteel/white,
+/area/crew_quarters/heads/cmo)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "mPh" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -45287,6 +46401,46 @@
 	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/fitness)
+<<<<<<< HEAD
+=======
+"mTm" = (
+/obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
+/obj/effect/turf_decal/trimline/dark_blue/filled/line{
+	dir = 6
+	},
+/obj/effect/turf_decal/trimline/dark_blue/filled/warning,
+/obj/item/radio/intercom{
+	pixel_x = 28
+	},
+/turf/open/floor/plasteel/dark,
+/area/teleporter)
+"mTL" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/turf/open/floor/engine,
+/area/engine/engineering)
+"mTZ" = (
+/obj/effect/turf_decal/tile/red/anticorner/contrasted{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/security/brig)
+"mUc" = (
+/obj/structure/disposalpipe/segment,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/turf/open/floor/plasteel,
+/area/maintenance/aft)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "mUj" = (
 /obj/effect/turf_decal/stripes/corner,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
@@ -45589,8 +46743,30 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel,
 /area/quartermaster/miningdock)
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 6
+	},
+/obj/effect/turf_decal/tile/blue/opposingcorners{
+	dir = 1
+	},
+/turf/open/floor/plasteel/white,
+/area/crew_quarters/heads/cmo)
+"ncy" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/engine/engineering)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "ncF" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -45881,6 +47057,60 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
 /turf/open/floor/plating,
 /area/engine/engineering)
+<<<<<<< HEAD
+=======
+"nkq" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
+/turf/open/floor/carpet,
+/area/quartermaster/exploration_prep)
+"nkr" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -26
+	},
+/obj/machinery/atmospherics/pipe/manifold/green/visible{
+	dir = 1
+	},
+/obj/machinery/camera/autoname{
+	dir = 10;
+	network = list("ss13","engine")
+	},
+/turf/open/floor/engine,
+/area/engine/engineering)
+"nku" = (
+/obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
+/obj/effect/turf_decal/trimline/dark_blue/filled/end{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/dark_blue/filled/warning{
+	dir = 8
+	},
+/obj/machinery/power/apc/auto_name/north{
+	pixel_y = 24
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/storage/eva)
+"nkE" = (
+/obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -24
+	},
+/obj/effect/turf_decal/trimline/dark_blue/filled/line,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/bridge)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "nkW" = (
 /obj/machinery/porta_turret/ai{
 	dir = 4;
@@ -45931,6 +47161,35 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/aft)
+<<<<<<< HEAD
+=======
+"nlO" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer4,
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/aft)
+"nlP" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/office)
+"nlV" = (
+/obj/item/kirbyplants/random,
+/obj/effect/turf_decal/tile/red/half/contrasted{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/security/prison)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "nmk" = (
 /obj/machinery/airlock_sensor/incinerator_toxmix{
 	pixel_y = 24
@@ -45941,6 +47200,7 @@
 /obj/machinery/atmospherics/pipe/layer_manifold,
 /turf/open/floor/engine,
 /area/science/mixing/chamber)
+<<<<<<< HEAD
 "nms" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
 	dir = 1
@@ -45983,6 +47243,16 @@
 	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/heads/hop)
+=======
+"nmS" = (
+/obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
+/obj/effect/turf_decal/trimline/dark_blue/filled/line,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/bridge)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "nnx" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
@@ -46269,6 +47539,21 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
+<<<<<<< HEAD
+=======
+"nvV" = (
+/obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
+/obj/effect/turf_decal/trimline/dark_blue/filled/line,
+/obj/machinery/light_switch{
+	pixel_x = -6;
+	pixel_y = -22
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/bridge)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "nwp" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -46424,6 +47709,7 @@
 	},
 /turf/open/floor/plating,
 /area/ai_monitored/turret_protected/aisat/hallway)
+<<<<<<< HEAD
 "nBl" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible{
 	dir = 4
@@ -46438,6 +47724,18 @@
 	dir = 1
 	},
 /area/engine/atmos)
+=======
+"nBm" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plating,
+/area/ai_monitored/turret_protected/ai_upload)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "nBC" = (
 /obj/machinery/power/turbine{
 	luminosity = 2
@@ -46605,6 +47903,39 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/plasteel/showroomfloor,
 /area/crew_quarters/cryopods)
+<<<<<<< HEAD
+=======
+"nFD" = (
+/obj/machinery/suit_storage_unit/cmo,
+/obj/effect/turf_decal/tile/blue/opposingcorners{
+	dir = 1
+	},
+/turf/open/floor/plasteel/white,
+/area/crew_quarters/heads/cmo)
+"nFW" = (
+/obj/structure/window/reinforced{
+	dir = 1;
+	layer = 2.9
+	},
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = 24
+	},
+/obj/structure/table/reinforced,
+/obj/item/stack/wrapping_paper{
+	pixel_x = 3;
+	pixel_y = 4
+	},
+/obj/item/stack/package_wrap{
+	pixel_x = -1;
+	pixel_y = -1
+	},
+/obj/effect/turf_decal/tile/brown/half/contrasted{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/sorting)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "nGr" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
@@ -46983,9 +48314,23 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 5
 	},
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
+=======
+/turf/open/floor/plasteel/white,
+/area/crew_quarters/heads/cmo)
+"nSL" = (
+/obj/machinery/computer/nanite_cloud_controller,
+/obj/effect/turf_decal/bot,
+/obj/machinery/camera/autoname{
+	dir = 4;
+	network = list("ss13, engine")
+	},
+/turf/open/floor/plasteel/dark,
+/area/science/nanite)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "nTh" = (
 /obj/machinery/camera/motion{
 	c_tag = "MiniSat AI Chamber South";
@@ -47156,8 +48501,8 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/structure/disposalpipe/segment,
 /obj/machinery/door/firedoor,
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
 /area/vacant_room/commissary)
 "nXq" = (
@@ -47653,6 +48998,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 1
@@ -47662,6 +49008,11 @@
 	},
 /turf/open/floor/plating,
 /area/storage/tools)
+=======
+/obj/effect/turf_decal/tile/dark_blue/fourcorners/contrasted,
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/heads/hop)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "omb" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -5;
@@ -47805,7 +49156,24 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
+<<<<<<< HEAD
 /obj/structure/closet/emcloset,
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/gateway)
+"osI" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 8
+	},
+/obj/structure/rack,
+/obj/item/clothing/neck/stethoscope,
+/obj/item/storage/firstaid/regular,
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 /turf/open/floor/plasteel,
 /area/crew_quarters/dorms)
 "osK" = (
@@ -48439,6 +49807,24 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
+<<<<<<< HEAD
+=======
+"oOi" = (
+/obj/machinery/portable_atmospherics/pump,
+/obj/machinery/atmospherics/pipe/simple/green/visible,
+/turf/open/floor/plasteel,
+/area/engine/atmos)
+"oOA" = (
+/obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
+/obj/effect/turf_decal/trimline/dark_blue/filled/line{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 6
+	},
+/turf/open/floor/plasteel/dark,
+/area/gateway)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "oOI" = (
 /obj/item/pool/pool_noodle,
 /turf/open/floor/plasteel,
@@ -48512,6 +49898,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 1
 	},
+<<<<<<< HEAD
 /obj/machinery/door/firedoor,
 /turf/open/floor/wood,
 /area/crew_quarters/heads/captain)
@@ -48528,6 +49915,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/brig)
+=======
+/turf/open/floor/plasteel/white,
+/area/crew_quarters/heads/cmo)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "oUq" = (
 /obj/machinery/atmospherics/components/trinary/filter{
 	dir = 8
@@ -49061,6 +50452,31 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
+<<<<<<< HEAD
+=======
+"pnv" = (
+/obj/machinery/disposal/bin,
+/obj/structure/disposalpipe/trunk,
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue/opposingcorners{
+	dir = 1
+	},
+/turf/open/floor/plasteel/white,
+/area/crew_quarters/heads/cmo)
+"pnC" = (
+/obj/structure/sign/warning/electricshock{
+	pixel_y = -32
+	},
+/obj/machinery/light,
+/obj/machinery/door/firedoor,
+/obj/effect/turf_decal/tile/dark_blue{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/central)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "pnD" = (
 /obj/machinery/firealarm{
 	dir = 8;
@@ -49385,9 +50801,6 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/miningdock)
 "pxL" = (
-/obj/structure/disposalpipe/junction/flip{
-	dir = 2
-	},
 /obj/structure/sign/directions/engineering{
 	pixel_x = -32;
 	pixel_y = -40
@@ -49404,6 +50817,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 6
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
@@ -49776,7 +51192,8 @@
 	},
 /obj/machinery/light/small,
 /obj/machinery/camera/autoname{
-	dir = 1
+	dir = 1;
+	network = list("minisat")
 	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/aisat_interior)
@@ -49800,7 +51217,24 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD
 /area/quartermaster/miningdock)
+=======
+/area/security/processing)
+"pMr" = (
+/obj/effect/turf_decal/tile/dark_blue/fourcorners/contrasted,
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/heads/captain)
+"pNo" = (
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/central)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "pNv" = (
 /obj/structure/bed,
 /obj/item/radio/intercom{
@@ -50133,8 +51567,23 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 1
 	},
+<<<<<<< HEAD
 /turf/open/floor/wood,
 /area/bridge/meeting_room)
+=======
+/turf/open/floor/plasteel/white,
+/area/crew_quarters/heads/cmo)
+"pWH" = (
+/obj/machinery/power/apc/auto_name/west{
+	pixel_x = -24
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
+/obj/effect/turf_decal/tile/neutral/opposingcorners,
+/turf/open/floor/plasteel,
+/area/vacant_room/commissary)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "pWN" = (
 /turf/open/floor/plasteel,
 /area/science/misc_lab)
@@ -50169,7 +51618,8 @@
 "pZC" = (
 /obj/structure/lattice,
 /obj/machinery/camera/autoname{
-	dir = 9
+	dir = 9;
+	network = list("minisat")
 	},
 /turf/open/space,
 /area/space/nearstation)
@@ -50444,7 +51894,28 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/neutral{
+=======
+/obj/effect/turf_decal/tile/green/anticorner/contrasted,
+/turf/open/floor/plasteel,
+/area/engine/atmos)
+"qmr" = (
+/obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
+/obj/machinery/holopad,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/manifold4w/supply/hidden/layer2,
+/obj/structure/disposalpipe/segment{
+	dir = 6
+	},
+/turf/open/floor/plasteel/dark,
+/area/hallway/secondary/command)
+"qmP" = (
+/obj/machinery/camera/autoname{
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 	dir = 8
 	},
 /obj/structure/cable/yellow{
@@ -50501,6 +51972,29 @@
 /obj/machinery/vending/sustenance,
 /turf/open/floor/plasteel,
 /area/security/prison)
+<<<<<<< HEAD
+=======
+"qnv" = (
+/obj/machinery/sleeper{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/medbay/central)
+"qnI" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plasteel,
+/area/hallway/primary/central)
+"qnN" = (
+/obj/structure/bookcase/random,
+/turf/open/floor/wood,
+/area/vacant_room/office)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "qnO" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -51228,6 +52722,7 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/ai)
+<<<<<<< HEAD
 "qNH" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -51242,6 +52737,8 @@
 	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/heads/hop)
+=======
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "qNU" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/microwave,
@@ -51287,7 +52784,9 @@
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/aisat/hallway)
 "qPP" = (
-/obj/machinery/camera/autoname,
+/obj/machinery/camera/autoname{
+	network = list("minisat")
+	},
 /turf/open/space,
 /area/space/nearstation)
 "qQb" = (
@@ -51613,7 +53112,25 @@
 	pixel_y = -32
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD
 /area/hallway/primary/fore)
+=======
+/area/security/checkpoint/supply)
+"rcH" = (
+/obj/machinery/computer/crew,
+/obj/machinery/requests_console{
+	announcementConsole = 1;
+	department = "Chief Medical Officer's Desk";
+	departmentType = 5;
+	name = "Chief Medical Officer RC";
+	pixel_y = 32
+	},
+/obj/effect/turf_decal/tile/blue/opposingcorners{
+	dir = 1
+	},
+/turf/open/floor/plasteel/white,
+/area/crew_quarters/heads/cmo)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "rcN" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -51806,6 +53323,31 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/aft)
+<<<<<<< HEAD
+=======
+"rhF" = (
+/obj/effect/turf_decal/tile/red/half/contrasted{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/science/robotics/lab)
+"rhL" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/engine/light,
+/area/storage/tech)
+"rhN" = (
+/obj/machinery/vending/cart,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/crew_quarters/heads/hop)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "rhX" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 4
@@ -51821,7 +53363,8 @@
 "rje" = (
 /obj/structure/lattice,
 /obj/machinery/camera/autoname{
-	dir = 8
+	dir = 8;
+	network = list("minisat")
 	},
 /turf/open/space,
 /area/space/nearstation)
@@ -52141,12 +53684,23 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 5
 	},
 /turf/open/floor/plasteel,
 /area/security/brig)
+=======
+/obj/item/storage/secure/briefcase{
+	pixel_y = -2
+	},
+/obj/item/storage/lockbox/medal{
+	pixel_y = 12
+	},
+/turf/open/floor/wood,
+/area/crew_quarters/heads/captain)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "ruB" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair/stool{
@@ -52432,8 +53986,49 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/heads/hor)
+=======
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white/corner{
+	dir = 1
+	},
+/area/hallway/secondary/entry)
+"rCW" = (
+/obj/structure/table,
+/obj/item/aiModule/reset,
+/obj/effect/turf_decal/tile/dark_blue/fourcorners/contrasted,
+/obj/effect/turf_decal/siding/dark_blue{
+	dir = 4
+	},
+/obj/machinery/camera/motion{
+	c_tag = "AI Upload Chamber - Port";
+	dir = 10;
+	network = list("aiupload")
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/grid/steel,
+/area/ai_monitored/turret_protected/ai_upload)
+"rDh" = (
+/obj/machinery/door/airlock/maintenance{
+	req_access_txt = "12"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 1
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plating,
+/area/maintenance/fore)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "rDo" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -52586,6 +54181,45 @@
 /obj/item/hand_labeler,
 /turf/open/floor/plasteel,
 /area/science/misc_lab)
+<<<<<<< HEAD
+=======
+"rIF" = (
+/obj/machinery/requests_console{
+	department = "Security";
+	departmentType = 5;
+	pixel_y = 30
+	},
+/obj/effect/turf_decal/tile/red/half/contrasted{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/security/main)
+"rIZ" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
+/turf/open/floor/plating,
+/area/maintenance/fore)
+"rJf" = (
+/obj/structure/window/reinforced,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/engine/gravity_generator)
+"rJx" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 9
+	},
+/turf/open/floor/wood{
+	icon_state = "wood-broken2"
+	},
+/area/crew_quarters/heads/hop)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "rJJ" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /obj/machinery/door/airlock/research{
@@ -52758,10 +54392,27 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/carpet/green,
 /area/chapel/main)
+<<<<<<< HEAD
 "rNp" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
+=======
+"rNa" = (
+/obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 9
+	},
+/obj/effect/turf_decal/trimline/dark_blue/filled/warning,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/bridge)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "rNt" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -53670,10 +55321,47 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/dark,
 /area/medical/morgue)
 "sue" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/maintenance/solars/port/aft)
+"ssX" = (
+/obj/structure/table,
+/obj/item/storage/box/lights/mixed,
+/obj/item/pipe_dispenser,
+/obj/machinery/button/door{
+	id = "aux_base_shutters";
+	name = "Public Shutters Control";
+	pixel_x = 24;
+	req_one_access_txt = "72"
+	},
+/obj/machinery/power/apc/auto_name/south{
+	pixel_y = -24
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/obj/effect/turf_decal/tile/yellow/anticorner/contrasted,
+/turf/open/floor/plasteel,
+/area/construction/mining/aux_base)
+"stf" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/engine/gravity_generator)
+"stz" = (
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
@@ -53813,6 +55501,35 @@
 	},
 /turf/open/floor/plasteel,
 /area/hydroponics)
+<<<<<<< HEAD
+=======
+"sxy" = (
+/obj/effect/turf_decal/tile/dark_blue/fourcorners/contrasted,
+/obj/item/flashlight/flare{
+	pixel_x = -3;
+	pixel_y = -3
+	},
+/obj/item/flashlight/flare{
+	pixel_x = 4;
+	pixel_y = 1
+	},
+/obj/item/flashlight/flare{
+	pixel_x = -2;
+	pixel_y = 7
+	},
+/obj/item/flashlight/flare{
+	pixel_x = 5;
+	pixel_y = 4
+	},
+/obj/item/flashlight/flare{
+	pixel_x = -4;
+	pixel_y = 3
+	},
+/obj/item/flashlight/flare,
+/obj/structure/closet/crate,
+/turf/open/floor/plasteel/techmaint,
+/area/gateway)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "sxD" = (
 /obj/machinery/computer/shuttle_flight/labor{
 	dir = 4
@@ -54504,9 +56221,76 @@
 /turf/open/floor/plasteel,
 /area/hallway/secondary/exit)
 "sPZ" = (
+<<<<<<< HEAD
 /obj/structure/disposalpipe/segment{
 	dir = 10
 	},
+=======
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 4
+	},
+/obj/item/radio/intercom{
+	pixel_x = -32;
+	pixel_y = -1
+	},
+/turf/open/floor/engine,
+/area/gateway)
+"sQA" = (
+/obj/machinery/advanced_airlock_controller{
+	dir = 8;
+	pixel_x = 24
+	},
+/obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/turf/open/floor/plating,
+/area/hallway/secondary/entry)
+"sQI" = (
+/obj/machinery/computer/card{
+	dir = 8
+	},
+/turf/open/floor/carpet/royalblue,
+/area/crew_quarters/heads/captain)
+"sRe" = (
+/obj/machinery/door/poddoor/shutters{
+	id = "teleshutter";
+	name = "Teleporter Access Shutter"
+	},
+/obj/machinery/button/door{
+	id = "teleshutter";
+	name = "Teleporter Shutter Control";
+	pixel_x = 30;
+	pixel_y = 5;
+	req_access_txt = "19"
+	},
+/obj/effect/turf_decal/tile/dark_blue/fourcorners/contrasted,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/plasteel/dark,
+/area/teleporter)
+"sRD" = (
+/obj/machinery/door/airlock/command{
+	name = "Head of Personnel";
+	req_access_txt = "57"
+	},
+/obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/dark_blue/filled/warning{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/dark_blue/fourcorners/contrasted,
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/heads/hop)
+"sRO" = (
+/obj/structure/chair/stool,
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 9
 	},
@@ -54587,6 +56371,36 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
 /turf/open/floor/plating,
 /area/maintenance/port)
+<<<<<<< HEAD
+=======
+"sVe" = (
+/turf/closed/wall/r_wall,
+/area/ai_monitored/turret_protected/ai_upload_foyer)
+"sVi" = (
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
+	},
+/obj/machinery/door/airlock/command/glass{
+	name = "Bridge";
+	req_access_txt = "19"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
+/obj/effect/turf_decal/tile/dark_blue/fourcorners/contrasted,
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/bridge)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "sVA" = (
 /obj/machinery/atmospherics/pipe/layer_manifold{
 	dir = 1
@@ -54733,7 +56547,24 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD
 /area/security/processing)
+=======
+/area/hallway/primary/starboard)
+"tdh" = (
+/obj/structure/bed/dogbed/runtime,
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue/opposingcorners{
+	dir = 1
+	},
+/turf/open/floor/plasteel/white,
+/area/crew_quarters/heads/cmo)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "tdp" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -54762,6 +56593,36 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/starboard)
+<<<<<<< HEAD
+=======
+"teG" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plasteel,
+/area/maintenance/aft)
+"tfu" = (
+/obj/effect/turf_decal/trimline/dark_blue/filled/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/dark_blue/filled/line,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/heads/hop)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "tfv" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
@@ -55004,7 +56865,34 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel,
+<<<<<<< HEAD
 /area/security/courtroom)
+=======
+/area/engine/engineering)
+"trA" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
+/obj/effect/turf_decal/trimline/dark_blue/filled/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/dark_blue/filled/line{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/teleporter)
+"tsb" = (
+/obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/hallway/secondary/command)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "tsu" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
@@ -55217,11 +57105,20 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
 	},
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
 /obj/structure/cable/yellow{
 	icon_state = "1-4"
 	},
 /turf/open/floor/plasteel,
+=======
+/obj/effect/turf_decal/trimline/dark_blue/filled/line,
+/obj/effect/turf_decal/trimline/dark_blue/filled/warning,
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plasteel/dark,
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 /area/bridge)
 "tyb" = (
 /obj/structure/disposalpipe/segment{
@@ -55731,6 +57628,40 @@
 	},
 /turf/open/floor/plasteel/grimy,
 /area/ai_monitored/turret_protected/aisat_interior)
+<<<<<<< HEAD
+=======
+"tLW" = (
+/obj/machinery/light_switch{
+	pixel_y = -25
+	},
+/obj/structure/closet/secure_closet/security/cargo,
+/obj/effect/turf_decal/tile/red/anticorner/contrasted{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/security/checkpoint/supply)
+"tLX" = (
+/obj/machinery/ai_slipper{
+	uses = 8
+	},
+/obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
+/obj/effect/turf_decal/tile/dark_blue/fourcorners/contrasted,
+/obj/effect/landmark/event_spawn,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai_upload)
+"tMe" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/structure/disposalpipe/segment{
+	dir = 5
+	},
+/turf/open/floor/plasteel/chapel{
+	dir = 1
+	},
+/area/chapel/main)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "tMg" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
@@ -55895,12 +57826,19 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/security/warden)
+<<<<<<< HEAD
 "tTb" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 4
+=======
+"tSC" = (
+/obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
+/obj/effect/turf_decal/trimline/dark_blue/filled/shrink_cw{
+	dir = 8
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 	},
 /turf/open/floor/plasteel/white/corner{
 	dir = 1
@@ -55966,6 +57904,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 1
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "tUO" = (
@@ -55980,6 +57919,10 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
+=======
+/turf/open/floor/plasteel/white,
+/area/crew_quarters/heads/cmo)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "tVm" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/on,
 /obj/effect/turf_decal/stripes/line{
@@ -56180,8 +58123,43 @@
 /obj/item/flashlight,
 /turf/open/floor/plasteel/dark,
 /area/engine/engineering)
+<<<<<<< HEAD
 "udV" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
+=======
+"udA" = (
+/obj/structure/table,
+/obj/effect/turf_decal/tile/dark_blue/fourcorners/contrasted,
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = 24
+	},
+/obj/machinery/light,
+/obj/machinery/cell_charger,
+/obj/item/stack/cable_coil{
+	pixel_x = 3;
+	pixel_y = -7
+	},
+/obj/item/stock_parts/cell/high,
+/obj/item/stock_parts/cell/high,
+/obj/item/stock_parts/cell/high,
+/turf/open/floor/plasteel/techmaint,
+/area/ai_monitored/storage/eva)
+"udD" = (
+/obj/structure/table,
+/obj/item/storage/box/chemimp{
+	pixel_x = 6
+	},
+/obj/item/storage/box/trackimp{
+	pixel_x = -3
+	},
+/obj/item/storage/lockbox/loyalty,
+/obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/security/armory)
+"ueA" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 	dir = 8
 	},
 /obj/machinery/door/airlock/external{
@@ -56930,6 +58908,47 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/security/warden)
+<<<<<<< HEAD
+=======
+"uEw" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plasteel,
+/area/engine/engineering)
+"uEM" = (
+/obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
+/obj/effect/turf_decal/trimline/dark_blue/filled/line{
+	dir = 9
+	},
+/turf/open/floor/plasteel/dark,
+/area/gateway)
+"uEN" = (
+/obj/machinery/firealarm{
+	pixel_y = 24
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/red/half/contrasted{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/security/brig)
+"uEO" = (
+/obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/hallway/secondary/command)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "uFg" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
@@ -57879,6 +59898,42 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/plasteel,
 /area/science/mixing)
+<<<<<<< HEAD
+=======
+"vmB" = (
+/obj/effect/turf_decal/stripes/corner,
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/turf/open/floor/engine/light,
+/area/storage/tech)
+"vmI" = (
+/obj/machinery/holopad,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plasteel,
+/area/hallway/primary/central)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "vmV" = (
 /obj/machinery/door/airlock{
 	name = "Unisex Restrooms"
@@ -58264,9 +60319,20 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel,
 /area/security/processing)
 "vEj" = (
+=======
+/mob/living/simple_animal/pet/cat/Runtime,
+/obj/effect/turf_decal/tile/blue/opposingcorners{
+	dir = 1
+	},
+/turf/open/floor/plasteel/white,
+/area/crew_quarters/heads/cmo)
+"vFr" = (
+/obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
@@ -59296,6 +61362,54 @@
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
+<<<<<<< HEAD
+=======
+"wnJ" = (
+/obj/effect/turf_decal/tile/blue/opposingcorners{
+	dir = 1
+	},
+/turf/open/floor/plasteel/white,
+/area/crew_quarters/heads/cmo)
+"wnQ" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable,
+/turf/open/space,
+/area/solar/port/aft)
+"wnY" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plasteel/grimy,
+/area/chapel/office)
+"wol" = (
+/obj/structure/rack,
+/obj/item/storage/box/rubbershot{
+	pixel_x = -3;
+	pixel_y = 3
+	},
+/obj/item/storage/box/rubbershot{
+	pixel_x = -3;
+	pixel_y = 3
+	},
+/obj/item/storage/box/rubbershot,
+/obj/item/storage/box/rubbershot,
+/obj/item/storage/box/rubbershot{
+	pixel_x = 3;
+	pixel_y = -3
+	},
+/obj/item/storage/box/rubbershot{
+	pixel_x = 3;
+	pixel_y = -3
+	},
+/obj/item/storage/box/breacherslug,
+/obj/item/storage/box/breacherslug,
+/obj/item/storage/box/breacherslug,
+/obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/security/armory)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "wop" = (
 /obj/machinery/airalarm{
 	pixel_y = 23
@@ -59720,11 +61834,47 @@
 /obj/machinery/vending/wallmed{
 	pixel_x = 24
 	},
+<<<<<<< HEAD
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plasteel/freezer,
 /area/medical/virology)
+=======
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/chemistry)
+"wIz" = (
+/obj/structure/railing/corner{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/dark_blue,
+/obj/machinery/door/window/westleft{
+	dir = 2;
+	layer = 3.1;
+	name = "Upload Console Window";
+	req_access_txt = "16"
+	},
+/obj/machinery/computer/upload/ai,
+/obj/machinery/flasher{
+	id = "AI";
+	pixel_y = 24
+	},
+/turf/open/floor/circuit,
+/area/ai_monitored/turret_protected/ai_upload)
+"wIE" = (
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/trimline/dark_blue/filled/line{
+	dir = 9
+	},
+/turf/open/floor/plasteel/dark,
+/area/hallway/secondary/command)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "wIG" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
 	dir = 8
@@ -59757,6 +61907,13 @@
 	dir = 8
 	},
 /obj/machinery/door/firedoor,
+<<<<<<< HEAD
+=======
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment,
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
 "wKA" = (
@@ -59906,6 +62063,38 @@
 /obj/structure/transit_tube/crossing/horizontal,
 /turf/open/space,
 /area/space/nearstation)
+<<<<<<< HEAD
+=======
+"wOQ" = (
+/obj/machinery/atmospherics/pipe/simple/cyan/visible{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 6
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark/corner{
+	dir = 1
+	},
+/area/engine/atmos)
+"wOZ" = (
+/obj/structure/table,
+/obj/effect/turf_decal/tile/yellow/fourcorners/contrasted,
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/obj/item/clothing/glasses/meson,
+/obj/item/clothing/glasses/meson{
+	pixel_y = 5
+	},
+/obj/item/flashlight{
+	pixel_y = -11
+	},
+/turf/open/floor/plasteel/techmaint,
+/area/storage/tech)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "wPc" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 4
@@ -60023,8 +62212,55 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel/freezer,
 /area/crew_quarters/kitchen)
+<<<<<<< HEAD
 "wTr" = (
 /obj/structure/disposalpipe/segment,
+=======
+"wUe" = (
+/obj/machinery/computer/station_alert{
+	dir = 4
+	},
+/obj/machinery/computer/security/telescreen/ce{
+	dir = 4;
+	pixel_x = -24
+	},
+/obj/machinery/requests_console{
+	announcementConsole = 1;
+	department = "Chief Engineer's Desk";
+	departmentType = 4;
+	name = "Chief Engineer RC";
+	pixel_y = -29
+	},
+/obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/heads/chief)
+"wUh" = (
+/obj/structure/railing/corner,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/dark_blue,
+/obj/machinery/computer/upload/borg,
+/obj/machinery/door/window/westleft{
+	base_state = "right";
+	dir = 2;
+	icon_state = "right";
+	layer = 3.1;
+	name = "Cyborg Upload Console Window";
+	req_access_txt = "16"
+	},
+/obj/machinery/flasher{
+	id = "AI";
+	pixel_y = 24
+	},
+/turf/open/floor/circuit,
+/area/ai_monitored/turret_protected/ai_upload)
+"wUp" = (
+/obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
+/obj/effect/turf_decal/trimline/dark_blue/filled/line{
+	dir = 1
+	},
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
@@ -60467,9 +62703,23 @@
 /obj/machinery/power/apc/auto_name/west{
 	pixel_x = -24
 	},
+<<<<<<< HEAD
 /obj/structure/cable/yellow,
 /turf/open/floor/plasteel,
 /area/crew_quarters/fitness)
+=======
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue/opposingcorners{
+	dir = 1
+	},
+/turf/open/floor/plasteel/white,
+/area/crew_quarters/heads/cmo)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "xfo" = (
 /obj/structure/chair{
 	dir = 1
@@ -60517,6 +62767,30 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/plating,
 /area/maintenance/fore)
+<<<<<<< HEAD
+=======
+"xfZ" = (
+/obj/effect/turf_decal/tile/yellow/fourcorners/contrasted,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line,
+/obj/structure/tank_dispenser/oxygen{
+	pixel_x = -1;
+	pixel_y = 2
+	},
+/turf/open/floor/plasteel/grid/steel,
+/area/storage/tech)
+"xgn" = (
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/crew_quarters/heads/captain)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "xgH" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
 	dir = 8
@@ -60763,9 +63037,6 @@
 /turf/open/floor/plasteel/white,
 /area/science/research)
 "xqa" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 4
 	},
@@ -60774,6 +63045,9 @@
 	},
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
+	},
+/obj/structure/disposalpipe/junction{
+	dir = 8
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
@@ -61340,6 +63614,69 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/science/research)
+<<<<<<< HEAD
+=======
+"xGu" = (
+/obj/structure/table,
+/obj/item/hand_labeler,
+/obj/item/hand_labeler,
+/obj/item/stack/package_wrap,
+/obj/item/stack/package_wrap,
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/tile/black/fourcorners,
+/obj/machinery/camera/autoname{
+	c_tag = "Teleporter Room"
+	},
+/turf/open/floor/plasteel/grid/steel,
+/area/teleporter)
+"xGw" = (
+/obj/machinery/door/airlock/command/glass{
+	name = "Chief Medical Officer";
+	req_access_txt = "40"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/door/firedoor,
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/obj/effect/turf_decal/tile/blue/opposingcorners{
+	dir = 1
+	},
+/turf/open/floor/plasteel/white,
+/area/crew_quarters/heads/cmo)
+"xGD" = (
+/obj/effect/turf_decal/trimline/dark_blue/filled/warning{
+	dir = 8
+	},
+/obj/structure/table/glass,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/item/paper_bin,
+/obj/item/pen,
+/turf/open/floor/plasteel/dark,
+/area/bridge/meeting_room)
+"xGN" = (
+/mob/living/simple_animal/butterfly,
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/ausbushes/lavendergrass,
+/turf/open/floor/grass,
+/area/hallway/secondary/command)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "xGT" = (
 /obj/structure/disposalpipe/sorting/mail/flip{
 	dir = 8;
@@ -61891,10 +64228,19 @@
 	dir = 8
 	},
 /obj/machinery/camera/autoname{
-	dir = 8
+	dir = 8;
+	network = list("minisat")
 	},
 /turf/open/floor/plating,
 /area/ai_monitored/turret_protected/aisat/service)
+<<<<<<< HEAD
+=======
+"xXW" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable/yellow,
+/turf/open/floor/plating,
+/area/bridge)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "xYb" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 9
@@ -62100,6 +64446,51 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/chemistry)
+<<<<<<< HEAD
+=======
+"yeN" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+/obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai_upload_foyer)
+"yeY" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/carpet/green,
+/area/chapel/main)
+"yff" = (
+/obj/effect/turf_decal/tile/green/half/contrasted,
+/turf/open/floor/plasteel,
+/area/crew_quarters/fitness)
+"yfo" = (
+/obj/machinery/power/apc/auto_name/north{
+	pixel_y = 24
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/maintenance/central)
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 "yfq" = (
 /obj/machinery/door/airlock/maintenance{
 	req_access_txt = "12"
@@ -62131,6 +64522,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/locker)
+"yga" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plating,
+/area/bridge)
 "ygo" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -85812,6 +88210,7 @@ arP
 arP
 arP
 arP
+<<<<<<< HEAD
 gvq
 ayG
 azM
@@ -85826,6 +88225,22 @@ mgD
 rEl
 hnY
 qGO
+=======
+rwW
+xoh
+aaa
+aaa
+bfv
+hsH
+nBm
+bfv
+aaa
+aaa
+glk
+aJo
+jBu
+fEz
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 cOS
 mcF
 jwy
@@ -86326,6 +88741,7 @@ aqR
 aqR
 aqR
 avf
+<<<<<<< HEAD
 gvq
 ayG
 azN
@@ -86340,6 +88756,22 @@ aKB
 kKp
 aLE
 aLE
+=======
+qVj
+ayE
+aaa
+bfv
+fAK
+sef
+bma
+psE
+bfv
+gXs
+fHM
+uGA
+sXq
+aNm
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 aSs
 aSs
 aTL
@@ -86361,7 +88793,7 @@ aZK
 bnJ
 bbR
 bbR
-bbR
+nlP
 bty
 bty
 qJM
@@ -86618,7 +89050,7 @@ aZK
 bnK
 bnK
 pVd
-pVd
+bHq
 bnK
 bnK
 sdX
@@ -86627,7 +89059,7 @@ bwe
 bwe
 bwe
 bwe
-jdI
+lRI
 bCd
 bCq
 bCq
@@ -86862,10 +89294,11 @@ aJq
 aJq
 aJq
 qVS
-aJq
-aJq
-aJq
+exD
+gMk
+gMk
 bbV
+<<<<<<< HEAD
 bfo
 bfo
 bfo
@@ -86885,6 +89318,27 @@ btz
 bBh
 bCr
 pnJ
+=======
+qnI
+qnI
+qnI
+efv
+qnI
+wKs
+qnI
+qnI
+gMk
+hzi
+bfo
+bfo
+ftu
+bfo
+bfo
+bfo
+bfo
+bTz
+hYn
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 eUj
 rng
 mQV
@@ -87133,6 +89587,7 @@ dqM
 kzq
 jjO
 bnM
+<<<<<<< HEAD
 bnM
 bnM
 bnM
@@ -87140,6 +89595,27 @@ bnM
 bnM
 bAe
 bBg
+=======
+cbd
+vdd
+vdd
+vdd
+vdd
+vPD
+keR
+bjQ
+keR
+keR
+pvy
+aJq
+aJq
+aJq
+aJq
+aJq
+aJq
+svw
+aJq
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 bCq
 bCq
 bCq
@@ -87385,10 +89861,40 @@ mmt
 bid
 aYl
 bBi
+<<<<<<< HEAD
 qVS
 bnN
 boY
 bqw
+=======
+klN
+klN
+klN
+klN
+klN
+aJq
+nbZ
+kMl
+lAL
+nbZ
+nbZ
+sEj
+aYl
+tIU
+aYl
+aYl
+sEj
+aLh
+klN
+klN
+klN
+klN
+klN
+klN
+klN
+klN
+klN
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 aJq
 aJq
 aYl
@@ -87629,6 +90135,7 @@ dgB
 dgB
 dgB
 dgB
+<<<<<<< HEAD
 aJs
 aJq
 aYk
@@ -87645,6 +90152,16 @@ bkT
 bjz
 bjz
 boX
+=======
+hzA
+fJZ
+mfX
+eWC
+cGH
+eWC
+eWC
+spF
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 bqv
 bqv
 bqv
@@ -88143,6 +90660,7 @@ dgB
 aaa
 aaa
 aJw
+<<<<<<< HEAD
 mKY
 iFr
 elj
@@ -88157,6 +90675,14 @@ aZP
 bjA
 cAG
 bmo
+=======
+wfq
+vfO
+hem
+eWC
+hfr
+mxi
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 bmr
 boZ
 bqx
@@ -88381,6 +90907,7 @@ dgY
 asn
 atK
 aph
+<<<<<<< HEAD
 sse
 ayL
 ayP
@@ -88394,11 +90921,27 @@ aEZ
 aEZ
 gRK
 aJs
+=======
+cwC
+fAz
+fFH
+aaa
+aaa
+bfv
+hsH
+hNU
+bfv
+aaa
+aaa
+wCo
+tfS
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 aJq
 bJx
 dgB
 aaa
 aaa
+<<<<<<< HEAD
 aTQ
 aVd
 aWJ
@@ -88413,6 +90956,22 @@ bgJ
 aZP
 cNL
 bkY
+=======
+aPR
+yga
+jzA
+xXW
+bjz
+hfr
+hoQ
+bmr
+aNt
+xkq
+bff
+dQJ
+bxK
+fqb
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 bmo
 bnP
 bpc
@@ -88657,6 +91216,7 @@ dgB
 aaa
 aaa
 aPR
+<<<<<<< HEAD
 tsX
 wdC
 wwp
@@ -88670,6 +91230,21 @@ bgI
 aZP
 bjC
 bkX
+=======
+kcl
+akZ
+lyg
+bjz
+hfr
+bmr
+bmr
+wQJ
+dAN
+ykW
+dAN
+dAN
+ljw
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 bmo
 bnO
 bpb
@@ -89170,6 +91745,7 @@ aOE
 dgB
 aaa
 aPR
+<<<<<<< HEAD
 aTR
 aVe
 aWK
@@ -89184,6 +91760,22 @@ bbX
 bbX
 bjE
 bbX
+=======
+vFT
+qud
+gdO
+lel
+bjz
+hfr
+bmr
+rhN
+yev
+vfZ
+tfu
+iYm
+nJq
+qDq
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 bmo
 bnQ
 bqz
@@ -89411,11 +92003,21 @@ fTP
 apd
 sse
 ayL
+<<<<<<< HEAD
 ayS
 hlB
 aBs
 aCi
 aDI
+=======
+tlM
+nbl
+mgh
+fuF
+wFf
+vPu
+tlM
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 ayL
 ayW
 ayW
@@ -90966,6 +93568,7 @@ aJq
 hWS
 aNy
 aOE
+<<<<<<< HEAD
 aPS
 aRn
 aSz
@@ -90994,6 +93597,36 @@ bwn
 bxI
 bwa
 nCA
+=======
+jPI
+nTs
+vSj
+grf
+lCw
+nmS
+aTQ
+ifm
+vGV
+fxe
+wgy
+rkF
+mRL
+tsb
+qfD
+mAg
+kyw
+kyw
+neC
+wgy
+mRL
+ldU
+hbS
+etb
+rsX
+tpv
+ogJ
+iBG
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 pxL
 hSx
 bSA
@@ -91480,6 +94113,7 @@ aJq
 aMe
 aNA
 aOE
+<<<<<<< HEAD
 aPS
 aRp
 aSB
@@ -91507,6 +94141,35 @@ vAw
 bwp
 buP
 bwh
+=======
+lhO
+oqC
+okA
+tqU
+lCw
+tGv
+aTQ
+gef
+eXz
+cMU
+lDI
+seL
+ifH
+hCs
+mmm
+ahH
+hZX
+hZX
+pdM
+lDI
+ifH
+chk
+hbS
+fqO
+cxW
+oKn
+ogJ
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 cac
 nWV
 nyS
@@ -94053,10 +96716,17 @@ aOE
 dgB
 aaa
 aaa
+<<<<<<< HEAD
 aTQ
 aVd
 aXe
 aYp
+=======
+aPR
+yga
+fdL
+xXW
+>>>>>>> 82f2ce6084 (Minor BoxStation improvements (#8057))
 aZV
 bbv
 bcm
