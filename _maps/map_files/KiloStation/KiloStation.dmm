@@ -12593,12 +12593,18 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/security/prison)
+<<<<<<< HEAD
 "auX" = (
 /obj/structure/table,
 /obj/machinery/recharger,
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
+=======
+"auY" = (
+/obj/machinery/vending/job_disk{
+	req_access_txt = "57"
+>>>>>>> 45fc94e610 (Tweaks HoP job disk selling vendor (#8126))
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
