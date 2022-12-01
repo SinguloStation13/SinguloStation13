@@ -564,12 +564,21 @@
 /turf/closed/wall/rust,
 /area/security/prison)
 "abi" = (
-/obj/effect/landmark/xeno_spawn,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/turf/open/floor/plating{
-	icon_state = "panelscorched"
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
 	},
+<<<<<<< HEAD
 /area/maintenance/starboard)
+=======
+/obj/machinery/door/airlock/research{
+	name = "Experimentation Lab";
+	req_one_access_txt = "8;49"
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/science/explab)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "abj" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
@@ -681,6 +690,7 @@
 /area/quartermaster/exploration_prep)
 "abv" = (
 /obj/effect/decal/cleanable/dirt,
+<<<<<<< HEAD
 /obj/effect/turf_decal/bot,
 /obj/effect/turf_decal/stripes/line,
 /obj/structure/closet/cardboard,
@@ -706,6 +716,35 @@
 	icon_state = "platingdmg1"
 	},
 /area/maintenance/starboard)
+=======
+/obj/structure/sign/poster/official/safety_eye_protection,
+/turf/closed/wall,
+/area/maintenance/department/science)
+"abw" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/maintenance/department/science)
+"abx" = (
+/obj/item/kirbyplants{
+	icon_state = "plant-16"
+	},
+/turf/open/floor/plasteel/dark,
+/area/maintenance/department/science)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "aby" = (
 /obj/machinery/requests_console{
 	department = "AI";
@@ -791,17 +830,16 @@
 /turf/open/floor/engine,
 /area/ai_monitored/turret_protected/ai)
 "abE" = (
-/obj/effect/decal/cleanable/cobweb/cobweb2,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/yellow{
-	icon_state = "0-8"
-	},
-/obj/effect/landmark/blobstart,
-/obj/effect/turf_decal/stripes/corner{
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
 	},
-/turf/open/floor/plating,
-/area/maintenance/starboard)
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/purple,
+/obj/effect/turf_decal/box,
+/turf/open/floor/plasteel/showroomfloor,
+/area/maintenance/department/science)
 "abF" = (
 /obj/machinery/ai_slipper{
 	uses = 10
@@ -1338,6 +1376,7 @@
 /obj/structure/grille,
 /turf/open/floor/plating/airless,
 /area/space/nearstation)
+<<<<<<< HEAD
 "acz" = (
 /obj/machinery/computer/med_data,
 /obj/machinery/newscaster/security_unit{
@@ -1348,6 +1387,8 @@
 	},
 /turf/open/floor/wood,
 /area/security/detectives_office)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "acA" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
@@ -1621,6 +1662,7 @@
 	},
 /turf/open/floor/engine,
 /area/ai_monitored/turret_protected/ai)
+<<<<<<< HEAD
 "acW" = (
 /obj/effect/turf_decal/tile/neutral/tile_side,
 /obj/effect/turf_decal/bot,
@@ -1673,6 +1715,21 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/medical/virology)
+=======
+"acY" = (
+/obj/structure/table,
+/obj/item/paper_bin{
+	pixel_x = -4;
+	pixel_y = 4
+	},
+/obj/item/pen,
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/hallway/primary/port)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "ada" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -3237,6 +3294,7 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/science/xenobiology)
+<<<<<<< HEAD
 "afJ" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4
@@ -3256,6 +3314,8 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/security/prison)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "afK" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
@@ -3622,6 +3682,7 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/heads/cmo)
+<<<<<<< HEAD
 "agm" = (
 /obj/effect/turf_decal/tile/neutral/tile_side{
 	dir = 5
@@ -3635,6 +3696,8 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "agn" = (
 /obj/effect/landmark/event_spawn,
 /obj/structure/cable/yellow{
@@ -3707,10 +3770,15 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
-/turf/open/floor/plating{
-	icon_state = "platingdmg3"
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
 	},
-/area/maintenance/starboard)
+/obj/structure/sign/warning/explosives{
+	pixel_y = 31
+	},
+/obj/machinery/camera/autoname,
+/turf/open/floor/plasteel/showroomfloor,
+/area/maintenance/department/science)
 "agw" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -3992,14 +4060,12 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 10
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 10
-	},
-/turf/open/floor/plating,
-/area/maintenance/starboard)
+/obj/effect/turf_decal/tile/purple,
+/turf/open/floor/plasteel/showroomfloor,
+/area/maintenance/department/science)
 "agW" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -4207,6 +4273,7 @@
 "ahq" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4
+<<<<<<< HEAD
 	},
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/neutral,
@@ -4265,6 +4332,43 @@
 /obj/machinery/firealarm{
 	dir = 8;
 	pixel_x = 26
+=======
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/stripes/corner,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/security/warden)
+"ahr" = (
+/obj/machinery/computer/crew{
+	dir = 4
+	},
+/obj/effect/turf_decal/bot,
+/obj/machinery/button/door{
+	id = "brigcelldoor";
+	name = "Cell Blast Door Toggle";
+	pixel_x = -24;
+	pixel_y = -6
+	},
+/obj/machinery/button/door{
+	id = "brigfrontdoor";
+	name = "Front Blast Door Toggle";
+	pixel_x = -24;
+	pixel_y = 6
+	},
+/obj/machinery/requests_console{
+	department = "Security";
+	departmentType = 5;
+	name = "Security RC";
+	pixel_x = -30;
+	pixel_y = -30
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 	},
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/neutral,
@@ -4278,6 +4382,40 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
+<<<<<<< HEAD
+=======
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/plasteel/dark,
+/area/security/warden)
+"ahs" = (
+/obj/structure/closet/bombcloset,
+/obj/effect/turf_decal/bot,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/science/explab)
+"ahu" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = 26
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/neutral,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 9
+	},
+/turf/open/floor/plasteel,
+/area/security/warden)
+"ahw" = (
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
@@ -4425,6 +4563,7 @@
 "ahK" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable/yellow{
+<<<<<<< HEAD
 	icon_state = "0-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -4450,6 +4589,27 @@
 	icon_state = "platingdmg1"
 	},
 /area/maintenance/starboard)
+=======
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/maintenance/department/science)
+"ahL" = (
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/purple,
+/turf/open/floor/plasteel/showroomfloor,
+/area/maintenance/department/science)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "ahN" = (
 /obj/structure/sign/poster/contraband/random{
 	pixel_y = 32
@@ -4839,10 +4999,8 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
-/turf/open/floor/plating{
-	icon_state = "panelscorched"
-	},
-/area/maintenance/starboard)
+/turf/open/floor/plasteel/dark,
+/area/maintenance/department/science)
 "ais" = (
 /obj/machinery/door/airlock/medical{
 	id_tag = "Shower_2";
@@ -5412,6 +5570,7 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/quartermaster/exploration_prep)
+<<<<<<< HEAD
 "ajm" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/virology{
@@ -5420,6 +5579,8 @@
 	},
 /turf/open/floor/plating,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "ajn" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
@@ -5593,12 +5754,15 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
 	},
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/item/kirbyplants{
 	icon_state = "plant-03"
 	},
@@ -5662,6 +5826,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "2-4"
 	},
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
@@ -5677,12 +5842,23 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
 	},
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
 	dir = 8
 	},
+<<<<<<< HEAD
+=======
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /turf/open/floor/plasteel/showroomfloor,
 /area/maintenance/department/science)
 "ajG" = (
@@ -5785,12 +5961,15 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/science/xenobiology)
 "ajO" = (
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/structure/disposalpipe/trunk{
 	dir = 1
 	},
@@ -5852,12 +6031,15 @@
 /area/maintenance/port/aft)
 "ajU" = (
 /obj/effect/decal/cleanable/dirt,
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/machinery/vending/cola/pwr_game,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel/dark,
@@ -5965,23 +6147,29 @@
 /turf/open/floor/plasteel,
 /area/construction/mining/aux_base)
 "akf" = (
-/obj/effect/decal/cleanable/cobweb/cobweb2,
 /obj/structure/sign/warning/nosmoking{
 	pixel_x = 32
 	},
-/turf/closed/wall/rust,
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/purple,
+/turf/open/floor/plasteel/showroomfloor,
 /area/maintenance/department/science)
 "akh" = (
 /obj/structure/sign/departments/security,
 /turf/closed/wall,
 /area/maintenance/port/aft)
 "aki" = (
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/structure/closet/firecloset,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel/dark,
@@ -6047,6 +6235,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/purple,
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
@@ -6061,12 +6250,21 @@
 	dir = 4
 	},
 /obj/machinery/camera/autoname,
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
+<<<<<<< HEAD
+=======
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/purple,
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /turf/open/floor/plasteel/showroomfloor,
 /area/maintenance/department/science)
 "akp" = (
@@ -7846,6 +8044,7 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/security/prison)
 "anb" = (
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
@@ -7854,6 +8053,20 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
+=======
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/effect/turf_decal/caution,
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/turf/open/floor/plasteel/showroomfloor,
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /area/science/explab)
 "and" = (
 /obj/structure/table,
@@ -8292,12 +8505,15 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
 	},
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/machinery/light{
 	dir = 1
 	},
@@ -8307,6 +8523,15 @@
 	pixel_x = -3;
 	pixel_y = 6
 	},
+<<<<<<< HEAD
+=======
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /turf/open/floor/plasteel/showroomfloor,
 /area/maintenance/department/science)
 "anO" = (
@@ -8317,6 +8542,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
@@ -8326,6 +8552,8 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/structure/table,
 /obj/item/reagent_containers/food/drinks/soda_cans/starkist{
 	pixel_x = 10;
@@ -8350,6 +8578,15 @@
 /obj/item/reagent_containers/food/drinks/soda_cans/thirteenloko{
 	pixel_y = 20
 	},
+<<<<<<< HEAD
+=======
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /turf/open/floor/plasteel/showroomfloor,
 /area/maintenance/department/science)
 "anP" = (
@@ -9001,6 +9238,7 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/bar)
+<<<<<<< HEAD
 "aoV" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -9016,6 +9254,8 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "aoW" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
@@ -9717,6 +9957,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/purple,
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
@@ -9727,6 +9968,11 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
 	},
+=======
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -9736,6 +9982,13 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
+<<<<<<< HEAD
+=======
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple,
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /turf/open/floor/plasteel/showroomfloor,
 /area/maintenance/department/science)
 "aqc" = (
@@ -9757,6 +10010,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
 	},
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/purple,
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
@@ -9767,12 +10021,24 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
 	},
+=======
+/obj/structure/disposalpipe/segment{
+	dir = 10
+	},
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
+<<<<<<< HEAD
+=======
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple,
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /turf/open/floor/plasteel/showroomfloor,
 /area/maintenance/department/science)
 "aqf" = (
@@ -9791,6 +10057,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/purple,
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
@@ -9799,6 +10066,9 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
 	},
+=======
+/obj/effect/turf_decal/stripes/line,
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -9808,6 +10078,13 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 4
 	},
+<<<<<<< HEAD
+=======
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple,
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /turf/open/floor/plasteel/showroomfloor,
 /area/maintenance/department/science)
 "aqi" = (
@@ -11049,6 +11326,7 @@
 /obj/machinery/holopad,
 /turf/open/floor/plasteel,
 /area/bridge)
+<<<<<<< HEAD
 "arZ" = (
 /obj/machinery/vending/medical,
 /obj/effect/turf_decal/tile/neutral/tile_side{
@@ -11057,6 +11335,8 @@
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel/dark,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "asa" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
@@ -12502,7 +12782,10 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
+<<<<<<< HEAD
 /obj/machinery/shieldwallgen,
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /turf/open/floor/plasteel/dark,
 /area/teleporter)
 "auo" = (
@@ -12907,6 +13190,7 @@
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
+<<<<<<< HEAD
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
@@ -12916,7 +13200,15 @@
 "auY" = (
 /obj/machinery/vending/cart{
 	req_access_txt = "57"
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/bridge)
+"auY" = (
 /obj/structure/noticeboard{
 	pixel_y = 30
 	},
@@ -13476,6 +13768,7 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
+<<<<<<< HEAD
 "avP" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -13490,6 +13783,8 @@
 /obj/machinery/airalarm/directional/south,
 /turf/open/floor/plasteel/freezer,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "avQ" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
@@ -14691,11 +14986,13 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
 	},
-/obj/structure/sign/directions/evac{
-	pixel_x = 32
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/effect/turf_decal/stripes/corner,
+/obj/structure/sign/directions/evac{
+	dir = 4;
+	pixel_x = 32
+	},
 /turf/open/floor/plating,
 /area/maintenance/starboard)
 "axE" = (
@@ -15583,8 +15880,15 @@
 /obj/structure/sign/warning/vacuum/external{
 	pixel_x = -32
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
 /turf/open/floor/plating{
 	icon_state = "panelscorched"
 	},
@@ -15593,17 +15897,30 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/cobweb/cobweb2,
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/neutral,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/dark,
+=======
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/turf/open/floor/plasteel/showroomfloor,
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /area/maintenance/department/science)
 "ayY" = (
 /obj/structure/table,
@@ -17627,9 +17944,12 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plasteel/showroomfloor,
 /area/science/research)
+<<<<<<< HEAD
 "aBY" = (
 /turf/closed/wall/r_wall/rust,
 /area/engine/atmos)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "aBZ" = (
 /obj/structure/table,
 /obj/effect/turf_decal/tile/neutral{
@@ -17860,6 +18180,7 @@
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plasteel,
 /area/engine/break_room)
+<<<<<<< HEAD
 "aCs" = (
 /obj/structure/table,
 /obj/item/paper_bin{
@@ -17877,6 +18198,8 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/security/checkpoint/medical)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "aCt" = (
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
@@ -18200,6 +18523,7 @@
 	},
 /turf/open/floor/plasteel,
 /area/gateway)
+<<<<<<< HEAD
 "aCQ" = (
 /obj/effect/turf_decal/stripes/end{
 	dir = 1
@@ -18208,6 +18532,8 @@
 /obj/effect/turf_decal/tile/green/tile_marquee,
 /turf/open/floor/plasteel/showroomfloor,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "aCR" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
@@ -19763,10 +20089,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/atmos)
+<<<<<<< HEAD
 "aFA" = (
 /obj/structure/sign/warning/fire,
 /turf/closed/wall/r_wall,
 /area/engine/atmos)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "aFB" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/general/visible,
@@ -21261,6 +21590,12 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+<<<<<<< HEAD
+=======
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
 "aIe" = (
@@ -22711,11 +23046,21 @@
 "aKj" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
-/turf/open/floor/plating{
-	icon_state = "platingdmg3"
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
 	},
-/area/maintenance/starboard)
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/maintenance/department/science)
 "aKk" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/preopen{
@@ -24025,13 +24370,23 @@
 /turf/closed/wall,
 /area/engine/atmos)
 "aMl" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/turf/open/floor/plating{
-	icon_state = "platingdmg3"
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
 	},
+<<<<<<< HEAD
 /area/maintenance/starboard)
+=======
+/obj/effect/decal/cleanable/blood/old,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/purple,
+/turf/open/floor/plasteel/showroomfloor,
+/area/science/explab)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "aMm" = (
 /obj/structure/table,
 /obj/item/storage/toolbox/mechanical,
@@ -25720,6 +26075,7 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
+<<<<<<< HEAD
 "aOR" = (
 /obj/machinery/computer/card/minor/cmo{
 	dir = 8
@@ -25761,6 +26117,8 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/heads/cmo)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "aOS" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -27355,6 +27713,7 @@
 	dir = 1
 	},
 /area/hallway/primary/fore)
+<<<<<<< HEAD
 "aRs" = (
 /obj/structure/bed,
 /obj/machinery/iv_drip,
@@ -27372,6 +27731,8 @@
 /obj/machinery/firealarm/directional/east,
 /turf/open/floor/plasteel/dark,
 /area/medical/surgery)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "aRt" = (
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
@@ -27680,8 +28041,16 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer/on,
+<<<<<<< HEAD
 /turf/open/floor/plating,
 /area/maintenance/starboard)
+=======
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/maintenance/department/science)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "aRL" = (
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
@@ -28286,10 +28655,13 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/medical/medbay/central)
+<<<<<<< HEAD
 "aSG" = (
 /obj/structure/sign/warning/biohazard,
 /turf/closed/wall/r_wall,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "aSH" = (
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
@@ -28641,6 +29013,7 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/bar/atrium)
+<<<<<<< HEAD
 "aTh" = (
 /obj/effect/turf_decal/tile/green/tile_marquee,
 /obj/structure/disposalpipe/segment{
@@ -28664,6 +29037,8 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "aTj" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -28693,6 +29068,7 @@
 /obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/plating,
 /area/maintenance/port)
+<<<<<<< HEAD
 "aTl" = (
 /obj/structure/window/reinforced{
 	dir = 4
@@ -28721,6 +29097,8 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "aTm" = (
 /obj/structure/table,
 /obj/item/paper_bin,
@@ -28910,6 +29288,7 @@
 /obj/machinery/holopad,
 /turf/open/floor/plasteel/showroomfloor,
 /area/medical/chemistry)
+<<<<<<< HEAD
 "aTx" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable/yellow,
@@ -28936,6 +29315,8 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "aTz" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/line{
@@ -28976,6 +29357,7 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/crew_quarters/kitchen)
+<<<<<<< HEAD
 "aTD" = (
 /obj/machinery/button/door{
 	id = "ViroA";
@@ -28995,6 +29377,8 @@
 	},
 /turf/open/floor/plasteel/freezer,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "aTE" = (
 /obj/machinery/mech_bay_recharge_port,
 /obj/effect/turf_decal/stripes/corner{
@@ -29418,7 +29802,10 @@
 	dir = 4;
 	pixel_x = -22
 	},
+<<<<<<< HEAD
 /obj/machinery/shieldwallgen,
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /turf/open/floor/plasteel/dark,
 /area/teleporter)
 "aUk" = (
@@ -29923,6 +30310,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel/dark,
 /area/medical/storage)
+<<<<<<< HEAD
 "aUV" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -29946,6 +30334,8 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "aUX" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1
@@ -29987,6 +30377,7 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/crew_quarters/heads/cmo)
+<<<<<<< HEAD
 "aVa" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -30000,6 +30391,8 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "aVb" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -30013,6 +30406,7 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/bar)
+<<<<<<< HEAD
 "aVc" = (
 /obj/structure/disposalpipe/segment{
 	dir = 10
@@ -30032,6 +30426,8 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "aVd" = (
 /obj/structure/rack,
 /obj/effect/turf_decal/bot,
@@ -30065,6 +30461,7 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/bar)
+<<<<<<< HEAD
 "aVf" = (
 /obj/structure/table/glass,
 /obj/machinery/reagentgrinder{
@@ -30098,6 +30495,8 @@
 /obj/item/clothing/glasses/hud/health,
 /turf/open/floor/plasteel/dark,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "aVj" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/grunge{
@@ -30242,6 +30641,7 @@
 	},
 /turf/open/floor/grass,
 /area/chapel/main)
+<<<<<<< HEAD
 "aVs" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -30253,6 +30653,8 @@
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plasteel/dark,
 /area/medical/surgery)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "aVt" = (
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
@@ -30334,6 +30736,7 @@
 	icon_state = "panelscorched"
 	},
 /area/maintenance/central)
+<<<<<<< HEAD
 "aVA" = (
 /obj/machinery/light{
 	dir = 4;
@@ -30348,6 +30751,8 @@
 /mob/living/carbon/monkey,
 /turf/open/floor/plasteel/dark,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "aVB" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
@@ -30373,6 +30778,7 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/security/checkpoint/medical)
+<<<<<<< HEAD
 "aVD" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -30409,6 +30815,8 @@
 /obj/effect/turf_decal/stripes/corner,
 /turf/open/floor/plasteel/showroomfloor,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "aVH" = (
 /obj/machinery/status_display/evac,
 /turf/closed/wall,
@@ -30516,6 +30924,7 @@
 /obj/structure/grille,
 /turf/closed/wall/r_wall,
 /area/engine/atmos)
+<<<<<<< HEAD
 "aVR" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -30526,6 +30935,8 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "aVS" = (
 /obj/machinery/door/window/southleft{
 	name = "Mass Driver Door";
@@ -30581,6 +30992,7 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/security/checkpoint/medical)
+<<<<<<< HEAD
 "aVW" = (
 /obj/effect/turf_decal/tile/neutral/tile_side{
 	dir = 9
@@ -30588,6 +31000,8 @@
 /mob/living/carbon/monkey,
 /turf/open/floor/plasteel/dark,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "aVX" = (
 /obj/machinery/modular_computer/console/preset/research{
 	dir = 8
@@ -35878,6 +36292,7 @@
 /obj/structure/window/reinforced,
 /turf/open/floor/plasteel/dark,
 /area/science/lab)
+<<<<<<< HEAD
 "bdH" = (
 /obj/structure/table,
 /obj/effect/turf_decal/tile/neutral{
@@ -35897,6 +36312,8 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/security/checkpoint/science/research)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "bdI" = (
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
@@ -37109,7 +37526,10 @@
 	dir = 4;
 	pixel_x = -26
 	},
+<<<<<<< HEAD
 /obj/machinery/shieldwallgen,
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /turf/open/floor/plasteel/dark,
 /area/teleporter)
 "bfq" = (
@@ -37267,6 +37687,7 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/heads/hor)
+<<<<<<< HEAD
 "bfC" = (
 /obj/structure/table,
 /obj/machinery/recharger,
@@ -37291,6 +37712,8 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/medical/surgery)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "bfE" = (
 /obj/structure/table,
 /obj/item/crowbar/red,
@@ -37958,6 +38381,7 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/science/robotics/lab)
+<<<<<<< HEAD
 "bgC" = (
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
@@ -37970,6 +38394,8 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/medical/surgery)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "bgD" = (
 /obj/item/radio/intercom{
 	pixel_y = 22
@@ -37994,6 +38420,7 @@
 /obj/machinery/smartfridge/extract/preloaded,
 /turf/closed/wall,
 /area/science/xenobiology)
+<<<<<<< HEAD
 "bgG" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
@@ -38027,6 +38454,8 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/medical/surgery)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "bgH" = (
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
@@ -38049,6 +38478,7 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/science/xenobiology)
+<<<<<<< HEAD
 "bgI" = (
 /obj/structure/table/glass,
 /obj/effect/turf_decal/tile/neutral/tile_full,
@@ -38074,6 +38504,8 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "bgJ" = (
 /obj/effect/turf_decal/tile/red,
 /obj/structure/disposalpipe/segment{
@@ -38087,6 +38519,7 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/crew_quarters/toilet/restrooms)
+<<<<<<< HEAD
 "bgK" = (
 /obj/machinery/button/door{
 	id = "QuarantineA";
@@ -38110,6 +38543,8 @@
 /obj/item/bedsheet/medical,
 /turf/open/floor/plasteel/freezer,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "bgM" = (
 /obj/effect/turf_decal/bot,
 /obj/effect/turf_decal/tile/neutral{
@@ -39200,6 +39635,7 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/bridge)
+<<<<<<< HEAD
 "biw" = (
 /obj/item/restraints/handcuffs{
 	pixel_x = 3;
@@ -39242,6 +39678,8 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "bix" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 4
@@ -39265,6 +39703,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel,
 /area/quartermaster/miningoffice)
+<<<<<<< HEAD
 "biy" = (
 /obj/effect/turf_decal/tile/neutral/tile_side{
 	dir = 1
@@ -39283,6 +39722,8 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "biz" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -39344,6 +39785,7 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/maintenance/port)
+<<<<<<< HEAD
 "biF" = (
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "quarantineshutters";
@@ -39367,6 +39809,13 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
+=======
+"biG" = (
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/effect/turf_decal/bot,
 /obj/machinery/vending/coffee,
 /turf/open/floor/plasteel/dark,
@@ -39598,6 +40047,7 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/science/research)
+<<<<<<< HEAD
 "biV" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -39614,6 +40064,8 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "biW" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8
@@ -39697,6 +40149,7 @@
 	icon_state = "platingdmg3"
 	},
 /area/maintenance/port)
+<<<<<<< HEAD
 "bjb" = (
 /obj/effect/turf_decal/tile/green/tile_marquee,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -39705,6 +40158,8 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel/showroomfloor,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "bjc" = (
 /obj/effect/turf_decal/tile/brown,
 /obj/effect/turf_decal/tile/brown{
@@ -40504,6 +40959,7 @@
 /obj/effect/landmark/event_spawn,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
+<<<<<<< HEAD
 "bkm" = (
 /obj/effect/turf_decal/bot,
 /obj/machinery/computer/security/labor,
@@ -40524,6 +40980,8 @@
 /obj/effect/decal/cleanable/cobweb,
 /turf/open/floor/plasteel/dark,
 /area/security/checkpoint/supply)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "bkn" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
@@ -41400,6 +41858,7 @@
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
+<<<<<<< HEAD
 "blB" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
@@ -41418,6 +41877,8 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "blC" = (
 /obj/effect/turf_decal/box/corners{
 	dir = 8
@@ -41607,6 +42068,7 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/bar)
+<<<<<<< HEAD
 "blS" = (
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "monkeyshutters";
@@ -41620,6 +42082,8 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "blT" = (
 /obj/effect/turf_decal/stripes/corner,
 /obj/effect/turf_decal/stripes/corner{
@@ -41672,6 +42136,7 @@
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/sorting)
+<<<<<<< HEAD
 "blV" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/tile/green/tile_marquee,
@@ -41683,6 +42148,8 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "blW" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
@@ -42959,10 +43426,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
+<<<<<<< HEAD
 "bnN" = (
 /obj/effect/turf_decal/tile/green/tile_marquee,
 /turf/open/floor/plasteel/showroomfloor,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "bnO" = (
 /obj/structure/reagent_dispensers/watertank/high,
 /obj/effect/turf_decal/delivery,
@@ -43848,6 +44318,7 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
+<<<<<<< HEAD
 "bpa" = (
 /obj/effect/turf_decal/tile/green/tile_marquee,
 /obj/structure/disposalpipe/sorting/mail/flip{
@@ -43858,6 +44329,8 @@
 /obj/machinery/airalarm/directional/east,
 /turf/open/floor/plasteel/showroomfloor,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "bpb" = (
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red{
@@ -44046,6 +44519,7 @@
 /obj/structure/sign/poster/contraband/random,
 /turf/closed/wall,
 /area/maintenance/central)
+<<<<<<< HEAD
 "bpr" = (
 /obj/machinery/smartfridge/chemistry/virology/preloaded,
 /obj/effect/turf_decal/tile/neutral{
@@ -44053,6 +44527,8 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "bps" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -44168,6 +44644,7 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/library)
+<<<<<<< HEAD
 "bpz" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -44180,6 +44657,8 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "bpA" = (
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
@@ -44219,6 +44698,7 @@
 /obj/effect/turf_decal/tile/purple,
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
+<<<<<<< HEAD
 "bpD" = (
 /obj/effect/turf_decal/tile/neutral/tile_side{
 	dir = 9
@@ -44232,6 +44712,8 @@
 /obj/machinery/light,
 /turf/open/floor/plasteel/dark,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "bpE" = (
 /obj/structure/closet/secure_closet/security/sec,
 /obj/effect/turf_decal/tile/neutral,
@@ -44848,6 +45330,7 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/maintenance/port)
+<<<<<<< HEAD
 "bqA" = (
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "quarantineshutters";
@@ -44877,6 +45360,8 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/maintenance/port)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "bqC" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 4
@@ -45187,6 +45672,7 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/theatre)
+<<<<<<< HEAD
 "bqX" = (
 /obj/effect/turf_decal/tile/neutral/tile_side{
 	dir = 6
@@ -45205,6 +45691,8 @@
 /obj/structure/sign/warning/biohazard,
 /turf/closed/wall/r_wall/rust,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "bqZ" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -45350,7 +45838,11 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
+<<<<<<< HEAD
 /area/maintenance/starboard)
+=======
+/area/maintenance/department/science)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "bri" = (
 /obj/machinery/computer/security/mining,
 /obj/effect/turf_decal/tile/neutral{
@@ -46255,6 +46747,7 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/maintenance/port/aft)
+<<<<<<< HEAD
 "bsE" = (
 /obj/machinery/button/door{
 	id = "quarantineshutters";
@@ -46280,6 +46773,8 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "bsF" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -47257,7 +47752,11 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
+<<<<<<< HEAD
 /area/chapel/office)
+=======
+/area/maintenance/fore)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "bub" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -47519,6 +48018,7 @@
 /obj/structure/bookcase/random/nonfiction,
 /turf/open/floor/wood,
 /area/crew_quarters/bar)
+<<<<<<< HEAD
 "buw" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -47535,6 +48035,8 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "bux" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -47851,6 +48353,7 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/library)
+<<<<<<< HEAD
 "bvc" = (
 /obj/structure/sign/warning/biohazard,
 /turf/closed/wall/rust,
@@ -47865,6 +48368,8 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plating,
 /area/maintenance/central)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "bvg" = (
 /obj/structure/bookcase/random/religion,
 /obj/machinery/light{
@@ -48344,6 +48849,7 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/bridge)
+<<<<<<< HEAD
 "bvW" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/turf_decal/stripes/corner{
@@ -48369,6 +48875,19 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
+=======
+"bvX" = (
+/obj/machinery/modular_computer/console/preset/command,
+/obj/effect/turf_decal/tile/yellow{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /turf/open/floor/plasteel/dark,
 /area/bridge)
 "bvY" = (
@@ -48644,6 +49163,7 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/chapel/main)
+<<<<<<< HEAD
 "bwD" = (
 /obj/machinery/light{
 	dir = 8
@@ -48656,6 +49176,8 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "bwE" = (
 /obj/effect/turf_decal/bot,
 /obj/effect/turf_decal/stripes/line{
@@ -48746,6 +49268,7 @@
 	dir = 4
 	},
 /area/chapel/main)
+<<<<<<< HEAD
 "bwO" = (
 /obj/effect/turf_decal/tile/neutral/tile_side{
 	dir = 4
@@ -48753,6 +49276,8 @@
 /mob/living/carbon/monkey,
 /turf/open/floor/plasteel/dark,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "bwP" = (
 /obj/structure/bookcase/random/religion,
 /obj/effect/turf_decal/tile/neutral{
@@ -49342,6 +49867,7 @@
 /obj/effect/landmark/start/assistant,
 /turf/open/floor/plasteel,
 /area/crew_quarters/fitness/recreation)
+<<<<<<< HEAD
 "bxV" = (
 /obj/machinery/computer/pandemic,
 /obj/effect/turf_decal/tile/neutral/tile_side{
@@ -49353,6 +49879,8 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "bxW" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -50151,6 +50679,7 @@
 	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/fitness/recreation)
+<<<<<<< HEAD
 "byY" = (
 /obj/effect/turf_decal/tile/neutral/tile_side{
 	dir = 5
@@ -50158,6 +50687,8 @@
 /obj/structure/bed/roller,
 /turf/open/floor/plasteel/dark,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "byZ" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
@@ -50583,6 +51114,7 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel/dark,
 /area/hydroponics)
+<<<<<<< HEAD
 "bzD" = (
 /obj/machinery/newscaster/security_unit{
 	pixel_x = -28
@@ -50592,6 +51124,8 @@
 	},
 /turf/open/floor/wood,
 /area/crew_quarters/heads/hos)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "bzF" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/segment{
@@ -50793,11 +51327,14 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/neutral,
+<<<<<<< HEAD
 /obj/machinery/camera{
 	c_tag = "AI Upload Transit Access";
 	dir = 1;
 	name = "command camera"
 	},
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/item/radio/intercom{
 	pixel_y = -28
 	},
@@ -51010,6 +51547,14 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
+<<<<<<< HEAD
+=======
+/obj/machinery/camera{
+	c_tag = "AI Upload Transit Access";
+	dir = 1;
+	name = "command camera"
+	},
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /turf/open/floor/plasteel/dark,
 /area/bridge)
 "bAp" = (
@@ -51693,6 +52238,7 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
 /area/engine/atmos)
+<<<<<<< HEAD
 "bBu" = (
 /obj/effect/turf_decal/bot,
 /obj/effect/turf_decal/tile/neutral,
@@ -51715,6 +52261,8 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/locker)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "bBv" = (
 /obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment,
@@ -51856,6 +52404,7 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/security/checkpoint/supply)
+<<<<<<< HEAD
 "bBF" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -51871,6 +52420,8 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/security/brig)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "bBH" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/corner{
@@ -51947,6 +52498,7 @@
 	},
 /turf/open/floor/plasteel,
 /area/storage/primary)
+<<<<<<< HEAD
 "bBO" = (
 /obj/machinery/door/airlock/medical{
 	id_tag = "QuarantineA";
@@ -51962,6 +52514,8 @@
 	},
 /turf/open/floor/plasteel/freezer,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "bBP" = (
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
@@ -53672,9 +54226,12 @@
 /obj/machinery/light{
 	dir = 4
 	},
+<<<<<<< HEAD
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 28
 	},
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/machinery/light_switch{
 	pixel_x = 24
 	},
@@ -55637,6 +56194,9 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
 /turf/open/floor/plating{
 	icon_state = "platingdmg3"
 	},
@@ -55924,6 +56484,7 @@
 "bHX" = (
 /turf/closed/wall/rust,
 /area/hallway/primary/port)
+<<<<<<< HEAD
 "bHY" = (
 /obj/structure/table,
 /obj/item/storage/box/prisoner,
@@ -55938,6 +56499,8 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/processing)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "bHZ" = (
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/neutral,
@@ -56574,6 +57137,12 @@
 	dir = 4;
 	pixel_x = -26
 	},
+<<<<<<< HEAD
+=======
+/obj/structure/extinguisher_cabinet{
+	pixel_y = 28
+	},
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/locker)
 "bIX" = (
@@ -61664,6 +62233,7 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/maintenance/port/aft)
+<<<<<<< HEAD
 "bQE" = (
 /obj/effect/turf_decal/bot,
 /obj/effect/turf_decal/tile/neutral,
@@ -61689,6 +62259,8 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/locker)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "bQF" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -63928,6 +64500,7 @@
 	lighting_colour_bulb = "#ffdbb4";
 	lighting_colour_tube = "#ffce99"
 	})
+<<<<<<< HEAD
 "bTW" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -63944,6 +64517,8 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "bTX" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1
@@ -65543,9 +66118,12 @@
 	pixel_x = -26
 	},
 /obj/effect/landmark/start/assistant,
+<<<<<<< HEAD
 /obj/structure/disposalpipe/segment{
 	dir = 10
 	},
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
@@ -71902,9 +72480,12 @@
 	},
 /obj/effect/decal/cleanable/blood/old,
 /obj/structure/cable/yellow{
+<<<<<<< HEAD
 	icon_state = "1-2"
 	},
 /obj/structure/cable/yellow{
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 	icon_state = "1-8"
 	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
@@ -72434,7 +73015,11 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
+<<<<<<< HEAD
 /area/chapel/office)
+=======
+/area/maintenance/fore)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "cgZ" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -76147,11 +76732,10 @@
 /area/space/nearstation)
 "cmW" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/storage/box/lights/mixed,
-/turf/open/floor/plating{
-	icon_state = "platingdmg3"
-	},
-/area/maintenance/starboard)
+/obj/structure/closet/firecloset,
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plasteel/dark,
+/area/maintenance/department/science)
 "cmX" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/atmos{
@@ -76310,6 +76894,7 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/main)
+<<<<<<< HEAD
 "cni" = (
 /obj/structure/chair/office/light,
 /obj/effect/turf_decal/stripes/line{
@@ -76322,6 +76907,8 @@
 /obj/effect/landmark/start/virologist,
 /turf/open/floor/plasteel/showroomfloor,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "cnj" = (
 /obj/structure/grille/broken,
 /obj/effect/decal/cleanable/dirt,
@@ -79701,6 +80288,7 @@
 /turf/open/floor/plasteel/dark,
 /area/engine/atmos)
 "csx" = (
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/purple,
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
@@ -79708,6 +80296,26 @@
 /obj/machinery/airalarm{
 	dir = 8;
 	pixel_x = 24
+=======
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/door/window/southright{
+	name = "Secure Artifact Storage";
+	dir = 8;
+	req_one_access_txt = "8;49"
+	},
+/obj/structure/rack,
+/obj/item/xenoartifact,
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 	},
 /turf/open/floor/plasteel/dark,
 /area/science/explab)
@@ -79820,6 +80428,7 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
+<<<<<<< HEAD
 "csG" = (
 /obj/effect/turf_decal/bot,
 /obj/structure/sign/warning/nosmoking{
@@ -79837,6 +80446,8 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/maintenance/port)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "csH" = (
 /obj/machinery/airalarm{
 	dir = 1;
@@ -79859,6 +80470,7 @@
 	icon_state = "panelscorched"
 	},
 /area/maintenance/disposal)
+<<<<<<< HEAD
 "csI" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/line{
@@ -79875,6 +80487,8 @@
 /obj/effect/turf_decal/tile/green/tile_marquee,
 /turf/open/floor/plasteel/showroomfloor,
 /area/maintenance/port)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "csK" = (
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
@@ -79893,6 +80507,7 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/engineering)
+<<<<<<< HEAD
 "csL" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/line{
@@ -79914,12 +80529,15 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/port)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "csN" = (
 /obj/structure/flora/grass/jungle/b,
 /turf/open/floor/plating/asteroid/airless{
 	initial_gas_mix = "o2=14;n2=23;TEMP=300"
 	},
 /area/maintenance/port/aft)
+<<<<<<< HEAD
 "csO" = (
 /obj/structure/table/glass,
 /obj/effect/turf_decal/tile/neutral/tile_side{
@@ -79931,6 +80549,8 @@
 /obj/structure/cable/yellow,
 /turf/open/floor/plasteel/dark,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "csP" = (
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
@@ -79953,6 +80573,7 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/medical/medbay/central)
+<<<<<<< HEAD
 "csQ" = (
 /obj/structure/table,
 /obj/machinery/microwave{
@@ -80002,6 +80623,8 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/maintenance/port)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "csS" = (
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/structure/flora/ausbushes/lavendergrass,
@@ -81166,6 +81789,7 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/science/xenobiology)
+<<<<<<< HEAD
 "cuH" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -81182,6 +81806,8 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "cuJ" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
@@ -84244,7 +84870,11 @@
 /obj/effect/landmark/xeno_spawn,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /turf/open/floor/plating,
+<<<<<<< HEAD
 /area/chapel/office)
+=======
+/area/maintenance/fore)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "cAk" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -85978,12 +86608,23 @@
 /area/maintenance/starboard)
 "cDI" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/airalarm/directional/west,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
-/turf/open/floor/plating{
-	icon_state = "platingdmg1"
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
 	},
+<<<<<<< HEAD
 /area/maintenance/starboard)
+=======
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/science/explab)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "cDJ" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
@@ -86033,16 +86674,26 @@
 /area/maintenance/starboard/fore)
 "cDN" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small,
 /obj/machinery/atmospherics/pipe/simple/cyan/hidden{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
-/turf/open/floor/plating{
-	icon_state = "platingdmg3"
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 4
 	},
-/area/maintenance/starboard)
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/maintenance/department/science)
 "cDO" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/hidden{
 	dir = 4
@@ -86419,10 +87070,19 @@
 /area/maintenance/starboard/fore)
 "cEH" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating{
-	icon_state = "platingdmg3"
+/obj/machinery/light_switch{
+	pixel_y = -27
 	},
+<<<<<<< HEAD
 /area/maintenance/starboard)
+=======
+/obj/item/kirbyplants,
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/science/explab)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "cEI" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/corner,
@@ -86781,6 +87441,7 @@
 	},
 /obj/item/stock_parts/cell/high,
 /obj/effect/decal/cleanable/dirt,
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
@@ -86795,6 +87456,11 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
 	},
+=======
+/turf/open/floor/plasteel/dark,
+/area/maintenance/department/science)
+"cFq" = (
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
 	},
@@ -86805,15 +87471,25 @@
 /obj/structure/sign/poster/contraband/random{
 	pixel_x = 32
 	},
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
 	},
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
 	},
+<<<<<<< HEAD
+=======
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/purple,
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /turf/open/floor/plasteel/showroomfloor,
 /area/maintenance/department/science)
 "cFr" = (
@@ -86991,12 +87667,15 @@
 /area/science/shuttledock)
 "cFF" = (
 /obj/effect/decal/cleanable/dirt,
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
 	},
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/effect/decal/cleanable/cobweb,
 /obj/structure/reagent_dispensers/water_cooler,
 /obj/effect/turf_decal/bot,
@@ -87006,6 +87685,12 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
+<<<<<<< HEAD
+=======
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /turf/open/floor/plasteel/showroomfloor,
 /area/maintenance/department/science)
 "cFG" = (
@@ -87133,6 +87818,7 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "cFU" = (
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/purple,
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
@@ -87140,6 +87826,8 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
 	},
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -87149,6 +87837,13 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
+<<<<<<< HEAD
+=======
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple,
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /turf/open/floor/plasteel/showroomfloor,
 /area/maintenance/department/science)
 "cFV" = (
@@ -87293,17 +87988,24 @@
 /area/maintenance/department/science)
 "cGo" = (
 /obj/effect/decal/cleanable/dirt,
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/machinery/power/apc/auto_name/south,
 /obj/structure/cable/yellow,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 1
 	},
+<<<<<<< HEAD
+=======
+/obj/effect/turf_decal/box,
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /turf/open/floor/plasteel/dark,
 /area/maintenance/department/science)
 "cGp" = (
@@ -87849,6 +88551,12 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+<<<<<<< HEAD
+=======
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /turf/open/floor/plasteel/dark/corner{
 	dir = 4
 	},
@@ -88543,6 +89251,7 @@
 	},
 /turf/open/floor/carpet/green,
 /area/lawoffice)
+<<<<<<< HEAD
 "cII" = (
 /obj/structure/table/wood,
 /obj/machinery/recharger,
@@ -88557,6 +89266,8 @@
 	},
 /turf/open/floor/carpet/blue,
 /area/crew_quarters/heads/hop)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "cIJ" = (
 /obj/structure/table/wood,
 /obj/item/stack/package_wrap,
@@ -89497,6 +90208,7 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/security/brig)
+<<<<<<< HEAD
 "cJY" = (
 /obj/structure/table,
 /obj/effect/turf_decal/tile/neutral{
@@ -89526,6 +90238,8 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/security/checkpoint/engineering)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "cJZ" = (
 /obj/machinery/photocopier,
 /obj/effect/turf_decal/tile/neutral,
@@ -93831,6 +94545,23 @@
 /obj/structure/table,
 /turf/open/floor/plating,
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
+=======
+"cQN" = (
+/obj/effect/turf_decal/bot,
+/obj/structure/sign/warning/nosmoking{
+	pixel_y = 30
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/structure/closet/l3closet/virology,
+/obj/item/storage/box/gloves,
+/obj/item/storage/box/masks,
+/turf/open/floor/plasteel/dark,
+/area/maintenance/port)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "cUU" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating{
@@ -93960,6 +94691,35 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/solars/port/aft)
+<<<<<<< HEAD
+=======
+"dot" = (
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/purple,
+/obj/structure/sign/poster/contraband/random{
+	pixel_x = 32
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/maintenance/department/science)
+"doW" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/camera{
+	c_tag = "Recovery Room";
+	dir = 1;
+	name = "medical camera";
+	network = list("ss13","medical");
+	pixel_x = 17
+	},
+/turf/open/floor/plasteel/freezer,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "dqj" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small{
@@ -94319,6 +95079,7 @@
 "eid" = (
 /turf/closed/wall/rust,
 /area/security/brig)
+<<<<<<< HEAD
 "ekS" = (
 /obj/structure/table/glass,
 /obj/item/storage/box/monkeycubes{
@@ -94334,6 +95095,16 @@
 	dir = 4
 	},
 /obj/machinery/airalarm/directional/south,
+=======
+"ejB" = (
+/obj/machinery/camera{
+	c_tag = "Medical Security Post";
+	dir = 1;
+	name = "medical camera";
+	network = list("ss13","medical")
+	},
+/obj/machinery/light,
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /turf/open/floor/plasteel/dark,
 /area/medical/virology)
 "elh" = (
@@ -94350,19 +95121,97 @@
 	},
 /turf/open/space/basic,
 /area/solar/starboard/fore)
+<<<<<<< HEAD
+=======
+"emR" = (
+/obj/machinery/door/airlock/medical{
+	id_tag = "QuarantineA";
+	name = "Quarantine Cell A"
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "quarantineshutters";
+	name = "isolation shutters"
+	},
+/obj/machinery/door/firedoor,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plasteel/freezer,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "emS" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "epJ" = (
+<<<<<<< HEAD
 /turf/open/floor/plating,
 /area/science/explab)
+=======
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
+/obj/machinery/button/door{
+	pixel_x = -27;
+	pixel_y = 5;
+	name = "containment shutters";
+	id = "xenoarch"
+	},
+/obj/effect/turf_decal/box,
+/turf/open/floor/plasteel/showroomfloor,
+/area/science/explab)
+"eqb" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "erz" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/on,
 /turf/open/floor/plating{
 	icon_state = "platingdmg3"
 	},
 /area/engine/atmos)
+<<<<<<< HEAD
+=======
+"etu" = (
+/obj/machinery/button/door{
+	id = "quarantineshutters";
+	name = "Quarantine Lockdown";
+	pixel_x = 24;
+	req_access_txt = "39"
+	},
+/obj/effect/turf_decal/bot,
+/obj/machinery/light_switch{
+	pixel_x = 22;
+	pixel_y = -9
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+/obj/structure/closet/l3closet/virology,
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#c1caff"
+	},
+/turf/open/floor/plasteel/dark,
+/area/medical/virology)
+"eva" = (
+/obj/machinery/computer/med_data,
+/obj/machinery/newscaster{
+	pixel_y = 30
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/security/detectives_office)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "evw" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/remains/human,
@@ -94402,11 +95251,36 @@
 	icon_state = "platingdmg1"
 	},
 /area/quartermaster/exploration_dock)
+<<<<<<< HEAD
 "ezM" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
+=======
+"ezy" = (
+/obj/structure/table,
+/obj/item/paper_bin{
+	pixel_x = -4;
+	pixel_y = 4
+	},
+/obj/item/radio{
+	pixel_x = 6;
+	pixel_y = 4
+	},
+/obj/item/pen,
+/obj/effect/turf_decal/tile/neutral,
+/obj/machinery/newscaster{
+	pixel_x = -30
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/checkpoint/medical)
+"ezM" = (
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -94570,6 +95444,28 @@
 	icon_state = "platingdmg3"
 	},
 /area/maintenance/port/fore)
+<<<<<<< HEAD
+=======
+"eWx" = (
+/obj/structure/table/wood,
+/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass{
+	pixel_x = -3;
+	pixel_y = 15
+	},
+/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass{
+	pixel_x = -6;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/food/drinks/beer{
+	desc = "A station exclusive. Consumption may result in seizures, blindness, drunkenness, or even death.";
+	list_reagents = list(/datum/reagent/consumable/ethanol/thirteenloko=30);
+	name = "Kilo-Kocktail";
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/turf/open/floor/carpet/green,
+/area/lawoffice)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "eWQ" = (
 /obj/structure/cable/yellow{
 	icon_state = "2-4"
@@ -94623,11 +95519,16 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/emcloset,
 /obj/effect/turf_decal/bot,
+<<<<<<< HEAD
 /obj/effect/turf_decal/stripes/corner,
 /turf/open/floor/plating{
 	icon_state = "panelscorched"
 	},
 /area/maintenance/starboard)
+=======
+/turf/open/floor/plasteel/dark,
+/area/maintenance/department/science)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "eZR" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -94644,17 +95545,58 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/exit/departure_lounge)
+<<<<<<< HEAD
 "fcm" = (
+=======
+"eZZ" = (
+/obj/structure/chair/office/light,
+/obj/effect/turf_decal/stripes/line{
+	dir = 10
+	},
+/obj/effect/landmark/start/virologist,
+/turf/open/floor/plasteel/showroomfloor,
+/area/medical/virology)
+"fbw" = (
+/obj/structure/disposalpipe/segment{
+	dir = 10
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 6
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/medical/virology)
+"fcm" = (
+/obj/effect/turf_decal/stripes/corner,
+/obj/item/radio/intercom{
+	pixel_x = -28
+	},
+/obj/structure/sign/warning/nosmoking{
+	pixel_y = 32
+	},
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
 	},
+<<<<<<< HEAD
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/dark,
+=======
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/turf/open/floor/plasteel/showroomfloor,
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /area/science/explab)
 "fec" = (
 /obj/machinery/door/firedoor,
@@ -94687,6 +95629,23 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/science/shuttledock)
+<<<<<<< HEAD
+=======
+"fhS" = (
+/obj/structure/table/wood,
+/obj/machinery/recharger,
+/obj/item/toy/figure/hop{
+	pixel_x = -8
+	},
+/obj/item/toy/figure/ian{
+	pixel_x = 8
+	},
+/obj/machinery/newscaster{
+	pixel_x = -28
+	},
+/turf/open/floor/carpet/blue,
+/area/crew_quarters/heads/hop)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "fic" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/retaliate/goose/vomit,
@@ -94777,6 +95736,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /turf/open/floor/plasteel/showroomfloor,
 /area/science/shuttledock)
+<<<<<<< HEAD
 "fum" = (
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
@@ -94786,6 +95746,33 @@
 	},
 /obj/structure/cable/yellow{
 	icon_state = "2-4"
+=======
+"ftS" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/door/airlock/virology{
+	name = "Virology Lab";
+	req_access_txt = "39"
+	},
+/turf/open/floor/plating,
+/area/maintenance/port)
+"fum" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood/old,
+/obj/machinery/vending/wardrobe/science_wardrobe,
+/obj/effect/turf_decal/bot,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 	},
 /turf/open/floor/plasteel/dark,
 /area/science/explab)
@@ -94805,6 +95792,7 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/warden)
+<<<<<<< HEAD
 "fvD" = (
 /obj/structure/table/glass,
 /obj/effect/turf_decal/tile/neutral/tile_side{
@@ -94821,6 +95809,8 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "fvQ" = (
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/caution/stand_clear,
@@ -94860,6 +95850,16 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
+<<<<<<< HEAD
+=======
+"fBT" = (
+/obj/machinery/smartfridge/chemistry/virology/preloaded,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "fDN" = (
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
@@ -94871,22 +95871,44 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/medical/medbay/central)
+<<<<<<< HEAD
 "fFn" = (
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/purple,
 /obj/effect/turf_decal/tile/purple{
+=======
+"fIp" = (
+/obj/item/multitool{
+	pixel_x = 3
+	},
+/obj/item/assembly/igniter{
+	pixel_x = -7
+	},
+/obj/item/analyzer,
+/obj/structure/rack,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 9
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
 /area/science/explab)
+<<<<<<< HEAD
 "fIp" = (
 /obj/machinery/light/small{
 	dir = 8
 	},
 /turf/open/floor/plating,
 /area/science/explab)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "fIC" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/frame/machine,
@@ -94953,8 +95975,17 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
 	},
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /turf/open/floor/plasteel/showroomfloor,
 /area/science/shuttledock)
 "fTQ" = (
@@ -95023,6 +96054,17 @@
 	},
 /turf/open/floor/plating,
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
+=======
+"fZk" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/virology{
+	name = "Virology Lab";
+	req_access_txt = "39"
+	},
+/turf/open/floor/plating,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "fZy" = (
 /turf/open/floor/plating{
 	icon_state = "platingdmg3"
@@ -95036,6 +96078,15 @@
 /obj/effect/turf_decal/stripes/end,
 /turf/open/floor/plasteel/dark,
 /area/quartermaster/exploration_dock)
+<<<<<<< HEAD
+=======
+"gin" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "giw" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -95119,12 +96170,15 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/science/xenobiology)
+<<<<<<< HEAD
 "gnd" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
 /turf/open/floor/plasteel,
 /area/science/explab)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "gnl" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable/yellow{
@@ -95144,6 +96198,20 @@
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
+<<<<<<< HEAD
+=======
+"gpl" = (
+/obj/structure/disposalpipe/segment{
+	dir = 10
+	},
+/obj/machinery/camera{
+	c_tag = "Medbay Central";
+	name = "medical camera";
+	network = list("ss13","medical")
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "gpv" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/remains/human,
@@ -95259,8 +96327,35 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
 	},
+<<<<<<< HEAD
 /obj/machinery/vending/wardrobe/science_wardrobe,
 /turf/open/floor/plasteel/dark,
+=======
+/obj/structure/table,
+/obj/item/clothing/glasses/science{
+	pixel_y = 7;
+	pixel_x = -5
+	},
+/obj/item/clothing/gloves/artifact_pinchers,
+/obj/item/clothing/gloves/artifact_pinchers{
+	pixel_y = -13;
+	pixel_x = 2
+	},
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/item/clothing/glasses/science{
+	pixel_x = 5;
+	pixel_y = 15
+	},
+/turf/open/floor/plasteel/showroomfloor,
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /area/science/explab)
 "gxa" = (
 /obj/effect/decal/cleanable/dirt,
@@ -95347,8 +96442,19 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/security/brig)
 "gCl" = (
+<<<<<<< HEAD
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
+=======
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "xenoarch";
+	name = "Containment Shutters"
+	},
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating/airless{
+	initial_gas_mix = "o2=14;n2=23;TEMP=300"
+	},
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /area/science/explab)
 "gEZ" = (
 /obj/effect/decal/cleanable/cobweb,
@@ -95384,6 +96490,21 @@
 	},
 /turf/open/floor/plating,
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
+=======
+"gIH" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable/yellow,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "quarantineshutters";
+	name = "isolation shutters"
+	},
+/turf/open/floor/plating,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "gIS" = (
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
@@ -95426,11 +96547,57 @@
 /turf/open/floor/plating,
 /area/quartermaster/exploration_dock)
 "gMe" = (
+<<<<<<< HEAD
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
 	},
 /turf/open/floor/plasteel/dark,
 /area/science/explab)
+=======
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/window/reinforced,
+/obj/structure/rack,
+/obj/machinery/door/window/northleft{
+	dir = 8;
+	name = "Secure Artifact Storage";
+	req_one_access_txt = "8;49"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/science/explab)
+"gNZ" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 1
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/medical/virology)
+"gOi" = (
+/obj/effect/turf_decal/stripes/end{
+	dir = 1
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "gOF" = (
 /obj/structure/cable{
 	icon_state = "0-4"
@@ -95458,17 +96625,33 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/medical/medbay/central)
 "gSs" = (
+<<<<<<< HEAD
+=======
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 4
+	},
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
 	},
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
 /area/science/explab)
+=======
+/turf/open/floor/plasteel/showroomfloor,
+/area/maintenance/department/science)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "gUE" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating{
@@ -95484,6 +96667,17 @@
 	icon_state = "panelscorched"
 	},
 /area/maintenance/fore)
+<<<<<<< HEAD
+=======
+"gVC" = (
+/obj/structure/curtain{
+	layer = 4.5
+	},
+/obj/structure/bed,
+/obj/item/bedsheet/medical,
+/turf/open/floor/plasteel/freezer,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "gXD" = (
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red{
@@ -95519,6 +96713,7 @@
 /turf/open/floor/plasteel/dark,
 /area/quartermaster/qm)
 "gYr" = (
+<<<<<<< HEAD
 /obj/structure/rack,
 /obj/item/storage/toolbox/mechanical{
 	pixel_x = -2;
@@ -95529,6 +96724,14 @@
 	},
 /turf/open/floor/plasteel,
 /area/science/explab)
+=======
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating{
+	luminosity = 2
+	},
+/area/maintenance/starboard)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "gZY" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -95622,6 +96825,7 @@
 	icon_state = "panelscorched"
 	},
 /area/maintenance/fore)
+<<<<<<< HEAD
 "hlp" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/structure/rack,
@@ -95642,6 +96846,19 @@
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plasteel,
 /area/science/explab)
+=======
+"hlN" = (
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#c1caff"
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 1
+	},
+/mob/living/carbon/monkey,
+/turf/open/floor/plasteel/dark,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "hnI" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -95719,18 +96936,27 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+<<<<<<< HEAD
+=======
+/obj/effect/turf_decal/tile/neutral,
+/obj/machinery/holopad,
+/obj/effect/turf_decal/bot,
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
 	},
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral,
 /obj/machinery/holopad,
 /obj/effect/turf_decal/bot,
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /turf/open/floor/plasteel/showroomfloor,
 /area/maintenance/department/science)
 "hDB" = (
@@ -95840,6 +97066,24 @@
 	icon_state = "panelscorched"
 	},
 /area/maintenance/port/aft)
+<<<<<<< HEAD
+=======
+"hPN" = (
+/obj/machinery/button/door{
+	id = "QuarantineA";
+	name = "Quarantine Bolts A";
+	normaldoorcontrol = 1;
+	pixel_x = -24;
+	req_one_access_txt = "39;40;45";
+	specialfunctions = 4
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/obj/structure/closet/secure_closet/personal/patient,
+/turf/open/floor/plasteel/freezer,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "hQn" = (
 /obj/machinery/door/airlock/external{
 	name = "Solar Maintenance";
@@ -95864,6 +97108,36 @@
 /obj/structure/grille/broken,
 /turf/open/floor/plating,
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
+=======
+"hRF" = (
+/obj/machinery/computer/pandemic,
+/obj/effect/turf_decal/delivery,
+/obj/structure/sign/departments/minsky/medical/virology/virology1{
+	pixel_x = 30
+	},
+/turf/open/floor/plasteel/dark,
+/area/medical/virology)
+"hTS" = (
+/obj/structure/disposalpipe/segment{
+	dir = 5
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/maintenance/central)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "hTZ" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -95886,6 +97160,99 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plasteel,
 /area/quartermaster/exploration_dock)
+<<<<<<< HEAD
+=======
+"hUs" = (
+/obj/item/reagent_containers/glass/bottle/bromine{
+	pixel_x = -6
+	},
+/obj/item/reagent_containers/glass/bottle/aluminium{
+	pixel_x = 6
+	},
+/obj/item/reagent_containers/glass/bottle/chlorine{
+	pixel_x = -6
+	},
+/obj/item/reagent_containers/glass/bottle/carbon{
+	pixel_x = 6
+	},
+/obj/item/reagent_containers/glass/bottle/ethanol{
+	pixel_x = -6
+	},
+/obj/item/reagent_containers/glass/bottle/copper{
+	pixel_x = 6
+	},
+/obj/item/reagent_containers/glass/bottle/hydrogen{
+	pixel_x = -6
+	},
+/obj/item/reagent_containers/glass/bottle/fluorine{
+	pixel_x = 6
+	},
+/obj/item/reagent_containers/glass/bottle/water{
+	pixel_y = 8
+	},
+/obj/item/reagent_containers/glass/bottle/lithium{
+	pixel_x = -6
+	},
+/obj/item/reagent_containers/glass/bottle/iron{
+	pixel_x = 6
+	},
+/obj/item/reagent_containers/glass/bottle/iodine{
+	pixel_y = 8
+	},
+/obj/item/reagent_containers/glass/bottle/oxygen{
+	pixel_x = 6
+	},
+/obj/item/reagent_containers/glass/bottle/phosphorus{
+	pixel_x = -6
+	},
+/obj/item/reagent_containers/glass/bottle/nitrogen{
+	pixel_x = -6;
+	pixel_y = 8
+	},
+/obj/item/reagent_containers/glass/bottle/mercury{
+	pixel_x = 6;
+	pixel_y = 8
+	},
+/obj/item/reagent_containers/glass/bottle/radium{
+	pixel_x = -6
+	},
+/obj/item/reagent_containers/glass/bottle/potassium{
+	pixel_x = 6
+	},
+/obj/item/reagent_containers/glass/bottle/welding_fuel{
+	pixel_y = 8
+	},
+/obj/item/reagent_containers/glass/bottle/sacid{
+	pixel_x = 6
+	},
+/obj/item/reagent_containers/glass/bottle/silicon{
+	pixel_x = -6
+	},
+/obj/item/reagent_containers/glass/bottle/silver{
+	pixel_x = 6
+	},
+/obj/item/reagent_containers/glass/bottle/sodium{
+	pixel_x = -6
+	},
+/obj/item/reagent_containers/glass/bottle/sugar{
+	pixel_x = 6
+	},
+/obj/item/reagent_containers/glass/bottle/sulfur{
+	pixel_x = -6
+	},
+/obj/item/circuitboard/machine/chem_heater,
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/bot,
+/obj/structure/closet/crate/secure/plasma{
+	req_access_txt = "39";
+	name = "virology crate"
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "hXk" = (
 /obj/structure/sign/poster/contraband/random,
 /turf/closed/wall,
@@ -95897,6 +97264,49 @@
 	},
 /turf/open/floor/plating,
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
+=======
+"hZc" = (
+/obj/structure/table,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/obj/machinery/airalarm{
+	dir = 8;
+	pixel_x = 24
+	},
+/obj/machinery/newscaster{
+	pixel_y = -28
+	},
+/obj/machinery/recharger,
+/obj/machinery/camera{
+	c_tag = "Engineering Security Post";
+	dir = 1;
+	name = "engineering camera"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/checkpoint/engineering)
+"hZp" = (
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/structure/extinguisher_cabinet{
+	pixel_x = -24
+	},
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/plasteel/dark,
+/area/medical/surgery)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "hZD" = (
 /obj/structure/window/reinforced{
 	dir = 4
@@ -95948,12 +97358,29 @@
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "iig" = (
+<<<<<<< HEAD
 /obj/structure/window/reinforced{
 	dir = 8
 	},
 /obj/structure/window/reinforced,
 /turf/open/floor/engine,
 /area/science/explab)
+=======
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/maintenance/department/science)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "ijF" = (
 /obj/machinery/door/airlock/engineering{
 	name = "Starboard Bow Solar Access";
@@ -95982,6 +97409,7 @@
 	dir = 1
 	},
 /obj/machinery/light/small{
+<<<<<<< HEAD
 	dir = 1
 	},
 /obj/effect/turf_decal/box,
@@ -96000,18 +97428,82 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
+=======
+	dir = 1
+	},
+/obj/effect/turf_decal/box,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
+/turf/open/floor/plasteel/showroomfloor,
+/area/science/shuttledock)
+"ipg" = (
+/obj/structure/sign/plaques/atmos,
+/turf/closed/wall,
+/area/quartermaster/warehouse)
+"ipy" = (
+/obj/effect/turf_decal/stripes/corner,
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/cobweb,
 /turf/open/floor/plasteel/showroomfloor,
 /area/science/shuttledock)
+<<<<<<< HEAD
 "isJ" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /turf/open/floor/plasteel,
+=======
+"iql" = (
+/obj/structure/sign/warning/biohazard,
+/turf/closed/wall/rust,
+/area/maintenance/port)
+"iry" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/end{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/dark,
+/area/medical/virology)
+"isJ" = (
+/obj/structure/rack,
+/obj/item/assembly/signaler{
+	pixel_x = -8;
+	pixel_y = 5
+	},
+/obj/item/stock_parts/cell/high{
+	charge = 100;
+	maxcharge = 15000;
+	pixel_x = 8
+	},
+/obj/item/geiger_counter,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /area/science/explab)
 "itz" = (
 /obj/effect/turf_decal/tile/brown,
@@ -96032,13 +97524,37 @@
 /obj/item/radio/intercom,
 /turf/closed/wall,
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
+=======
+"iyT" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "iza" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plasteel/dark,
 /area/maintenance/fore)
 "iAU" = (
+<<<<<<< HEAD
 /turf/open/floor/plasteel,
+=======
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/caution,
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/turf/open/floor/plasteel/showroomfloor,
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /area/science/explab)
 "iBp" = (
 /obj/effect/turf_decal/stripes/line{
@@ -96107,9 +97623,22 @@
 /area/space/nearstation)
 "iHa" = (
 /obj/structure/cable/yellow{
+<<<<<<< HEAD
 	icon_state = "2-8"
 	},
 /turf/open/floor/plasteel/dark,
+=======
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple,
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/turf/open/floor/plasteel/showroomfloor,
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /area/science/explab)
 "iIV" = (
 /turf/open/floor/plating{
@@ -96172,6 +97701,19 @@
 	icon_state = "panelscorched"
 	},
 /area/maintenance/starboard)
+<<<<<<< HEAD
+=======
+"iNb" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/stripes/line{
+	dir = 10
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/maintenance/port)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "iOf" = (
 /obj/machinery/door/airlock/maintenance,
 /obj/effect/mapping_helpers/airlock/abandoned,
@@ -96180,6 +97722,7 @@
 	},
 /turf/open/floor/plating,
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
 "iSI" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
@@ -96199,6 +97742,31 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 5
+=======
+"iPI" = (
+/obj/structure/sign/warning/biohazard,
+/turf/closed/wall/r_wall,
+/area/medical/virology)
+"iRN" = (
+/obj/structure/table/reinforced,
+/obj/machinery/door/window/brigdoor{
+	name = "Virology Desk";
+	req_access_txt = "39"
+	},
+/obj/machinery/door/firedoor,
+/obj/item/reagent_containers/food/drinks/bottle/virusfood{
+	pixel_x = 2;
+	pixel_y = 12
+	},
+/obj/item/storage/box/masks,
+/obj/item/reagent_containers/glass/bottle/spaceacillin{
+	pixel_x = 2;
+	pixel_y = -1
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "quarantineshutters";
+	name = "isolation shutters"
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 	},
 /turf/open/floor/plasteel/dark,
 /area/medical/virology)
@@ -96287,6 +97855,7 @@
 /turf/open/floor/plating,
 /area/quartermaster/warehouse)
 "iZp" = (
+<<<<<<< HEAD
 /obj/effect/turf_decal/delivery,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /obj/item/tank/internals/oxygen,
@@ -96294,6 +97863,13 @@
 /obj/structure/rack,
 /turf/open/floor/plating,
 /area/maintenance/starboard)
+=======
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/science/explab)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "iZU" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -96321,6 +97897,24 @@
 	icon_state = "platingdmg1"
 	},
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
+=======
+"jbL" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/machinery/newscaster{
+	pixel_x = 30
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/brig)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "jcF" = (
 /obj/item/reagent_containers/food/drinks/soda_cans/dr_gibb,
 /turf/open/floor/plating,
@@ -96528,6 +98122,7 @@
 	icon_state = "platingdmg3"
 	},
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
 "jCd" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
@@ -96536,6 +98131,20 @@
 /area/science/explab)
 "jDz" = (
 /turf/open/floor/plasteel/dark,
+=======
+"jDz" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/purple,
+/turf/open/floor/plasteel/showroomfloor,
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /area/science/explab)
 "jDR" = (
 /obj/effect/decal/cleanable/dirt,
@@ -96553,6 +98162,18 @@
 	icon_state = "panelscorched"
 	},
 /area/maintenance/starboard/aft)
+<<<<<<< HEAD
+=======
+"jGH" = (
+/obj/structure/disposalpipe/sorting/mail/flip{
+	sortType = 27;
+	name = "virology sorting disposals pipe";
+	dir = 1
+	},
+/obj/machinery/airalarm/directional/east,
+/turf/open/floor/plasteel/showroomfloor,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "jGK" = (
 /obj/effect/spawner/room/threexthree,
 /obj/effect/decal/cleanable/dirt,
@@ -96560,6 +98181,14 @@
 	icon_state = "platingdmg3"
 	},
 /area/maintenance/port/fore)
+<<<<<<< HEAD
+=======
+"jHt" = (
+/obj/machinery/vending/wardrobe/viro_wardrobe,
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/plasteel/dark,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "jJH" = (
 /obj/machinery/door/airlock/maintenance{
 	req_access_txt = "12"
@@ -96599,6 +98228,18 @@
 	},
 /turf/open/floor/plasteel,
 /area/bridge)
+<<<<<<< HEAD
+=======
+"jRf" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "jRE" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/door/poddoor/shutters{
@@ -96632,6 +98273,19 @@
 	},
 /turf/open/floor/plating,
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
+=======
+"jTE" = (
+/obj/effect/turf_decal/bot,
+/obj/structure/sign/warning/electricshock{
+	pixel_x = 32
+	},
+/obj/structure/closet/l3closet/virology,
+/obj/item/storage/box/gloves,
+/obj/item/storage/box/masks,
+/turf/open/floor/plasteel/dark,
+/area/maintenance/port)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "jXS" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair/fancy/sofa/old/right,
@@ -96640,6 +98294,33 @@
 	icon_state = "panelscorched"
 	},
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
+=======
+"jZf" = (
+/obj/structure/table/glass,
+/obj/item/storage/box/syringes{
+	pixel_x = 6;
+	pixel_y = 11
+	},
+/obj/item/reagent_containers/glass/bottle/spaceacillin{
+	pixel_x = 2;
+	pixel_y = -1
+	},
+/obj/item/paper_bin{
+	pixel_y = 3;
+	pixel_x = -9
+	},
+/obj/item/reagent_containers/glass/bottle/spaceacillin{
+	pixel_x = 9;
+	pixel_y = -7
+	},
+/obj/item/pen{
+	pixel_y = 3;
+	pixel_x = -8
+	},
+/turf/open/floor/plasteel/dark,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "jZV" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/room/threexthree,
@@ -96666,6 +98347,16 @@
 /obj/effect/turf_decal/stripes/corner,
 /turf/open/floor/plating,
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
+=======
+"khM" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/stripes/line{
+	dir = 5
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/maintenance/port)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "kib" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable/yellow{
@@ -96743,12 +98434,33 @@
 /obj/structure/cable/yellow{
 	icon_state = "2-4"
 	},
+<<<<<<< HEAD
+=======
+/obj/item/radio/intercom{
+	pixel_y = 27
+	},
+/obj/structure/table,
+/obj/item/reagent_containers/food/drinks/sillycup{
+	pixel_x = -5;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/food/drinks/sillycup{
+	pixel_x = 5;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/food/drinks/sillycup,
+/obj/item/reagent_containers/food/drinks/bottle/vodka{
+	pixel_x = -8;
+	pixel_y = 7
+	},
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
 	},
+<<<<<<< HEAD
 /obj/item/radio/intercom{
 	pixel_y = 27
 	},
@@ -96779,6 +98491,18 @@
 	name = "Cell 4";
 	req_access_txt = "1"
 	},
+=======
+/turf/open/floor/plasteel/showroomfloor,
+/area/maintenance/department/science)
+"ksh" = (
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/delivery,
+/obj/machinery/door/window/brigdoor/northright{
+	id = "Cell 4";
+	name = "Cell 4";
+	req_access_txt = "1"
+	},
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel,
@@ -97047,12 +98771,26 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
+<<<<<<< HEAD
 "lbQ" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
 	},
 /turf/open/floor/plasteel,
 /area/science/explab)
+=======
+"lfi" = (
+/obj/structure/table/glass,
+/obj/machinery/reagentgrinder{
+	pixel_y = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/item/stack/sheet/mineral/plasma/five,
+/turf/open/floor/plasteel/dark,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "lga" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/line{
@@ -97103,12 +98841,21 @@
 	},
 /area/maintenance/starboard)
 "lmA" = (
+<<<<<<< HEAD
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/plating,
+=======
+/obj/machinery/xenoartifact_inbox,
+/obj/item/xenoartifact,
+/obj/effect/turf_decal/delivery,
+/obj/effect/landmark/xeno_spawn,
+/obj/effect/decal/remains/human,
+/turf/open/floor/engine,
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /area/science/explab)
 "loB" = (
 /obj/effect/mapping_helpers/airlock/abandoned,
@@ -97118,6 +98865,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plasteel/dark,
 /area/maintenance/port)
+<<<<<<< HEAD
 "lpd" = (
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
@@ -97133,6 +98881,8 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/science/explab)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "lqS" = (
 /obj/machinery/vending/snack/random,
 /obj/effect/turf_decal/bot,
@@ -97204,6 +98954,16 @@
 /obj/machinery/computer/shuttle_flight/science,
 /turf/open/floor/plasteel/showroomfloor,
 /area/science/shuttledock)
+<<<<<<< HEAD
+=======
+"lCt" = (
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 8
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "lDf" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/bot,
@@ -97218,6 +98978,28 @@
 /obj/structure/grille/broken,
 /turf/open/floor/plating,
 /area/maintenance/starboard)
+<<<<<<< HEAD
+=======
+"lDS" = (
+/obj/machinery/button/door{
+	id = "ViroA";
+	name = "Quarantine Bolts A";
+	normaldoorcontrol = 1;
+	req_access_txt = "39";
+	specialfunctions = 4;
+	pixel_x = 31
+	},
+/obj/effect/turf_decal/stripes/corner,
+/obj/structure/table,
+/obj/item/folder/white,
+/obj/item/flashlight/pen,
+/obj/item/clothing/neck/stethoscope,
+/obj/structure/mirror{
+	pixel_y = 26
+	},
+/turf/open/floor/plasteel/freezer,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "lGN" = (
 /obj/effect/turf_decal/caution/stand_clear{
 	dir = 8
@@ -97257,11 +99039,27 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/science/shuttledock)
 "lLa" = (
+<<<<<<< HEAD
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
 /turf/open/floor/plasteel,
 /area/science/explab)
+=======
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 8;
+	pixel_y = 1
+	},
+/turf/open/floor/engine,
+/area/science/explab)
+"lMc" = (
+/mob/living/carbon/monkey,
+/turf/open/floor/plasteel/dark,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "lNk" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -97286,6 +99084,27 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
+<<<<<<< HEAD
+=======
+"lOr" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "quarantineshutters";
+	name = "isolation shutters"
+	},
+/obj/machinery/door/airlock/virology{
+	name = "Monkey Pen";
+	req_access_txt = "39"
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "lQc" = (
 /obj/effect/turf_decal/loading_area,
 /obj/structure/cable/yellow{
@@ -97366,10 +99185,53 @@
 /obj/item/flashlight/lantern,
 /turf/open/floor/plating,
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
+=======
+"lYO" = (
+/obj/item/restraints/handcuffs{
+	pixel_x = 3;
+	pixel_y = 8
+	},
+/obj/item/restraints/handcuffs{
+	pixel_y = 4
+	},
+/obj/item/restraints/handcuffs{
+	pixel_x = -2;
+	pixel_y = -2
+	},
+/obj/structure/table/reinforced,
+/obj/machinery/button/door{
+	id = "quarantineshutters";
+	name = "Quarantine Lockdown";
+	pixel_y = 23;
+	req_access_txt = "39";
+	pixel_x = -7
+	},
+/obj/machinery/button/flasher{
+	id = "monkeypen";
+	pixel_y = 33
+	},
+/obj/machinery/button/door{
+	id = "monkeyshutters";
+	name = "Monkey Pen Lockdown";
+	pixel_y = 23;
+	req_access_txt = "39";
+	pixel_x = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 10
+	},
+/turf/open/floor/plasteel/dark,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "lZV" = (
 /obj/structure/sign/departments/botany,
 /turf/closed/wall,
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
 "mdB" = (
 /obj/effect/turf_decal/tile/purple,
 /obj/effect/turf_decal/tile/purple{
@@ -97386,11 +99248,64 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/science/explab)
+=======
+"mcA" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "quarantineshutters";
+	name = "isolation shutters"
+	},
+/obj/machinery/door/firedoor,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/door/airlock/virology{
+	id_tag = "ViroA";
+	name = "Quarantine Cell"
+	},
+/turf/open/floor/plasteel/freezer,
+/area/medical/virology)
+"mcW" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/maintenance/port)
+"mdB" = (
+/turf/open/floor/plating{
+	luminosity = 2
+	},
+/area/maintenance/starboard)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "mfH" = (
 /obj/structure/lattice,
 /obj/structure/grille/broken,
 /turf/open/space/basic,
 /area/space)
+<<<<<<< HEAD
+=======
+"mhw" = (
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 9
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/medical/surgery)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "mix" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -97402,6 +99317,23 @@
 	lighting_colour_bulb = "#ffdbb4";
 	lighting_colour_tube = "#ffce99"
 	})
+<<<<<<< HEAD
+=======
+"mjw" = (
+/obj/structure/table,
+/obj/item/storage/box/prisoner,
+/obj/item/restraints/handcuffs,
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/machinery/newscaster{
+	pixel_x = 30
+	},
+/turf/open/floor/plasteel,
+/area/security/processing)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "mkf" = (
 /obj/item/pickaxe,
 /turf/open/floor/plating/asteroid/airless,
@@ -97427,6 +99359,7 @@
 /turf/open/floor/engine/vacuum,
 /area/maintenance/disposal/incinerator)
 "mmW" = (
+<<<<<<< HEAD
 /obj/structure/closet/firecloset,
 /turf/open/floor/plating,
 /area/science/explab)
@@ -97434,6 +99367,16 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
 	},
+=======
+/turf/open/floor/plating{
+	icon_state = "platingdmg1"
+	},
+/area/maintenance/starboard)
+"moq" = (
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/plasteel/showroomfloor,
 /area/science/shuttledock)
@@ -97592,10 +99535,50 @@
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plasteel,
 /area/quartermaster/exploration_dock)
+<<<<<<< HEAD
+=======
+"mxS" = (
+/obj/structure/extinguisher_cabinet{
+	pixel_x = -24
+	},
+/obj/structure/table,
+/obj/item/xenoartifact_labeler{
+	pixel_y = 2
+	},
+/obj/item/xenoartifact_labeler{
+	pixel_x = -9
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/science/explab)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "mzp" = (
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plating,
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
+=======
+"mCO" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/obj/structure/table,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/item/paper_bin,
+/obj/item/pen{
+	pixel_y = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "mDY" = (
 /obj/machinery/atmospherics/components/binary/pump/on,
 /obj/machinery/light/small{
@@ -97631,6 +99614,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 1
+<<<<<<< HEAD
 	},
 /turf/open/floor/plasteel/dark,
 /area/chapel/main)
@@ -97641,6 +99625,11 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/medical/virology)
+=======
+	},
+/turf/open/floor/plasteel/dark,
+/area/chapel/main)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "mHK" = (
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red{
@@ -97681,9 +99670,20 @@
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "mMY" = (
+<<<<<<< HEAD
 /obj/structure/closet/radiation,
 /turf/open/floor/plating,
 /area/science/explab)
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/blood/old,
+/turf/open/floor/plating{
+	luminosity = 2
+	},
+/area/maintenance/starboard)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "mOw" = (
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/blue{
@@ -97730,6 +99730,27 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/wall,
 /area/maintenance/starboard)
+<<<<<<< HEAD
+=======
+"mTI" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/vending/wallmed{
+	pixel_y = -31
+	},
+/turf/open/floor/plasteel/freezer,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "mWi" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -97775,16 +99796,31 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
+<<<<<<< HEAD
+=======
+"ncU" = (
+/turf/open/floor/plasteel/showroomfloor,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "nde" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD
+=======
+/obj/effect/turf_decal/tile/neutral,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
 	},
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
 	},
@@ -97793,6 +99829,8 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /turf/open/floor/plasteel/showroomfloor,
 /area/maintenance/department/science)
 "ngu" = (
@@ -97802,6 +99840,19 @@
 	},
 /turf/open/space,
 /area/space/nearstation)
+<<<<<<< HEAD
+=======
+"nhq" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/door/airlock/maintenance{
+	req_access_txt = "39";
+	name = "virology storage"
+	},
+/turf/open/floor/plasteel/dark,
+/area/maintenance/port)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "njb" = (
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /obj/machinery/airalarm{
@@ -97811,6 +99862,7 @@
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
+<<<<<<< HEAD
 	},
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel/dark,
@@ -97825,6 +99877,35 @@
 	},
 /turf/open/floor/engine,
 /area/science/explab)
+=======
+	},
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plasteel/dark,
+/area/science/shuttledock)
+"nkw" = (
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/structure/table,
+/obj/item/storage/firstaid/regular{
+	pixel_y = 4
+	},
+/obj/item/healthanalyzer{
+	pixel_x = -4;
+	pixel_y = 22
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/science/explab)
+"nlp" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating{
+	luminosity = 2
+	},
+/area/maintenance/starboard)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "nmh" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
@@ -97922,6 +100003,32 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/aft)
+<<<<<<< HEAD
+=======
+"nuB" = (
+/obj/machinery/button/door{
+	id = "ViroA";
+	name = "Quarantine Bolts A";
+	normaldoorcontrol = 1;
+	pixel_y = 24;
+	req_access_txt = "39";
+	specialfunctions = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 10
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "nvP" = (
 /obj/machinery/hydroponics/constructable,
 /obj/effect/turf_decal/tile/neutral{
@@ -97939,6 +100046,34 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/hydroponics)
+<<<<<<< HEAD
+=======
+"nwM" = (
+/obj/effect/turf_decal/bot,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/machinery/computer/secure_data{
+	dir = 4
+	},
+/obj/machinery/newscaster{
+	pixel_x = -26
+	},
+/obj/machinery/camera{
+	c_tag = "Security Office Computers";
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/main)
+"nxh" = (
+/obj/machinery/smartfridge/chemistry/virology/preloaded,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "nzi" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/caution/stand_clear{
@@ -97949,6 +100084,7 @@
 	},
 /area/quartermaster/exploration_dock)
 "nzA" = (
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/purple,
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
@@ -97961,6 +100097,29 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/science/explab)
+=======
+/obj/structure/window/reinforced{
+	dir = 8;
+	pixel_y = 1
+	},
+/turf/open/floor/engine,
+/area/science/explab)
+"nCB" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 9
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "nEH" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/line{
@@ -97985,12 +100144,15 @@
 	icon_state = "panelscorched"
 	},
 /area/maintenance/port/aft)
+<<<<<<< HEAD
 "nFY" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
 	},
 /turf/open/floor/plasteel,
 /area/science/explab)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "nIz" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable/yellow{
@@ -98002,6 +100164,26 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/central)
+<<<<<<< HEAD
+=======
+"nKx" = (
+/obj/structure/barricade/wooden,
+/obj/machinery/door/airlock/maintenance{
+	req_access_txt = "39"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/effect/mapping_helpers/airlock/locked,
+/turf/open/floor/plating,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "nNZ" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/airless,
@@ -98058,6 +100240,20 @@
 /obj/machinery/atmospherics/pipe/layer_manifold,
 /turf/open/floor/plasteel/dark,
 /area/maintenance/fore)
+<<<<<<< HEAD
+=======
+"nTI" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "monkeyshutters";
+	name = "isolation shutters"
+	},
+/obj/machinery/door/airlock/virology/glass{
+	name = "Monkey Pen";
+	req_access_txt = "39"
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "nXx" = (
 /obj/structure/chair/office{
 	dir = 4
@@ -98108,9 +100304,6 @@
 	},
 /area/quartermaster/warehouse)
 "ofb" = (
-/obj/effect/turf_decal/stripes/corner{
-	dir = 4
-	},
 /obj/machinery/lapvend,
 /obj/effect/turf_decal/bot,
 /obj/effect/decal/cleanable/dirt,
@@ -98165,14 +100358,56 @@
 	icon_state = "platingdmg3"
 	},
 /area/quartermaster/exploration_dock)
+<<<<<<< HEAD
 "olV" = (
 /obj/structure/sign/warning/radiation,
 /turf/closed/wall,
 /area/science/shuttledock)
+=======
+"omY" = (
+/obj/effect/turf_decal/bot,
+/obj/machinery/computer/security/labor,
+/obj/effect/turf_decal/tile/neutral,
+/obj/machinery/requests_console{
+	department = "Security";
+	departmentType = 5;
+	name = "Cargo Checkpoint RC";
+	pixel_y = 30
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/machinery/newscaster{
+	pixel_x = -30
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/cobweb,
+/turf/open/floor/plasteel/dark,
+/area/security/checkpoint/supply)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "opa" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 6
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/science/explab)
+"opg" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/dark,
 /area/science/explab)
 "opg" = (
@@ -98188,6 +100423,29 @@
 /obj/structure/closet/bombcloset,
 /turf/open/floor/plating,
 /area/science/explab)
+=======
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/tile/purple,
+/obj/effect/turf_decal/tile/purple,
+/turf/open/floor/plasteel/showroomfloor,
+/area/science/explab)
+"oqd" = (
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/machinery/camera/autoname{
+	dir = 6
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/science/shuttledock)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "oqE" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -98223,6 +100481,7 @@
 /turf/open/floor/plating/asteroid/airless,
 /area/space/nearstation)
 "otx" = (
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/purple,
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
@@ -98239,6 +100498,21 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
+=======
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple,
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /turf/open/floor/plasteel/showroomfloor,
 /area/maintenance/department/science)
 "ouj" = (
@@ -98283,6 +100557,13 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/science/xenobiology)
+<<<<<<< HEAD
+=======
+"owz" = (
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/plasteel/showroomfloor,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "owN" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/external{
@@ -98412,6 +100693,12 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/stripes/corner,
+<<<<<<< HEAD
+=======
+/obj/machinery/camera/autoname{
+	dir = 8
+	},
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /turf/open/floor/plasteel,
 /area/quartermaster/exploration_dock)
 "oKc" = (
@@ -98519,6 +100806,12 @@
 	},
 /obj/effect/turf_decal/tile/purple,
 /obj/effect/spawner/lootdrop/maintenance,
+<<<<<<< HEAD
+=======
+/obj/machinery/camera/autoname{
+	dir = 8
+	},
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /turf/open/floor/plasteel,
 /area/quartermaster/exploration_dock)
 "oUB" = (
@@ -98527,6 +100820,16 @@
 	initial_gas_mix = "o2=14;n2=23;TEMP=300"
 	},
 /area/quartermaster/exploration_dock)
+<<<<<<< HEAD
+=======
+"oVb" = (
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 8
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "oXq" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating{
@@ -98537,19 +100840,19 @@
 /obj/structure/flora/rock/pile,
 /turf/open/floor/plating/asteroid/airless,
 /area/quartermaster/warehouse)
-"oYQ" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/window/reinforced{
+"par" = (
+/obj/effect/turf_decal/tile/yellow{
 	dir = 8
 	},
+<<<<<<< HEAD
 /turf/open/floor/engine,
 /area/science/explab)
 "par" = (
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
 	},
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
 	},
@@ -98582,6 +100885,7 @@
 /area/maintenance/port/fore)
 "pio" = (
 /obj/effect/decal/cleanable/dirt,
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/purple,
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
@@ -98589,14 +100893,40 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
 	},
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/showroomfloor,
 /area/maintenance/department/science)
+=======
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple,
+/turf/open/floor/plasteel/showroomfloor,
+/area/maintenance/department/science)
+"pjC" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "pjW" = (
 /obj/effect/spawner/lootdrop/glowstick/lit,
 /turf/open/floor/plating{
@@ -98637,6 +100967,13 @@
 	icon_state = "platingdmg1"
 	},
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
+=======
+"psA" = (
+/obj/machinery/smartfridge,
+/turf/closed/wall/r_wall,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "pwj" = (
 /obj/effect/turf_decal/box/corners{
 	dir = 8
@@ -98773,6 +101110,7 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/exploration_dock)
 "pHv" = (
+<<<<<<< HEAD
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/plasteel,
@@ -98782,6 +101120,24 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
+=======
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/structure/chair/office/light{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/science/explab)
+"pHL" = (
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
@@ -98802,6 +101158,29 @@
 	icon_state = "platingdmg1"
 	},
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
+=======
+"pJK" = (
+/obj/effect/turf_decal/bot,
+/obj/structure/bed/dogbed/vector,
+/mob/living/simple_animal/pet/hamster/vector,
+/obj/machinery/camera{
+	c_tag = "Medbay Lobby";
+	dir = 4;
+	name = "medical camera";
+	network = list("ss13","medical")
+	},
+/obj/machinery/light{
+	dir = 8;
+	light_color = "#e8eaff"
+	},
+/obj/item/radio/intercom{
+	pixel_y = -4;
+	pixel_x = -26
+	},
+/turf/open/floor/plasteel/dark,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "pPb" = (
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
@@ -98842,21 +101221,20 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/obj/structure/cable/yellow{
-	icon_state = "2-4"
-	},
-/obj/effect/turf_decal/stripes/line,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/turf/open/floor/plating{
-	icon_state = "platingdmg3"
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 8
 	},
+<<<<<<< HEAD
 /area/maintenance/starboard)
 "pTb" = (
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/purple{
+<<<<<<< HEAD
 	dir = 4
 	},
 /obj/machinery/power/apc{
@@ -98891,6 +101269,41 @@
 /obj/effect/turf_decal/stripes/corner,
 /obj/item/glove_box,
 /turf/open/floor/plasteel/dark,
+=======
+	dir = 8
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/maintenance/department/science)
+"pTb" = (
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8;
+	pixel_y = 1
+	},
+/turf/open/floor/engine,
+/area/science/explab)
+"pTS" = (
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/structure/table,
+/obj/item/clipboard{
+	pixel_x = 4;
+	pixel_y = 4
+	},
+/obj/item/book/manual/wiki/surgery,
+/obj/item/clothing/gloves/color/latex,
+/obj/item/clothing/mask/surgical,
+/obj/item/clothing/suit/apron/surgical,
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = 28
+	},
+/obj/effect/turf_decal/stripes/corner,
+/obj/item/glove_box,
+/turf/open/floor/plasteel/dark,
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /area/medical/surgery)
 "pUW" = (
 /obj/effect/turf_decal/stripes/corner{
@@ -98935,8 +101348,14 @@
 /turf/open/floor/plating,
 /area/quartermaster/warehouse)
 "pYn" = (
+<<<<<<< HEAD
 /turf/closed/wall/rust,
 /area/maintenance/department/science)
+=======
+/obj/effect/decal/cleanable/dirt,
+/turf/closed/wall/r_wall,
+/area/quartermaster/exploration_prep)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "pYN" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -98970,10 +101389,13 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/maintenance/central)
+<<<<<<< HEAD
 "qdC" = (
 /obj/machinery/smartfridge,
 /turf/closed/wall/r_wall,
 /area/medical/virology)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "qdP" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -98999,6 +101421,28 @@
 	initial_gas_mix = "o2=14;n2=23;TEMP=300"
 	},
 /area/quartermaster/exploration_dock)
+<<<<<<< HEAD
+=======
+"qgJ" = (
+/obj/structure/table,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/machinery/computer/security/telescreen{
+	desc = "Used for watching the RD's goons from the safety of his office.";
+	dir = 1;
+	name = "Research Monitor";
+	network = list("rd")
+	},
+/obj/machinery/newscaster{
+	pixel_y = -30
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/checkpoint/science/research)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "qhw" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable/yellow{
@@ -99015,8 +101459,22 @@
 	},
 /area/quartermaster/warehouse)
 "qiG" = (
-/obj/structure/closet/emcloset,
-/turf/open/floor/plating,
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/firealarm{
+	pixel_y = 28
+	},
+/obj/effect/decal/cleanable/cobweb/cobweb2,
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple,
+/turf/open/floor/plasteel/showroomfloor,
 /area/science/explab)
 "qiM" = (
 /obj/machinery/door/airlock/maintenance{
@@ -99130,6 +101588,17 @@
 	luminosity = 2
 	},
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
+=======
+"qqr" = (
+/obj/structure/bed,
+/obj/structure/curtain{
+	layer = 4.5
+	},
+/obj/item/bedsheet/medical,
+/turf/open/floor/plasteel/dark,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "qrw" = (
 /obj/structure/door_assembly/door_assembly_med{
 	anchored = 1
@@ -99165,6 +101634,14 @@
 	icon_state = "platingdmg1"
 	},
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
+=======
+"qsB" = (
+/obj/machinery/vending/medical,
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/plasteel/dark,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "qsO" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/cable{
@@ -99185,6 +101662,41 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
+=======
+"quE" = (
+/obj/structure/closet/crate/secure/plasma{
+	req_access_txt = "39";
+	name = "virology crate"
+	},
+/obj/item/extrapolator,
+/obj/item/book/manual/wiki/infections,
+/obj/item/book/manual/wiki/infections,
+/obj/item/storage/box/beakers{
+	pixel_x = 4;
+	pixel_y = 4
+	},
+/obj/item/storage/box/syringes{
+	pixel_x = -3;
+	pixel_y = 2
+	},
+/obj/item/reagent_containers/food/drinks/bottle/virusfood{
+	pixel_x = -6;
+	pixel_y = 8
+	},
+/obj/item/reagent_containers/glass/bottle/spaceacillin{
+	pixel_x = 2;
+	pixel_y = -1
+	},
+/obj/item/storage/belt/medical{
+	pixel_y = 2
+	},
+/obj/item/storage/belt/medical{
+	pixel_y = 2
+	},
+/turf/open/floor/plasteel/dark,
+/area/maintenance/port)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "qvh" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -99270,6 +101782,28 @@
 	},
 /turf/open/floor/plating,
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
+=======
+"qAA" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/bot,
+/obj/structure/disposalpipe/trunk{
+	dir = 1
+	},
+/obj/structure/disposaloutlet{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 5
+	},
+/turf/open/floor/plasteel/dark,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "qAJ" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/tile/green{
@@ -99326,6 +101860,19 @@
 /obj/item/glove_box,
 /turf/open/floor/plasteel/dark,
 /area/medical/storage)
+<<<<<<< HEAD
+=======
+"qDE" = (
+/obj/structure/chair/office/light{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/end{
+	dir = 1
+	},
+/obj/effect/landmark/start/virologist,
+/turf/open/floor/plasteel/showroomfloor,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "qEB" = (
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/tile/neutral,
@@ -99409,6 +101956,7 @@
 	},
 /area/maintenance/port)
 "qLU" = (
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/purple,
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
@@ -99417,6 +101965,21 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
+=======
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
+/obj/effect/turf_decal/tile/purple,
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/box,
+/turf/open/floor/plasteel/showroomfloor,
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /area/science/explab)
 "qLV" = (
 /obj/effect/turf_decal/tile/purple{
@@ -99495,6 +102058,7 @@
 	icon_state = "panelscorched"
 	},
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
 "qRE" = (
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
@@ -99510,6 +102074,8 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/science/explab)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "qVe" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/reagent_dispensers/watertank,
@@ -99553,19 +102119,30 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
 /area/quartermaster/exploration_dock)
+<<<<<<< HEAD
 "qXz" = (
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plasteel,
 /area/science/explab)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "qYF" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
+<<<<<<< HEAD
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral{
+=======
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 	dir = 4
 	},
 /obj/structure/cable/yellow{
@@ -99654,8 +102231,38 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/dark,
 /area/security/prison)
+=======
+/turf/open/floor/plasteel/dark,
+/area/security/prison)
+"rdq" = (
+/obj/effect/turf_decal/bot,
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/structure/closet/secure_closet/personal,
+/obj/item/storage/backpack,
+/obj/item/storage/backpack/satchel,
+/obj/item/clothing/suit/hooded/wintercoat,
+/obj/item/clothing/shoes/winterboots,
+/obj/machinery/airalarm{
+	pixel_y = 22
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/locker)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "rej" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -99696,10 +102303,13 @@
 	dir = 4;
 	pixel_x = -26
 	},
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/neutral,
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /turf/open/floor/plasteel/dark,
 /area/maintenance/department/science)
 "rha" = (
@@ -99734,6 +102344,60 @@
 	icon_state = "platingdmg3"
 	},
 /area/quartermaster/exploration_dock)
+<<<<<<< HEAD
+=======
+"rkb" = (
+/obj/machinery/computer/card/minor/cmo{
+	dir = 8
+	},
+/obj/effect/turf_decal/bot,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/machinery/computer/security/telescreen/cmo{
+	dir = 8;
+	name = "Chief Medical Officer's telescreen";
+	network = list("medical");
+	pixel_x = 28
+	},
+/obj/machinery/button/door{
+	id = "cmoprivacy";
+	name = "Privacy Shutters Toggle";
+	pixel_x = 24;
+	pixel_y = -24
+	},
+/obj/machinery/button/door{
+	id = "emmd";
+	name = "Medical Lockdown Toggle";
+	pixel_x = 40;
+	pixel_y = -24
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/machinery/button/door{
+	id = "quarantineshutters";
+	name = "Quarantine Lockdown";
+	pixel_x = 32;
+	req_access_txt = "39";
+	pixel_y = -37
+	},
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/heads/cmo)
+"rlw" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/stripes/line{
+	dir = 6
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/maintenance/port)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "rlC" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/corner{
@@ -99769,6 +102433,13 @@
 	icon_state = "panelscorched"
 	},
 /area/maintenance/port/fore)
+<<<<<<< HEAD
+=======
+"roD" = (
+/obj/structure/sign/warning/biohazard,
+/turf/closed/wall/r_wall/rust,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "rrF" = (
 /obj/machinery/door/firedoor,
 /obj/structure/door_assembly/door_assembly_ext{
@@ -99868,6 +102539,28 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/exit/departure_lounge)
+<<<<<<< HEAD
+=======
+"rAF" = (
+/obj/structure/table/glass,
+/obj/item/reagent_containers/dropper,
+/obj/item/reagent_containers/spray/cleaner,
+/obj/machinery/power/apc/auto_name/south,
+/obj/structure/cable/yellow,
+/turf/open/floor/plasteel/dark,
+/area/medical/virology)
+"rAU" = (
+/obj/machinery/door/window/eastleft{
+	name = "Testing Pen";
+	req_access_txt = "39";
+	dir = 1
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "rCK" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable/yellow{
@@ -99897,6 +102590,7 @@
 /obj/structure/table/glass,
 /turf/open/floor/plasteel/dark,
 /area/security/prison)
+<<<<<<< HEAD
 "rLA" = (
 /obj/machinery/button/door{
 	id = "quarantineshutters";
@@ -99922,6 +102616,35 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/medical/virology)
+=======
+"rIH" = (
+/obj/machinery/door/airlock/maintenance{
+	req_access_txt = "12"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/turf/open/floor/plating,
+/area/crew_quarters/locker)
+"rMY" = (
+/obj/machinery/newscaster{
+	pixel_x = -28
+	},
+/obj/machinery/computer/prisoner/management{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/crew_quarters/heads/hos)
+"rOo" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/turf/open/floor/plating,
+/area/maintenance/central)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "rQf" = (
 /obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/blood/old,
@@ -99932,6 +102655,7 @@
 	},
 /area/quartermaster/exploration_dock)
 "rQl" = (
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/purple,
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
@@ -99941,10 +102665,32 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/science/explab)
+=======
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/turf/open/floor/plating{
+	luminosity = 2
+	},
+/area/maintenance/starboard)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "rQx" = (
 /obj/structure/sign/warning/securearea,
 /turf/closed/wall/rust,
 /area/quartermaster/exploration_dock)
+<<<<<<< HEAD
+=======
+"rSZ" = (
+/obj/machinery/flasher{
+	id = "monkeypen";
+	pixel_x = -1;
+	pixel_y = -23
+	},
+/mob/living/carbon/monkey,
+/turf/open/floor/plasteel/dark,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "rVJ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/caution/stand_clear{
@@ -99954,6 +102700,18 @@
 	icon_state = "panelscorched"
 	},
 /area/quartermaster/exploration_dock)
+<<<<<<< HEAD
+=======
+"rZX" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "monkeyshutters";
+	name = "isolation shutters"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/turf/open/floor/plating/airless,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "sdu" = (
 /obj/structure/sign/warning/nosmoking{
 	pixel_y = 32
@@ -99996,6 +102754,23 @@
 	},
 /turf/open/floor/engine/vacuum,
 /area/maintenance/disposal/incinerator)
+<<<<<<< HEAD
+=======
+"skF" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 4
+	},
+/obj/machinery/light/small,
+/obj/machinery/airalarm/directional/south,
+/turf/open/floor/plasteel/freezer,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "skL" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -100012,6 +102787,25 @@
 	icon_state = "platingdmg1"
 	},
 /area/quartermaster/exploration_dock)
+<<<<<<< HEAD
+"sng" = (
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+=======
+"slw" = (
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/structure/disposalpipe/segment,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/medical/surgery)
 "sng" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -100172,6 +102966,16 @@
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/exploration_dock)
+<<<<<<< HEAD
+=======
+"sBA" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "sCg" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating{
@@ -100212,10 +103016,24 @@
 	icon_state = "platingdmg1"
 	},
 /area/maintenance/starboard)
+<<<<<<< HEAD
 "sGD" = (
 /obj/structure/window/reinforced,
 /turf/open/floor/engine,
 /area/science/explab)
+=======
+"sFW" = (
+/obj/structure/table,
+/obj/machinery/microwave{
+	pixel_y = 5
+	},
+/obj/item/storage/box/donkpockets{
+	pixel_x = 3;
+	pixel_y = 5
+	},
+/turf/open/floor/plasteel/dark,
+/area/maintenance/port)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "sHB" = (
 /obj/structure/table,
 /obj/effect/turf_decal/tile/neutral{
@@ -100300,6 +103118,27 @@
 	icon_state = "panelscorched"
 	},
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
+=======
+"sQW" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/dark,
+/area/medical/surgery)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "sRS" = (
 /obj/machinery/light/small,
 /obj/effect/turf_decal/sand/plating,
@@ -100316,6 +103155,20 @@
 	icon_state = "platingdmg3"
 	},
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
+=======
+"sTr" = (
+/obj/machinery/chem_master,
+/obj/structure/sign/departments/minsky/medical/chemistry/chemical1{
+	pixel_x = 30
+	},
+/obj/effect/turf_decal/delivery,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/dark,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "sVU" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/tile/green{
@@ -100357,6 +103210,13 @@
 /obj/item/radio/intercom,
 /turf/closed/wall/rust,
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
+=======
+"tct" = (
+/obj/structure/bed/roller,
+/turf/open/floor/plasteel/dark,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "tcR" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/line{
@@ -100369,16 +103229,64 @@
 	icon_state = "platingdmg3"
 	},
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
+=======
+"tdO" = (
+/obj/structure/bed,
+/obj/machinery/iv_drip,
+/obj/effect/turf_decal/bot_white/right,
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/item/bedsheet/medical,
+/obj/machinery/firealarm/directional/east,
+/turf/open/floor/plasteel/dark,
+/area/medical/surgery)
+"tgp" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "tgH" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+<<<<<<< HEAD
+=======
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/obj/structure/sign/poster/official/moth1{
+	pixel_y = 32
+	},
+/obj/structure/chair{
+	dir = 4
+	},
+/obj/machinery/camera/autoname{
+	dir = 6
+	},
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
 	},
+<<<<<<< HEAD
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
 	},
@@ -100394,6 +103302,8 @@
 /obj/machinery/camera/autoname{
 	dir = 6
 	},
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /turf/open/floor/plasteel/showroomfloor,
 /area/maintenance/department/science)
 "the" = (
@@ -100466,16 +103376,19 @@
 /turf/open/floor/plating,
 /area/quartermaster/warehouse)
 "tmh" = (
-/obj/structure/rack,
-/obj/item/clothing/mask/gas,
-/obj/item/tank/internals/oxygen,
-/obj/item/book/manual/wiki/xenoarchaeology,
-/obj/effect/turf_decal/stripes/line{
-	dir = 10
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/turf/open/floor/plasteel,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
+	},
+/turf/open/floor/plasteel/showroomfloor,
 /area/science/explab)
+<<<<<<< HEAD
 "tor" = (
 /obj/effect/turf_decal/tile/purple,
 /obj/effect/turf_decal/tile/purple{
@@ -100493,6 +103406,40 @@
 	},
 /obj/machinery/light,
 /turf/open/floor/plasteel/dark,
+=======
+"tnt" = (
+/obj/effect/decal/cleanable/blood/old,
+/obj/effect/turf_decal/tile/green,
+/obj/structure/disposalpipe/segment{
+	dir = 5
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/medical/surgery)
+"tor" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 9
+	},
+/turf/open/floor/plating{
+	luminosity = 2
+	},
+/area/maintenance/starboard)
+"toP" = (
+/obj/machinery/computer/xenoartifact_console{
+	dir = 4
+	},
+/obj/effect/turf_decal/bot,
+/obj/effect/decal/cleanable/cobweb,
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/turf/open/floor/plasteel/showroomfloor,
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /area/science/explab)
 "toT" = (
 /obj/machinery/door/window/southright{
@@ -100509,6 +103456,22 @@
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/plating,
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
+=======
+"ttk" = (
+/obj/structure/disposalpipe/segment,
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 1
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "ttv" = (
 /turf/closed/wall,
 /area/docking/arrival{
@@ -100551,6 +103514,18 @@
 	icon_state = "platingdmg3"
 	},
 /area/maintenance/starboard)
+<<<<<<< HEAD
+=======
+"txu" = (
+/obj/structure/table/glass,
+/obj/structure/reagent_dispensers/virusfood{
+	pixel_y = -32
+	},
+/obj/item/clothing/gloves/color/latex,
+/obj/item/clothing/glasses/hud/health,
+/turf/open/floor/plasteel/dark,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "tyN" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/segment{
@@ -100599,11 +103574,64 @@
 /turf/open/floor/plating,
 /area/quartermaster/warehouse)
 "tDI" = (
-/obj/machinery/door/window/southright{
+/obj/machinery/power/apc{
+	areastring = "/area/science/explab";
 	dir = 1;
+<<<<<<< HEAD
 	name = "Testing Chamber"
 	},
 /turf/open/floor/engine,
+/area/science/explab)
+"tFu" = (
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple,
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple,
+/obj/effect/turf_decal/stripes/line{
+	dir = 10
+	},
+/obj/machinery/light,
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -26
+	},
+/obj/structure/filingcabinet/chestdrawer,
+/turf/open/floor/plasteel/showroomfloor,
+/area/science/lab)
+"tGa" = (
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+=======
+	name = "Xenoarchaeology Lab APC";
+	pixel_y = 24
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+<<<<<<< HEAD
+=======
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
 /area/science/explab)
 "tFu" = (
 /obj/effect/turf_decal/tile/purple{
@@ -100642,12 +103670,31 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/effect/turf_decal/box,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
+<<<<<<< HEAD
+=======
+"tGw" = (
+/obj/structure/disposalpipe/segment{
+	dir = 5
+	},
+/obj/effect/turf_decal/caution/stand_clear/red{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 1
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "tJu" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating{
@@ -100699,6 +103746,7 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/exploration_dock)
 "tPc" = (
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
@@ -100706,6 +103754,23 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
+=======
+/obj/item/book/manual/wiki/xenoarchaeology{
+	pixel_y = 6;
+	pixel_x = -5
+	},
+/obj/structure/table,
+/obj/machinery/camera/autoname{
+	dir = 5
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/turf/open/floor/plasteel/showroomfloor,
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /area/science/explab)
 "tQp" = (
 /obj/effect/decal/cleanable/dirt,
@@ -100717,6 +103782,18 @@
 	icon_state = "panelscorched"
 	},
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
+=======
+"tSz" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "monkeyshutters";
+	name = "isolation shutters"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/turf/open/floor/plating/airless,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "tTM" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/corner{
@@ -100732,6 +103809,39 @@
 	icon_state = "platingdmg1"
 	},
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
+=======
+"tTW" = (
+/obj/structure/chair/office/light,
+/obj/effect/turf_decal/stripes/line{
+	dir = 6
+	},
+/obj/effect/landmark/start/virologist,
+/turf/open/floor/plasteel/showroomfloor,
+/area/medical/virology)
+"tTY" = (
+/obj/effect/turf_decal/bot,
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/structure/closet/secure_closet/personal,
+/obj/item/storage/backpack,
+/obj/item/storage/backpack/satchel,
+/obj/item/clothing/suit/hooded/wintercoat,
+/obj/item/clothing/shoes/winterboots,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/locker)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "tUt" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
@@ -100847,6 +103957,22 @@
 	icon_state = "platingdmg1"
 	},
 /area/science/shuttledock)
+<<<<<<< HEAD
+=======
+"upF" = (
+/obj/structure/table/glass,
+/obj/item/reagent_containers/dropper,
+/obj/item/reagent_containers/spray/cleaner,
+/obj/machinery/requests_console{
+	department = "Medbay";
+	departmentType = 1;
+	name = "Medbay RC";
+	pixel_x = -1;
+	pixel_y = -29
+	},
+/turf/open/floor/plasteel/dark,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "usI" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/decal/cleanable/dirt,
@@ -100884,6 +104010,31 @@
 	},
 /turf/open/floor/plating,
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
+=======
+"uve" = (
+/obj/machinery/button/door{
+	id = "quarantineshutters";
+	name = "Quarantine Lockdown";
+	req_access_txt = "39";
+	pixel_x = -24
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/obj/structure/table,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/item/hand_labeler,
+/obj/item/stack/package_wrap,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "uwI" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
@@ -100906,12 +104057,28 @@
 /turf/open/floor/plasteel/dark,
 /area/bridge)
 "uAA" = (
+<<<<<<< HEAD
 /obj/machinery/xenoartifact_inbox,
 /obj/item/xenoartifact,
 /obj/effect/turf_decal/delivery,
 /obj/effect/landmark/xeno_spawn,
 /turf/open/floor/engine,
 /area/science/explab)
+=======
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 9
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/plating{
+	icon_state = "platingdmg3"
+	},
+/area/maintenance/starboard)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "uIb" = (
 /obj/structure/grille/broken,
 /obj/structure/lattice,
@@ -100980,11 +104147,17 @@
 	lighting_colour_tube = "#ffce99"
 	})
 "uQa" = (
-/obj/effect/turf_decal/stripes/line{
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 4
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel,
 /area/science/explab)
+=======
+/obj/effect/turf_decal/box,
+/turf/open/floor/plasteel/dark,
+/area/maintenance/department/science)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "uQy" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable/yellow{
@@ -101001,6 +104174,7 @@
 /turf/open/space/basic,
 /area/space)
 "uRl" = (
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/purple,
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
@@ -101022,6 +104196,21 @@
 /obj/item/clothing/gloves/artifact_pinchers,
 /turf/open/floor/plasteel/dark,
 /area/science/explab)
+=======
+/obj/machinery/door/airlock/maintenance{
+	req_one_access_txt = "12;47"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
+	},
+/turf/open/floor/plating{
+	luminosity = 2
+	},
+/area/maintenance/starboard)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "uRL" = (
 /obj/effect/decal/cleanable/cobweb,
 /obj/effect/decal/cleanable/dirt,
@@ -101049,6 +104238,29 @@
 	icon_state = "platingdmg3"
 	},
 /area/maintenance/solars/starboard/fore)
+<<<<<<< HEAD
+=======
+"uUj" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/bed/roller,
+/obj/effect/turf_decal/stripes/corner,
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/effect/turf_decal/bot_white/left,
+/obj/machinery/door/window/eastleft{
+	dir = 2;
+	name = "Quarantine Pen B";
+	req_access_txt = "39"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 10
+	},
+/turf/open/floor/plasteel/dark,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "uUk" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
@@ -101115,9 +104327,12 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
 /turf/open/floor/plasteel,
 /area/crew_quarters/locker)
+<<<<<<< HEAD
 "uZK" = (
 /turf/open/floor/plating/asteroid/airless,
 /area/space)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "vbN" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/grille/broken,
@@ -101224,6 +104439,18 @@
 	icon_state = "platingdmg1"
 	},
 /area/science/shuttledock)
+<<<<<<< HEAD
+=======
+"vjC" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/end{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "vjI" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -101243,6 +104470,28 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
+<<<<<<< HEAD
+=======
+"vjM" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/newscaster{
+	pixel_y = 32
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/security/prison)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "vlc" = (
 /obj/effect/decal/cleanable/cobweb,
 /obj/effect/decal/cleanable/blood/old,
@@ -101269,6 +104518,42 @@
 "vqb" = (
 /turf/closed/wall/r_wall/rust,
 /area/maintenance/starboard)
+<<<<<<< HEAD
+=======
+"vrA" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/structure/table,
+/obj/item/soap/nanotrasen,
+/obj/item/hand_labeler,
+/obj/machinery/camera{
+	c_tag = "Recovery Room";
+	dir = 8;
+	name = "medical camera";
+	network = list("ss13","medical")
+	},
+/obj/machinery/button/door{
+	id = "QuarantineA";
+	name = "Quarantine Bolts A";
+	normaldoorcontrol = 1;
+	pixel_x = 24;
+	req_one_access_txt = "39;40;45";
+	specialfunctions = 4
+	},
+/obj/effect/turf_decal/stripes/corner,
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/medical/surgery)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "vsM" = (
 /obj/effect/landmark/start/brig_physician,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
@@ -101300,6 +104585,7 @@
 	icon_state = "platingdmg1"
 	},
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
 "vwu" = (
 /obj/effect/turf_decal/tile/green{
 	dir = 4
@@ -101314,6 +104600,52 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
+=======
+"vvw" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/bed/roller,
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/effect/turf_decal/bot_white/left,
+/obj/machinery/door/window/eastleft{
+	name = "Quarantine Pen A";
+	req_access_txt = "39";
+	dir = 2
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 6
+	},
+/obj/machinery/camera{
+	c_tag = "Virology - Testing pens";
+	name = "virology camera";
+	network = list("ss13","medbay")
+	},
+/turf/open/floor/plasteel/dark,
+/area/medical/virology)
+"vwu" = (
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel,
 /area/hydroponics)
@@ -101323,6 +104655,20 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/maintenance/starboard)
+<<<<<<< HEAD
+=======
+"vAM" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/machinery/newscaster{
+	pixel_x = 30
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/turf/open/floor/engine,
+/area/ai_monitored/turret_protected/ai)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "vEm" = (
 /turf/open/floor/plating{
 	icon_state = "panelscorched"
@@ -101352,16 +104698,37 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/bridge)
+<<<<<<< HEAD
+=======
+"vIp" = (
+/obj/machinery/disposal/bin,
+/obj/structure/disposalpipe/trunk{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plasteel/showroomfloor,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "vJb" = (
 /obj/effect/turf_decal/tile/purple,
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
+<<<<<<< HEAD
 	},
 /obj/effect/turf_decal/tile/purple,
 /obj/structure/disposalpipe/segment,
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
+=======
+	},
+/obj/effect/turf_decal/tile/purple,
+/obj/structure/disposalpipe/segment,
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
 	dir = 4
@@ -101401,6 +104768,29 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/science/shuttledock)
+<<<<<<< HEAD
+=======
+"vNV" = (
+/obj/structure/extinguisher_cabinet{
+	pixel_x = 24
+	},
+/obj/effect/turf_decal/stripes/corner,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 9
+	},
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/locker)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "vPh" = (
 /obj/effect/turf_decal/stripes/corner,
 /obj/effect/turf_decal/stripes/corner{
@@ -101536,6 +104926,33 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
+=======
+"wee" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/structure/table/wood,
+/obj/item/storage/photo_album/Captain,
+/obj/machinery/newscaster{
+	pixel_x = 28
+	},
+/obj/item/camera,
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/heads/captain)
+"weC" = (
+/obj/structure/table,
+/obj/machinery/recharger,
+/obj/machinery/newscaster{
+	pixel_x = -30
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/plasteel/dark,
+/area/hallway/secondary/exit/departure_lounge)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "weE" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/wall,
@@ -101562,8 +104979,11 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /turf/open/floor/plasteel/showroomfloor,
 /area/science/shuttledock)
 "whR" = (
@@ -101599,6 +105019,7 @@
 	},
 /area/maintenance/starboard)
 "wkW" = (
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
@@ -101609,6 +105030,23 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
+=======
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 9
+	},
+/obj/machinery/airalarm/directional/south,
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/purple,
+/turf/open/floor/plasteel/showroomfloor,
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /area/science/explab)
 "wly" = (
 /obj/effect/turf_decal/stripes/line{
@@ -101688,6 +105126,34 @@
 	icon_state = "platingdmg3"
 	},
 /area/maintenance/port/fore)
+<<<<<<< HEAD
+=======
+"wsw" = (
+/obj/structure/disposalpipe/segment{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 10
+	},
+/obj/structure/sink/kitchen{
+	pixel_y = 18
+	},
+/obj/structure/closet/crate,
+/obj/effect/decal/cleanable/blood/old,
+/obj/effect/spawner/lootdrop/maintenance/four,
+/obj/effect/spawner/lootdrop/teratoma/major,
+/obj/item/reagent_containers/blood/random,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/corner,
+/turf/open/floor/plating,
+/area/maintenance/central)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "wtn" = (
 /obj/item/shard,
 /obj/structure/grille/broken,
@@ -101696,6 +105162,19 @@
 	icon_state = "platingdmg1"
 	},
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
+=======
+"wtw" = (
+/obj/effect/turf_decal/tile/green,
+/obj/effect/turf_decal/tile/green{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/medical/surgery)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "wxg" = (
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating{
@@ -101755,12 +105234,15 @@
 	},
 /turf/open/floor/engine,
 /area/engine/engineering)
+<<<<<<< HEAD
 "wDu" = (
 /obj/structure/window/reinforced{
 	dir = 1
 	},
 /turf/open/floor/engine,
 /area/science/explab)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "wEk" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/oil,
@@ -101812,6 +105294,7 @@
 	},
 /area/maintenance/starboard)
 "wIH" = (
+<<<<<<< HEAD
 /obj/effect/turf_decal/tile/purple,
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
@@ -101833,6 +105316,23 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
+=======
+/obj/effect/turf_decal/stripes/corner,
+/obj/effect/decal/cleanable/greenglow/filled,
+/obj/machinery/light_switch{
+	pixel_y = -27
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple,
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /turf/open/floor/plasteel/showroomfloor,
 /area/maintenance/department/science)
 "wJa" = (
@@ -101877,11 +105377,27 @@
 /turf/open/floor/plasteel,
 /area/security/main)
 "wKK" = (
+<<<<<<< HEAD
+=======
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/effect/turf_decal/tile/purple,
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/dark,
+=======
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/turf/open/floor/plasteel/showroomfloor,
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /area/science/explab)
 "wLw" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -101966,6 +105482,7 @@
 	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
+<<<<<<< HEAD
 	},
 /obj/effect/landmark/start/paramedic,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -101999,6 +105516,18 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/medical/virology)
+=======
+	},
+/obj/effect/landmark/start/paramedic,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/medical/medbay/central)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "wQt" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -102015,27 +105544,70 @@
 	icon_state = "platingdmg1"
 	},
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
 "wRZ" = (
 /obj/effect/turf_decal/tile/purple,
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
+=======
+"wRk" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/bot,
+/obj/machinery/holopad,
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/medical/virology)
+"wRZ" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/blood/old,
+/turf/open/floor/engine,
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /area/science/explab)
 "wTh" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/obj/machinery/door/airlock/maintenance{
-	req_one_access_txt = "12;47"
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/turf/open/floor/plating{
-	icon_state = "panelscorched"
+/obj/machinery/camera/autoname{
+	dir = 5
 	},
+<<<<<<< HEAD
 /area/maintenance/starboard)
+=======
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/maintenance/department/science)
+"wTF" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "wUq" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating{
@@ -102072,10 +105644,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/fitness/recreation)
+<<<<<<< HEAD
 "wWF" = (
 /obj/structure/sign/warning/explosives,
 /turf/closed/wall,
 /area/science/shuttledock)
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "wXB" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
@@ -102098,6 +105673,7 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/science/shuttledock)
+<<<<<<< HEAD
 "wYP" = (
 /turf/closed/mineral/random/labormineral,
 /area/space)
@@ -102105,6 +105681,22 @@
 /obj/effect/turf_decal/sand/plating,
 /turf/open/space/basic,
 /area/space)
+=======
+"wZx" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
+/turf/open/floor/plasteel/showroomfloor,
+/area/medical/virology)
+"wZU" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/turf/open/floor/plasteel/showroomfloor,
+/area/science/explab)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "xbT" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4
@@ -102150,8 +105742,25 @@
 	},
 /area/maintenance/port/fore)
 "xeX" = (
-/obj/structure/sign/poster/contraband/random,
-/turf/closed/wall,
+/obj/structure/sign/poster/official/bless_this_spess{
+	pixel_x = 32
+	},
+/obj/structure/sink{
+	dir = 4;
+	pixel_x = 11
+	},
+/obj/machinery/shower{
+	dir = 8;
+	name = "emergency shower"
+	},
+/obj/effect/turf_decal/bot,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
 /area/science/explab)
 "xfb" = (
 /obj/effect/turf_decal/stripes/line,
@@ -102193,6 +105802,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 10
+<<<<<<< HEAD
 	},
 /turf/open/floor/plasteel,
 /area/security/main)
@@ -102231,6 +105841,71 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
 	},
+=======
+	},
+/turf/open/floor/plasteel,
+/area/security/main)
+"xlX" = (
+/obj/effect/turf_decal/bot,
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/structure/closet/secure_closet/personal,
+/obj/item/storage/backpack,
+/obj/item/storage/backpack/satchel,
+/obj/item/clothing/suit/hooded/wintercoat,
+/obj/item/clothing/shoes/winterboots,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 6
+	},
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/locker)
+"xmp" = (
+/obj/structure/closet/radiation,
+/obj/effect/turf_decal/bot,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/science/explab)
+"xmt" = (
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/bridge)
+"xoL" = (
+/obj/structure/closet/emcloset,
+/obj/effect/turf_decal/bot,
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/science/shuttledock)
+"xoO" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
@@ -102308,6 +105983,23 @@
 	icon_state = "platingdmg1"
 	},
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
+=======
+"xuo" = (
+/obj/structure/table/glass,
+/obj/item/storage/box/monkeycubes{
+	layer = 3.1;
+	pixel_x = -4;
+	pixel_y = 8
+	},
+/obj/item/storage/box/monkeycubes{
+	layer = 3.1;
+	pixel_x = 2
+	},
+/obj/machinery/airalarm/directional/south,
+/turf/open/floor/plasteel/dark,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "xvK" = (
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
@@ -102446,11 +106138,35 @@
 	icon_state = "panelscorched"
 	},
 /area/quartermaster/warehouse)
+<<<<<<< HEAD
 "xWu" = (
 /obj/structure/closet/secure_closet/brig{
 	id = "Cell 5";
 	name = "Cell 5 Locker"
 	},
+=======
+"xSO" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/corner,
+/turf/open/floor/plasteel/showroomfloor,
+/area/medical/virology)
+"xWu" = (
+/obj/structure/closet/secure_closet/brig{
+	id = "Cell 5";
+	name = "Cell 5 Locker"
+	},
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /obj/effect/turf_decal/bot,
 /obj/effect/turf_decal/tile/red{
 	dir = 8
@@ -102471,11 +106187,26 @@
 /turf/open/floor/plating,
 /area/quartermaster/warehouse)
 "yay" = (
+<<<<<<< HEAD
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel/dark,
+=======
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/landmark/blobstart,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/purple,
+/turf/open/floor/plasteel/showroomfloor,
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /area/science/explab)
 "yba" = (
 /obj/structure/chair,
@@ -102488,6 +106219,17 @@
 	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/fitness/recreation)
+<<<<<<< HEAD
+=======
+"ybs" = (
+/obj/machinery/computer/pandemic,
+/obj/effect/turf_decal/delivery,
+/obj/structure/sign/departments/minsky/medical/virology/virology1{
+	pixel_x = -30
+	},
+/turf/open/floor/plasteel/dark,
+/area/medical/virology)
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 "ydK" = (
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/tile/purple{
@@ -102504,9 +106246,12 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+<<<<<<< HEAD
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 /turf/open/floor/plasteel/showroomfloor,
 /area/science/shuttledock)
 "yeh" = (
@@ -116387,7 +120132,11 @@ bSF
 aeu
 aeu
 aat
+<<<<<<< HEAD
 afJ
+=======
+vjM
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 cca
 cIY
 cbc
@@ -120515,7 +124264,11 @@ aiH
 amS
 cnt
 ajV
+<<<<<<< HEAD
 avM
+=======
+nwM
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 cKy
 ccv
 bPg
@@ -120733,10 +124486,17 @@ eRI
 bdp
 aUs
 aQN
+<<<<<<< HEAD
 csG
 csI
 bqE
 csQ
+=======
+cQN
+mcW
+iNb
+sFW
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 awD
 bKn
 bzm
@@ -120990,10 +124750,17 @@ ahj
 bdq
 bcU
 aQN
+<<<<<<< HEAD
 aqu
 csJ
 csL
 csR
+=======
+jTE
+khM
+rlw
+quE
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 aSL
 awD
 bLo
@@ -121239,7 +125006,11 @@ aPy
 aPD
 aRD
 aQJ
+<<<<<<< HEAD
 aCs
+=======
+ezy
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 aWr
 baT
 aQI
@@ -121487,7 +125258,11 @@ afD
 aQA
 agl
 aRd
+<<<<<<< HEAD
 aOR
+=======
+rkb
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 abl
 aSW
 adY
@@ -121505,11 +125280,19 @@ tUt
 bhA
 aVB
 afe
+<<<<<<< HEAD
 abK
 aVR
 acW
 cIq
 bpr
+=======
+hUs
+vjC
+pJK
+ybs
+nxh
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 afe
 bJt
 ais
@@ -121762,11 +125545,19 @@ aUu
 bdP
 bgS
 aoH
+<<<<<<< HEAD
 abL
 bTW
 acX
 cni
 aVh
+=======
+jHt
+tgp
+gin
+eZZ
+txu
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 afe
 brD
 brD
@@ -122019,11 +125810,19 @@ aVl
 snO
 aQN
 afe
+<<<<<<< HEAD
 arZ
 aVa
 bnN
 acZ
 fvD
+=======
+qsB
+jRf
+ncU
+owz
+upF
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 aoH
 cIr
 aiB
@@ -122274,6 +126073,7 @@ aQI
 aRq
 bdB
 bhS
+<<<<<<< HEAD
 aVs
 ajm
 aCQ
@@ -122281,6 +126081,15 @@ aVc
 bvW
 aUP
 ekS
+=======
+hZp
+fZk
+gOi
+fbw
+ttk
+vIp
+xuo
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 aoH
 bLn
 brD
@@ -122531,6 +126340,7 @@ aYQ
 bat
 bdC
 bgv
+<<<<<<< HEAD
 aUA
 qdC
 bgI
@@ -122538,6 +126348,15 @@ aVf
 aoV
 blV
 csO
+=======
+wtw
+psA
+jZf
+lfi
+wRk
+sBA
+rAF
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 afe
 bLk
 bEO
@@ -122786,6 +126605,7 @@ aXv
 bey
 akF
 bfA
+<<<<<<< HEAD
 bfD
 bgC
 aUB
@@ -122795,6 +126615,17 @@ aVE
 wPz
 bxK
 aVh
+=======
+mhw
+slw
+tnt
+iRN
+qDE
+xSO
+wTF
+tTW
+txu
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 aoH
 bEu
 aoG
@@ -123042,6 +126873,7 @@ bbh
 aXC
 aWq
 akP
+<<<<<<< HEAD
 aRs
 aqW
 bgG
@@ -123052,6 +126884,18 @@ biy
 rLA
 bxV
 mHx
+=======
+tdO
+aqW
+vrA
+sQW
+gIH
+sTr
+iry
+etu
+hRF
+fBT
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 afe
 bIV
 bzZ
@@ -123561,11 +127405,19 @@ afe
 bgK
 avP
 aPf
+<<<<<<< HEAD
 aTl
 biV
 aVg
 bwD
 agm
+=======
+vvw
+nCB
+rZX
+eqb
+lMc
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 atK
 bIX
 bJi
@@ -123818,11 +127670,19 @@ aoH
 bgL
 bhr
 bAN
+<<<<<<< HEAD
 biw
 bjb
 blS
 bwO
 aUy
+=======
+lYO
+wZx
+nTI
+lMc
+rSZ
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 afe
 bIY
 bJi
@@ -124075,11 +127935,19 @@ afe
 aTD
 aVD
 bAN
+<<<<<<< HEAD
 aUV
 cuH
 aUD
 aVA
 aVW
+=======
+uUj
+gNZ
+tSz
+hlN
+lMc
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 aoH
 bIZ
 bJi
@@ -124333,7 +128201,11 @@ afe
 aUJ
 bAN
 aPf
+<<<<<<< HEAD
 bqA
+=======
+lOr
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 aPf
 aPf
 bAN
@@ -124587,6 +128459,7 @@ beC
 aTW
 bgE
 aoH
+<<<<<<< HEAD
 biD
 blB
 bsE
@@ -124596,6 +128469,17 @@ bpz
 byY
 afe
 bBu
+=======
+nuB
+mCO
+uve
+pjC
+qAA
+iyT
+tct
+afe
+xlX
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 bGE
 bBD
 uZo
@@ -124844,6 +128728,7 @@ baR
 aTX
 bhT
 afe
+<<<<<<< HEAD
 aTh
 aUC
 bmC
@@ -124853,6 +128738,17 @@ bqX
 bpD
 afe
 bQE
+=======
+gpl
+lCt
+oVb
+jGH
+tGw
+rAU
+ejB
+afe
+tTY
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 bJi
 bCr
 bEi
@@ -125101,15 +128997,25 @@ bdr
 aUx
 biK
 afe
+<<<<<<< HEAD
 aTi
 aTi
 aTi
+=======
+qqr
+qqr
+qqr
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 afe
 bht
 bqY
 afe
 afe
+<<<<<<< HEAD
 bJd
+=======
+rdq
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 bJi
 bDQ
 bEb
@@ -125362,11 +129268,19 @@ afe
 afe
 aoH
 aoH
+<<<<<<< HEAD
 bpo
 bra
 bve
 btv
 bJe
+=======
+wsw
+hTS
+rOo
+rIH
+vNV
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 bJj
 bEr
 bEl
@@ -125909,7 +129823,11 @@ cjb
 cjT
 aaf
 awk
+<<<<<<< HEAD
 bBF
+=======
+jbL
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 akG
 akQ
 amJ
@@ -127427,7 +131345,11 @@ aoh
 aok
 bEY
 cIB
+<<<<<<< HEAD
 aoX
+=======
+eWx
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 aoy
 aoA
 bHd
@@ -127459,7 +131381,11 @@ wNk
 cKE
 aDG
 bGy
+<<<<<<< HEAD
 bHY
+=======
+mjw
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 bPN
 bUz
 bwu
@@ -129765,7 +133691,11 @@ cnG
 bFa
 clL
 bGG
+<<<<<<< HEAD
 awu
+=======
+aFM
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 bmV
 ayG
 aEF
@@ -130022,7 +133952,11 @@ czA
 bFa
 cmz
 cmF
+<<<<<<< HEAD
 aBY
+=======
+aIG
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 bEm
 aLY
 aSk
@@ -130279,7 +134213,11 @@ czC
 bET
 bFa
 cmG
+<<<<<<< HEAD
 awu
+=======
+aFM
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 cKs
 caP
 caW
@@ -130793,7 +134731,11 @@ cJS
 bFa
 bGG
 csc
+<<<<<<< HEAD
 aFA
+=======
+cMy
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 bFx
 bFy
 aIl
@@ -131050,9 +134992,15 @@ bYL
 bFa
 aRQ
 cNt
+<<<<<<< HEAD
 awu
 awu
 aBY
+=======
+aFM
+aFM
+aIG
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 aCW
 csd
 aMR
@@ -131308,7 +135256,11 @@ ckJ
 cmA
 cOz
 cKj
+<<<<<<< HEAD
 awu
+=======
+aFM
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 aGw
 aAT
 cso
@@ -131565,7 +135517,11 @@ clL
 bFZ
 bRT
 cKk
+<<<<<<< HEAD
 awu
+=======
+aFM
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 bFi
 aEI
 cso
@@ -131822,7 +135778,11 @@ clC
 aRQ
 cny
 bEV
+<<<<<<< HEAD
 aBY
+=======
+aIG
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 aCZ
 aCL
 csd
@@ -132079,7 +136039,11 @@ ckd
 bFa
 cnz
 bFS
+<<<<<<< HEAD
 aBY
+=======
+aIG
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 caQ
 aEY
 csd
@@ -132336,7 +136300,11 @@ ckg
 ckO
 cnA
 cnC
+<<<<<<< HEAD
 awu
+=======
+aFM
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 aMV
 aGi
 csd
@@ -134920,7 +138888,11 @@ aKI
 aKI
 aJR
 ciA
+<<<<<<< HEAD
 awu
+=======
+aFM
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 cok
 aFM
 aFM
@@ -135907,7 +139879,11 @@ asx
 bjO
 bCz
 aPY
+<<<<<<< HEAD
 aUH
+=======
+wee
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 arV
 brU
 asx
@@ -135939,7 +139915,11 @@ ckh
 cpi
 cqK
 cuA
+<<<<<<< HEAD
 cJY
+=======
+hZc
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 awH
 aJm
 ayI
@@ -139758,7 +143738,11 @@ bLG
 dtz
 bsz
 blf
+<<<<<<< HEAD
 bkm
+=======
+omY
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 bkJ
 blG
 blf
@@ -141543,7 +145527,11 @@ baU
 aTo
 aQG
 bdZ
+<<<<<<< HEAD
 bdH
+=======
+qgJ
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 bbb
 bdz
 baQ
@@ -142275,15 +146263,15 @@ aeu
 aeu
 aeu
 aeu
-aeu
-alB
+aWY
 bwe
+alB
 alB
 alB
 alB
 aRK
 air
-cbk
+uQa
 abv
 cmW
 abx
@@ -142527,23 +146515,23 @@ aaa
 aaa
 aaa
 aaa
-acm
 aaa
-aUz
 aeu
 aeu
-aeu
-bkd
-iZp
-cEH
+aWY
+aWY
+aWY
+gti
+mxS
+opa
 cDI
 abi
 aKj
 cDN
-bEq
+gSs
 abw
 ahK
-cDn
+iig
 pSX
 wTh
 ayX
@@ -142784,25 +146772,25 @@ aaa
 aaa
 aaa
 aaa
-bUG
-aDT
-agw
-akA
-beK
-bkd
-ava
-bkd
-yjA
+aaa
+acm
+aWY
+aWY
+toP
+tPc
+nkw
+iZp
+tmh
 cEH
-bkd
+aWY
 agv
 agV
-aMl
-ahs
 ahL
-cbk
+ahL
+ahL
+dot
 abE
-pYn
+ahL
 akf
 ako
 cFq
@@ -143039,19 +147027,19 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
 acK
-aDU
-aaa
-aaa
-aaa
-agy
-oCY
-avA
-wXB
-cEm
-weE
+acm
+acm
+acm
+aWY
+fcm
+pHv
+epJ
+wZU
+opg
+wkW
+uSg
+pYn
 agB
 cDO
 btR
@@ -143298,15 +147286,15 @@ aaa
 aaa
 aaa
 aaa
+aaa
 acm
-ngu
-aaa
-aaa
-aaa
-yeh
-dPo
-vxR
-cDB
+gCl
+iAU
+lLa
+nzA
+pTb
+iHa
+fum
 btR
 agg
 agD
@@ -143554,16 +147542,16 @@ aaa
 aaa
 aaa
 aaa
-aaB
-acK
-aDU
 aaa
 aaa
-aaa
-agy
-dPo
-avA
-ocb
+acm
+gCl
+anb
+wRZ
+lmA
+toT
+iHa
+isJ
 btR
 feL
 abs
@@ -143812,16 +147800,16 @@ aaa
 aaa
 aaa
 aaa
-bUG
-aeZ
-aob
-akA
-bhq
-ava
-bkd
-bkd
-ava
-xqW
+acm
+acm
+gCl
+iAU
+sie
+hZD
+sBr
+qLU
+fIp
+uSg
 cEm
 xqW
 ayw
@@ -144070,15 +148058,15 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aeu
-aeu
-aeu
-aeu
-aeu
+acm
+aXk
+qiG
+jDz
+aMl
+yay
+wKK
+xmp
+aWY
 aeu
 aeu
 cFY
@@ -144140,7 +148128,11 @@ aaa
 aaa
 acm
 bPe
+<<<<<<< HEAD
 bfC
+=======
+weC
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 bUx
 bvo
 bPe
@@ -144328,14 +148320,14 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aeu
-aeu
-aeu
+aWY
+aWY
+tDI
+csx
+gMe
+xeX
+ahs
+aWY
 aeu
 aeu
 cEn
@@ -144583,15 +148575,15 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
 bUG
-acK
-njV
-cEn
+acm
+acm
+aWY
+aWY
+aWY
+aXk
+aWY
+aWY
 cFY
 cEn
 cEn
@@ -145358,7 +149350,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+aaB
 aaa
 acm
 oUB
@@ -147410,12 +151402,12 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
 bUG
+acm
+acm
+acm
+acm
+acm
 acK
 pCW
 cEn
@@ -147936,8 +151928,8 @@ aeu
 aeu
 bkd
 bkd
-ava
 bkd
+uRl
 bkd
 bkd
 bkd
@@ -148184,30 +152176,30 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-mti
-kxm
-kxm
-kxm
-kxm
-kxm
-kxm
-kxm
-kxm
-kxm
-kxm
-kxm
-kxm
-kxm
-kxm
-kxm
-kxm
-kxm
-kxm
-gFh
+bUG
+aDT
+agw
+akA
+beK
+bkd
+ava
+bkd
+yjA
+rQl
+uAA
+bkd
+aeu
+aeu
+aUz
+aeU
+iGO
+cmU
+cmU
+cmU
+cmU
+cmU
+cmU
+cjl
 cmU
 aeU
 aUz
@@ -148432,6 +152424,7 @@ aaa
 aaa
 aaa
 aaa
+<<<<<<< HEAD
 wYP
 wOJ
 wYP
@@ -148467,6 +152460,43 @@ aZv
 aZv
 aaa
 uZK
+=======
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+acK
+aDU
+aaa
+aaa
+aaa
+agy
+oCY
+avA
+wXB
+mdB
+nlp
+bkd
+efK
+aeU
+aeU
+aeU
+aeU
+cmU
+mti
+kxm
+kxm
+kxm
+kxm
+gFh
+cmU
+aeU
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 aeU
 ktS
 qFg
@@ -148696,6 +152726,7 @@ uZK
 aaa
 caT
 aaa
+<<<<<<< HEAD
 wZU
 adS
 elh
@@ -148724,6 +152755,39 @@ anb
 aZv
 aaa
 aaa
+=======
+aaa
+aaa
+aaa
+aaa
+aaa
+acm
+ngu
+aaa
+aaa
+aaa
+yeh
+dPo
+vxR
+cDB
+mmW
+mMY
+bkd
+efK
+cGw
+cGw
+cGw
+cGw
+cGw
+cjl
+cGw
+cGw
+cGw
+cGw
+cGw
+cmU
+cmU
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 aeU
 ikp
 pAi
@@ -148951,6 +153015,7 @@ aaa
 aaa
 aaa
 aaa
+<<<<<<< HEAD
 caT
 cmJ
 wZU
@@ -148981,6 +153046,38 @@ gti
 aZv
 aaa
 uZK
+=======
+aaa
+aaa
+aaa
+aaa
+acK
+aDU
+aaa
+aaa
+aaa
+agy
+dPo
+avA
+ocb
+gYr
+tor
+bkd
+aeu
+adS
+elh
+qsO
+qsO
+qsO
+crb
+cXK
+cXK
+cXK
+cXK
+fVq
+aeU
+aeU
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 aeU
 ikp
 vcZ
@@ -149211,9 +153308,33 @@ aaa
 caT
 aaa
 aaa
-crb
-ckk
 aaa
+bUG
+aeZ
+aob
+akA
+bhq
+ava
+bkd
+bkd
+ava
+bkd
+bkd
+bkd
+aeu
+crj
+crj
+crj
+crj
+crj
+crb
+crj
+crj
+crj
+crj
+crj
+aaa
+<<<<<<< HEAD
 aaa
 ckk
 acK
@@ -149241,6 +153362,12 @@ aZv
 aZv
 olV
 qFg
+=======
+aeU
+aeU
+ktS
+oqd
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 qLV
 ikp
 acm
@@ -149463,6 +153590,7 @@ aaB
 aaa
 aaa
 aaa
+<<<<<<< HEAD
 caT
 cmJ
 cmJ
@@ -149496,6 +153624,41 @@ aZv
 epJ
 fIp
 qiG
+=======
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aeu
+aeu
+aeu
+aeu
+aeu
+efK
+efK
+aeu
+aeu
+crb
+ckk
+aaa
+aaa
+ckk
+acK
+xJs
+aaa
+aaa
+ckk
+crb
+aaa
+cmU
+aeU
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 ktS
 spz
 qLV
@@ -149724,21 +153887,9 @@ caT
 aaa
 caT
 aaa
-adS
-qsO
-qsO
-qsO
-qsO
-oFO
-pEx
-xQl
-cXK
-cXK
-cXK
-cXK
-fVq
 aaa
 aaa
+<<<<<<< HEAD
 gCl
 tPc
 jDz
@@ -149754,6 +153905,36 @@ lmA
 lmA
 lmA
 opg
+=======
+aaa
+aaa
+aaa
+aaa
+aeu
+aeu
+aeu
+aeu
+aeu
+aeu
+aeu
+aeu
+cGw
+cGw
+cGw
+cGw
+cGw
+crb
+crb
+crb
+cGw
+cGw
+cGw
+cGw
+cGw
+aeU
+aeU
+ktS
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 wgM
 fTx
 ikp
@@ -149979,6 +154160,7 @@ aaa
 aaa
 mfH
 aaa
+<<<<<<< HEAD
 caT
 cmJ
 crj
@@ -150010,6 +154192,40 @@ aZv
 mmW
 oqd
 mMY
+=======
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aeu
+aeu
+aeu
+aeu
+aeu
+aeU
+cmU
+adS
+qsO
+qsO
+qsO
+qsO
+oFO
+pEx
+xQl
+cXK
+cXK
+cXK
+cXK
+fVq
+aeU
+cmU
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 cFE
 dCY
 ygy
@@ -150239,18 +154455,34 @@ aaa
 mfH
 aaa
 aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aeu
+aeu
+aeu
+aeU
+cmU
+crj
+crj
+crj
+crj
+crj
 crb
-ckk
-aaa
-aaa
-ckk
 crb
-ckk
-aaa
-aaa
-ckk
 crb
+crj
+crj
+crj
+crj
+crj
 aaa
+<<<<<<< HEAD
 aaa
 aaa
 aZv
@@ -150268,6 +154500,10 @@ aZv
 aZv
 aZv
 wWF
+=======
+aeU
+ktS
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 ftH
 nRe
 ktS
@@ -150487,6 +154723,7 @@ aeu
 aeu
 aeu
 aeu
+<<<<<<< HEAD
 afh
 afh
 afh
@@ -150501,15 +154738,40 @@ cGw
 cGw
 cGw
 cGw
+=======
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aeu
+aeU
+coy
+cmU
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 crb
-cGw
-cGw
-cGw
-cGw
-cGw
+ckk
 aaa
 aaa
+ckk
+crb
+ckk
 aaa
+<<<<<<< HEAD
 aZv
 tPc
 jDz
@@ -150521,6 +154783,11 @@ uQa
 gYr
 toP
 aZv
+=======
+aaa
+ckk
+crb
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 aaa
 aaa
 aeU
@@ -150753,12 +155020,27 @@ caT
 aaa
 caT
 aaa
-adS
-qsO
-qsO
-qsO
-qsO
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aeU
+aeU
+cmU
+cGw
+cGw
+cGw
+cGw
+cGw
 crb
+<<<<<<< HEAD
 cXK
 cXK
 cXK
@@ -150781,6 +155063,16 @@ aZv
 aaa
 uZK
 aeU
+=======
+cGw
+cGw
+cGw
+cGw
+cGw
+aaa
+aeU
+coy
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 ikp
 qFg
 iFz
@@ -151001,6 +155293,7 @@ aeu
 aeu
 aeu
 aeu
+<<<<<<< HEAD
 afh
 afh
 afh
@@ -151021,22 +155314,44 @@ crj
 crj
 crj
 crj
+=======
 aaa
 aaa
 aaa
-aZv
-aZv
-aZv
-aZv
-gCl
-gCl
-gCl
-aZv
-aZv
-aZv
-aZv
 aaa
-wZU
+aaa
+aaa
+aaa
+aaa
+aaa
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aeU
+aUz
+adS
+qsO
+qsO
+qsO
+qsO
+crb
+cXK
+cXK
+cXK
+cXK
+fVq
+aaa
+cmU
 aeU
 ktS
 qFg
@@ -151272,6 +155587,7 @@ cmJ
 aaa
 cmJ
 aaa
+<<<<<<< HEAD
 cjl
 acm
 aaa
@@ -151286,14 +155602,35 @@ aaa
 aaa
 aaa
 aaa
+=======
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 aaa
 aaa
 aaa
 aaa
 aaa
 aaa
+<<<<<<< HEAD
 wZU
 uZK
+=======
+aaa
+aeU
+aeU
+crj
+crj
+crj
+crj
+crj
+fnp
+crj
+crj
+crj
+crj
+crj
+cmU
+aeU
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 aeU
 cFE
 lBI
@@ -151522,6 +155859,7 @@ afh
 afh
 afh
 aaa
+<<<<<<< HEAD
 caT
 caT
 caT
@@ -151530,6 +155868,17 @@ caT
 caT
 mfH
 kHf
+=======
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+>>>>>>> 3efeef8a90 (Moves Xenoarchaeology on Kilo Station (#8138))
 aaa
 aaa
 aaa
@@ -151540,13 +155889,17 @@ aaa
 aaa
 aaa
 aaa
+aeU
 aaa
 aaa
 aaa
 aaa
 aaa
 aaa
+cjl
 acm
+aaa
+aaa
 ktS
 cFE
 ktS
@@ -151798,12 +156151,12 @@ aaa
 aaa
 aaa
 aaa
-acm
 aaa
 aaa
-aeo
+kHf
 aaa
-acm
+aaa
+aaa
 ktS
 ipy
 xDv
