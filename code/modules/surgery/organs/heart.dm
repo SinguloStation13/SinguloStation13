@@ -227,7 +227,7 @@
 		owner.heal_overall_damage(15, 15, 0, BODYTYPE_ORGANIC)
 		if(owner.reagents.get_reagent_amount(/datum/reagent/medicine/ephedrine) < 20)
 			owner.reagents.add_reagent(/datum/reagent/medicine/ephedrine, 10)
-
+//Singulo station edit begin
 /obj/item/organ/heart/nanite
 	name = "Nanite heart"
 	desc = "A specialized heart constructed from nanites that helps coordinate nanites allowing them to regenerate quicker inside the body without any ill effects. Caution this organ will fall apart without nanites to sustain itself!"
@@ -252,3 +252,4 @@
 		if(owner)
 			Remove(owner) //The heart is made of nanites so without them it just breaks down
 		qdel(src)
+//Singulo station edit end

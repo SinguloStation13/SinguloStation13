@@ -588,7 +588,7 @@
 	build_path = /obj/item/organ/heart/cybernetic/upgraded
 	category = list("Cybernetics", "Medical Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL
-
+//Singulo station edit begin
 /datum/design/nanite_heart
 	name = "Nanite Heart"
 	desc = "A heart made of nanites that improves their function in the body."
@@ -599,7 +599,7 @@
 	build_path = /obj/item/organ/heart/nanite
 	category = list("Cybernetics", "Medical Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL | DEPARTMENTAL_FLAG_SCIENCE
-
+//Singulo station edit end
 /datum/design/cybernetic_lungs
 	name = "Cybernetic Lungs"
 	desc = "A pair of cybernetic lungs."
