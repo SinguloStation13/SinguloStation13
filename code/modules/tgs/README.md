@@ -12,3 +12,4 @@ This folder should be placed on it's own inside a codebase that wishes to use th
 
 APIs communicate with TGS in two ways. All versions implement TGS -> DM communication using /world/Topic. DM -> TGS communication, called the bridge method, is different for each version.
 
+
