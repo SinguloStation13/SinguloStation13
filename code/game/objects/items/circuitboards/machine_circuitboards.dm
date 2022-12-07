@@ -558,7 +558,7 @@
 		/obj/machinery/vending/hydroseeds = "MegaSeed Servitor",
 		/obj/machinery/vending/sustenance = "Sustenance Vendor",
 		/obj/machinery/vending/dinnerware = "Plasteel Chef's Dinnerware Vendor",
-		/obj/machinery/vending/cart = "PTech",
+		/obj/machinery/vending/job_disk = "PTech",
 		/obj/machinery/vending/robotics = "Robotech Deluxe",
 		/obj/machinery/vending/engineering = "Robco Tool Maker",
 		/obj/machinery/vending/sovietsoda = "BODA",
@@ -626,6 +626,7 @@
 
 /obj/item/circuitboard/machine/chem_dispenser/botany				//probably should be generic but who cares
 	name = "minor botanical chem dispenser (Machine Board)"
+	icon_state = "service"
 	build_path = /obj/machinery/chem_dispenser/mutagensaltpetersmall
 	req_components = list(
 		/obj/item/stock_parts/matter_bin = 2,
