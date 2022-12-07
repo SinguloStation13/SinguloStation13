@@ -698,9 +698,6 @@
 /turf/open/floor/plasteel,
 /area/engine/gravity_generator)
 "rZ" = (
-/obj/machinery/light{
-	dir = 8
-	},
 /obj/structure/closet/firecloset/full{
 	anchored = 1
 	},
@@ -725,12 +722,14 @@
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "sh" = (
-/obj/machinery/light{
+/obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 4
 	},
-/obj/machinery/cryopod/latejoin,
-/turf/open/floor/plasteel,
-/area/hallway/secondary/entry)
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/bridge)
 "sj" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -818,6 +817,9 @@
 /obj/machinery/power/apc/auto_name/west,
 /obj/structure/cable{
 	icon_state = "0-4"
+	},
+/obj/machinery/light{
+	dir = 8
 	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
@@ -1566,6 +1568,9 @@
 /area/solar/port)
 "Gs" = (
 /obj/structure/table/reinforced,
+/obj/machinery/light{
+	dir = 4
+	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "Gt" = (
@@ -2415,15 +2420,6 @@
 	},
 /turf/open/floor/plating,
 /area/science/research)
-"Vz" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/dark,
-/area/bridge)
 "VF" = (
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/high_volume/layer2{
 	dir = 8
@@ -18881,7 +18877,7 @@ sa
 sa
 aM
 ls
-Vz
+sh
 lP
 lP
 vU
@@ -19393,7 +19389,7 @@ LS
 qE
 tn
 Gs
-sh
+tn
 sW
 fS
 iP
