@@ -2,6 +2,8 @@ import { useDispatch, useSelector } from 'common/redux';
 import { Button, Flex, Box, Section } from 'tgui/components';
 import { selectStatPanel } from './selectors';
 import { StatText } from './StatText';
+import { sendMessage } from 'tgui/backend';
+
 
 export const StatStatus = (props, context) => {
   const stat = useSelector(context, selectStatPanel);
@@ -127,7 +129,12 @@ export const StatStatus = (props, context) => {
                     <Button
                       content="Start"
                       color="transparent"
-                      onClick={e => Byond.sendMessage('stat/pressed', { action_id: 'start_br' })} />
+                      onClick={e => sendMessage({
+                        type: 'stat/pressed',
+                        payload: {
+                          action_id: 'start_br',
+                        },
+                      })} />
                     <Box inline>
                       <Button
                         content="Dismiss"
@@ -255,7 +262,12 @@ export const HoboStatStatus = (props, context) => {
                   <Button
                     content="Start"
                     color="transparent"
-                    onClick={e => Byond.sendMessage('stat/pressed', { action_id: 'start_br' })} />
+                    onClick={e => sendMessage({
+                      type: 'stat/pressed',
+                      payload: {
+                        action_id: 'start_br',
+                      },
+                    })} />
                   <Box inline>
                     <Button
                       content="Dismiss"

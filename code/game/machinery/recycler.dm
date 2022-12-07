@@ -67,8 +67,10 @@
 		return
 	return ..()
 
-/obj/machinery/recycler/on_emag(mob/user)
-	..()
+/obj/machinery/recycler/emag_act(mob/user)
+	if(obj_flags & EMAGGED)
+		return
+	obj_flags |= EMAGGED
 	if(safety_mode)
 		safety_mode = FALSE
 		update_icon()

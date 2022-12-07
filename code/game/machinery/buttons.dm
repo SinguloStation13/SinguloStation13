@@ -104,11 +104,13 @@
 	else
 		return ..()
 
-/obj/machinery/button/on_emag(mob/user)
-	..()
+/obj/machinery/button/emag_act(mob/user)
+	if(obj_flags & EMAGGED)
+		return
 	req_access = list()
 	req_one_access = list()
 	playsound(src, "sparks", 100, 1)
+	obj_flags |= EMAGGED
 
 /obj/machinery/button/eminence_act(mob/living/simple_animal/eminence/eminence)
 	. = ..()

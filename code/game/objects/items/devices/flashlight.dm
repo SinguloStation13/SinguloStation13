@@ -297,8 +297,12 @@
 	else
 		update_brightness(null)
 
-	remove_emitter("spark")
-	remove_emitter("smoke")
+/obj/item/flashlight/flare/update_brightness(mob/user = null)
+	..()
+	if(on)
+		item_state = "[initial(item_state)]-on"
+	else
+		item_state = "[initial(item_state)]"
 
 /obj/item/flashlight/flare/attack_self(mob/user)
 
@@ -316,9 +320,6 @@
 		user.visible_message("<span class='notice'>[user] lights \the [src].</span>", "<span class='notice'>You light \the [src]!</span>")
 		force = on_damage
 		damtype = "fire"
-		if(!istype(src, /obj/item/flashlight/flare/torch))
-			add_emitter(/obj/emitter/sparks/flare, "spark", 10)
-			add_emitter(/obj/emitter/flare_smoke, "smoke", 9)
 		START_PROCESSING(SSobj, src)
 
 /obj/item/flashlight/flare/is_hot()

@@ -116,7 +116,6 @@
 
 /turf/open/space/transit/update_icon_state()
 	icon_state = "speedspace_ns_[get_transit_state(src)]"
-	return ..()
 
 /proc/get_transit_state(turf/T)
 	var/p = 9

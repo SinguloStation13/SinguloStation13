@@ -65,7 +65,7 @@
 	. = ..()
 	if(.)
 		return
-	user.holder.open_player_panel()
+	user.holder.player_panel_new()
 	return TRUE
 
 

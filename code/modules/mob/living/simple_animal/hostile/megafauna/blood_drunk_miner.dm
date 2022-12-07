@@ -19,11 +19,12 @@ When the blood-drunk miner dies, it leaves behind the cleaving saw it was using 
 Difficulty: Medium
 
 */
+
 /mob/living/simple_animal/hostile/megafauna/blood_drunk_miner
 	name = "blood-drunk miner"
 	desc = "A miner destined to wander forever, engaged in an endless hunt."
-	health = 450
-	maxHealth = 450
+	health = 900
+	maxHealth = 900
 	icon_state = "miner"
 	icon_living = "miner"
 	icon = 'icons/mob/broadMobs.dmi'
@@ -38,6 +39,7 @@ Difficulty: Medium
 	ranged = TRUE
 	ranged_cooldown_time = 16
 	pixel_x = -16
+	crusher_loot = list(/obj/structure/closet/crate/necropolis/bdm, /obj/item/crusher_trophy/miner_eye)
 	loot = list(/obj/structure/closet/crate/necropolis/bdm)
 	wander = FALSE
 	del_on_death = TRUE

@@ -92,10 +92,12 @@
 	else
 		return ..()
 
-/obj/machinery/scanner_gate/on_emag(mob/user)
-	..()
+/obj/machinery/scanner_gate/emag_act(mob/user)
+	if(obj_flags & EMAGGED)
+		return
 	locked = FALSE
 	req_access = list()
+	obj_flags |= EMAGGED
 	to_chat(user, "<span class='notice'>You fry the ID checking system.</span>")
 	//Update to viewers
 	ui_update()

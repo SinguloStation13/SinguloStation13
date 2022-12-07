@@ -525,7 +525,7 @@
 
 /obj/effect/spawner/lootdrop/megafaunaore
 	name = "megafauna ore drop"
-	lootcount = 50
+	lootcount = 100
 	lootdoubles = TRUE
 	loot = list(
 		/obj/item/stack/ore/iron = 5,

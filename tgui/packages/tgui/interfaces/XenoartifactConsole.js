@@ -1,6 +1,6 @@
 import { map, toArray } from 'common/collections';
 import { useBackend } from '../backend';
-import { Box, Tabs, Section, Button, BlockQuote, Icon, Collapsible, AnimatedNumber, ProgressBar } from '../components';
+import { Box, Tabs, Section, Button, BlockQuote, Icon, Collapsible, AnimatedNumber } from '../components';
 import { formatMoney } from '../format';
 import { Window } from '../layouts';
 import { sanitizeText } from "../sanitize";
@@ -12,7 +12,6 @@ export const XenoartifactConsole = (props, context) => {
     current_tab,
     tab_info,
     points,
-    stability,
   } = data;
   const sellers=toArray(data.seller);
   return (
@@ -21,15 +20,6 @@ export const XenoartifactConsole = (props, context) => {
       height={500}>
       <Window.Content scrollable>
         <Box>
-          <ProgressBar
-            ranges={{
-              good: [0.5, Infinity],
-              average: [0.25, 0.5],
-              bad: [-Infinity, 0.25],
-            }}
-            value={stability*0.01}> 
-            Thread stability 
-          </ProgressBar>
           <Section title={`Research and Development`} fluid
             buttons={(
               <Box fontFamily="verdana" inline bold>
@@ -101,8 +91,8 @@ export const XenoartifactListingBuy = (props, context) => {
         <BlockQuote>
           {`${dialogue}`}
         </BlockQuote>
-        <Button icon="shopping-cart" onClick={() => act(id)}>
-          {`${price} credits`}
+        <Button onClick={() => act(id)}>
+          {`Purchase: ${price} credits.`} <Icon name="shopping-cart" />
         </Button>
       </Section>
     </Box>
@@ -163,8 +153,8 @@ export const XenoartifactSell = (props, context) => {
               </BlockQuote>
             </Section>))}
         </Collapsible>
-        <Button icon="shopping-cart" onClick={() => act(`sell`)} p={.5}>
-          Export pad contents
+        <Button onClick={() => act(`sell`)} p={.5}>
+          Export pad contents. <Icon name="shopping-cart" />
         </Button>
       </Section>
       {buyers.map(details => (<XenoartifactListingSell 

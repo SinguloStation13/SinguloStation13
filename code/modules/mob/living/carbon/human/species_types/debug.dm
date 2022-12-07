@@ -1,6 +1,6 @@
 /datum/species/debug
 	name = "CODER DISASTER"
-	id = SPECIES_DEBUG
+	id = "debug"
 	bodyflag = FLAG_DEBUG_SPECIES
 	changesource_flags = MIRROR_BADMIN
 	sexes = 0

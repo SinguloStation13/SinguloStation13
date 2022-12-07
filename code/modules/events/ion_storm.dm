@@ -59,7 +59,7 @@
 	if(botEmagChance)
 		for(var/mob/living/simple_animal/bot/bot in GLOB.alive_mob_list)
 			if(prob(botEmagChance))
-				bot.use_emag(null)
+				bot.emag_act()
 
 /proc/generate_ion_law()
 	var/ionspecies = pick_list(ION_FILE, "ionspecies")

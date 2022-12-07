@@ -113,7 +113,6 @@ export class Input extends Component {
       value,
       maxLength,
       placeholder,
-      autoFocus,
       ...boxProps
     } = props;
     // Box props
@@ -143,8 +142,7 @@ export class Input extends Component {
           onFocus={this.handleFocus}
           onBlur={this.handleBlur}
           onKeyDown={this.handleKeyDown}
-          maxLength={maxLength}
-          autoFocus={autoFocus} />
+          maxLength={maxLength} />
       </Box>
     );
   }

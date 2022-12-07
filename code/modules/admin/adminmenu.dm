@@ -3,5 +3,5 @@
 	set desc = "Player Panel"
 	set category = "Admin"
 	if(holder)
-		holder.open_player_panel()
+		holder.player_panel_new()
 		SSblackbox.record_feedback("tally", "admin_verb", 1, "Player Panel New") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!

@@ -25,14 +25,24 @@
 	in_camera_mode = TRUE
 	to_chat(user, "<B>Camera Mode activated</B>")
 
-/obj/item/camera/siliconcam/proc/selectpicture(mob/user, title = "Select Photo", button_text = "Select")
-	if(!length(stored))
-		to_chat(user, "<span class='boldannounce'>No images saved.</span>")
+/obj/item/camera/siliconcam/proc/selectpicture(mob/user)
+	var/list/nametemp = list()
+	var/find
+	if(!stored.len)
+		to_chat(usr, "<span class='boldannounce'>No images saved.</span>")
 		return
-	return tgui_select_picture(user, stored, title = title, button_text = button_text)
+	var/list/temp = list()
+	for(var/i in stored)
+		var/datum/picture/p = i
+		nametemp += p.picture_name
+		temp[p.picture_name] = p
+	find = input(user, "Select image") in nametemp|null
+	if(!find)
+		return
+	return temp[find]
 
 /obj/item/camera/siliconcam/proc/viewpictures(mob/user)
-	var/datum/picture/selection = selectpicture(user, button_text = "View")
+	var/datum/picture/selection = selectpicture(user)
 	if(istype(selection))
 		show_picture(user, selection)
 
@@ -59,11 +69,11 @@
 		stored[picture] = TRUE
 		to_chat(usr, "<span class='unconscious'>Image recorded and saved to local storage. Upload will happen automatically if unit is lawsynced.</span>")
 
-/obj/item/camera/siliconcam/robot_camera/selectpicture(mob/user, title = "Select Photo", button_text = "Select")
+/obj/item/camera/siliconcam/robot_camera/selectpicture(mob/user)
 	var/mob/living/silicon/robot/R = loc
 	if(istype(R) && R.connected_ai)
 		R.picturesync()
-		return R.connected_ai.aicamera.selectpicture(user, title, button_text)
+		return R.connected_ai.aicamera.selectpicture(user)
 	else
 		return ..()
 
@@ -72,7 +82,7 @@
 	if(!istype(C) || C.toner < 20)
 		to_chat(user, "<span class='warning'>Insufficent toner to print image.</span>")
 		return
-	var/datum/picture/selection = selectpicture(user, button_text = "Print")
+	var/datum/picture/selection = selectpicture(user)
 	if(!istype(selection))
 		to_chat(user, "<span class='warning'>Invalid Image.</span>")
 		return

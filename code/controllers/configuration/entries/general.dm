@@ -600,5 +600,3 @@
 /datum/config_entry/string/elasticsearch_metrics_endpoint
 
 /datum/config_entry/string/elasticsearch_metrics_apikey
-
-/datum/config_entry/flag/enable_mrat

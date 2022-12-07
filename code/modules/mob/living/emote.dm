@@ -400,7 +400,6 @@
 	key = "me"
 	key_third_person = "custom"
 	message = null
-	mob_type_blacklist_typecache = /mob/living/brain
 
 /datum/emote/living/custom/proc/check_invalid(mob/user, input)
 	var/static/regex/stop_bad_mime = regex(@"says|exclaims|yells|asks")

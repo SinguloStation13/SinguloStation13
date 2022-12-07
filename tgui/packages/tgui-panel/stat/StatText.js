@@ -1,9 +1,11 @@
 import { useSelector } from 'common/redux';
-import { Button, Flex, Box, Section } from 'tgui/components';
+import { Button, Flex, Knob, Tabs, Box, Section, Fragment } from 'tgui/components';
 import { useSettings } from '../settings';
 import { selectStatPanel } from './selectors';
-import { Divider, Table } from '../../tgui/components';
-import { STAT_TEXT, STAT_BUTTON, STAT_ATOM, STAT_DIVIDER, STAT_BLANK } from './constants';
+import { sendMessage } from 'tgui/backend';
+import { Divider, Grid, Table } from '../../tgui/components';
+import { STAT_TEXT, STAT_BUTTON, STAT_ATOM, STAT_DIVIDER, STAT_VERB, STAT_BLANK } from './constants';
+import { sendLogEntry } from 'tgui-dev-server/link/client.cjs';
 
 export const StatText = (props, context) => {
   const stat = useSelector(context, selectStatPanel);
@@ -83,15 +85,17 @@ export const StatTextButton = (props, context) => {
     action_id,
     params = [],
   } = props;
+  const settings = useSettings(context);
   return (
     <Flex.Item mt={1}>
       <Button
-        onClick={() => Byond.sendMessage('stat/pressed',
-          {
+        onClick={() => sendMessage({
+          type: 'stat/pressed',
+          payload: {
             action_id: action_id,
             params: params,
           },
-        )}
+        })}
         color="transparent">
         <b>
           {title}:{" "}
@@ -141,28 +145,30 @@ export const StatTextAtom = (props, context) => {
           {
             e.preventDefault();
             storeAtomRef(null);
-            Byond.sendMessage('stat/pressed',
-              {
+            sendMessage({
+              type: 'stat/pressed',
+              payload: {
                 action_id: 'atomDrop',
                 params: {
                   ref: atom_ref,
                   ref_other: other_atom_ref,
                 },
-              }
-            );
+              },
+            });
           }
         }}
         onDragEnd={e => {
           storeAtomRef(null);
         }}
-        onClick={e => Byond.sendMessage('stat/pressed',
-          {
+        onClick={e => sendMessage({
+          type: 'stat/pressed',
+          payload: {
             action_id: 'atomClick',
             params: {
               ref: atom_ref,
             },
-          }
-        )}
+          },
+        })}
         color="transparent">
         {atom_name}
       </Button>
@@ -189,11 +195,13 @@ export const StatTextVerb = (props, context) => {
       width="200px">
       <Button
         content={title}
-        onClick={() => Byond.sendMessage('stat/pressed',
-          {
+        onClick={() => sendMessage({
+          type: 'stat/pressed',
+          payload: {
             action_id: action_id,
             params: params,
-          })}
+          },
+        })}
         color="transparent"
         fluid />
     </Box>
@@ -283,14 +291,17 @@ export const HoboStatTextButton = (props, context) => {
     action_id,
     params = [],
   } = props;
+  const settings = useSettings(context);
   return (
     <Box>
       <Button
-        onClick={() => Byond.sendMessage('stat/pressed',
-          {
+        onClick={() => sendMessage({
+          type: 'stat/pressed',
+          payload: {
             action_id: action_id,
             params: params,
-          })}
+          },
+        })}
         color="transparent">
         <b>
           {title}:{" "}
@@ -310,14 +321,15 @@ export const HoboStatTextAtom = (props, context) => {
   return (
     <Box>
       <Button
-        onClick={e => Byond.sendMessage('stat/pressed',
-          {
+        onClick={e => sendMessage({
+          type: 'stat/pressed',
+          payload: {
             action_id: 'atomClick',
             params: {
               ref: atom_ref,
             },
-          }
-        )}
+          },
+        })}
         color="transparent">
         <Table>
           <Table.Row>

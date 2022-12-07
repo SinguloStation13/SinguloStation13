@@ -4,7 +4,7 @@ import { COLORS } from '../constants';
 import { Window } from '../layouts';
 import { sortBy } from 'common/collections';
 
-export const HEALTH_COLOR_BY_LEVEL = [
+const HEALTH_COLOR_BY_LEVEL = [
   '#17d568',
   '#2ecc71',
   '#e67e22',
@@ -13,9 +13,9 @@ export const HEALTH_COLOR_BY_LEVEL = [
   '#ed2814',
 ];
 
-export const jobIsHead = jobId => jobId % 10 === 0;
+const jobIsHead = jobId => jobId % 10 === 0;
 
-export const jobToColor = jobId => {
+const jobToColor = jobId => {
   if (jobId >= 0 && jobId < 10) {
     return COLORS.department.captain;
   }
@@ -37,19 +37,16 @@ export const jobToColor = jobId => {
   if (jobId >= 200 && jobId < 230) {
     return COLORS.department.centcom;
   }
-  if (jobId === -1) {
-    return null;
-  }
   return COLORS.department.other;
 };
 
-export const healthToColor = (oxy, tox, burn, brute) => {
+const healthToColor = (oxy, tox, burn, brute) => {
   const healthSum = oxy + tox + burn + brute;
   const level = Math.min(Math.max(Math.ceil(healthSum / 25), 0), 5);
   return HEALTH_COLOR_BY_LEVEL[level];
 };
 
-export const HealthStat = props => {
+const HealthStat = props => {
   const { type, value } = props;
   return (
     <Box

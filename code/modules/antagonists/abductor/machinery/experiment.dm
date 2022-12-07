@@ -189,4 +189,3 @@
 		icon_state = "experiment-open"
 	else
 		icon_state = "experiment"
-	return ..()

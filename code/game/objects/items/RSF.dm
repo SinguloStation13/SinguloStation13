@@ -127,12 +127,10 @@ RSF
 	icon_state = "rcd"
 	lefthand_file = 'icons/mob/inhands/equipment/tools_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/tools_righthand.dmi'
-	emag_toggleable = TRUE
 	var/matter = 10
 	var/toxin = 0
 	var/cooldown = 0
 	var/cooldowndelay = 10
-	var/safety = TRUE
 	w_class = WEIGHT_CLASS_NORMAL
 
 /obj/item/cookiesynth/examine(mob/user)
@@ -142,8 +140,8 @@ RSF
 /obj/item/cookiesynth/attackby()
 	return
 
-/obj/item/cookiesynth/on_emag(mob/user)
-	..()
+/obj/item/cookiesynth/emag_act(mob/user)
+	obj_flags ^= EMAGGED
 	if(obj_flags & EMAGGED)
 		to_chat(user, "<span class='warning'>You short out [src]'s reagent safety checker!</span>")
 	else

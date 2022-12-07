@@ -47,15 +47,11 @@
 	if(cpu)
 		cpu.attack_ghost(user)
 
-/obj/machinery/modular_computer/should_emag(mob/user)
+/obj/machinery/modular_computer/emag_act(mob/user)
 	if(!cpu)
 		to_chat(user, "<span class='warning'>You'd need to turn the [src] on first.</span>")
 		return FALSE
-	return cpu.should_emag(user)
-
-/obj/machinery/modular_computer/on_emag(mob/user)
-	..()
-	return cpu.on_emag(user)
+	return (cpu.emag_act(user))
 
 /obj/machinery/modular_computer/update_icon()
 	cut_overlays()

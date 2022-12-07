@@ -4,7 +4,7 @@
 	icon = 'icons/obj/machines/research.dmi'
 	icon_state = "ecto_sniffer"
 	density = FALSE
-	anchored = TRUE
+	anchored = FALSE
 	pass_flags = PASSTABLE
 	circuit = /obj/item/circuitboard/machine/ecto_sniffer
 	///determines if the device if the power switch is turned on or off. Useful if the ghosts are too annoying.
@@ -38,7 +38,6 @@
 	use_power(10)
 	if(activator?.ckey)
 		ectoplasmic_residues[activator.ckey] = TRUE
-		activator.log_message("activated an ecto sniffer", LOG_ATTACK)
 		addtimer(CALLBACK(src, .proc/clear_residue, activator.ckey), 30 SECONDS)
 
 /obj/machinery/ecto_sniffer/attack_hand(mob/living/user, list/modifiers)
@@ -58,8 +57,7 @@
 
 
 /obj/machinery/ecto_sniffer/wrench_act(mob/living/user, obj/item/tool)
-	to_chat(user, "<span class='notice'>You need to deconstruct the [src] before moving it.</span>")
-	return TRUE
+	return default_unfasten_wrench(user, tool)
 
 /obj/machinery/ecto_sniffer/screwdriver_act(mob/living/user, obj/item/I)
 	. = ..()

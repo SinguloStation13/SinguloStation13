@@ -87,9 +87,6 @@ GLOBAL_DATUM(the_gateway, /obj/machinery/gateway/centerstation)
 /obj/machinery/gateway/centerstation/Destroy()
 	if(GLOB.the_gateway == src)
 		GLOB.the_gateway = null
-	if(awaygate)
-		awaygate.stationgate = null
-		awaygate = null
 	return ..()
 
 //this is da important part wot makes things go
@@ -185,11 +182,6 @@ GLOBAL_DATUM(the_gateway, /obj/machinery/gateway/centerstation)
 	update_icon()
 	stationgate = locate(/obj/machinery/gateway/centerstation)
 
-/obj/machinery/gateway/centeraway/Destroy()
-	if(stationgate)
-		stationgate.awaygate = null
-		stationgate = null
-	return ..()
 
 /obj/machinery/gateway/centeraway/update_icon()
 	if(active)

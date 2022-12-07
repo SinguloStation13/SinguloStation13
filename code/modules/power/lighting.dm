@@ -372,7 +372,6 @@
 			icon_state = "[base_state]-burned"
 		if(LIGHT_BROKEN)
 			icon_state = "[base_state]-broken"
-	. = ..()
 
 /obj/machinery/light/update_overlays()
 	. = ..()

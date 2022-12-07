@@ -7,7 +7,6 @@ export const PictureSelectModal = (_, context) => {
   const {
     title,
     pictures = [],
-    button_text,
   } = data;
   return (
     <Window title={title} width={400} height={500}>
@@ -23,7 +22,7 @@ export const PictureSelectModal = (_, context) => {
             key={picture.ref}
             buttons={(
               <Button
-                content={button_text}
+                content="Select"
                 color="green"
                 onClick={() => act('submit', { entry: picture.ref })} />
             )}

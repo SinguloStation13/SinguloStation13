@@ -72,18 +72,16 @@ export class Dropdown extends Component {
       noscroll,
       nochevron,
       width,
-      height,
       onClick,
       selected,
       disabled,
       displayText,
       ...boxProps
     } = props;
-    let {
+    const {
       className,
       ...rest
     } = boxProps;
-    rest["height"] = null;
 
     const adjustedOpen = over ? !this.state.open : this.state.open;
 
@@ -93,7 +91,6 @@ export class Dropdown extends Component {
         tabIndex="-1"
         style={{
           'width': width,
-          'height': height,
         }}
         className={classes([
           noscroll && 'Dropdown__menu-noscroll' || 'Dropdown__menu',

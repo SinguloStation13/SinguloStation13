@@ -26,7 +26,9 @@ export const captureExternalLinks = () => {
     // Prevent default action
     e.preventDefault();
     // Open the link
-    Byond.sendMessage({
+    Byond.topic({
+      tgui: 1,
+      window_id: window.__windowId__,
       type: 'openLink',
       url: href,
     });

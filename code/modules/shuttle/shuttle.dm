@@ -912,12 +912,14 @@ GLOBAL_LIST_INIT(shuttle_turf_blacklist, typecacheof(list(
 		shuttle_area.parallax_movedir = FALSE
 	if(assigned_transit && assigned_transit.assigned_area)
 		assigned_transit.assigned_area.parallax_movedir = FALSE
-	for (var/mob/M as() in SSmobs.clients_by_zlevel[z])
-		var/area/A = get_area(M)
-		if(!A)
+	var/list/L0 = return_ordered_turfs(x, y, z, dir)
+	for (var/thing in L0)
+		var/turf/T = thing
+		if(!shuttle_areas[T?.loc])
 			continue
-		if(shuttle_areas[A])
-			SSparallax.update_client_parallax(M.client, TRUE)
+		for (var/atom/movable/movable as anything in T)
+			if (length(movable.client_mobs_in_contents))
+				movable.update_parallax_contents()
 
 /obj/docking_port/mobile/proc/check_transit_zone()
 	if(assigned_transit)

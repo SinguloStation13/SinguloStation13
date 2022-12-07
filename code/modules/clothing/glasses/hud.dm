@@ -66,8 +66,10 @@
 	desc = initial(desc)
 	stop_glitch()
 
-/obj/item/clothing/glasses/hud/on_emag(mob/user)
-	..()
+/obj/item/clothing/glasses/hud/emag_act(mob/user)
+	if(obj_flags & EMAGGED)
+		return
+	obj_flags |= EMAGGED
 	to_chat(user, "<span class='warning'>PZZTTPFFFT</span>")
 	desc = "[desc] The display is flickering slightly."
 	//If we aren't already glitching out, start glitching
