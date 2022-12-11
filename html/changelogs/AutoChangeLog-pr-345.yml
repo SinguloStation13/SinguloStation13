@@ -1,0 +1,4 @@
+author: Urumasi
+delete-after: true
+changes:
+  - bugfix: Fixes ping becoming useless after really long round durations
