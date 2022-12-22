@@ -2360,106 +2360,6 @@
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plating,
 /area/maintenance/disposal)
-<<<<<<< HEAD
-=======
-"akt" = (
-/obj/structure/table,
-/obj/item/clothing/gloves/color/latex,
-/obj/item/clothing/mask/surgical,
-/obj/item/reagent_containers/spray/cleaner,
-/obj/effect/turf_decal/tile/red{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 8
-	},
-/turf/open/floor/plasteel/white,
-/area/security/brig)
-"aku" = (
-/obj/structure/table,
-/obj/item/radio/intercom{
-	pixel_y = 26
-	},
-/obj/machinery/light/small{
-	dir = 1
-	},
-/obj/item/folder/red{
-	pixel_x = 3
-	},
-/obj/item/folder/white{
-	pixel_x = -4;
-	pixel_y = 2
-	},
-/obj/item/healthanalyzer,
-/obj/effect/turf_decal/tile/red{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 4
-	},
-/turf/open/floor/plasteel/white,
-/area/security/brig)
-"akv" = (
-/obj/structure/table,
-/obj/machinery/airalarm{
-	pixel_y = 28
-	},
-/obj/machinery/computer/med_data/laptop,
-/obj/effect/turf_decal/tile/red{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 4
-	},
-/turf/open/floor/plasteel/white,
-/area/security/brig)
-"akx" = (
-/obj/structure/cable/yellow{
-	icon_state = "1-4"
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 8
-	},
-/turf/open/floor/plasteel,
-/area/security/brig)
-"aky" = (
-/obj/structure/cable/yellow{
-	icon_state = "2-8"
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/security/brig)
-"akB" = (
-/obj/structure/closet{
-	name = "Evidence Closet 4"
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/security/warden)
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 "akC" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -27
@@ -13609,20 +13509,6 @@
 /obj/structure/window/reinforced,
 /turf/open/floor/plasteel/dark,
 /area/aisat)
-<<<<<<< HEAD
-=======
-"bpt" = (
-/obj/machinery/vending/wardrobe/sec_wardrobe,
-/obj/effect/turf_decal/tile/red,
-/obj/effect/turf_decal/tile/red{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 8
-	},
-/turf/open/floor/plasteel,
-/area/security/checkpoint/customs)
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 "bpv" = (
 /obj/structure/sign/warning/securearea{
 	pixel_y = 32
@@ -42503,7 +42389,6 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/plasteel,
 /area/security/brig)
-<<<<<<< HEAD
 "hZm" = (
 /obj/structure/closet{
 	name = "Evidence Closet 2"
@@ -42515,8 +42400,6 @@
 /obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
 /turf/open/floor/plasteel/dark,
 /area/security/warden)
-=======
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 "hZn" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -56328,46 +56211,6 @@
 "ovj" = (
 /turf/closed/wall,
 /area/maintenance/starboard/secondary)
-<<<<<<< HEAD
-=======
-"ovD" = (
-/obj/structure/sign/map/left{
-	desc = "A framed picture of the station. Clockwise from security at the top (red), you see engineering (yellow), science (purple), escape (red and white), medbay (green), arrivals (blue and white), and finally cargo (brown).";
-	icon_state = "map-left-MS";
-	pixel_y = 32
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/hallway/primary/port)
-"ovY" = (
-/obj/machinery/door/airlock/command{
-	name = "Research Division Server Room";
-	req_one_access_txt = "30;70"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 8
-	},
-/obj/machinery/door/firedoor,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/science/server)
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 "owl" = (
 /obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/plating,
@@ -96817,13 +96660,8 @@ cDL
 cDL
 cDL
 cDL
-<<<<<<< HEAD
 hbv
 lFQ
-=======
-cDG
-cEJ
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 rRM
 qwa
 cKe
@@ -97075,11 +96913,7 @@ cDL
 cvn
 cDL
 cDL
-<<<<<<< HEAD
 osE
-=======
-cIy
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 cIr
 cIr
 xOG
@@ -97330,17 +97164,10 @@ uEb
 pMJ
 csk
 cDL
-<<<<<<< HEAD
 rcm
 lmR
 sZz
 wnw
-=======
-iIM
-huL
-cKj
-cEM
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 cIv
 xUv
 oBB
@@ -97594,11 +97421,7 @@ vki
 crl
 csl
 cDL
-<<<<<<< HEAD
 pQE
-=======
-duH
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 kyH
 swv
 cGv
@@ -97855,11 +97678,7 @@ ygN
 uva
 csm
 cDL
-<<<<<<< HEAD
 duL
-=======
-cui
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 cFG
 hUK
 cCM
@@ -98116,11 +97935,7 @@ cpW
 crn
 csn
 cDL
-<<<<<<< HEAD
 xNe
-=======
-cdl
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 pjx
 iqM
 cGu
@@ -98377,11 +98192,7 @@ cpX
 cia
 cia
 cDL
-<<<<<<< HEAD
 clG
-=======
-ceu
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 qOs
 pOb
 bFt
@@ -98636,15 +98447,9 @@ cnr
 coD
 cpY
 cro
-<<<<<<< HEAD
 dhd
 cDL
 lMn
-=======
-cso
-cDL
-cfD
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 eFp
 ugX
 cuk
@@ -98899,15 +98704,9 @@ tJq
 jfy
 rPe
 wUO
-<<<<<<< HEAD
 qJN
 cDL
 pQE
-=======
-njN
-cDL
-duH
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 kyH
 nbw
 raj
@@ -99162,11 +98961,7 @@ cnt
 coF
 cqa
 crq
-<<<<<<< HEAD
 bVO
-=======
-csq
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 cDL
 cGC
 ezm
@@ -99676,17 +99471,10 @@ mDi
 rKp
 cyx
 cev
-<<<<<<< HEAD
 dZQ
 fZn
 hur
 gSM
-=======
-cnu
-nrY
-xfC
-sgb
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 cDL
 lOS
 alT
@@ -99946,17 +99734,10 @@ cqd
 crs
 cDL
 cHr
-<<<<<<< HEAD
 tfw
 sFW
 vgf
 uYm
-=======
-cKi
-xib
-dDB
-bGu
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 cDL
 cDL
 vAj
@@ -100213,11 +99994,7 @@ ctr
 iOo
 cNs
 cFG
-<<<<<<< HEAD
 rMB
-=======
-tMF
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 cDL
 cHx
 lXi
@@ -100474,11 +100251,7 @@ xyY
 ufJ
 cbx
 cwp
-<<<<<<< HEAD
 eVs
-=======
-jzB
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 cDL
 cEE
 dBV
@@ -100732,17 +100505,10 @@ cqg
 crv
 cDL
 pQJ
-<<<<<<< HEAD
 xBd
 ggd
 fsu
 plv
-=======
-cum
-cJk
-cwq
-fUw
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 cDL
 cHy
 czS
@@ -117198,19 +116964,6 @@ wAq
 hIy
 vRq
 mjJ
-<<<<<<< HEAD
-=======
-dQI
-dQI
-dQI
-dQI
-dQI
-fmT
-vlA
-dQI
-iHM
-mjJ
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 aaa
 aaa
 aaa
@@ -119493,13 +119246,8 @@ bQR
 bSd
 anM
 bAR
-<<<<<<< HEAD
 pav
 jTi
-=======
-bVF
-bXf
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 bYv
 bZF
 cbb
@@ -119743,13 +119491,8 @@ bxd
 byV
 bAF
 bCl
-<<<<<<< HEAD
 uLx
 jLo
-=======
-lxQ
-bFK
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 bAR
 bAR
 bAR
@@ -119760,11 +119503,7 @@ bAR
 bAR
 bAR
 bAR
-<<<<<<< HEAD
 tob
-=======
-bVG
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 bXg
 bDW
 bDW
@@ -120004,11 +119743,7 @@ bjL
 uEH
 hkq
 hkq
-<<<<<<< HEAD
 eev
-=======
-bvi
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 bAR
 bAR
 bAR
@@ -120018,17 +119753,10 @@ bza
 bAR
 bIN
 bAR
-<<<<<<< HEAD
 wYn
 wYn
 ttX
 ttX
-=======
-bMa
-bMa
-bPo
-bPo
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 bAR
 bTi
 bUz
@@ -120271,13 +119999,8 @@ blo
 bne
 owR
 owR
-<<<<<<< HEAD
 lYb
 vPy
-=======
-oJW
-dfx
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 bAR
 byW
 bAG
@@ -121338,14 +121061,9 @@ bAR
 aaf
 aaa
 bKK
-<<<<<<< HEAD
 aaa
 bKK
 aaa
-=======
-aaa
-bKK
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 aaa
 aaa
 aaa
@@ -121857,14 +121575,9 @@ bAR
 aaf
 aaf
 bKK
-<<<<<<< HEAD
 aaa
 bKK
 aaa
-=======
-aaa
-bKK
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 aaa
 aaa
 aaa
@@ -122376,14 +122089,9 @@ bAR
 aaf
 aaa
 bKK
-<<<<<<< HEAD
 aaa
 bKK
 aaa
-=======
-aaa
-bKK
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 aaa
 aaa
 aaa

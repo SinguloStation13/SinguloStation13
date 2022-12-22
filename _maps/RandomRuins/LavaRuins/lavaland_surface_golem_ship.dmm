@@ -879,13 +879,6 @@
 /obj/item/storage/box/lights/mixed,
 /turf/open/floor/plating,
 /area/ruin/powered/golem_ship)
-<<<<<<< HEAD
-=======
-"cM" = (
-/obj/structure/grille,
-/obj/structure/window/plastitanium,
-/area/ruin/powered/golem_ship)
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 "jC" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/old,

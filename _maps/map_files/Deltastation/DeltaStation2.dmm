@@ -14443,90 +14443,10 @@
 /area/security/main)
 "bxx" = (
 /obj/effect/decal/cleanable/dirt,
-<<<<<<< HEAD
 /obj/effect/landmark/event_spawn,
 /obj/effect/turf_decal/tile/neutral/half/contrasted,
 /turf/open/floor/plasteel,
 /area/maintenance/port/aft)
-=======
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/security/main)
-"bxv" = (
-/obj/machinery/porta_turret/ai,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/ai_monitored/turret_protected/ai)
-"bxw" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/ai_monitored/turret_protected/ai)
-"bxy" = (
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/ai_monitored/turret_protected/ai)
-"bxz" = (
-/obj/machinery/power/terminal{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/obj/structure/cable/yellow{
-	icon_state = "0-8"
-	},
-/turf/open/floor/plasteel/dark,
-/area/ai_monitored/turret_protected/ai)
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 "bxD" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /obj/machinery/door/airlock/external{
@@ -48028,20 +47948,6 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-<<<<<<< HEAD
-=======
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/obj/machinery/door/airlock/maintenance_hatch{
-	name = "Morgue Maintenance";
-	req_access_txt = "5"
-	},
-/obj/effect/turf_decal/stripes/line,
-/obj/effect/turf_decal/stripes/line{
-	dir = 1
-	},
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
 /area/maintenance/department/medical/morgue)
@@ -58810,41 +58716,6 @@
 /obj/machinery/light{
 	dir = 8
 	},
-<<<<<<< HEAD
-=======
-/obj/machinery/firealarm/directional/east,
-/turf/open/floor/plasteel/dark/telecomms,
-/area/tcommsat/server)
-"kMM" = (
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
-/turf/open/floor/plasteel,
-/area/hallway/primary/central)
-"kNc" = (
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/obj/item/paper_bin,
-/obj/effect/turf_decal/tile/blue{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/blue{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/door_timer{
@@ -65913,15 +65784,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
-<<<<<<< HEAD
-=======
-/obj/effect/turf_decal/stripes/line{
-	dir = 8
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
-	},
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -70267,36 +70129,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-=======
-/obj/effect/turf_decal/tile/blue{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/blue{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/turf/open/floor/plasteel/white,
-/area/medical/storage)
-"oKa" = (
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
-/turf/open/floor/plasteel/dark,
-/area/science/explab)
-"oKy" = (
-/obj/structure/disposalpipe/segment{
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 	dir = 5
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
@@ -109851,15 +109684,9 @@ aad
 ejC
 wRU
 bRP
-<<<<<<< HEAD
 cui
 gVr
 mhn
-=======
-krX
-bVT
-bYk
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 wiQ
 aad
 aad
@@ -114472,7 +114299,6 @@ wiQ
 wiQ
 wiQ
 aad
-<<<<<<< HEAD
 nyB
 ebc
 ebc
@@ -114480,15 +114306,6 @@ iIM
 ebc
 ebc
 nyB
-=======
-nyB
-bAH
-bAH
-bEn
-bAH
-bAH
-nyB
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 wiQ
 aad
 aad
@@ -114740,19 +114557,11 @@ aaa
 aad
 aad
 nyB
-<<<<<<< HEAD
 ebc
 pwi
 twH
 ewN
 ebc
-=======
-bAH
-bCw
-bCx
-bCy
-bAH
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 nyB
 aad
 aaa
@@ -115005,19 +114814,11 @@ aad
 wiQ
 aad
 nyB
-<<<<<<< HEAD
 pda
 twH
 bEo
 imj
 mDp
-=======
-qUy
-bCx
-bEo
-bFW
-pcM
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 nyB
 wiQ
 wiQ
@@ -115270,19 +115071,11 @@ aaa
 wiQ
 aad
 nyB
-<<<<<<< HEAD
 ebc
 ewN
 twH
 pwi
 ebc
-=======
-bAH
-bCy
-bCx
-bCw
-bAH
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 nyB
 aad
 wiQ
@@ -115535,19 +115328,11 @@ aaa
 wiQ
 aad
 nyB
-<<<<<<< HEAD
 ebc
 ebc
 ePf
 saR
 ebc
-=======
-bAH
-bAH
-vNF
-vLO
-bAH
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 nyB
 aad
 aad
@@ -117862,15 +117647,9 @@ flU
 bGa
 bHR
 nyB
-<<<<<<< HEAD
 qXs
 xET
 vWi
-=======
-bLG
-fFK
-bPL
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 bLF
 bTK
 bWa
@@ -120922,11 +120701,7 @@ cWd
 vXC
 aLm
 aRF
-<<<<<<< HEAD
 lSz
-=======
-rHx
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 aPI
 aRv
 cfI
@@ -121183,13 +120958,8 @@ aFr
 kiN
 aFr
 aRF
-<<<<<<< HEAD
 atq
 dVY
-=======
-tme
-aPJ
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 aRw
 fKN
 sVV
@@ -121445,13 +121215,8 @@ ayR
 mlB
 hZf
 aRF
-<<<<<<< HEAD
 vYW
 nEE
-=======
-aBh
-vfk
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 aRv
 cfI
 aUQ
@@ -121729,7 +121494,6 @@ bsc
 btT
 bve
 aRF
-<<<<<<< HEAD
 wRe
 iFs
 xdm
@@ -121740,18 +121504,6 @@ pAt
 tvh
 sYH
 uyy
-=======
-bxK
-bzn
-bAV
-bCR
-wAU
-bGm
-bHY
-bJZ
-qZe
-bNW
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 bHV
 bSf
 qwa
@@ -121977,13 +121729,8 @@ aBf
 aJV
 mjg
 aRF
-<<<<<<< HEAD
 axP
 vmR
-=======
-tAC
-wjB
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 aRv
 cfI
 aUS
@@ -122239,13 +121986,8 @@ alT
 alT
 alT
 aRF
-<<<<<<< HEAD
 nny
 qrU
-=======
-tKJ
-aPM
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 aRv
 cfI
 aUQ
@@ -122501,13 +122243,8 @@ alT
 aJW
 aLq
 aRF
-<<<<<<< HEAD
 ekP
 kEq
-=======
-ldm
-aPN
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 aRv
 cfI
 aUS
@@ -123534,13 +123271,8 @@ alT
 aKa
 aLu
 aRF
-<<<<<<< HEAD
 wLp
 lwT
-=======
-aOm
-aPR
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 aRB
 rOx
 hoy
@@ -123566,19 +123298,11 @@ aRF
 aRF
 aRF
 aRF
-<<<<<<< HEAD
 kkx
 sQb
 loa
 loa
 lGW
-=======
-bGs
-qjk
-bKa
-bKa
-bOd
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 bzg
 bSl
 bUd
@@ -123804,11 +123528,7 @@ alT
 alT
 alT
 aRF
-<<<<<<< HEAD
 uhB
-=======
-aOn
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 aPS
 aRv
 cfI
@@ -123833,7 +123553,6 @@ bwB
 bxQ
 bzt
 bBa
-<<<<<<< HEAD
 tOQ
 aRF
 iIN
@@ -123841,15 +123560,6 @@ gJy
 vRF
 oeJ
 jaV
-=======
-bCY
-aRF
-bGt
-eaF
-bKg
-bLZ
-bOe
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 bQb
 bOf
 mQU
@@ -124073,15 +123783,9 @@ sKl
 ffH
 aID
 aKb
-<<<<<<< HEAD
 inR
 aRF
 uhB
-=======
-aLv
-aRF
-aOn
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 aPT
 aRv
 aTd
@@ -124338,7 +124042,6 @@ jBk
 nfd
 aLw
 aRF
-<<<<<<< HEAD
 uhB
 tWO
 gcE
@@ -124355,24 +124058,6 @@ tQI
 rKG
 xCA
 kHm
-=======
-aOn
-aPU
-aRC
-aTe
-aUX
-aWP
-aYp
-bah
-bbL
-bdk
-beI
-bgd
-bht
-bjm
-bkX
-bna
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 aRF
 bqi
 bsl
@@ -124612,7 +124297,6 @@ aFG
 aHj
 aIF
 aKd
-<<<<<<< HEAD
 fwa
 aRF
 oLD
@@ -124631,26 +124315,6 @@ xWh
 sDk
 nzV
 cLP
-=======
-aLx
-aRF
-aOo
-aOn
-aRD
-aTf
-aOn
-aRC
-aYq
-bai
-bbM
-bdl
-beJ
-bge
-bhu
-bdl
-bkY
-bnb
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 aRF
 bqj
 bud
@@ -124917,11 +124581,7 @@ bwF
 bxT
 bzx
 bBe
-<<<<<<< HEAD
 ugi
-=======
-bDc
->>>>>>> 71fa4206fa (Ports a pile of greps from TG (#7692))
 aRF
 bGx
 ycC
