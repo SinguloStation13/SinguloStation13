@@ -161,8 +161,8 @@
 	if(panel_open)
 		overlays += "[icon_state]_panel"
 
-/obj/machinery/autodoc/emag_act(mob/user)
-	if(obj_flags & EMAGGED)
-		return
-	obj_flags |= EMAGGED
+/obj/machinery/autodoc/should_emag(mob/user)
+	return ..()
+
+/obj/machinery/autodoc/on_emag(mob/user)
 	to_chat(user, "<span class='warning'>You reprogram [src]'s surgery procedures.</span>")
