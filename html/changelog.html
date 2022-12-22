@@ -57,6 +57,18 @@
 		<div class="commit sansserif">
 
 			<h2 class="date">22 December 2022</h2>
+			<h3 class="author">ArcaneDefence, tmtmtl30, Mothblocks, and RKz updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Added Mothperson markings.</li>
+				<li class="rscadd">Mothpeople now have a preference to choose their antennae type from.</li>
+				<li class="bugfix">Mothpeople will no longer have floating antennae when decapitated.</li>
+				<li class="bugfix">The markings on mothpeople will not show over missing or augmented limbs any more.</li>
+				<li class="bugfix">cut initialization time by 0.18s due to unecessary crop size of moth_wing.dmi</li>
+			</ul>
+			<h3 class="author">DoctorSquishy updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">Tweaked Experimentor linking range, so now BoxStation's Experimentor can detect the console.</li>
+			</ul>
 			<h3 class="author">DragonTrance ported by mystery3525 updated:</h3>
 			<ul class="changes bgimages16">
 				<li class="refactor">added more species defines</li>
@@ -228,6 +240,78 @@
 				<li class="rscadd">Added Toxins Storage access to the Exploration team on skeleton crew</li>
 				<li class="refactor">Refactored parallax background to use a subsystem for updates.</li>
 				<li class="balance">Telekenisis can now pick up closets with mobs inside them (The reason for this change is due to the code misusing an internal variable that no longer exists).</li>
+				<li class="rscdel">Removed the Angel, Burnt Off and Clockwork wings, antennae and markings from the character customization menu</li>
+				<li class="bugfix">Fixes moth neck fluff not showing when their wings are open</li>
+				<li class="bugfix">Fixed wing, antennae and body marking blacklist not working</li>
+				<li class="imageadd">Added back the sprite for clockwork wings</li>
+				<li class="imageadd">Added added the neck fluff to the open wings file</li>
+				<li class="code_imp">Moth character customization and random mob spawning now use moth_wing_roundstart_list, moth_antennae_roundstart_list and moth_markings_roundstart_list for their respective body parts</li>
+				<li class="rscadd">round end report now reports station traits</li>
+				<li class="refactor">the bank account system has been refactored</li>
+				<li class="code_imp">ACCOUNT defines now specifies full department name instead of shortened 3 letters.</li>
+				<li class="tweak">your mind remembers your bank account id rather than your body.</li>
+				<li class="bugfix">Cryo'ed people no longer siphons station budget. HoP payment console will be able to track if theirs are closed.</li>
+				<li class="rscadd">non-station budget "Space Nations Welfare"</li>
+				<li class="tweak">NEET quirk no longer siphons station budgets. You'll get welfare from Space Nations directly.</li>
+				<li class="rscadd">You can have multiple department active</li>
+				<li class="rscadd">You can now be paid from multiple departments. For now, geneticist will be paid from medical and R&D at the same time</li>
+				<li class="tweak">when a department failed to pay you, you will get them as bonus instead of losing the chance to be paid permanently.</li>
+				<li class="tweak">Heads console now shows full payment list of people for each corresponding department, and can set their paycheck. HoP console will show the full list, but will not allow you to edit theirs as long as you don't have the appropriate access to set theirs.</li>
+				<li class="tweak">HoP console can edit paycheck & department status when you manipulate their access</li>
+				<li class="rscadd">HoP console will automatically adjust a person's payment as a job's payment that you assign to the one.</li>
+				<li class="tweak">HoP console no longer allows you to adjust cryo'ed people's payment</li>
+				<li class="tweak">minor QoL improvement to HoP console UI.</li>
+				<li class="rscadd">HoP console now can open a new bank account in a cost of 1,000 credits in service budget</li>
+				<li class="tweak">vending machine now tracks your custom title</li>
+				<li class="rscadd">new negative station trait - united budget: your station budgets are united and all budget cards will be linked to that one.</li>
+				<li class="rscadd">admin only event - united budget setup: trigger the thing above</li>
+				<li class="rscadd">admin only event - united budget cancel: cancel the thing above</li>
+				<li class="code_imp">made is_nonstation_account() proc more better</li>
+				<li class="code_imp">refactored the horrible if logic in crate code</li>
+				<li class="bugfix">when a crate is ordered by a department budget, it now needs the corresponding budget card to tab it to be opened.</li>
+				<li class="tweak">cargo mails colour is based on job chat colour instead of department colour</li>
+				<li class="rscdel">bank account department lock feature is removed. It is no longer needed.</li>
+				<li class="rscdel">get_department_by_hud proc is removed. it is no longer needed.</li>
+				<li class="code_imp">Job code is a bit refactored for better readibility</li>
+				<li class="tweak">some events 'max_occurences = 0' which is actually only available to admin are now automatically labled with [Admin only] in admin event panel.</li>
+				<li class="tweak">Heads are now paid with 20 credits from Nanotrasen for each payday, and 80 credits for themselves from their own department. Command payment will be always paid regardless their budget is broke or not, but the rest 80 credits will not be so.</li>
+				<li class="bugfix">You no longer get the same bank account ID of someone who's spawned earlier than you at very low chance on your spawning.</li>
+				<li class="code_imp">added a minor failcheck at SSjob.GetJob related procs</li>
+				<li class="code_imp">added a new proc GetJobActiveDepartment(job name) for bank account management</li>
+				<li class="tweak">department assignment for crew manifest is now customisable from access manipulation console</li>
+				<li class="balance">all cartridges in HoP room are now 100 credits, and value PAK(captain's) is now 300 credits.</li>
+				<li class="rscadd">command role vendor free access.</li>
+				<li class="tweak">HoP room cartridge vendor now only accepts command role vendor free access rather than service bank type.</li>
+				<li class="bugfix">You don't hit minebots when trying to repair them at full health anymore.</li>
+				<li class="rscadd">Added the ability to pry the Defibrillator Wall Mount off the wall with a crowbar when it's empty</li>
+				<li class="rscadd">Added deconstruction tooltips to the Defibrillator Wall Mount, Fire Extinguisher Cabinet and Anesthetic Tank Holder</li>
+				<li class="rscadd">Added the ability to convert the Anesthetic Tank Holder into an IV drip by using a screwdriver on it</li>
+				<li class="rscadd">Added the attached tank and the gas pressure and volume of the tank to the description of the Anesthetic Tank Holder</li>
+				<li class="tweak">Defibrillator Wall Mount, IV Drip and Anesthetic Tank Holder now drop their respective attached items when destroyed</li>
+				<li class="bugfix">Fixed the defibrillator not updating its icon upon being emagged</li>
+				<li class="bugfix">fixed that people couldn't change people's bank and crew manifest status through a HoP console without an inserted proper-access ID card in the logged-in status</li>
+				<li class="bugfix">fixed that heads can't adjust crews payment in their own console</li>
+				<li class="tweak">Ectoscopic sniffers are now anchored in place and cannot be moved without being deconstructed</li>
+				<li class="admin">Added logging to ectoscopic sniffers</li>
+				<li class="tweak">Demoted job title is now "Demoted" instead of "Unassigned"</li>
+				<li class="bugfix">computers now glow again</li>
+				<li class="bugfix">fixed the airlock painter/tile painter going invisible when it's empty</li>
+				<li class="bugfix">tweaked the launcher button</li>
+				<li class="rscadd">Added dangerous shuttle warnings to the communications console.</li>
+				<li class="tweak">Tweaked the description on Oh Hi Daniel shuttle to not reference "space roleplay".</li>
+				<li class="tweak">Tweaked the description on STV5 shuttle to include the fact that the crates included are potentially explosive.</li>
+				<li class="code_imp">moved some HoP card painter feature to global proc</li>
+				<li class="rscdel">Reset feature in agent cards has been removed - it does actually nothing.</li>
+				<li class="tweak">Agent card forging in the user experience aspect is now greatly improved - You'll forge a card flawlessly.</li>
+				<li class="tweak">Nanites programs 'force speech' and 'skull echo' now share its cooldown with other same programs.</li>
+				<li class="rscadd">ghosts now can read nanites skull echo messages.</li>
+				<li class="config">disables the revolutionary gamemode and dynamic rulesets</li>
+				<li class="bugfix">normal cloning will not require an experimental pod</li>
+				<li class="tweak">The admin player panel now empties the search bar on open.</li>
+				<li class="bugfix">If a keybind entry is missing in the preferences database, it will default to its default value instead of unbound.</li>
+				<li class="rscadd">Added the maximum sigh capacity and current amount of holo signs active to the description of holo projectors.</li>
+				<li class="rscadd">Adds a text saying how many holo signs are left after each successful holo sign placement.</li>
+				<li class="bugfix">cargo pie joke restored</li>
 			</ul>
 			<h3 class="author">Skoglol, Dennok, TheChosenEvilOne, Timberpoes, Anturk, DuffCreeper, vincentiusvin, ported by mystery3525 updated:</h3>
 			<ul class="changes bgimages16">
@@ -238,6 +322,15 @@
 				<li class="bugfix">Various cumulative fixes to RPDs</li>
 				<li class="rscadd">RPD can destroy broken disposal pipe</li>
 				<li class="balance">Securing a disposal pipe over a floor tile with a crowbar in your offhand will remove the floor tile before trying to secure it</li>
+			</ul>
+			<h3 class="author">Xkeeper0,RKz updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="tweak">atmos analyzers/gas scan now reports volume of a container, even if it is empty</li>
+				<li class="bugfix">made gas analyzer description accurate for its use</li>
+			</ul>
+			<h3 class="author">itsmeow, Ivniinvi, ynot01 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">You can now request mentor assistance, in the form of an imaginary ghostly rat.</li>
 			</ul>
 			<h3 class="author">san7890 updated:</h3>
 			<ul class="changes bgimages16">

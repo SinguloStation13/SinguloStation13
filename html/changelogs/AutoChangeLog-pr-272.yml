@@ -1,5 +1,0 @@
-author: SinguloMirrorbot
-delete-after: true
-changes:
-  - bugfix: fixed the airlock painter/tile painter going invisible when it's empty
-  - bugfix: tweaked the launcher button
