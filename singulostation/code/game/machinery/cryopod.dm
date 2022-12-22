@@ -104,6 +104,7 @@ GLOBAL_LIST_EMPTY(cryopod_computers)
 		icon_state = "cryogenic_console_highlight"
 	else
 		icon_state = "cellconsole_1"
+	return ..()
 
 /obj/machinery/computer/cryopod/proc/remove_from_record(mob/living/M)
 	frozen_crew -= M

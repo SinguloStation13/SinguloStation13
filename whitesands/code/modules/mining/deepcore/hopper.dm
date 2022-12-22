@@ -67,6 +67,7 @@
 			icon_state = "hopper_off"
 	else
 		icon_state = "hopper_nopower"
+	return ..()
 
 /obj/machinery/deepcore/hopper/can_be_unfasten_wrench(mob/user, silent)
 	if(active)
