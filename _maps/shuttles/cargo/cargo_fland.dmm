@@ -17,7 +17,10 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/stripes/corner,
-/obj/effect/turf_decal/tile/brown/tile_marquee,
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/supply)
 "ae" = (
@@ -25,26 +28,27 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/stripes/line,
-/obj/effect/turf_decal/tile/brown/tile_marquee,
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/supply)
 "af" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/brown/tile_marquee,
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/supply)
-<<<<<<< HEAD
-"g" = (
-/obj/effect/turf_decal/tile/brown/tile_marquee,
-=======
 "ag" = (
 /obj/effect/turf_decal/tile/brown,
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
 	},
->>>>>>> bd6fb0b075 ([MDB IGNORE]DMM The Turf-Decalening (#7970))
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/supply)
 "ah" = (
@@ -70,7 +74,10 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/brown/tile_marquee,
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/supply)
 "ai" = (
@@ -80,7 +87,10 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/brown/tile_marquee,
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/supply)
 "aj" = (
@@ -90,14 +100,20 @@
 /obj/structure/sign/departments/cargo{
 	pixel_x = -32
 	},
-/obj/effect/turf_decal/tile/brown/tile_marquee,
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/supply)
 "ak" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/brown/tile_marquee,
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/supply)
 "al" = (
@@ -105,7 +121,10 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/brown/tile_marquee,
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/supply)
 "am" = (
@@ -140,7 +159,10 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/brown/tile_marquee,
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/supply)
 "ar" = (
@@ -166,7 +188,10 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
 	},
-/obj/effect/turf_decal/tile/brown/tile_marquee,
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/supply)
 "au" = (
@@ -179,7 +204,10 @@
 /area/shuttle/supply)
 "av" = (
 /obj/effect/turf_decal/stripes/line,
-/obj/effect/turf_decal/tile/brown/tile_marquee,
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/supply)
 "aw" = (
@@ -187,7 +215,10 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/stripes/corner,
-/obj/effect/turf_decal/tile/brown/tile_marquee,
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/supply)
 "ax" = (
@@ -202,7 +233,10 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/brown/tile_marquee,
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/supply)
 "az" = (
@@ -218,7 +252,10 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/brown/tile_marquee,
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/supply)
 "aB" = (
@@ -249,7 +286,10 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/brown/tile_marquee,
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/supply)
 "aF" = (
@@ -285,7 +325,10 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
 	},
-/obj/effect/turf_decal/tile/brown/tile_marquee,
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/supply)
 "aK" = (
@@ -313,7 +356,10 @@
 /area/shuttle/supply)
 "aO" = (
 /obj/effect/turf_decal/stripes/corner,
-/obj/effect/turf_decal/tile/brown/tile_marquee,
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/supply)
 "aP" = (
@@ -344,7 +390,10 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
 	},
-/obj/effect/turf_decal/tile/brown/tile_marquee,
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/supply)
 "aT" = (
@@ -365,7 +414,10 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/brown/tile_marquee,
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/supply)
 "aW" = (

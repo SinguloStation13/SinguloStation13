@@ -1166,9 +1166,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/construction)
-"dY" = (
-/turf/closed/wall/r_wall,
-/area/hallway/secondary/entry)
 "dZ" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -2024,7 +2021,6 @@
 /turf/open/floor/plating,
 /area/science)
 "ge" = (
-/obj/structure/lattice,
 /turf/closed/wall/r_wall,
 /area/hallway/secondary/entry)
 "gf" = (
@@ -2514,7 +2510,7 @@
 /area/engine/gravity_generator)
 "wO" = (
 /obj/machinery/light,
-/obj/machinery/clonepod,
+/obj/machinery/clonepod/prefilled,
 /obj/effect/turf_decal/tile/blue/opposingcorners{
 	dir = 1
 	},
@@ -4490,9 +4486,9 @@ gh
 gl
 gD
 em
-dY
-dY
-dY
+ge
+ge
+ge
 aa
 aa
 aa
@@ -4500,19 +4496,19 @@ aa
 aa
 aa
 aa
-dY
-dY
-dY
-dY
+ge
+ge
+ge
+ge
 aa
 aa
 aa
 aa
 aa
-dY
-dY
-dY
-dY
+ge
+ge
+ge
+ge
 aa
 aa
 aa
@@ -4584,7 +4580,7 @@ go
 gp
 ei
 gr
-dY
+ge
 aa
 aa
 aa
@@ -4592,19 +4588,19 @@ aa
 aa
 aa
 aa
-dY
+ge
 eh
 eh
-dY
+ge
 aa
 aa
 aa
 aa
 aa
-dY
+ge
 eh
 eh
-dY
+ge
 aa
 aa
 aa
@@ -4670,10 +4666,10 @@ aa
 aa
 aa
 db
-dY
-dY
-dY
-dY
+ge
+ge
+ge
+ge
 eh
 eq
 en
@@ -4871,13 +4867,13 @@ aa
 eo
 eh
 gv
-dY
+ge
 aa
 aa
 aa
 aa
 aa
-dY
+ge
 gI
 eh
 en
@@ -4949,7 +4945,7 @@ aa
 aa
 PI
 dV
-dY
+ge
 ej
 eq
 en
@@ -5038,10 +5034,10 @@ aa
 fg
 aa
 db
-dY
-dY
-dY
-dY
+ge
+ge
+ge
+ge
 eh
 eq
 en
@@ -5133,10 +5129,10 @@ aa
 aa
 aa
 aa
-dY
+ge
 gE
 eq
-dY
+ge
 aa
 aa
 aa
@@ -5144,7 +5140,7 @@ aa
 aa
 aa
 aa
-dY
+ge
 eh
 eh
 en
@@ -5156,7 +5152,7 @@ aa
 en
 eh
 eh
-dY
+ge
 aa
 aa
 aa
@@ -5225,10 +5221,10 @@ aa
 aa
 aa
 aa
-dY
+ge
 gq
 gs
-dY
+ge
 aa
 aa
 aa
@@ -5236,16 +5232,16 @@ aa
 aa
 aa
 aa
-dY
+ge
 eh
 gw
-dY
+ge
 aa
 aa
 aa
 aa
 aa
-dY
+ge
 gB
 eh
 en
@@ -5317,7 +5313,7 @@ aa
 aa
 aa
 aa
-dY
+ge
 eh
 eq
 en
@@ -5340,7 +5336,7 @@ aa
 en
 ek
 eh
-dY
+ge
 aa
 aa
 aa
@@ -5409,7 +5405,7 @@ aa
 aa
 aa
 aa
-dY
+ge
 eh
 gt
 en
@@ -5501,7 +5497,7 @@ aa
 aa
 aa
 aa
-dY
+ge
 ej
 gt
 eo
@@ -5524,7 +5520,7 @@ aa
 en
 ek
 eh
-dY
+ge
 aa
 aa
 aa
@@ -5593,7 +5589,7 @@ aa
 aa
 aa
 aa
-dY
+ge
 eh
 gt
 en
@@ -5607,16 +5603,16 @@ aa
 en
 eh
 gx
-dY
+ge
 aa
 aa
 aa
 aa
 aa
-dY
+ge
 gC
 eh
-dY
+ge
 aa
 aa
 aa
@@ -5685,7 +5681,7 @@ aa
 eb
 aa
 aa
-dY
+ge
 eh
 gt
 dh
@@ -5696,7 +5692,7 @@ ec
 aa
 aa
 aa
-dY
+ge
 eh
 ek
 en
@@ -5708,7 +5704,7 @@ aa
 en
 ek
 eh
-dY
+ge
 aa
 aa
 aa
@@ -5787,20 +5783,20 @@ en
 en
 en
 en
-dY
-dY
+ge
+ge
 eh
 ek
-dY
-dY
+ge
+ge
 fn
 fs
 en
-dY
-dY
+ge
+ge
 ek
 eh
-dY
+ge
 aa
 aa
 aa
@@ -5892,7 +5888,7 @@ eV
 eh
 ek
 eh
-dY
+ge
 aa
 aa
 aa
@@ -5984,7 +5980,7 @@ eL
 eL
 fZ
 eh
-dY
+ge
 aa
 aa
 aa
@@ -6166,8 +6162,8 @@ cN
 cN
 cN
 fI
-dY
-dY
+ge
+ge
 ge
 aa
 aa

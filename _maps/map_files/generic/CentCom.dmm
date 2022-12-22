@@ -2502,7 +2502,7 @@
 /turf/open/floor/plasteel,
 /area/centcom/supply)
 "jR" = (
-/obj/machinery/newscaster/security_unit{
+/obj/machinery/newscaster{
 	pixel_x = -32
 	},
 /obj/effect/turf_decal/stripes/line{
@@ -2560,25 +2560,6 @@
 "km" = (
 /turf/open/floor/plasteel/grimy,
 /area/centcom/control)
-<<<<<<< HEAD
-"kn" = (
-/obj/machinery/newscaster/security_unit{
-	pixel_x = 32
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/centcom/control)
-=======
->>>>>>> bd6fb0b075 ([MDB IGNORE]DMM The Turf-Decalening (#7970))
 "ko" = (
 /turf/closed/indestructible/abductor{
 	icon_state = "alien20"
@@ -3334,7 +3315,7 @@
 /turf/open/floor/plating/asteroid/snow/airless,
 /area/syndicate_mothership)
 "ni" = (
-/obj/machinery/newscaster/security_unit,
+/obj/machinery/newscaster,
 /turf/closed/indestructible/riveted,
 /area/centcom/ferry)
 "nj" = (
@@ -3380,111 +3361,6 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
 /area/centcom/control)
-<<<<<<< HEAD
-"nq" = (
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel,
-/area/centcom/control)
-"nr" = (
-/obj/structure/chair{
-	dir = 8
-	},
-/obj/machinery/light{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/green,
-/obj/effect/turf_decal/tile/green{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/centcom/control)
-"ns" = (
-/obj/machinery/light{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/centcom/control)
-"nt" = (
-/obj/structure/table/wood,
-/obj/item/storage/photo_album,
-/obj/item/camera,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/centcom/control)
-"nu" = (
-/obj/item/paper/pamphlet/centcom/visitor_info,
-/obj/item/paper/pamphlet/centcom/visitor_info,
-/obj/item/paper/pamphlet/centcom/visitor_info,
-/obj/structure/table/wood,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/centcom/control)
-"nv" = (
-/obj/machinery/newscaster/security_unit{
-	pixel_x = -32
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/centcom/control)
-"nw" = (
-/obj/structure/table/reinforced,
-/obj/machinery/recharger,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/centcom/control)
-=======
->>>>>>> bd6fb0b075 ([MDB IGNORE]DMM The Turf-Decalening (#7970))
 "nx" = (
 /obj/structure/flora/bush,
 /turf/open/floor/plating/asteroid/snow/airless,
@@ -3522,7 +3398,7 @@
 /turf/open/floor/plasteel/white,
 /area/centcom/ferry)
 "nF" = (
-/obj/machinery/newscaster/security_unit{
+/obj/machinery/newscaster{
 	pixel_y = -32
 	},
 /obj/machinery/computer/cargo{
@@ -3631,85 +3507,6 @@
 /obj/machinery/computer/communications,
 /turf/open/floor/plasteel/grimy,
 /area/centcom/ferry)
-<<<<<<< HEAD
-"oo" = (
-/obj/structure/table/wood,
-/obj/item/paper_bin,
-/obj/item/pen/fourcolor,
-/obj/machinery/vending/wallmed{
-	name = "Emergency NanoMed";
-	pixel_y = 32;
-	use_power = 0
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/centcom/ferry)
-"op" = (
-/obj/structure/table/wood,
-/obj/item/clipboard,
-/obj/item/folder/blue,
-/obj/item/melee/chainofcommand,
-/obj/item/stamp/captain,
-/obj/machinery/newscaster/security_unit{
-	pixel_y = 32
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/centcom/ferry)
-"oq" = (
-/obj/structure/table/wood,
-/obj/machinery/computer/security/wooden_tv,
-/obj/item/storage/secure/safe{
-	pixel_x = 32;
-	pixel_y = 24
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/centcom/ferry)
-"or" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/filingcabinet/chestdrawer,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/centcom/supply)
-=======
->>>>>>> bd6fb0b075 ([MDB IGNORE]DMM The Turf-Decalening (#7970))
 "os" = (
 /obj/structure/table/reinforced,
 /obj/item/paper_bin,
@@ -4171,124 +3968,6 @@
 /obj/machinery/light,
 /turf/open/floor/wood,
 /area/centcom/ferry)
-<<<<<<< HEAD
-"qg" = (
-/obj/structure/table/wood,
-/obj/item/clipboard,
-/obj/item/toy/figure/dsquad,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/centcom/ferry)
-"qh" = (
-/obj/item/storage/briefcase{
-	pixel_x = -3;
-	pixel_y = 3
-	},
-/obj/item/storage/secure/briefcase,
-/obj/structure/table/wood,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/centcom/ferry)
-"qi" = (
-/obj/structure/table/wood,
-/obj/item/storage/secure/briefcase{
-	pixel_x = 5;
-	pixel_y = 5
-	},
-/obj/item/storage/lockbox/medal,
-/obj/machinery/newscaster/security_unit{
-	pixel_x = 32
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/centcom/ferry)
-"qj" = (
-/obj/structure/table/wood,
-/obj/item/flashlight/lamp,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/centcom/ferry)
-"qk" = (
-/obj/structure/bed,
-/obj/item/bedsheet/black,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/centcom/ferry)
-"ql" = (
-/obj/structure/dresser,
-/obj/structure/sign/plaques/golden/captain{
-	pixel_x = 32
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/centcom/ferry)
-"qm" = (
-/obj/structure/filingcabinet/filingcabinet,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/centcom/supply)
-=======
->>>>>>> bd6fb0b075 ([MDB IGNORE]DMM The Turf-Decalening (#7970))
 "qn" = (
 /obj/structure/filingcabinet/filingcabinet,
 /obj/machinery/airalarm{
@@ -5432,7 +5111,7 @@
 /obj/machinery/computer/emergency_shuttle{
 	dir = 1
 	},
-/obj/machinery/newscaster/security_unit{
+/obj/machinery/newscaster{
 	pixel_y = -32
 	},
 /obj/effect/turf_decal/stripes/line{
@@ -7181,25 +6860,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/centcom/ferry)
-<<<<<<< HEAD
-"BD" = (
-/obj/machinery/newscaster/security_unit{
-	pixel_x = 32
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/centcom/ferry)
-=======
->>>>>>> bd6fb0b075 ([MDB IGNORE]DMM The Turf-Decalening (#7970))
 "BE" = (
 /obj/machinery/door/poddoor/shutters{
 	id = "XCCsec3";

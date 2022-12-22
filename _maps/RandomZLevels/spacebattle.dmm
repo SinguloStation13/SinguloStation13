@@ -213,8 +213,8 @@
 "bc" = (
 /obj/machinery/porta_turret{
 	dir = 8;
-	set_obj_flags = "EMAGGED";
-	installation = /obj/item/gun/energy/lasercannon
+	installation = /obj/item/gun/energy/lasercannon;
+	set_obj_flags = "EMAGGED"
 	},
 /turf/open/floor/plating,
 /area/awaymission/spacebattle/syndicate2)
@@ -309,8 +309,8 @@
 "by" = (
 /obj/machinery/porta_turret{
 	dir = 8;
-	set_obj_flags = "EMAGGED";
-	installation = /obj/item/gun/energy/lasercannon
+	installation = /obj/item/gun/energy/lasercannon;
+	set_obj_flags = "EMAGGED"
 	},
 /turf/open/floor/plating,
 /area/awaymission/spacebattle/syndicate3)
@@ -327,8 +327,8 @@
 "bG" = (
 /obj/machinery/porta_turret{
 	dir = 8;
-	set_obj_flags = "EMAGGED";
-	installation = /obj/item/gun/energy/lasercannon
+	installation = /obj/item/gun/energy/lasercannon;
+	set_obj_flags = "EMAGGED"
 	},
 /turf/open/floor/plating,
 /area/awaymission/spacebattle/syndicate1)
@@ -828,8 +828,8 @@
 "dZ" = (
 /obj/machinery/porta_turret{
 	dir = 8;
-	set_obj_flags = "EMAGGED";
-	installation = /obj/item/gun/energy/lasercannon
+	installation = /obj/item/gun/energy/lasercannon;
+	set_obj_flags = "EMAGGED"
 	},
 /turf/open/floor/engine,
 /area/awaymission/spacebattle/cruiser)
@@ -1478,8 +1478,8 @@
 "gP" = (
 /obj/machinery/porta_turret{
 	dir = 8;
-	set_obj_flags = "EMAGGED";
-	installation = /obj/item/gun/energy/lasercannon
+	installation = /obj/item/gun/energy/lasercannon;
+	set_obj_flags = "EMAGGED"
 	},
 /turf/open/floor/plating/airless,
 /area/awaymission/spacebattle/syndicate7)
@@ -2003,14 +2003,10 @@
 "jk" = (
 /turf/open/floor/plating/asteroid/airless,
 /area/space/nearstation)
-"jl" = (
-/turf/closed/wall/mineral/plasma,
-/area/awaymission/spacebattle/secret)
 "jm" = (
 /turf/open/floor/plasteel/rockvault/alien,
 /area/awaymission/spacebattle/secret)
 "jn" = (
-/obj/machinery/door/airlock/plasma,
 /turf/closed/wall/mineral/plasma,
 /area/awaymission/spacebattle/secret)
 "jo" = (
@@ -2264,8 +2260,8 @@
 "kq" = (
 /obj/machinery/porta_turret{
 	dir = 8;
-	set_obj_flags = "EMAGGED";
-	installation = /obj/item/gun/energy/lasercannon
+	installation = /obj/item/gun/energy/lasercannon;
+	set_obj_flags = "EMAGGED"
 	},
 /turf/open/floor/engine/vacuum,
 /area/awaymission/spacebattle/cruiser)
@@ -64131,17 +64127,17 @@ jk
 jk
 jk
 aa
-jl
-jl
-jl
-jl
-jl
 jn
-jl
-jl
-jl
-jl
-jl
+jn
+jn
+jn
+jn
+jn
+jn
+jn
+jn
+jn
+jn
 aa
 aa
 aa
@@ -64388,7 +64384,7 @@ jk
 jk
 jk
 aa
-jl
+jn
 jm
 jm
 jm
@@ -64398,7 +64394,7 @@ jm
 jm
 jm
 jm
-jl
+jn
 aa
 aa
 aa
@@ -64645,7 +64641,7 @@ jk
 jk
 jk
 aa
-jl
+jn
 jm
 jm
 jm
@@ -64655,7 +64651,7 @@ jm
 jm
 jm
 jm
-jl
+jn
 aa
 aa
 aa
@@ -64902,7 +64898,7 @@ aa
 jk
 jk
 aa
-jl
+jn
 jm
 jm
 jm
@@ -64912,7 +64908,7 @@ jm
 jm
 jm
 jm
-jl
+jn
 aa
 aa
 aa
@@ -65159,7 +65155,7 @@ jk
 jk
 jk
 aa
-jl
+jn
 jm
 jm
 jm
@@ -65169,7 +65165,7 @@ jm
 jm
 jm
 jm
-jl
+jn
 aa
 aa
 aa
@@ -65416,7 +65412,7 @@ jk
 jk
 jk
 aa
-jl
+jn
 jm
 jm
 jm
@@ -65426,7 +65422,7 @@ jm
 jm
 jm
 jm
-jl
+jn
 aa
 aa
 aa
@@ -65673,7 +65669,7 @@ jk
 jk
 jk
 aa
-jl
+jn
 jm
 jm
 jm
@@ -65683,7 +65679,7 @@ jm
 jm
 jm
 jm
-jl
+jn
 aa
 aa
 aa
@@ -65930,7 +65926,7 @@ jk
 jk
 aa
 aa
-jl
+jn
 jm
 jm
 jm
@@ -65940,7 +65936,7 @@ jm
 jm
 jm
 jm
-jl
+jn
 aa
 aa
 aa
@@ -66187,7 +66183,7 @@ aa
 aa
 aa
 aa
-jl
+jn
 jm
 jm
 jm
@@ -66197,7 +66193,7 @@ jm
 jm
 jm
 jm
-jl
+jn
 aa
 aa
 aa
@@ -66444,7 +66440,7 @@ aa
 aa
 aa
 aa
-jl
+jn
 jm
 jm
 jm
@@ -66454,7 +66450,7 @@ jm
 jm
 jm
 jm
-jl
+jn
 aa
 aa
 aa
@@ -66701,7 +66697,7 @@ aa
 aa
 aa
 aa
-jl
+jn
 jm
 jm
 jm
@@ -66711,7 +66707,7 @@ jm
 jm
 jm
 jm
-jl
+jn
 aa
 aa
 aa
@@ -66958,7 +66954,7 @@ aa
 aa
 aa
 aa
-jl
+jn
 jm
 jm
 jm
@@ -66968,7 +66964,7 @@ jm
 jm
 jm
 jm
-jl
+jn
 aa
 aa
 aa
@@ -67215,17 +67211,17 @@ aa
 aa
 aa
 aa
-jl
-jl
-jl
-jl
-jl
-jl
-jl
-jl
-jl
-jl
-jl
+jn
+jn
+jn
+jn
+jn
+jn
+jn
+jn
+jn
+jn
+jn
 aa
 aa
 aa

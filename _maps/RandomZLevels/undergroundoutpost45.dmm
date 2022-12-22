@@ -1580,41 +1580,6 @@
 	name = "Cave Floor"
 	},
 /area/awaymission/undergroundoutpost45/caves)
-<<<<<<< HEAD
-"eK" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/structure/table,
-/obj/machinery/recharger{
-	pixel_y = 4
-	},
-/obj/machinery/newscaster/security_unit{
-	pixel_x = -30
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/red{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 8
-	},
-/turf/open/floor/plasteel{
-	heat_capacity = 1e+006
-	},
-/area/awaymission/undergroundoutpost45/central)
-"eL" = (
-/obj/structure/chair/office{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/red,
-/obj/effect/turf_decal/tile/red{
-	dir = 4
-	},
-/turf/open/floor/plasteel{
-	heat_capacity = 1e+006
-	},
-/area/awaymission/undergroundoutpost45/central)
-=======
->>>>>>> bd6fb0b075 ([MDB IGNORE]DMM The Turf-Decalening (#7970))
 "eM" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/firedoor,
