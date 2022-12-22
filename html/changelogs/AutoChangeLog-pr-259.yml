@@ -1,4 +1,0 @@
-author: SinguloMirrorbot
-delete-after: true
-changes:
-  - bugfix: Fixed fire alarm and APC overlays poking through Z levels.
