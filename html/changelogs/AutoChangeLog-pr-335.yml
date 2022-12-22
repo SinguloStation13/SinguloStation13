@@ -1,4 +1,0 @@
-author: SinguloMirrorbot
-delete-after: true
-changes:
-  - bugfix: prox sensor works when set to 0

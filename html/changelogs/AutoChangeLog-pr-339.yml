@@ -1,4 +1,0 @@
-author: SinguloMirrorbot
-delete-after: true
-changes:
-  - server: Bumps the SQL schema version to 6.1
