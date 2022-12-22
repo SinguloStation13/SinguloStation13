@@ -129,30 +129,7 @@
 
 	icon_deny = "mining-deny"
 	prize_list = list( //if you add something to this, please, for the love of god, sort it by price/type. use tabs and not spaces.
-<<<<<<< HEAD
-		new /datum/data/vendor_equipment("1 Marker Beacon",				/obj/item/stack/marker_beacon,										5),
-		new /datum/data/vendor_equipment("10 Marker Beacons",			/obj/item/stack/marker_beacon/ten,									75),
-		new /datum/data/vendor_equipment("30 Marker Beacons",			/obj/item/stack/marker_beacon/thirty,								150),
-		new /datum/data/vendor_equipment("Shelter Capsule",				/obj/item/survivalcapsule,											400),
-		new /datum/data/vendor_equipment("Regen. Core Stabilizer",		/obj/item/hivelordstabilizer,										400),
-		new /datum/data/vendor_equipment("Skeleton Key",				/obj/item/skeleton_key,												750),
-		new /datum/data/vendor_equipment("Survival Medipen",			/obj/item/reagent_containers/hypospray/medipen/survival,			500),
-		new /datum/data/vendor_equipment("Brute Healing Kit",			/obj/item/storage/firstaid/brute,									600),
-		new /datum/data/vendor_equipment("Burn Healing Kit",			/obj/item/storage/firstaid/fire,									600),
-		new /datum/data/vendor_equipment("Advanced Healing Kit",		/obj/item/storage/firstaid/advanced,								1200),
-		new /datum/data/vendor_equipment("Fulton Beacon",				/obj/item/fulton_core,												500),
-		new /datum/data/vendor_equipment("Fulton Extraction Pack",		/obj/item/extraction_pack,											1000),
-		new /datum/data/vendor_equipment("Jaunter",						/obj/item/wormhole_jaunter,											750),
-		new /datum/data/vendor_equipment("Advanced Ore Scanner",		/obj/item/t_scanner/adv_mining_scanner,								800),
-		new /datum/data/vendor_equipment("Deepcore Pinpointer",			/obj/item/pinpointer/deepcore,										200),		// WS edit - Deepcore
-		new /datum/data/vendor_equipment("Advanced Deepcore Pinpointer",/obj/item/pinpointer/deepcore/advanced,								800),		// WS edit - Deepcore
-		new /datum/data/vendor_equipment("Drill Deployment Capsule",	/obj/item/deepcorecapsule,											800),		// WS edit - Deepcore
-		new /datum/data/vendor_equipment("Explorer's Webbing",			/obj/item/storage/belt/mining,										500),
-		new /datum/data/vendor_equipment("Jump Boots",					/obj/item/clothing/shoes/bhop,										2000),
-		new /datum/data/vendor_equipment("Proto-Kinetic Crusher",		/obj/item/kinetic_crusher,								800),
-=======
 	//Direct mining tools go here
->>>>>>> 98598540b8 ([Ruko PR recoup] Mining progression overhaul (this one is the nerf) (#7719))
 		new /datum/data/vendor_equipment("Proto-Kinetic Accelerator",	/obj/item/gun/energy/kinetic_accelerator,							500),
 		new /datum/data/vendor_equipment("Proto-Kinetic Crusher",		/obj/item/kinetic_crusher,											800),
 		new /datum/data/vendor_equipment("Mining Conscription Kit",		/obj/item/storage/backpack/duffelbag/mining_conscript,				1000),
@@ -213,6 +190,10 @@
 		new /datum/data/vendor_equipment("Soap",						/obj/item/soap/nanotrasen,											200),
 		new /datum/data/vendor_equipment("Laser Pointer",				/obj/item/laser_pointer,											300),
 		new /datum/data/vendor_equipment("Toy Alien",					/obj/item/clothing/mask/facehugger/toy,								300),
+	//Singulo edit - deepcore
+		new /datum/data/vendor_equipment("Deepcore Pinpointer",			/obj/item/pinpointer/deepcore,										200),		// WS edit - Deepcore
+		new /datum/data/vendor_equipment("Advanced Deepcore Pinpointer",/obj/item/pinpointer/deepcore/advanced,								800),		// WS edit - Deepcore
+		new /datum/data/vendor_equipment("Drill Deployment Capsule",	/obj/item/deepcorecapsule,											800),		// WS edit - Deepcore
 		)
 
 /datum/data/vendor_equipment
