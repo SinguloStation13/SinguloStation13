@@ -1,0 +1,4 @@
+author: SinguloMirrorbot
+delete-after: true
+changes:
+  - config: disables the revolutionary gamemode and dynamic rulesets
