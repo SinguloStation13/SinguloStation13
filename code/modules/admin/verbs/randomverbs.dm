@@ -1079,11 +1079,6 @@ Traitors and the like can also be revived with the previous role mostly intact.
 	if(!check_rights(R_ADMIN) || !check_rights(R_FUN))
 		return
 
-<<<<<<< HEAD
-	var/list/punishment_list = list(ADMIN_PUNISHMENT_LIGHTNING, ADMIN_PUNISHMENT_BRAINDAMAGE, ADMIN_PUNISHMENT_GIB, ADMIN_PUNISHMENT_BSA, ADMIN_PUNISHMENT_FIREBALL, ADMIN_PUNISHMENT_ROD, ADMIN_PUNISHMENT_SUPPLYPOD_QUICK, ADMIN_PUNISHMENT_SUPPLYPOD, ADMIN_PUNISHMENT_MAZING, ADMIN_PUNISHMENT_FLOORCLUWNE, ADMIN_PUNISHMENT_CLUWNE, ADMIN_PUNISHMENT_IMMERSE, ADMIN_PUNISHMENT_GHOST, ADMIN_PUNISHMENT_DEMOCRACY, ADMIN_PUNISHMENT_ANARCHY, ADMIN_PUNISHMENT_TOE, ADMIN_PUNISHMENT_TOEPLUS, ADMIN_PUNISHMENT_CRYO)
-	punishment_list -= ADMIN_PUNISHMENT_CRYO // Singulostation edit - Cryogenic freezers change - remove forcecryo
-	if(istype(target, /mob/living/carbon))
-=======
 	var/list/punishment_list = list(
 		ADMIN_PUNISHMENT_AHEAL,
 		ADMIN_PUNISHMENT_ANIMALIZE,
@@ -1108,9 +1103,9 @@ Traitors and the like can also be revived with the previous role mostly intact.
 		ADMIN_PUNISHMENT_SUPPLYPOD_QUICK,
 		ADMIN_PUNISHMENT_VOICE_OF_GOD
 	)
+	punishment_list -= ADMIN_PUNISHMENT_CRYO // Singulostation edit - Cryogenic freezers change - remove forcecryo
 	if(iscarbon(target))
 		punishment_list += ADMIN_PUNISHMENT_COOKIE
->>>>>>> b255ac7164 (Adds more adminbus smites to keep the admins happy (#7703))
 		punishment_list += ADMIN_PUNISHMENT_NUGGET
 	if(ishuman(target))
 		punishment_list += ADMIN_PUNISHMENT_FLOORCLUWNE
@@ -1147,7 +1142,10 @@ Traitors and the like can also be revived with the previous role mostly intact.
 			return //We return here because punish_log() is handled by /mob/living/carbon/human/proc/give_cookie()
 
 		if(ADMIN_PUNISHMENT_CRYO)
-			forcecryo(target)
+			// Singulostation begin - cryogenic freezers change - remove forcecryo
+			//forcecryo(target) 
+			to_chat(usr, "<span class='warning'>Force cryo is not implemented. This message should not be reachable.</span>")
+			// Singulostation end
 
 		if(ADMIN_PUNISHMENT_DAMAGE)
 			var/list/damage_list = list(BRUTE, BURN, CLONE, OXY, STAMINA, TOX)
@@ -1307,16 +1305,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 			target.Paralyze(300, ignore_canstun = TRUE)
 			target.Jitter(100)
 			target.confused += 50
-
-<<<<<<< HEAD
-		if(ADMIN_PUNISHMENT_CRYO)
-			// Singulostation begin - cryogenic freezers change - remove forcecryo
-			//forcecryo(target) 
-			to_chat(usr, "<span class='warning'>Force cryo is not implemented. This message should not be reachable.</span>")
-			// Singulostation end
-=======
 			punishment += ": \"[target_speech]\""
->>>>>>> b255ac7164 (Adds more adminbus smites to keep the admins happy (#7703))
 
 	admin_ticket_log(target, "[key_name_admin(usr)] punished [key_name_admin(target)] with [punishment]")
 	message_admins("[ADMIN_LOOKUPFLW(usr)] has punished [key_name_admin(target)] with [punishment].")
