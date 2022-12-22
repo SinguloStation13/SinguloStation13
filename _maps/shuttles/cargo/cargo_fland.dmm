@@ -44,11 +44,7 @@
 	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/supply)
-<<<<<<< HEAD
 "ag" = (
-=======
-"g" = (
->>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 /obj/effect/turf_decal/tile/brown,
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
@@ -203,14 +199,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/stripes/line,
-<<<<<<< HEAD
 /obj/effect/turf_decal/tile/brown/opposingcorners,
-=======
-/obj/effect/turf_decal/tile/brown,
-/obj/effect/turf_decal/tile/brown{
-	dir = 1
-	},
->>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/supply)
 "av" = (
@@ -361,17 +350,8 @@
 /obj/structure/shuttle/engine/propulsion/burst/right,
 /turf/open/floor/plating/airless,
 /area/shuttle/supply)
-<<<<<<< HEAD
 "aN" = (
 /obj/effect/turf_decal/tile/brown/opposingcorners,
-=======
-"O" = (
-/obj/effect/turf_decal/stripes/corner,
-/obj/effect/turf_decal/tile/brown,
-/obj/effect/turf_decal/tile/brown{
-	dir = 1
-	},
->>>>>>> 417a273c58 (Flandstation - Service Pack 5 (AKA Flandstation 2.0) (#7375))
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/supply)
 "aO" = (
