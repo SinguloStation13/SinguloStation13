@@ -1726,10 +1726,6 @@
 /obj/structure/lattice/catwalk,
 /turf/open/space/basic,
 /area/space/nearstation)
-"JE" = (
-/obj/structure/lattice,
-/turf/closed/mineral/random,
-/area/asteroid/mining)
 "Ko" = (
 /turf/open/floor/plasteel,
 /area/construction/storage_wing)
@@ -48730,8 +48726,8 @@ KL
 KL
 KL
 KL
-JE
-JE
+Yd
+Yd
 LS
 KL
 KL
@@ -48987,9 +48983,9 @@ KL
 KL
 KL
 KL
-JE
 Yd
-JE
+Yd
+Yd
 KL
 KL
 KL
@@ -49244,9 +49240,9 @@ KL
 KL
 KL
 KL
-JE
 Yd
-JE
+Yd
+Yd
 KL
 KL
 om
@@ -50013,7 +50009,7 @@ LS
 KL
 KL
 KL
-JE
+Yd
 KL
 KL
 KL
@@ -50270,7 +50266,7 @@ LS
 KL
 KL
 Yd
-JE
+Yd
 Yd
 Yd
 KL
@@ -50527,7 +50523,7 @@ LS
 KL
 KL
 Yd
-JE
+Yd
 Yd
 KL
 KL
@@ -50784,7 +50780,7 @@ Yd
 KL
 KL
 KL
-JE
+Yd
 Yd
 KL
 KL
@@ -52059,7 +52055,7 @@ KL
 LS
 LS
 LS
-JE
+Yd
 KL
 KL
 KL
@@ -52316,7 +52312,7 @@ KL
 LS
 KL
 Yd
-JE
+Yd
 Yd
 KL
 KL
@@ -52573,7 +52569,7 @@ KL
 LS
 Yd
 Yd
-JE
+Yd
 Yd
 KL
 KL
@@ -52828,10 +52824,10 @@ KL
 KL
 KL
 LS
-JE
-JE
-JE
-JE
+Yd
+Yd
+Yd
+Yd
 LS
 LS
 LS
@@ -53087,7 +53083,7 @@ KL
 LS
 KL
 Yd
-JE
+Yd
 KL
 KL
 KL
