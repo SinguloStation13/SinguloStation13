@@ -430,6 +430,7 @@ SUBSYSTEM_DEF(air)
 		high_pressure_delta.len--
 		T.high_pressure_movements()
 		T.pressure_difference = 0
+		T.pressure_direction = 0
 		T.pressure_specific_target = null
 		if(MC_TICK_CHECK)
 			return
