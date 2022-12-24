@@ -8,6 +8,7 @@
 	verb_say = "states"
 	idle_power_usage = 500
 	circuit = /obj/item/circuitboard/machine/autodoc
+	emag_toggleable = TRUE
 	var/obj/item/organ/storedorgan
 	var/organ_type = /obj/item/organ
 	var/processing = FALSE
