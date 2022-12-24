@@ -131,8 +131,10 @@
 
 /////////////////////////GAS OVERLAYS//////////////////////////////
 
+/turf/proc/update_visuals() // Singulo edit - monstermos
+	return
 
-/turf/open/proc/update_visuals()
+/turf/open/update_visuals() // Singulo edit - monstermos
 
 	var/list/atmos_overlay_types = src.atmos_overlay_types // Cache for free performance
 	var/list/new_overlay_types = list()
@@ -191,7 +193,12 @@
 /turf/proc/process_cell(fire_count)
 
 /turf/open/proc/equalize_pressure_in_zone(cyclenum)
-/turf/open/proc/consider_firelocks(turf/T2)
+///turf/open/proc/consider_firelocks(turf/T2) // Singulo edit - monstermos
+
+/turf/proc/consider_firelocks() // Singulo edit - monstermos
+	return
+
+/turf/open/consider_firelocks(turf/T2) // Singulo edit - monstermos
 	var/reconsider_adj = FALSE
 	for(var/obj/machinery/door/firedoor/FD in T2)
 		if((FD.flags_1 & ON_BORDER_1) && get_dir(T2, src) != FD.dir)
@@ -243,6 +250,8 @@
 		M = thing
 		if (!M.anchored && !M.pulledby && M.last_high_pressure_movement_air_cycle < SSair.times_fired)
 			M.experience_pressure_difference(pressure_difference * multiplier, pressure_direction, 0, pressure_specific_target)
+	if(pressure_difference > 100) // Singulo edit - monstermos
+		new /obj/effect/temp_visual/dir_setting/space_wind(src, pressure_direction, CLAMP(round(sqrt(pressure_difference) * 2), 10, 255))
 
 /atom/movable/var/pressure_resistance = 10
 /atom/movable/var/last_high_pressure_movement_air_cycle = 0

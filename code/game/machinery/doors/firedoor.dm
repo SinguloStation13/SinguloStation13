@@ -77,13 +77,23 @@
 	affecting_areas.Cut()
 	return ..()
 
+// Singulo start - Monstermos
 /obj/machinery/door/firedoor/Bumped(atom/movable/AM)
-	if(panel_open || operating)
+	if(panel_open || operating || welded || (machine_stat & NOPOWER))
 		return
-	if(!density)
-		return ..()
+	if(ismob(AM))
+		var/mob/user = AM
+		if(check_safety(user))
+			add_fingerprint(user)
+			open()
+			return TRUE
+	if(ismecha(AM))
+		var/obj/mecha/M = AM
+		if(M.occupant && check_safety(M.occupant))
+			open()
+			return TRUE
 	return FALSE
-
+//Singulo end
 
 /obj/machinery/door/firedoor/power_change()
 	if(powered(power_channel))
@@ -96,6 +106,25 @@
 	. = ..()
 	if(.)
 		return
+
+// Singulo start - monstermos
+	if (!welded && !operating)
+		if (machine_stat & NOPOWER)
+			user.visible_message("[user] tries to open \the [src] manually.",
+						 "You operate the manual lever on \the [src].")
+			if (!do_after(user, 30, TRUE, src))
+				return FALSE
+		else if (density && !check_safety(user))
+			return FALSE
+
+		add_fingerprint(user)
+		if(density)
+			emergency_close_timer = world.time + RECLOSE_DELAY // prevent it from instaclosing again if in space
+			open()
+		else
+			close()
+		return TRUE
+// Singulo end
 
 	if(operating || !density)
 		return
@@ -218,7 +247,6 @@
 		open()
 	else
 		close()
-
 
 /obj/machinery/door/firedoor/proc/check_safety(mob/user, check_alarm = TRUE)
 	var/area/A = get_area(src)

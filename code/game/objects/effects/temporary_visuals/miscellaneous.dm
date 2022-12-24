@@ -562,3 +562,5 @@
 	layer = FLY_LAYER
 	duration = 4.8
 	mouse_opacity = 0
+
+//See more at singulostation/code/game/objects/effects/temporary_visuals/miscellaneous.dm
