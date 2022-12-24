@@ -38,6 +38,7 @@
 
 /obj/machinery/door/firedoor/Initialize(mapload)
 	. = ..()
+	air_update_turf(1)
 	CalculateAffectingAreas()
 
 /obj/machinery/door/firedoor/examine(mob/user)
@@ -74,6 +75,7 @@
 
 /obj/machinery/door/firedoor/Destroy()
 	remove_from_areas()
+	air_update_turf(1)
 	affecting_areas.Cut()
 	return ..()
 
@@ -379,11 +381,10 @@
 				T.ImmediateCalculateAdjacentTurfs()
 
 /obj/machinery/door/firedoor/proc/emergency_pressure_stop(consider_timer = TRUE)
-	set waitfor = 0
 	if(density || operating || welded)
 		return
 	if(world.time >= emergency_close_timer || !consider_timer)
-		close()
+		emergency_pressure_close()
 
 /obj/machinery/door/firedoor/deconstruct(disassembled = TRUE)
 	if(!(flags_1 & NODECONSTRUCT_1))
@@ -502,6 +503,44 @@
 		return !density
 	else
 		return TRUE
+
+/obj/machinery/door/firedoor/proc/emergency_pressure_close()
+	SHOULD_NOT_SLEEP(TRUE)
+
+	if(density)
+		return
+	if(operating || welded)
+		return
+	density = TRUE
+	air_update_turf(1)
+	do_animate("closing")
+	update_freelook_sight()
+	if(!(flags_1 & ON_BORDER_1))
+		crush()
+	addtimer(CALLBACK(src, /atom/.proc/update_icon), 5)
+
+/obj/machinery/door/firedoor/border_only/emergency_pressure_close()
+	if(density)
+		return TRUE
+	if(operating || welded)
+		return
+	var/turf/T1 = get_turf(src)
+	var/turf/T2 = get_step(T1, dir)
+	for(var/mob/living/M in T1)
+		if(M.stat == CONSCIOUS && M.pulling && M.pulling.loc == T2 && !M.pulling.anchored && M.pulling.move_resist <= M.move_force)
+			var/mob/living/M2 = M.pulling
+			if(!istype(M2) || !M2.buckled || !M2.buckled.buckle_prevents_pull)
+				to_chat(M, "<span class='notice'>You pull [M.pulling] through [src] right as it closes.</span>")
+				M.pulling.forceMove(T1)
+				INVOKE_ASYNC(M, /atom/movable/.proc/start_pulling)
+	for(var/mob/living/M in T2)
+		if(M.stat == CONSCIOUS && M.pulling && M.pulling.loc == T1 && !M.pulling.anchored && M.pulling.move_resist <= M.move_force)
+			var/mob/living/M2 = M.pulling
+			if(!istype(M2) || !M2.buckled || !M2.buckled.buckle_prevents_pull)
+				to_chat(M, "<span class='notice'>You pull [M.pulling] through [src] right as it closes.</span>")
+				M.pulling.forceMove(T2)
+				INVOKE_ASYNC(M, /atom/movable/.proc/start_pulling)
+	return ..()
 
 /obj/machinery/door/firedoor/heavy
 	name = "heavy firelock"
