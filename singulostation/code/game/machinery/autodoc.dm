@@ -161,4 +161,7 @@
 	if(panel_open)
 		overlays += "[icon_state]_panel"
 
+/obj/machinery/autodoc/on_emag(mob/user)
+	..()
+
 	to_chat(user, "<span class='warning'>You reprogram [src]'s surgery procedures.</span>")
