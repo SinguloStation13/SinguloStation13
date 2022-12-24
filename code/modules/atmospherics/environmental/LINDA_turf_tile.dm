@@ -193,25 +193,16 @@
 /turf/proc/process_cell(fire_count)
 
 /turf/open/proc/equalize_pressure_in_zone(cyclenum)
-///turf/open/proc/consider_firelocks(turf/T2) // Singulo edit - monstermos
 
-/turf/proc/consider_firelocks() // Singulo edit - monstermos
-	return
-
-/turf/open/consider_firelocks(turf/T2) // Singulo edit - monstermos
-	var/reconsider_adj = FALSE
-	for(var/obj/machinery/door/firedoor/FD in T2)
-		if((FD.flags_1 & ON_BORDER_1) && get_dir(T2, src) != FD.dir)
-			continue
-		FD.emergency_pressure_stop()
-		reconsider_adj = TRUE
+/turf/open/proc/consider_firelocks(turf/T2) // Singulo edit - monstermos
+	if(blocks_air)
+		return
+	for(var/obj/machinery/airalarm/alarm in src)
+		alarm.handle_decomp_alarm()
 	for(var/obj/machinery/door/firedoor/FD in src)
-		if((FD.flags_1 & ON_BORDER_1) && get_dir(src, T2) != FD.dir)
-			continue
 		FD.emergency_pressure_stop()
-		reconsider_adj = TRUE
-	if(reconsider_adj)
-		T2.ImmediateCalculateAdjacentTurfs() // We want those firelocks closed yesterday.
+	for(var/obj/machinery/door/firedoor/FD in T2)
+		FD.emergency_pressure_stop()
 
 /turf/proc/handle_decompression_floor_rip()
 /turf/open/floor/handle_decompression_floor_rip(sum)
