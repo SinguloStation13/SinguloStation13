@@ -119,6 +119,7 @@
 			icon_state = "deep_core_drill-broken"
 		else
 			icon_state = "deep_core_drill"
+	return ..()
 
 /obj/machinery/deepcore/drill/update_overlays()
 	. = ..()

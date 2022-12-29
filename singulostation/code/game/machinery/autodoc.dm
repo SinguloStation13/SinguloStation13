@@ -8,6 +8,7 @@
 	verb_say = "states"
 	idle_power_usage = 500
 	circuit = /obj/item/circuitboard/machine/autodoc
+	emag_toggleable = TRUE
 	var/obj/item/organ/storedorgan
 	var/organ_type = /obj/item/organ
 	var/processing = FALSE
@@ -161,8 +162,7 @@
 	if(panel_open)
 		overlays += "[icon_state]_panel"
 
-/obj/machinery/autodoc/emag_act(mob/user)
-	if(obj_flags & EMAGGED)
-		return
-	obj_flags |= EMAGGED
+/obj/machinery/autodoc/on_emag(mob/user)
+	..()
+
 	to_chat(user, "<span class='warning'>You reprogram [src]'s surgery procedures.</span>")
