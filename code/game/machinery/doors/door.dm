@@ -363,12 +363,12 @@
 		L.visible_message("<span class='warning'>[src] closes on [L], crushing [L.p_them()]!</span>", "<span class='userdanger'>[src] closes on you and crushes you!</span>")
 		if(isalien(L))  //For xenos
 			L.adjustBruteLoss(DOOR_CRUSH_DAMAGE * 1.5) //Xenos go into crit after aproximately the same amount of crushes as humans.
-			L.emote("roar")
+			L.manual_emote("roar") // Singulo edit - monstermos
 		else if(ishuman(L)) //For humans
 			var/armour = L.run_armor_check(BODY_ZONE_CHEST, "melee")
 			var/multiplier = CLAMP(1 - (armour * 0.01), 0, 1)
 			L.adjustBruteLoss(multiplier * DOOR_CRUSH_DAMAGE)
-			L.emote("scream")
+			L.manual_emote("scream") // Singulo edit - monstermos
 			if(!L.IsParalyzed())
 				L.Paralyze(60)
 		else if(ismonkey(L)) //For monkeys

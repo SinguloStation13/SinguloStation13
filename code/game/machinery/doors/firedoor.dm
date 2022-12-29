@@ -515,8 +515,8 @@
 	air_update_turf(1)
 	do_animate("closing")
 	update_freelook_sight()
-	//if(!(flags_1 & ON_BORDER_1))
-	//	crush()
+	if(!(flags_1 & ON_BORDER_1))
+		crush()
 	addtimer(CALLBACK(src, /atom/.proc/update_icon), 5)
 
 /obj/machinery/door/firedoor/border_only/emergency_pressure_close()
