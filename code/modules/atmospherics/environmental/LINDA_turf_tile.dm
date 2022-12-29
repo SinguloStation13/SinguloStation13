@@ -200,9 +200,10 @@
 	for(var/obj/machinery/airalarm/alarm in src)
 		alarm.handle_decomp_alarm()
 	for(var/obj/machinery/door/firedoor/FD in src)
-		FD.emergency_pressure_stop()
+		FD.emergency_pressure_stop(FALSE)
 	for(var/obj/machinery/door/firedoor/FD in T2)
-		FD.emergency_pressure_stop()
+		FD.emergency_pressure_stop(FALSE)
+	ImmediateCalculateAdjacentTurfs()
 
 /turf/proc/handle_decompression_floor_rip()
 /turf/open/floor/handle_decompression_floor_rip(sum)
