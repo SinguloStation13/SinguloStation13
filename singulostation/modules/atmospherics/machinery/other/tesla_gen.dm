@@ -6,15 +6,16 @@
 	density = TRUE
 	resistance_flags = ACID_PROOF|FIRE_PROOF
 	interacts_with_air = TRUE
-	var/list/spawn_id = list(GAS_O2	   = 2,
-							GAS_N2     = 3,
-							GAS_PLASMA = 1
-							)
-	var/spawn_temp = T20C
+	var/static/list/possible_gases = list(
+		"o2=22;TEMP=293.15"		= 2,
+		"n2=82;TEMP=293.15"		= 3,
+		"plasma=22;TEMP=293.15"	= 1
+	)
+//	var/spawn_temp = T20C
 	/// Moles of gas to spawn per second
-	var/spawn_mol = MOLES_CELLSTANDARD * 5
-	var/max_ext_mol = INFINITY
-	var/max_ext_kpa = 6500
+//	var/spawn_mol = MOLES_CELLSTANDARD * 5
+//	var/max_ext_mol = INFINITY
+//	var/max_ext_kpa = 6500
 	var/overlay_color = "#FFFFFF"
 	var/active = TRUE
 	var/broken = FALSE
@@ -47,14 +48,15 @@
 		set_broken(TRUE)
 		return FALSE
 	var/datum/gas_mixture/G = OT.return_air()
-	if(G.return_pressure() > (max_ext_kpa - ((spawn_mol*spawn_temp*R_IDEAL_GAS_EQUATION)/(CELL_VOLUME))))
-		broken_message = "<span class='boldwarning'>EXTERNAL PRESSURE OVER THRESHOLD</span>"
-		set_broken(TRUE)
-		return FALSE
-	if(G.total_moles() > max_ext_mol)
-		broken_message = "<span class='boldwarning'>EXTERNAL AIR CONCENTRATION OVER THRESHOLD</span>"
-		set_broken(TRUE)
-		return FALSE
+// TODO: readd something to do this sort of check
+//	if(G.return_pressure() > (max_ext_kpa - ((spawn_mol*spawn_temp*R_IDEAL_GAS_EQUATION)/(CELL_VOLUME))))
+//		broken_message = "<span class='boldwarning'>EXTERNAL PRESSURE OVER THRESHOLD</span>"
+//		set_broken(TRUE)
+//		return FALSE
+//	if(G.total_moles() > max_ext_mol)
+//		broken_message = "<span class='boldwarning'>EXTERNAL AIR CONCENTRATION OVER THRESHOLD</span>"
+//		set_broken(TRUE)
+//		return FALSE
 	if(broken)
 		set_broken(FALSE)
 		broken_message = ""
@@ -65,9 +67,9 @@
 		obj_flags |= BEING_SHOCKED
 		flick("grounding_rodhit", src)
 		playsound(src.loc, 'sound/magic/lightningshock.ogg', 100, 1, extrarange = 5)
-		mine_gas()
+		release_gas(power)
 	else
-		..()
+		return ..()
 
 /obj/machinery/atmospherics/teslagen/proc/set_active(setting)
 	if(active != setting)
@@ -88,15 +90,15 @@
 		on_overlay.color = overlay_color
 		add_overlay(on_overlay)
 
-/obj/machinery/atmospherics/teslagen/proc/mine_gas(power)
+/obj/machinery/atmospherics/teslagen/proc/release_gas(power)
 	var/turf/open/O = get_turf(src)
 	if(!isopenturf(O))
 		return FALSE
 	var/datum/gas_mixture/merger = new
-	merger.set_moles(pickweight(spawn_id), spawn_mol * power)
-	merger.set_temperature(spawn_temp)
+	merger.parse_gas_string(pickweight(possible_gases));
 	O.assume_air(merger)
 	O.air_update_turf(TRUE)
+	return TRUE
 
 /obj/machinery/atmospherics/teslagen/attack_ai(mob/living/silicon/user)
 	if(broken)
