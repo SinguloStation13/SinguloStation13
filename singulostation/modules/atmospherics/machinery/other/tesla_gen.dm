@@ -21,7 +21,7 @@
 	var/broken = FALSE
 	var/broken_message = "ERROR"
 
-	var/obj//obj/teslagen_coil/coil
+	var/obj//obj/teslagen_coil/coil = null
 
 /obj/machinery/atmospherics/components/unary/teslagen/Initialize(mapload)
 	. = ..()
