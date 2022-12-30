@@ -634,14 +634,6 @@
 	},
 /turf/open/floor/plating,
 /area/quartermaster/storage)
-"rd" = (
-/obj/structure/lattice,
-/obj/structure/lattice/catwalk,
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/turf/open/space/basic,
-/area/solar/port)
 "rg" = (
 /obj/machinery/advanced_airlock_controller{
 	dir = 1;
@@ -23511,8 +23503,8 @@ IZ
 IZ
 IZ
 IZ
-rd
-rd
+rN
+rN
 FH
 Yc
 Yc
