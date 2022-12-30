@@ -1,6 +1,0 @@
-author: MaltVinegar
-delete-after: true
-changes:
-  - refactor: deepcore & cryo's update_icon_state calls parent function
-  - refactor: cryo uses new emag system
-  - tweak: resolved a merge conflict in the config that I somehow missed

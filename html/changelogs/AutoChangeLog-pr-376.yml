@@ -1,4 +1,0 @@
-author: MaltVinegar
-delete-after: true
-changes:
-  - bugfix: fixes areas on lavaland causing turfs to remain ungenerated
