@@ -1,17 +1,9 @@
-
-#define GASMINER_POWER_NONE 0
-#define GASMINER_POWER_STATIC 1
-#define GASMINER_POWER_MOLES 2	//Scaled from here on down.
-#define GASMINER_POWER_KPA 3
-#define GASMINER_POWER_FULLSCALE 4
-
-
 /obj/machinery/atmospherics/teslagen
 	name = "experimental gas generator"
 	desc = "Generates gasses from the electrical shock of a tesla."
 	icon = 'icons/obj/tesla_engine/tesla_coil.dmi'
 	icon_state = "grounding_rod0"
-	density = FALSE
+	density = TRUE
 	resistance_flags = ACID_PROOF|FIRE_PROOF
 	interacts_with_air = TRUE
 	var/list/spawn_id = list(GAS_O2	   = 2,
@@ -25,14 +17,8 @@
 	var/max_ext_kpa = 6500
 	var/overlay_color = "#FFFFFF"
 	var/active = TRUE
-	var/power_draw = 0
-	var/power_draw_static = 2000
-	var/power_draw_dynamic_mol_coeff = 5	//DO NOT USE DYNAMIC SETTINGS UNTIL SOMEONE MAKES A USER INTERFACE/CONTROLLER FOR THIS!
-	var/power_draw_dynamic_kpa_coeff = 0.5
 	var/broken = FALSE
 	var/broken_message = "ERROR"
-	idle_power_usage = 150
-	active_power_usage = 3000
 
 /obj/machinery/atmospherics/teslagen/Initialize(mapload)
 	. = ..()
@@ -74,8 +60,14 @@
 		broken_message = ""
 	return TRUE
 
-/obj/machinery/atmospherics/teslagen/tesla_act(power, tesla_flags, shocked_objects)
-	mine_gas()
+/obj/machinery/atmospherics/teslagen/tesla_act(var/power)
+	if(!broken)
+		obj_flags |= BEING_SHOCKED
+		flick("grounding_rodhit", src)
+		playsound(src.loc, 'sound/magic/lightningshock.ogg', 100, 1, extrarange = 5)
+		mine_gas()
+	else
+		..()
 
 /obj/machinery/atmospherics/teslagen/proc/set_active(setting)
 	if(active != setting)
@@ -87,36 +79,6 @@
 		broken = setting
 		update_icon()
 
-/obj/machinery/atmospherics/teslagen/proc/update_power()
-	if(!active)
-		active_power_usage = idle_power_usage
-	var/turf/T = get_turf(src)
-	var/datum/gas_mixture/G = T.return_air()
-	var/P = G.return_pressure()
-	switch(power_draw)
-		if(GASMINER_POWER_NONE)
-			active_power_usage = 0
-		if(GASMINER_POWER_STATIC)
-			active_power_usage = power_draw_static
-		if(GASMINER_POWER_MOLES)
-			active_power_usage = spawn_mol * power_draw_dynamic_mol_coeff
-		if(GASMINER_POWER_KPA)
-			active_power_usage = P * power_draw_dynamic_kpa_coeff
-		if(GASMINER_POWER_FULLSCALE)
-			active_power_usage = (spawn_mol * power_draw_dynamic_mol_coeff) + (P * power_draw_dynamic_kpa_coeff) + power_draw_static
-
-/obj/machinery/atmospherics/teslagen/proc/do_use_power(amount)
-	var/turf/T = get_turf(src)
-	if(T && istype(T))
-		var/obj/structure/cable/C = T.get_cable_node() //check if we have a node cable on the machine turf, the first found is picked
-		if(C && C.powernet && (C.powernet.avail > amount))
-			C.powernet.load += amount
-			return TRUE
-	if(powered())
-		use_power(amount)
-		return TRUE
-	return FALSE
-
 /obj/machinery/atmospherics/teslagen/update_icon()
 	cut_overlays()
 	if(broken)
@@ -126,21 +88,12 @@
 		on_overlay.color = overlay_color
 		add_overlay(on_overlay)
 
-/obj/machinery/atmospherics/teslagen/process_atmos() //TODO figure out delta_time for this
-	update_power()
-	check_operation()
-	if(active && !broken)
-		if(isnull(spawn_id))
-			return FALSE
-		if(do_use_power(active_power_usage))
-			mine_gas()
-
-/obj/machinery/atmospherics/teslagen/proc/mine_gas(delta_time = 2)
+/obj/machinery/atmospherics/teslagen/proc/mine_gas(power)
 	var/turf/open/O = get_turf(src)
 	if(!isopenturf(O))
 		return FALSE
 	var/datum/gas_mixture/merger = new
-	merger.set_moles(spawn_id, spawn_mol * delta_time)
+	merger.set_moles(pickweight(spawn_id), spawn_mol * power)
 	merger.set_temperature(spawn_temp)
 	O.assume_air(merger)
 	O.air_update_turf(TRUE)
@@ -149,9 +102,3 @@
 	if(broken)
 		to_chat(user, "[src] seems to be broken. Its debug interface outputs: [broken_message]")
 	..()
-
-#undef GASMINER_POWER_NONE
-#undef GASMINER_POWER_STATIC
-#undef GASMINER_POWER_MOLES
-#undef GASMINER_POWER_KPA
-#undef GASMINER_POWER_FULLSCALE
