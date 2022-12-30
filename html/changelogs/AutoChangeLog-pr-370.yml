@@ -1,0 +1,4 @@
+author: SinguloMirrorbot
+delete-after: true
+changes:
+  - tweak: Gave the Debug outfit an ERT medibelt instead of the advanced health analyzer
