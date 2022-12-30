@@ -1,0 +1,4 @@
+author: Addust
+delete-after: true
+changes:
+  - rscadd: Atmos lockers for the stations as a countermeasure to cryo getting spaced
