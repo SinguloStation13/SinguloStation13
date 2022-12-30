@@ -1,4 +1,4 @@
-/obj/machinery/atmospherics/components/unary/teslagen
+/obj/machinery/atmospherics/teslagen
 	name = "experimental gas generator"
 	desc = "Generates gasses from the electrical shock of a tesla."
 	icon = 'icons/obj/tesla_engine/tesla_coil.dmi'
@@ -21,16 +21,16 @@
 	var/broken = FALSE
 	var/broken_message = "ERROR"
 
-/obj/machinery/atmospherics/components/unary/teslagen/Initialize(mapload)
+/obj/machinery/atmospherics/teslagen/Initialize(mapload)
 	. = ..()
 	set_active(active)				//Force overlay update.
 
-/obj/machinery/atmospherics/components/unary/teslagen/examine(mob/user)
+/obj/machinery/atmospherics/teslagen/examine(mob/user)
 	. = ..()
 	if(broken)
 		. += {"Its debug output is printing "[broken_message]"."}
 
-/obj/machinery/atmospherics/components/unary/teslagen/proc/check_operation()
+/obj/machinery/atmospherics/teslagen/proc/check_operation()
 	if(!active)
 		return FALSE
 	var/turf/T = get_turf(src)
@@ -62,7 +62,7 @@
 		broken_message = ""
 	return TRUE
 
-/obj/machinery/atmospherics/components/unary/teslagen/tesla_act(var/power)
+/obj/machinery/atmospherics/teslagen/tesla_act(var/power)
 	if(!broken)
 		obj_flags |= BEING_SHOCKED
 		flick("grounding_rodhit", src)
@@ -71,17 +71,17 @@
 	else
 		return ..()
 
-/obj/machinery/atmospherics/components/unary/teslagen/proc/set_active(setting)
+/obj/machinery/atmospherics/teslagen/proc/set_active(setting)
 	if(active != setting)
 		active = setting
 		update_icon()
 
-/obj/machinery/atmospherics/components/unary/teslagen/proc/set_broken(setting)
+/obj/machinery/atmospherics/teslagen/proc/set_broken(setting)
 	if(broken != setting)
 		broken = setting
 		update_icon()
 
-/obj/machinery/atmospherics/components/unary/teslagen/update_icon()
+/obj/machinery/atmospherics/teslagen/update_icon()
 	cut_overlays()
 	if(broken)
 		add_overlay("broken")
@@ -90,7 +90,7 @@
 		on_overlay.color = overlay_color
 		add_overlay(on_overlay)
 
-/obj/machinery/atmospherics/components/unary/teslagen/proc/release_gas(power)
+/obj/machinery/atmospherics/teslagen/proc/release_gas(power)
 	var/turf/open/O = get_turf(src)
 	if(!isopenturf(O))
 		return FALSE
@@ -100,7 +100,7 @@
 	O.air_update_turf(TRUE)
 	return TRUE
 
-/obj/machinery/atmospherics/components/unary/teslagen/attack_ai(mob/living/silicon/user)
+/obj/machinery/atmospherics/teslagen/attack_ai(mob/living/silicon/user)
 	if(broken)
 		to_chat(user, "[src] seems to be broken. Its debug interface outputs: [broken_message]")
 	..()
