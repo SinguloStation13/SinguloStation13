@@ -1,0 +1,4 @@
+author: SinguloMirrorbot
+delete-after: true
+changes:
+  - bugfix: Fixed hostile breadloaf dropping invisible bread upon being butchered
