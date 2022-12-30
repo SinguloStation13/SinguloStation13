@@ -886,6 +886,10 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
+/obj/structure/closet/secure_closet/atmospherics,
+/obj/item/holosign_creator/atmos,
+/obj/item/holosign_creator/atmos,
+/obj/item/holosign_creator/atmos,
 /turf/open/floor/plating,
 /area/maintenance/cryoauxatmos)
 "ti" = (
