@@ -121,7 +121,7 @@
 
 /obj/teslagen_coil/tesla_act(power)
 	if(!gas_generator)
-		CRASH("an /obj/teslagen_coil didn't have an attacked teslagen. This should not be possible")
 		qdel(src)
+		CRASH("an /obj/teslagen_coil didn't have an attacked teslagen. This should not be possible")
 
 	gas_generator.tesla_act(power)
