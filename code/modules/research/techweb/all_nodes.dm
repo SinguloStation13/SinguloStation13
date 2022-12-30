@@ -2251,6 +2251,7 @@
 		"purging_plus_nanites",
 		"regenerative_plus_nanites",
 		"sensor_species_nanites",
+		"nanite_heart", //Singulostation edit - Added nanite heart
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2000, TECHWEB_POINT_TYPE_NANITES = 2000)
 	export_price = 8000
