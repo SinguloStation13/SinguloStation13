@@ -232,7 +232,7 @@
 		//typecache_filter_multi_list_exclusion has been inlined to minimize lag.
 		if(!things_to_shock[A.type] || blacklisted_tesla_types[A.type] || (!(tesla_flags & TESLA_ALLOW_DUPLICATES) && LAZYACCESS(shocked_targets, A)))
 			continue
-		if(istype(A, /obj/machinery/power/tesla_coil))
+		if(istype(A, /obj/machinery/power/tesla_coil) || istype(A, /obj/machinery/teslagen_coil)) // Singulo edit - Tesla Gas Generator
 			var/obj/o = A
 			var/dist = get_dist(source, A)
 			if(dist <= zap_range && (dist < closest_dist || !(priority == 1)) && !(o.obj_flags & BEING_SHOCKED))

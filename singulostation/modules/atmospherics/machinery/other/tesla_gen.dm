@@ -21,12 +21,12 @@
 	var/broken = FALSE
 	var/broken_message = "ERROR"
 
-	var/obj/teslagen_coil/coil = null
+	var/obj/machinery/teslagen_coil/coil = null
 
 /obj/machinery/atmospherics/components/unary/teslagen/Initialize(mapload)
 	. = ..()
 
-	coil = new /obj/teslagen_coil(src)
+	coil = new /obj/machinery/teslagen_coil(loc)
 	coil.gas_generator = src
 
 	set_active(active)				//Force overlay update.
@@ -116,12 +116,15 @@
 		to_chat(user, "[src] seems to be broken. Its debug interface outputs: [broken_message]")
 	..()
 
-/obj/teslagen_coil
+/obj/machinery/teslagen_coil
+	layer = CLICKCATCHER_PLANE
+	invisibility = INVISIBILITY_MAXIMUM
+
 	var/obj/machinery/atmospherics/components/unary/teslagen/gas_generator
 
-/obj/teslagen_coil/tesla_act(power)
+/obj/machinery/teslagen_coil/tesla_act(power)
 	if(!gas_generator)
 		qdel(src)
-		CRASH("an /obj/teslagen_coil didn't have an attacked teslagen. This should not be possible")
+		CRASH("an /obj/teslagen_coil didn't have an attached teslagen. This should not be possible")
 
 	gas_generator.tesla_act(power)
