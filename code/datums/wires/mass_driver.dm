@@ -9,7 +9,7 @@
 /datum/wires/mass_driver/on_pulse(wire)
 	var/obj/machinery/mass_driver/M = holder
 //Singulo start - diagonal mass drivers
-	if(M.stat & (NOPOWER|BROKEN))
+	if(M.machine_stat & (NOPOWER|BROKEN))
 		return
 
 	switch(wire)
