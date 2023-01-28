@@ -45,6 +45,7 @@ GLOBAL_LIST_EMPTY(blob_nodes)
 
 	/// The list of strains the blob can reroll for.
 	var/list/strain_choices
+	var/need_reroll_strain = FALSE
 
 /mob/camera/blob/Initialize(mapload, starting_points = 60)
 	validate_location()
@@ -238,6 +239,9 @@ GLOBAL_LIST_EMPTY(blob_nodes)
 	message = trim(copytext_char(sanitize(message), 1, MAX_MESSAGE_LEN))
 
 	if (!message)
+		return
+	if(CHAT_FILTER_CHECK(message))
+		to_chat(usr, "<span class='warning'>Your message contains forbidden words.</span>")
 		return
 	message = treat_message_min(message)
 	src.log_talk(message, LOG_SAY, tag="blob")
