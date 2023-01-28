@@ -1,8 +1,8 @@
 /obj/machinery/mass_driver
 	name = "mass driver"
 	desc = "The finest in spring-loaded piston toy technology, now on a space station near you."
-	icon = 'singulostation/icons/obj/mass_driver.dmi' // Singulo edit - diagonal mass drivers
-	icon_state = "mass_driver"
+//	icon = 'singulostation/icons/obj/mass_driver.dmi' // Singulo edit - diagonal mass drivers
+//	icon_state = "mass_driver"
 	use_power = IDLE_POWER_USE
 	idle_power_usage = 2
 	active_power_usage = 50
@@ -18,6 +18,7 @@
 	. = ..()
 	wires = new /datum/wires/mass_driver(src)
 	transform = matrix().Turn(dir2angle(dir)) // Singulo edit - diagonal mass driver
+	update_icon() // Singulo edit - diagonal mass driver
 
 /obj/machinery/mass_driver/Destroy()
 	QDEL_NULL(wires)
