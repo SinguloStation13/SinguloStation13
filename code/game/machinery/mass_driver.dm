@@ -47,7 +47,7 @@
 	if(is_wire_tool(I) && panel_open)
 		wires.interact(user)
 		return
-	if(default_deconstruction_screwdriver(user, "mass_driver_o", "mass_driver", I))
+	if(default_deconstruction_screwdriver(user, null, null, I))
 		return
 	if(default_change_direction_wrench(user, I))
 		return

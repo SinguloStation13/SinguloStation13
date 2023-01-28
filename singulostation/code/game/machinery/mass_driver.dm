@@ -13,3 +13,5 @@
 	var/mutable_appearance/overlay = mutable_appearance('singulostation/icons/obj/mass_driver.dmi', "mass_driver")
 	overlay.transform = matrix().Turn(dir2angle(dir))
 	overlays += overlay
+
+	return ..()
