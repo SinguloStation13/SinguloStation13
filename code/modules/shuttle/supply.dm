@@ -223,4 +223,5 @@ GLOBAL_LIST_INIT(blacklisted_cargo_types, typecacheof(list(
 			empty_turfs += T
 
 	new /obj/structure/closet/crate/mail/economy(pick(empty_turfs))
-/* Singulostation End - Remove mail
+Singulostation End - Remove mail
+*/
