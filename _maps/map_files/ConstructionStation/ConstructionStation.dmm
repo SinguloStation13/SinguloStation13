@@ -387,9 +387,7 @@
 /turf/open/floor/plasteel/dark,
 /area/bridge)
 "ls" = (
-/obj/effect/turf_decal/siding/thinplating/dark/corner{
-	dir = 2
-	},
+/obj/effect/turf_decal/siding/thinplating/dark/corner,
 /obj/machinery/door/firedoor,
 /turf/open/floor/plasteel/dark/side{
 	dir = 10
@@ -870,6 +868,13 @@
 /obj/effect/landmark/event_spawn,
 /turf/open/floor/plating,
 /area/engine/storage_shared)
+"uV" = (
+/obj/structure/chair/office{
+	dir = 4
+	},
+/obj/machinery/airalarm/directional/south,
+/turf/open/floor/carpet/royalblack,
+/area/bridge)
 "vi" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -981,14 +986,16 @@
 /turf/open/floor/plating,
 /area/engine/storage_shared)
 "wO" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
 /obj/effect/landmark/event_spawn,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 8
+	},
 /turf/open/floor/monotile/dark,
 /area/bridge)
 "wW" = (
@@ -1869,6 +1876,15 @@
 /obj/structure/lattice/catwalk,
 /turf/open/space/basic,
 /area/space/nearstation)
+"JX" = (
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/bridge)
 "Ko" = (
 /turf/open/floor/plasteel,
 /area/construction/storage_wing)
@@ -2078,6 +2094,15 @@
 	},
 /turf/open/floor/circuit/telecomms/server,
 /area/science/server)
+"MP" = (
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 8
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/bridge)
 "MZ" = (
 /obj/machinery/vending/cola/random,
 /turf/open/floor/plasteel,
@@ -2400,6 +2425,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/science/research)
+"Vm" = (
+/obj/machinery/airalarm/directional/east,
+/turf/open/floor/plasteel,
+/area/hallway/primary/central)
 "Vx" = (
 /obj/machinery/door/airlock/external,
 /obj/machinery/atmospherics/pipe/layer_manifold{
@@ -18354,7 +18383,7 @@ Fg
 aL
 jg
 lq
-lq
+MP
 lq
 Ys
 eU
@@ -18868,7 +18897,7 @@ sa
 aM
 ls
 sh
-lP
+JX
 lP
 vU
 Aa
@@ -19126,13 +19155,13 @@ sa
 sW
 GE
 bB
-bB
+uV
 sW
 dj
 Cz
 Rk
 Ft
-bu
+Vm
 vH
 Sv
 Nd
