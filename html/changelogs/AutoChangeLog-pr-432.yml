@@ -1,0 +1,6 @@
+author: Laboredih123
+delete-after: true
+changes:
+  - rscdel: kills mail
+  - bugfix: added a missing air alarm in the hallway
+  - tweak: added ventilation to the bridge
