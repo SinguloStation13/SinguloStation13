@@ -303,13 +303,8 @@ GLOBAL_LIST_EMPTY(radial_menus)
 		return
 	current_user = M.client
 	//Blank
-<<<<<<< HEAD
-	menu_holder = image(icon='icons/effects/effects.dmi',loc=anchor,icon_state="nothing",layer = ABOVE_HUD_LAYER)
-	menu_holder.appearance_flags |= KEEP_APART|RESET_ALPHA|RESET_COLOR|RESET_TRANSFORM //Singulostation edit - Fix radial menu transparency with chameleon
-=======
 	menu_holder = image(icon='icons/effects/effects.dmi',loc=anchor,icon_state="nothing")
-	menu_holder.appearance_flags |= KEEP_APART
->>>>>>> bcacd4356b (Updates our layers to get ready for plane cube, and weather effects (#8082))
+	menu_holder.appearance_flags |= KEEP_APART//|RESET_ALPHA|RESET_COLOR|RESET_TRANSFORM //Singulostation edit - Fix radial menu transparency with chameleon + changed in #474 (upstream #8082), leaving here in case the bug persists
 	menu_holder.vis_contents += elements + close_button
 	current_user.images += menu_holder
 
