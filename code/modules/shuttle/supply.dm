@@ -73,7 +73,7 @@ GLOBAL_LIST_INIT(blacklisted_cargo_types, typecacheof(list(
 /obj/docking_port/mobile/supply/initiate_docking()
 	if(getDockedId() == "supply_away") // Buy when we leave home.
 		buy()
-		create_mail()
+		//create_mail() //Singulostation - Remove mail
 	. = ..() // Fly/enter transit.
 	if(. != DOCKING_SUCCESS)
 		return
@@ -212,7 +212,7 @@ GLOBAL_LIST_INIT(blacklisted_cargo_types, typecacheof(list(
 	SSshuttle.centcom_message = msg
 	investigate_log("Shuttle contents sold for [D.account_balance - presale_points] credits. Contents: [ex.exported_atoms ? ex.exported_atoms.Join(",") + "." : "none."] Message: [SSshuttle.centcom_message || "none."]", INVESTIGATE_CARGO)
 
-
+/* Singulostation Start - Remove mail
 //	Generates a box of mail depending on our exports and imports.
 //	Applied in the cargo shuttle sending/arriving, by building the crate if the round is ready to introduce mail based on the economy subsystem.
 // Then, fills the mail crate with mail, by picking applicable crew who can receive mail at the time to sending.
@@ -233,3 +233,5 @@ GLOBAL_LIST_INIT(blacklisted_cargo_types, typecacheof(list(
 		return
 
 	new /obj/structure/closet/crate/mail/economy(pick(empty_turfs))
+Singulostation End - Remove mail
+*/

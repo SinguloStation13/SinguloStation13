@@ -207,18 +207,6 @@
 	},
 /turf/open/space/basic,
 /area/solar/port)
-"cq" = (
-/obj/structure/table/reinforced,
-/obj/machinery/light{
-	dir = 4;
-	pixel_x = 32
-	},
-/obj/machinery/computer/cryopod{
-	dir = 8;
-	pixel_x = 32
-	},
-/turf/open/floor/plasteel,
-/area/hallway/secondary/entry)
 "cz" = (
 /obj/machinery/door/airlock/command/glass{
 	name = "R&D Server Access"
@@ -267,6 +255,15 @@
 	icon_state = "plating_rust"
 	},
 /area/asteroid/mining)
+"cX" = (
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/bridge)
 "dc" = (
 /turf/open/floor/plating/airless{
 	icon_plating = "plating_rust";
@@ -314,6 +311,10 @@
 "ej" = (
 /turf/closed/wall,
 /area/science/server)
+"eF" = (
+/obj/machinery/airalarm/directional/east,
+/turf/open/floor/plasteel,
+/area/hallway/primary/central)
 "eU" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
@@ -382,6 +383,19 @@
 	dir = 6
 	},
 /area/bridge)
+"jy" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/landmark/event_spawn,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/turf/open/floor/monotile/dark,
+/area/bridge)
 "kj" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/structure/cable{
@@ -397,15 +411,6 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
-/area/bridge)
-"ls" = (
-/obj/effect/turf_decal/siding/thinplating/dark/corner{
-	dir = 2
-	},
-/obj/machinery/door/firedoor,
-/turf/open/floor/plasteel/dark/side{
-	dir = 10
-	},
 /area/bridge)
 "lu" = (
 /obj/machinery/airalarm{
@@ -433,6 +438,13 @@
 "om" = (
 /turf/open/floor/plating/asteroid/airless,
 /area/asteroid/mining)
+"on" = (
+/obj/effect/turf_decal/siding/thinplating/dark/corner,
+/obj/machinery/door/firedoor,
+/turf/open/floor/plasteel/dark/side{
+	dir = 10
+	},
+/area/bridge)
 "oM" = (
 /obj/item/pickaxe/mini,
 /turf/open/floor/plating/asteroid/airless,
@@ -958,6 +970,15 @@
 /obj/machinery/door/firedoor/border_only,
 /turf/open/floor/plating,
 /area/engine/gravity_generator)
+"wC" = (
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 8
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/bridge)
 "wE" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -992,17 +1013,6 @@
 	},
 /turf/open/floor/plating,
 /area/engine/storage_shared)
-"wO" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/effect/landmark/event_spawn,
-/turf/open/floor/monotile/dark,
-/area/bridge)
 "wW" = (
 /obj/machinery/computer/cargo{
 	dir = 4
@@ -1563,6 +1573,18 @@
 	},
 /turf/open/space/basic,
 /area/solar/port)
+"Gs" = (
+/obj/structure/table/reinforced,
+/obj/machinery/light{
+	dir = 4;
+	pixel_x = 32
+	},
+/obj/machinery/computer/cryopod{
+	dir = 8;
+	pixel_x = 32
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
 "Gt" = (
 /obj/effect/spawner/structure/window/reinforced/shutter,
 /turf/open/floor/plating,
@@ -2192,6 +2214,13 @@
 /obj/machinery/computer/rdconsole/core,
 /turf/open/floor/plasteel,
 /area/science/research)
+"Pz" = (
+/obj/structure/chair/office{
+	dir = 4
+	},
+/obj/machinery/airalarm/directional/south,
+/turf/open/floor/carpet/royalblack,
+/area/bridge)
 "PE" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden,
 /turf/open/floor/plating,
@@ -18354,7 +18383,7 @@ Fg
 aL
 jg
 lq
-lq
+wC
 lq
 Ys
 eU
@@ -18611,7 +18640,7 @@ KQ
 sg
 Fs
 aN
-wO
+jy
 bJ
 Dj
 KH
@@ -18866,9 +18895,9 @@ qF
 sa
 sa
 aM
-ls
+on
 sh
-lP
+cX
 lP
 vU
 Aa
@@ -19126,13 +19155,13 @@ sa
 sW
 GE
 bB
-bB
+Pz
 sW
 dj
 Cz
 Rk
 Ft
-bu
+eF
 vH
 Sv
 Nd
@@ -19378,7 +19407,7 @@ LS
 LS
 qE
 tn
-cq
+Gs
 tn
 sW
 fS
