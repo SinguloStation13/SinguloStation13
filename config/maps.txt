@@ -18,8 +18,34 @@ map constructionstation
 	votable
 endmap
 
+<<<<<<< HEAD
 map cryostation
 	voteable
+=======
+map pubbystation
+	maxplayers 50
+	votable
+endmap
+
+map deltastation
+	minplayers 40
+	votable
+endmap
+
+map kilostation
+	maxplayers 50
+	votable
+endmap
+
+map glowstation
+	minplayers 40
+	votable
+endmap
+
+map flandstation
+	minplayers 40
+	votable
+>>>>>>> 08ae826a14 (NEW Terrestrial Map - Glowstation 0.9 [MDB IGNORE] (#7907))
 endmap
 
 #Debug Maps, you probably don't want these enabled.
