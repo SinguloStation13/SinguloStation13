@@ -112,7 +112,7 @@
 /obj/structure/transit_tube_pod/proc/after_pipe_transfer(datum/move_loop/move/source)
 	SIGNAL_HANDLER
 
-	density = current_tube.density
+	set_density(current_tube.density)
 	if(current_tube.should_stop_pod(src, source.direction))
 		current_tube.pod_stopped(src, dir)
 		qdel(source)
@@ -147,8 +147,8 @@
 
 /obj/structure/transit_tube_pod/proc/engine_finish()
 	SIGNAL_HANDLER
-	density = TRUE
-	moving = FALSE
+	set_density(TRUE)
+	moving = 0
 
 	var/obj/structure/transit_tube/TT = locate(/obj/structure/transit_tube) in loc
 	if(!TT || (!(dir in TT.tube_dirs) && !(turn(dir,180) in TT.tube_dirs)))	//landed on a turf without transit tube or not in our direction
