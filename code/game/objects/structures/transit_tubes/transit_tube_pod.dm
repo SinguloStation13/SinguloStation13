@@ -147,13 +147,8 @@
 
 /obj/structure/transit_tube_pod/proc/engine_finish()
 	SIGNAL_HANDLER
-<<<<<<< HEAD
-	density = TRUE
-	moving = FALSE
-=======
 	set_density(TRUE)
 	moving = 0
->>>>>>> ed738bdc2d (stuff (#8272))
 
 	var/obj/structure/transit_tube/TT = locate(/obj/structure/transit_tube) in loc
 	if(!TT || (!(dir in TT.tube_dirs) && !(turn(dir,180) in TT.tube_dirs)))	//landed on a turf without transit tube or not in our direction
