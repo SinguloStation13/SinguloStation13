@@ -8,6 +8,7 @@
 		#include "map_files\debug\runtimestation.dmm"
 		#include "map_files\ConstructionStation\ConstructionStation.dmm"
 		#include "map_files\CryoStation\CryoStation.dmm"
+		#include "map_files\FabricationStation\FabricationStation.dmm"
 		#ifdef CIBUILDING
 			#include "templates.dm"
 		#endif
