@@ -243,7 +243,7 @@ GLOBAL_LIST_EMPTY(radial_menus)
 			if (choice_datum.info)
 				var/obj/effect/abstract/info/info_button = new(E, choice_datum.info)
 				info_button.plane = ABOVE_HUD_PLANE
-				info_button.layer = RADIAL_BACKGROUND_LAYER
+				info_button.layer = RADIAL_CONTENT_LAYER
 				E.vis_contents += info_button
 
 /datum/radial_menu/New()
@@ -303,8 +303,14 @@ GLOBAL_LIST_EMPTY(radial_menus)
 		return
 	current_user = M.client
 	//Blank
+<<<<<<< HEAD
 	menu_holder = image(icon='icons/effects/effects.dmi',loc=anchor,icon_state="nothing")
 	menu_holder.appearance_flags |= KEEP_APART//|RESET_ALPHA|RESET_COLOR|RESET_TRANSFORM //Singulostation edit - Fix radial menu transparency with chameleon + changed in #474 (upstream #8082), leaving here in case the bug persists
+=======
+	menu_holder = image(icon='icons/effects/effects.dmi',loc=anchor,icon_state="nothing", layer = RADIAL_BACKGROUND_LAYER)
+	menu_holder.plane = ABOVE_HUD_PLANE
+	menu_holder.appearance_flags |= KEEP_APART
+>>>>>>> 9318c1a43e (moves rcd content to its proper layer (#8339))
 	menu_holder.vis_contents += elements + close_button
 	current_user.images += menu_holder
 
