@@ -6902,7 +6902,7 @@
 /area/engine/atmospherics_engine)
 "aJH" = (
 /obj/structure/sign/warning/electricshock,
-/turf/closed/wall/r_wall,
+/turf/closed/wall,
 /area/maintenance/solars/port/fore)
 "aJL" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -7146,9 +7146,11 @@
 /turf/open/floor/plasteel/dark,
 /area/security/execution/education)
 "aLb" = (
-/obj/structure/lattice/catwalk,
 /obj/item/wrench,
-/turf/open/space,
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
+	},
+/turf/open/floor/plating/airless,
 /area/space/nearstation)
 "aLd" = (
 /obj/machinery/status_display/evac{
@@ -7473,7 +7475,7 @@
 /area/security/prison)
 "aMt" = (
 /obj/structure/sign/warning/fire,
-/turf/closed/wall/r_wall,
+/turf/closed/wall,
 /area/maintenance/disposal/incinerator)
 "aMu" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
@@ -7485,7 +7487,7 @@
 /obj/machinery/atmospherics/pipe/simple/general/visible{
 	dir = 4
 	},
-/turf/closed/wall/r_wall,
+/turf/closed/wall,
 /area/maintenance/disposal/incinerator)
 "aMw" = (
 /obj/machinery/atmospherics/components/binary/pump{
@@ -7762,6 +7764,11 @@
 	icon_state = "0-8"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/camera{
+	c_tag = "Turbine Chamber";
+	network = list("turbine");
+	pixel_x = 22
+	},
 /turf/open/floor/engine/vacuum,
 /area/maintenance/disposal/incinerator)
 "aNR" = (
@@ -8004,11 +8011,11 @@
 /turf/open/floor/engine/vacuum,
 /area/maintenance/disposal/incinerator)
 "aPy" = (
-/obj/structure/sign/warning/fire,
 /obj/machinery/atmospherics/pipe/simple/general/visible{
 	dir = 4
 	},
-/turf/closed/wall/r_wall,
+/obj/effect/spawner/structure/window/depleteduranium,
+/turf/open/floor/plating/airless,
 /area/maintenance/disposal/incinerator)
 "aPz" = (
 /obj/machinery/atmospherics/components/binary/pump{
@@ -8397,13 +8404,13 @@
 /turf/open/floor/plating,
 /area/security/execution/education)
 "aRm" = (
-/obj/structure/lattice/catwalk,
 /obj/structure/disposaloutlet{
 	dir = 8
 	},
 /obj/structure/disposalpipe/trunk{
 	dir = 4
 	},
+/obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plating/airless,
 /area/space/nearstation)
 "aRn" = (
@@ -8411,9 +8418,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 10
 	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 10
-	},
+/obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plating/airless,
 /area/maintenance/disposal/incinerator)
 "aRo" = (
@@ -34298,6 +34303,12 @@
 /obj/effect/turf_decal/tile/brown/half/contrasted,
 /turf/open/floor/plasteel,
 /area/maintenance/disposal)
+"dys" = (
+/obj/machinery/atmospherics/components/trinary/filter{
+	dir = 8
+	},
+/turf/open/space/basic,
+/area/space)
 "dyt" = (
 /obj/structure/window/reinforced{
 	dir = 4
@@ -48252,6 +48263,9 @@
 /obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
 /turf/open/floor/plasteel,
 /area/quartermaster/sorting)
+"gXZ" = (
+/turf/closed/wall,
+/area/maintenance/disposal/incinerator)
 "gYd" = (
 /obj/effect/turf_decal/tile/neutral/half/contrasted{
 	dir = 1
@@ -66212,7 +66226,6 @@
 	icon_state = "1-8"
 	},
 /obj/structure/disposalpipe/segment,
-/obj/machinery/atmospherics/components/binary/valve,
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
 	},
@@ -66222,6 +66235,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 9
 	},
+/obj/machinery/atmospherics/pipe/simple/general/visible,
 /turf/open/floor/plasteel,
 /area/maintenance/disposal/incinerator)
 "noh" = (
@@ -113835,7 +113849,7 @@ aac
 aac
 aaa
 aaa
-aaa
+dys
 aaa
 aaa
 aaa
@@ -116156,11 +116170,11 @@ avY
 ask
 ask
 aad
-abj
-abj
-abj
-abj
-abj
+bTl
+aaa
+bTl
+bTl
+bTl
 aad
 aad
 aaa
@@ -116414,10 +116428,10 @@ aad
 apK
 aad
 aLb
-aad
+ctm
 aaa
-aad
-abj
+cqo
+ctm
 aaa
 aad
 aad
@@ -116670,7 +116684,7 @@ aad
 aFp
 aIj
 aFp
-abj
+ckw
 aMt
 aNO
 aMt
@@ -116927,10 +116941,10 @@ aad
 xUp
 rYW
 aFp
-abj
-aFr
+ckw
+gXZ
 aNP
-aFr
+gXZ
 aRn
 aSP
 aaa
@@ -117184,11 +117198,11 @@ aFp
 aFp
 jAQ
 aFp
-aFr
-aFr
+gXZ
+gXZ
 aNQ
-aFr
-aFr
+gXZ
+gXZ
 aSQ
 wiQ
 wiQ
@@ -117441,7 +117455,7 @@ aFq
 aGM
 kDw
 oVf
-aFr
+gXZ
 aMu
 aNR
 aPx
@@ -117698,11 +117712,11 @@ aFq
 aGN
 xOv
 eSj
-aFr
-aMv
+gXZ
+aPy
 aNS
 aPy
-aFr
+gXZ
 afB
 aRF
 aRF
@@ -117955,11 +117969,11 @@ aFq
 aGO
 uWt
 gCf
-aFr
+gXZ
 aMw
 vKl
 aPz
-aFr
+gXZ
 hFo
 aRF
 aWt
@@ -118209,14 +118223,14 @@ wiQ
 aad
 aad
 aFq
-aFq
+xUp
 pRW
 aJH
-aFr
+gXZ
 aMv
 aie
 aPy
-aFr
+gXZ
 aSQ
 aRF
 aWu
@@ -118473,7 +118487,7 @@ aLd
 aMy
 uQc
 aPA
-aFr
+gXZ
 aSR
 aRF
 aWv
@@ -118987,7 +119001,7 @@ aLf
 aMA
 aNX
 aPC
-aFr
+gXZ
 aad
 aad
 aWx
