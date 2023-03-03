@@ -10241,11 +10241,6 @@
 /obj/effect/turf_decal/tile/yellow/half/contrasted,
 /turf/open/floor/plasteel/white,
 /area/medical/chemistry)
-"diw" = (
-/obj/effect/turf_decal/tile/purple/opposingcorners,
-/obj/machinery/firealarm/directional/west,
-/turf/open/floor/plasteel/white,
-/area/science/research)
 "diA" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 8
@@ -103693,7 +103688,6 @@ tZF
 tZF
 tZF
 tZF
-diw
 hdz
 lIO
 lIO
@@ -103760,6 +103754,7 @@ kbJ
 bBo
 aMT
 aQG
+aMT
 aMT
 aMT
 aMT
