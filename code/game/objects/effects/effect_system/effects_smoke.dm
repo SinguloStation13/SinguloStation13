@@ -225,9 +225,13 @@
 		for(var/atom/movable/AM in T)
 			if(AM.type == src.type)
 				continue
+<<<<<<< HEAD
 			if(T.intact && AM.level == 1) //hidden under the floor
 				continue
 			reagents.expose(AM, TOUCH, fraction)
+=======
+			reagents.reaction(AM, TOUCH, fraction)
+>>>>>>> e5a9449168 (Ports atmos hide rework and plumbing mapping (#8266))
 
 		reagents.expose(T, TOUCH, fraction)
 		return 1
