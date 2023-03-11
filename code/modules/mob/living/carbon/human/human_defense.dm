@@ -671,7 +671,11 @@
 	if(src == M)
 		if(has_status_effect(STATUS_EFFECT_CHOKINGSTRAND))
 			to_chat(src, "<span class='notice'>You attempt to remove the durathread strand from around your neck.</span>")
+<<<<<<< HEAD
 			if(do_after(src, 35, null, src))
+=======
+			if(do_after(src, 35, src, timed_action_flags = IGNORE_HELD_ITEM))
+>>>>>>> 804a0866c9 (Ports "Implements timed_action_flags for do_after-like procs" (#8635))
 				to_chat(src, "<span class='notice'>You succesfuly remove the durathread strand.</span>")
 				remove_status_effect(STATUS_EFFECT_CHOKINGSTRAND)
 			return

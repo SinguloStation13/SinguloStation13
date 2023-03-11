@@ -268,7 +268,11 @@
 	var/turf/T = get_turf(A)
 	var/list/things = contents()
 	var/datum/progressbar/progress = new(M, length(things), T)
+<<<<<<< HEAD
 	while (do_after(M, 10, TRUE, T, FALSE, CALLBACK(src, .proc/mass_remove_from_storage, T, things, progress)))
+=======
+	while (do_after(M, 1 SECONDS, T, NONE, FALSE, CALLBACK(src, PROC_REF(mass_remove_from_storage), T, things, progress)))
+>>>>>>> 804a0866c9 (Ports "Implements timed_action_flags for do_after-like procs" (#8635))
 		stoplag(1)
 	qdel(progress)
 

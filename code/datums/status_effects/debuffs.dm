@@ -161,7 +161,7 @@
 	if(usr != owner)
 		return
 	to_chat(owner, "<span class='notice'>You attempt to remove the durathread strand from around your neck.</span>")
-	if(do_after(owner, 35, null, owner))
+	if(do_after(owner, 35, target = owner, timed_action_flags = IGNORE_HELD_ITEM))
 		if(isliving(owner))
 			var/mob/living/L = owner
 			to_chat(owner, "<span class='notice'>You succesfuly remove the durathread strand.</span>")
@@ -216,7 +216,11 @@
 		if(istype(syringestatus, /datum/status_effect/syringe))
 			var/obj/item/reagent_containers/syringe/syringe = syringestatus.syringe
 			to_chat(owner, "<span class='notice'>You begin carefully pulling the syringe out.</span>")
+<<<<<<< HEAD
 			if(do_after(C, 20, null, owner))
+=======
+			if(do_after(C, 20, target = owner, timed_action_flags = IGNORE_HELD_ITEM))
+>>>>>>> 804a0866c9 (Ports "Implements timed_action_flags for do_after-like procs" (#8635))
 				to_chat(C, "<span class='notice'>You succesfuly remove the syringe.</span>")
 				syringe.forceMove(C.loc)
 				C.put_in_hands(syringe)
