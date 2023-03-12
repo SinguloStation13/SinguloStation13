@@ -70,6 +70,7 @@
 	C.adjustPlasma(20)
 	return ..()
 
+<<<<<<< HEAD
 /datum/reagent/toxin/plasma/expose_obj(obj/O, reac_volume)
 	if((!O) || (!reac_volume))
 		return 0
@@ -84,6 +85,10 @@
 
 /datum/reagent/toxin/plasma/expose_mob(mob/living/M, methods=TOUCH, reac_volume)//Splashing people with plasma is stronger than fuel!
 	if(methods & (TOUCH|VAPOR))
+=======
+/datum/reagent/toxin/plasma/reaction_mob(mob/living/M, method=TOUCH, reac_volume)//Splashing people with plasma is stronger than fuel!
+	if(method == TOUCH || method == VAPOR)
+>>>>>>> a62e0cdba9 (Overhauls/adjusts solid plasma ignition in many things (#8541))
 		M.adjust_fire_stacks(reac_volume / 5)
 		return
 	..()
