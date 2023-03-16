@@ -191,7 +191,12 @@
 #include "code\__DEFINES\dcs\signals\signals_obj\signals_machine\signals_aquarium.dm"
 #include "code\__DEFINES\dcs\signals\signals_obj\signals_machine\signals_machinery.dm"
 #include "code\__DEFINES\dcs\signals\signals_obj\signals_machine\signals_supermatter.dm"
+<<<<<<< HEAD
 #include "code\__DEFINES\research\anomalies.dm"
+=======
+#include "code\__DEFINES\power\apc_defines.dm"
+#include "code\__DEFINES\power\power.dm"
+>>>>>>> 0695472b0d (splitters (#8697))
 #include "code\__HELPERS\_extools_api.dm"
 #include "code\__HELPERS\_lists.dm"
 #include "code\__HELPERS\_logging.dm"
@@ -3016,7 +3021,6 @@
 #include "code\modules\pool\components\swimming_ethereal.dm"
 #include "code\modules\pool\components\swimming_felinid.dm"
 #include "code\modules\pool\components\swimming_golem.dm"
-#include "code\modules\power\apc.dm"
 #include "code\modules\power\cable.dm"
 #include "code\modules\power\cell.dm"
 #include "code\modules\power\floodlight.dm"
@@ -3036,6 +3040,21 @@
 #include "code\modules\power\antimatter\containment_jar.dm"
 #include "code\modules\power\antimatter\control.dm"
 #include "code\modules\power\antimatter\shielding.dm"
+<<<<<<< HEAD
+=======
+#include "code\modules\power\apc\apc_appearance.dm"
+#include "code\modules\power\apc\apc_attack.dm"
+#include "code\modules\power\apc\apc_main.dm"
+#include "code\modules\power\apc\apc_malf.dm"
+#include "code\modules\power\apc\apc_mapping.dm"
+#include "code\modules\power\apc\apc_power_proc.dm"
+#include "code\modules\power\apc\apc_tool_act.dm"
+#include "code\modules\power\lighting\_light_defines.dm"
+#include "code\modules\power\lighting\light.dm"
+#include "code\modules\power\lighting\light_construct.dm"
+#include "code\modules\power\lighting\light_items.dm"
+#include "code\modules\power\lighting\light_wallframes.dm"
+>>>>>>> 0695472b0d (splitters (#8697))
 #include "code\modules\power\singularity\anomaly.dm"
 #include "code\modules\power\singularity\boh_tear.dm"
 #include "code\modules\power\singularity\collector.dm"
