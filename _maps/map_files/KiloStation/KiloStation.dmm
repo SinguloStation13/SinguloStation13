@@ -10954,6 +10954,9 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/neutral,
+/obj/structure/noticeboard{
+	pixel_y = 30
+	},
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/heads/hop)
 "asq" = (
@@ -12567,13 +12570,7 @@
 /turf/open/floor/plasteel,
 /area/bridge)
 "auY" = (
-/obj/structure/noticeboard{
-	pixel_y = 30
-	},
-/obj/machinery/camera{
-	c_tag = "Head of Personnel's Office";
-	name = "command camera"
-	},
+/obj/machinery/vending/job_disk,
 /turf/open/floor/wood,
 /area/crew_quarters/heads/hop)
 "auZ" = (
@@ -13152,6 +13149,10 @@
 /obj/machinery/pdapainter,
 /obj/structure/sign/poster/official/ian{
 	pixel_y = 32
+	},
+/obj/machinery/camera{
+	c_tag = "Head of Personnel's Office";
+	name = "command camera"
 	},
 /turf/open/floor/wood,
 /area/crew_quarters/heads/hop)
