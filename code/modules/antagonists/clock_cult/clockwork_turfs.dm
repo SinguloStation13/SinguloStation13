@@ -75,7 +75,7 @@
 		var/previouscolor = color
 		color = "#960000"
 		animate(src, color = previouscolor, time = 8)
-		addtimer(CALLBACK(src, /atom/proc/update_atom_colour), 8)
+		addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, update_atom_colour)), 8)
 
 /turf/closed/wall/clockwork/ratvar_act()
 	return 0
@@ -229,7 +229,7 @@
 		var/previouscolor = color
 		color = "#960000"
 		animate(src, color = previouscolor, time = 8)
-		addtimer(CALLBACK(src, /atom/proc/update_atom_colour), 8)
+		addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, update_atom_colour)), 8)
 
 /turf/open/floor/clockwork/ratvar_act(force, ignore_mobs)
 	return 0
@@ -381,7 +381,7 @@
 		var/previouscolor = color
 		color = "#960000"
 		animate(src, color = previouscolor, time = 8)
-		addtimer(CALLBACK(src, /atom/proc/update_atom_colour), 8)
+		addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, update_atom_colour)), 8)
 
 /obj/machinery/door/airlock/clockwork/ratvar_act()
 	return 0
@@ -498,7 +498,7 @@
 		var/previouscolor = color
 		color = "#960000"
 		animate(src, color = previouscolor, time = 8)
-		addtimer(CALLBACK(src, /atom/proc/update_atom_colour), 8)
+		addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, update_atom_colour)), 8)
 
 /obj/structure/grille/ratvar/ratvar_act()
 	return
@@ -552,7 +552,7 @@
 		var/previouscolor = color
 		color = "#960000"
 		animate(src, color = previouscolor, time = 8)
-		addtimer(CALLBACK(src, /atom/proc/update_atom_colour), 8)
+		addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, update_atom_colour)), 8)
 
 /obj/structure/window/reinforced/clockwork/ratvar_act()
 	return FALSE
