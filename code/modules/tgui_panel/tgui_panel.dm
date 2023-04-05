@@ -17,11 +17,16 @@ GLOBAL_LIST_EMPTY(tgui_panels)
 	/// Owner of this tgui panel's CKEY, so it can be looked up later via GLOB.tgui_panels
 	var/owner_ckey
 
-/datum/tgui_panel/New(client/client)
+/datum/tgui_panel/New(client/client, id)
 	src.client = client
 	owner_ckey = ckey(client.ckey)
+<<<<<<< HEAD
 	window = new(client, "browseroutput")
 	window.subscribe(src, .proc/on_message)
+=======
+	window = new(client, id)
+	window.subscribe(src, PROC_REF(on_message))
+>>>>>>> cc88822153 (TGUI Say (#8404))
 	GLOB.tgui_panels += src
 
 /datum/tgui_panel/Del()
@@ -49,6 +54,7 @@ GLOBAL_LIST_EMPTY(tgui_panels)
 	initialized_at = world.time
 	// Perform a clean initialization
 	window.initialize(assets = list(
+		strict_mode = TRUE,
 		get_asset_datum(/datum/asset/simple/tgui_panel),
 	))
 	window.send_asset(get_asset_datum(/datum/asset/simple/namespaced/fontawesome))
