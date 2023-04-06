@@ -101,10 +101,18 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 	discord_ooc_tag = discord_ooc_tag ? "\[[discord_ooc_tag]\] " : ""
 	switch(type)
 		if(CHAT_TYPE_OOC)
-			discordsendmsg("ooc", "[discord_ooc_tag](OOC) **[sayer]:** [msg]")
+			sendooc2ext("[discord_ooc_tag](OOC) **[sayer]:** [msg]")
 		if(CHAT_TYPE_DEADCHAT) // don't send these until a round is finished
 			if(SSticker.current_state == GAME_STATE_FINISHED)
+<<<<<<< HEAD
 				discordsendmsg("ooc", "[discord_ooc_tag](Dead) **[sayer]:** [msg]")
+=======
+				var/regex/R = regex("<span class=' '>(\[\\s\\S.\]+)</span>\"")
+				if(!R.Find(msg))
+					return
+				msg = R.group[1] // wipes some bad dchat format
+				sendooc2ext("[discord_ooc_tag](Dead) **[sayer]:** [msg]")
+>>>>>>> 82e179e2d9 (Replace Discord webhook proxy with RUSTG POST (#8763))
 
 /proc/toggle_ooc(toggle = null)
 	if(toggle != null) //if we're specifically en/disabling ooc
