@@ -3,6 +3,7 @@
 /mob/living/carbon/proc/monkeyize(tr_flags = (TR_KEEPITEMS | TR_KEEPVIRUS | TR_DEFAULTMSG | TR_KEEPAI), skip_animation = FALSE)
 	if (notransform || transformation_timer)
 		return
+<<<<<<< HEAD
 
 	var/list/stored_implants = list()
 
@@ -11,6 +12,8 @@
 			var/obj/item/implant/IMP = X
 			stored_implants += IMP
 			IMP.removed(src, 1, 1)
+=======
+>>>>>>> 8e1587e76b (Monkey transformations now properly carry over your implants. (#8701))
 
 	var/list/missing_bodyparts_zones = get_missing_limbs()
 	var/list/int_organs = list()
@@ -74,11 +77,10 @@
 		O.updatehealth()
 		O.radiation = radiation
 
-	//re-add implants to new mob
-	if (tr_flags & TR_KEEPIMPLANTS)
-		for(var/Y in implants)
-			var/obj/item/implant/IMP = Y
-			IMP.implant(O, null, 1)
+	//move implants to new mob
+	if(tr_flags & TR_KEEPIMPLANTS)
+		for(var/obj/item/implant/IMP as anything in implants)
+			IMP.transfer_implant(src, O)
 
 	//re-add organs to new mob. this order prevents moving the mind to a brain at any point
 	if(tr_flags & TR_KEEPORGANS)
@@ -158,16 +160,8 @@
 		return
 	//Handle items on mob
 
-	//first implants & organs
-	var/list/stored_implants = list()
+	//first organs
 	var/list/int_organs = list()
-
-	if (tr_flags & TR_KEEPIMPLANTS)
-		for(var/X in implants)
-			var/obj/item/implant/IMP = X
-			stored_implants += IMP
-			IMP.removed(src, 1, 1)
-
 	var/list/missing_bodyparts_zones = get_missing_limbs()
 
 	var/obj/item/cavity_object
@@ -232,11 +226,10 @@
 		O.updatehealth()
 		O.radiation = radiation
 
-	//re-add implants to new mob
-	if (tr_flags & TR_KEEPIMPLANTS)
-		for(var/Y in implants)
-			var/obj/item/implant/IMP = Y
-			IMP.implant(O, null, 1)
+	//move implants to new mob
+	if(tr_flags & TR_KEEPIMPLANTS)
+		for(var/obj/item/implant/IMP as anything in implants)
+			IMP.transfer_implant(src, O)
 
 	//re-add organs to new mob. this order prevents moving the mind to a brain at any point
 	if(tr_flags & TR_KEEPORGANS)
@@ -308,14 +301,7 @@
 	if (notransform || transformation_timer)
 		return
 
-	var/list/stored_implants = list()
 	var/list/int_organs = list()
-
-	if (tr_flags & TR_KEEPIMPLANTS)
-		for(var/X in implants)
-			var/obj/item/implant/IMP = X
-			stored_implants += IMP
-			IMP.removed(src, 1, 1)
 
 	var/list/missing_bodyparts_zones = get_missing_limbs()
 
@@ -385,11 +371,10 @@
 		O.updatehealth()
 		O.radiation = radiation
 
-	//re-add implants to new mob
-	if (tr_flags & TR_KEEPIMPLANTS)
-		for(var/Y in implants)
-			var/obj/item/implant/IMP = Y
-			IMP.implant(O, null, 1)
+	//move implants to new mob
+	if(tr_flags & TR_KEEPIMPLANTS)
+		for(var/obj/item/implant/IMP as anything in implants)
+			IMP.transfer_implant(src, O)
 
 	if(tr_flags & TR_KEEPORGANS)
 		for(var/X in O.internal_organs)
