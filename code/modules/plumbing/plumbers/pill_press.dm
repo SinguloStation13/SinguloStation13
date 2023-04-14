@@ -36,10 +36,18 @@
 	//expertly copypasted from chemmasters
 	if(!length(pill_styles))
 		for (var/each_pill_shape in PILL_SHAPE_LIST_WITH_DUMMY)
+<<<<<<< HEAD
 			var/list/SL = list()
 			SL["id"] = each_pill_shape
 			SL["pill_icon_name"] = each_pill_shape
 			pill_styles += list(SL)
+=======
+			var/list/style_list = list()
+			style_list["id"] = each_pill_shape
+			style_list["pill_icon_name"] = each_pill_shape
+			pill_styles += list(style_list)
+	update_appearance() //so the input/output pipes will overlay properly during init
+>>>>>>> 4912f6e4ed (Fixes plumbing pipes (#8866))
 
 /obj/machinery/plumbing/pill_press/process()
 	if(machine_stat & NOPOWER)
