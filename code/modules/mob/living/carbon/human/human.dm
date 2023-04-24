@@ -636,7 +636,14 @@
 	remove_atom_colour(TEMPORARY_COLOUR_PRIORITY, "#000000")
 	cut_overlay(MA)
 
+<<<<<<< HEAD
 /mob/living/carbon/human/canUseTopic(atom/movable/M, be_close=FALSE, no_dextery=FALSE, no_tk=FALSE)
+=======
+/mob/living/carbon/human/can_interact_with(atom/A, treat_mob_as_adjacent)
+	return ..() || (dna.check_mutation(TK) && tkMaxRangeCheck(src, A))
+
+/mob/living/carbon/human/canUseTopic(atom/movable/M, be_close=FALSE, no_dexterity=FALSE, no_tk=FALSE)
+>>>>>>> f80d904ca7 (Telekinesis fixes (#8898))
 	if(!(mobility_flags & MOBILITY_UI))
 		to_chat(src, "<span class='warning'>You can't do that right now!</span>")
 		return FALSE
