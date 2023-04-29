@@ -56,6 +56,7 @@
 	armor = list("melee" = 25, "bullet" = 10, "laser" = 25, "energy" = 10, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 45, "stamina" = 40)
 	cold_protection = CHEST|GROIN|LEGS|ARMS
 	heat_protection = CHEST|GROIN|LEGS|ARMS
+	supports_variations = DIGITIGRADE_VARIATION_NO_NEW_ICON
 
 /obj/item/clothing/suit/det_suit/Initialize(mapload)
 	. = ..()
