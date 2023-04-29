@@ -319,6 +319,8 @@ B --><-- A
 	return T ? T.z : A.z
 
 //Proc currently not used
+// if its not used why is it not commented out??
+/*
 /proc/get_step_towards2(atom/ref , atom/trg)
 	var/base_dir = get_dir(ref, get_step_towards(ref,trg))
 	var/turf/temp = get_step_towards(ref,trg)
@@ -350,6 +352,7 @@ B --><-- A
 	else
 		return get_step(ref, base_dir)
 
+<<<<<<< HEAD:code/__HELPERS/atmos.dm
 /// same as do_mob except for movables and it allows both to drift and doesn't draw progressbar
 /proc/do_atom(atom/movable/user , atom/movable/target, time = 30, uninterruptible = 0,datum/callback/extra_checks = null)
 	if(!user || !target)
@@ -387,3 +390,6 @@ B --><-- A
 		if((!drifting && user.loc != user_loc) || (!target_drifting && target.loc != target_loc) || (extra_checks && !extra_checks.Invoke()))
 			. = FALSE
 			break
+=======
+*/
+>>>>>>> eb44569651 (Fixes exploit with framestacking, is_blocked_turf optimization, adds unit test (#8837)):code/__HELPERS/atoms.dm
