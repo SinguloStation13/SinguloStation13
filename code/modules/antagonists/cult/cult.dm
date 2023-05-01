@@ -274,7 +274,12 @@
 			if(B.current)
 				SEND_SOUND(B.current, 'sound/hallucinations/i_see_you2.ogg')
 				to_chat(B.current, "<span class='cultlarge'>The veil weakens as your cult grows, your eyes begin to glow...")
+<<<<<<< HEAD
 				addtimer(CALLBACK(src, .proc/rise, B.current), 200)
+=======
+				log_game("The blood cult was given red eyes at cult population of [cultplayers].")
+				addtimer(CALLBACK(src, PROC_REF(rise), B.current), 200)
+>>>>>>> 7fc7842433 (Adds more logging to blood and cult logs (#8961))
 		cult_risen = TRUE
 
 	if(ratio > CULT_ASCENDENT && !cult_ascendent)
@@ -282,7 +287,12 @@
 			if(B.current)
 				SEND_SOUND(B.current, 'sound/hallucinations/im_here1.ogg')
 				to_chat(B.current, "<span class='cultlarge'>Your cult is ascendent and the red harvest approaches - you cannot hide your true nature for much longer!!")
+<<<<<<< HEAD
 				addtimer(CALLBACK(src, .proc/ascend, B.current), 200)
+=======
+				log_game("The blood cult was given halos at cult population of [cultplayers].")
+				addtimer(CALLBACK(src, PROC_REF(ascend), B.current), 200)
+>>>>>>> 7fc7842433 (Adds more logging to blood and cult logs (#8961))
 		cult_ascendent = TRUE
 
 

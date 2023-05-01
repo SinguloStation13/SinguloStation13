@@ -137,6 +137,7 @@ GLOBAL_LIST_INIT(clockwork_portals, list())
 	,"Central Command Higher Dimensional Affairs", 'sound/magic/clockwork/ark_activation.ogg')
 	sound_to_playing_players(volume = 10, channel = CHANNEL_JUSTICAR_ARK, S = sound('sound/effects/clockcult_gateway_charging.ogg', TRUE))
 	GLOB.ratvar_arrival_tick = world.time + 6000 + grace_time
+	log_game("The clock cult has begun opening the Ark of the Clockwork Justiciar.")
 
 /obj/structure/destructible/clockwork/massive/celestial_gateway/proc/mass_recall(add_overlay = FALSE)
 	var/list/spawns = GLOB.servant_spawns.Copy()
@@ -164,7 +165,12 @@ GLOBAL_LIST_INIT(clockwork_portals, list())
 	for(var/i in 1 to 100)
 		var/turf/T = get_random_station_turf()
 		GLOB.clockwork_portals += new /obj/effect/portal/wormhole/clockcult(T, null, 0, null, FALSE)
+<<<<<<< HEAD
 	addtimer(CALLBACK(src, .proc/begin_activation), 2400)
+=======
+	log_game("The opening of the Ark of the Clockwork Justiciar has caused portals to open around the station.")
+	addtimer(CALLBACK(src, PROC_REF(begin_activation)), 2400)
+>>>>>>> 7fc7842433 (Adds more logging to blood and cult logs (#8961))
 
 /obj/structure/destructible/clockwork/massive/celestial_gateway/proc/begin_activation()
 	icon_state = "clockwork_gateway_active"
