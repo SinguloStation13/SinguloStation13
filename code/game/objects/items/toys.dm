@@ -309,6 +309,7 @@
 	attack_verb = list("pricked", "absorbed", "gored")
 	w_class = WEIGHT_CLASS_SMALL
 	resistance_flags = FLAMMABLE
+	item_flags = ISWEAPON
 
 /*
  * Batong
@@ -323,6 +324,7 @@
 	righthand_file = 'icons/mob/inhands/equipment/security_righthand.dmi'
 	attack_verb = list("batonged", "stunned", "hit")
 	w_class = WEIGHT_CLASS_SMALL
+	item_flags = ISWEAPON
 
 /obj/item/toy/windupToolbox
 	name = "windup toolbox"
@@ -337,6 +339,7 @@
 	drop_sound = 'sound/items/handling/toolbox_drop.ogg'
 	pickup_sound = 'sound/items/handling/toolbox_pickup.ogg'
 	attack_verb = list("robusted")
+	item_flags = ISWEAPON
 
 /obj/item/toy/windupToolbox/attack_self(mob/user)
 	if(!active)
@@ -385,6 +388,7 @@
 	attack_verb = list("attacked", "struck", "hit")
 	block_upgrade_walk = 0
 	block_level = 0
+	item_flags = ISWEAPON
 
 /obj/item/dualsaber/toy/hit_reaction(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", final_block_chance = 0, damage = 0, attack_type = MELEE_ATTACK)
 	return 0
@@ -413,6 +417,7 @@
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced")
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	block_flags = BLOCKING_ACTIVE | BLOCKING_PROJECTILE //if it some how gets block level, katanas block projectiles for the meme
+	item_flags = ISWEAPON
 
 /*
  * Snap pops
@@ -1175,6 +1180,7 @@
 	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/swords_righthand.dmi'
 	w_class = WEIGHT_CLASS_SMALL
+	item_flags = ISWEAPON
 
 /*
  * Toy Cog
