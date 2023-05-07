@@ -7,3 +7,5 @@
 #define COMSIG_OBJ_DECONSTRUCT "obj_deconstruct"				//! from base of obj/deconstruct(): (disassembled)
 #define COMSIG_OBJ_SETANCHORED "obj_setanchored"				//! called in /obj/structure/setAnchored(): (value)
 
+/// from /obj/proc/make_unfrozen()
+#define COMSIG_OBJ_UNFREEZE "obj_unfreeze"

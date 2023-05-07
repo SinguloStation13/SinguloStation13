@@ -63,7 +63,15 @@ DEFINE_BITFIELD(obj_flags, list(
 	"ON_BLUEPRINTS" = ON_BLUEPRINTS,
 	"UNIQUE_RENAME" = UNIQUE_RENAME,
 	"USES_TGUI" = USES_TGUI,
+<<<<<<< HEAD
 	"FROZEN" = FROZEN,
+=======
+	"BLOCK_Z_OUT_DOWN" = BLOCK_Z_OUT_DOWN,
+	"BLOCK_Z_OUT_UP" = BLOCK_Z_OUT_UP,
+	"BLOCK_Z_IN_DOWN" = BLOCK_Z_IN_DOWN,
+	"BLOCK_Z_IN_UP" = BLOCK_Z_IN_UP,
+	"OBJ_EMPED" = OBJ_EMPED,
+>>>>>>> e992c40fb3 (Frozen optimizations and element (#8850))
 ))
 
 DEFINE_BITFIELD(datum_flags, list(
