@@ -32,8 +32,42 @@
 /obj/machinery/sleeper/Initialize(mapload)
 	. = ..()
 	occupant_typecache = GLOB.typecache_living
+<<<<<<< HEAD:code/game/machinery/Sleeper.dm
 	update_icon()
 	reset_chem_buttons()
+=======
+	update_appearance()
+	RefreshParts()
+
+	//Create roundstart chems
+	var/created_vials = 0
+	if (mapload)
+		// create pre-defined vials first and insert it into sleeper
+		for (var/each_vial in roundstart_vials)
+			if(created_vials >= max_vials)
+				stack_trace("Sleeper attempts to create roundstart chems more than [max_vials]")
+				break
+			if(!ispath(each_vial, /obj/item/reagent_containers))
+				stack_trace("Sleeper attempts to create weird item inside of it: [each_vial]")
+				continue
+			inserted_vials += new each_vial
+			created_vials++
+		// and then chemical bag with a single chem will go into sleeper
+		for (var/each_chem in roundstart_chems)
+			if(created_vials >= max_vials)
+				stack_trace("Sleeper attempts to create roundstart chems more than [max_vials]")
+				break
+			if(!ispath(each_chem, /datum/reagent))
+				stack_trace("Sleeper attempts to create not-chemical inside of it: [each_chem]")
+				continue
+			var/obj/item/reagent_containers/chem_bag/beaker = new(null)
+			beaker.reagents.add_reagent(each_chem, roundstart_chems[each_chem])
+			var/datum/reagent/main_reagent = beaker.reagents.reagent_list[1]
+			beaker.name = "[main_reagent.name] [beaker.name]"
+			beaker.label_name = main_reagent.name
+			inserted_vials += beaker
+			created_vials++
+>>>>>>> 8042b84968 (Sleeper Code improvement + UX + bluescreen fix (#8846)):code/game/machinery/sleeper.dm
 
 /obj/machinery/sleeper/RefreshParts()
 	var/E
@@ -51,11 +85,9 @@
 	reset_chem_buttons()
 	ui_update()
 
-/obj/machinery/sleeper/update_icon()
-	if(state_open)
-		icon_state = "[initial(icon_state)]-open"
-	else
-		icon_state = initial(icon_state)
+/obj/machinery/sleeper/update_icon_state()
+	. = ..()
+	icon_state = "[initial(icon_state)][state_open ? "-open" : ""]"
 
 /obj/machinery/sleeper/container_resist(mob/living/user)
 	visible_message("<span class='notice'>[occupant] emerges from [src]!</span>",
@@ -136,7 +168,7 @@
 /obj/machinery/sleeper/ui_requires_update(mob/user, datum/tgui/ui)
 	. = ..()
 
-	if(occupant)
+	if(isliving(occupant))
 		. = TRUE // Only autoupdate when occupied
 
 /obj/machinery/sleeper/ui_state(mob/user)
@@ -171,7 +203,6 @@
 
 /obj/machinery/sleeper/ui_data()
 	var/list/data = list()
-	data["occupied"] = occupant ? 1 : 0
 	data["open"] = state_open
 
 	data["chems"] = list()
@@ -180,42 +211,48 @@
 		data["chems"] += list(list("name" = R.name, "id" = R.type, "allowed" = chem_allowed(chem)))
 
 	data["occupant"] = list()
+	if(!isliving(occupant))
+		data["occupied"] = FALSE
+		return data
+	data["occupied"] = TRUE
 	var/mob/living/mob_occupant = occupant
-	if(mob_occupant)
-		data["occupant"]["name"] = mob_occupant.name
-		switch(mob_occupant.stat)
-			if(CONSCIOUS)
-				data["occupant"]["stat"] = "Conscious"
-				data["occupant"]["statstate"] = "good"
-			if(SOFT_CRIT)
-				data["occupant"]["stat"] = "Conscious"
-				data["occupant"]["statstate"] = "average"
-			if(UNCONSCIOUS)
-				data["occupant"]["stat"] = "Unconscious"
-				data["occupant"]["statstate"] = "average"
-			if(DEAD)
-				data["occupant"]["stat"] = "Dead"
-				data["occupant"]["statstate"] = "bad"
-		data["occupant"]["health"] = mob_occupant.health
-		data["occupant"]["maxHealth"] = mob_occupant.maxHealth
-		data["occupant"]["minHealth"] = HEALTH_THRESHOLD_DEAD
-		data["occupant"]["bruteLoss"] = mob_occupant.getBruteLoss()
-		data["occupant"]["oxyLoss"] = mob_occupant.getOxyLoss()
-		data["occupant"]["toxLoss"] = mob_occupant.getToxLoss()
-		data["occupant"]["fireLoss"] = mob_occupant.getFireLoss()
-		data["occupant"]["cloneLoss"] = mob_occupant.getCloneLoss()
-		data["occupant"]["brainLoss"] = mob_occupant.getOrganLoss(ORGAN_SLOT_BRAIN)
-		data["occupant"]["reagents"] = list()
-		if(mob_occupant.reagents && mob_occupant.reagents.reagent_list.len)
-			for(var/datum/reagent/R in mob_occupant.reagents.reagent_list)
-				data["occupant"]["reagents"] += list(list("name" = R.name, "volume" = R.volume))
+	data["occupant"]["name"] = mob_occupant.name
+	switch(mob_occupant.stat)
+		if(CONSCIOUS)
+			data["occupant"]["stat"] = "Conscious"
+			data["occupant"]["statstate"] = "good"
+		if(SOFT_CRIT)
+			data["occupant"]["stat"] = "Conscious"
+			data["occupant"]["statstate"] = "average"
+		if(UNCONSCIOUS)
+			data["occupant"]["stat"] = "Unconscious"
+			data["occupant"]["statstate"] = "average"
+		if(DEAD)
+			data["occupant"]["stat"] = "Dead"
+			data["occupant"]["statstate"] = "bad"
+	data["occupant"]["health"] = mob_occupant.health
+	data["occupant"]["maxHealth"] = mob_occupant.maxHealth
+	data["occupant"]["minHealth"] = HEALTH_THRESHOLD_DEAD
+	data["occupant"]["bruteLoss"] = mob_occupant.getBruteLoss()
+	data["occupant"]["oxyLoss"] = mob_occupant.getOxyLoss()
+	data["occupant"]["toxLoss"] = mob_occupant.getToxLoss()
+	data["occupant"]["fireLoss"] = mob_occupant.getFireLoss()
+	data["occupant"]["cloneLoss"] = mob_occupant.getCloneLoss()
+	data["occupant"]["brainLoss"] = mob_occupant.getOrganLoss(ORGAN_SLOT_BRAIN)
+	data["occupant"]["reagents"] = list()
+	if(length(mob_occupant.reagents?.reagent_list))
+		for(var/datum/reagent/R in mob_occupant.reagents.reagent_list)
+			data["occupant"]["reagents"] += list(list("name" = R.name, "volume" = R.volume))
 	return data
 
 /obj/machinery/sleeper/ui_act(action, params)
 	if(..())
 		return
+<<<<<<< HEAD:code/game/machinery/Sleeper.dm
 	var/mob/living/mob_occupant = occupant
 	check_nap_violations()
+=======
+>>>>>>> 8042b84968 (Sleeper Code improvement + UX + bluescreen fix (#8846)):code/game/machinery/sleeper.dm
 	switch(action)
 		if("door")
 			if(state_open)
@@ -224,10 +261,16 @@
 				open_machine()
 			. = TRUE
 		if("inject")
+<<<<<<< HEAD:code/game/machinery/Sleeper.dm
 			var/chem = text2path(params["chem"])
 			if(!is_operational || !mob_occupant || isnull(chem))
 				return
 			if(mob_occupant.health < min_health && chem != /datum/reagent/medicine/epinephrine)
+=======
+			check_nap_violations()
+			var/chem = params["chem"]
+			if(!is_operational || !isliving(occupant) || chem < 1 || chem > length(inserted_vials))
+>>>>>>> 8042b84968 (Sleeper Code improvement + UX + bluescreen fix (#8846)):code/game/machinery/sleeper.dm
 				return
 			if(inject_chem(chem, usr))
 				. = TRUE

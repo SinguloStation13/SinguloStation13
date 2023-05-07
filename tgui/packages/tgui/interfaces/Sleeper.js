@@ -10,6 +10,10 @@ export const Sleeper = (props, context) => {
     open,
     occupant = {},
     occupied,
+<<<<<<< HEAD
+=======
+    chems = [],
+>>>>>>> 8042b84968 (Sleeper Code improvement + UX + bluescreen fix (#8846))
   } = data;
 
   const preSortChems = data.chems || [];
@@ -43,6 +47,14 @@ export const Sleeper = (props, context) => {
       type: 'oxyLoss',
     },
   ];
+
+  const ELLIPSIS_STYLE = { // enforces overflow ellipsis
+    "max-width": "1px",
+    "white-space": "nowrap",
+    "text-overflow": "ellipsis",
+    "overflow": "hidden",
+  };
+
 
   return (
     <Window
@@ -81,7 +93,7 @@ export const Sleeper = (props, context) => {
                       value={occupant[type.type]}
                       minValue={0}
                       maxValue={occupant.maxHealth}
-                      color="bad" />
+                      color={occupant[type.type] === 0 ? "good" : "bad"} />
                   </LabeledList.Item>
                 ))}
                 <LabeledList.Item
@@ -120,6 +132,7 @@ export const Sleeper = (props, context) => {
               content={open ? 'Open' : 'Closed'}
               onClick={() => act('door')} />
           )}>
+<<<<<<< HEAD
           {chems.map(chem => (
             <Button
               key={chem.name}
@@ -132,6 +145,50 @@ export const Sleeper = (props, context) => {
               })}
             />
           ))}
+=======
+          <Table>
+            <style>{`
+              .Button--fluid.button-ellipsis {
+                max-width: 100%;
+              }
+              .button-ellipsis .Button__content {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
+            `}
+            </style>
+            {chems.map(chem => (
+              <Table.Row
+                key={chem.id} >
+                <Table.Cell style={ELLIPSIS_STYLE}>
+                  <Button
+                    key={chem.id}
+                    icon="flask"
+                    className="button-ellipsis"
+                    fluid
+                    content={chem.name + ' (' + chem.amount + 'u)'}
+                    tooltip={chem.amount + 'u'}
+                    disabled={!(occupied && chem.allowed)}
+                    onClick={() => act('inject', {
+                      chem: chem.id,
+                    })}
+                  />
+                </Table.Cell>
+                <Table.Cell collapsing>
+                  <Button
+                    key={chem.id}
+                    icon="eject"
+                    content="Eject"
+                    onClick={() => act('eject', {
+                      chem: chem.id,
+                    })}
+                  />
+                </Table.Cell>
+              </Table.Row>
+            ))}
+          </Table>
+>>>>>>> 8042b84968 (Sleeper Code improvement + UX + bluescreen fix (#8846))
         </Section>
       </Window.Content>
     </Window>
