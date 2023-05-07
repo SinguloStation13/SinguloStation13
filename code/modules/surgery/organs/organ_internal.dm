@@ -130,6 +130,7 @@
 		STOP_PROCESSING(SSobj, src)
 	return ..()
 
+<<<<<<< HEAD
 /obj/item/organ/attack(mob/living/carbon/M, mob/user)
 	if(M == user && ishuman(user))
 		var/mob/living/carbon/human/H = user
@@ -142,6 +143,23 @@
 						S.attack(H, H)
 	else
 		..()
+=======
+// Put any "can we eat this" checks for edible organs here
+/obj/item/organ/proc/pre_eat(eater, feeder)
+	if(iscarbon(eater))
+		var/mob/living/carbon/target = eater
+		for(var/S in target.surgeries)
+			var/datum/surgery/surgery = S
+			if(surgery.location == zone)
+				return FALSE
+	return TRUE
+
+/obj/item/organ/proc/pre_compost(user)
+	return TRUE
+
+/obj/item/organ/proc/on_eat_from(eater, feeder)
+	useable = FALSE //You bit it, no more using it
+>>>>>>> 868573a409 (Fix eating organs during surgery. (#8986))
 
 /obj/item/organ/proc/check_for_surgery(mob/living/carbon/human/H)
 	for(var/datum/surgery/S in H.surgeries)
