@@ -8,7 +8,7 @@
 /obj/effect/particle_effect/foam
 	name = "foam"
 	icon_state = "foam"
-	opacity = 0
+	opacity = FALSE
 	anchored = TRUE
 	density = FALSE
 	layer = EDGED_TURF_LAYER
@@ -257,7 +257,12 @@
 	icon = 'icons/effects/effects.dmi'
 	icon_state = "metalfoam"
 	density = TRUE
+<<<<<<< HEAD
 	opacity = 1 	// changed in New()
+=======
+	obj_flags = CAN_BE_HIT | BLOCK_Z_IN_DOWN | BLOCK_Z_IN_UP
+	opacity = TRUE // changed in New()
+>>>>>>> 4df7e60fa9 (Ports Opacity Refactor (#8820))
 	anchored = TRUE
 	layer = EDGED_TURF_LAYER
 	resistance_flags = FIRE_PROOF | ACID_PROOF

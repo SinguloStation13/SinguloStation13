@@ -15,7 +15,12 @@
 /obj/machinery/door/poddoor/shutters/preopen
 	icon_state = "shut_open"
 	density = FALSE
+<<<<<<< HEAD
 	opacity = 0
+=======
+	obj_flags = CAN_BE_HIT // reset zblock
+	opacity = FALSE
+>>>>>>> 4df7e60fa9 (Ports Opacity Refactor (#8820))
 
 /obj/machinery/door/poddoor/shutters/indestructible
 	name = "hardened shutters"

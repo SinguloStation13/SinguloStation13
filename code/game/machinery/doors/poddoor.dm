@@ -78,7 +78,12 @@
 /obj/machinery/door/poddoor/preopen
 	icon_state = "blast_open"
 	density = FALSE
+<<<<<<< HEAD
 	opacity = 0
+=======
+	opacity = FALSE
+	obj_flags = CAN_BE_HIT // reset zblock
+>>>>>>> 4df7e60fa9 (Ports Opacity Refactor (#8820))
 
 /obj/machinery/door/poddoor/ert
 	name = "hardened blast door"
