@@ -1,6 +1,10 @@
 #define TRANSFORMATION_DURATION 22
 
+<<<<<<< HEAD
 /mob/living/carbon/proc/monkeyize(tr_flags = (TR_KEEPITEMS | TR_KEEPVIRUS | TR_DEFAULTMSG | TR_KEEPAI), skip_animation = FALSE)
+=======
+/mob/living/carbon/proc/monkeyize(tr_flags = (TR_KEEPITEMS | TR_KEEPVIRUS | TR_DEFAULTMSG | TR_KEEPAI), skip_animation = FALSE, keep_original_species = FALSE)
+>>>>>>> 96f5a83022 (Actually fixes the monkey species runtime this time. (#8962))
 	if (notransform || transformation_timer)
 		return
 
@@ -51,6 +55,16 @@
 	O.dna.set_se(TRUE, GET_INITIALIZED_MUTATION(RACEMUT))
 	O.updateappearance(icon_update=0)
 
+<<<<<<< HEAD
+=======
+	//store original species
+	if(keep_original_species)
+		for(var/datum/mutation/race/M in O.dna.mutations)
+			if(!isnull(dna.species))
+				M.original_species = dna.species
+			break //Can't be more than one monkified in a DNA set so, no need to continue the loop
+
+>>>>>>> 96f5a83022 (Actually fixes the monkey species runtime this time. (#8962))
 	if(suiciding)
 		O.set_suicide(suiciding)
 	O.a_intent = INTENT_HARM
@@ -304,7 +318,11 @@
 //////////////////////////           Humanize               //////////////////////////////
 //Could probably be merged with monkeyize but other transformations got their own procs, too
 
+<<<<<<< HEAD
 /mob/living/carbon/proc/humanize(tr_flags = (TR_KEEPITEMS | TR_KEEPVIRUS | TR_DEFAULTMSG | TR_KEEPAI))
+=======
+/mob/living/carbon/proc/humanize(tr_flags = (TR_KEEPITEMS | TR_KEEPVIRUS | TR_DEFAULTMSG | TR_KEEPAI), keep_original_species = FALSE, var/datum/species/original_species)
+>>>>>>> 96f5a83022 (Actually fixes the monkey species runtime this time. (#8962))
 	if (notransform || transformation_timer)
 		return
 
@@ -446,15 +464,29 @@
 		else if(O.ai_controller)
 			QDEL_NULL(O.ai_controller)
 
+	if(keep_original_species && isnull(original_species))
+		original_species = /datum/species/human
+
 	if(O.dna.species && !istype(O.dna.species, /datum/species/monkey))
 		O.set_species(O.dna.species)
 	else
+<<<<<<< HEAD
 		O.set_species(/datum/species/human)
 
 
 	O.a_intent = INTENT_HELP
 	if (tr_flags & TR_DEFAULTMSG)
 		to_chat(O, "<B>You are now a human.</B>")
+=======
+		if(keep_original_species)
+			O.set_species(original_species)
+		else
+			O.set_species(/datum/species/human)
+
+	O.a_intent = INTENT_HELP
+	if (tr_flags & TR_DEFAULTMSG)
+		to_chat(O, "<B>You are now \a [O.dna.species]].</B>")
+>>>>>>> 96f5a83022 (Actually fixes the monkey species runtime this time. (#8962))
 
 	transfer_observers_to(O)
 
