@@ -482,6 +482,16 @@
 	chem_flags = CHEMICAL_RNG_GENERAL | CHEMICAL_RNG_FUN | CHEMICAL_RNG_BOTANY
 	toxpwr = 0.5
 
+<<<<<<< HEAD
+=======
+/datum/reagent/toxin/spidervenom/on_mob_metabolize(mob/living/L)
+	if(SEND_SIGNAL(L, COMSIG_HAS_NANITES))
+		for(var/datum/component/nanites/N in L.datum_components)
+			for(var/X in N.programs)
+				var/datum/nanite_program/NP = X
+				NP.software_error(1) //all programs are destroyed, nullifying all nanites
+
+>>>>>>> bff0ea3390 (Update toxin_reagents.dm (#8960))
 /datum/reagent/toxin/spidervenom/on_mob_life(mob/living/carbon/M)
 	if(M.getStaminaLoss() <= 70)				//Should not stamcrit under most conditions, but will greatly slow down given some time.
 		M.adjustStaminaLoss((volume * 0.75) * REM, 0)
