@@ -66,6 +66,7 @@
 /datum/team/fugitive_hunters
 	var/backstory = "error"
 
+<<<<<<< HEAD
 /datum/team/fugitive_hunters/proc/update_objectives(initial = FALSE)
 	objectives = list()
 	var/datum/objective/O = new()
@@ -73,6 +74,20 @@
 	objectives += O
 	for(var/datum/mind/M in members)
 		log_objective(M, O.explanation_text)
+=======
+/datum/team/fugitive_hunters/get_team_name() // simple to know fugitive hunter's story
+	return backstory.multiple_name
+
+/datum/team/fugitive_hunters/proc/forge_team_objectives()
+	for(var/datum/antagonist/fugitive/A in GLOB.antagonists)
+		if(!A.owner)
+			continue
+		var/datum/objective/capture_fugitive/capture = new()
+		capture.team = src
+		capture.set_target(A.owner)
+		capture.update_explanation_text()
+		objectives += capture
+>>>>>>> 2124cc4da3 (Orbit panel now tracks antag team correctly + Minor tweak (#8942))
 
 /datum/team/fugitive_hunters/proc/assemble_fugitive_results()
 	var/list/fugitives_counted = list()

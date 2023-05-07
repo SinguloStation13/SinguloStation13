@@ -66,6 +66,11 @@
 				fugitive_team = H.fugitive_team
 				return
 		fugitive_team = new /datum/team/fugitive
+<<<<<<< HEAD
+=======
+		fugitive_team.backstory = backstory
+		fugitive_team.forge_team_objectives()
+>>>>>>> 2124cc4da3 (Orbit panel now tracks antag team correctly + Minor tweak (#8942))
 		return
 	if(!istype(new_team))
 		stack_trace("Wrong team type passed to [type] initialization.")
@@ -74,6 +79,30 @@
 /datum/antagonist/fugitive/get_team()
 	return fugitive_team
 
+<<<<<<< HEAD
+=======
+/datum/objective/escape_capture
+	name = "Escape Capture"
+	explanation_text = "Ensure that no fugitives are captured by fugitive hunters."
+
+/datum/objective/escape_capture/check_completion()
+	if(!team || explanation_text == "Free Objective" || ..())
+		return TRUE
+	for(var/datum/mind/T in team.members)
+		var/datum/antagonist/fugitive/A = T.has_antag_datum(/datum/antagonist/fugitive)
+		if(istype(A) && A.is_captured)
+			return FALSE
+	return TRUE
+
+/datum/team/fugitive
+	name = "Fugitives"
+	member_name = "fugitive"
+	var/datum/fugitive_type/backstory
+
+/datum/team/fugitive/get_team_name() // simple to know fugitive story
+	return backstory.multiple_name
+
+>>>>>>> 2124cc4da3 (Orbit panel now tracks antag team correctly + Minor tweak (#8942))
 /datum/team/fugitive/roundend_report() //shows the number of fugitives, but not if they won in case there is no security
 	var/list/fugitives = list()
 	for(var/datum/antagonist/fugitive/fugitive_antag in GLOB.antagonists)
