@@ -136,6 +136,7 @@
 #define VV_HK_MAKE_ALIEN "human_alienify"
 #define VV_HK_SET_SPECIES "setspecies"
 #define VV_HK_PURRBATION "purrbation"
+#define VV_HK_RANDOM_NAME "random_name"
 
 // misc
 #define VV_HK_SPACEVINE_PURGE "spacevine_purge"
