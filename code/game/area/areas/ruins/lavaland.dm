@@ -84,7 +84,12 @@
 	power_environ = FALSE
 	power_equip = FALSE
 	power_light = FALSE
+<<<<<<< HEAD
 	poweralm = FALSE
+=======
+	ambient_buzz = 'sound/ambience/magma.ogg'
+	ambient_buzz_vol = 10
+>>>>>>> 9e8157ecd1 (Refactors the entire alarm system, moves behavior to datums (#8694))
 
 //ash walker nest
 /area/ruin/unpowered/ash_walkers
