@@ -179,7 +179,12 @@
 /datum/mutation/race/on_acquiring(mob/living/carbon/human/owner)
 	if(..())
 		return
+<<<<<<< HEAD
 	. = owner.monkeyize(TR_KEEPITEMS | TR_KEEPIMPLANTS | TR_KEEPORGANS | TR_KEEPDAMAGE | TR_KEEPVIRUS | TR_KEEPSE | TR_KEEPAI)
+=======
+	original_species = owner.dna.species.type
+	. = owner.monkeyize(TR_KEEPITEMS | TR_KEEPIMPLANTS | TR_KEEPORGANS | TR_KEEPDAMAGE | TR_KEEPVIRUS | TR_KEEPSE | TR_KEEPAI, FALSE, TRUE)
+>>>>>>> fce8671e22 (aaaaaa (#9005))
 
 /datum/mutation/race/on_losing(mob/living/carbon/monkey/owner)
 	if(owner && ismonkey(owner) && owner.stat != DEAD && !..())

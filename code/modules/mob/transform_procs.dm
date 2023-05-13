@@ -51,6 +51,16 @@
 	O.dna.set_se(TRUE, GET_INITIALIZED_MUTATION(RACEMUT))
 	O.updateappearance(icon_update=0)
 
+<<<<<<< HEAD
+=======
+	//store original species
+	if(keep_original_species)
+		for(var/datum/mutation/race/M in O.dna.mutations)
+			if(!isnull(dna.species))
+				M.original_species = dna.species.type
+			break //Can't be more than one monkified in a DNA set so, no need to continue the loop
+
+>>>>>>> fce8671e22 (aaaaaa (#9005))
 	if(suiciding)
 		O.set_suicide(suiciding)
 	O.a_intent = INTENT_HARM
@@ -447,10 +457,23 @@
 			QDEL_NULL(O.ai_controller)
 
 	if(O.dna.species && !istype(O.dna.species, /datum/species/monkey))
-		O.set_species(O.dna.species)
+		if(isnull(O.dna.species))
+			O.set_species(/datum/species/human)
+		else
+			O.set_species(O.dna.species)
 	else
+<<<<<<< HEAD
 		O.set_species(/datum/species/human)
 
+=======
+		if(keep_original_species)
+			if(isnull(original_species) || !ispath(original_species, /datum/species))
+				O.set_species(/datum/species/human)
+			else
+				O.set_species(original_species)
+		else
+			O.set_species(/datum/species/human)
+>>>>>>> fce8671e22 (aaaaaa (#9005))
 
 	O.a_intent = INTENT_HELP
 	if (tr_flags & TR_DEFAULTMSG)
