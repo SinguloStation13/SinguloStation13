@@ -42,3 +42,18 @@
 #define TARGET_GIMMICK_OBJ_FILE "[STRING_DIRECTORY]/target_gimmick_objectives.txt"
 #define SPLASH_DESC_FILE "splash.json"
 #define MEDIEVAL_SPEECH_FILE "medieval_speech.json"
+<<<<<<< HEAD
+=======
+#define HERETIC_INFLUENCE_FILE "heretic_influences.json"
+
+/// Force the log directory to be something specific in the data/logs folder
+#define OVERRIDE_LOG_DIRECTORY_PARAMETER "log-directory"
+/// Prevent the master controller from starting automatically
+#define NO_INIT_PARAMETER "no-init"
+/// Force the config directory to be something other than "config"
+#define OVERRIDE_CONFIG_DIRECTORY_PARAMETER "config-directory"
+
+// Defib stats
+/// The time (in deciseconds) in which a fresh body can be defibbed
+#define DEFIB_TIME_LIMIT 900
+>>>>>>> 4ddaa33398 (Re-opening of [PORT] Full Heretic Overhaul (#8343))

@@ -219,4 +219,9 @@ There appears to be a small amount of surface corrosion. It doesn't look like it
 	new /obj/item/card/id/captains_spare(src)
 
 /obj/item/storage/secure/safe/caps_spare/rust_heretic_act()
+<<<<<<< HEAD
 	take_damage(damage_amount = 100, damage_type = BRUTE, damage_flag = "melee", armour_penetration = 100)
+=======
+	take_damage(damage_amount = 100, damage_type = BRUTE, damage_flag = MELEE, armour_penetration = 100)
+	return TRUE
+>>>>>>> 4ddaa33398 (Re-opening of [PORT] Full Heretic Overhaul (#8343))

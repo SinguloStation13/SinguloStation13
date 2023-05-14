@@ -123,7 +123,13 @@
 				return  "<span class='warning'>It's falling apart!</span>"
 
 /obj/structure/rust_heretic_act()
+<<<<<<< HEAD
 	take_damage(500, BRUTE, "melee", 1)
+=======
+	take_damage(500, BRUTE, MELEE, 1)
+	return TRUE
+
+>>>>>>> 4ddaa33398 (Re-opening of [PORT] Full Heretic Overhaul (#8343))
 
 /// If you can climb WITHIN this structure, lattices for example. Used by z_transit (Move Upwards verb)
 /obj/structure/proc/can_climb_through()

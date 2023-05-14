@@ -23,8 +23,13 @@
 	RegisterSignal(parent, COMSIG_CLEAR_MOOD_EVENT, .proc/clear_event)
 	RegisterSignal(parent, COMSIG_MOVABLE_ENTERED_AREA, .proc/check_area_mood)
 
+<<<<<<< HEAD
 	RegisterSignal(parent, COMSIG_MOB_HUD_CREATED, .proc/modify_hud)
 	RegisterSignal(parent, COMSIG_HUMAN_VOID_MASK_ACT, .proc/direct_sanity_drain)
+=======
+	RegisterSignal(parent, COMSIG_MOB_HUD_CREATED, PROC_REF(modify_hud))
+	RegisterSignal(parent, COMSIG_HERETIC_MASK_ACT, PROC_REF(direct_sanity_drain))
+>>>>>>> 4ddaa33398 (Re-opening of [PORT] Full Heretic Overhaul (#8343))
 	var/mob/living/owner = parent
 	if(owner.hud_used)
 		modify_hud()
