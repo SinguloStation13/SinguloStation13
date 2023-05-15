@@ -2516,7 +2516,7 @@
 "aEQ" = (
 /obj/machinery/door/airlock/engineering{
 	name = "Shuttle Lab";
-	req_one_access_txt = "32;19;23"
+	req_one_access_txt = "32;23"
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -16707,7 +16707,7 @@
 "fuM" = (
 /obj/machinery/door/airlock/engineering/glass{
 	name = "Shared Engineering Storage";
-	req_one_access_txt = "32;19"
+	req_one_access_txt = "32"
 	},
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/stripes/line{
@@ -17448,7 +17448,7 @@
 "fHN" = (
 /obj/machinery/door/airlock/engineering/glass{
 	name = "Shared Engineering Storage";
-	req_one_access_txt = "32;19"
+	req_one_access_txt = "32"
 	},
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/stripes/line{
@@ -34658,7 +34658,7 @@
 "ltq" = (
 /obj/machinery/door/airlock/engineering/glass{
 	name = "Shared Engineering Storage";
-	req_one_access_txt = "32;19"
+	req_one_access_txt = "32"
 	},
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/stripes/line{
@@ -44205,7 +44205,7 @@
 	},
 /obj/machinery/door/airlock/engineering{
 	name = "Shuttle Lab";
-	req_one_access_txt = "32;19"
+	req_one_access_txt = "32"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/structure/disposalpipe/segment,
@@ -61525,7 +61525,7 @@
 "uoX" = (
 /obj/machinery/door/airlock/engineering{
 	name = "Engineering Foyer";
-	req_one_access_txt = "32;19"
+	req_one_access_txt = "32"
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
@@ -63322,7 +63322,7 @@
 /obj/machinery/door/window/eastleft{
 	dir = 8;
 	name = "Engineering Deliveries";
-	req_one_access_txt = "32;19"
+	req_one_access_txt = "32"
 	},
 /obj/structure/plasticflaps/opaque,
 /turf/open/floor/plasteel/dark,
@@ -65318,7 +65318,7 @@
 "vyX" = (
 /obj/machinery/door/airlock/engineering{
 	name = "Engineering Foyer";
-	req_one_access_txt = "32;19"
+	req_one_access_txt = "32"
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4

@@ -12970,7 +12970,7 @@
 "brd" = (
 /obj/machinery/door/airlock/engineering/glass{
 	name = "Shared Engineering Storage";
-	req_one_access_txt = "32;19"
+	req_one_access_txt = "32"
 	},
 /obj/machinery/door/firedoor,
 /turf/open/floor/plasteel{
@@ -64276,7 +64276,7 @@
 	},
 /obj/machinery/door/airlock/engineering/glass{
 	name = "Shared Engineering Storage";
-	req_one_access_txt = "32;19"
+	req_one_access_txt = "32"
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -82246,7 +82246,7 @@
 	},
 /obj/machinery/door/airlock/engineering{
 	name = "Engineering Foyer";
-	req_one_access_txt = "32;19"
+	req_one_access_txt = "32"
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -96867,7 +96867,7 @@
 	},
 /obj/machinery/door/airlock/engineering{
 	name = "Engineering Foyer";
-	req_one_access_txt = "32;19"
+	req_one_access_txt = "32"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
