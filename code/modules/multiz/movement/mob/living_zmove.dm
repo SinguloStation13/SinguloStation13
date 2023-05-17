@@ -1,63 +1,3 @@
-/mob/living/Moved()
-	. = ..()
-	update_turf_movespeed(loc)
-	update_looking_move()
-
-/mob/living/CanAllowThrough(atom/movable/mover, turf/target)
-	. = ..()
-	if(.)
-		return
-	if(mover.throwing)
-		return (!density || !(mobility_flags & MOBILITY_STAND) || (mover.throwing.thrower == src && !ismob(mover)))
-	if(buckled == mover)
-		return TRUE
-	if(ismob(mover) && (mover in buckled_mobs))
-		return TRUE
-	return !mover.density || !(mobility_flags & MOBILITY_STAND)
-
-/mob/living/toggle_move_intent()
-	. = ..()
-	update_move_intent_slowdown()
-
-/mob/living/update_config_movespeed()
-	update_move_intent_slowdown()
-	return ..()
-
-/mob/living/proc/update_move_intent_slowdown()
-	var/mod = 0
-	if(m_intent == MOVE_INTENT_WALK)
-		mod = CONFIG_GET(number/movedelay/walk_delay)
-	else
-		mod = CONFIG_GET(number/movedelay/run_delay)
-	if(!isnum_safe(mod))
-		mod = 1
-	add_movespeed_modifier(MOVESPEED_ID_MOB_WALK_RUN_CONFIG_SPEED, TRUE, 100, override = TRUE, multiplicative_slowdown = mod)
-
-/mob/living/proc/update_turf_movespeed(turf/open/T)
-	if(isopenturf(T))
-		add_movespeed_modifier(MOVESPEED_ID_LIVING_TURF_SPEEDMOD, update=TRUE, priority=100, override=TRUE, multiplicative_slowdown=T.slowdown, movetypes=GROUND)
-	else
-		remove_movespeed_modifier(MOVESPEED_ID_LIVING_TURF_SPEEDMOD)
-
-/mob/living/proc/update_pull_movespeed()
-	if(pulling)
-		if(isliving(pulling))
-			var/mob/living/L = pulling
-			if(!slowed_by_drag || (L.mobility_flags & MOBILITY_STAND) || L.buckled || grab_state >= GRAB_AGGRESSIVE)
-				remove_movespeed_modifier(MOVESPEED_ID_BULKY_DRAGGING)
-				return
-			add_movespeed_modifier(MOVESPEED_ID_BULKY_DRAGGING, multiplicative_slowdown = PULL_PRONE_SLOWDOWN)
-			return
-		if(isobj(pulling))
-			var/obj/structure/S = pulling
-			if(!slowed_by_drag || !S.drag_slowdown)
-				remove_movespeed_modifier(MOVESPEED_ID_BULKY_DRAGGING)
-				return
-			add_movespeed_modifier(MOVESPEED_ID_BULKY_DRAGGING, multiplicative_slowdown = S.drag_slowdown)
-			return
-	remove_movespeed_modifier(MOVESPEED_ID_BULKY_DRAGGING)
-
-<<<<<<< HEAD
 #define MOVETYPE_NONE_JUMP -1
 #define MOVETYPE_NONE 0
 #define MOVETYPE_CLIMB 1
@@ -66,6 +6,11 @@
 #define MOVETYPE_FLOAT 4
 #define MOVETYPE_JAUNT 5
 
+/// If we are currently attempting to move up or down
+/mob/living/var/zmoving = FALSE
+
+/// Returns a movement type that is allowed, given a source and target turf.
+/// pre_move controls if things like fuel are consumed for jetpacks.
 /mob/living/canZMove(dir, turf/source, turf/target, pre_move = TRUE)
 	if(incapacitated(check_immobilized = TRUE) || resting || zmoving || IsKnockdown())
 		return MOVETYPE_NONE
@@ -75,7 +20,7 @@
 	if(((upwards && !target.allow_z_travel) || (!upwards && !source.allow_z_travel)))
 		return MOVETYPE_NONE
 	var/can_climb = FALSE // turf_can_climb(upwards ? target : source)
-	if(!can_zTravel(target, dir) && !can_climb)
+	if(!can_zTravel(target, dir) && !can_climb) // forwards to turf's zPassIn and zPassOut
 		return MOVETYPE_NONE
 	if(!has_gravity(source))
 		return MOVETYPE_FLOAT
@@ -87,9 +32,13 @@
 		return MOVETYPE_CLIMB
 	return upwards ? MOVETYPE_NONE_JUMP : MOVETYPE_NONE
 
+/// Attempts a zMove up or down, provides feedback if unable to do so.
 /mob/living/zMove(dir, feedback = FALSE, feedback_to = src)
 	if((dir != UP && dir != DOWN) || zmoving)
 		return FALSE
+	if(remote_control)
+		remote_control.relaymove(src, dir)
+		return
 	var/turf/source = get_turf(src)
 	var/turf/target = get_step_multiz(src, dir)
 	if(!target)
@@ -135,6 +84,7 @@
 			move_verb = "(unknown move type, call a coder!) moving"
 	return start_travel_z(src, upwards, move_verb, delay, allow_movement = (move_type != MOVETYPE_CLIMB))
 
+/// Actually starts a zMove, doing movement animations
 /mob/living/proc/start_travel_z(mob/user, upwards = TRUE, move_verb = "floating", delay = 3 SECONDS, allow_movement = TRUE)
 	user.visible_message("<span class='notice'>[user] begins [move_verb] [upwards ? "upwards" : "downwards"]!</span>", "<span class='notice'>You begin [move_verb] [upwards ? "upwards" : "downwards"].")
 	animate(user, delay, pixel_y = upwards ? 32 : -32, transform = matrix() * 0.8)
@@ -143,7 +93,7 @@
 		animate(M, delay, pixel_y = upwards ? 32 : -32, transform = matrix() * 0.8)
 	zmoving = TRUE
 	if(!allow_movement)
-		if(!do_after(user, delay, FALSE, get_turf(user)))
+		if(!do_after(user, delay, get_turf(user), timed_action_flags = IGNORE_HELD_ITEM))
 			zmoving = FALSE
 			animate(user, 0, flags = ANIMATION_END_NOW)
 			user.pixel_y = 0
@@ -162,8 +112,10 @@
 		zmoving = FALSE
 		continue_travel_z(user, upwards ? UP : DOWN, bucklemobs_c)
 		return
-	addtimer(CALLBACK(src, .proc/continue_travel_z, user, upwards ? UP : DOWN, bucklemobs_c), delay)
+	addtimer(CALLBACK(src, PROC_REF(continue_travel_z), user, upwards ? UP : DOWN, bucklemobs_c), delay)
 
+/// Cleans up animations and then calls travel_z, which actually does the movement, and consumes fuel and such.area
+/// Checks if you are still able to zmove after the animation.
 /mob/living/proc/continue_travel_z(mob/user, dir, bucklemobs_c)
 	zmoving = FALSE
 	// reset animations
@@ -185,13 +137,7 @@
 	else
 		balloon_alert(user, "movement was blocked")
 
-/mob/living/can_zFall(turf/source, turf/target, direction)
-	if(!..())
-		return FALSE
-	if(buckled && !buckled.can_zFall(source, target, direction))
-		return FALSE
-	return TRUE
-
+/// Offsets the mob up and then quickly has them fall back down, like a jump.
 /mob/proc/do_jump_animation()
 	set waitfor = 0
 	animate(src, 0.3 SECONDS, pixel_y = 16, transform = matrix() * 0.9, easing = QUAD_EASING)
@@ -214,5 +160,3 @@
 #undef MOVETYPE_JETPACK
 #undef MOVETYPE_FLOAT
 #undef MOVETYPE_JAUNT
-=======
->>>>>>> 8709be2c0d (MultiZ Modularization (#8811))

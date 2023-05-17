@@ -42,6 +42,7 @@
 	QDEL_LIST(diseases)
 	return ..()
 
+<<<<<<< HEAD
 /mob/living/onZImpact(turf/T, levels)
 	if(!isgroundlessturf(T))
 		ZImpactDamage(T, levels)
@@ -79,6 +80,8 @@
 /mob/living/proc/OpenCraftingMenu()
 	return
 
+=======
+>>>>>>> 8709be2c0d (MultiZ Modularization (#8811))
 /mob/living/proc/can_bumpslam()
 	REMOVE_MOB_PROPERTY(src, PROP_CANTBUMPSLAM, src.type)
 
@@ -1396,6 +1399,7 @@
 		eminence.selected_mob = src
 		to_chat(eminence, "<span class='brass'>You select [src].</span>")
 
+<<<<<<< HEAD
 #define LOOKING_DIRECTION_UP 1
 #define LOOKING_DIRECTION_NONE 0
 #define LOOKING_DIRECTION_DOWN -1
@@ -1528,3 +1532,10 @@
 #undef LOOKING_DIRECTION_UP
 #undef LOOKING_DIRECTION_NONE
 #undef LOOKING_DIRECTION_DOWN
+=======
+/mob/living/proc/set_gender(ngender = NEUTER, silent = FALSE, update_icon = TRUE, forced = FALSE)
+	if(forced)
+		gender = ngender
+		return TRUE
+	return FALSE
+>>>>>>> 8709be2c0d (MultiZ Modularization (#8811))

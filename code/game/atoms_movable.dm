@@ -43,8 +43,6 @@
 	var/datum/component/orbiter/orbiting
 	var/can_be_z_moved = TRUE
 
-	var/zfalling = FALSE
-
 	/// Either FALSE, [EMISSIVE_BLOCK_GENERIC], or [EMISSIVE_BLOCK_UNIQUE]
 	var/blocks_emissive = FALSE
 	///Internal holder for emissive blocker object, do not use directly use blocks_emissive
@@ -99,6 +97,7 @@
 	. = ..()
 	. += update_emissive_block()
 
+<<<<<<< HEAD
 /atom/movable/proc/can_zFall(turf/source, turf/target, direction)
 	if(!direction)
 		direction = DOWN
@@ -143,6 +142,8 @@
 			return FALSE
 	return T.zPassOut(src, direction, destination) && destination.zPassIn(src, direction, T)
 
+=======
+>>>>>>> 8709be2c0d (MultiZ Modularization (#8811))
 /atom/movable/vv_edit_var(var_name, var_value)
 	var/static/list/banned_edits = list("step_x", "step_y", "step_size", "bounds")
 	var/static/list/careful_edits = list("bound_x", "bound_y", "bound_width", "bound_height")
@@ -613,12 +614,6 @@
 				old_area.Exited(src, null)
 
 	Moved(oldloc, NONE, TRUE)
-
-/atom/movable/proc/onTransitZ(old_z,new_z)
-	SEND_SIGNAL(src, COMSIG_MOVABLE_Z_CHANGED, old_z, new_z)
-	for (var/item in src) // Notify contents of Z-transition. This can be overridden IF we know the items contents do not care.
-		var/atom/movable/AM = item
-		AM.onTransitZ(old_z,new_z)
 
 /atom/movable/proc/setMovetype(newval)
 	movement_type = newval
