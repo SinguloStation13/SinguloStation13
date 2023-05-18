@@ -63,8 +63,300 @@
 "p" = (
 /obj/effect/turf_decal/bot,
 /obj/effect/decal/cleanable/dirt,
+<<<<<<< HEAD
 /obj/structure/closet/crate{
 	opened = 1
+=======
+/obj/effect/turf_decal/siding/wood{
+	dir = 10
+	},
+/turf/open/floor/wood{
+	icon_state = "wood-broken6"
+	},
+/area/shuttle/hunter)
+"Dv" = (
+/obj/structure/table,
+/obj/item/ammo_box/a762{
+	pixel_x = -4
+	},
+/obj/item/ammo_box/a762{
+	pixel_x = 1;
+	pixel_y = 6
+	},
+/obj/item/ammo_box/a762{
+	pixel_x = 4;
+	pixel_y = -1
+	},
+/obj/item/gun/ballistic/shotgun/doublebarrel/improvised/sawn{
+	name = "\improper TOZ-1";
+	pixel_y = -4
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/hunter)
+"Ec" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/effect/turf_decal/delivery,
+/obj/machinery/fugitive_capture,
+/obj/effect/turf_decal/siding/thinplating/dark/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/thinplating/dark,
+/turf/open/floor/plasteel/tech/grid,
+/area/shuttle/hunter)
+"ET" = (
+/obj/machinery/atmospherics/components/unary/plasma_refiner{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/hunter)
+"FR" = (
+/obj/machinery/atmospherics/pipe/manifold/purple/visible{
+	dir = 1
+	},
+/obj/machinery/pipedispenser,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/hunter)
+"Hk" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 5
+	},
+/obj/structure/railing{
+	dir = 4;
+	layer = 4.1
+	},
+/mob/living/simple_animal/bot/medbot{
+	name = "\improper Doctor Nikolay"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/hunter)
+"Hl" = (
+/obj/structure/railing{
+	dir = 8;
+	layer = 3.1
+	},
+/obj/structure/railing{
+	dir = 4;
+	layer = 3.1
+	},
+/turf/open/floor/plasteel/stairs,
+/area/shuttle/hunter)
+"HY" = (
+/obj/effect/turf_decal/stripes/closeup{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/hunter)
+"ID" = (
+/turf/open/floor/plasteel/stairs{
+	dir = 1
+	},
+/area/shuttle/hunter)
+"Jc" = (
+/obj/structure/cable/yellow{
+	icon_state = "9-10"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/weldingtool{
+	pixel_x = 7;
+	pixel_y = 11
+	},
+/turf/open/floor/mineral/plastitanium{
+	icon_state = "plastitanium_dam4"
+	},
+/area/shuttle/hunter)
+"Jx" = (
+/obj/structure/table,
+/obj/item/reagent_containers/food/drinks/bottle/vodka{
+	pixel_x = 8;
+	pixel_y = 6
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/item/newspaper{
+	pixel_x = -6;
+	pixel_y = 7
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/item/pinpointer/shuttle{
+	pixel_x = -3;
+	pixel_y = -2
+	},
+/turf/open/floor/wood,
+/area/shuttle/hunter)
+"JE" = (
+/obj/item/chair/wood,
+/obj/effect/turf_decal/siding/wood,
+/turf/open/floor/wood{
+	icon_state = "wood-broken5"
+	},
+/area/shuttle/hunter)
+"Kh" = (
+/obj/machinery/atmospherics/pipe/manifold/purple/visible,
+/obj/item/storage/toolbox/electrical,
+/obj/item/storage/belt/utility/full/engi,
+/obj/item/multitool{
+	pixel_x = 9
+	},
+/obj/item/clothing/glasses/welding{
+	pixel_y = 5
+	},
+/obj/structure/table/reinforced{
+	color = "#c1b6a5"
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/hunter)
+"KB" = (
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/caution{
+	pixel_x = 11;
+	pixel_y = 9
+	},
+/turf/open/floor/plasteel/techmaint,
+/area/shuttle/hunter)
+"KU" = (
+/obj/structure/table/reinforced{
+	color = "#c1b6a5"
+	},
+/obj/item/paper_bin{
+	pixel_x = 5
+	},
+/obj/item/pen/charcoal{
+	pixel_x = 5
+	},
+/obj/item/binoculars{
+	pixel_x = -8;
+	pixel_y = 6
+	},
+/obj/item/phone{
+	pixel_x = -6;
+	pixel_y = -4
+	},
+/obj/machinery/button/door{
+	id = "russianhunters_bridge";
+	name = "bridge shutters";
+	pixel_x = -9;
+	pixel_y = 23
+	},
+/obj/machinery/button/door{
+	id = "russianhunter_windows";
+	name = "window shutters";
+	pixel_x = -9;
+	pixel_y = 32
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/hunter)
+"Ln" = (
+/obj/effect/turf_decal/box/corners,
+/obj/machinery/iv_drip,
+/obj/item/roller{
+	pixel_x = -10;
+	pixel_y = 14
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/hunter)
+"MC" = (
+/obj/machinery/atmospherics/pipe/simple/purple/visible{
+	dir = 10
+	},
+/obj/structure/rack,
+/obj/item/rack_parts{
+	pixel_x = 5;
+	pixel_y = 1
+	},
+/obj/item/rack_parts{
+	pixel_y = -2
+	},
+/obj/item/stack/sheet/mineral/plasma/twenty,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/hunter)
+"Nb" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/bot,
+/obj/effect/mob_spawn/human/fugitive_hunter{
+	dir = 4
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/shuttle/hunter)
+"OG" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/loading_area{
+	dir = 8;
+	pixel_x = -2
+	},
+/obj/effect/turf_decal/siding/thinplating/dark/end{
+	dir = 4
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/shuttle/hunter)
+"Pz" = (
+/obj/machinery/atmospherics/pipe/simple/purple/visible,
+/obj/structure/railing{
+	dir = 1;
+	layer = 3.1
+	},
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 1
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/shuttle/hunter)
+"PE" = (
+/obj/structure/table,
+/obj/item/clothing/suit/armor/vest/russian{
+	pixel_x = -7
+	},
+/obj/item/clothing/suit/armor/vest/russian{
+	pixel_x = -3;
+	pixel_y = 7
+	},
+/obj/item/clothing/suit/armor/vest/russian{
+	pixel_x = -2;
+	pixel_y = -2
+	},
+/obj/item/clothing/suit/armor/vest/russian_coat{
+	pixel_x = 7;
+	pixel_y = 8
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/generic{
+	pixel_y = -7;
+	pixel_x = -9
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/hunter)
+"PK" = (
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/obj/machinery/power/apc/auto_name/east{
+	cell_type = /obj/item/stock_parts/cell/high/plus;
+	req_access = list(181)
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/portable_atmospherics/canister/plasma,
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/mineral/plastitanium{
+	icon_state = "plastitanium_dam2"
+	},
+/area/shuttle/hunter)
+"PO" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/poddoor/preopen{
+	id = "russianhunters_bridge"
+>>>>>>> 657d72bee5 (toxin to plasma (#8851))
 	},
 /turf/open/floor/plating,
 /area/shuttle/hunter)
@@ -134,7 +426,18 @@
 /obj/machinery/computer/camera_advanced{
 	dir = 8
 	},
+<<<<<<< HEAD
 /turf/open/floor/mineral/plastitanium/red,
+=======
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/machinery/portable_atmospherics/canister/plasma,
+/obj/effect/turf_decal/bot,
+/obj/effect/turf_decal/bot/right,
+/obj/effect/turf_decal/bot/left,
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> 657d72bee5 (toxin to plasma (#8851))
 /area/shuttle/hunter)
 "D" = (
 /obj/effect/decal/cleanable/dirt,

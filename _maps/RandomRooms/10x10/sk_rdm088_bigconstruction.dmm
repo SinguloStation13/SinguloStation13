@@ -150,8 +150,12 @@
 /turf/open/floor/plating,
 /area/template_noop)
 "z" = (
+<<<<<<< HEAD
 /obj/structure/window/reinforced/spawner/west,
 /obj/machinery/portable_atmospherics/canister/toxins,
+=======
+/obj/machinery/portable_atmospherics/canister/plasma,
+>>>>>>> 657d72bee5 (toxin to plasma (#8851))
 /turf/open/floor/plating,
 /area/template_noop)
 "A" = (

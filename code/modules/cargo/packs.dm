@@ -1056,7 +1056,7 @@
 	desc = "A DIY kit for building your own shuttle! Comes with all the parts you need to get your people to the stars!"
 	cost = 5000
 	contains = list(
-		/obj/machinery/portable_atmospherics/canister/toxins,
+		/obj/machinery/portable_atmospherics/canister/plasma,
 		/obj/item/construction/rcd/loaded,
 		/obj/item/rcd_ammo/large,
 		/obj/item/rcd_ammo/large,

@@ -6321,7 +6321,7 @@
 /turf/open/floor/engine,
 /area/awaymission/snowdin/post/engineering)
 "sh" = (
-/obj/machinery/atmospherics/miner/toxins,
+/obj/machinery/atmospherics/miner/plasma,
 /turf/open/floor/plating/airless,
 /area/awaymission/snowdin/post/engineering)
 "si" = (
@@ -7893,7 +7893,7 @@
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 8
 	},
-/obj/machinery/portable_atmospherics/canister/toxins,
+/obj/machinery/portable_atmospherics/canister/plasma,
 /turf/open/floor/plating/snowed,
 /area/awaymission/snowdin/cave)
 "xO" = (
@@ -7998,7 +7998,7 @@
 /turf/open/floor/engine/vacuum,
 /area/awaymission/snowdin/cave)
 "yh" = (
-/obj/machinery/atmospherics/miner/toxins,
+/obj/machinery/atmospherics/miner/plasma,
 /turf/open/floor/engine/vacuum,
 /area/awaymission/snowdin/cave)
 "yi" = (
@@ -8042,7 +8042,7 @@
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 8
 	},
-/obj/machinery/portable_atmospherics/canister/toxins,
+/obj/machinery/portable_atmospherics/canister/plasma,
 /turf/open/floor/plating/snowed/smoothed,
 /area/awaymission/snowdin/cave)
 "yp" = (
@@ -8989,7 +8989,7 @@
 /area/awaymission/snowdin/cave)
 "Bw" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
-/obj/machinery/portable_atmospherics/canister/toxins,
+/obj/machinery/portable_atmospherics/canister/plasma,
 /obj/machinery/light/small{
 	dir = 4
 	},
@@ -9162,7 +9162,7 @@
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 1
 	},
-/obj/machinery/portable_atmospherics/canister/toxins,
+/obj/machinery/portable_atmospherics/canister/plasma,
 /obj/machinery/light/small{
 	brightness = 3;
 	dir = 8
@@ -10046,7 +10046,7 @@
 /area/awaymission/snowdin/outside)
 "Fn" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
-/obj/machinery/portable_atmospherics/canister/toxins,
+/obj/machinery/portable_atmospherics/canister/plasma,
 /turf/open/floor/plating/snowed,
 /area/awaymission/snowdin/outside)
 "Fo" = (
@@ -10060,7 +10060,7 @@
 /area/awaymission/snowdin/outside)
 "Fq" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
-/obj/machinery/portable_atmospherics/canister/toxins,
+/obj/machinery/portable_atmospherics/canister/plasma,
 /obj/machinery/light/small{
 	dir = 1
 	},
@@ -10812,7 +10812,7 @@
 	},
 /area/awaymission/snowdin/post/mining_main)
 "HH" = (
-/obj/machinery/atmospherics/miner/toxins,
+/obj/machinery/atmospherics/miner/plasma,
 /turf/open/floor/engine/vacuum,
 /area/awaymission/snowdin/outside)
 "HI" = (

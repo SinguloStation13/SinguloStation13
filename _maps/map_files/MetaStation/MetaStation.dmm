@@ -1317,7 +1317,7 @@
 /turf/open/space,
 /area/solar/starboard/fore)
 "aeG" = (
-/obj/machinery/atmospherics/miner/station/toxins,
+/obj/machinery/atmospherics/miner/station/plasma,
 /turf/open/floor/engine/plasma,
 /area/engine/atmos)
 "aeN" = (
@@ -7667,7 +7667,7 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "aKx" = (
-/obj/machinery/portable_atmospherics/canister/toxins,
+/obj/machinery/portable_atmospherics/canister/plasma,
 /turf/open/floor/plating,
 /area/engine/engineering)
 "aKz" = (
@@ -19321,7 +19321,7 @@
 	},
 /area/engine/atmos)
 "bPx" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/atmos/toxin_output{
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/atmos/plasma_output{
 	dir = 8
 	},
 /turf/open/floor/engine/plasma,
@@ -19649,7 +19649,7 @@
 /turf/open/floor/plasteel,
 /area/engine/atmos)
 "bQX" = (
-/obj/machinery/air_sensor/atmos/toxin_tank,
+/obj/machinery/air_sensor/atmos/plasma_tank,
 /turf/open/floor/engine/plasma,
 /area/engine/atmos)
 "bQZ" = (
@@ -20085,7 +20085,7 @@
 /turf/open/floor/plasteel,
 /area/engine/atmos)
 "bSk" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/atmos/toxin_input{
+/obj/machinery/atmospherics/components/unary/outlet_injector/atmos/plasma_input{
 	dir = 8
 	},
 /turf/open/floor/engine/plasma,
@@ -28163,7 +28163,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/secondary/exit/departure_lounge)
 "cLy" = (
-/obj/machinery/computer/atmos_control/tank/toxin_tank{
+/obj/machinery/computer/atmos_control/tank/plasma_tank{
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/green/visible,
@@ -56178,7 +56178,7 @@
 /turf/open/space,
 /area/solar/starboard/aft)
 "otn" = (
-/obj/machinery/portable_atmospherics/canister/toxins,
+/obj/machinery/portable_atmospherics/canister/plasma,
 /obj/machinery/airalarm{
 	pixel_y = 23
 	},
@@ -66482,7 +66482,7 @@
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/locker)
 "sVN" = (
-/obj/machinery/portable_atmospherics/canister/toxins,
+/obj/machinery/portable_atmospherics/canister/plasma,
 /obj/effect/turf_decal/delivery/red,
 /turf/open/floor/plasteel/dark,
 /area/science/storage)
@@ -72124,7 +72124,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "vzS" = (
-/obj/machinery/portable_atmospherics/canister/toxins,
+/obj/machinery/portable_atmospherics/canister/plasma,
 /obj/effect/turf_decal/delivery/red,
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
