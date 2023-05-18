@@ -126,7 +126,11 @@
 	display_name = "Experimental Surgery"
 	description = "When evolution isn't fast enough."
 	prereq_ids = list("adv_surgery")
+<<<<<<< HEAD
 	design_ids = list("surgery_revival","surgery_pacify","surgery_vein_thread","surgery_muscled_veins","surgery_nerve_splice","surgery_nerve_ground","surgery_ligament_hook","surgery_ligament_reinforcement","surgery_viral_bond", "surgery_heal_combo_upgrade", "autodoc") //Singulostation edit; adds autodoc
+=======
+	design_ids = list("surgery_revival","surgery_pacify","surgery_vein_thread","surgery_muscled_veins","surgery_nerve_splice","surgery_nerve_ground","surgery_ligament_hook","surgery_ligament_reinforcement","surgery_viral_bond","surgery_heal_combo_upgrade","surgery_cortex_imprint","surgery_cortex_folding")
+>>>>>>> 05ea8477b7 ([PORT] Cortex Folding and Cortex Imprint surgeries (#8834))
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
 	export_price = 5000
 
