@@ -96,9 +96,17 @@
 	var/mob/living/T = L.parent
 	if(ishuman(T))
 		var/mob/living/carbon/human/H = T
+<<<<<<< HEAD
 		if(iscatperson(H))
 			H.dna.species.start_wagging_tail(H)
 			addtimer(CALLBACK(H.dna.species, /datum/species.proc/stop_wagging_tail, H), 30)
+=======
+		if(iscatperson(H) || (istype(H.getorganslot(ORGAN_SLOT_EARS), /obj/item/organ/ears/cat) && istype(H.getorganslot(ORGAN_SLOT_TAIL), /obj/item/organ/tail/cat)))
+			var/obj/item/organ/tail/tail = H.getorganslot(ORGAN_SLOT_TAIL)
+			if(tail)
+				tail.set_wagging(H, TRUE)
+				addtimer(CALLBACK(tail, TYPE_PROC_REF(/obj/item/organ/tail, set_wagging), H, FALSE), 3 SECONDS)
+>>>>>>> eb4fbad731 (All species can now wag their tails if they get one. (#9028))
 			description =  "<span class='nicegreen'>They want to play on the table!</span>\n"
 			mood_change = 2
 
