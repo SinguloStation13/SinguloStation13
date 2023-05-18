@@ -61,8 +61,13 @@
 	var/obj/item/computer_hardware/card_slot/card_slot = computer.all_components[MC_CARD]
 	var/obj/item/card/id/user_id = card_slot?.stored_card
 
+<<<<<<< HEAD
 	if(!user_id || !(ACCESS_CHANGE_IDS in user_id.access))
 		return
+=======
+	if(!user_id || !check_access_textified(user_id.card_access, ACCESS_CHANGE_IDS))
+		return TRUE
+>>>>>>> 521bd87c97 (Refactors access system - access checking, desc, etc (#9027))
 
 	switch(action)
 		if("PRG_open_job")
@@ -112,7 +117,7 @@
 	var/authed = FALSE
 	var/obj/item/computer_hardware/card_slot/card_slot = computer.all_components[MC_CARD]
 	var/obj/item/card/id/user_id = card_slot?.stored_card
-	if(user_id && (ACCESS_CHANGE_IDS in user_id.access))
+	if(user_id && check_access_textified(user_id.card_access, ACCESS_CHANGE_IDS))
 		authed = TRUE
 
 	data["authed"] = authed

@@ -187,9 +187,15 @@
 
 	var/obj/item/card/id/W = H.wear_id
 	W.icon_state = "centcom"
+<<<<<<< HEAD
 	W.access = list() // wipe access - they shouldn't get all centcom access.
 	W.access = get_centcom_access(JOB_CENTCOM_OFFICIAL)
 	W.access += ACCESS_WEAPONS
+=======
+	W.card_access = list() // wipe access - they shouldn't get all centcom access.
+	grant_accesses_to_card(W.card_access, get_centcom_access(JOB_CENTCOM_OFFICIAL))
+	grant_accesses_to_card(W.card_access, ACCESS_WEAPONS)
+>>>>>>> 521bd87c97 (Refactors access system - access checking, desc, etc (#9027))
 	W.assignment = JOB_CENTCOM_OFFICIAL
 	W.registered_name = H.real_name
 	W.update_label()
@@ -344,9 +350,15 @@
 		return
 
 	var/obj/item/card/id/W = H.wear_id
+<<<<<<< HEAD
 	W.access = list() //wipe access - they shouldn't get all centcom access.
 	W.access = get_centcom_access(name)
 	W.access += ACCESS_WEAPONS
+=======
+	W.card_access = list() //wipe access - they shouldn't get all centcom access.
+	grant_accesses_to_card(W.card_access, get_centcom_access(name))
+	grant_accesses_to_card(W.card_access, ACCESS_WEAPONS)
+>>>>>>> 521bd87c97 (Refactors access system - access checking, desc, etc (#9027))
 	W.assignment = name
 	W.registered_name = H.real_name
 	W.update_label()
@@ -395,7 +407,11 @@
 
 	var/obj/item/card/id/W = H.wear_id
 	W.registered_name = H.real_name
+<<<<<<< HEAD
 	W.access += ACCESS_THEATRE
+=======
+	grant_accesses_to_card(W.card_access, ACCESS_THEATRE)
+>>>>>>> 521bd87c97 (Refactors access system - access checking, desc, etc (#9027))
 	W.update_label(W.registered_name, W.assignment)
 	H.dna.add_mutation(CLOWNMUT)
 
@@ -456,9 +472,15 @@
 
 	var/obj/item/card/id/W = H.wear_id
 	W.icon_state = "centcom"
+<<<<<<< HEAD
 	W.access = list() //wipe access first
 	W.access = get_all_accesses()//They get full station access.
 	W.access += get_centcom_access(JOB_ERT_DEATHSQUAD)//Let's add their alloted CentCom access.
+=======
+	W.card_access = list() //wipe access first
+	grant_accesses_to_card(W.card_access, get_all_accesses())  //They get full station access.
+	grant_accesses_to_card(W.card_access, get_centcom_access(JOB_ERT_DEATHSQUAD)) //Let's add their alloted CentCom access.
+>>>>>>> 521bd87c97 (Refactors access system - access checking, desc, etc (#9027))
 	W.assignment = JOB_ERT_DEATHSQUAD
 	W.registered_name = H.real_name
 	W.update_label(W.registered_name, W.assignment)

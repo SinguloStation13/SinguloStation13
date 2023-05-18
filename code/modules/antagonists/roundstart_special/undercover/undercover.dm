@@ -74,7 +74,11 @@
 	//Update ID
 	var/obj/item/card/id/ID = H.get_idcard()
 	if(ID)
+<<<<<<< HEAD
 		ID.access += ACCESS_WEAPONS
+=======
+		grant_accesses_to_card(ID.card_access, ACCESS_WEAPONS)
+>>>>>>> 521bd87c97 (Refactors access system - access checking, desc, etc (#9027))
 
 ////////////////////////////////
 //////     Objectives    ///////

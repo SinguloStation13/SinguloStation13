@@ -215,29 +215,44 @@
 	trigger_cost = 3
 	trigger_cooldown = 30
 	rogue_types = list(/datum/nanite_program/skin_decay)
-	var/access = list()
+	var/nanite_access = list()
 
 //Syncs the nanites with the cumulative current mob's access level. Can potentially wipe existing access.
 /datum/nanite_program/access/on_trigger(comm_message)
-	var/list/new_access = list()
+	nanite_access = list() // resets access list
 	var/obj/item/current_item
 	current_item = host_mob.get_active_held_item()
 	if(current_item)
+<<<<<<< HEAD
 		new_access += current_item.GetAccess()
 	current_item = host_mob.get_inactive_held_item()
 	if(current_item)
 		new_access += current_item.GetAccess()
+=======
+		grant_accesses_to_card(nanite_access, current_item.GetAccess())
+	current_item = host_mob.get_inactive_held_item()
+	if(current_item)
+		grant_accesses_to_card(nanite_access, current_item.GetAccess())
+>>>>>>> 521bd87c97 (Refactors access system - access checking, desc, etc (#9027))
 	if(ishuman(host_mob))
 		var/mob/living/carbon/human/H = host_mob
 		current_item = H.wear_id
 		if(current_item)
+<<<<<<< HEAD
 			new_access += current_item.GetAccess()
+=======
+			grant_accesses_to_card(nanite_access, current_item.GetAccess())
+>>>>>>> 521bd87c97 (Refactors access system - access checking, desc, etc (#9027))
 	else if(isanimal(host_mob))
 		var/mob/living/simple_animal/A = host_mob
 		current_item = A.access_card
 		if(current_item)
+<<<<<<< HEAD
 			new_access += current_item.GetAccess()
 	access = new_access
+=======
+			grant_accesses_to_card(nanite_access, current_item.GetAccess())
+>>>>>>> 521bd87c97 (Refactors access system - access checking, desc, etc (#9027))
 
 /datum/nanite_program/spreading
 	name = "Infective Exo-Locomotion"

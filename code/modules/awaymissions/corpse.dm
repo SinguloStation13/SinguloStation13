@@ -47,9 +47,12 @@
 		return
 	if(QDELETED(src) || QDELETED(user))
 		return
+<<<<<<< HEAD
 	if(use_cooldown && user.client.next_ghost_role_tick > world.time)
 		to_chat(user, "<span class='warning'>You have died recently, you must wait [(user.client.next_ghost_role_tick - world.time)/10] seconds until you can use a ghost spawner.</span>")
 		return
+=======
+>>>>>>> 521bd87c97 (Refactors access system - access checking, desc, etc (#9027))
 	var/ghost_role = alert("Become [mob_name]? (Warning, You can no longer be cloned!)",,"Yes","No")
 	if(ghost_role != "Yes" || !loc)
 		return
@@ -225,15 +228,12 @@
 	var/obj/item/card/id/W = H.wear_id
 	if(W)
 		if(id_access)
-			for(var/jobtype in typesof(/datum/job))
-				var/datum/job/J = new jobtype
+			for(var/datum/job/J in SSjob.occupations)
 				if(J.title == id_access)
-					W.access = J.get_access()
+					grant_accesses_to_card(W.card_access, J.get_access())
 					break
 		if(id_access_list)
-			if(!islist(W.access))
-				W.access = list()
-			W.access |= id_access_list
+			grant_accesses_to_card(W.card_access, id_access_list)
 		if(id_job)
 			W.assignment = id_job
 		W.registered_name = H.real_name
