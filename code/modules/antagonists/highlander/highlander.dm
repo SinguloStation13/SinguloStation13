@@ -56,8 +56,13 @@
 		P.attack_self(H)
 	var/obj/item/card/id/W = new(H)
 	W.icon_state = "centcom"
+<<<<<<< HEAD
 	W.access = get_all_accesses()
 	W.access += get_all_centcom_access()
+=======
+	grant_accesses_to_card(W.card_access, get_all_accesses())
+	grant_accesses_to_card(W.card_access, get_all_centcom_access())
+>>>>>>> bc8c01f6dc (follow-up fix from access refactor PR (#9036))
 	W.assignment = "Highlander"
 	W.registered_name = H.real_name
 	ADD_TRAIT(W, TRAIT_NODROP, HIGHLANDER)

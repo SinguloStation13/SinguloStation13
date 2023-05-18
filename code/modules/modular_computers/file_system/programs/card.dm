@@ -369,7 +369,11 @@
 	if(id_card)
 		data["id_rank"] = id_card.assignment ? id_card.assignment : "Unassigned"
 		data["id_owner"] = id_card.registered_name ? id_card.registered_name : "-----"
+<<<<<<< HEAD
 		data["access_on_card"] = id_card.access
+=======
+		data["access_on_card"] = id_card.card_access
+>>>>>>> bc8c01f6dc (follow-up fix from access refactor PR (#9036))
 
 	return data
 
