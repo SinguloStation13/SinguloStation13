@@ -1,5 +1,25 @@
 //Each lists stores ckeys for "Never for this round" option category
 
+<<<<<<< HEAD
+=======
+#define POLL_IGNORE_ALIEN_LARVA "alien_larva"
+#define POLL_IGNORE_ASHWALKER "ashwalker"
+#define POLL_IGNORE_CLOCKWORK "clockwork"
+#define POLL_IGNORE_CONSTRUCT "construct"
+#define POLL_IGNORE_CONTRACTOR_SUPPORT "contractor_support"
+#define POLL_IGNORE_DEFECTIVECLONE "defective_clone"
+#define POLL_IGNORE_DRONE "drone"
+#define POLL_IGNORE_EXPERIMENTAL_CLONE "experimental_clone"
+#define POLL_IGNORE_GOLEM "golem"
+#define POLL_IGNORE_HOLOPARASITE "holoparasite"
+#define POLL_IGNORE_HOLYCARP "holy_carp"
+#define POLL_IGNORE_HOLYUNDEAD "holy_undead"
+#define POLL_IGNORE_IMAGINARYFRIEND "imaginary_friend"
+#define POLL_IGNORE_PAI "pai"
+#define POLL_IGNORE_POSIBRAIN "posibrain"
+#define POLL_IGNORE_POSSESSED_BLADE "possessed_blade"
+#define POLL_IGNORE_PYROSLIME "slime"
+>>>>>>> 70382d0918 (Adjusts Sect Summon Flavor Text and adds poll ignore defines (#8882))
 #define POLL_IGNORE_SENTIENCE_POTION "sentience_potion"
 #define POLL_IGNORE_POSSESSED_BLADE "possessed_blade"
 #define POLL_IGNORE_ALIEN_LARVA "alien_larva"
@@ -25,6 +45,25 @@
 #define POLL_IGNORE_EXPERIMENTAL_CLONE "experimental_clone"
 
 GLOBAL_LIST_INIT(poll_ignore_desc, list(
+<<<<<<< HEAD
+=======
+	POLL_IGNORE_ALIEN_LARVA = "Xenomorph larva",
+	POLL_IGNORE_ASHWALKER = "Ashwalker eggs",
+	POLL_IGNORE_CONSTRUCT = "Construct",
+	POLL_IGNORE_CONTRACTOR_SUPPORT = "Contractor Support Unit",
+	POLL_IGNORE_DEFECTIVECLONE = "Defective clone",
+	POLL_IGNORE_DRONE = "Drone shells",
+	POLL_IGNORE_EXPERIMENTAL_CLONE = "Experimental clone",
+	POLL_IGNORE_GOLEM = "Golems",
+	POLL_IGNORE_HOLOPARASITE = "Holoparasite",
+	POLL_IGNORE_HOLYCARP = "Holy Carp",
+	POLL_IGNORE_HOLYUNDEAD = "Holy Undead",
+	POLL_IGNORE_IMAGINARYFRIEND = "Imaginary Friend",
+	POLL_IGNORE_PAI = "Personal AI",
+	POLL_IGNORE_POSIBRAIN = "Positronic brain",
+	POLL_IGNORE_POSSESSED_BLADE = "Possessed blade",
+	POLL_IGNORE_PYROSLIME = "Slime",
+>>>>>>> 70382d0918 (Adjusts Sect Summon Flavor Text and adds poll ignore defines (#8882))
 	POLL_IGNORE_SENTIENCE_POTION = "Sentience potion",
 	POLL_IGNORE_POSSESSED_BLADE = "Possessed blade",
 	POLL_IGNORE_ALIEN_LARVA = "Xenomorph larva",
