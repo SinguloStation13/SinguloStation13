@@ -203,6 +203,7 @@ GLOBAL_LIST_EMPTY(created_baseturf_lists)
 	if(below)
 		tool_list["Down"] = image(icon = 'icons/testing/turf_analysis.dmi', icon_state = "red_arrow", dir = SOUTH)
 
+<<<<<<< HEAD
 	if(!length(tool_list))
 		return
 
@@ -259,6 +260,19 @@ GLOBAL_LIST_EMPTY(created_baseturf_lists)
 		if(A.density && (!exclude_mobs || !ismob(A)))
 			return 1
 	return 0
+=======
+	for(var/atom/movable/movable_content as anything in contents)
+		// We don't want to block ourselves or consider any ignored atoms.
+		if((movable_content == source_atom) || (movable_content in ignore_atoms))
+			continue
+		// If the thing is dense AND we're including mobs or the thing isn't a mob AND if there's a source atom and
+		// it cannot pass through the thing on the turf,  we consider the turf blocked.
+		if(movable_content.density && (!exclude_mobs || !ismob(movable_content)))
+			if(source_atom && movable_content.CanPass(source_atom, get_dir(src, source_atom)))
+				continue
+			return TRUE
+	return FALSE
+>>>>>>> 7743e65e60 (CanPass refactor, fixes errors with CanPassThrough (#8838))
 
 /proc/is_anchored_dense_turf(turf/T) //like the older version of the above, fails only if also anchored
 	if(T.density)
@@ -397,7 +411,7 @@ GLOBAL_LIST_EMPTY(created_baseturf_lists)
 	// By default byond will call Bump() on the first dense object in contents
 	// Here's hoping it doesn't stay like this for years before we finish conversion to step_
 	var/atom/firstbump
-	var/canPassSelf = CanPass(mover, src)
+	var/canPassSelf = CanPass(mover, get_dir(src, mover))
 	if(canPassSelf || (mover.movement_type & PHASING))
 		for(var/i in contents)
 			if(QDELETED(mover))

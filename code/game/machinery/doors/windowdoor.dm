@@ -100,12 +100,19 @@
 		do_animate("deny")
 	return
 
-/obj/machinery/door/window/CanAllowThrough(atom/movable/mover, turf/target)
+/obj/machinery/door/window/CanAllowThrough(atom/movable/mover, border_dir)
 	. = ..()
 	if(.)
 		return
+<<<<<<< HEAD
 	if(get_dir(loc, target) == dir) //Make sure looking at appropriate border
 		return
+=======
+
+	if(border_dir == dir)
+		return FALSE
+
+>>>>>>> 7743e65e60 (CanPass refactor, fixes errors with CanPassThrough (#8838))
 	if(istype(mover, /obj/structure/window))
 		var/obj/structure/window/W = mover
 		if(!valid_window_location(loc, W.ini_dir))
@@ -123,7 +130,7 @@
 	if(get_dir(loc, T) == dir)
 		return !density
 	else
-		return 1
+		return TRUE
 
 //used in the AStar algorithm to determinate if the turf the door is on is passable
 /obj/machinery/door/window/CanAStarPass(obj/item/card/id/ID, to_dir)
@@ -132,7 +139,17 @@
 /obj/machinery/door/window/proc/on_exit(datum/source, atom/movable/leaving, direction)
 	SIGNAL_HANDLER
 
+<<<<<<< HEAD
 	if(istype(leaving) && (leaving.pass_flags & PASSGLASS))
+=======
+	if(leaving.movement_type & PHASING)
+		return
+
+	if(leaving == src)
+		return // Let's not block ourselves.
+
+	if(leaving.pass_flags & PASSTRANSPARENT)
+>>>>>>> 7743e65e60 (CanPass refactor, fixes errors with CanPassThrough (#8838))
 		return
 
 	if(direction == dir && density)
@@ -142,25 +159,34 @@
 /obj/machinery/door/window/open(forced=FALSE)
 	if (operating) //doors can still open when emag-disabled
 		return 0
+
 	if(!forced)
 		if(!hasPower())
 			return 0
+
 	if(forced < 2)
 		if(obj_flags & EMAGGED)
 			return 0
+
 	if(!operating) //in case of emag
 		operating = TRUE
+
 	do_animate("opening")
-	playsound(src, 'sound/machines/windowdoor.ogg', 100, 1)
+	playsound(src, 'sound/machines/windowdoor.ogg', 100, TRUE)
 	icon_state ="[base_state]open"
+<<<<<<< HEAD
 	sleep(10)
 
+=======
+	sleep(operationdelay)
+>>>>>>> 7743e65e60 (CanPass refactor, fixes errors with CanPassThrough (#8838))
 	set_density(FALSE)
 	air_update_turf(1)
 	update_freelook_sight()
 
 	if(operating == 1) //emag again
 		operating = FALSE
+
 	return 1
 
 /obj/machinery/door/window/close(forced=FALSE)

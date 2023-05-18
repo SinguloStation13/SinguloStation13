@@ -56,10 +56,17 @@
 /obj/structure/windoor_assembly/update_icon()
 	icon_state = "[facing]_[secure ? "secure_" : ""]windoor_assembly[state]"
 
-/obj/structure/windoor_assembly/CanAllowThrough(atom/movable/mover, turf/target)
+/obj/structure/windoor_assembly/CanAllowThrough(atom/movable/mover, border_dir)
 	. = ..()
+<<<<<<< HEAD
 	if(get_dir(loc, target) == dir) //Make sure looking at appropriate border
 		return
+=======
+
+	if(border_dir == dir)
+		return FALSE
+
+>>>>>>> 7743e65e60 (CanPass refactor, fixes errors with CanPassThrough (#8838))
 	if(istype(mover, /obj/structure/window))
 		var/obj/structure/window/W = mover
 		if(!valid_window_location(loc, W.ini_dir))
@@ -80,7 +87,17 @@
 /obj/structure/windoor_assembly/proc/on_exit(datum/source, atom/movable/leaving, direction)
 	SIGNAL_HANDLER
 
+<<<<<<< HEAD
 	if(istype(leaving) && (leaving.pass_flags & PASSGLASS))
+=======
+	if(leaving.movement_type & PHASING)
+		return
+
+	if(leaving == src)
+		return // Let's not block ourselves.
+
+	if(istype(leaving) && (leaving.pass_flags & PASSTRANSPARENT))
+>>>>>>> 7743e65e60 (CanPass refactor, fixes errors with CanPassThrough (#8838))
 		return
 
 	if (direction == dir && density)

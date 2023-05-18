@@ -106,6 +106,7 @@
 	if(current_size >= STAGE_FIVE)
 		deconstruct(FALSE)
 
+<<<<<<< HEAD
 /obj/structure/window/setDir(direct)
 	if(!fulltile)
 		..()
@@ -121,6 +122,19 @@
 	var/attempted_dir = get_dir(loc, target)
 	if(attempted_dir == dir)
 		return
+=======
+/obj/structure/window/CanAllowThrough(atom/movable/mover, border_dir)
+	. = ..()
+	if(.)
+		return
+
+	if(fulltile)
+		return FALSE
+
+	if(border_dir == dir)
+		return FALSE
+
+>>>>>>> 7743e65e60 (CanPass refactor, fixes errors with CanPassThrough (#8838))
 	if(istype(mover, /obj/structure/window))
 		var/obj/structure/window/W = mover
 		if(!valid_window_location(loc, W.ini_dir))
@@ -137,7 +151,17 @@
 /obj/structure/window/proc/on_exit(datum/source, atom/movable/leaving, direction)
 	SIGNAL_HANDLER
 
+<<<<<<< HEAD
 	if (istype(leaving) && (leaving.pass_flags & PASSGLASS))
+=======
+	if(leaving.movement_type & PHASING)
+		return
+
+	if(leaving == src)
+		return // Let's not block ourselves.
+
+	if (leaving.pass_flags & PASSTRANSPARENT)
+>>>>>>> 7743e65e60 (CanPass refactor, fixes errors with CanPassThrough (#8838))
 		return
 
 	if (fulltile)
@@ -261,12 +285,16 @@
 	..()
 
 /obj/structure/window/proc/can_be_reached(mob/user)
-	if(!fulltile)
-		if(get_dir(user,src) & dir)
-			for(var/obj/O in loc)
-				if(!O.CanPass(user, user.loc, 1))
-					return 0
-	return 1
+	if(fulltile)
+		return TRUE
+	var/checking_dir = get_dir(user, src)
+	if(!(checking_dir & dir))
+		return TRUE // Only windows on the other side may be blocked by other things.
+	checking_dir = REVERSE_DIR(checking_dir)
+	for(var/obj/blocker in loc)
+		if(!blocker.CanPass(user, checking_dir))
+			return FALSE
+	return TRUE
 
 /obj/structure/window/take_damage(damage_amount, damage_type = BRUTE, damage_flag = 0, sound_effect = 1)
 	. = ..()
