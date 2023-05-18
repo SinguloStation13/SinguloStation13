@@ -54,7 +54,11 @@
 	var/datum/bank_account/buyer = SSeconomy.get_budget_account(ACCOUNT_CAR_ID)
 	var/obj/item/card/id/id_card = get_buyer_id(user)
 	if(get_buyer_id(user))
+<<<<<<< HEAD
 		if((ACCESS_HEADS in id_card.access) || (ACCESS_QM in id_card.access))
+=======
+		if((ACCESS_QM in id_card.access) || (ACCESS_HEADS in id_card.access))
+>>>>>>> 4790bf4c9d (Partly reverts the access check refactor PR #9027 #9036 (#9039))
 			requestonly = FALSE
 			buyer = SSeconomy.get_budget_account(ACCOUNT_CAR_ID)
 			can_approve_requests = TRUE

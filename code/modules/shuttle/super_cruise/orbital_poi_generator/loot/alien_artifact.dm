@@ -268,7 +268,11 @@
 	var/list/accesses_to_add = get_all_accesses()
 	for(var/obj/item/card/id/id_card as() in idcards)
 		if(length(id_card.access))
+<<<<<<< HEAD
 			id_card.access.Remove(pick(id_card.access))
+=======
+			id_card.access -= pick(id_card.access)
+>>>>>>> 4790bf4c9d (Partly reverts the access check refactor PR #9027 #9036 (#9039))
 			id_card.access |= pick(accesses_to_add)
 
 //===================

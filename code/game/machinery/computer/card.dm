@@ -490,9 +490,15 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 				accesses += "<h5>Central Command:</h5>"
 				for(var/A in get_all_centcom_access())
 					if(A in inserted_modify_id.access)
+<<<<<<< HEAD
 						accesses += "<a href='?src=[REF(src)];choice=access;access_target=[A];allowed=0'><font color=\"6bc473\">[replacetext(get_centcom_access_desc(A), " ", "&nbsp")]</font></a> "
 					else
 						accesses += "<a href='?src=[REF(src)];choice=access;access_target=[A];allowed=1'>[replacetext(get_centcom_access_desc(A), " ", "&nbsp")]</a> "
+=======
+						accesses += "<a href='?src=[REF(src)];choice=access;access_target=[A];allowed=0'><font color=\"6bc473\">[replacetext(get_access_desc(A), " ", "&nbsp")]</font></a> "
+					else
+						accesses += "<a href='?src=[REF(src)];choice=access;access_target=[A];allowed=1'>[replacetext(get_access_desc(A), " ", "&nbsp")]</a> "
+>>>>>>> 4790bf4c9d (Partly reverts the access check refactor PR #9027 #9036 (#9039))
 			else
 				accesses += "<div align='center'><b>Access</b></div>"
 				accesses += "<table style='width:100%'>"
@@ -623,7 +629,11 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 						inserted_modify_id.access -= access_type
 						log_id("[key_name(usr)] removed [get_access_desc(access_type)] from [inserted_modify_id] using [inserted_scan_id] at [AREACOORD(usr)].")
 						if(access_allowed == 1)
+<<<<<<< HEAD
 							inserted_modify_id.access += access_type
+=======
+							inserted_modify_id.access |= access_type
+>>>>>>> 4790bf4c9d (Partly reverts the access check refactor PR #9027 #9036 (#9039))
 							log_id("[key_name(usr)] added [get_access_desc(access_type)] to [inserted_modify_id] using [inserted_scan_id] at [AREACOORD(usr)].")
 						playsound(src, "terminal_type", 50, FALSE)
 		if ("assign")
@@ -668,7 +678,15 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 						updateUsrDialog()
 						return
 
+<<<<<<< HEAD
 					inserted_modify_id.access = ( istype(src, /obj/machinery/computer/card/centcom) ? get_centcom_access(t1) : jobdatum.get_access() )
+=======
+						inserted_modify_id.access -= get_all_accesses()
+						inserted_modify_id.access |= jobdatum.get_access()
+					else // centcom level
+						inserted_modify_id.access -= get_all_centcom_access()
+						inserted_modify_id.access |= get_centcom_access(t1)
+>>>>>>> 4790bf4c9d (Partly reverts the access check refactor PR #9027 #9036 (#9039))
 
 					// Step 1: reseting theirs first
 					if(B) // 1-A: reseting bank payment

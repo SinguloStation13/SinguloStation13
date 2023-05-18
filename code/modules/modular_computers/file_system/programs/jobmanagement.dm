@@ -62,7 +62,11 @@
 	var/obj/item/card/id/user_id = card_slot?.stored_card
 
 	if(!user_id || !(ACCESS_CHANGE_IDS in user_id.access))
+<<<<<<< HEAD
 		return
+=======
+		return TRUE
+>>>>>>> 4790bf4c9d (Partly reverts the access check refactor PR #9027 #9036 (#9039))
 
 	switch(action)
 		if("PRG_open_job")

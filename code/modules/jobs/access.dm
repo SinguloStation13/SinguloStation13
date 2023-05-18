@@ -79,6 +79,7 @@
 	if(!length(access_list) || !islist(access_list))
 		return FALSE
 
+<<<<<<< HEAD
 	for(var/req in req_access)
 		if(!(req in access_list)) //doesn't have this access
 			return FALSE
@@ -86,6 +87,15 @@
 	if(length(req_one_access))
 		for(var/req in req_one_access)
 			if(req in access_list) //has an access from the single access list
+=======
+	for(var/each_code in req_access)
+		if(!(each_code in accesses_to_check)) //doesn't have this access
+			return FALSE
+
+	if(length(req_one_access))
+		for(var/each_code in req_one_access)
+			if(each_code in accesses_to_check) //has an access from the single access list
+>>>>>>> 4790bf4c9d (Partly reverts the access check refactor PR #9027 #9036 (#9039))
 				return TRUE
 		return FALSE
 	return TRUE

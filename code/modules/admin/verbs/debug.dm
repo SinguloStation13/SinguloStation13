@@ -193,10 +193,17 @@ But you can call procs that are of type /mob/living/carbon/human/proc/ for that 
 			id = worn.GetID()
 		if(id)
 			id.icon_state = "gold"
+<<<<<<< HEAD
 			id.access = get_all_accesses()+get_all_centcom_access()+get_all_syndicate_access()
 		else
 			id = new /obj/item/card/id/gold(H.loc)
 			id.access = get_all_accesses()+get_all_centcom_access()+get_all_syndicate_access()
+=======
+			id.access |= get_every_access()
+		else
+			id = new /obj/item/card/id/gold(H.loc)
+			id.access |= get_every_access()
+>>>>>>> 4790bf4c9d (Partly reverts the access check refactor PR #9027 #9036 (#9039))
 			id.registered_name = H.real_name
 			id.assignment = JOB_NAME_CAPTAIN
 			id.update_label()

@@ -655,11 +655,19 @@
 	if(!istype(I, /obj/item/card/id) && isitem(I))
 		I = I.GetID()
 
+<<<<<<< HEAD
 	if(!I || !I.access) //not ID or no access
 		return 0
 	for(var/req in req_access)
 		if(!(req in I.access)) //doesn't have this access
 			return 0
+=======
+	if(!I || !length(I.access)) //not ID or no access
+		return 0
+	for(var/req in req_access)
+		if(!(req in I.access))
+			return 0 //doesn't have this access
+>>>>>>> 4790bf4c9d (Partly reverts the access check refactor PR #9027 #9036 (#9039))
 	return 1
 
 /mob/living/silicon/robot/regenerate_icons()

@@ -164,8 +164,12 @@
 /mob/living/simple_animal/hostile/alien/maid/barmaid/Initialize(mapload)
 	. = ..()
 	access_card = new /obj/item/card/id(src)
+<<<<<<< HEAD
 	var/datum/job/captain/C = new /datum/job/captain
 	access_card.access = C.get_access()
+=======
+	access_card.access = get_all_accesses()
+>>>>>>> 4790bf4c9d (Partly reverts the access check refactor PR #9027 #9036 (#9039))
 	access_card.access |= ACCESS_CENT_BAR
 	ADD_TRAIT(access_card, TRAIT_NODROP, ABSTRACT_ITEM_TRAIT)
 	ADD_TRAIT(src, TRAIT_BARMASTER, ROUNDSTART_TRAIT)

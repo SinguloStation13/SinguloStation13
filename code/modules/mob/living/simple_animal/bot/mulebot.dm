@@ -61,9 +61,17 @@
 /mob/living/simple_animal/bot/mulebot/Initialize(mapload)
 	. = ..()
 	wires = new /datum/wires/mulebot(src)
+<<<<<<< HEAD
 	var/datum/job/cargo_technician/J = new/datum/job/cargo_technician
 	access_card.access = J.get_access()
 	prev_access = access_card.access
+=======
+
+	var/datum/job/J = SSjob.GetJob(JOB_NAME_CARGOTECHNICIAN)
+	access_card.access = J.get_access()
+	prev_access = access_card.access.Copy()
+
+>>>>>>> 4790bf4c9d (Partly reverts the access check refactor PR #9027 #9036 (#9039))
 	cell = new /obj/item/stock_parts/cell/upgraded(src, 2000)
 
 	var/static/mulebot_count = 0

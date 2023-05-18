@@ -74,7 +74,11 @@
 	//Update ID
 	var/obj/item/card/id/ID = H.get_idcard()
 	if(ID)
+<<<<<<< HEAD
 		ID.access += ACCESS_WEAPONS
+=======
+		ID.access |= ACCESS_WEAPONS
+>>>>>>> 4790bf4c9d (Partly reverts the access check refactor PR #9027 #9036 (#9039))
 
 ////////////////////////////////
 //////     Objectives    ///////

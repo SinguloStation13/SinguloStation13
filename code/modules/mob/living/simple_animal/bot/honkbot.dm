@@ -41,9 +41,16 @@
 	. = ..()
 	update_icon()
 	auto_patrol = TRUE
+<<<<<<< HEAD
 	var/datum/job/clown/J = new/datum/job/clown
 	access_card.access += J.get_access()
 	prev_access = access_card.access
+=======
+
+	var/datum/job/J = SSjob.GetJob(JOB_NAME_CLOWN)
+	access_card.access = J.get_access()
+	prev_access = access_card.access.Copy()
+>>>>>>> 4790bf4c9d (Partly reverts the access check refactor PR #9027 #9036 (#9039))
 
 	var/static/list/loc_connections = list(
 		COMSIG_ATOM_ENTERED = .proc/on_entered,

@@ -445,7 +445,11 @@ GLOBAL_LIST_EMPTY(req_console_ckey_departments)
 			msgVerified = "<font color='green'><b>Verified by [ID.registered_name] ([ID.assignment])</b></font>"
 			updateUsrDialog()
 		if(screen == REQ_SCREEN_ANNOUNCE)
+<<<<<<< HEAD
 			if (ACCESS_RC_ANNOUNCE in ID.access)
+=======
+			if(ACCESS_RC_ANNOUNCE in ID.access)
+>>>>>>> 4790bf4c9d (Partly reverts the access check refactor PR #9027 #9036 (#9039))
 				announceAuth = TRUE
 			else
 				announceAuth = FALSE

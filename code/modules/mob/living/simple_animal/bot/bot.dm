@@ -151,7 +151,11 @@
 	GLOB.bots_list += src
 	access_card = new /obj/item/card/id(src)
 //This access is so bots can be immediately set to patrol and leave Robotics, instead of having to be let out first.
+<<<<<<< HEAD
 	access_card.access += ACCESS_ROBOTICS
+=======
+	access_card.access |= ACCESS_ROBOTICS
+>>>>>>> 4790bf4c9d (Partly reverts the access check refactor PR #9027 #9036 (#9039))
 	set_custom_texts()
 	Radio = new/obj/item/radio(src)
 	if(radio_key)
@@ -562,7 +566,11 @@ Pass a positive integer as an argument to override a bot's default speed.
 
 /mob/living/simple_animal/bot/proc/check_bot_access()
 	if(mode != BOT_SUMMON && mode != BOT_RESPONDING)
+<<<<<<< HEAD
 		access_card.access = prev_access
+=======
+		access_card.access = prev_access.Copy()
+>>>>>>> 4790bf4c9d (Partly reverts the access check refactor PR #9027 #9036 (#9039))
 
 /mob/living/simple_animal/bot/proc/call_bot(caller, turf/waypoint, message=TRUE)
 	bot_reset() //Reset a bot before setting it to call mode.
@@ -622,7 +630,11 @@ Pass a positive integer as an argument to override a bot's default speed.
 	set_path(null)
 	summon_target = null
 	pathset = 0
+<<<<<<< HEAD
 	access_card.access = prev_access
+=======
+	access_card.access = prev_access.Copy()
+>>>>>>> 4790bf4c9d (Partly reverts the access check refactor PR #9027 #9036 (#9039))
 	tries = 0
 	mode = BOT_IDLE
 	diag_hud_set_botstat()
@@ -1040,7 +1052,11 @@ Pass a positive integer as an argument to override a bot's default speed.
 
 /mob/living/simple_animal/bot/Login()
 	. = ..()
+<<<<<<< HEAD
 	access_card.access += player_access
+=======
+	access_card.access |= player_access
+>>>>>>> 4790bf4c9d (Partly reverts the access check refactor PR #9027 #9036 (#9039))
 	diag_hud_set_botmode()
 
 /mob/living/simple_animal/bot/Logout()
@@ -1247,8 +1263,12 @@ Pass a positive integer as an argument to override a bot's default speed.
 /mob/living/simple_animal/bot/proc/go_up_or_down(direction)
 	//For giving the bot temporary all-access.
 	var/obj/item/card/id/all_access = new /obj/item/card/id
+<<<<<<< HEAD
 	var/datum/job/captain/all = new/datum/job/captain
 	all_access.access = all.get_access()
+=======
+	all_access.access = get_all_accesses()
+>>>>>>> 4790bf4c9d (Partly reverts the access check refactor PR #9027 #9036 (#9039))
 	bot_z_mode = BOT_Z_MODE_PATROLLING
 
 	if(!is_reserved_level(z) && is_station_level(z))
@@ -1272,4 +1292,3 @@ Pass a positive integer as an argument to override a bot's default speed.
 		last_summon = summon_target
 		summon_target = target
 		set_path(get_path_to(src, summon_target, 200, id=access_card))
-

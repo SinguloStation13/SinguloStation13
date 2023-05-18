@@ -94,7 +94,10 @@
 	if(!ID)
 		to_chat(user, "<span class='warning'>You don't have an ID.</span>")
 		return
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4790bf4c9d (Partly reverts the access check refactor PR #9027 #9036 (#9039))
 	if(!(ACCESS_HEADS in ID.access))
 		to_chat(user, "<span class='warning'>The access level of your card is not high enough.</span>")
 		return

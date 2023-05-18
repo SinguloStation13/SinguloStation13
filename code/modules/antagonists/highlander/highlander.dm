@@ -57,7 +57,11 @@
 	var/obj/item/card/id/W = new(H)
 	W.icon_state = "centcom"
 	W.access = get_all_accesses()
+<<<<<<< HEAD
 	W.access += get_all_centcom_access()
+=======
+	W.access |= get_all_centcom_access()
+>>>>>>> 4790bf4c9d (Partly reverts the access check refactor PR #9027 #9036 (#9039))
 	W.assignment = "Highlander"
 	W.registered_name = H.real_name
 	ADD_TRAIT(W, TRAIT_NODROP, HIGHLANDER)

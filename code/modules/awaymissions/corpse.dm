@@ -231,8 +231,11 @@
 					W.access = J.get_access()
 					break
 		if(id_access_list)
+<<<<<<< HEAD
 			if(!islist(W.access))
 				W.access = list()
+=======
+>>>>>>> 4790bf4c9d (Partly reverts the access check refactor PR #9027 #9036 (#9039))
 			W.access |= id_access_list
 		if(id_job)
 			W.assignment = id_job

@@ -189,7 +189,11 @@
 	W.icon_state = "centcom"
 	W.access = list() // wipe access - they shouldn't get all centcom access.
 	W.access = get_centcom_access(JOB_CENTCOM_OFFICIAL)
+<<<<<<< HEAD
 	W.access += ACCESS_WEAPONS
+=======
+	W.access |= ACCESS_WEAPONS
+>>>>>>> 4790bf4c9d (Partly reverts the access check refactor PR #9027 #9036 (#9039))
 	W.assignment = JOB_CENTCOM_OFFICIAL
 	W.registered_name = H.real_name
 	W.update_label()
@@ -346,7 +350,11 @@
 	var/obj/item/card/id/W = H.wear_id
 	W.access = list() //wipe access - they shouldn't get all centcom access.
 	W.access = get_centcom_access(name)
+<<<<<<< HEAD
 	W.access += ACCESS_WEAPONS
+=======
+	W.access |= ACCESS_WEAPONS
+>>>>>>> 4790bf4c9d (Partly reverts the access check refactor PR #9027 #9036 (#9039))
 	W.assignment = name
 	W.registered_name = H.real_name
 	W.update_label()
@@ -395,7 +403,11 @@
 
 	var/obj/item/card/id/W = H.wear_id
 	W.registered_name = H.real_name
+<<<<<<< HEAD
 	W.access += ACCESS_THEATRE
+=======
+	W.access |= ACCESS_THEATRE
+>>>>>>> 4790bf4c9d (Partly reverts the access check refactor PR #9027 #9036 (#9039))
 	W.update_label(W.registered_name, W.assignment)
 	H.dna.add_mutation(CLOWNMUT)
 
@@ -457,8 +469,13 @@
 	var/obj/item/card/id/W = H.wear_id
 	W.icon_state = "centcom"
 	W.access = list() //wipe access first
+<<<<<<< HEAD
 	W.access = get_all_accesses()//They get full station access.
 	W.access += get_centcom_access(JOB_ERT_DEATHSQUAD)//Let's add their alloted CentCom access.
+=======
+	W.access = get_all_accesses()  //They get full station access.
+	W.access |= get_centcom_access(JOB_ERT_DEATHSQUAD) //Let's add their alloted CentCom access.
+>>>>>>> 4790bf4c9d (Partly reverts the access check refactor PR #9027 #9036 (#9039))
 	W.assignment = JOB_ERT_DEATHSQUAD
 	W.registered_name = H.real_name
 	W.update_label(W.registered_name, W.assignment)

@@ -52,7 +52,11 @@ GLOBAL_VAR_INIT(floor_cluwnes, 0)
 /mob/living/simple_animal/hostile/floor_cluwne/Initialize(mapload)
 	. = ..()
 	access_card = new /obj/item/card/id(src)
+<<<<<<< HEAD
 	access_card.access = get_all_accesses()//THERE IS NO ESCAPE
+=======
+	access_card.access = get_all_accesses() //THERE IS NO ESCAPE
+>>>>>>> 4790bf4c9d (Partly reverts the access check refactor PR #9027 #9036 (#9039))
 	ADD_TRAIT(access_card, TRAIT_NODROP, ABSTRACT_ITEM_TRAIT)
 	invalid_area_typecache = typecacheof(invalid_area_typecache)
 	Manifest()

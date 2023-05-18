@@ -86,8 +86,14 @@
 
 	// Setup access
 	access_card = new /obj/item/card/id(src)
+<<<<<<< HEAD
 	var/datum/job/shaft_miner/M = new
 	access_card.access = M.get_access()
+=======
+	var/datum/job/M = SSjob.GetJob(JOB_NAME_SHAFTMINER)
+	access_card.access = M.get_access()
+
+>>>>>>> 4790bf4c9d (Partly reverts the access check refactor PR #9027 #9036 (#9039))
 
 /mob/living/simple_animal/hostile/mining_drone/Destroy()
 	for(var/datum/action/innate/minedrone/action in actions)

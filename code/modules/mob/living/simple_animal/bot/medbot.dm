@@ -112,6 +112,14 @@ GLOBAL_VAR(medibot_unique_id_gen)
 	qdel(J)
 	skin = new_skin
 	update_icon()
+<<<<<<< HEAD
+=======
+
+	var/datum/job/J = SSjob.GetJob(JOB_NAME_MEDICALDOCTOR)
+	access_card.access = J.get_access()
+	prev_access = access_card.access.Copy()
+
+>>>>>>> 4790bf4c9d (Partly reverts the access check refactor PR #9027 #9036 (#9039))
 	linked_techweb = SSresearch.science_tech
 	if(!GLOB.medibot_unique_id_gen)
 		GLOB.medibot_unique_id_gen = 0

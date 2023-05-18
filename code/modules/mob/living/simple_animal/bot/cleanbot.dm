@@ -38,9 +38,15 @@
 	get_targets()
 	icon_state = "cleanbot[on]"
 
+<<<<<<< HEAD
 	var/datum/job/janitor/J = new/datum/job/janitor
 	access_card.access += J.get_access()
 	prev_access = access_card.access
+=======
+	var/datum/job/J = SSjob.GetJob(JOB_NAME_JANITOR)
+	access_card.access = J.get_access()
+	prev_access = access_card.access.Copy()
+>>>>>>> 4790bf4c9d (Partly reverts the access check refactor PR #9027 #9036 (#9039))
 	GLOB.janitor_devices += src
 
 /mob/living/simple_animal/bot/cleanbot/Destroy()

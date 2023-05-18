@@ -109,7 +109,10 @@
 	slot_flags = ITEM_SLOT_ID
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100, "stamina" = 0)
 	resistance_flags = FIRE_PROOF | ACID_PROOF
+<<<<<<< HEAD
 	var/mining_points = 0 //For redeeming at mining equipment vendors
+=======
+>>>>>>> 4790bf4c9d (Partly reverts the access check refactor PR #9027 #9036 (#9039))
 	var/list/access = list()
 	var/registered_name// The name registered_name on the card
 	var/assignment
@@ -661,6 +664,18 @@ update_label("John Doe", "Clowny")
 	access = get_all_accesses()
 	. = ..()
 
+<<<<<<< HEAD
+=======
+/obj/item/card/id/ert/lawyer
+	registered_name = "CentCom Attorney"
+	assignment = "CentCom Attorney"
+	icon_state = "centcom"
+
+/obj/item/card/id/ert/lawyer/Initialize(mapload)
+	. = ..()
+	access = list(ACCESS_CENT_GENERAL, ACCESS_COURT, ACCESS_BRIG, ACCESS_FORENSICS_LOCKERS)
+
+>>>>>>> 4790bf4c9d (Partly reverts the access check refactor PR #9027 #9036 (#9039))
 /obj/item/card/id/prisoner
 	name = "prisoner ID card"
 	desc = "You are a number, you are not a free man."
@@ -714,6 +729,26 @@ update_label("John Doe", "Clowny")
 	name = "mining ID"
 	hud_state = JOB_HUD_RAWCARGO
 	access = list(ACCESS_MINING, ACCESS_MINING_STATION, ACCESS_MECH_MINING, ACCESS_MAILSORTING, ACCESS_MINERAL_STOREROOM)
+<<<<<<< HEAD
+=======
+	var/need_setup = TRUE
+
+/obj/item/card/id/golem/Initialize(mapload)
+	registered_account = SSeconomy.get_budget_account(ACCOUNT_GOLEM_ID)
+	. = ..()
+
+/obj/item/card/id/golem/pickup(mob/user)
+	. = ..()
+	if(need_setup)
+		if(isgolem(user))
+			registered_name = user.name // automatically change registered name if it's picked up by a golem at first time
+			update_label()
+		need_setup = FALSE
+		// if non-golem picks it up, the renaming feature will be disabled
+
+/obj/item/card/id/golem/spawner
+	need_setup = FALSE
+>>>>>>> 4790bf4c9d (Partly reverts the access check refactor PR #9027 #9036 (#9039))
 
 /obj/item/card/id/paper
 	name = "paper nametag"

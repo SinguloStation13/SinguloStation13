@@ -84,8 +84,12 @@
 	. = ..()
 	GLOB.drones_list += src
 	access_card = new /obj/item/card/id(src)
+<<<<<<< HEAD
 	var/datum/job/captain/C = new /datum/job/captain
 	access_card.access = C.get_access()
+=======
+	access_card.access = get_all_accesses()
+>>>>>>> 4790bf4c9d (Partly reverts the access check refactor PR #9027 #9036 (#9039))
 
 	if(default_storage)
 		var/obj/item/I = new default_storage(src)
