@@ -1,5 +1,10 @@
 /datum/surgery/blood_filter
+<<<<<<< HEAD
 	name = "Filter blood"
+=======
+	name = "Filter Blood"
+	desc = "A surgical procedure that filters toxins from the patient's blood. Does not undo any toxin damage, however."
+>>>>>>> b49e52babe (Fixes upgraded blood filtering surgery (#9048))
 	steps = list(/datum/surgery_step/incise,
 				/datum/surgery_step/retract_skin,
 				/datum/surgery_step/incise,
@@ -60,3 +65,27 @@
 		"<span class='warning'>[user] screws up, brusing [target]'s chest!</span>",
 		"<span class='warning'>[user] screws up!</span>")
 	target.adjustBruteLoss(5)
+<<<<<<< HEAD
+=======
+
+/datum/surgery/blood_filter/upgraded
+	name = "Filter Blood (Adv.)"
+	desc = "A surgical procedure that provides advanced toxin filtering to remove reagents from the patient's blood, in addition to undoing any damage the toxins done to the patient's system. Heals considerably more when the patient is severely injured."
+	requires_tech = TRUE
+	filtering_step_type = /datum/surgery_step/filter_blood/upgraded
+	replaced_by = /datum/surgery/blood_filter/femto
+
+/datum/surgery_step/filter_blood/upgraded
+	time = 1.85 SECONDS
+	tox_heal_factor = 0.075
+
+/datum/surgery/blood_filter/femto
+	name = "Filter Blood (Exp.)"
+	desc = "A surgical procedure that provides experimental toxin filtering to remove reagents from the patient's blood, in addition to undoing any damage the toxins done to the patient's system. Heals considerably more when the patient is severely injured."
+	requires_tech = TRUE
+	filtering_step_type = /datum/surgery_step/filter_blood/upgraded/femto
+	replaced_by = null
+
+/datum/surgery_step/filter_blood/upgraded/femto
+	time = 1 SECONDS
+>>>>>>> b49e52babe (Fixes upgraded blood filtering surgery (#9048))
