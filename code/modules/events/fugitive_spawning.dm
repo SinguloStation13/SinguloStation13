@@ -119,3 +119,22 @@
 		for(var/obj/effect/mob_spawn/human/fugitive/spawner in A)
 			announce_to_ghosts(spawner)
 	priority_announce("Unidentified ship detected near the station.", sound = SSstation.announcer.get_rand_alert_sound())
+<<<<<<< HEAD
+=======
+
+/proc/announce_fugitive_pod(obj/effect/mob_spawn/human/fugitive_hunter/spawner, list/candidates)
+	if(length(candidates))
+		var/mob/M = pick_n_take(candidates)
+		spawner.create(M.ckey)
+		notify_ghosts("The fugitive hunter ship has an object of interest: [M]!", source=M, action=NOTIFY_ORBIT, header="Something's Interesting!")
+	else
+		notify_ghosts("The fugitive hunter ship has an object of interest: [spawner]!", source=spawner, action=NOTIFY_ORBIT, header="Something's Interesting!")
+
+/proc/admin_select_backstory(list/backstory_keys)
+	GLOB.fugitive_backstory_selection = backstory_keys
+	message_admins("Choosing random fugitive backstory in 20 seconds. \
+		<a href='?_src_=holder;[HrefToken(TRUE)];backstory_select=[REF(backstory_keys)]'>SELECT MANUALLY</a>")
+	play_sound_to_all_admins('sound/effects/admin_alert.ogg')
+	sleep(20 SECONDS)
+	return pick(GLOB.fugitive_backstory_selection)
+>>>>>>> 85bef7dd69 (Increases the time to cancel random events by 20 seconds, adds a sound that alerts admins and a preference toggle for it (#9003))
