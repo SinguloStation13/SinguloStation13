@@ -35,6 +35,16 @@
 /datum/religion_rites/proc/perform_rite(mob/living/user, atom/religious_tool)
 	if(!can_afford(user))
 		return FALSE
+<<<<<<< HEAD
+=======
+	var/turf/T = get_turf(religious_tool)
+	if(!T.is_holy())
+		to_chat(user, "<span class='warning'>The altar can only function in a holy area!</span>")
+		return FALSE
+	if(!GLOB.religious_sect.altar_anchored)
+		to_chat(user, "<span class='warning'>The altar must be secured to the floor if you wish to perform the rite!</span>")
+		return FALSE
+>>>>>>> ad15068552 (Some more Chaplain QoL (#8988))
 	to_chat(user, "<span class='notice'>You begin to perform the rite of [name]...</span>")
 	if(!ritual_invocations)
 		if(do_after(user, target = user, delay = ritual_length))

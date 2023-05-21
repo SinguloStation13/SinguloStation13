@@ -53,6 +53,13 @@
  */
 /datum/component/religious_tool/proc/AttemptActions(datum/source, obj/item/the_item, mob/living/user)
 	SIGNAL_HANDLER
+<<<<<<< HEAD
+=======
+	var/turf/T = get_turf(parent)
+	if(!T.is_holy())
+		to_chat(user, "<span class='warning'>The [source] can only function in a holy area!</span>")
+		return COMPONENT_NO_AFTERATTACK
+>>>>>>> ad15068552 (Some more Chaplain QoL (#8988))
 
 	if(istype(the_item, catalyst_type))
 		INVOKE_ASYNC(src, /datum.proc/ui_interact, user) //asynchronous to avoid sleeping in a signal
@@ -237,6 +244,9 @@
 	if(!can_i_see)
 		return
 	examine_list += ("<span class='notice'>Use a bible to interact with this.</span>")
+	if(user.mind?.holy_role)
+		var/obj/structure/altar_of_gods/altar = parent
+		examine_list +=("<span class='notice'>You can tap this with your holy weapon to [altar.anchored ? "un" : ""]anchor it.</span>")
 	if(!easy_access_sect)
 		if(operation_flags & RELIGION_TOOL_SECTSELECT)
 			examine_list += ("<span class='notice'>This looks like it can be used to select a sect.</span>")
