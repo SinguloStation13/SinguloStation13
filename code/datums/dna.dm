@@ -389,7 +389,17 @@
 /mob/living/carbon/proc/updateappearance(icon_update=1, mutcolor_update=0, mutations_overlay_update=0)
 	if(!has_dna())
 		return
+<<<<<<< HEAD
 	gender = (deconstruct_block(getblock(dna.uni_identity, DNA_GENDER_BLOCK), 2)-1) ? FEMALE : MALE
+=======
+	switch(deconstruct_block(getblock(dna.uni_identity, DNA_GENDER_BLOCK), 3))
+		if(G_MALE)
+			set_gender(MALE, TRUE, forced = TRUE)
+		if(G_FEMALE)
+			set_gender(FEMALE, TRUE, forced = TRUE)
+		else
+			set_gender(PLURAL, TRUE, forced = TRUE)
+>>>>>>> 5bec0d4f8e (Fix gender and skin tone DNA not properly applying. (#9088))
 
 /mob/living/carbon/human/updateappearance(icon_update=1, mutcolor_update=0, mutations_overlay_update=0)
 	..()
@@ -400,6 +410,16 @@
 	eye_color = sanitize_hexcolor(getblock(structure, DNA_EYE_COLOR_BLOCK))
 	facial_hair_style = GLOB.facial_hair_styles_list[deconstruct_block(getblock(structure, DNA_FACIAL_HAIR_STYLE_BLOCK), GLOB.facial_hair_styles_list.len)]
 	hair_style = GLOB.hair_styles_list[deconstruct_block(getblock(structure, DNA_HAIR_STYLE_BLOCK), GLOB.hair_styles_list.len)]
+<<<<<<< HEAD
+=======
+	gradient_color = sanitize_hexcolor(getblock(structure, DNA_HAIR_GRADIENT_COLOR_BLOCK))
+	gradient_style = GLOB.hair_gradients_list[deconstruct_block(getblock(structure, DNA_HAIR_GRADIENT_STYLE_BLOCK), GLOB.hair_gradients_list.len)]
+	// Ensure we update the skin tone of all non-foreign bodyparts
+	for(var/obj/item/bodypart/part in bodyparts)
+		if(part.no_update)
+			continue
+		part.update_limb(dropping_limb = FALSE, source = src, is_creating = TRUE)
+>>>>>>> 5bec0d4f8e (Fix gender and skin tone DNA not properly applying. (#9088))
 	if(icon_update)
 		update_body()
 		update_hair()
