@@ -50,6 +50,20 @@
 	icon_state = "diagonal_edge"
 	name = "white diagonal edge"
 
+<<<<<<< HEAD
+=======
+/obj/effect/turf_decal/tile/white/carat
+	icon_state = "tile_carat"
+	name = "white carat decal"
+
+/obj/effect/turf_decal/tile/white/anticorner_ramp
+	icon_state = "tile_anticorner_ramp"
+	name = "white anticorner ramp"
+
+/obj/effect/turf_decal/tile/white/anticorner_ramp/contrasted
+	icon_state = "tile_anticorner_contrasted_ramp"
+	name = "contrasted white anticorner ramp"
+>>>>>>> 0f475ba6b9 (The :^) has been removed from the tile_opposing_corners (and moved instead as it's own tile decal) (#8897))
 
 /// Blue tiles
 
@@ -93,6 +107,21 @@
 	icon_state = "diagonal_edge"
 	name = "blue diagonal edge"
 
+<<<<<<< HEAD
+=======
+/obj/effect/turf_decal/tile/blue/carat
+	icon_state = "tile_carat"
+	name = "blue carat decal"
+
+/obj/effect/turf_decal/tile/blue/anticorner_ramp
+	icon_state = "tile_anticorner_ramp"
+	name = "blue anticorner ramp"
+
+/obj/effect/turf_decal/tile/blue/anticorner_ramp/contrasted
+	icon_state = "tile_anticorner_contrasted_ramp"
+	name = "contrasted blue anticorner ramp"
+
+>>>>>>> 0f475ba6b9 (The :^) has been removed from the tile_opposing_corners (and moved instead as it's own tile decal) (#8897))
 /// Dark blue tiles
 
 /obj/effect/turf_decal/tile/dark_blue
@@ -135,6 +164,19 @@
 	icon_state = "diagonal_edge"
 	name = "dark blue diagonal edge"
 
+<<<<<<< HEAD
+=======
+/obj/effect/turf_decal/tile/dark_blue/carat
+	icon_state = "tile_carat"
+	name = "dark blue carat decal"
+/obj/effect/turf_decal/tile/dark_blue/anticorner_ramp
+	icon_state = "tile_anticorner_ramp"
+	name = "dark blue anticorner ramp"
+
+/obj/effect/turf_decal/tile/dark_blue/anticorner_ramp/contrasted
+	icon_state = "tile_anticorner_contrasted_ramp"
+	name = "contrasted dark blue anticorner ramp"
+>>>>>>> 0f475ba6b9 (The :^) has been removed from the tile_opposing_corners (and moved instead as it's own tile decal) (#8897))
 
 // Black tiles
 
@@ -178,6 +220,21 @@
 	icon_state = "diagonal_edge"
 	name = "black diagonal edge"
 
+<<<<<<< HEAD
+=======
+/obj/effect/turf_decal/tile/black/carat
+	icon_state = "tile_carat"
+	name = "black carat decal"
+
+/obj/effect/turf_decal/tile/black/anticorner_ramp
+	icon_state = "tile_anticorner_ramp"
+	name = "black anticorner ramp"
+
+/obj/effect/turf_decal/tile/black/anticorner_ramp/contrasted
+	icon_state = "tile_anticorner_contrasted_ramp"
+	name = "contrasted black anticorner ramp"
+
+>>>>>>> 0f475ba6b9 (The :^) has been removed from the tile_opposing_corners (and moved instead as it's own tile decal) (#8897))
 /// Green tiles
 
 /obj/effect/turf_decal/tile/green
@@ -220,6 +277,21 @@
 	icon_state = "diagonal_edge"
 	name = "green diagonal edge"
 
+<<<<<<< HEAD
+=======
+/obj/effect/turf_decal/tile/green/carat
+	icon_state = "tile_carat"
+	name = "green carat decal"
+
+/obj/effect/turf_decal/tile/green/anticorner_ramp
+	icon_state = "tile_anticorner_ramp"
+	name = "green anticorner ramp"
+
+/obj/effect/turf_decal/tile/green/anticorner_ramp/contrasted
+	icon_state = "tile_anticorner_contrasted_ramp"
+	name = "contrasted green anticorner ramp"
+
+>>>>>>> 0f475ba6b9 (The :^) has been removed from the tile_opposing_corners (and moved instead as it's own tile decal) (#8897))
 /// Dark green tiles
 
 /obj/effect/turf_decal/tile/dark_green
@@ -262,6 +334,21 @@
 	icon_state = "diagonal_edge"
 	name = "dark green diagonal edge"
 
+<<<<<<< HEAD
+=======
+/obj/effect/turf_decal/tile/dark_green/carat
+	icon_state = "tile_carat"
+	name = "dark green carat decal"
+
+/obj/effect/turf_decal/tile/dark_green/anticorner_ramp
+	icon_state = "tile_anticorner_ramp"
+	name = "dark green anticorner ramp"
+
+/obj/effect/turf_decal/tile/dark_green/anticorner_ramp/contrasted
+	icon_state = "tile_anticorner_contrasted_ramp"
+	name = "contrasted dark green anticorner ramp"
+
+>>>>>>> 0f475ba6b9 (The :^) has been removed from the tile_opposing_corners (and moved instead as it's own tile decal) (#8897))
 /// Yellow tiles
 
 /obj/effect/turf_decal/tile/yellow
@@ -304,6 +391,21 @@
 	icon_state = "diagonal_edge"
 	name = "yellow diagonal edge"
 
+<<<<<<< HEAD
+=======
+/obj/effect/turf_decal/tile/yellow/carat
+	icon_state = "tile_carat"
+	name = "yellow carat decal"
+
+/obj/effect/turf_decal/tile/yellow/anticorner_ramp
+	icon_state = "tile_anticorner_ramp"
+	name = "yellow anticorner ramp"
+
+/obj/effect/turf_decal/tile/yellow/anticorner_ramp/contrasted
+	icon_state = "tile_anticorner_contrasted_ramp"
+	name = "contrasted yellow anticorner ramp"
+
+>>>>>>> 0f475ba6b9 (The :^) has been removed from the tile_opposing_corners (and moved instead as it's own tile decal) (#8897))
 /// Red tiles
 
 /obj/effect/turf_decal/tile/red
@@ -346,6 +448,21 @@
 	icon_state = "diagonal_edge"
 	name = "red diagonal edge"
 
+<<<<<<< HEAD
+=======
+/obj/effect/turf_decal/tile/red/carat
+	icon_state = "tile_carat"
+	name = "red carat decal"
+
+/obj/effect/turf_decal/tile/red/anticorner_ramp
+	icon_state = "tile_anticorner_ramp"
+	name = "red anticorner ramp"
+
+/obj/effect/turf_decal/tile/red/anticorner_ramp/contrasted
+	icon_state = "tile_anticorner_contrasted_ramp"
+	name = "contrasted red anticorner ramp"
+
+>>>>>>> 0f475ba6b9 (The :^) has been removed from the tile_opposing_corners (and moved instead as it's own tile decal) (#8897))
 /// Dark red tiles
 
 /obj/effect/turf_decal/tile/dark_red
@@ -388,6 +505,21 @@
 	icon_state = "diagonal_edge"
 	name = "dark red diagonal edge"
 
+<<<<<<< HEAD
+=======
+/obj/effect/turf_decal/tile/dark_red/carat
+	icon_state = "tile_carat"
+	name = "dark red carat decal"
+
+/obj/effect/turf_decal/tile/dark_red/anticorner_ramp
+	icon_state = "tile_anticorner_ramp"
+	name = "dark red anticorner ramp"
+
+/obj/effect/turf_decal/tile/dark_red/anticorner_ramp/contrasted
+	icon_state = "tile_anticorner_contrasted_ramp"
+	name = "contrasted dark red anticorner ramp"
+
+>>>>>>> 0f475ba6b9 (The :^) has been removed from the tile_opposing_corners (and moved instead as it's own tile decal) (#8897))
 /// Bar tiles
 
 /obj/effect/turf_decal/tile/bar
@@ -431,6 +563,21 @@
 	icon_state = "diagonal_edge"
 	name = "bar diagonal edge"
 
+<<<<<<< HEAD
+=======
+/obj/effect/turf_decal/tile/bar/carat
+	icon_state = "tile_carat"
+	name = "bar carat decal"
+
+/obj/effect/turf_decal/tile/bar/anticorner_ramp
+	icon_state = "tile_anticorner_ramp"
+	name = "bar anticorner ramp"
+
+/obj/effect/turf_decal/tile/bar/anticorner_ramp/contrasted
+	icon_state = "tile_anticorner_contrasted_ramp"
+	name = "contrasted bar anticorner ramp"
+
+>>>>>>> 0f475ba6b9 (The :^) has been removed from the tile_opposing_corners (and moved instead as it's own tile decal) (#8897))
 /// Purple tiles
 
 /obj/effect/turf_decal/tile/purple
@@ -473,6 +620,21 @@
 	icon_state = "diagonal_edge"
 	name = "bar diagonal edge"
 
+<<<<<<< HEAD
+=======
+/obj/effect/turf_decal/tile/purple/carat
+	icon_state = "tile_carat"
+	name = "purple carat decal"
+
+/obj/effect/turf_decal/tile/purple/anticorner_ramp
+	icon_state = "tile_anticorner_ramp"
+	name = "purple anticorner ramp"
+
+/obj/effect/turf_decal/tile/purple/anticorner_ramp/contrasted
+	icon_state = "tile_anticorner_contrasted_ramp"
+	name = "contrasted purple anticorner ramp"
+
+>>>>>>> 0f475ba6b9 (The :^) has been removed from the tile_opposing_corners (and moved instead as it's own tile decal) (#8897))
 /// Brown tiles
 
 /obj/effect/turf_decal/tile/brown
@@ -514,6 +676,21 @@
 	icon_state = "diagonal_edge"
 	name = "brown diagonal edge"
 
+<<<<<<< HEAD
+=======
+/obj/effect/turf_decal/tile/brown/carat
+	icon_state = "tile_carat"
+	name = "brown carat decal"
+
+/obj/effect/turf_decal/tile/brown/anticorner_ramp
+	icon_state = "tile_anticorner_ramp"
+	name = "brown anticorner ramp"
+
+/obj/effect/turf_decal/tile/brown/anticorner_ramp/contrasted
+	icon_state = "tile_anticorner_contrasted_ramp"
+	name = "contrasted brown anticorner ramp"
+
+>>>>>>> 0f475ba6b9 (The :^) has been removed from the tile_opposing_corners (and moved instead as it's own tile decal) (#8897))
 /// Neutral tiles
 
 /obj/effect/turf_decal/tile/neutral
@@ -557,6 +734,21 @@
 	icon_state = "diagonal_edge"
 	name = "neutral diagonal edge"
 
+<<<<<<< HEAD
+=======
+/obj/effect/turf_decal/tile/neutral/carat
+	icon_state = "tile_carat"
+	name = "neutral carat decal"
+
+/obj/effect/turf_decal/tile/neutral/anticorner_ramp
+	icon_state = "tile_anticorner_ramp"
+	name = "neutral anticorner ramp"
+
+/obj/effect/turf_decal/tile/neutral/anticorner_ramp/contrasted
+	icon_state = "tile_anticorner_contrasted_ramp"
+	name = "contrasted neutral anticorner ramp"
+
+>>>>>>> 0f475ba6b9 (The :^) has been removed from the tile_opposing_corners (and moved instead as it's own tile decal) (#8897))
 /// Dark tiles
 
 /obj/effect/turf_decal/tile/dark
@@ -599,6 +791,21 @@
 	icon_state = "diagonal_edge"
 	name = "dark diagonal edge"
 
+<<<<<<< HEAD
+=======
+/obj/effect/turf_decal/tile/dark/carat
+	icon_state = "tile_carat"
+	name = "dark carat decal"
+
+/obj/effect/turf_decal/tile/dark/anticorner_ramp
+	icon_state = "tile_anticorner_ramp"
+	name = "dark anticorner ramp"
+
+/obj/effect/turf_decal/tile/dark/anticorner_ramp/contrasted
+	icon_state = "tile_anticorner_contrasted_ramp"
+	name = "contrasted dark anticorner ramp"
+
+>>>>>>> 0f475ba6b9 (The :^) has been removed from the tile_opposing_corners (and moved instead as it's own tile decal) (#8897))
 /// Random tiles
 
 /obj/effect/turf_decal/tile/random // so many colors
@@ -641,6 +848,21 @@
 	icon_state = "diagonal_edge"
 	name = "colorful diagonal edge"
 
+<<<<<<< HEAD
+=======
+/obj/effect/turf_decal/tile/random/carat
+	icon_state = "tile_carat"
+	name = "dark carat decal"
+
+/obj/effect/turf_decal/tile/random/anticorner_ramp
+	icon_state = "tile_anticorner_ramp"
+	name = "colorful anticorner ramp"
+
+/obj/effect/turf_decal/tile/random/anticorner_ramp/contrasted
+	icon_state = "tile_anticorner_contrasted_ramp"
+	name = "contrasted colorful anticorner ramp"
+
+>>>>>>> 0f475ba6b9 (The :^) has been removed from the tile_opposing_corners (and moved instead as it's own tile decal) (#8897))
 /obj/effect/turf_decal/tile/random/Initialize(mapload)
 	color = "#[random_short_color()]"
 	return ..()
