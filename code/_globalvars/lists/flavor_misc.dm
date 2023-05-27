@@ -196,6 +196,7 @@ GLOBAL_LIST_INIT(scarySounds, list('sound/weapons/thudswoosh.ogg','sound/weapons
 //If you don't want to fuck up disposals, add to this list, and don't change the order.
 //If you insist on changing the order, you'll have to change every sort junction to reflect the new order. --Pete
 
+<<<<<<< HEAD
 GLOBAL_LIST_INIT(TAGGERLOCATIONS, list("Disposals",
 	"Cargo Bay", "QM Office", "Engineering", "CE Office",
 	"Atmospherics", "Security", "HoS Office", "Medbay",
@@ -204,6 +205,40 @@ GLOBAL_LIST_INIT(TAGGERLOCATIONS, list("Disposals",
 	"Bar", "Kitchen", "Hydroponics", "Janitor Closet","Genetics",
 	"Testing Range", "Toxins", "Dormitories", "Virology",
 	"Xenobiology", "Law Office","Detective's Office"))
+=======
+GLOBAL_LIST_INIT(TAGGERLOCATIONS, list(
+	"Disposals",
+	"Cargo Bay",
+	"QM Office",
+	"Engineering",
+	"CE Office",
+	"Atmospherics",
+	"Security",
+	"HoS Office",
+	"Medbay",
+	"CMO Office",
+	"Chemistry",
+	"Research",
+	"RD Office",
+	"Robotics",
+	"HoP Office",
+	"Library",
+	"Chapel",
+	"Theatre",
+	"Bar",
+	"Kitchen",
+	"Hydroponics",
+	"Janitor Closet",
+	"Genetics",
+	"Testing Range",
+	"Toxins",
+	"Dormitories",
+	"Virology",
+	"Xenobiology",
+	"Law Office",
+	"Detective's Office",
+))
+>>>>>>> 86be066ab6 (Reorders the tagger locations to work with disposal pipes (#9086))
 
 GLOBAL_LIST_INIT(station_prefixes, world.file2list("strings/station_prefixes.txt") + "")
 
