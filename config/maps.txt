@@ -18,8 +18,29 @@ map constructionstation
 	votable
 endmap
 
+<<<<<<< HEAD
 map cryostation
 	voteable
+=======
+map deltastation
+	minplayers 40
+	votable
+endmap
+
+map kilostation
+	maxplayers 50
+	votable
+endmap
+
+map flandstation
+	minplayers 40
+	votable
+endmap
+
+map radstation
+	minplayers 20
+	votable
+>>>>>>> d59b5aec43 (The end of Pubbystation (and Glowstation aswell) (#9065))
 endmap
 
 #Debug Maps, you probably don't want these enabled.
