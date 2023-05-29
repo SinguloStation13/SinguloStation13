@@ -132,4 +132,7 @@
 /obj/item/clothing/under/gangster/purple
 	desc = "I have a dream."
 	icon_state = "gangster_p"
+<<<<<<< HEAD
 	armor = list("melee" = 10, "laser" = 10, "fire" = 40, "acid" = 10, "bomb" = 5, "stamina" = 30)
+=======
+>>>>>>> afc54f7808 (does (#9109))
