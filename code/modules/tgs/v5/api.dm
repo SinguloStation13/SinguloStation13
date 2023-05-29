@@ -306,7 +306,17 @@
 		var/datum/tgs_chat_channel/channel = I
 		ids += channel.id
 
+<<<<<<< HEAD
 	message = list(DMAPI5_CHAT_MESSAGE_TEXT = message, DMAPI5_CHAT_MESSAGE_CHANNEL_IDS = ids)
+=======
+	message = UpgradeDeprecatedChatMessage(message)
+
+	if (!length(channels))
+		return
+
+	message = message._interop_serialize()
+	message[DMAPI5_CHAT_MESSAGE_CHANNEL_IDS] = ids
+>>>>>>> 0be46cb16b (Update TGS DMAPI (#9082))
 	if(intercepted_message_queue)
 		intercepted_message_queue += list(message)
 	else
@@ -318,7 +328,18 @@
 		var/datum/tgs_chat_channel/channel = I
 		if (!channel.is_private_channel && ((channel.is_admin_channel && admin_only) || (!channel.is_admin_channel && !admin_only)))
 			channels += channel.id
+<<<<<<< HEAD
 	message = list(DMAPI5_CHAT_MESSAGE_TEXT = message, DMAPI5_CHAT_MESSAGE_CHANNEL_IDS = channels)
+=======
+
+	message = UpgradeDeprecatedChatMessage(message)
+
+	if (!length(channels))
+		return
+
+	message = message._interop_serialize()
+	message[DMAPI5_CHAT_MESSAGE_CHANNEL_IDS] = channels
+>>>>>>> 0be46cb16b (Update TGS DMAPI (#9082))
 	if(intercepted_message_queue)
 		intercepted_message_queue += list(message)
 	else
@@ -333,6 +354,7 @@
 
 /datum/tgs_api/v5/ChatChannelInfo()
 	RequireInitialBridgeResponse()
+	WaitForReattach(TRUE)
 	return chat_channels.Copy()
 
 /datum/tgs_api/v5/proc/DecodeChannels(chat_update_json)
