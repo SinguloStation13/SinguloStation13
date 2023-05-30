@@ -1,6 +1,10 @@
 // tgstation-server DMAPI
 
+<<<<<<< HEAD
 #define TGS_DMAPI_VERSION "6.0.6"
+=======
+#define TGS_DMAPI_VERSION "6.4.5"
+>>>>>>> 80cf40df73 (Update TGS DMAPI (#9122))
 
 // All functions and datums outside this document are subject to change with any version and should not be relied on.
 
