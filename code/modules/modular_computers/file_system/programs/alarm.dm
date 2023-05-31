@@ -10,7 +10,26 @@
 	size = 5
 	tgui_id = "NtosStationAlertConsole"
 	program_icon = "bell"
+<<<<<<< HEAD
 	var/has_alert = 0
+=======
+	/// If there is any station alert
+	var/has_alert = FALSE
+	/// Station alert datum for showing alerts UI
+	var/datum/station_alert/alert_control
+
+/datum/computer_file/program/alarm_monitor/New()
+	//We want to send an alarm if we're in one of the mining home areas
+	//Or if we're on station. Otherwise, die.
+	var/list/allowed_areas = GLOB.the_station_areas + typesof(/area/mine)
+	alert_control = new(computer, list(ALARM_ATMOS, ALARM_FIRE, ALARM_POWER), listener_areas = allowed_areas)
+	RegisterSignal(alert_control.listener, list(COMSIG_ALARM_TRIGGERED, COMSIG_ALARM_CLEARED), PROC_REF(update_alarm_display))
+	return ..()
+
+/datum/computer_file/program/alarm_monitor/Destroy()
+	QDEL_NULL(alert_control)
+	return ..()
+>>>>>>> 9c6117fddd ([PORT] Silicon Station Alert TGUI and minor fixes! (#9117))
 
 /datum/computer_file/program/alarm_monitor/process_tick()
 	..()
@@ -27,6 +46,7 @@
 	return 1
 
 /datum/computer_file/program/alarm_monitor/ui_data(mob/user)
+<<<<<<< HEAD
 	var/list/data = get_header_data()
 
 	data["alarms"] = list()
@@ -35,6 +55,10 @@
 		for(var/area in GLOB.alarms[class])
 			data["alarms"][class] += area
 
+=======
+	var/list/data = list()
+	data += alert_control.ui_data(user)
+>>>>>>> 9c6117fddd ([PORT] Silicon Station Alert TGUI and minor fixes! (#9117))
 	return data
 
 /datum/computer_file/program/alarm_monitor/proc/triggerAlarm(class, area/home, cameras, obj/source)
@@ -107,10 +131,15 @@
 
 /datum/computer_file/program/alarm_monitor/proc/update_alarm_display()
 	has_alert = FALSE
+<<<<<<< HEAD
 	for(var/cat in GLOB.alarms)
 		var/list/L = GLOB.alarms[cat]
 		if(L.len)
 			has_alert = TRUE
+=======
+	if(length(alert_control.listener.alarms))
+		has_alert = TRUE
+>>>>>>> 9c6117fddd ([PORT] Silicon Station Alert TGUI and minor fixes! (#9117))
 
 /datum/computer_file/program/alarm_monitor/on_start(mob/user)
 	. = ..(user)

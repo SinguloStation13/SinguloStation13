@@ -33,11 +33,21 @@
 	var/list/network = list("ss13")
 	var/obj/machinery/camera/current
 	var/list/connected_robots = list()
+<<<<<<< HEAD
 	var/aiRestorePowerRoutine = 0
 	var/requires_power = POWER_REQ_ALL
 	var/can_be_carded = TRUE
 	var/alarms = list("Motion"=list(), "Fire"=list(), "Atmosphere"=list(), "Power"=list(), "Camera"=list(), "Burglar"=list())
 	var/datum/weakref/alerts_popup = null
+=======
+
+	/// Station alert datum for showing alerts UI
+	var/datum/station_alert/alert_control
+
+	var/aiRestorePowerRoutine = 0
+	var/requires_power = POWER_REQ_ALL
+	var/can_be_carded = TRUE
+>>>>>>> 9c6117fddd ([PORT] Silicon Station Alert TGUI and minor fixes! (#9117))
 	var/icon/holo_icon //Default is assigned when AI is created.
 	var/obj/mecha/controlled_mech //For controlled_mech a mech, to determine whether to relaymove or use the AI eye.
 	var/radio_enabled = TRUE //Determins if a carded AI can speak with its built in radio or not.
@@ -167,6 +177,13 @@
 	builtInCamera = new (src)
 	builtInCamera.network = list("ss13")
 
+<<<<<<< HEAD
+=======
+	alert_control = new(src, list(ALARM_ATMOS, ALARM_FIRE, ALARM_POWER, ALARM_CAMERA, ALARM_BURGLAR, ALARM_MOTION), list(z), camera_view = TRUE)
+	RegisterSignal(alert_control.listener, COMSIG_ALARM_TRIGGERED, PROC_REF(alarm_triggered))
+	RegisterSignal(alert_control.listener, COMSIG_ALARM_CLEARED, PROC_REF(alarm_cleared))
+
+>>>>>>> 9c6117fddd ([PORT] Silicon Station Alert TGUI and minor fixes! (#9117))
 /mob/living/silicon/ai/key_down(_key, client/user)
 	if(findtext(_key, "numpad")) //if it's a numpad number, we can convert it to just the number
 		_key = _key[7] //strings, lists, same thing really
@@ -194,6 +211,10 @@
 	QDEL_NULL(eyeobj) // No AI, no Eye
 	QDEL_NULL(spark_system)
 	QDEL_NULL(aiMulti)
+<<<<<<< HEAD
+=======
+	QDEL_NULL(alert_control)
+>>>>>>> 9c6117fddd ([PORT] Silicon Station Alert TGUI and minor fixes! (#9117))
 	malfhack = null
 	ShutOffDoomsdayDevice()
 	. = ..()
@@ -265,6 +286,7 @@
 		tab_data["Systems"] = GENERATE_STAT_TEXT("nonfunctional")
 	return tab_data
 
+<<<<<<< HEAD
 /mob/living/silicon/ai/proc/update_ai_alerts()
 	if(!alerts_popup || !alerts_popup.resolve())
 		return
@@ -308,6 +330,8 @@
 	popup = alerts_popup.resolve()
 	popup.open()
 
+=======
+>>>>>>> 9c6117fddd ([PORT] Silicon Station Alert TGUI and minor fixes! (#9117))
 /mob/living/silicon/ai/proc/ai_call_shuttle()
 	if(control_disabled)
 		to_chat(usr, "<span class='warning'>Wireless control is disabled!</span>")
@@ -436,11 +460,7 @@
 
 /mob/living/silicon/ai/Topic(href, href_list)
 	..()
-	if(usr != src)
-		return
-	if (href_list["close"])
-		alerts_popup = null
-	if (incapacitated())
+	if(usr != src || incapacitated())
 		return
 	if (href_list["mach_close"])
 		var/t1 = text("window=[]", href_list["mach_close"])
@@ -449,7 +469,7 @@
 	if (href_list["switchcamera"])
 		switchCamera(locate(href_list["switchcamera"]) in GLOB.cameranet.cameras)
 	if (href_list["showalerts"])
-		ai_alerts()
+		alert_control.ui_interact(src)
 #ifdef AI_VOX
 	if(href_list["say_word"])
 		play_vox_word(href_list["say_word"], null, src)

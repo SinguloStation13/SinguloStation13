@@ -54,7 +54,12 @@
 	var/locked = TRUE
 	var/list/req_access = list(ACCESS_ROBOTICS)
 
+<<<<<<< HEAD
 	var/alarms = list("Motion"=list(), "Fire"=list(), "Atmosphere"=list(), "Power"=list(), "Camera"=list(), "Burglar"=list())
+=======
+	/// Station alert datum for showing alerts UI
+	var/datum/station_alert/alert_control
+>>>>>>> 9c6117fddd ([PORT] Silicon Station Alert TGUI and minor fixes! (#9117))
 
 	var/speed = 0 // VTEC speed boost.
 	var/magpulse = FALSE // Magboot-like effect.
@@ -173,8 +178,20 @@
 	aicamera = new/obj/item/camera/siliconcam/robot_camera(src)
 	toner = tonermax
 	diag_hud_set_borgcell()
+<<<<<<< HEAD
 	RegisterSignal(src, COMSIG_ATOM_ON_EMAG, .proc/on_emag)
 	RegisterSignal(src, COMSIG_ATOM_SHOULD_EMAG, .proc/should_emag)
+=======
+
+	alert_control = new(src, list(ALARM_ATMOS, ALARM_FIRE, ALARM_POWER, ALARM_CAMERA, ALARM_BURGLAR, ALARM_MOTION), list(z))
+	RegisterSignal(alert_control.listener, COMSIG_ALARM_TRIGGERED, PROC_REF(alarm_triggered))
+	RegisterSignal(alert_control.listener, COMSIG_ALARM_CLEARED, PROC_REF(alarm_cleared))
+	alert_control.listener.RegisterSignal(src, COMSIG_LIVING_DEATH, /datum/alarm_listener/proc/prevent_alarm_changes)
+	alert_control.listener.RegisterSignal(src, COMSIG_LIVING_REVIVE, /datum/alarm_listener/proc/allow_alarm_changes)
+
+	RegisterSignal(src, COMSIG_ATOM_ON_EMAG, PROC_REF(on_emag))
+	RegisterSignal(src, COMSIG_ATOM_SHOULD_EMAG, PROC_REF(should_emag))
+>>>>>>> 9c6117fddd ([PORT] Silicon Station Alert TGUI and minor fixes! (#9117))
 	logevent("System brought online.")
 
 /**
@@ -230,6 +247,10 @@
 	QDEL_NULL(inv2)
 	QDEL_NULL(inv3)
 	QDEL_NULL(spark_system)
+<<<<<<< HEAD
+=======
+	QDEL_NULL(alert_control)
+>>>>>>> 9c6117fddd ([PORT] Silicon Station Alert TGUI and minor fixes! (#9117))
 	cell = null
 	UnregisterSignal(src, COMSIG_ATOM_ON_EMAG)
 	UnregisterSignal(src, COMSIG_ATOM_SHOULD_EMAG)
@@ -288,6 +309,7 @@
 /mob/living/silicon/robot/proc/get_standard_name()
 	return "[(designation ? "[designation] " : "")][mmi.braintype]-[ident]"
 
+<<<<<<< HEAD
 /mob/living/silicon/robot/proc/robot_alerts()
 	var/dat = ""
 	for (var/cat in alarms)
@@ -308,6 +330,8 @@
 	alerts.set_content(dat)
 	alerts.open()
 
+=======
+>>>>>>> 9c6117fddd ([PORT] Silicon Station Alert TGUI and minor fixes! (#9117))
 /mob/living/silicon/robot/proc/ionpulse(thrust = 0.01, use_fuel = TRUE)
 	if(!ionpulse_on)
 		return FALSE
