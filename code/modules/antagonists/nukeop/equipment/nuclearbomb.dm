@@ -452,7 +452,12 @@
 		set_security_level(SEC_LEVEL_DELTA)
 
 		if (proper_bomb) // Why does this exist
+<<<<<<< HEAD
 			countdown_music = play_soundtrack_music(/datum/soundtrack_song/bee/countdown, only_station = TRUE)
+=======
+			set_dynamic_high_impact_event("nuclear bomb has been armed")
+			countdown_music = play_soundtrack_music(/datum/soundtrack_song/bee/countdown)
+>>>>>>> 4d5d9fd354 (Dynamic changes - weight decay, antag rep, and "dead" rulesets (#9002))
 
 	else
 		detonation_timer = null
