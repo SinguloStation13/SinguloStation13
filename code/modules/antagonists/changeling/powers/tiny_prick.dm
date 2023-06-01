@@ -108,8 +108,15 @@
 		C.real_name = NewDNA.real_name
 		NewDNA.transfer_identity(C)
 		if(ismonkey(C))
+<<<<<<< HEAD
 			C.humanize(TR_KEEPITEMS | TR_KEEPIMPLANTS | TR_KEEPORGANS | TR_KEEPDAMAGE | TR_KEEPVIRUS | TR_DEFAULTMSG | TR_KEEPAI)
 		C.updateappearance(mutcolor_update=1)
+=======
+			C = C.humanize(TR_KEEPITEMS | TR_KEEPIMPLANTS | TR_KEEPORGANS | TR_KEEPDAMAGE | TR_KEEPVIRUS | TR_DEFAULTMSG | TR_KEEPAI)
+		var/datum/status_effect/ling_transformation/previous_transformation = C.has_status_effect(STATUS_EFFECT_LING_TRANSFORMATION)
+		C.apply_status_effect(STATUS_EFFECT_LING_TRANSFORMATION, new_dna, istype(previous_transformation) ? previous_transformation.original_dna : null)
+	COOLDOWN_START(src, next_sting, TRANSFORM_STING_COOLDOWN)
+>>>>>>> 78bab5f9ac (Fix transformation sting (#9111))
 
 
 /datum/action/changeling/sting/false_armblade
