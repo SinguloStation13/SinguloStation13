@@ -7,6 +7,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
 	},
+/obj/structure/ore_box,
 /turf/open/floor/plasteel,
 /area/quartermaster/miningoffice)
 "an" = (
@@ -69,6 +70,11 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/upper/port/central)
+"aR" = (
+/obj/structure/lattice,
+/obj/item/circuitboard/machine/pacman,
+/turf/open/space/basic,
+/area/space)
 "aW" = (
 /obj/machinery/door/firedoor/border_only,
 /obj/machinery/door/firedoor/border_only{
@@ -285,7 +291,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
 "cM" = (
-/obj/structure/frame,
+/obj/structure/frame/machine,
 /turf/open/floor/plating,
 /area/storage/tech)
 "cN" = (
@@ -303,11 +309,13 @@
 /area/hallway/primary/fore)
 "dg" = (
 /obj/machinery/vending/boozeomat,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/turf/open/floor/plasteel/cafeteria_dark,
+/turf/closed/wall,
 /area/crew_quarters/kitchen)
+"dh" = (
+/obj/structure/lattice,
+/obj/item/airlock_painter,
+/turf/open/space/basic,
+/area/space)
 "di" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer4{
 	dir = 10
@@ -578,6 +586,11 @@
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/quartermaster/miningoffice)
+"fq" = (
+/obj/structure/lattice,
+/obj/item/storage/toolbox/electrical,
+/turf/open/space/basic,
+/area/space)
 "ft" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
@@ -728,13 +741,7 @@
 /area/quartermaster/storage)
 "gG" = (
 /obj/structure/lattice,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/frame,
+/obj/item/discovery_scanner,
 /turf/open/space/basic,
 /area/space)
 "gL" = (
@@ -785,6 +792,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/storage/tech)
+"hg" = (
+/obj/effect/spawner/structure/window/reinforced/shutter,
+/turf/open/floor/plating/airless,
+/area/space)
 "hh" = (
 /obj/machinery/atmospherics/components/binary/valve/layer2,
 /obj/machinery/atmospherics/components/binary/valve,
@@ -904,6 +915,12 @@
 /obj/machinery/door/firedoor/border_only,
 /turf/open/floor/plasteel/cafeteria_dark,
 /area/crew_quarters/kitchen)
+"ix" = (
+/obj/structure/lattice,
+/obj/item/electronics/airlock,
+/obj/item/electronics/airlock,
+/turf/open/space/basic,
+/area/space)
 "iC" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -972,7 +989,7 @@
 	},
 /area/hallway/primary/fore)
 "iS" = (
-/obj/structure/frame,
+/obj/structure/frame/machine,
 /obj/machinery/light{
 	dir = 8
 	},
@@ -1199,6 +1216,11 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/atmos)
+"kw" = (
+/obj/structure/lattice,
+/obj/item/storage/box/lights/mixed,
+/turf/open/space/basic,
+/area/space)
 "kx" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -1265,6 +1287,27 @@
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
+"lo" = (
+/obj/structure/lattice,
+/obj/item/toner,
+/obj/item/toner,
+/turf/open/space/basic,
+/area/space)
+"lr" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/spawner/west,
+/obj/structure/window/reinforced/spawner,
+/turf/open/space/basic,
+/area/space)
+"ls" = (
+/obj/structure/lattice,
+/obj/item/stock_parts/cell/high/plus,
+/obj/item/stock_parts/cell/high/plus,
+/obj/item/stock_parts/cell/high/plus,
+/obj/item/stock_parts/cell/high/plus,
+/obj/item/stock_parts/cell/high/plus,
+/turf/open/space/basic,
+/area/space)
 "lv" = (
 /obj/structure/table/glass,
 /obj/machinery/airalarm/directional/north,
@@ -1286,6 +1329,11 @@
 	},
 /turf/open/floor/engine/o2,
 /area/engine/atmos)
+"lH" = (
+/obj/structure/lattice,
+/obj/item/storage/toolbox/emergency,
+/turf/open/space/basic,
+/area/space)
 "lN" = (
 /obj/effect/turf_decal/tile/purple/half/contrasted{
 	dir = 8
@@ -1293,7 +1341,7 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/miningoffice)
 "lP" = (
-/obj/structure/frame,
+/obj/structure/frame/machine,
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "lQ" = (
@@ -1366,6 +1414,11 @@
 	},
 /turf/open/floor/plating,
 /area/hallway/primary/central)
+"mJ" = (
+/obj/structure/lattice,
+/obj/machinery/portable_atmospherics/canister/nitrogen,
+/turf/open/space/basic,
+/area/space)
 "mO" = (
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
@@ -1417,6 +1470,11 @@
 	},
 /turf/open/floor/plating,
 /area/engine/gravity_generator)
+"nb" = (
+/obj/structure/lattice,
+/obj/item/airlock_painter/decal,
+/turf/open/space/basic,
+/area/space)
 "nc" = (
 /obj/structure/closet/secure_closet/freezer/fridge,
 /obj/structure/window/reinforced,
@@ -1429,6 +1487,11 @@
 /obj/machinery/door/firedoor/border_only,
 /turf/open/floor/plasteel/cafeteria_dark,
 /area/crew_quarters/kitchen)
+"nf" = (
+/obj/structure/lattice,
+/obj/item/wallframe/intercom,
+/turf/open/space/basic,
+/area/space)
 "ni" = (
 /obj/item/stack/sheet/wood,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -1801,6 +1864,11 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel/cafeteria_dark,
 /area/crew_quarters/kitchen)
+"qm" = (
+/obj/structure/lattice,
+/obj/item/wallframe/firealarm,
+/turf/open/space/basic,
+/area/space)
 "qo" = (
 /obj/structure/lattice/catwalk,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -1931,13 +1999,18 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/plasteel,
 /area/quartermaster/miningdock)
+"rc" = (
+/obj/structure/lattice,
+/obj/item/wallframe/newscaster,
+/turf/open/space/basic,
+/area/space)
 "rg" = (
 /obj/effect/turf_decal/delivery,
 /obj/structure/table_frame,
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
 "rh" = (
-/obj/structure/frame,
+/obj/structure/frame/machine,
 /obj/item/stack/sheet/wood,
 /turf/open/floor/plating,
 /area/storage/tech)
@@ -2092,7 +2165,7 @@
 /turf/open/floor/plating/airless,
 /area/space)
 "sr" = (
-/obj/structure/frame,
+/obj/structure/frame/machine,
 /turf/open/floor/plating/airless,
 /area/space)
 "ss" = (
@@ -2378,6 +2451,7 @@
 "tV" = (
 /obj/structure/table/glass,
 /obj/item/storage/box/donkpockets,
+/obj/item/discovery_scanner,
 /turf/open/floor/plasteel,
 /area/quartermaster/miningdock)
 "tY" = (
@@ -2428,10 +2502,9 @@
 /turf/open/floor/plasteel,
 /area/engine/atmos)
 "uz" = (
-/obj/structure/lattice,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
+/obj/structure/grille,
+/obj/structure/window/reinforced/spawner,
+/obj/structure/window/reinforced/spawner/north,
 /turf/open/space/basic,
 /area/space)
 "uD" = (
@@ -2469,6 +2542,11 @@
 	dir = 5
 	},
 /area/hallway/primary/fore)
+"uY" = (
+/obj/structure/lattice,
+/obj/item/stock_parts/cell/high/plus,
+/turf/open/space/basic,
+/area/space)
 "vb" = (
 /obj/structure/railing/corner{
 	dir = 8
@@ -2476,6 +2554,11 @@
 /obj/structure/table,
 /turf/open/floor/plasteel,
 /area/quartermaster/miningoffice)
+"vc" = (
+/obj/structure/lattice,
+/obj/item/gps/mining,
+/turf/open/space/basic,
+/area/space)
 "vd" = (
 /obj/effect/turf_decal/tile/brown/half/contrasted{
 	dir = 1
@@ -2650,6 +2733,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/structure/ore_box,
 /turf/open/floor/plasteel,
 /area/quartermaster/miningoffice)
 "wo" = (
@@ -2801,6 +2885,11 @@
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
+"xw" = (
+/obj/structure/lattice,
+/obj/item/electronics/advanced_airlock_controller,
+/turf/open/space/basic,
+/area/space)
 "xy" = (
 /obj/machinery/modular_computer/console/preset/civilian,
 /obj/structure/window/reinforced{
@@ -2861,6 +2950,11 @@
 	},
 /turf/open/floor/plasteel/dark/telecomms,
 /area/tcommsat/server)
+"ym" = (
+/obj/structure/lattice,
+/obj/item/storage/toolbox/mechanical,
+/turf/open/space/basic,
+/area/space)
 "yu" = (
 /obj/structure/window/reinforced,
 /obj/structure/table/reinforced,
@@ -2885,6 +2979,11 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
+"yB" = (
+/obj/structure/lattice,
+/obj/machinery/portable_atmospherics/canister/oxygen,
+/turf/open/space/basic,
+/area/space)
 "yD" = (
 /turf/open/floor/plasteel,
 /area/quartermaster/miningoffice)
@@ -2931,6 +3030,11 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/upper/central)
+"zc" = (
+/obj/structure/lattice,
+/obj/item/circuitboard/machine/plasma_refiner,
+/turf/open/space/basic,
+/area/space)
 "zf" = (
 /obj/machinery/door/airlock/maintenance{
 	name = "Mining Maintenance";
@@ -2989,6 +3093,11 @@
 	},
 /turf/open/floor/plasteel,
 /area/construction/storage_wing)
+"zz" = (
+/obj/structure/lattice,
+/obj/structure/closet/crate/solarpanel_small,
+/turf/open/space/basic,
+/area/space)
 "zB" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
 	dir = 4
@@ -3032,6 +3141,17 @@
 	},
 /turf/closed/wall,
 /area/quartermaster/storage)
+"zM" = (
+/obj/structure/lattice,
+/obj/item/circuitboard/machine/cell_charger,
+/turf/open/space/basic,
+/area/space)
+"zO" = (
+/obj/structure/lattice,
+/obj/item/paint/anycolor,
+/obj/item/paint/anycolor,
+/turf/open/space/basic,
+/area/space)
 "zR" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
@@ -3124,6 +3244,11 @@
 /obj/item/storage/toolbox/emergency,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
+"AH" = (
+/obj/structure/lattice,
+/obj/item/circuitboard/machine/smes,
+/turf/open/space/basic,
+/area/space)
 "AK" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-4"
@@ -3293,10 +3418,7 @@
 /area/maintenance/upper/central)
 "Cc" = (
 /obj/structure/lattice,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/frame,
+/obj/structure/frame/machine,
 /obj/machinery/light,
 /turf/open/space/basic,
 /area/space)
@@ -3400,10 +3522,9 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/miningdock)
 "CG" = (
-/obj/structure/lattice,
-/obj/structure/window/reinforced{
-	dir = 1
-	},
+/obj/structure/grille,
+/obj/structure/window/reinforced/spawner/north,
+/obj/structure/window/reinforced/spawner,
 /turf/open/space/basic,
 /area/space)
 "CI" = (
@@ -3628,9 +3749,14 @@
 /turf/open/floor/plasteel/dark,
 /area/tcommsat/computer)
 "Ed" = (
-/obj/structure/frame,
+/obj/structure/frame/machine,
 /turf/open/floor/circuit/telecomms/mainframe,
 /area/tcommsat/server)
+"Ef" = (
+/obj/structure/lattice,
+/obj/item/pipe_dispenser,
+/turf/open/space/basic,
+/area/space)
 "Ei" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
 	dir = 9
@@ -3664,6 +3790,11 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
+"Es" = (
+/obj/structure/lattice,
+/obj/item/circuitboard/machine/recharger,
+/turf/open/space/basic,
+/area/space)
 "Et" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/plasteel,
@@ -3727,6 +3858,11 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/upper/central)
+"Fb" = (
+/obj/structure/lattice,
+/obj/item/gun/energy/e_gun/turret,
+/turf/open/space/basic,
+/area/space)
 "Fd" = (
 /turf/open/floor/plasteel/dark/side{
 	dir = 6
@@ -3889,6 +4025,7 @@
 /obj/effect/turf_decal/tile/brown/half/contrasted{
 	dir = 8
 	},
+/obj/structure/ore_box,
 /turf/open/floor/plasteel,
 /area/quartermaster/miningoffice)
 "Gl" = (
@@ -3923,6 +4060,11 @@
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
+"Gw" = (
+/obj/structure/lattice,
+/obj/item/stack/sheet/iron/fifty,
+/turf/open/space/basic,
+/area/space)
 "Gy" = (
 /obj/structure/lattice/catwalk,
 /obj/machinery/atmospherics/components/unary/passive_vent,
@@ -3978,6 +4120,11 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/atmos)
+"Hf" = (
+/obj/structure/lattice,
+/obj/item/stack/sheet/glass/fifty,
+/turf/open/space/basic,
+/area/space)
 "Hg" = (
 /obj/structure/window/reinforced{
 	dir = 4
@@ -4129,6 +4276,11 @@
 	},
 /turf/open/floor/plasteel/cafeteria_red,
 /area/crew_quarters/kitchen)
+"IK" = (
+/obj/structure/lattice,
+/obj/item/circuitboard/machine/autolathe,
+/turf/open/space/basic,
+/area/space)
 "IN" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -4512,8 +4664,13 @@
 /obj/machinery/atmospherics/components/trinary/filter/atmos,
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
+"LI" = (
+/obj/structure/lattice,
+/obj/item/circuitboard/machine/ntnet_relay,
+/turf/open/space/basic,
+/area/space)
 "LR" = (
-/obj/structure/frame,
+/obj/structure/frame/machine,
 /obj/structure/cable/yellow{
 	icon_state = "0-8"
 	},
@@ -4543,6 +4700,11 @@
 "Mj" = (
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
+"Mq" = (
+/obj/structure/lattice,
+/obj/item/storage/firstaid/regular,
+/turf/open/space/basic,
+/area/space)
 "Mu" = (
 /obj/structure/chair/office,
 /obj/structure/cable/yellow{
@@ -4620,6 +4782,12 @@
 /obj/machinery/computer/cargo/request,
 /turf/open/floor/plasteel,
 /area/quartermaster/miningdock)
+"Nq" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/spawner/east,
+/obj/structure/window/reinforced/spawner/west,
+/turf/open/space/basic,
+/area/space)
 "Nr" = (
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
@@ -4642,6 +4810,11 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
+"NB" = (
+/obj/structure/lattice,
+/obj/machinery/portable_atmospherics/canister/toxins,
+/turf/open/space/basic,
+/area/space)
 "NC" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/visible{
 	dir = 4
@@ -4700,10 +4873,7 @@
 /area/tcommsat/computer)
 "NU" = (
 /obj/structure/lattice,
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/frame,
+/obj/structure/frame/machine,
 /turf/open/space/basic,
 /area/space)
 "NY" = (
@@ -4755,6 +4925,11 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
+"Oj" = (
+/obj/structure/lattice,
+/obj/item/pipe_painter,
+/turf/open/space/basic,
+/area/space)
 "Ok" = (
 /obj/machinery/door/airlock/atmos{
 	name = "Atmospherics Control";
@@ -4894,6 +5069,13 @@
 "Pb" = (
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
+"Pf" = (
+/obj/structure/lattice,
+/obj/structure/frame/computer{
+	dir = 8
+	},
+/turf/open/space/basic,
+/area/space)
 "Pr" = (
 /turf/closed/wall/mineral/iron,
 /area/hallway/primary/central)
@@ -5008,6 +5190,11 @@
 /obj/item/stack/sheet/plasteel/fifty,
 /turf/open/floor/plasteel,
 /area/construction/storage_wing)
+"Ql" = (
+/obj/structure/lattice,
+/obj/item/circuitboard/machine/microwave,
+/turf/open/space/basic,
+/area/space)
 "Qp" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 8
@@ -5110,6 +5297,11 @@
 	dir = 1
 	},
 /area/hallway/primary/fore)
+"Rc" = (
+/obj/structure/lattice,
+/obj/item/wallframe/turret_control,
+/turf/open/space/basic,
+/area/space)
 "Rf" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
@@ -5242,6 +5434,11 @@
 /obj/machinery/computer/rdconsole,
 /turf/open/floor/plating,
 /area/storage/tech)
+"SC" = (
+/obj/structure/lattice,
+/obj/item/stack/rods/fifty,
+/turf/open/space/basic,
+/area/space)
 "SL" = (
 /obj/structure/cable/yellow{
 	icon_state = "2-4"
@@ -5370,6 +5567,11 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
 /area/quartermaster/miningdock)
+"TS" = (
+/obj/structure/lattice,
+/obj/item/wallframe/airalarm,
+/turf/open/space/basic,
+/area/space)
 "Uk" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
@@ -5610,6 +5812,11 @@
 	dir = 8
 	},
 /area/hallway/primary/fore)
+"Wg" = (
+/obj/structure/lattice,
+/obj/item/circuitboard/machine/telecomms/relay,
+/turf/open/space/basic,
+/area/space)
 "Wj" = (
 /obj/structure/railing{
 	dir = 6;
@@ -5645,7 +5852,7 @@
 /area/hydroponics)
 "Wr" = (
 /obj/structure/lattice,
-/obj/structure/frame,
+/obj/item/wallframe/camera,
 /turf/open/space/basic,
 /area/space)
 "Ws" = (
@@ -5677,6 +5884,12 @@
 /obj/structure/cable/yellow,
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
+"WB" = (
+/obj/structure/lattice,
+/obj/item/electronics/firelock,
+/obj/item/electronics/firelock,
+/turf/open/space/basic,
+/area/space)
 "WI" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -5830,6 +6043,11 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
+"XJ" = (
+/obj/structure/lattice,
+/obj/item/wallframe/apc,
+/turf/open/space/basic,
+/area/space)
 "XV" = (
 /obj/machinery/door/airlock/mining{
 	name = "Filing Room";
@@ -36403,13 +36621,13 @@ mF
 iQ
 po
 py
-py
-py
-py
-py
-py
-py
-py
+OF
+OF
+OF
+OF
+OF
+OF
+OF
 py
 cq
 VG
@@ -36659,15 +36877,15 @@ tF
 RE
 Mj
 po
-py
-py
-py
-py
-py
-py
-py
-py
-py
+OF
+OF
+OF
+OF
+NB
+OF
+OF
+OF
+OF
 cq
 VG
 py
@@ -36916,15 +37134,15 @@ vv
 CD
 hh
 Ep
-py
-py
-py
-py
-py
-py
-py
-py
-py
+OF
+OF
+Fb
+OF
+mJ
+OF
+OF
+OF
+OF
 cq
 VG
 py
@@ -37173,15 +37391,15 @@ sv
 sv
 sv
 po
-py
-py
-py
-py
-py
-py
-py
-py
-py
+OF
+OF
+OF
+SC
+yB
+OF
+OF
+OF
+OF
 cq
 VG
 py
@@ -37431,13 +37649,13 @@ jn
 py
 py
 py
-py
-py
-py
-py
-py
-py
-py
+OF
+OF
+aR
+OF
+ix
+Wr
+OF
 py
 cq
 VG
@@ -37688,13 +37906,13 @@ jn
 py
 py
 py
-py
-py
-py
-py
-py
-py
-py
+OF
+Mq
+Gw
+WB
+OF
+OF
+OF
 py
 cq
 VG
@@ -37945,13 +38163,13 @@ jn
 py
 py
 py
-py
-py
-py
-py
-py
-py
-py
+OF
+ym
+qm
+OF
+uY
+Fb
+OF
 py
 cq
 VG
@@ -38202,13 +38420,13 @@ jn
 py
 py
 py
-py
-py
-py
-py
-py
-py
-py
+OF
+LI
+TS
+Es
+lH
+OF
+OF
 py
 cq
 VG
@@ -38458,15 +38676,15 @@ HV
 HV
 HV
 HV
-py
-py
-py
-py
-py
-py
-py
-py
-py
+OF
+OF
+OF
+Ql
+zM
+ix
+WB
+OF
+OF
 cq
 VG
 py
@@ -38715,15 +38933,15 @@ vk
 Rx
 si
 Dy
-py
-py
-py
-py
-py
-py
-py
-py
-py
+OF
+xw
+WB
+Wg
+IK
+XJ
+zc
+xw
+OF
 cq
 VG
 py
@@ -38972,15 +39190,15 @@ HV
 HV
 HV
 HV
-py
-py
-py
-py
-py
-py
-py
-py
-py
+OF
+OF
+OF
+Wr
+kw
+OF
+Rc
+OF
+OF
 cq
 VG
 py
@@ -39230,13 +39448,13 @@ jn
 py
 py
 py
-py
-py
-py
-py
-py
-py
-py
+OF
+lo
+Ef
+fq
+Oj
+OF
+OF
 py
 cq
 VG
@@ -39487,13 +39705,13 @@ jn
 py
 py
 py
-py
-py
-py
-py
-py
-py
-py
+OF
+ix
+rc
+ix
+OF
+Gw
+OF
 py
 cq
 VG
@@ -39744,13 +39962,13 @@ jn
 py
 py
 py
-py
-py
-py
-py
-py
-py
-py
+OF
+OF
+nb
+nf
+zO
+WB
+OF
 py
 cq
 VG
@@ -40001,13 +40219,13 @@ jn
 py
 py
 py
-py
-py
-py
-py
-py
-py
-py
+OF
+zz
+Fb
+gG
+dh
+ym
+OF
 py
 cq
 VG
@@ -40257,15 +40475,15 @@ Xv
 Xv
 Xv
 lY
-py
-py
-py
-py
-py
-py
-py
-py
-py
+OF
+OF
+AH
+Wr
+lo
+kw
+OF
+OF
+OF
 cq
 VG
 py
@@ -40514,15 +40732,15 @@ Pz
 pv
 jQ
 ot
-py
-py
-py
-py
-py
-py
-py
-py
-py
+OF
+OF
+ls
+OF
+Hf
+OF
+SC
+Fb
+OF
 cq
 VG
 py
@@ -40746,7 +40964,7 @@ py
 py
 py
 py
-py
+hg
 NU
 OC
 Xm
@@ -40771,15 +40989,15 @@ Wz
 cE
 gk
 lY
-py
-py
-py
-py
-py
-py
-py
-py
-py
+OF
+OF
+vc
+Pf
+Pf
+Pf
+nf
+OF
+OF
 cq
 VG
 py
@@ -41003,7 +41221,7 @@ py
 py
 py
 py
-py
+hg
 NU
 OC
 CI
@@ -41029,13 +41247,13 @@ Sr
 gk
 lY
 py
-py
-py
-py
-py
-py
-py
-py
+OF
+OF
+OF
+OF
+OF
+OF
+OF
 py
 cq
 VG
@@ -41260,8 +41478,8 @@ VG
 VG
 VG
 VG
-VG
-CG
+hg
+OF
 OC
 Jx
 OC
@@ -41517,7 +41735,7 @@ py
 py
 py
 py
-py
+hg
 NU
 OF
 Gg
@@ -41536,7 +41754,7 @@ EK
 EK
 qQ
 OF
-ZU
+uz
 py
 py
 py
@@ -41774,12 +41992,12 @@ py
 py
 py
 py
-py
+hg
 NU
 OF
 zF
 OC
-Wr
+NU
 VS
 wo
 wK
@@ -41793,7 +42011,7 @@ OF
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -42031,26 +42249,26 @@ VG
 VG
 VG
 VG
-VG
-gG
-uz
-uz
-uz
+hg
+NU
+OF
+OF
+OF
 Cc
 VS
-Pr
-Pr
-Pr
+wK
+wK
+wK
 Xv
-vX
+tA
 Xv
-py
-py
-py
+Nq
+Nq
+lr
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -42288,26 +42506,26 @@ py
 py
 py
 py
+hg
+hg
+hg
+hg
+hg
+hg
+VS
+Pr
+Pr
+Pr
+Xv
+vX
+Xv
 py
 py
-py
-py
-py
-py
-OF
-py
-py
-py
-OF
-py
-ZU
-py
-py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -42557,14 +42775,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -42814,14 +43032,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -43071,14 +43289,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -43328,14 +43546,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -43585,14 +43803,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -43842,14 +44060,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -44099,14 +44317,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -44356,14 +44574,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -44613,14 +44831,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -44870,14 +45088,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -45127,14 +45345,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -45384,14 +45602,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -45641,14 +45859,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -45898,14 +46116,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -46155,14 +46373,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -46412,14 +46630,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -46669,14 +46887,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -46926,14 +47144,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -47183,14 +47401,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -47440,14 +47658,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -47697,14 +47915,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -47954,14 +48172,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -48211,14 +48429,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -48468,14 +48686,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -48725,14 +48943,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -48982,14 +49200,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -49239,14 +49457,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -49496,14 +49714,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -49753,14 +49971,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -50010,14 +50228,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -50267,14 +50485,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -50524,14 +50742,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -50781,14 +50999,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -51038,14 +51256,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -51295,14 +51513,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -51552,14 +51770,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -51809,14 +52027,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -52066,14 +52284,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -52323,14 +52541,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -52580,14 +52798,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -52837,14 +53055,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -53094,14 +53312,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -53351,14 +53569,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -53608,14 +53826,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -53865,14 +54083,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -54122,14 +54340,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -54379,14 +54597,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -54636,14 +54854,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -54893,14 +55111,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -55150,14 +55368,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -55407,14 +55625,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -55664,14 +55882,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -55921,14 +56139,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -56178,14 +56396,14 @@ py
 py
 OF
 py
-ZU
+OF
 py
 py
-py
+CG
 OF
 qo
 OF
-ZU
+uz
 py
 py
 py
@@ -56435,14 +56653,14 @@ OF
 OF
 OF
 OF
-ZU
 OF
 OF
 OF
+CG
 OF
 qo
 OF
-ZU
+uz
 OF
 OF
 OF
