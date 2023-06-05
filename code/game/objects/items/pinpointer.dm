@@ -146,8 +146,13 @@
 
 		while(crewmember_name in name_counts)
 			name_counts[crewmember_name]++
+<<<<<<< HEAD
 			crewmember_name = text("[] ([])", crewmember_name, name_counts[crewmember_name])
 		names[crewmember_name] = H
+=======
+			crewmember_name = "[crewmember_name] ([name_counts[crewmember_name]])"
+		names[crewmember_name] = L
+>>>>>>> e0382eec84 (Replaces text() proc into embbed text (#9132))
 		name_counts[crewmember_name] = 1
 
 	if(!names.len)

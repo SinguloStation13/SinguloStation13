@@ -378,9 +378,15 @@
 					return
 				to_chat(usr, "<b>Comments/Log:</b>")
 				var/counter = 1
+<<<<<<< HEAD
 				while(R.fields[text("com_[]", counter)])
 					to_chat(usr, R.fields[text("com_[]", counter)])
 					to_chat(usr, "----------")
+=======
+				while(target_record.fields["com_[counter]"])
+					to_chat(human_user, target_record.fields["com_[counter]"])
+					to_chat(human_user, "----------")
+>>>>>>> e0382eec84 (Replaces text() proc into embbed text (#9132))
 					counter++
 				return
 
@@ -393,10 +399,17 @@
 				if(!HAS_TRAIT(H, TRAIT_SECURITY_HUD))
 					return
 				var/counter = 1
+<<<<<<< HEAD
 				while(R.fields[text("com_[]", counter)])
 					counter++
 				R.fields[text("com_[]", counter)] = text("Made by [] on [] [], []<BR>[]", allowed_access, station_time_timestamp(), time2text(world.realtime, "MMM DD"), GLOB.year_integer+540, t1)
 				to_chat(usr, "<span class='notice'>Successfully added comment.</span>")
+=======
+				while(target_record.fields["com_[counter]"])
+					counter++
+				target_record.fields["com_[counter]"] = "Made by [allowed_access] on [station_time_timestamp()] [time2text(world.realtime, "MMM DD")], [GLOB.year_integer+YEAR_OFFSET]<BR>[t1]"
+				to_chat(human_user, "<span class='notice'>Successfully added comment.</span>")
+>>>>>>> e0382eec84 (Replaces text() proc into embbed text (#9132))
 				return
 	..() //end of this massive fucking chain. TODO: make the hud chain not spooky.
 
