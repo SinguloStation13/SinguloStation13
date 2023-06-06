@@ -20,11 +20,24 @@
 		else
 			return
 	// Client does NOT have tgui_input on: Returns regular input
+<<<<<<< HEAD:code/modules/tgui/tgui_alert.dm
 	/*if(!user.client.prefs.read_preference(/datum/preference/toggle/tgui_input))
 		if(length(buttons) == 2)
 			return alert(user, message, title, buttons[1], buttons[2])
 		if(length(buttons) == 3)
 			return alert(user, message, title, buttons[1], buttons[2], buttons[3])*/
+=======
+	if(!(user.client?.prefs?.toggles2 & PREFTOGGLE_2_TGUI_INPUT))
+		switch(length(buttons))
+			if(1)
+				return alert(user, message, title, buttons[1])
+			if(2)
+				return alert(user, message, title, buttons[1], buttons[2])
+			if(3)
+				return alert(user, message, title, buttons[1], buttons[2], buttons[3])
+			else
+				return alert(user, message, title)
+>>>>>>> 4500a4eb4f (Convert some ghost-related input/alerts to tgui (#9174)):code/modules/tgui_input/alert.dm
 	var/datum/tgui_modal/alert = new(user, message, title, buttons, timeout, autofocus)
 	alert.ui_interact(user)
 	alert.wait()
