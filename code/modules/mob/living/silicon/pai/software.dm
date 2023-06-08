@@ -166,8 +166,13 @@
 				medical_records = GLOB.data_core.get_general_records()
 			if(params["list"] == "security")
 				security_records = GLOB.data_core.get_security_records()
+<<<<<<< HEAD
 			ui.send_full_update()
 			addtimer(CALLBACK(src, .proc/refresh_again), 3 SECONDS)
+=======
+			ui.send_full_update(bypass_cooldown = TRUE)
+			addtimer(CALLBACK(src, PROC_REF(refresh_again)), 3 SECONDS)
+>>>>>>> 1c30727c7d (TGUI Core Updates (#8943))
 		if("remote_signaler")
 			signaler.ui_interact(src)
 		if("security_hud")

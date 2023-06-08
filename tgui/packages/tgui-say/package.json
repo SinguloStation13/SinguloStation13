@@ -1,16 +1,11 @@
 {
   "private": true,
-  "name": "tgui-panel",
-  "version": "4.3.0",
+  "name": "tgui-say",
+  "version": "1.0.0",
   "dependencies": {
     "common": "workspace:*",
-<<<<<<< HEAD
-    "dompurify": "^2.3.1",
-    "inferno": "^7.4.8",
-=======
     "dompurify": "^3.0.1",
     "inferno": "^8.2.1",
->>>>>>> 1c30727c7d (TGUI Core Updates (#8943))
     "tgui": "workspace:*",
     "tgui-dev-server": "workspace:*",
     "tgui-polyfill": "workspace:*"

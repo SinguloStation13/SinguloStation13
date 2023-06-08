@@ -143,16 +143,24 @@
 /datum/tgui_input_number/ui_state(mob/user)
 	return GLOB.always_state
 
-/datum/tgui_input_number/ui_data(mob/user)
+/datum/tgui_input_number/ui_static_data(mob/user)
 	. = list()
 	.["init_value"] = default // Default is a reserved keyword
 	.["max_value"] = max_value
 	.["message"] = message
 	.["min_value"] = min_value
+<<<<<<< HEAD:code/modules/tgui/tgui_input_number.dm
 	.["preferences"] = list()
 	.["preferences"]["large_buttons"] = TRUE//user.client.prefs.read_preference(/datum/preference/toggle/tgui_input_large)
 	.["preferences"]["swapped_buttons"] = TRUE//user.client.prefs.read_preference(/datum/preference/toggle/tgui_input_swapped)
+=======
+	.["large_buttons"] = !user.client?.prefs || (user.client.prefs.toggles2 & PREFTOGGLE_2_BIG_BUTTONS)
+	.["swapped_buttons"] = !user.client?.prefs || (user.client.prefs.toggles2 & PREFTOGGLE_2_SWITCHED_BUTTONS)
+>>>>>>> 1c30727c7d (TGUI Core Updates (#8943)):code/modules/tgui_input/number.dm
 	.["title"] = title
+
+/datum/tgui_input_number/ui_data(mob/user)
+	. = list()
 	if(timeout)
 		.["timeout"] = CLAMP01((timeout - (world.time - start_time) - 1 SECONDS) / (timeout - 1 SECONDS))
 

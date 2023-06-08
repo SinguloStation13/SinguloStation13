@@ -14,7 +14,13 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": false,
+<<<<<<< HEAD
     "target": "ES3"
+=======
+    "target": "ES3",
+    "strictNullChecks": true,
+    "baseUrl": "./packages"
+>>>>>>> 1c30727c7d (TGUI Core Updates (#8943))
   },
   "include": [
     "./*.d.ts",

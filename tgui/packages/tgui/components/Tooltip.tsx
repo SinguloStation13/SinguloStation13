@@ -1,5 +1,10 @@
 import { createPopper, Placement, VirtualElement } from '@popperjs/core';
+<<<<<<< HEAD
 import { Component, findDOMfromVNode, InfernoNode, render } from 'inferno';
+=======
+import { Component, findDOMFromVNode, render } from 'inferno';
+import type { InfernoNode } from 'inferno';
+>>>>>>> 1c30727c7d (TGUI Core Updates (#8943))
 
 type TooltipProps = {
   children?: InfernoNode;
@@ -20,7 +25,7 @@ const DEFAULT_OPTIONS = {
   ],
 };
 
-const NULL_RECT = {
+const NULL_RECT: DOMRect = {
   width: 0,
   height: 0,
   top: 0,

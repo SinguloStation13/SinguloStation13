@@ -143,16 +143,24 @@
 
 /datum/tgui_list_input/ui_static_data(mob/user)
 	. = list()
+	.["init_value"] = default || items[1]
 	.["items"] = items
+	.["large_buttons"] = !user.client?.prefs || (user.client.prefs.toggles2 & PREFTOGGLE_2_BIG_BUTTONS)
+	.["swapped_buttons"] = !user.client?.prefs || (user.client.prefs.toggles2 & PREFTOGGLE_2_SWITCHED_BUTTONS)
+	.["message"] = message
+	.["title"] = title
 
 /datum/tgui_list_input/ui_data(mob/user)
 	. = list()
+<<<<<<< HEAD:code/modules/tgui/tgui_input_list.dm
 	.["init_value"] = default || items[1]
 	.["message"] = message
 	.["preferences"] = list()
 	.["preferences"]["large_buttons"] = TRUE//user.client.prefs.read_preference(/datum/preference/toggle/tgui_input_large)
 	.["preferences"]["swapped_buttons"] = TRUE//user.client.prefs.read_preference(/datum/preference/toggle/tgui_input_swapped)
 	.["title"] = title
+=======
+>>>>>>> 1c30727c7d (TGUI Core Updates (#8943)):code/modules/tgui_input/list.dm
 	if(timeout)
 		.["timeout"] = clamp((timeout - (world.time - start_time) - 1 SECONDS) / (timeout - 1 SECONDS), 0, 1)
 

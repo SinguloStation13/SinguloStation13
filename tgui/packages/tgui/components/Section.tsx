@@ -8,6 +8,10 @@ import { canRender, classes } from 'common/react';
 import { Component, createRef, InfernoNode, RefObject } from 'inferno';
 import { addScrollableNode, removeScrollableNode } from '../events';
 import { BoxProps, computeBoxClassName, computeBoxProps } from './Box';
+<<<<<<< HEAD
+=======
+import type { InfernoNode } from 'inferno';
+>>>>>>> 1c30727c7d (TGUI Core Updates (#8943))
 
 interface SectionProps extends BoxProps {
   className?: string;
