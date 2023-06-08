@@ -345,11 +345,19 @@
 					cyberimp_detect += CI.name
 			if(length(cyberimp_detect))
 				. += "Detected cybernetic modifications: [english_list(cyberimp_detect)]"
+<<<<<<< HEAD
 			if(R)
 				var/health_r = R.fields["p_stat"]
 				. += "<a href='?src=[REF(src)];hud=m;p_stat=1'>\[[health_r]\]</a>"
 				health_r = R.fields["m_stat"]
 				. += "<a href='?src=[REF(src)];hud=m;m_stat=1'>\[[health_r]\]</a>"
+=======
+			if(target_record)
+				var/health_r = target_record.fields["p_stat"]
+				. += "<a href='?src=[REF(src)];hud=m;p_stat=1;examine_time=[world.time]'>\[[health_r]\]</a>"
+				health_r = target_record.fields["m_stat"]
+				. += "<a href='?src=[REF(src)];hud=m;m_stat=1;examine_time=[world.time]'>\[[health_r]\]</a>"
+>>>>>>> 07154dfc7f (medhud (#9195))
 			. += "<a href='?src=[REF(src)];hud=m;evaluation=1'>\[Medical evaluation\]</a><br>"
 			if(traitstring)
 				. += "<span class='info'>Detected physiological traits:\n[traitstring]"
