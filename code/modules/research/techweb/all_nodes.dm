@@ -339,9 +339,24 @@
 	tech_tier = 3
 	display_name = "Basic Shuttle Research"
 	description = "Research the technology required to create and use basic shuttles."
+<<<<<<< HEAD
 	prereq_ids = list("bluespace_travel", "adv_engi")
 	design_ids = list("shuttle_creator", "engine_plasma", "engine_heater", "shuttle_control", "wingpack")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
+=======
+	prereq_ids = list(
+		"adv_engi",
+		"basic_plasma",
+	)
+	design_ids = list(
+		"engine_heater",
+		"engine_plasma",
+		"shuttle_control",
+		"shuttle_creator",
+		"wingpack",
+	)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+>>>>>>> 78372c589d (Adjusts basic shuttle tech requisites (#9192))
 	export_price = 5000
 
 /datum/techweb_node/nullspacebreaching
