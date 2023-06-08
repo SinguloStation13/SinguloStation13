@@ -17,6 +17,7 @@ type TextInputData = {
 
 export const TextInputModal = (_, context) => {
   const { act, data } = useBackend<TextInputData>(context);
+<<<<<<< HEAD
   const {
     max_length,
     message,
@@ -32,18 +33,35 @@ export const TextInputModal = (_, context) => {
     'input',
     placeholder || ''
   );
+=======
+  const { large_buttons, max_length, message = '', multiline, placeholder, timeout, title } = data;
+  const [input, setInput] = useLocalState<string>(context, 'input', placeholder || '');
+>>>>>>> 1cfc850830 (Standardizes JS formatting with PrettierX (#9198))
   const onType = (value: string) => {
     if (value === input) {
       return;
     }
+<<<<<<< HEAD
     setInput(value);
+=======
+    const sanitizedInput = multiline ? sanitizeMultiline(value) : removeAllSkiplines(value);
+    setInput(sanitizedInput);
+>>>>>>> 1cfc850830 (Standardizes JS formatting with PrettierX (#9198))
   };
   // Dynamically changes the window height based on the message.
+<<<<<<< HEAD
   const windowHeight
     = 125
     + Math.ceil(message.length / 3)
     + (multiline || input.length >= 30 ? 75 : 0)
     + (message.length && large_buttons ? 5 : 0);
+=======
+  const windowHeight =
+    135 +
+    (message.length > 30 ? Math.ceil(message.length / 4) : 0) +
+    (visualMultiline ? 75 : 0) +
+    (message.length && large_buttons ? 5 : 0);
+>>>>>>> 1cfc850830 (Standardizes JS formatting with PrettierX (#9198))
 
   return (
     <Window title={title} width={325} height={windowHeight} theme="generic">
@@ -67,10 +85,7 @@ export const TextInputModal = (_, context) => {
               <InputArea input={input} onType={onType} />
             </Stack.Item>
             <Stack.Item>
-              <InputButtons
-                input={input}
-                message={`${input.length}/${max_length}`}
-              />
+              <InputButtons input={input} message={`${input.length}/${max_length}`} />
             </Stack.Item>
           </Stack>
         </Section>

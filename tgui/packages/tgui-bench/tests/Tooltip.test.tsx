@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 import { Box, Tooltip } from "tgui/components";
 import { createRenderer } from "tgui/renderer";
+=======
+import { Box, Tooltip } from 'tgui/components';
+import { createRenderer } from 'tgui/renderer';
+import type { InfernoNode } from 'inferno';
+>>>>>>> 1cfc850830 (Standardizes JS formatting with PrettierX (#9198))
 
 const render = createRenderer();
 

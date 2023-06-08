@@ -31,6 +31,7 @@
     color: black !important;
   }
   // Components
+<<<<<<< HEAD
   @include meta.load-css('../components/Button.scss', $with: (
     'color-default': #E8E4C9,
     'color-disabled': #363636,
@@ -41,14 +42,31 @@
   @include meta.load-css('../components/ProgressBar.scss', $with: (
     'background-color': rgba(0, 0, 0, 0.5),
   ));
+=======
+  @include meta.load-css(
+    '../components/Button.scss',
+    $with: (
+      'color-default': #e8e4c9,
+      'color-disabled': #505046,
+      'color-selected': #9d0808,
+      'color-caution': #be6209,
+      'color-danger': #9a9d00
+    )
+  );
+  @include meta.load-css('../components/ProgressBar.scss', $with: ('background-color': rgba(0, 0, 0, 0.5)));
+>>>>>>> 1cfc850830 (Standardizes JS formatting with PrettierX (#9198))
   @include meta.load-css('../components/Section.scss');
 
   // Layouts
   @include meta.load-css('../layouts/Layout.scss');
   @include meta.load-css('../layouts/Window.scss');
+<<<<<<< HEAD
   @include meta.load-css('../layouts/TitleBar.scss', $with: (
     'background-color': #585337,
   ));
+=======
+  @include meta.load-css('../layouts/TitleBar.scss', $with: ('background-color': #585337));
+>>>>>>> 1cfc850830 (Standardizes JS formatting with PrettierX (#9198))
 
   .Button {
     font-family: monospace;

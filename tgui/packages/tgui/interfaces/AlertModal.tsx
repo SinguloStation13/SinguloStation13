@@ -1,14 +1,7 @@
 import { Loader } from './common/Loader';
 import { Preferences } from './common/InputButtons';
 import { useBackend, useLocalState } from '../backend';
-import {
-  KEY_ENTER,
-  KEY_ESCAPE,
-  KEY_LEFT,
-  KEY_RIGHT,
-  KEY_SPACE,
-  KEY_TAB,
-} from '../../common/keycodes';
+import { KEY_ENTER, KEY_ESCAPE, KEY_LEFT, KEY_RIGHT, KEY_SPACE, KEY_TAB } from '../../common/keycodes';
 import { Autofocus, Box, Button, Flex, Section, Stack } from '../components';
 import { Window } from '../layouts';
 
@@ -26,6 +19,7 @@ const KEY_INCREMENT = 1;
 
 export const AlertModal = (_, context) => {
   const { act, data } = useBackend<AlertModalData>(context);
+<<<<<<< HEAD
   const {
     autofocus,
     buttons = [],
@@ -42,6 +36,14 @@ export const AlertModal = (_, context) => {
     + (message.length > 30 ? Math.ceil(message.length / 3) : 0)
     + (message.length && large_buttons ? 5 : 0)
     + (buttons.length > 2 ? buttons.length * 25 : 0);
+=======
+  const { autofocus, buttons = [], large_buttons, message = '', timeout, title } = data;
+  const [selected, setSelected] = useLocalState<number>(context, 'selected', 0);
+  // Dynamically sets window dimensions
+  const windowHeight =
+    115 + (message.length > 30 ? Math.ceil(message.length / 4) : 0) + (message.length && large_buttons ? 5 : 0);
+  const windowWidth = 325 + (buttons.length > 2 ? 55 : 0);
+>>>>>>> 1cfc850830 (Standardizes JS formatting with PrettierX (#9198))
   const onKey = (direction: number) => {
     if (selected === 0 && direction === KEY_DECREMENT) {
       setSelected(buttons.length - 1);
@@ -53,8 +55,13 @@ export const AlertModal = (_, context) => {
   };
 
   return (
+<<<<<<< HEAD
     <Window height={windowHeight} title={title} width={325} theme="generic">
       {timeout && <Loader value={timeout} />}
+=======
+    <Window height={windowHeight} title={title} width={windowWidth} theme="generic">
+      {!!timeout && <Loader value={timeout} />}
+>>>>>>> 1cfc850830 (Standardizes JS formatting with PrettierX (#9198))
       <Window.Content
         onKeyDown={(e) => {
           const keyCode = window.event ? e.which : e.keyCode;
@@ -108,27 +115,23 @@ const ButtonDisplay = (props, context) => {
     + (!swapped_buttons ? '-reverse' : '');
 
   return (
+<<<<<<< HEAD
     <Flex
       align="center"
       direction={buttonDirection}
       fill
       justify="space-around">
+=======
+    <Flex align="center" direction={!swapped_buttons ? 'row-reverse' : 'row'} fill justify="space-around" wrap>
+>>>>>>> 1cfc850830 (Standardizes JS formatting with PrettierX (#9198))
       {buttons?.map((button, index) =>
         !!large_buttons && buttons.length < 3 ? (
           <Flex.Item grow key={index}>
-            <AlertButton
-              button={button}
-              id={index.toString()}
-              selected={selected === index}
-            />
+            <AlertButton button={button} id={index.toString()} selected={selected === index} />
           </Flex.Item>
         ) : (
           <Flex.Item key={index}>
-            <AlertButton
-              button={button}
-              id={index.toString()}
-              selected={selected === index}
-            />
+            <AlertButton button={button} id={index.toString()} selected={selected === index} />
           </Flex.Item>
         )
       )}

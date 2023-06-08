@@ -18,7 +18,11 @@ const getClampedNumber = (value, minValue, maxValue) => {
   if (!value || !value.length) {
     return String(minimum);
   }
+<<<<<<< HEAD
   let parsedValue = parseInt(value.replace(/\D/g, ''), 10);
+=======
+  let parsedValue = allowFloats ? parseFloat(value.replace(/[^\-\d.]/g, '')) : parseInt(value.replace(/[^\-\d]/g, ''), 10);
+>>>>>>> 1cfc850830 (Standardizes JS formatting with PrettierX (#9198))
   if (isNaN(parsedValue)) {
     return String(minimum);
   } else {
@@ -40,8 +44,13 @@ export class RestrictedInput extends Component {
       }
     };
     this.handleChange = (e) => {
+<<<<<<< HEAD
       const { maxValue, minValue, onChange } = this.props;
       e.target.value = getClampedNumber(e.target.value, minValue, maxValue);
+=======
+      const { maxValue, minValue, onChange, allowFloats } = this.props;
+      e.target.value = getClampedNumber(e.target.value, minValue, maxValue, allowFloats);
+>>>>>>> 1cfc850830 (Standardizes JS formatting with PrettierX (#9198))
       if (onChange) {
         onChange(e, +e.target.value);
       }
@@ -65,7 +74,11 @@ export class RestrictedInput extends Component {
     this.handleKeyDown = (e) => {
       const { maxValue, minValue, onChange, onEnter } = this.props;
       if (e.keyCode === KEY_ENTER) {
+<<<<<<< HEAD
         const safeNum = getClampedNumber(e.target.value, minValue, maxValue);
+=======
+        const safeNum = getClampedNumber(e.target.value, minValue, maxValue, allowFloats);
+>>>>>>> 1cfc850830 (Standardizes JS formatting with PrettierX (#9198))
         this.setEditing(false);
         if (onChange) {
           onChange(e, +safeNum);
@@ -94,7 +107,11 @@ export class RestrictedInput extends Component {
     const nextValue = this.props.value?.toString();
     const input = this.inputRef.current;
     if (input) {
+<<<<<<< HEAD
       input.value = getClampedNumber(nextValue, minValue, maxValue);
+=======
+      input.value = getClampedNumber(nextValue, minValue, maxValue, allowFloats);
+>>>>>>> 1cfc850830 (Standardizes JS formatting with PrettierX (#9198))
     }
     if (this.props.autoFocus || this.props.autoSelect) {
       setTimeout(() => {
@@ -115,7 +132,11 @@ export class RestrictedInput extends Component {
     const input = this.inputRef.current;
     if (input && !editing) {
       if (nextValue !== prevValue && nextValue !== input.value) {
+<<<<<<< HEAD
         input.value = getClampedNumber(nextValue, minValue, maxValue);
+=======
+        input.value = getClampedNumber(nextValue, minValue, maxValue, allowFloats);
+>>>>>>> 1cfc850830 (Standardizes JS formatting with PrettierX (#9198))
       }
     }
   }
@@ -129,14 +150,7 @@ export class RestrictedInput extends Component {
     const { onChange, onEnter, onInput, value, ...boxProps } = props;
     const { className, fluid, monospace, ...rest } = boxProps;
     return (
-      <Box
-        className={classes([
-          'Input',
-          fluid && 'Input--fluid',
-          monospace && 'Input--monospace',
-          className,
-        ])}
-        {...rest}>
+      <Box className={classes(['Input', fluid && 'Input--fluid', monospace && 'Input--monospace', className])} {...rest}>
         <div className="Input__baseline">.</div>
         <input
           className="Input__input"

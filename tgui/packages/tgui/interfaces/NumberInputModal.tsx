@@ -17,8 +17,12 @@ type NumberInputData = {
 
 export const NumberInputModal = (_, context) => {
   const { act, data } = useBackend<NumberInputData>(context);
+<<<<<<< HEAD
   const { message, init_value, preferences, timeout, title } = data;
   const { large_buttons } = preferences;
+=======
+  const { init_value, large_buttons, message = '', timeout, title } = data;
+>>>>>>> 1cfc850830 (Standardizes JS formatting with PrettierX (#9198))
   const [input, setInput] = useLocalState(context, 'input', init_value);
   const onChange = (value: number) => {
     if (value === input) {
@@ -33,10 +37,15 @@ export const NumberInputModal = (_, context) => {
     setInput(value);
   };
   // Dynamically changes the window height based on the message.
+<<<<<<< HEAD
   const windowHeight 
     = 130
     + Math.ceil(message.length / 3)
     + (message.length && large_buttons ? 5 : 0);
+=======
+  const windowHeight =
+    140 + (message.length > 30 ? Math.ceil(message.length / 3) : 0) + (message.length && large_buttons ? 5 : 0);
+>>>>>>> 1cfc850830 (Standardizes JS formatting with PrettierX (#9198))
 
   return (
     <Window title={title} width={270} height={windowHeight} theme="generic">

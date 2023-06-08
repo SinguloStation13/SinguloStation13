@@ -19,10 +19,8 @@ export class TextArea extends Component {
     this.state = {
       editing: false,
     };
-    const {
-      dontUseTabForIndent = false,
-    } = props;
-    this.handleOnInput = e => {
+    const { dontUseTabForIndent = false } = props;
+    this.handleOnInput = (e) => {
       const { editing } = this.state;
       const { onInput } = this.props;
       if (!editing) {
@@ -32,7 +30,7 @@ export class TextArea extends Component {
         onInput(e, e.target.value);
       }
     };
-    this.handleOnChange = e => {
+    this.handleOnChange = (e) => {
       const { editing } = this.state;
       const { onChange } = this.props;
       if (editing) {
@@ -42,7 +40,7 @@ export class TextArea extends Component {
         onChange(e, e.target.value);
       }
     };
-    this.handleKeyPress = e => {
+    this.handleKeyPress = (e) => {
       const { editing } = this.state;
       const { onKeyPress } = this.props;
       if (!editing) {
@@ -52,10 +50,16 @@ export class TextArea extends Component {
         onKeyPress(e, e.target.value);
       }
     };
-    this.handleKeyDown = e => {
+    this.handleKeyDown = (e) => {
       const { editing } = this.state;
       const { onKeyDown } = this.props;
       if (e.keyCode === KEY_ESCAPE) {
+<<<<<<< HEAD
+=======
+        if (this.props.onEscape) {
+          this.props.onEscape(e);
+        }
+>>>>>>> 1cfc850830 (Standardizes JS formatting with PrettierX (#9198))
         this.setEditing(false);
         e.target.value = toInputValue(this.props.value);
         e.target.blur();
@@ -69,10 +73,7 @@ export class TextArea extends Component {
         if (keyCode === 9) {
           e.preventDefault();
           const { value, selectionStart, selectionEnd } = e.target;
-          e.target.value = (
-            value.substring(0, selectionStart) + "\t"
-              + value.substring(selectionEnd)
-          );
+          e.target.value = value.substring(0, selectionStart) + '\t' + value.substring(selectionEnd);
           e.target.selectionEnd = selectionStart + 1;
         }
       }
@@ -80,13 +81,13 @@ export class TextArea extends Component {
         onKeyDown(e, e.target.value);
       }
     };
-    this.handleFocus = e => {
+    this.handleFocus = (e) => {
       const { editing } = this.state;
       if (!editing) {
         this.setEditing(true);
       }
     };
-    this.handleBlur = e => {
+    this.handleBlur = (e) => {
       const { editing } = this.state;
       const { onChange } = this.props;
       if (editing) {
@@ -119,7 +120,11 @@ export class TextArea extends Component {
     const prevValue = prevProps.value;
     const nextValue = this.props.value;
     const input = this.textareaRef.current;
+<<<<<<< HEAD
     if (input && !editing && prevValue !== nextValue) {
+=======
+    if (input && typeof nextValue === 'string' && prevValue !== nextValue) {
+>>>>>>> 1cfc850830 (Standardizes JS formatting with PrettierX (#9198))
       input.value = toInputValue(nextValue);
     }
   }
@@ -148,11 +153,7 @@ export class TextArea extends Component {
       ...boxProps
     } = this.props;
     // Box props
-    const {
-      className,
-      fluid,
-      ...rest
-    } = boxProps;
+    const { className, fluid, ...rest } = boxProps;
     return (
       <Box
         className={classes([
@@ -163,7 +164,11 @@ export class TextArea extends Component {
         {...rest}>
         <textarea
           ref={this.textareaRef}
+<<<<<<< HEAD
           className="TextArea__textarea"
+=======
+          className={classes(['TextArea__textarea', scrollbar && 'TextArea__textarea--scrollable'])}
+>>>>>>> 1cfc850830 (Standardizes JS formatting with PrettierX (#9198))
           placeholder={placeholder}
           onChange={this.handleOnChange}
           onKeyDown={this.handleKeyDown}
@@ -171,7 +176,8 @@ export class TextArea extends Component {
           onInput={this.handleOnInput}
           onFocus={this.handleFocus}
           onBlur={this.handleBlur}
-          maxLength={maxLength} />
+          maxLength={maxLength}
+        />
       </Box>
     );
   }

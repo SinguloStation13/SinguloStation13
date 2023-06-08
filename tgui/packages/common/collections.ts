@@ -72,6 +72,7 @@ export const toKeyedArray = (obj, keyProp = 'key') => {
  *
  * @returns {any[]}
  */
+<<<<<<< HEAD
 export const filter = iterateeFn => collection => {
   if (collection === null && collection === undefined) {
     return collection;
@@ -87,6 +88,33 @@ export const filter = iterateeFn => collection => {
     return result;
   }
   throw new Error(`filter() can't iterate on type ${typeof collection}`);
+=======
+export const filter =
+  <T>(iterateeFn: (input: T, index: number, collection: T[]) => boolean) =>
+  (collection: T[]): T[] => {
+    if (collection === null || collection === undefined) {
+      return collection;
+    }
+    if (Array.isArray(collection)) {
+      const result: T[] = [];
+      for (let i = 0; i < collection.length; i++) {
+        const item = collection[i];
+        if (iterateeFn(item, i, collection)) {
+          result.push(item);
+        }
+      }
+      return result;
+    }
+    throw new Error(`filter() can't iterate on type ${typeof collection}`);
+  };
+
+type MapFunction = {
+  <T, U>(iterateeFn: (value: T, index: number, collection: T[]) => U): (collection: T[]) => U[];
+
+  <T, U, K extends string | number>(iterateeFn: (value: T, index: K, collection: Record<K, T>) => U): (
+    collection: Record<K, T>
+  ) => U[];
+>>>>>>> 1cfc850830 (Standardizes JS formatting with PrettierX (#9198))
 };
 
 /**
@@ -99,6 +127,7 @@ export const filter = iterateeFn => collection => {
  *
  * @returns {any[]}
  */
+<<<<<<< HEAD
 export const map = iterateeFn => collection => {
   if (collection === null && collection === undefined) {
     return collection;
@@ -107,6 +136,13 @@ export const map = iterateeFn => collection => {
     const result = [];
     for (let i = 0; i < collection.length; i++) {
       result.push(iterateeFn(collection[i], i, collection));
+=======
+export const map: MapFunction =
+  <T, U>(iterateeFn) =>
+  (collection: T[]): U[] => {
+    if (collection === null || collection === undefined) {
+      return collection;
+>>>>>>> 1cfc850830 (Standardizes JS formatting with PrettierX (#9198))
     }
     return result;
   }
@@ -148,6 +184,7 @@ const COMPARATOR = (objA, objB) => {
  *
  * @returns {any[]}
  */
+<<<<<<< HEAD
 export const sortBy = (...iterateeFns) => array => {
   if (!Array.isArray(array)) {
     return array;
@@ -170,6 +207,37 @@ export const sortBy = (...iterateeFns) => array => {
   }
   return mappedArray;
 };
+=======
+export const sortBy =
+  <T>(...iterateeFns: ((input: T) => unknown)[]) =>
+  (array: T[]): T[] => {
+    if (!Array.isArray(array)) {
+      return array;
+    }
+    let length = array.length;
+    // Iterate over the array to collect criteria to sort it by
+    let mappedArray: {
+      criteria: unknown[];
+      value: T;
+    }[] = [];
+    for (let i = 0; i < length; i++) {
+      const value = array[i];
+      mappedArray.push({
+        criteria: iterateeFns.map((fn) => fn(value)),
+        value,
+      });
+    }
+    // Sort criteria using the base comparator
+    mappedArray.sort(COMPARATOR);
+
+    // Unwrap values
+    const values: T[] = [];
+    while (length--) {
+      values[length] = mappedArray[length].value;
+    }
+    return values;
+  };
+>>>>>>> 1cfc850830 (Standardizes JS formatting with PrettierX (#9198))
 
 /**
  * 
@@ -182,15 +250,14 @@ export const range = (start: number, end: number): number[] =>
 /**
  * A fast implementation of reduce.
  */
-export const reduce = (reducerFn, initialValue) => array => {
+export const reduce = (reducerFn, initialValue) => (array) => {
   const length = array.length;
   let i;
   let result;
   if (initialValue === undefined) {
     i = 1;
     result = array[0];
-  }
-  else {
+  } else {
     i = 0;
     result = initialValue;
   }
@@ -211,6 +278,7 @@ export const reduce = (reducerFn, initialValue) => array => {
  * is determined by the order they occur in the array. The iteratee is
  * invoked with one argument: value.
  */
+<<<<<<< HEAD
 /* eslint-disable indent */
 export const uniqBy = <T extends unknown>(
   iterateeFn?: (value: T) => unknown
@@ -233,6 +301,34 @@ export const uniqBy = <T extends unknown>(
       }
       if (iterateeFn) {
         seen.push(computed);
+=======
+export const uniqBy =
+  <T extends unknown>(iterateeFn?: (value: T) => unknown) =>
+  (array: T[]): T[] => {
+    const { length } = array;
+    const result: T[] = [];
+    const seen: unknown[] = iterateeFn ? [] : result;
+    let index = -1;
+    outer: while (++index < length) {
+      let value: T | 0 = array[index];
+      const computed = iterateeFn ? iterateeFn(value) : value;
+      if (computed === computed) {
+        let seenIndex = seen.length;
+        while (seenIndex--) {
+          if (seen[seenIndex] === computed) {
+            continue outer;
+          }
+        }
+        if (iterateeFn) {
+          seen.push(computed);
+        }
+        result.push(value);
+      } else if (!seen.includes(computed)) {
+        if (seen !== result) {
+          seen.push(computed);
+        }
+        result.push(value);
+>>>>>>> 1cfc850830 (Standardizes JS formatting with PrettierX (#9198))
       }
       result.push(value);
     }
@@ -282,6 +378,14 @@ export const zip = <T extends unknown[][]>(...arrays: T): Zip<T> => {
  *
  * @returns {any[]}
  */
+<<<<<<< HEAD
 export const zipWith = iterateeFn => (...arrays) => {
   return map(values => iterateeFn(...values))(zip(...arrays));
 };
+=======
+export const zipWith =
+  <T, U>(iterateeFn: (...values: T[]) => U) =>
+  (...arrays: T[][]): U[] => {
+    return map((values: T[]) => iterateeFn(...values))(zip(...arrays));
+  };
+>>>>>>> 1cfc850830 (Standardizes JS formatting with PrettierX (#9198))

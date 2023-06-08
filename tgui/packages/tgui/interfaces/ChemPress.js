@@ -5,16 +5,18 @@ import { Window } from '../layouts';
 
 export const ChemPress = (props, context) => {
   const { act, data } = useBackend(context);
+<<<<<<< HEAD
   const {
     pill_size,
     pill_name,
     pill_style,
     pill_styles = [],
   } = data;
+=======
+  const { pill_size, pill_name, chosen_pill_style, pill_styles = [] } = data;
+>>>>>>> 1cfc850830 (Standardizes JS formatting with PrettierX (#9198))
   return (
-    <Window
-      width={300}
-      height={325}>
+    <Window width={300} height={325}>
       <Window.Content>
         <Section>
           <LabeledList>
@@ -27,30 +29,35 @@ export const ChemPress = (props, context) => {
                 maxValue={50}
                 step={1}
                 stepPixelSize={2}
-                onChange={(e, value) => act('change_pill_size', {
-                  volume: value,
-                })} />
+                onChange={(e, value) =>
+                  act('change_pill_size', {
+                    volume: value,
+                  })
+                }
+              />
             </LabeledList.Item>
             <LabeledList.Item label="Pill Name">
-              <Button
-                icon="pencil-alt"
-                content={pill_name}
-                onClick={() => act('change_pill_name')} />
+              <Button icon="pencil-alt" content={pill_name} onClick={() => act('change_pill_name')} />
             </LabeledList.Item>
             <LabeledList.Item label="Pill Style">
-              {pill_styles.map(each_style => (
+              {pill_styles.map((each_style) => (
                 <Button
                   key={each_style.id}
                   width="30px"
                   selected={each_style.id === pill_style}
                   textAlign="center"
                   color="transparent"
+<<<<<<< HEAD
                   onClick={() => act('change_pill_style', { each_style: pill.id })}>
                   <Box mx={-1}
                     className={classes([
                       'medicine_containers22x22',
                       each_style.pill_icon_name,
                     ])} />
+=======
+                  onClick={() => act('change_pill_style', { id: each_style.id })}>
+                  <Box mx={-1} className={classes(['medicine_containers22x22', each_style.pill_icon_name])} />
+>>>>>>> 1cfc850830 (Standardizes JS formatting with PrettierX (#9198))
                 </Button>
               ))}
             </LabeledList.Item>
