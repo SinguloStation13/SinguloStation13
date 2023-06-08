@@ -163,6 +163,11 @@ export const TguiEslintTarget = new Juke.Target({
   executes: ({ get }) => yarn('tgui:lint', !get(CiParameter) && '--fix'),
 });
 
+export const TguiPrettierFormatTarget = new Juke.Target({
+  dependsOn: [YarnTarget],
+  executes: () => yarn("tgui:prettier-format"),
+});
+
 export const TguiSonarTarget = new Juke.Target({
   dependsOn: [YarnTarget],
   executes: () => yarn('tgui:sonar'),

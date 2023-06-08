@@ -11,6 +11,11 @@
     "tgui:analyze": "webpack --analyze",
     "tgui:dev": "node --experimental-modules packages/tgui-dev-server/index.js",
     "tgui:lint": "eslint packages --ext .js,.cjs,.ts,.tsx",
+<<<<<<< HEAD
+=======
+    "tgui:prettier": "prettierx --check .",
+    "tgui:prettier-format": "prettierx --write packages",
+>>>>>>> f533941a65 (Adds a new bin file and build instruction to pretty format tgui packages (#9200))
     "tgui:sonar": "eslint packages --ext .js,.cjs,.ts,.tsx -c .eslintrc-sonar.yml",
     "tgui:tsc": "tsc",
     "tgui:test": "jest --watch",
