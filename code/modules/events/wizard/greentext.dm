@@ -34,8 +34,13 @@
 
 /obj/item/greentext/Initialize(mapload)
 	. = ..()
+<<<<<<< HEAD
 	GLOB.poi_list |= src
 	roundend_callback = CALLBACK(src,.proc/check_winner)
+=======
+	AddElement(/datum/element/point_of_interest)
+	roundend_callback = CALLBACK(src,PROC_REF(check_winner))
+>>>>>>> 672be09a2e (https://github.com/tgstation/tgstation/pull/55416 (#9185))
 	SSticker.OnRoundend(roundend_callback)
 
 /obj/item/greentext/equipped(mob/living/user as mob)
@@ -85,7 +90,6 @@
 
 	LAZYREMOVE(SSticker.round_end_events, roundend_callback)
 	roundend_callback = null //This ought to free the callback datum, and prevent us from harddeling
-	GLOB.poi_list.Remove(src)
 	for(var/i in GLOB.player_list)
 		var/mob/M = i
 		var/message = "<span class='warning'>A dark temptation has passed from this world"

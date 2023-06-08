@@ -30,12 +30,16 @@
 /obj/item/his_grace/Initialize(mapload)
 	. = ..()
 	START_PROCESSING(SSprocessing, src)
+<<<<<<< HEAD
 	GLOB.poi_list += src
 	RegisterSignal(src, COMSIG_MOVABLE_POST_THROW, .proc/move_gracefully)
+=======
+	AddElement(/datum/element/point_of_interest)
+	RegisterSignal(src, COMSIG_MOVABLE_POST_THROW, PROC_REF(move_gracefully))
+>>>>>>> 672be09a2e (https://github.com/tgstation/tgstation/pull/55416 (#9185))
 
 /obj/item/his_grace/Destroy()
 	STOP_PROCESSING(SSprocessing, src)
-	GLOB.poi_list -= src
 	for(var/mob/living/L in src)
 		L.forceMove(get_turf(src))
 	return ..()
