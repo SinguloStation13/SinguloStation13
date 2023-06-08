@@ -773,7 +773,23 @@
 	display_name = "Mining Technology"
 	description = "Better than Efficiency V."
 	prereq_ids = list("engineering")
+<<<<<<< HEAD
 	design_ids = list("drill", "superresonator", "triggermod", "damagemod", "cooldownmod", "rangemod", "hypermod", "ore_redemption", "mining_equipment_vendor", "exploration_equipment_vendor", "cargoexpress")
+=======
+	design_ids = list(
+		"cargoexpress",
+		"cooldownmod",
+		"damagemod",
+		"drill",
+		"exploration_equipment_vendor",
+		"hypermod",
+		"mining_equipment_vendor",
+		"ore_redemption",
+		"rangemod",
+		"superresonator",
+		"triggermod",
+	)
+>>>>>>> aeaecc9a18 (Refactors SSresearch checks into a unit_test (#9148))
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 	export_price = 5000
 
@@ -867,7 +883,14 @@
 	display_name = "Weapon Development Technology"
 	description = "Our researchers have found new ways to weaponize just about everything now."
 	prereq_ids = list("engineering")
+<<<<<<< HEAD
 	design_ids = list("pin_testing", "tele_shield", "sleepy")
+=======
+	design_ids = list(
+		"pin_testing",
+		"tele_shield",
+	)
+>>>>>>> aeaecc9a18 (Refactors SSresearch checks into a unit_test (#9148))
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
 	export_price = 5000
 
