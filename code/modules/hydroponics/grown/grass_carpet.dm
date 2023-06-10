@@ -79,6 +79,8 @@
 				stacktype = /obj/item/stack/tile/fairygrass/yellow
 			if(/datum/plant_gene/trait/glow/green)
 				stacktype = /obj/item/stack/tile/fairygrass/green
+			if(/datum/plant_gene/trait/glow/orange)
+				stacktype = /obj/item/stack/tile/fairygrass/orange
 			if(/datum/plant_gene/trait/glow/blue)
 				stacktype = /obj/item/stack/tile/fairygrass/blue
 			if(/datum/plant_gene/trait/glow/purple)
@@ -115,7 +117,7 @@
 	desc = "These seeds grow into shamrock producing plants."
 	icon_state = "seed-shamrock"
 	species = "shamrock"
-	plantname = "shamrock Plants"
+	plantname = "Shamrock Plants"
 	product = /obj/item/reagent_containers/food/snacks/grown/grass/shamrock
 	mutatelist = list()
 	rarity = 10
@@ -131,6 +133,18 @@
 	filling_color = "#245c39"
 	bitesize_mod = 3
 	can_distill = FALSE
+
+/obj/item/reagent_containers/food/snacks/grown/grass/shamrock/equipped(mob/user, slot)
+	. = ..()
+	if(slot == ITEM_SLOT_HEAD)
+		SEND_SIGNAL(user, COMSIG_ADD_MOOD_EVENT, "flower_worn", /datum/mood_event/flower_worn, src)
+
+/obj/item/reagent_containers/food/snacks/grown/grass/shamrock/dropped(mob/living/carbon/user)
+	..()
+	if(user.head != src)
+		return
+	else
+		SEND_SIGNAL(user, COMSIG_CLEAR_MOOD_EVENT, "flower_worn")
 
 //clover
 /obj/item/reagent_containers/food/snacks/grown/grass/shamrock/Initialize(mapload, /obj/item/seeds/new_seed)

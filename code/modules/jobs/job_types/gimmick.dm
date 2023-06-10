@@ -20,6 +20,9 @@
 	rpg_title = "Peasant"
 	allow_bureaucratic_error = FALSE
 	outfit = /datum/outfit/job/gimmick
+	species_outfits = list(
+		SPECIES_PLASMAMAN = /datum/outfit/plasmaman
+	)
 /datum/outfit/job/gimmick
 	can_be_admin_equipped = FALSE // we want just the parent outfit to be unequippable since this leads to problems
 /datum/job/gimmick/barber
@@ -40,9 +43,6 @@
 	payment_per_department = list(ACCOUNT_SRV_ID = PAYCHECK_ASSISTANT)
 
 	rpg_title = "Scissorhands"
-	species_outfits = list(
-		SPECIES_PLASMAMAN = /datum/outfit/plasmaman
-	)
 /datum/outfit/job/gimmick/barber
 	name = JOB_NAME_BARBER
 	jobtype = /datum/job/gimmick/barber
@@ -108,11 +108,6 @@
 	mind_traits = list(TRAIT_MADNESS_IMMUNE, TRAIT_MEDICAL_METABOLISM)
 
 	rpg_title = "Enchanter"
-
-
-	species_outfits = list(
-		SPECIES_PLASMAMAN = /datum/outfit/plasmaman
-	)
 /datum/outfit/job/gimmick/psychiatrist //psychiatrist doesnt get much shit, but he has more access and a cushier paycheck
 	name = JOB_NAME_PSYCHIATRIST
 	jobtype = /datum/job/gimmick/psychiatrist

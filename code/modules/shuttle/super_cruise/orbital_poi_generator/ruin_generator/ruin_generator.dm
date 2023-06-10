@@ -43,16 +43,15 @@
 	/// The ruin event to trigger throughout generation
 	var/datum/ruin_event/ruin_event
 
-	//We need doors
-	var/list/placed_room_entrances = list()
-	var/list/placed_hallway_entrances = list()
+	//Pause the air on the target z-level
+	SSair.pause_z(center_z)
 
-	var/list/room_connections = list()			//Assoc list of door connection coords, [x]_[y] = dir
-	var/list/hallway_connections = list()		//Assoc list of hallway connection coords, [x]_[y] = dir
-	//Blocked turfs = Walls and floors
-	var/list/blocked_turfs = list()				//Assoc list of blocked coords [x]_[y] = TRUE
-	//Floor turfs = Open turfs only. Walls should be allowed to overlap.
-	var/list/floor_turfs = list()				//Assoc list as above, except doesn't includ walls.
+	//Try and catch errors so that critical actions (unpausing the Z atmos) can happen.
+	log_mapping("Generating random ruin at [center_x], [center_y], [center_z]")
+
+	//Load ruin parts
+	if(!length(GLOB.loaded_ruin_parts))
+		load_ruin_parts()
 
 	var/sanity = 1000
 
@@ -94,7 +93,7 @@
 				var/datum/generator_settings/instance = new generator_type()
 				if(instance.probability != 0)
 					generator_settings_cache[instance] = instance.probability
-		generator_settings = pickweight(generator_settings_cache)
+		generator_settings = pick_weight(generator_settings_cache)
 
 	//Pause the air on the target z-level
 	SSair.pause_z(center_z)
@@ -249,7 +248,7 @@
 		ishallway ? hallway_connections.len-- : room_connections.len--
 		return !length(hallway_connections) && !length(room_connections)
 	//Pick a ruin and spawn it.
-	var/list/selected_ruin = pickweight_ruin(valid_ruins)
+	var/list/selected_ruin = pick_weight_ruin(valid_ruins)
 	//Spawn the ruin
 	//Get the port offset position
 	var/port_offset_x = selected_ruin["port_offset_x"]
@@ -387,19 +386,19 @@
 	if(prob(floor_break_prob) && istype(T, /turf/open/floor/plasteel))
 		T = T.ScrapeAway()
 	//Spawn floortrash.
-	var/new_floortrash = pickweight(floortrash)
+	var/new_floortrash = pick_weight(floortrash)
 	if(ispath(new_floortrash))
 		new new_floortrash(T)
 	//Check for walls and spawn walltrash
 	for(var/direction in GLOB.cardinals)
 		var/turf/T1 = get_step(T, direction)
 		if(isclosedturf(T1))
-			var/new_directional_walltrash = pickweight(directional_walltrash)
+			var/new_directional_walltrash = pick_weight(directional_walltrash)
 			if(ispath(new_directional_walltrash))
 				var/atom/A = new new_directional_walltrash(T)
 				A.setDir(direction)
 			else
-				var/new_nondirectional_walltrash = pickweight(nondirectional_walltrash)
+				var/new_nondirectional_walltrash = pick_weight(nondirectional_walltrash)
 				if(ispath(new_nondirectional_walltrash))
 					var/atom/A = new new_nondirectional_walltrash(T)
 					switch(direction)
@@ -426,7 +425,7 @@
 			var/turf/T = locate(text2num(split_loc[1]), text2num(split_loc[2]), center_z)
 			if(isspaceturf(T))
 				continue
-			if(is_blocked_turf(T, FALSE))
+			if(T.is_blocked_turf(FALSE))
 				continue
 			linked_objective.generate_objective_stuff(T)
 			break
@@ -460,7 +459,7 @@
 
 	log_mapping("Finished generating ruin at [center_x], [center_y], [center_z]")
 
-/proc/pickweight_ruin(list/L)
+/proc/pick_weight_ruin(list/L)
 	var/total = 0
 	for (var/list/ruin_part as() in L)
 		total += ruin_part["weight"]

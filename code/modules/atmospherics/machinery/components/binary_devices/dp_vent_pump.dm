@@ -14,9 +14,9 @@
 	name = "dual-port air vent"
 	desc = "Has a valve and pump attached to it. There are two ports."
 
-	welded = FALSE
+	hide = TRUE
 
-	level = 1
+	welded = FALSE
 
 	interacts_with_air = TRUE
 
@@ -88,6 +88,8 @@
 				air_update_turf()
 
 				var/datum/pipeline/parent1 = parents[1]
+				if(!parent1)
+					return
 				parent1.update = PIPENET_UPDATE_STATUS_RECONCILE_NEEDED
 
 	else //external -> output
