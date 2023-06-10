@@ -1695,13 +1695,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fastify/error@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@fastify/error@npm:2.0.0"
-  checksum: ecf0834966b2bfb33ff834e3d55fe4dc04cbe9f822fda6c937b12cce4f162be4f8b0577ee665bc856d7012b1640c12472a1829a22ae38d287342c90b0f33a595
-  languageName: node
-  linkType: hard
-
 "@gar/promisify@npm:^1.0.1":
   version: 1.1.2
   resolution: "@gar/promisify@npm:1.1.2"
@@ -10206,7 +10199,7 @@ __metadata:
   version: 6.0.3
   resolution: "svg2ttf@npm:6.0.3"
   dependencies:
-    "@xmldom/xmldom": ^0.8.3
+    "@xmldom/xmldom": ^0.7.2
     argparse: ^2.0.1
     cubic2quad: ^1.2.1
     lodash: ^4.17.10

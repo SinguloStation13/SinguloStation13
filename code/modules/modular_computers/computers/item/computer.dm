@@ -102,7 +102,6 @@ GLOBAL_LIST_EMPTY(TabletMessengers) // a list of all active messengers, similar 
 /obj/item/modular_computer/Initialize(mapload)
 	allowed_themes = GLOB.ntos_device_themes_default
 	. = ..()
-	allowed_themes = GLOB.ntos_device_themes_default
 	START_PROCESSING(SSobj, src)
 	if(!physical)
 		physical = src

@@ -36,7 +36,7 @@ export const NtosMain = (props, context) => {
             </Button>
           </Section>
         )}
-        {!!(cardholder) && (
+        {!!cardholder && (
           <Section
             title="User Login"
             buttons={

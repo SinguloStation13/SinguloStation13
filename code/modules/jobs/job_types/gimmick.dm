@@ -23,8 +23,10 @@
 	species_outfits = list(
 		SPECIES_PLASMAMAN = /datum/outfit/plasmaman
 	)
+
 /datum/outfit/job/gimmick
 	can_be_admin_equipped = FALSE // we want just the parent outfit to be unequippable since this leads to problems
+
 /datum/job/gimmick/barber
 	title = JOB_NAME_BARBER
 	flag = BARBER
@@ -43,6 +45,7 @@
 	payment_per_department = list(ACCOUNT_SRV_ID = PAYCHECK_ASSISTANT)
 
 	rpg_title = "Scissorhands"
+
 /datum/outfit/job/gimmick/barber
 	name = JOB_NAME_BARBER
 	jobtype = /datum/job/gimmick/barber
@@ -54,6 +57,7 @@
 	l_hand = /obj/item/storage/wallet
 	l_pocket = /obj/item/razor/straightrazor
 	can_be_admin_equipped = TRUE
+
 /datum/job/gimmick/stage_magician
 	title = JOB_NAME_STAGEMAGICIAN
 	flag = MAGICIAN
@@ -75,6 +79,7 @@
 	species_outfits = list(
 		SPECIES_PLASMAMAN = /datum/outfit/plasmaman/magic
 	)
+
 /datum/outfit/job/gimmick/stage_magician
 	name = JOB_NAME_STAGEMAGICIAN
 	jobtype = /datum/job/gimmick/stage_magician
@@ -89,6 +94,7 @@
 	l_hand = /obj/item/cane
 	backpack_contents = list(/obj/item/choice_beacon/magic=1)
 	can_be_admin_equipped = TRUE
+
 /datum/job/gimmick/psychiatrist
 	title = JOB_NAME_PSYCHIATRIST
 	flag = PSYCHIATRIST
@@ -108,6 +114,7 @@
 	mind_traits = list(TRAIT_MADNESS_IMMUNE, TRAIT_MEDICAL_METABOLISM)
 
 	rpg_title = "Enchanter"
+
 /datum/outfit/job/gimmick/psychiatrist //psychiatrist doesnt get much shit, but he has more access and a cushier paycheck
 	name = JOB_NAME_PSYCHIATRIST
 	jobtype = /datum/job/gimmick/psychiatrist
@@ -118,6 +125,7 @@
 	shoes = /obj/item/clothing/shoes/laceup
 	backpack_contents = list(/obj/item/choice_beacon/pet/ems=1)
 	can_be_admin_equipped = TRUE
+
 /datum/job/gimmick/vip
 	title = JOB_NAME_VIP
 	flag = CELEBRITY
@@ -137,6 +145,7 @@
 	species_outfits = list(
 		SPECIES_PLASMAMAN = /datum/outfit/plasmaman/vip
 	)
+
 /datum/outfit/job/gimmick/vip
 	name = JOB_NAME_VIP
 	jobtype = /datum/job/gimmick/vip

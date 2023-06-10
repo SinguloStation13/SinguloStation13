@@ -486,16 +486,6 @@
 	desc = "King of the labs, the half slime half man mutant, the slimeboy."
 	icon_state = "cowboy_alt_science"
 
-/obj/item/clothing/head/cowboy
-	name = "ranching hat"
-	desc = "King of the plains, the half cow half man mutant, the cowboy."
-	icon_state = "cowboy_alt"
-
-/obj/item/clothing/head/cowboy_science
-	name = "slime ranching hat"
-	desc = "King of the labs, the half slime half man mutant, the slimeboy."
-	icon_state = "cowboy_alt_science"
-
 /////////////////
 //DONATOR ITEMS//
 /////////////////

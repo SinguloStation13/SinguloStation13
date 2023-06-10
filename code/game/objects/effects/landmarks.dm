@@ -315,8 +315,6 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	if (SStitle.newplayer_start_loc)
 		forceMove(SStitle.newplayer_start_loc)
 	GLOB.newplayer_start += loc
-	if (SStitle.newplayer_start_loc)
-		forceMove(SStitle.newplayer_start_loc)
 	return INITIALIZE_HINT_QDEL
 
 /obj/effect/landmark/latejoin

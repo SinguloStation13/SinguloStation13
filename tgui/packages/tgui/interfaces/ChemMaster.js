@@ -17,12 +17,6 @@ const ChemMasterContent = (props, context) => {
   const { act, data } = useBackend(context);
   const { saved_volume, saved_name, saved_volume_state, saved_name_state } = data;
   const {
-    saved_volume,
-    saved_name,
-    saved_volume_state,
-    saved_name_state,
-  } = data;
-  const {
     screen,
     beakerContents = [],
     bufferContents = [],
@@ -321,26 +315,6 @@ const PackagingControls = ({ volume, packagingName }, context) => {
               color="transparent"
               onClick={() => act('patchStyle', { id: each_style.id })}>
               <Box mx={-1} className={classes(['medicine_containers22x22', each_style.patch_icon_name])} />
-            </Button>
-          ))}
-        </LabeledList.Item>
-      )}
-      {!condi && (
-        <LabeledList.Item label="Patch type">
-          {patchStyles.map(each_style => (
-            <Button
-              key={each_style.id}
-              width="30px"
-              height="25px"
-              selected={each_style.id === chosenPatchStyle}
-              textAlign="center"
-              color="transparent"
-              onClick={() => act('patchStyle', { id: each_style.id })}>
-              <Box mx={-1}
-                className={classes([
-                  'medicine_containers22x22',
-                  each_style.patch_icon_name,
-                ])} />
             </Button>
           ))}
         </LabeledList.Item>
