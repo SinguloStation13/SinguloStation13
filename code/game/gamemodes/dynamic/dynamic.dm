@@ -709,16 +709,6 @@ GLOBAL_VAR_INIT(dynamic_forced_threat_level, -1)
 	log_game("DYNAMIC: [src] passed lowpop_lowimpact requirement: ([living_antags_count] antags of [living_players_count] players - [antag_percent]%)")
 	return FALSE
 
-/datum/game_mode/dynamic/proc/check_lowpop_lowimpact_injection()
-	var/living_players_count = length(current_players[CURRENT_LIVING_PLAYERS])
-	var/living_antags_count = length(current_players[CURRENT_LIVING_ANTAGS])
-	var/antag_percent = living_players_count ? (living_antags_count / living_players_count) * 100 : 0
-	if(living_players_count && living_players_count < traitor_percentage_population_threshold && antag_percent > lowpop_max_traitor_percentage)
-		log_game("DYNAMIC: FAIL: [src] has too many living antags for the population ([living_antags_count] antags of [living_players_count] players - [antag_percent]%)")
-		return TRUE
-	log_game("DYNAMIC: [src] passed lowpop_lowimpact requirement: ([living_antags_count] antags of [living_players_count] players - [antag_percent]%)")
-	return FALSE
-
 /// Checks if client age is age or older.
 /datum/game_mode/dynamic/proc/check_age(client/C, age)
 	enemy_minimum_age = age

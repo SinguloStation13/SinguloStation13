@@ -220,9 +220,6 @@
 /obj/machinery/suit_storage_unit/proc/is_empty()
 	return isnull(helmet) && isnull(suit) && isnull(mask) && isnull(storage) && isnull(occupant)
 
-/obj/machinery/suit_storage_unit/proc/is_empty()
-	return isnull(helmet) && isnull(suit) && isnull(mask) && isnull(storage) && isnull(occupant)
-
 /obj/machinery/suit_storage_unit/emp_act()
 	. = ..()
 	uv_super = !uv_super

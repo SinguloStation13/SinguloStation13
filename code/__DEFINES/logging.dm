@@ -32,7 +32,7 @@
 #define LOG_COMMENT				(1 << 7)
 #define LOG_TELECOMMS			(1 << 8)
 #define LOG_OOC					(1 << 9)
-#define LOG_ADMIN			z	(1 << 10)
+#define LOG_ADMIN				(1 << 10)
 #define LOG_OWNERSHIP			(1 << 11)
 #define LOG_GAME				(1 << 12)
 #define LOG_ADMIN_PRIVATE		(1 << 13)

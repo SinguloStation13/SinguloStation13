@@ -15,8 +15,6 @@
 
 #define ABSOLUTELY_GRINDABLE   (1<<8)  //! used in 'All-In-One Grinder' that it can grind anything if it has this bitflag
 
-#define ABSOLUTELY_GRINDABLE   (1<<7)  //! used in 'All-In-One Grinder' that it can grind anything if it has this bitflag
-
 /// Is an open container for all intents and purposes.
 #define OPENCONTAINER 	(REFILLABLE | DRAINABLE | TRANSPARENT)
 

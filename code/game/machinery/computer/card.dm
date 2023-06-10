@@ -1,3 +1,4 @@
+#define DEPT_ALL 0
 #define DEPT_GEN 1
 #define DEPT_SEC 2
 #define DEPT_MED 3

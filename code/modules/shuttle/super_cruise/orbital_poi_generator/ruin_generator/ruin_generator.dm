@@ -43,15 +43,16 @@
 	/// The ruin event to trigger throughout generation
 	var/datum/ruin_event/ruin_event
 
-	//Pause the air on the target z-level
-	SSair.pause_z(center_z)
+	//We need doors
+	var/list/placed_room_entrances = list()
+	var/list/placed_hallway_entrances = list()
 
-	//Try and catch errors so that critical actions (unpausing the Z atmos) can happen.
-	log_mapping("Generating random ruin at [center_x], [center_y], [center_z]")
-
-	//Load ruin parts
-	if(!length(GLOB.loaded_ruin_parts))
-		load_ruin_parts()
+	var/list/room_connections = list()			//Assoc list of door connection coords, [x]_[y] = dir
+	var/list/hallway_connections = list()		//Assoc list of hallway connection coords, [x]_[y] = dir
+	//Blocked turfs = Walls and floors
+	var/list/blocked_turfs = list()				//Assoc list of blocked coords [x]_[y] = TRUE
+	//Floor turfs = Open turfs only. Walls should be allowed to overlap.
+	var/list/floor_turfs = list()				//Assoc list as above, except doesn't includ walls.
 
 	var/sanity = 1000
 
