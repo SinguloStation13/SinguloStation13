@@ -9,12 +9,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/template_noop)
-"d" = (
-/obj/effect/turf_decal/tile/red/half/contrasted{
-	dir = 8
-	},
-/turf/open/floor/plasteel,
-/area/template_noop)
 "e" = (
 /obj/item/radio/intercom{
 	pixel_x = -28
@@ -149,13 +143,6 @@
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/stripes/closeup,
 /turf/open/floor/plasteel/grid/steel,
-/area/template_noop)
-"Y" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/effect/turf_decal/tile/red/anticorner/contrasted{
-	dir = 8
-	},
-/turf/open/floor/plasteel,
 /area/template_noop)
 
 (1,1,1) = {"

@@ -37353,7 +37353,6 @@
 /obj/machinery/power/apc/auto_name/east{
 	pixel_x = 24
 	},
-/obj/machinery/power/apc/auto_name/east,
 /obj/effect/turf_decal/tile/neutral,
 /turf/open/floor/plasteel,
 /area/crew_quarters/locker)
@@ -48175,7 +48174,6 @@
 /obj/machinery/power/apc/auto_name/west{
 	pixel_x = -24
 	},
-/obj/machinery/power/apc/auto_name/west,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -49628,7 +49626,6 @@
 /obj/machinery/power/apc/auto_name/north{
 	pixel_y = 24
 	},
-/obj/machinery/power/apc/auto_name/north,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -87216,12 +87213,11 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 6
+	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 6
+	dir = 4
 	},
-/obj/effect/turf_decal/tile/brown/half/contrasted,
 /turf/open/floor/plasteel,
 /area/engine/storage_shared)
 "uOD" = (
