@@ -40,6 +40,9 @@
 	return FALSE
 
 /turf/proc/ImmediateCalculateAdjacentTurfs()
+//	if(SSair.thread_running()) // Singulo edit - monstermos
+//		CALCULATE_ADJACENT_TURFS(src)
+//		return
 	var/canpass = CANATMOSPASS(src, src)
 	var/canvpass = CANVERTICALATMOSPASS(src, src)
 	for(var/direction in GLOB.cardinals_multiz)
@@ -58,13 +61,17 @@
 			if (T.atmos_adjacent_turfs)
 				T.atmos_adjacent_turfs -= src
 			UNSETEMPTY(T.atmos_adjacent_turfs)
-		T.__update_auxtools_turf_adjacency_info(isspaceturf(T.get_z_base_turf()))
+//			T.set_sleeping(T.blocks_air) // Singulo edit - monstermos
+		T.__update_auxtools_turf_adjacency_info(isspaceturf(T.get_z_base_turf())) // Singulo edit - monstermos
 	UNSETEMPTY(atmos_adjacent_turfs)
 	src.atmos_adjacent_turfs = atmos_adjacent_turfs
 	set_sleeping(blocks_air)
 	__update_auxtools_turf_adjacency_info(isspaceturf(get_z_base_turf()))
 
 /turf/proc/ImmediateDisableAdjacency(disable_adjacent = TRUE)
+//	if(SSair.thread_running()) // Singulo edit - monstermos
+//		SSadjacent_air.disable_queue[src] = disable_adjacent
+//		return
 	if(disable_adjacent)
 		for(var/direction in GLOB.cardinals_multiz)
 			var/turf/T = get_step_multiz(src, direction)

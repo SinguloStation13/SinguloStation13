@@ -207,7 +207,7 @@
 
 /turf/proc/handle_decompression_floor_rip()
 /turf/open/floor/handle_decompression_floor_rip(sum)
-	if(sum > 20 && prob(CLAMP(sum / 20, 0, 15)) && !blocks_air)
+	if(sum > 20 && prob(CLAMP(sum / 20, 0, 15)) && !blocks_air) // Singulo edit - monstermos
 		if(floor_tile)
 			new floor_tile(src)
 		make_plating()
@@ -232,7 +232,7 @@
 		pressure_difference = difference
 
 /turf/open/proc/high_pressure_movements()
-	if(blocks_air)
+	if(blocks_air) // Singulo edit - monstermos
 		return
 	var/atom/movable/M
 	var/multiplier = 1

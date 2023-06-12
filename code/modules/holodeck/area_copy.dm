@@ -142,6 +142,6 @@ GLOBAL_LIST_INIT(duplicate_forbidden_vars,list(
 
 	if(toupdate.len)
 		for(var/turf/T1 in toupdate)
-			T1.ImmediateCalculateAdjacentTurfs()
+			T1.ImmediateCalculateAdjacentTurfs() // Singulo edit - monstermos
 
 	return copiedobjs

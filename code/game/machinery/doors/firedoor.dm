@@ -38,7 +38,7 @@
 
 /obj/machinery/door/firedoor/Initialize(mapload)
 	. = ..()
-	air_update_turf(1)
+	air_update_turf(1) // Singulo edit - monstermos
 	CalculateAffectingAreas()
 
 /obj/machinery/door/firedoor/examine(mob/user)
@@ -75,7 +75,7 @@
 
 /obj/machinery/door/firedoor/Destroy()
 	remove_from_areas()
-	air_update_turf(1)
+	air_update_turf(1) // Singulo edit - monstermos
 	affecting_areas.Cut()
 	return ..()
 
@@ -384,7 +384,7 @@
 	if(density || operating || welded)
 		return
 	if(world.time >= emergency_close_timer || !consider_timer)
-		emergency_pressure_close()
+		emergency_pressure_close() // was `close()` Singulo edit - monstermos
 
 /obj/machinery/door/firedoor/deconstruct(disassembled = TRUE)
 	if(!(flags_1 & NODECONSTRUCT_1))
@@ -503,7 +503,7 @@
 		return !density
 	else
 		return TRUE
-
+// Singulo start - monstermos
 /obj/machinery/door/firedoor/proc/emergency_pressure_close()
 	SHOULD_NOT_SLEEP(TRUE)
 
@@ -541,7 +541,7 @@
 				M.pulling.forceMove(T2)
 				INVOKE_ASYNC(M, /atom/movable/.proc/start_pulling)
 	return ..()
-
+// Singulo end
 /obj/machinery/door/firedoor/heavy
 	name = "heavy firelock"
 	icon = 'icons/obj/doors/doorfire.dmi'

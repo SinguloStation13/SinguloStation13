@@ -97,7 +97,7 @@ GLOBAL_LIST_EMPTY(created_baseturf_lists)
 		add_overlay(/obj/effect/fullbright)
 
 	if(requires_activation)
-		ImmediateCalculateAdjacentTurfs()
+		ImmediateCalculateAdjacentTurfs() // Singulo edit - monstermos
 
 	if(color)
 		add_atom_colour(color, FIXED_COLOUR_PRIORITY)
@@ -134,7 +134,7 @@ GLOBAL_LIST_EMPTY(created_baseturf_lists)
 /turf/proc/set_temperature()
 
 /turf/proc/Initalize_Atmos(times_fired)
-	ImmediateCalculateAdjacentTurfs()
+	ImmediateCalculateAdjacentTurfs() // Singulo edit - monstermos
 
 /turf/Destroy(force)
 	. = QDEL_HINT_IWILLGC

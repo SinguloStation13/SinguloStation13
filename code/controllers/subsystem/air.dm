@@ -131,9 +131,9 @@ SUBSYSTEM_DEF(air)
 	fix_corrupted_atmos()
 
 /datum/controller/subsystem/air/fire(resumed = 0)
-	if(thread_running())
-		pause()
-		return
+	if(thread_running()) // Singulo edit - monstermos
+		pause() //
+		return // Singulo end
 
 	var/timer = TICK_USAGE_REAL
 
@@ -433,7 +433,7 @@ SUBSYSTEM_DEF(air)
 		high_pressure_delta.len--
 		T.high_pressure_movements()
 		T.pressure_difference = 0
-		T.pressure_direction = 0
+		T.pressure_direction = 0 // Singulo edit - monstermos
 		T.pressure_specific_target = null
 		if(MC_TICK_CHECK)
 			return
