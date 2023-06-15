@@ -26,6 +26,14 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 		if(prefs.muted & MUTE_OOC)
 			to_chat(src, "<span class='danger'>You cannot use OOC (muted).</span>")
 			return
+	else
+		if(SSticker.current_state == GAME_STATE_PLAYING && holder.ooc_confirmation_enabled)
+			var/choice = alert("The round is still ongoing, are you sure you wish to send an OOC message?", "Confirm midround OOC?", "No", "Yes", "Always yes for this round")
+			switch(choice)
+				if("No")
+					return
+				if("Always yes for this round")
+					holder.ooc_confirmation_enabled = FALSE
 	if(is_banned_from(ckey, "OOC"))
 		to_chat(src, "<span class='danger'>You have been banned from OOC.</span>")
 		return
@@ -101,10 +109,14 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 	discord_ooc_tag = discord_ooc_tag ? "\[[discord_ooc_tag]\] " : ""
 	switch(type)
 		if(CHAT_TYPE_OOC)
-			discordsendmsg("ooc", "[discord_ooc_tag](OOC) **[sayer]:** [msg]")
+			sendooc2ext("[discord_ooc_tag](OOC) **[sayer]:** [msg]")
 		if(CHAT_TYPE_DEADCHAT) // don't send these until a round is finished
 			if(SSticker.current_state == GAME_STATE_FINISHED)
-				discordsendmsg("ooc", "[discord_ooc_tag](Dead) **[sayer]:** [msg]")
+				var/regex/R = regex("<span class=' '>(\[\\s\\S.\]+)</span>\"")
+				if(!R.Find(msg))
+					return
+				msg = R.group[1] // wipes some bad dchat format
+				sendooc2ext("[discord_ooc_tag](Dead) **[sayer]:** [msg]")
 
 /proc/toggle_ooc(toggle = null)
 	if(toggle != null) //if we're specifically en/disabling ooc
@@ -235,7 +247,7 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 			choices["[C.mob]([displayed_choicename])"] = C
 		else
 			choices[displayed_choicename] = C
-	choices = sortList(choices)
+	choices = sort_list(choices)
 	var/selection = input("Please, select a player!", "Ignore", null, null) as null|anything in choices
 	if(!selection || !(selection in choices))
 		return

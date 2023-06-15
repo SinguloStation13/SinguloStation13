@@ -16,15 +16,8 @@
 
 /obj/machinery/vendor/Initialize(mapload)
 	. = ..()
-	build_inventory()
-
 	if(bound_bank_account && !istype(bound_bank_account))
 		bound_bank_account = SSeconomy.get_budget_account(bound_bank_account, force=TRUE) // grabbing united budget will be bad for this. "force=TRUE" will always grab the correct budget.
-
-/obj/machinery/vendor/proc/build_inventory()
-	for(var/p in prize_list)
-		var/datum/data/vendor_equipment/M = p
-		GLOB.vending_products[M.equipment_path] = 1
 
 /obj/machinery/vendor/power_change()
 	..()
@@ -251,7 +244,7 @@
 /obj/machinery/vendor/mining/proc/RedeemVoucher(obj/item/mining_voucher/voucher, mob/redeemer)
 	var/items = list("Survival Capsule and Explorer's Webbing", "Resonator Kit", "Minebot Kit", "Extraction and Rescue Kit", "Crusher Kit", "Mining Conscription Kit")
 
-	var/selection = input(redeemer, "Pick your equipment", "Mining Voucher Redemption") as null|anything in sortList(items)
+	var/selection = input(redeemer, "Pick your equipment", "Mining Voucher Redemption") as null|anything in sort_list(items)
 	if(!selection || !Adjacent(redeemer) || QDELETED(voucher) || voucher.loc != redeemer)
 		return
 	var/drop_location = drop_location()
