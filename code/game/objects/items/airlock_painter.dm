@@ -115,7 +115,7 @@
 		// make some colorful reagent, and apply it to the lungs
 		L.create_reagents(10)
 		L.reagents.add_reagent(/datum/reagent/colorful_reagent, 10)
-		L.reagents.expose(L, TOUCH, 1)
+		L.reagents.reaction(L, TOUCH, 1)
 
 		// TODO maybe add some colorful vomit?
 
@@ -128,7 +128,7 @@
 	else if(can_use(user) && !L)
 		user.visible_message("<span class='suicide'>[user] is spraying toner on [user.p_them()]self from [src]! It looks like [user.p_theyre()] trying to commit suicide.</span>")
 		user.reagents.add_reagent(/datum/reagent/colorful_reagent, 1)
-		user.reagents.expose(user, TOUCH, 1)
+		user.reagents.reaction(user, TOUCH, 1)
 		return TOXLOSS
 
 	else
@@ -352,6 +352,7 @@
 
 /datum/asset/spritesheet/decals
 	name = "floor_decals"
+	cross_round_cachable = TRUE
 
 	/// The floor icon used for blend_preview_floor()
 	var/preview_floor_icon = 'icons/turf/floors.dmi'
@@ -386,7 +387,7 @@
 	var/icon/final = blend_preview_floor(icon('icons/turf/decals.dmi', "[decal][icon_state_color ? "_" : ""][icon_state_color]", dir))
 	Insert("[decal]_[dir]_[color]", final)
 
-/datum/asset/spritesheet/decals/register()
+/datum/asset/spritesheet/decals/create_spritesheets()
 	// Must actually create because initial(type) doesn't work for /lists for some reason.
 	var/obj/item/airlock_painter/decal/painter = new painter_type()
 
@@ -398,7 +399,6 @@
 				insert_state(decal[2], dir[2], "custom")
 
 	qdel(painter)
-	return ..()
 
 /obj/item/airlock_painter/decal/debug
 	name = "extreme decal painter"
@@ -427,14 +427,19 @@
 	)
 	decal_list = list(
 		list("Corner", "tile_corner"),
+		list("Half", "tile_half_contrasted"),
+		list("Opposing Corners", "tile_opposing_corners"),
+		list("3 Corners", "tile_anticorner_contrasted"),
+		list("4 Corners", "tile_fourcorners_contrasted"),
 		list("Trimline Corner", "trimline_corner_fill"),
 		list("Trimline Fill", "trimline_fill"),
 		list("Trimline Fill L", "trimline_fill__8"), // This is a hack that lives in the spritesheet builder and paint_floor
 		list("Trimline End", "trimline_end_fill"),
 		list("Trimline Box", "trimline_box_fill"),
+		list("Carat", "tile_carat"), // :^)
 	)
 	nondirectional_decals = list(
-		"tile_fourcorners",
+		"tile_fourcorners_contrasted",
 		"trimline_box_fill",
 	)
 

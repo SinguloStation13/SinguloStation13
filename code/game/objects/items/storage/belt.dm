@@ -36,6 +36,8 @@
 	worn_icon_state = "utility"
 	content_overlays = TRUE
 	custom_price = 50
+	drop_sound = 'sound/items/handling/toolbelt_drop.ogg'
+	pickup_sound =  'sound/items/handling/toolbelt_pickup.ogg'
 
 /obj/item/storage/belt/utility/ComponentInitialize()
 	. = ..()
@@ -91,6 +93,7 @@
 		/obj/item/reagent_containers/glass/beaker,//those will usually be used for fertilizer
 		/obj/item/reagent_containers/glass/bottle,//fertilizer bottles
 		/obj/item/reagent_containers/syringe,//blood samples for pod cloning
+		/obj/item/reagent_containers/dropper,//on request by forums users
 		/obj/item/plant_analyzer,
 		/obj/item/cultivator,
 		/obj/item/hatchet,
@@ -301,6 +304,7 @@
 	desc = "Can hold security gear like handcuffs and flashes."
 	icon_state = "securitybelt"
 	item_state = "security"//Could likely use a better one.
+	worn_icon_state = "security"
 	content_overlays = TRUE
 
 /obj/item/storage/belt/security/ComponentInitialize()
@@ -541,7 +545,7 @@
 		/obj/item/reagent_containers/food/snacks/cheesynachos,
 		/obj/item/reagent_containers/food/snacks/cubannachos,
 		/obj/item/reagent_containers/food/snacks/nugget,
-		/obj/item/reagent_containers/food/snacks/spaghetti/pastatomato,
+		/obj/item/food/spaghetti/pastatomato,
 		/obj/item/reagent_containers/food/snacks/rofflewaffles,
 		/obj/item/reagent_containers/food/snacks/donkpocket,
 		/obj/item/reagent_containers/food/drinks/soda_cans/cola,

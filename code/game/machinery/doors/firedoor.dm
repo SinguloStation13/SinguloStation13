@@ -13,6 +13,7 @@
 	icon_state = "door_open"
 	opacity = FALSE
 	density = FALSE
+	obj_flags = CAN_BE_HIT // reset zblock
 	max_integrity = 300
 	resistance_flags = FIRE_PROOF
 	heat_proof = TRUE
@@ -23,7 +24,7 @@
 	layer = BELOW_OPEN_DOOR_LAYER
 	closingLayer = CLOSED_FIREDOOR_LAYER
 	assemblytype = /obj/structure/firelock_frame
-	armor = list("melee" = 30, "bullet" = 30, "laser" = 20, "energy" = 20, "bomb" = 10, "bio" = 100, "rad" = 100, "fire" = 95, "acid" = 70, "stamina" = 0)
+	armor = list(MELEE = 30,  BULLET = 30, LASER = 20, ENERGY = 20, BOMB = 10, BIO = 100, RAD = 100, FIRE = 95, ACID = 70, STAMINA = 0)
 	interaction_flags_machine = INTERACT_MACHINE_WIRES_IF_OPEN | INTERACT_MACHINE_ALLOW_SILICON | INTERACT_MACHINE_OPEN_SILICON | INTERACT_MACHINE_REQUIRES_SILICON | INTERACT_MACHINE_OPEN
 	air_tight = TRUE
 	open_speed = 2
@@ -38,6 +39,7 @@
 
 /obj/machinery/door/firedoor/Initialize(mapload)
 	. = ..()
+	air_update_turf(1) // Singulo edit - monstermos
 	CalculateAffectingAreas()
 
 /obj/machinery/door/firedoor/examine(mob/user)
@@ -62,6 +64,7 @@
 	icon_state = "door_closed"
 	opacity = TRUE
 	density = TRUE
+	obj_flags = CAN_BE_HIT | BLOCK_Z_IN_DOWN | BLOCK_Z_IN_UP
 	processing_flags = START_PROCESSING_ON_INIT
 
 //see also turf/AfterChange for adjacency shennanigans
@@ -74,21 +77,32 @@
 
 /obj/machinery/door/firedoor/Destroy()
 	remove_from_areas()
+	air_update_turf(1) // Singulo edit - monstermos
 	affecting_areas.Cut()
 	return ..()
 
+// Singulo start - Monstermos
 /obj/machinery/door/firedoor/Bumped(atom/movable/AM)
-	if(panel_open || operating)
+	if(panel_open || operating || welded || (machine_stat & NOPOWER))
 		return
-	if(!density)
-		return ..()
+	if(ismob(AM))
+		var/mob/user = AM
+		if(check_safety(user))
+			add_fingerprint(user)
+			open()
+			return TRUE
+	if(ismecha(AM))
+		var/obj/mecha/M = AM
+		if(M.occupant && check_safety(M.occupant))
+			open()
+			return TRUE
 	return FALSE
-
+//Singulo end
 
 /obj/machinery/door/firedoor/power_change()
 	if(powered(power_channel))
 		set_machine_stat(machine_stat & ~NOPOWER)
-		INVOKE_ASYNC(src, .proc/latetoggle)
+		INVOKE_ASYNC(src, PROC_REF(latetoggle))
 	else
 		set_machine_stat(machine_stat | NOPOWER)
 
@@ -96,6 +110,25 @@
 	. = ..()
 	if(.)
 		return
+
+// Singulo start - monstermos
+	if (!welded && !operating)
+		if (machine_stat & NOPOWER)
+			user.visible_message("[user] tries to open \the [src] manually.",
+						 "You operate the manual lever on \the [src].")
+			if (!do_after(user, 30, TRUE, src))
+				return FALSE
+		else if (density && !check_safety(user))
+			return FALSE
+
+		add_fingerprint(user)
+		if(density)
+			emergency_close_timer = world.time + RECLOSE_DELAY // prevent it from instaclosing again if in space
+			open()
+		else
+			close()
+		return TRUE
+// Singulo end
 
 	if(operating || !density)
 		return
@@ -205,7 +238,7 @@
 				access_log.Remove(access_log[1])
 			to_chat(user, "<span class='warning'>You begin forcing open \the [src], the motors whine...</span>")
 			playsound(src, 'sound/machines/airlock_alien_prying.ogg', 100, TRUE)
-			if(!do_after(user, 10 SECONDS, TRUE, src))
+			if(!do_after(user, 10 SECONDS, src))
 				return
 		else
 			to_chat(user, "<span class='notice'>You begin forcing open \the [src], the motors don't resist...</span>")
@@ -218,7 +251,6 @@
 		open()
 	else
 		close()
-
 
 /obj/machinery/door/firedoor/proc/check_safety(mob/user, check_alarm = TRUE)
 	var/area/A = get_area(src)
@@ -351,11 +383,11 @@
 				T.ImmediateCalculateAdjacentTurfs()
 
 /obj/machinery/door/firedoor/proc/emergency_pressure_stop(consider_timer = TRUE)
-	set waitfor = 0
+//	set waitfor = 0 // Singulo edit - monstermos
 	if(density || operating || welded)
 		return
 	if(world.time >= emergency_close_timer || !consider_timer)
-		close()
+		emergency_pressure_close() // was `close()` Singulo edit - monstermos
 
 /obj/machinery/door/firedoor/deconstruct(disassembled = TRUE)
 	if(!(flags_1 & NODECONSTRUCT_1))
@@ -391,13 +423,13 @@
 	. = ..()
 
 	var/static/list/loc_connections = list(
-		COMSIG_ATOM_EXIT = .proc/on_exit,
+		COMSIG_ATOM_EXIT = PROC_REF(on_exit),
 	)
 
 	AddElement(/datum/element/connect_loc, loc_connections)
 
 /obj/machinery/door/firedoor/border_only/Destroy()
-	density = FALSE
+	set_density(FALSE)
 	air_update_turf(1)
 	return ..()
 
@@ -457,13 +489,19 @@
 		return 0 // not big enough to matter
 	return start_point.air.return_pressure() < 20 ? -1 : 1
 
-/obj/machinery/door/firedoor/border_only/CanAllowThrough(atom/movable/mover, turf/target)
+/obj/machinery/door/firedoor/border_only/CanAllowThrough(atom/movable/mover, border_dir)
 	. = ..()
-	if(!(get_dir(loc, target) == dir)) //Make sure looking at appropriate border
+	if(!(border_dir == dir)) //Make sure looking at appropriate border
 		return TRUE
 
 /obj/machinery/door/firedoor/border_only/proc/on_exit(datum/source, atom/movable/leaving, direction)
 	SIGNAL_HANDLER
+
+	if(leaving.movement_type & PHASING)
+		return
+
+	if(leaving == src)
+		return // Let's not block ourselves.
 
 	if(direction == dir && density)
 		leaving.Bump(src)
@@ -474,7 +512,45 @@
 		return !density
 	else
 		return TRUE
+// Singulo start - monstermos
+/obj/machinery/door/firedoor/proc/emergency_pressure_close()
+	SHOULD_NOT_SLEEP(TRUE)
 
+	if(density)
+		return
+	if(operating || welded)
+		return
+	density = TRUE
+	air_update_turf(1)
+	do_animate("closing")
+	update_freelook_sight()
+	if(!(flags_1 & ON_BORDER_1))
+		crush()
+	addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, update_icon)), 5)
+
+/obj/machinery/door/firedoor/border_only/emergency_pressure_close()
+	if(density)
+		return TRUE
+	if(operating || welded)
+		return
+	var/turf/T1 = get_turf(src)
+	var/turf/T2 = get_step(T1, dir)
+	for(var/mob/living/M in T1)
+		if(M.stat == CONSCIOUS && M.pulling && M.pulling.loc == T2 && !M.pulling.anchored && M.pulling.move_resist <= M.move_force)
+			var/mob/living/M2 = M.pulling
+			if(!istype(M2) || !M2.buckled || !M2.buckled.buckle_prevents_pull)
+				to_chat(M, "<span class='notice'>You pull [M.pulling] through [src] right as it closes.</span>")
+				M.pulling.forceMove(T1)
+				INVOKE_ASYNC(M, TYPE_PROC_REF(/atom/movable, start_pulling))
+	for(var/mob/living/M in T2)
+		if(M.stat == CONSCIOUS && M.pulling && M.pulling.loc == T1 && !M.pulling.anchored && M.pulling.move_resist <= M.move_force)
+			var/mob/living/M2 = M.pulling
+			if(!istype(M2) || !M2.buckled || !M2.buckled.buckle_prevents_pull)
+				to_chat(M, "<span class='notice'>You pull [M.pulling] through [src] right as it closes.</span>")
+				M.pulling.forceMove(T2)
+				INVOKE_ASYNC(M, TYPE_PROC_REF(/atom/movable, start_pulling))
+	return ..()
+// Singulo end
 /obj/machinery/door/firedoor/heavy
 	name = "heavy firelock"
 	icon = 'icons/obj/doors/doorfire.dmi'
@@ -496,7 +572,7 @@
 
 /obj/machinery/door/firedoor/window/attack_alien(mob/living/carbon/alien/humanoid/user)
 	playsound(src.loc, 'sound/weapons/slash.ogg', 100, 1)
-	return attack_generic(user, 60, BRUTE, "melee", 0)
+	return attack_generic(user, 60, BRUTE, MELEE, 0)
 
 /obj/machinery/door/firedoor/window/process(delta_time)
 	set waitfor = FALSE
@@ -515,6 +591,7 @@
 	icon_state = "frame1"
 	anchored = FALSE
 	density = TRUE
+	obj_flags = CAN_BE_HIT | BLOCK_Z_IN_DOWN | BLOCK_Z_IN_UP
 	var/constructionStep = CONSTRUCTION_NOCIRCUIT
 	//var/reinforced = 0 //Singulo edit - Firelock fixes
 	var/firelock_type = /obj/machinery/door/firedoor
@@ -763,7 +840,7 @@
 
 /obj/structure/firelock_frame/border/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/simple_rotation, ROTATION_ALTCLICK | ROTATION_CLOCKWISE | ROTATION_COUNTERCLOCKWISE | ROTATION_VERBS, null, CALLBACK(src, .proc/can_be_rotated))
+	AddComponent(/datum/component/simple_rotation, ROTATION_ALTCLICK | ROTATION_CLOCKWISE | ROTATION_COUNTERCLOCKWISE | ROTATION_VERBS, null, CALLBACK(src, PROC_REF(can_be_rotated)))
 
 /obj/structure/firelock_frame/border/proc/can_be_rotated(mob/user, rotation_type)
 	if (anchored)

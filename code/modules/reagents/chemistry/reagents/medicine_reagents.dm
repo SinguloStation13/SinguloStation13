@@ -15,6 +15,8 @@
 /datum/reagent/medicine/on_mob_life(mob/living/carbon/M)
 	current_cycle++
 	holder.remove_reagent(type, metabolization_rate / M.metabolism_efficiency) //medicine reagents stay longer if you have a better metabolism
+	if(metabolite)
+		holder.add_reagent(metabolite, metabolization_rate / M.metabolism_efficiency * METABOLITE_RATE)
 
 /datum/reagent/medicine/leporazine
 	name = "Leporazine"
@@ -231,7 +233,7 @@
 	..()
 	. = 1
 
-/datum/reagent/medicine/rezadone/expose_mob(mob/living/M, methods=TOUCH, reac_volume)
+/datum/reagent/medicine/rezadone/reaction_mob(mob/living/M, method=TOUCH, reac_volume)
 	. = ..()
 	if(iscarbon(M))
 		var/mob/living/carbon/patient = M
@@ -255,14 +257,15 @@
 	chem_flags = CHEMICAL_RNG_GENERAL | CHEMICAL_RNG_FUN | CHEMICAL_RNG_BOTANY | CHEMICAL_GOAL_CHEMIST_USEFUL_MEDICINE
 	metabolization_rate = 2.5 * REAGENTS_METABOLISM
 	overdose_threshold = 100
+	metabolite = /datum/reagent/metabolite/medicine/silver_sulfadiazine
 
-/datum/reagent/medicine/silver_sulfadiazine/expose_mob(mob/living/M, methods=TOUCH, reac_volume, show_message = 1, touch_protection, obj/item/bodypart/affecting)
+/datum/reagent/medicine/silver_sulfadiazine/reaction_mob(mob/living/M, method=TOUCH, reac_volume, show_message = 1, touch_protection, obj/item/bodypart/affecting)
 	if(iscarbon(M) && M.stat != DEAD)
-		if(methods & (INGEST|VAPOR|INJECT))
+		if(method in list(INGEST, VAPOR, INJECT))
 			M.adjustToxLoss(0.5*reac_volume)
 			if(show_message)
 				to_chat(M, "<span class='warning'>You don't feel so good...</span>")
-		else if(M.getFireLoss() && methods == PATCH)
+		else if(M.getFireLoss() && method == PATCH)
 			if(affecting.heal_damage(burn = reac_volume))
 				M.update_damage_overlays()
 			M.adjustStaminaLoss(reac_volume*2)
@@ -312,14 +315,15 @@
 	chem_flags = CHEMICAL_RNG_GENERAL | CHEMICAL_RNG_FUN | CHEMICAL_RNG_BOTANY | CHEMICAL_GOAL_CHEMIST_USEFUL_MEDICINE
 	metabolization_rate = 2.5 * REAGENTS_METABOLISM
 	overdose_threshold = 100
+	metabolite = /datum/reagent/metabolite/medicine/styptic_powder
 
-/datum/reagent/medicine/styptic_powder/expose_mob(mob/living/M, methods=TOUCH, reac_volume, show_message = 1, touch_protection, obj/item/bodypart/affecting)
+/datum/reagent/medicine/styptic_powder/reaction_mob(mob/living/M, method=TOUCH, reac_volume, show_message = 1, touch_protection, obj/item/bodypart/affecting)
 	if(iscarbon(M) && M.stat != DEAD)
-		if(methods & (INGEST|VAPOR|INJECT))
+		if(method in list(INGEST, VAPOR, INJECT))
 			M.adjustToxLoss(0.5*reac_volume)
 			if(show_message)
 				to_chat(M, "<span class='warning'>You don't feel so good...</span>")
-		else if(M.getBruteLoss() && methods == PATCH)
+		else if(M.getBruteLoss() && method == PATCH)
 			if(affecting.heal_damage(reac_volume))
 				M.update_damage_overlays()
 			M.adjustStaminaLoss(reac_volume*2)
@@ -397,9 +401,9 @@
 	..()
 	return TRUE
 
-/datum/reagent/medicine/mine_salve/expose_mob(mob/living/M, methods=TOUCH, reac_volume, show_message = 1)
+/datum/reagent/medicine/mine_salve/reaction_mob(mob/living/M, method=TOUCH, reac_volume, show_message = 1)
 	if(iscarbon(M) && M.stat != DEAD)
-		if(methods & (INGEST|VAPOR|INJECT))
+		if(method in list(INGEST, VAPOR, INJECT))
 			M.adjust_nutrition(-5)
 			if(show_message)
 				to_chat(M, "<span class='warning'>Your stomach feels empty and cramps!</span>")
@@ -429,11 +433,11 @@
 	metabolization_rate = 2.5 * REAGENTS_METABOLISM
 	overdose_threshold = 125
 
-/datum/reagent/medicine/synthflesh/expose_mob(mob/living/M, methods=TOUCH, reac_volume, show_message = 1, touch_protection, obj/item/bodypart/affecting)
+/datum/reagent/medicine/synthflesh/reaction_mob(mob/living/M, method=TOUCH, reac_volume, show_message = 1, touch_protection, obj/item/bodypart/affecting)
 	if(iscarbon(M))
 		if(M.stat == DEAD)
 			show_message = FALSE
-		if(methods & PATCH)
+		if(method == PATCH)
 			if(affecting.heal_damage(reac_volume, reac_volume))
 				M.update_damage_overlays()
 			M.adjustStaminaLoss(reac_volume*2)
@@ -938,7 +942,7 @@
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
 	taste_description = "magnets"
 
-/datum/reagent/medicine/strange_reagent/expose_mob(mob/living/M, methods=TOUCH, reac_volume)
+/datum/reagent/medicine/strange_reagent/reaction_mob(mob/living/M, method=TOUCH, reac_volume)
 	if(M.stat == DEAD)
 		if(M.suiciding || M.ishellbound()) //they are never coming back
 			M.visible_message("<span class='warning'>[M]'s body does not react...</span>")
@@ -951,9 +955,9 @@
 			M.visible_message("<span class='warning'>[M]'s body starts convulsing!</span>")
 			M.notify_ghost_cloning(source = M)
 			M.do_jitter_animation(10)
-			addtimer(CALLBACK(M, /mob/living/carbon.proc/do_jitter_animation, 10), 40) //jitter immediately, then again after 4 and 8 seconds
-			addtimer(CALLBACK(M, /mob/living/carbon.proc/do_jitter_animation, 10), 80)
-			addtimer(CALLBACK(M, /mob/living.proc/revive, FALSE, FALSE), 100)
+			addtimer(CALLBACK(M, TYPE_PROC_REF(/mob/living/carbon, do_jitter_animation), 10), 40) //jitter immediately, then again after 4 and 8 seconds
+			addtimer(CALLBACK(M, TYPE_PROC_REF(/mob/living/carbon, do_jitter_animation), 10), 80)
+			addtimer(CALLBACK(M, TYPE_PROC_REF(/mob/living, revive), FALSE, FALSE), 100)
 	..()
 
 /datum/reagent/medicine/strange_reagent/on_mob_life(mob/living/carbon/M)
@@ -1134,11 +1138,11 @@
 	color = "#bf0000"
 	chem_flags = CHEMICAL_RNG_GENERAL | CHEMICAL_RNG_FUN | CHEMICAL_GOAL_BOTANIST_HARVEST
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
+	metabolite = /datum/reagent/metabolite/medicine/bicaridine
 	overdose_threshold = 30
 
 /datum/reagent/medicine/bicaridine/on_mob_life(mob/living/carbon/M)
-	if(prob(100/(2**(round(M.getBruteLoss() / MINOR_DAMAGE_THRESHOLD)))))
-		M.adjustBruteLoss(-0.5*REM, 0)
+	M.adjustBruteLoss(-1/METABOLITE_PENALTY(metabolite), 0)
 	..()
 	. = 1
 	/* Calculation:
@@ -1151,7 +1155,9 @@
 	*/
 
 /datum/reagent/medicine/bicaridine/overdose_process(mob/living/M)
-	M.adjustOrganLoss(ORGAN_SLOT_LIVER, 2)
+	M.reagents.add_reagent(metabolite, 1)
+	M.reagents.remove_reagent(/datum/reagent/medicine/bicaridine, 1)
+	M.adjustOrganLoss(ORGAN_SLOT_LIVER, 1)
 	..()
 	. = 1
 
@@ -1164,8 +1170,7 @@
 	overdose_threshold = 30
 
 /datum/reagent/medicine/dexalin/on_mob_life(mob/living/carbon/M)
-	if(prob(100/(2**(round(M.getOxyLoss() / MINOR_DAMAGE_THRESHOLD)))))
-		M.adjustOxyLoss(-1.5*REM, 0)  // dexalin is rarely used, so it is 1.5 per heal instead of 0.5 like others, to give it some spotlight.
+	M.adjustOxyLoss(-1.5*REM, 0)
 	..()
 	. = 1
 
@@ -1201,16 +1206,18 @@
 	color = "#FFa800"
 	chem_flags = CHEMICAL_RNG_GENERAL | CHEMICAL_RNG_FUN | CHEMICAL_GOAL_BOTANIST_HARVEST
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
+	metabolite = /datum/reagent/metabolite/medicine/kelotane
 	overdose_threshold = 30
 
 /datum/reagent/medicine/kelotane/on_mob_life(mob/living/carbon/M)
-	if(prob(100/(2**(round(M.getFireLoss() / MINOR_DAMAGE_THRESHOLD)))))
-		M.adjustFireLoss(-0.5*REM, 0)
+	M.adjustFireLoss(-1/METABOLITE_PENALTY(metabolite), 0)
 	..()
 	. = 1
 
 /datum/reagent/medicine/kelotane/overdose_process(mob/living/M)
-	M.adjustOrganLoss(ORGAN_SLOT_LIVER, 2)
+	M.reagents.add_reagent(metabolite, 1)
+	M.reagents.remove_reagent(/datum/reagent/medicine/kelotane, 1)
+	M.adjustOrganLoss(ORGAN_SLOT_LIVER, 1)
 	..()
 	. = 1
 
@@ -1221,17 +1228,19 @@
 	color = "#00a000"
 	chem_flags = CHEMICAL_RNG_GENERAL | CHEMICAL_RNG_FUN | CHEMICAL_RNG_BOTANY | CHEMICAL_GOAL_CHEMIST_USEFUL_MEDICINE
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
-	overdose_threshold = 30
 	taste_description = "a roll of gauze"
+	metabolite = /datum/reagent/metabolite/medicine/antitoxin
+	overdose_threshold = 30
 
 /datum/reagent/medicine/antitoxin/on_mob_life(mob/living/carbon/M)
-	if(prob(100/(2**(round(M.getToxLoss() / MINOR_DAMAGE_THRESHOLD)))))
-		M.adjustToxLoss(-0.5*REM, 0)
+	M.adjustToxLoss(-1/METABOLITE_PENALTY(metabolite), 0)
 	..()
 	. = 1
 
 /datum/reagent/medicine/antitoxin/overdose_process(mob/living/M)
-	M.adjustOrganLoss(ORGAN_SLOT_LIVER, 2)
+	M.reagents.add_reagent(metabolite, 1)
+	M.reagents.remove_reagent(/datum/reagent/medicine/antitoxin, 1)
+	M.adjustOrganLoss(ORGAN_SLOT_LIVER, 1)
 	..()
 	. = 1
 
@@ -1331,24 +1340,21 @@
 	color = "#707A00" //tricord's component chems mixed together, olive.
 	chem_flags = CHEMICAL_RNG_GENERAL | CHEMICAL_RNG_FUN | CHEMICAL_RNG_BOTANY
 	metabolization_rate = 3 * REAGENTS_METABOLISM
-	overdose_threshold = 50
+	overdose_threshold = 30
 	taste_description = "grossness"
+	metabolite = /datum/reagent/metabolite/medicine/tricordrazine
 
 /datum/reagent/medicine/tricordrazine/on_mob_life(mob/living/carbon/M)
-	if(prob(100/(2**(round(M.getBruteLoss() / MINOR_DAMAGE_THRESHOLD)))))
-		M.adjustBruteLoss(-1*REM, 0)
-	if(prob(100/(2**(round(M.getFireLoss() / MINOR_DAMAGE_THRESHOLD)))))
-		M.adjustFireLoss(-1*REM, 0)
-	if(prob(100/(2**(round(M.getToxLoss() / MINOR_DAMAGE_THRESHOLD)))))
-		M.adjustToxLoss(-1*REM, 0)
-	if(prob(100/(2**(round(M.getOxyLoss() / MINOR_DAMAGE_THRESHOLD)))))
-		M.adjustOxyLoss(-1*REM, 0)
+	M.adjustBruteLoss(-2/METABOLITE_PENALTY(metabolite), 0)
+	M.adjustFireLoss(-2/METABOLITE_PENALTY(metabolite), 0)
+	M.adjustToxLoss(-2/METABOLITE_PENALTY(metabolite), 0)
+	M.adjustOxyLoss(-2/METABOLITE_PENALTY(metabolite), 0)
 	. = 1
 	..()
 
 /datum/reagent/medicine/tricordrazine/overdose_process(mob/living/M)
 	M.adjustToxLoss(2*REM, 0)
-	M.adjustOrganLoss(ORGAN_SLOT_LIVER, 3)
+	M.adjustOrganLoss(ORGAN_SLOT_LIVER, 1)
 	..()
 	. = 1
 
@@ -1361,22 +1367,6 @@
 	taste_description = "jelly"
 
 /datum/reagent/medicine/regen_jelly/on_mob_life(mob/living/carbon/M)
-	M.adjustBruteLoss(-1.5*REM, 0)
-	M.adjustFireLoss(-1.5*REM, 0)
-	M.adjustOxyLoss(-1.5*REM, 0)
-	M.adjustToxLoss(-1.5*REM, 0, TRUE) //heals TOXINLOVERs
-	. = 1
-	..()
-
-/datum/reagent/medicine/regen_ooze
-	name = "Regenerative Ooze"
-	description = "Gradually regenerates all types of damage, without harming slime anatomy."
-	reagent_state = LIQUID
-	color = "#65d891"
-	chem_flags = CHEMICAL_RNG_GENERAL | CHEMICAL_RNG_FUN | CHEMICAL_RNG_BOTANY
-	taste_description = "jelly"
-
-/datum/reagent/medicine/regen_ooze/on_mob_life(mob/living/carbon/M)
 	M.adjustBruteLoss(-0.5*REM, 0)
 	M.adjustFireLoss(-0.5*REM, 0)
 	M.adjustOxyLoss(-0.5*REM, 0)
@@ -1480,7 +1470,7 @@
 //used for changeling's adrenaline power
 /datum/reagent/medicine/changelingadrenaline
 	name = "Changeling Adrenaline"
-	description = "Reduces the duration of unconciousness, knockdown and stuns. Restores stamina, but deals toxin damage when overdosed."
+	description = "Reduces the duration of unconsciousness, knockdown and stuns. Restores stamina, but deals toxin damage when overdosed."
 	color = "#C1151D"
 	chem_flags = CHEMICAL_RNG_GENERAL | CHEMICAL_RNG_FUN | CHEMICAL_RNG_BOTANY
 	overdose_threshold = 30
@@ -1704,8 +1694,8 @@
 	..()
 	. = 1
 
-/datum/reagent/medicine/polypyr/expose_mob(mob/living/M, methods=TOUCH, reac_volume)
-	if(methods & (TOUCH|VAPOR))
+/datum/reagent/medicine/polypyr/reaction_mob(mob/living/M, method=TOUCH, reac_volume)
+	if(method == TOUCH || method == VAPOR)
 		if(M && ishuman(M) && reac_volume >= 0.5)
 			var/mob/living/carbon/human/H = M
 			H.hair_color = "92f"

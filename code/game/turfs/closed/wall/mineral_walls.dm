@@ -132,31 +132,19 @@
 
 /turf/closed/wall/mineral/plasma/attackby(obj/item/W, mob/user, params)
 	if(W.is_hot() > 300)//If the temperature of the object is over 300, then ignite
-		message_admins("Plasma wall ignited by [ADMIN_LOOKUPFLW(user)] in [ADMIN_VERBOSEJMP(src)]")
-		log_game("Plasma wall ignited by [key_name(user)] in [AREACOORD(src)]")
-		ignite(W.is_hot())
-		return
+		if(plasma_ignition(6))
+			new /obj/structure/girder/displaced(loc)
 	..()
-
-/turf/closed/wall/mineral/plasma/proc/PlasmaBurn(temperature)
-	new girder_type(src)
-	ScrapeAway()
-	var/turf/open/T = src
-	T.atmos_spawn_air("plasma=400;TEMP=[temperature]")
 
 /turf/closed/wall/mineral/plasma/temperature_expose(datum/gas_mixture/air, exposed_temperature, exposed_volume)//Doesn't fucking work because walls don't interact with air :(
 	if(exposed_temperature > 300)
-		PlasmaBurn(exposed_temperature)
-
-/turf/closed/wall/mineral/plasma/proc/ignite(exposed_temperature)
-	if(exposed_temperature > 300)
-		PlasmaBurn(exposed_temperature)
+		if(plasma_ignition(6))
+			new /obj/structure/girder/displaced(loc)
 
 /turf/closed/wall/mineral/plasma/bullet_act(obj/item/projectile/Proj)
-	if(istype(Proj, /obj/item/projectile/beam))
-		PlasmaBurn(2500)
-	else if(istype(Proj, /obj/item/projectile/ion))
-		PlasmaBurn(500)
+	if(!(Proj.nodamage) && Proj.damage_type == BURN)
+		if(plasma_ignition(6))
+			new /obj/structure/girder/displaced(loc)
 	. = ..()
 
 /turf/closed/wall/mineral/wood
@@ -165,7 +153,7 @@
 	icon = 'icons/turf/walls/wood_wall.dmi'
 	icon_state = "wood_wall-0"
 	base_icon_state = "wood_wall"
-	sheet_type = /obj/item/stack/sheet/mineral/wood
+	sheet_type = /obj/item/stack/sheet/wood
 	hardness = 70
 	explosion_block = 0
 	smoothing_flags = SMOOTH_BITMASK
@@ -193,7 +181,7 @@
 	icon = 'icons/turf/walls/bamboo_wall.dmi'
 	icon_state = "bamboo-0"
 	base_icon_state = "bamboo"
-	sheet_type = /obj/item/stack/sheet/mineral/bamboo
+	sheet_type = /obj/item/stack/sheet/bamboo
 	hardness = 60
 	smoothing_flags = SMOOTH_BITMASK
 	smoothing_groups = list(SMOOTH_GROUP_CLOSED_TURFS, SMOOTH_GROUP_BAMBOO_WALLS)
@@ -221,7 +209,8 @@
 	hardness = 80
 	explosion_block = 0
 	slicing_duration = 30
-	sheet_type = /obj/item/stack/sheet/mineral/snow
+	sheet_type = /obj/item/stack/sheet/snow
+
 	girder_type = null
 	bullet_sizzle = TRUE
 	bullet_bounce_sound = null

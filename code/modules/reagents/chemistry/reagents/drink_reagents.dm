@@ -174,7 +174,7 @@
 	SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "chemical_laughter", /datum/mood_event/chemical_laughter)
 	..()
 
-/datum/reagent/consumable/laughter/expose_mob(mob/living/M, methods=TOUCH, reac_volume)
+/datum/reagent/consumable/laughter/reaction_mob(mob/living/M, method=TOUCH, reac_volume)
 	var/mob/living/carbon/human/reactor = M
 	if(istype(reactor))
 		var/datum/component/mood/mood = reactor.GetComponent(/datum/component/mood)
@@ -352,6 +352,7 @@
 /datum/reagent/consumable/lemonade
 	name = "Lemonade"
 	description = "Sweet, tangy lemonade. Good for the soul."
+	color = "#daef60"
 	chem_flags = CHEMICAL_RNG_BOTANY
 	quality = DRINK_NICE
 	taste_description = "sunshine and summertime"
