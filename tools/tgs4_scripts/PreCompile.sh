@@ -73,7 +73,7 @@ apt-get install -y cmake build-essential gcc-multilib g++-multilib cmake wget
 # update auxmos
 if [ ! -d "auxmos" ]; then
 	echo "Cloning Auxmos..."
-	git clone https://github.com/Putnam3145/auxmos
+	git clone https://github.com/BeeStation/auxmos
 	cd auxmos
 else
 	echo "Fetching Auxmos..."
@@ -87,7 +87,9 @@ if [ -d "build" ]; then
 	rm -R build
 fi
 #note, if FUSION is ever fixed this needs changed to "all_reaction_hooks"
+pushd ./crates/auxmos/
 ~/.cargo/bin/cargo rustc --target=i686-unknown-linux-gnu --release --features trit_fire_hook,plasma_fire_hook,generic_fire_hook,katmos -- -C target-cpu=native
+popd
 mv -f target/i686-unknown-linux-gnu/release/libauxmos.so "$1/libauxmos.so"
 cd ../../..
 
