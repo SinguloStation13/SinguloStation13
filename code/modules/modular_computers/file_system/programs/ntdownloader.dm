@@ -32,8 +32,10 @@
 		PROGRAM_CATEGORY_MISC,
 	)
 
-/datum/computer_file/program/ntnetdownload/run_program()
+/datum/computer_file/program/ntnetdownload/on_start()
 	. = ..()
+	if(!.)
+		return
 	main_repo = SSnetworks.station_network.available_station_software
 	antag_repo = SSnetworks.station_network.available_antag_software
 
@@ -138,7 +140,7 @@
 	var/obj/item/computer_hardware/card_slot/card_slot = computer.all_components[MC_CARD]
 	var/list/access = card_slot?.GetAccess()
 
-	var/list/data = get_header_data()
+	var/list/data = list()
 
 	data["downloading"] = !!downloaded_file
 	data["error"] = downloaderror || FALSE
@@ -208,7 +210,9 @@
 	tgui_id = "NtosNetDownloader"
 	emagged = TRUE
 
-/datum/computer_file/program/ntnetdownload/syndicate/run_program()
+/datum/computer_file/program/ntnetdownload/syndicate/on_start()
 	. = ..()
+	if(!.)
+		return
 	main_repo = SSnetworks.station_network.available_antag_software
 	antag_repo = null

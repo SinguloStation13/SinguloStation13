@@ -34,12 +34,11 @@
 /datum/antagonist/ert/get_team()
 	return ert_team
 
-/datum/antagonist/ert/New()
-	. = ..()
-	name_source = GLOB.last_names
-
 /datum/antagonist/ert/proc/update_name()
-	owner.current.fully_replace_character_name(owner.current.real_name,"[role] [pick(name_source)]")
+	var/name = pick(name_source)
+	if (!name)
+		name = owner.current.client?.prefs.active_character.custom_names["human"] || pick(GLOB.last_names)
+	owner.current.fully_replace_character_name(owner.current.real_name,"[role] [name]")
 
 /datum/antagonist/ert/deathsquad/New()
 	. = ..()
@@ -148,6 +147,12 @@
 	outfit = /datum/outfit/centcom_intern/leader
 	role = "Head Intern"
 
+/datum/antagonist/ert/lawyer
+	name = "CentCom Attorney"
+	outfit = /datum/outfit/centcom_attorney
+	role = "Attorney"
+	plasmaman_outfit = /datum/outfit/plasmaman/centcom_attorney
+
 /datum/antagonist/ert/doomguy
 	name = "The Juggernaut"
 	outfit = /datum/outfit/death_commando/doomguy
@@ -180,8 +185,7 @@
 		return
 	if(isplasmaman(H))
 		H.equipOutfit(plasmaman_outfit)
-		H.internal = H.get_item_for_held_index(2)
-		H.update_internals_hud_icon(1)
+		H.open_internals(H.get_item_for_held_index(2))
 	H.equipOutfit(outfit)
 	//Set the suits frequency
 	var/obj/item/I = H.get_item_by_slot(ITEM_SLOT_OCLOTHING)
@@ -203,10 +207,10 @@
 	else
 		missiondesc += " Follow orders given to you by your squad leader."
 
-		missiondesc += "Avoid civilian casualites when possible."
+		missiondesc += " Avoid civilian casualites when possible."
 
-	missiondesc += "<BR><B>Your Mission</B> : [ert_team.mission.explanation_text]"
-	missiondesc += "<BR><b>Your Shared Tracking Frequency</b> : <i>[ert_team.ert_frequency]</i>"
+	missiondesc += "<BR><B>Your Mission</B>: [ert_team.mission.explanation_text]"
+	missiondesc += "<BR><b>Your Shared Tracking Frequency</b>: <i>[ert_team.ert_frequency]</i>"
 
 	to_chat(owner,missiondesc)
 

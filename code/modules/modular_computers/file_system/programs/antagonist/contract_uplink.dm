@@ -16,9 +16,6 @@
 	var/assigned = FALSE
 	var/first_load = TRUE
 
-/datum/computer_file/program/contract_uplink/run_program(var/mob/living/user)
-	. = ..(user)
-
 /datum/computer_file/program/contract_uplink/ui_act(action, params)
 	if(..())
 		return TRUE
@@ -86,7 +83,7 @@
 			return TRUE
 		if("PRG_redeem_TC")
 			if (hard_drive.traitor_data.contractor_hub.contract_TC_to_redeem)
-				var/obj/item/stack/telecrystal/crystals = new /obj/item/stack/telecrystal(get_turf(user),
+				var/obj/item/stack/sheet/telecrystal/crystals = new /obj/item/stack/sheet/telecrystal(get_turf(user),
 															hard_drive.traitor_data.contractor_hub.contract_TC_to_redeem)
 				if(ishuman(user))
 					var/mob/living/carbon/human/H = user
@@ -129,7 +126,6 @@
 
 	if (hard_drive && hard_drive.traitor_data != null)
 		var/datum/antagonist/traitor/traitor_data = hard_drive.traitor_data
-		data += get_header_data()
 
 		if (traitor_data.contractor_hub.current_contract)
 			data["ongoing_contract"] = TRUE

@@ -46,7 +46,7 @@
 		return machinery_computer.update_icon()
 
 // This thing is not meant to be used on it's own, get topic data from our machinery owner.
-//obj/item/modular_computer/processor/canUseTopic(atom/movable/M, be_close=FALSE, no_dextery=FALSE, no_tk=FALSE)
+//obj/item/modular_computer/processor/canUseTopic(atom/movable/M, be_close=FALSE, no_dexterity=FALSE, no_tk=FALSE)
 //	if(!machinery_computer)
 //		return 0
 
@@ -65,5 +65,8 @@
 /obj/item/modular_computer/processor/alert_call(datum/computer_file/program/caller, alerttext)
 	if(!caller || !caller.alert_able || caller.alert_silenced || !alerttext)
 		return
-	playsound(src, 'sound/machines/twobeep_high.ogg', 50, TRUE)
+	var/sound = 'sound/machines/twobeep_high.ogg'
+	if(HAS_TRAIT(SSstation, STATION_TRAIT_PDA_GLITCHED))
+		sound = pick('sound/machines/twobeep_voice1.ogg', 'sound/machines/twobeep_voice2.ogg')
+	playsound(src, sound, 50, TRUE)
 	machinery_computer.visible_message("<span class='notice'>The [src] displays a [caller.filedesc] notification: [alerttext]</span>")

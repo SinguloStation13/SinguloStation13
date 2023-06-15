@@ -193,7 +193,7 @@ SUBSYSTEM_DEF(networks)
 		var/obj/machinery/ntnet_relay/n = i
 		if(zlevel && n.get_virtual_z_level() != zlevel)
 			continue
-		if(n.is_operational())
+		if(n.is_operational)
 			return TRUE
 	return FALSE
 
@@ -489,7 +489,7 @@ SUBSYSTEM_DEF(networks)
 		var/string = md5("[num2text(rand(HID_RESTRICTED_END, 999999999), 12)]")
 		if(!string)
 			log_runtime("Could not generagea m5 hash from address, problem with md5?")
-			return		//errored
+			return //errored
 		. = "[copytext_char(string, 1, 9)]"		//16 ^ 8 possibilities I think.
 	while(interfaces_by_hardware_id[.])
 

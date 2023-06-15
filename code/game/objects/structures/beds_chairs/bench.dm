@@ -5,6 +5,8 @@
 	max_integrity = 250
 	integrity_failure = 25
 	icon_state = "bench_center"
+	buildstackamount = 1
+	item_chair = null
 
 /obj/structure/chair/fancy/bench/left
 	icon_state = "bench_left"
@@ -18,7 +20,7 @@
 	icon_state = "pewmiddle"
 	resistance_flags = FLAMMABLE
 	max_integrity = 70
-	buildstacktype = /obj/item/stack/sheet/mineral/wood
+	buildstacktype = /obj/item/stack/sheet/wood
 	buildstackamount = 3
 	item_chair = null
 
@@ -37,7 +39,7 @@
 	icon_state = "bamboo_sofamiddle"
 	resistance_flags = FLAMMABLE
 	max_integrity = 60
-	buildstacktype = /obj/item/stack/sheet/mineral/bamboo
+	buildstacktype = /obj/item/stack/sheet/bamboo
 	buildstackamount = 3
 
 /obj/structure/chair/fancy/bench/bamboo/left
@@ -51,7 +53,7 @@
 	name = "corporate bench"
 	desc = "Perfectly designed to be comfortable to sit on, and hellish to sleep on."
 	icon_state = "corporate_bench_middle_mapping"
-	var/base_icon_state = "corporate_bench_middle"
+	base_icon_state = "corporate_bench_middle"
 	///icon for the cover seat
 	var/image/cover
 	///cover seat color, by default this one

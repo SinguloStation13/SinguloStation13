@@ -235,7 +235,7 @@
 	return GLOB.default_state
 
 /obj/machinery/lapvend/ui_interact(mob/user, datum/tgui/ui)
-	if(stat & (BROKEN | NOPOWER | MAINT))
+	if(machine_stat & (BROKEN | NOPOWER | MAINT))
 		if(ui)
 			ui.close()
 		return FALSE
@@ -319,7 +319,7 @@
 			credits -= total_price
 			say("Enjoy your new product!")
 			state = 3
-			addtimer(CALLBACK(src, .proc/reset_order), 100)
+			addtimer(CALLBACK(src, PROC_REF(reset_order)), 100)
 			ui_update()
 			return TRUE
 		ui_update()

@@ -32,6 +32,8 @@
 	resistance_flags = FLAMMABLE
 	var/foldable = /obj/item/stack/sheet/cardboard
 	var/illustration = "writing"
+	drop_sound = 'sound/items/handling/cardboardbox_drop.ogg'
+	pickup_sound =  'sound/items/handling/cardboardbox_pickup.ogg'
 
 /obj/item/storage/box/Initialize(mapload)
 	. = ..()
@@ -74,6 +76,49 @@
 	if(istype(W, /obj/item/stack/package_wrap))
 		return 0
 	return ..()
+
+//Locker overloading issue solving boxes
+/obj/item/storage/box/suitbox
+	name = "compression box of invisible outfits"
+	desc = "a box with bluespace compression technology that nanotrasen has approved, but this is extremely heavy... If you're glued with this box, pull out of the contents and fold the box."
+	w_class = WEIGHT_CLASS_HUGE
+	drag_slowdown = 4 // do not steal by dragging
+	/* Note for the compression box:
+		Do not put any box (or suit) into this box, or it will allow infinite storage.
+		non-storage items are only legit for this box. (suits are storage too, so, no.)
+		nor it will allow a glitch when you can access different boxes at the same time.
+		examples exist in `closets/secure/security.dm` */
+
+/obj/item/storage/box/suitbox/pickup(mob/user)
+	. = ..()
+	user.add_movespeed_modifier(MOVESPEED_ID_SLOW_SUITBOX, update=TRUE, priority=100, multiplicative_slowdown=4)
+
+/obj/item/storage/box/suitbox/dropped(mob/living/user)
+	..()
+	addtimer(CALLBACK(src, PROC_REF(box_check), user), 1 SECONDS)
+	// character's contents are checked too earlier than when it supposed to be done, making you perma-slow down.
+
+/obj/item/storage/box/suitbox/proc/box_check(mob/living/user)
+	var/box_exists = FALSE
+	for(var/obj/item/storage/box/suitbox/B in user.get_contents())
+		box_exists = TRUE // `var/obj/item/storage/box/suitbox/B` is already type check
+		break
+	if(!box_exists)
+		user.remove_movespeed_modifier(MOVESPEED_ID_SLOW_SUITBOX, TRUE)
+
+/obj/item/storage/box/suitbox/wardrobe // for `wardrobe.dm`
+	name = "compression box of crew outfits"
+	var/list/repeated_items = list( // just as a sample
+		/obj/item/clothing/under/color/blue,
+		/obj/item/clothing/under/color/jumpskirt/blue,
+		/obj/item/clothing/shoes/sneakers/brown
+	)
+	var/max_repetition = 2
+
+/obj/item/storage/box/suitbox/wardrobe/PopulateContents()
+	for(var/i in 1 to max_repetition)
+		for(var/O in repeated_items)
+			new O(src)
 
 //Mime spell boxes
 
@@ -566,14 +611,14 @@
 
 /obj/item/storage/box/PDAs/PopulateContents()
 	for(var/i in 1 to 4)
-		new /obj/item/pda(src)
-	new /obj/item/cartridge/head(src)
+		new /obj/item/modular_computer/tablet/pda(src)
+	new /obj/item/computer_hardware/hard_drive/role/head(src)
 
-	var/newcart = pick(	/obj/item/cartridge/engineering,
-						/obj/item/cartridge/security,
-						/obj/item/cartridge/medical,
-						/obj/item/cartridge/signal/toxins,
-						/obj/item/cartridge/quartermaster)
+	var/newcart = pick(	/obj/item/computer_hardware/hard_drive/role/engineering,
+						/obj/item/computer_hardware/hard_drive/role/security,
+						/obj/item/computer_hardware/hard_drive/role/medical,
+						/obj/item/computer_hardware/hard_drive/role/signal/toxins,
+						/obj/item/computer_hardware/hard_drive/role/cargo_technician)
 	new newcart(src)
 
 /obj/item/storage/box/silver_ids
@@ -602,15 +647,15 @@
 	new /obj/item/card/id/prisoner/seven(src)
 
 /obj/item/storage/box/seccarts
-	name = "box of PDA security cartridges"
-	desc = "A box full of PDA cartridges used by Security."
+	name = "box of PDA security job disks"
+	desc = "A box full of PDA job disks used by Security."
 	icon_state = "secbox"
 	illustration = "pda"
 
 /obj/item/storage/box/seccarts/PopulateContents()
-	new /obj/item/cartridge/detective(src)
+	new /obj/item/computer_hardware/hard_drive/role/detective(src)
 	for(var/i in 1 to 6)
-		new /obj/item/cartridge/security(src)
+		new /obj/item/computer_hardware/hard_drive/role/security(src)
 
 /obj/item/storage/box/firingpins
 	name = "box of standard firing pins"
@@ -722,6 +767,8 @@
 	item_state = "zippo"
 	w_class = WEIGHT_CLASS_TINY
 	slot_flags = ITEM_SLOT_BELT
+	drop_sound = 'sound/items/handling/matchbox_drop.ogg'
+	pickup_sound =  'sound/items/handling/matchbox_pickup.ogg'
 
 /obj/item/storage/box/matches/ComponentInitialize()
 	. = ..()
@@ -893,6 +940,16 @@
 	for(var/i in 1 to 7)
 		new /obj/item/ammo_casing/shotgun/breacher(src)
 
+/obj/item/storage/box/incapacitateshot
+	name = "box of incapacitating shotgun shots"
+	desc = "A box full of incapacitating shots, designed for shotguns."
+	icon_state = "incapacitateshot_box"
+	illustration = null
+
+/obj/item/storage/box/incapacitateshot/PopulateContents()
+	for(var/i in 1 to 7)
+		new /obj/item/ammo_casing/shotgun/incapacitate(src)
+
 /obj/item/storage/box/actionfigure
 	name = "box of action figures"
 	desc = "The latest set of collectable action figures."
@@ -930,7 +987,7 @@
 			to_chat(user, "<span class='warning'>You can't modify [src] with items still inside!</span>")
 			return
 		var/list/designs = list(NODESIGN, NANOTRASEN, SYNDI, HEART, SMILEY, "Cancel")
-		var/switchDesign = input("Select a Design:", "Paper Sack Design", designs[1]) in sortList(designs)
+		var/switchDesign = input("Select a Design:", "Paper Sack Design", designs[1]) in sort_list(designs)
 		if(get_dist(usr, src) > 1)
 			to_chat(usr, "<span class='warning'>You have moved too far away!</span>")
 			return
@@ -1089,7 +1146,7 @@
 	new /obj/item/reagent_containers/food/snacks/grown/wheat(src)
 	new /obj/item/reagent_containers/food/snacks/grown/cocoapod(src)
 	new /obj/item/reagent_containers/honeycomb(src)
-	new /obj/item/seeds/poppy(src)
+	new /obj/item/seeds/flower/poppy(src)
 
 /obj/item/storage/box/ingredients/carnivore
 	theme_name = "carnivore"
@@ -1235,54 +1292,16 @@
 		/obj/item/stack/sheet/mineral/bananium=50,\
 		/obj/item/stack/sheet/plastic/fifty=1,\
 		/obj/item/stack/sheet/runed_metal/fifty=1,\
-		/obj/item/stack/tile/brass/fifty=1,\
+		/obj/item/stack/sheet/brass/fifty=1,\
 		/obj/item/stack/sheet/mineral/abductor=50,\
 		/obj/item/stack/sheet/mineral/adamantine=50,\
-		/obj/item/stack/sheet/mineral/wood=50,\
+		/obj/item/stack/sheet/wood=50,\
 		/obj/item/stack/sheet/cotton/cloth=50,\
 		/obj/item/stack/sheet/leather=50,\
 		/obj/item/stack/sheet/bone=12,\
 		/obj/item/stack/sheet/cardboard/fifty=1,\
 		/obj/item/stack/sheet/mineral/sandstone=50,\
-		/obj/item/stack/sheet/mineral/snow=50
-		)
-	generate_items_inside(items_inside,src)
-
-/obj/item/storage/box/debugtools
-	name = "box of debug tools"
-	icon_state = "syndiebox"
-
-/obj/item/storage/box/debugtools/ComponentInitialize()
-	. = ..()
-	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	STR.max_combined_w_class = 1000
-	STR.max_w_class = WEIGHT_CLASS_GIGANTIC
-	STR.max_items = 1000
-	STR.allow_big_nesting = TRUE
-
-/obj/item/storage/box/debugtools/PopulateContents()
-	var/static/items_inside = list(
-		/obj/item/flashlight/emp/debug=1,\
-		/obj/item/pda=1,\
-		/obj/item/modular_computer/tablet/preset/advanced=1,\
-		/obj/item/storage/belt/military/abductor/full=1,\
-		/obj/item/geiger_counter=1,\
-		/obj/item/holosign_creator/atmos=1,\
-		/obj/item/pipe_dispenser=1,\
-		/obj/item/construction/rcd/combat/admin=1,\
-		/obj/item/areaeditor/blueprints=1,\
-		/obj/item/card/emag=1,\
-		/obj/item/stack/spacecash/c1000=50,\
-		/obj/item/healthanalyzer/advanced=1,\
-		/obj/item/disk/tech_disk/debug=1,\
-		/obj/item/disk/surgery/debug=1,\
-		/obj/item/disk/data/debug=1,\
-		/obj/item/uplink/debug=1,\
-		/obj/item/uplink/nuclear/debug=1,\
-		/obj/item/spellbook=1,\
-		/obj/item/storage/box/beakers/bluespace=1,\
-		/obj/item/storage/box/beakers/variety=1,\
-		/obj/item/storage/box/material=1
+		/obj/item/stack/sheet/snow=50
 		)
 	generate_items_inside(items_inside,src)
 
@@ -1360,7 +1379,7 @@
 /obj/item/storage/box/radiokey/clown  // honk
 	name = "\improper H.O.N.K. CO fake encryption keys"
 	desc = "Totally prank your friends with these realistic encryption keys!"
-	
+
 /obj/item/storage/box/radiokey/clown/PopulateContents()
 	new /obj/item/encryptionkey/heads/rd/fake(src)
 	new /obj/item/encryptionkey/heads/hos/fake(src)

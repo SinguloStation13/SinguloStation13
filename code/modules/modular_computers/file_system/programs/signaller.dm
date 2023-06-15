@@ -15,20 +15,20 @@
 	/// Radio connection datum used by signallers.
 	var/datum/radio_frequency/radio_connection
 
-/datum/computer_file/program/signaller/New()
-	set_frequency(signal_frequency)
-	return ..()
-
-/datum/computer_file/program/signaller/run_program(mob/living/user)
+/datum/computer_file/program/signaller/on_start(mob/living/user)
 	. = ..()
 	if (!.)
 		return
+	set_frequency(signal_frequency)
 	if(!computer?.get_modular_computer_part(MC_SIGNALLER)) //Giving a clue to users why the program is spitting out zeros.
 		to_chat(user, "<span class='warning'>\The [computer] flashes an error: \"hardware\\signal_hardware\\startup.bin -- file not found\".</span>")
 
+/datum/computer_file/program/signaller/kill_program(forced)
+	. = ..()
+	SSradio.remove_object(computer, signal_frequency)
 
 /datum/computer_file/program/signaller/ui_data(mob/user)
-	var/list/data = get_header_data()
+	var/list/data = list()
 	var/obj/item/computer_hardware/radio_card/sensor = computer?.get_modular_computer_part(MC_SIGNALLER)
 	if(sensor?.check_functionality())
 		data["frequency"] = signal_frequency
@@ -47,7 +47,7 @@
 		return
 	switch(action)
 		if("signal")
-			INVOKE_ASYNC(src, .proc/signal)
+			INVOKE_ASYNC(src, PROC_REF(signal))
 			. = TRUE
 		if("freq")
 			var/new_signal_frequency = sanitize_frequency(unformat_frequency(params["freq"]), TRUE)

@@ -58,7 +58,7 @@
 			L += I
 		else
 			viens_by_type[I.resource] = list(I)
-	var/A = input(user, "Type to locate", "DCM") in sortList(viens_by_type)
+	var/A = input(user, "Type to locate", "DCM") in sort_list(viens_by_type)
 	if(!A || QDELETED(src) || !user || !user.is_holding(src) || user.incapacitated())
 		return
 	//Searches for nearest ore vein as usual

@@ -29,7 +29,7 @@
 			dos_speed = NTNETSPEED_ETHERNET * 10
 	if(target && executed)
 		target.dos_overload += dos_speed
-		if(!target.is_operational())
+		if(!target.is_operational)
 			target.dos_sources.Remove(src)
 			target = null
 			error = "Connection to destination relay lost."
@@ -48,7 +48,7 @@
 	switch(action)
 		if("PRG_target_relay")
 			for(var/obj/machinery/ntnet_relay/R in SSnetworks.relays)
-				if("[R.uid]" == params["targid"])
+				if(R.uid == params["targid"])
 					target = R
 					break
 			return TRUE
@@ -73,7 +73,7 @@
 	if(!SSnetworks.station_network)
 		return
 
-	var/list/data = get_header_data()
+	var/list/data = list()
 
 	data["error"] = error
 	if(target && executed)

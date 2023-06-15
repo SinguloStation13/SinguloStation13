@@ -5,7 +5,6 @@
 	ui_header = "borg_self_monitor.gif" //DEBUG -- new icon before PR
 	program_icon_state = "command"
 	requires_ntnet = FALSE
-	transfer_access = null
 	available_on_ntnet = FALSE
 	unsendable = TRUE
 	undeletable = TRUE
@@ -19,20 +18,20 @@
 	tablet = null
 	return ..()
 
-/datum/computer_file/program/borg_self_monitor/run_program(mob/living/user)
+/datum/computer_file/program/borg_self_monitor/on_start(mob/living/user)
 	if(!istype(computer, /obj/item/modular_computer/tablet/integrated))
 		to_chat(user, "<span class='warning'>A warning flashes across \the [computer]: Device Incompatible.</span>")
 		return FALSE
 	. = ..()
 	if(.)
 		tablet = computer
-		if(tablet.device_theme == "syndicate")
+		if(tablet.device_theme == THEME_SYNDICATE)
 			program_icon_state = "command-syndicate"
 		return TRUE
 	return FALSE
 
 /datum/computer_file/program/borg_self_monitor/ui_data(mob/user)
-	var/list/data = get_header_data()
+	var/list/data = list()
 	if(!iscyborg(user))
 		return data
 	var/mob/living/silicon/robot/borgo = tablet.borgo
@@ -48,10 +47,10 @@
 		maxcharge = borgo.cell.maxcharge
 	data["charge"] = charge //Current cell charge
 	data["maxcharge"] = maxcharge //Cell max charge
-	data["integrity"] = ((borgo.health + 100) / 2) //Borgo health, as percentage
+	data["integrity"] = (borgo.health / borgo.maxHealth) * 100 //Borgo health, as percentage
 	data["lampIntensity"] = borgo.lamp_intensity //Borgo lamp power setting
 	data["sensors"] = "[borgo.sensors_on?"ACTIVE":"DISABLED"]"
-	data["printerPictures"] =  borgo.connected_ai? borgo.connected_ai.aicamera.stored.len : borgo.aicamera.stored.len //Number of pictures taken, synced to AI if available
+	data["printerPictures"] = borgo.connected_ai ? length(borgo.connected_ai.aicamera?.stored) : length(borgo.aicamera?.stored) //Number of pictures taken, synced to AI if available
 	data["printerToner"] = borgo.toner //amount of toner
 	data["printerTonerMax"] = borgo.tonermax //It's a variable, might as well use it
 	data["thrustersInstalled"] = borgo.ionpulse //If we have a thruster uprade
@@ -150,4 +149,4 @@
 	if(tablet)
 		var/datum/tgui/active_ui = SStgui.get_open_ui(tablet.borgo, src)
 		if(active_ui)
-			active_ui.send_full_update()
+			active_ui.send_full_update(bypass_cooldown = TRUE)

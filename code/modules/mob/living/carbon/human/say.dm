@@ -15,7 +15,7 @@
 		var/obj/item/clothing/mask/chameleon/V = wear_mask
 		if(V.vchange && wear_id)
 			var/obj/item/card/id/idcard = wear_id.GetID()
-			if(istype(idcard))
+			if(istype(idcard) && idcard.electric)
 				return idcard.registered_name
 			else
 				return real_name
@@ -79,26 +79,3 @@
 /mob/living/carbon/human/get_alt_name()
 	if(name != GetVoice())
 		return " (as [get_id_name("Unknown")])"
-
-/mob/living/carbon/human/proc/forcesay(list/append) //this proc is at the bottom of the file because quote fuckery makes notepad++ cri
-	if(stat == CONSCIOUS)
-		if(client)
-			var/temp = winget(client, "input", "text")
-			var/say_starter = "Say \"" //"
-			if(findtextEx(temp, say_starter, 1, length(say_starter) + 1) && length(temp) > length(say_starter))	//case sensitive means
-
-				temp = trim_left(copytext(temp, length(say_starter) + 1))
-				temp = replacetext(temp, ";", "", 1, 2)	//general radio
-				while(trim_left(temp)[1] == ":")	//dept radio again (necessary)
-					temp = copytext_char(trim_left(temp), 3)
-
-				if(temp[1] == "*")	//emotes
-					return
-
-				var/trimmed = trim_left(temp)
-				if(length(trimmed))
-					if(append)
-						trimmed  += pick(append)
-
-					say(trimmed)
-				winset(client, "input", "text=[null]")
