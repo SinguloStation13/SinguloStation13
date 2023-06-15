@@ -1,0 +1,4 @@
+author: Orchidthederg
+delete-after: true
+changes:
+  - rscadd: Ported old PR that's vital to gameplay (real)
