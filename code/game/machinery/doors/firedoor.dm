@@ -526,7 +526,7 @@
 	update_freelook_sight()
 	if(!(flags_1 & ON_BORDER_1))
 		crush()
-	addtimer(CALLBACK(src, /atom/.proc/update_icon), 5)
+	addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, update_icon)), 5)
 
 /obj/machinery/door/firedoor/border_only/emergency_pressure_close()
 	if(density)
@@ -541,14 +541,14 @@
 			if(!istype(M2) || !M2.buckled || !M2.buckled.buckle_prevents_pull)
 				to_chat(M, "<span class='notice'>You pull [M.pulling] through [src] right as it closes.</span>")
 				M.pulling.forceMove(T1)
-				INVOKE_ASYNC(M, /atom/movable/.proc/start_pulling)
+				INVOKE_ASYNC(M, TYPE_PROC_REF(/atom/movable, start_pulling))
 	for(var/mob/living/M in T2)
 		if(M.stat == CONSCIOUS && M.pulling && M.pulling.loc == T1 && !M.pulling.anchored && M.pulling.move_resist <= M.move_force)
 			var/mob/living/M2 = M.pulling
 			if(!istype(M2) || !M2.buckled || !M2.buckled.buckle_prevents_pull)
 				to_chat(M, "<span class='notice'>You pull [M.pulling] through [src] right as it closes.</span>")
 				M.pulling.forceMove(T2)
-				INVOKE_ASYNC(M, /atom/movable/.proc/start_pulling)
+				INVOKE_ASYNC(M, TYPE_PROC_REF(/atom/movable, start_pulling))
 	return ..()
 // Singulo end
 /obj/machinery/door/firedoor/heavy
