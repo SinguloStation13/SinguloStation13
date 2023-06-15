@@ -212,8 +212,6 @@
 /turf/open/proc/equalize_pressure_in_zone(cyclenum)
 
 /turf/open/proc/consider_firelocks(turf/T2) // Singulo edit - monstermos
-	if(blocks_air)
-		return
 	for(var/obj/machinery/airalarm/alarm in src)
 		alarm.handle_decomp_alarm()
 	for(var/obj/machinery/door/firedoor/FD in src)
@@ -224,7 +222,7 @@
 
 /turf/proc/handle_decompression_floor_rip()
 /turf/open/floor/handle_decompression_floor_rip(sum)
-	if(sum > 20 && prob(CLAMP(sum / 20, 0, 15)) && !blocks_air) // Singulo edit - monstermos
+	if(sum > 20 && prob(CLAMP(sum / 20, 0, 15))) // Singulo edit - monstermos
 		if(floor_tile)
 			new floor_tile(src)
 		make_plating()
@@ -249,8 +247,6 @@
 		pressure_difference = difference
 
 /turf/open/proc/high_pressure_movements()
-	if(blocks_air) // Singulo edit - monstermos
-		return
 	var/atom/movable/M
 	var/multiplier = 1
 	if(locate(/obj/structure/rack) in src)
