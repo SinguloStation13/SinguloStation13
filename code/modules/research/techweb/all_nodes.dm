@@ -643,7 +643,7 @@ Instead of sprinkling comments around the file, the changes are noted down here:
 		"ore_silo",
 		"phasic_scanning",
 		"roastingstick",
-		"bluespacebodybag", //Singulo edit - tech tree tweaks
+		"bluespacebodybag", // Singulo edit - readd bluespace bodybag
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
 	export_price = 5000
