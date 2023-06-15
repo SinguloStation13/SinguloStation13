@@ -1,4 +1,4 @@
-SUBSYSTEM_DEF(adjacent_air)
+/*SUBSYSTEM_DEF(adjacent_air) // Singulo edit - removed in monstermos PR, do not include
 	name = "Atmos Adjacency"
 	flags = SS_BACKGROUND
 	runlevels = RUNLEVEL_GAME | RUNLEVEL_POSTGAME
@@ -52,3 +52,4 @@ SUBSYSTEM_DEF(adjacent_air)
 				break
 		else
 			CHECK_TICK
+*/

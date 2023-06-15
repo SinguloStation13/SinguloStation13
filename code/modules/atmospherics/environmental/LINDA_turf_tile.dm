@@ -148,8 +148,10 @@
 
 /////////////////////////GAS OVERLAYS//////////////////////////////
 
+/turf/proc/update_visuals() // Singulo edit - monstermos
+	return
 
-/turf/open/proc/update_visuals()
+/turf/open/update_visuals() // Singulo edit - monstermos
 
 	var/list/atmos_overlay_types = src.atmos_overlay_types // Cache for free performance
 	var/list/new_overlay_types = list()
@@ -208,24 +210,19 @@
 /turf/proc/process_cell(fire_count)
 
 /turf/open/proc/equalize_pressure_in_zone(cyclenum)
-/turf/open/proc/consider_firelocks(turf/T2)
-	var/reconsider_adj = FALSE
-	for(var/obj/machinery/door/firedoor/FD in T2)
-		if((FD.flags_1 & ON_BORDER_1) && get_dir(T2, src) != FD.dir)
-			continue
-		FD.emergency_pressure_stop()
-		reconsider_adj = TRUE
+
+/turf/open/proc/consider_firelocks(turf/T2) // Singulo edit - monstermos
+	for(var/obj/machinery/airalarm/alarm in src)
+		alarm.handle_decomp_alarm()
 	for(var/obj/machinery/door/firedoor/FD in src)
-		if((FD.flags_1 & ON_BORDER_1) && get_dir(src, T2) != FD.dir)
-			continue
-		FD.emergency_pressure_stop()
-		reconsider_adj = TRUE
-	if(reconsider_adj)
-		T2.ImmediateCalculateAdjacentTurfs() // We want those firelocks closed yesterday.
+		FD.emergency_pressure_stop(FALSE)
+	for(var/obj/machinery/door/firedoor/FD in T2)
+		FD.emergency_pressure_stop(FALSE)
+	ImmediateCalculateAdjacentTurfs()
 
 /turf/proc/handle_decompression_floor_rip()
 /turf/open/floor/handle_decompression_floor_rip(sum)
-	if(sum > 20 && prob(CLAMP(sum / 20, 0, 15)))
+	if(sum > 20 && prob(CLAMP(sum / 20, 0, 15))) // Singulo edit - monstermos
 		if(floor_tile)
 			new floor_tile(src)
 		make_plating()
@@ -260,6 +257,8 @@
 		M = thing
 		if (!M.anchored && !M.pulledby && M.last_high_pressure_movement_air_cycle < SSair.times_fired)
 			M.experience_pressure_difference(pressure_difference * multiplier, pressure_direction, 0, pressure_specific_target)
+	if(pressure_difference > 100) // Singulo edit - monstermos
+		new /obj/effect/temp_visual/dir_setting/space_wind(src, pressure_direction, CLAMP(round(sqrt(pressure_difference) * 2), 10, 255))
 
 /atom/movable/var/pressure_resistance = 10
 /atom/movable/var/last_high_pressure_movement_air_cycle = 0

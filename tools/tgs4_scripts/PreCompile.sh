@@ -82,12 +82,14 @@ else
 fi
 
 echo "Deploying Auxmos..."
-git checkout "$AUXMOS_VERSION"
+git checkout "v$AUXMOS_VERSION"
 if [ -d "build" ]; then
 	rm -R build
 fi
 #note, if FUSION is ever fixed this needs changed to "all_reaction_hooks"
-cargo rustc --target=i686-unknown-linux-gnu --release --features trit_fire_hook,plasma_fire_hook,generic_fire_hook -- -C target-cpu=native
+pushd ./crates/auxmos/
+~/.cargo/bin/cargo rustc --target=i686-unknown-linux-gnu --release --features trit_fire_hook,plasma_fire_hook,generic_fire_hook,katmos -- -C target-cpu=native
+popd
 mv -f target/i686-unknown-linux-gnu/release/libauxmos.so "$1/libauxmos.so"
 cd ../../..
 

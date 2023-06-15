@@ -74,6 +74,7 @@
 	clicksound = 'sound/machines/terminal_select.ogg'
 	layer = ABOVE_WINDOW_LAYER
 
+	COOLDOWN_DECLARE(decomp_alarm) // Singulo edit - monstermos
 
 	var/danger_level = 0
 	var/mode = AALARM_MODE_SCRUBBING
@@ -705,7 +706,7 @@
 	var/new_area_danger_level = 0
 	for(var/obj/machinery/airalarm/AA in A)
 		if (!(AA.machine_stat & (NOPOWER|BROKEN)) && !AA.shorted)
-			new_area_danger_level = clamp(max(new_area_danger_level, AA.danger_level), 0, 1)
+			new_area_danger_level = clamp(max(new_area_danger_level, AA.danger_level), 0, 2) // Singulo edit - monstermos
 
 	var/did_anything_happen
 	if(new_area_danger_level)
@@ -855,6 +856,13 @@
 			I.obj_integrity = I.max_integrity * 0.5
 		new /obj/item/stack/cable_coil(loc, 3)
 	qdel(src)
+
+/obj/machinery/airalarm/proc/handle_decomp_alarm() // Singulo edit - monstermos
+	if(!COOLDOWN_FINISHED(src, decomp_alarm))
+		return
+	playsound(loc, 'goon/sound/machinery/FireAlarm.ogg', 75)
+	COOLDOWN_START(src, decomp_alarm, 1 SECONDS)
+
 
 #undef AALARM_MODE_SCRUBBING
 #undef AALARM_MODE_VENTING
