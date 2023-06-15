@@ -176,6 +176,7 @@
 /obj/machinery/sleeper/survival_pod
 	icon = 'icons/obj/lavaland/survival_pod.dmi'
 	icon_state = "sleeper"
+	roundstart_vials = list()
 
 /obj/machinery/sleeper/survival_pod/update_icon()
 	if(state_open)
@@ -363,7 +364,7 @@
 						/obj/item/gun/magic/staff/spellblade,
 						/obj/item/gun/magic/wand/death,
 						/obj/item/gun/magic/wand/fireball,
-						/obj/item/stack/telecrystal/twenty,
+						/obj/item/stack/sheet/telecrystal/twenty,
 						/obj/item/nuke_core,
 						/obj/item/phylactery,
 						/obj/item/banhammer)

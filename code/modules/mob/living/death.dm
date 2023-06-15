@@ -37,7 +37,7 @@
 
 	var/dust_time = dust_animation() // Singulo edit - Dust animation
 	spawn_dust(just_ash)
-	addtimer(CALLBACK(src, .proc/after_dust), dust_time) // Singulo edit - Dust animation
+	addtimer(CALLBACK(src, PROC_REF(after_dust)), dust_time) // Singulo edit - Dust animation
 
 /mob/living/proc/dust_animation() //Singulo edit - Dust animation
 	var/icon/I = new(icon)
@@ -92,7 +92,7 @@
 		//This first death of the game will not incur a ghost role cooldown
 		client.next_ghost_role_tick = client.next_ghost_role_tick || suiciding ? world.time + CONFIG_GET(number/ghost_role_cooldown) : world.time
 
-		INVOKE_ASYNC(client, /client.proc/give_award, /datum/award/achievement/misc/ghosts, client.mob)
+		INVOKE_ASYNC(client, TYPE_PROC_REF(/client, give_award), /datum/award/achievement/misc/ghosts, client.mob)
 
 	for(var/s in ownedSoullinks)
 		var/datum/soullink/S = s
@@ -114,5 +114,5 @@
 	update_damage_hud()
 
 	if(!gibbed && !QDELETED(src))
-		addtimer(CALLBACK(src, .proc/med_hud_set_status), (DEFIB_TIME_LIMIT * 10) + 10)
+		addtimer(CALLBACK(src, PROC_REF(med_hud_set_status)), (DEFIB_TIME_LIMIT * 10) + 10)
 

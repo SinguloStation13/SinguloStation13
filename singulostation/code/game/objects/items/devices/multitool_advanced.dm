@@ -50,10 +50,10 @@
 		choices[label] = entry_image
 		choice_index_lookup[label] = i
 
-	var/choice = show_radial_menu(user, src, choices, custom_check = CALLBACK(src, .proc/check_menu, user), require_near = TRUE, tooltips = TRUE)
+	var/choice = show_radial_menu(user, src, choices, custom_check = CALLBACK(src, PROC_REF(check_menu), user), require_near = TRUE, tooltips = TRUE)
 	if(!choice)
 		return
-	
+
 	var/selected_index = choice_index_lookup[choice]
 	if(selected_index)
 		buffer_index = selected_index

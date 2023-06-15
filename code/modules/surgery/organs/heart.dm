@@ -30,7 +30,7 @@
 /obj/item/organ/heart/Remove(mob/living/carbon/M, special = 0)
 	..()
 	if(!special)
-		addtimer(CALLBACK(src, .proc/stop_if_unowned), 120)
+		addtimer(CALLBACK(src, PROC_REF(stop_if_unowned)), 120)
 
 /obj/item/organ/heart/proc/stop_if_unowned()
 	if(!owner)
@@ -42,7 +42,7 @@
 		user.visible_message("<span class='notice'>[user] squeezes [src] to \
 			make it beat again!</span>","<span class='notice'>You squeeze [src] to make it beat again!</span>")
 		Restart()
-		addtimer(CALLBACK(src, .proc/stop_if_unowned), 80)
+		addtimer(CALLBACK(src, PROC_REF(stop_if_unowned)), 80)
 
 /obj/item/organ/heart/proc/Stop()
 	beating = 0
@@ -54,10 +54,10 @@
 	update_icon()
 	return 1
 
-/obj/item/organ/heart/prepare_eat()
-	var/obj/S = ..()
-	S.icon_state = "heart-off"
-	return S
+/obj/item/organ/heart/on_eat_from(eater, feeder)
+	. = ..()
+	beating = FALSE
+	update_icon()
 
 /obj/item/organ/heart/on_life()
 	..()
@@ -211,7 +211,7 @@
 /obj/item/organ/heart/cybernetic/ipc/emp_act()
 	. = ..()
 	to_chat(owner, "<span class='warning'>Alert: Cybernetic heart failed one heartbeat</span>")
-	addtimer(CALLBACK(src, .proc/Restart), 10 SECONDS)
+	addtimer(CALLBACK(src, PROC_REF(Restart)), 10 SECONDS)
 
 /obj/item/organ/heart/freedom
 	name = "heart of freedom"
@@ -227,3 +227,29 @@
 		owner.heal_overall_damage(15, 15, 0, BODYTYPE_ORGANIC)
 		if(owner.reagents.get_reagent_amount(/datum/reagent/medicine/ephedrine) < 20)
 			owner.reagents.add_reagent(/datum/reagent/medicine/ephedrine, 10)
+//Singulo station edit begin
+/obj/item/organ/heart/nanite
+	name = "Nanite heart"
+	desc = "A specialized heart constructed from nanites that helps coordinate nanites allowing them to regenerate quicker inside the body without any ill effects. Caution this organ will fall apart without nanites to sustain itself!"
+	icon_state = "heart-x"
+	organ_flags = ORGAN_SYNTHETIC
+	var/nanite_boost = 1
+
+/obj/item/organ/heart/nanite/emp_act()
+	. = ..()
+	if(!owner || . & EMP_PROTECT_SELF)
+		return .
+	SEND_SIGNAL(owner, COMSIG_NANITE_ADJUST_VOLUME, -100) //nanites are more susceptible to EMP
+	Stop()
+
+/obj/item/organ/heart/nanite/on_life()
+	. = ..()
+	if(SEND_SIGNAL(owner, COMSIG_HAS_NANITES))
+		SEND_SIGNAL(owner, COMSIG_NANITE_ADJUST_VOLUME, nanite_boost)
+	else
+		if(prob(25))
+			to_chat(owner, "<span class = 'userdanger'>You feel your heart collapse in on itself!</span>")
+		if(owner)
+			Remove(owner) //The heart is made of nanites so without them it just breaks down
+		qdel(src)
+//Singulo station edit end
