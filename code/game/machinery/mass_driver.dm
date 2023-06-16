@@ -2,7 +2,7 @@
 	name = "mass driver"
 	desc = "The finest in spring-loaded piston toy technology, now on a space station near you."
 //	icon = 'singulostation/icons/obj/mass_driver.dmi' // Singulo edit - diagonal mass drivers
-//	icon_state = "mass_driver"
+	icon_state = "mass_driver"
 	use_power = IDLE_POWER_USE
 	idle_power_usage = 2
 	active_power_usage = 50
@@ -47,8 +47,7 @@
 	if(is_wire_tool(I) && panel_open)
 		wires.interact(user)
 		return
-	if(default_deconstruction_screwdriver(user, null, null, I))
-		update_icon() // Singulo edit - diagonal mass driver
+	if(default_deconstruction_screwdriver(user, "mass_driver_o", "mass_driver", I))
 		return
 	if(default_change_direction_wrench(user, I))
 		return
