@@ -17,10 +17,10 @@
 			M.drive()
 		if(WIRE_MOTOR1)
 			M.setDir(turn(M.dir, -45))
-			M.transform = matrix().Turn(dir2angle(M.dir))
+			M.update_icon()
 		if(WIRE_MOTOR2)
 			M.setDir(turn(M.dir, 45))
-			M.transform = matrix().Turn(dir2angle(M.dir))
+			M.update_icon()
 
 	M.use_power(M.active_power_usage)
 //Singulo end

@@ -8,10 +8,16 @@
 	return 0
 
 /obj/machinery/mass_driver/update_icon()
-	cut_overlays()
-
-	var/mutable_appearance/overlay = mutable_appearance('singulostation/icons/obj/mass_driver.dmi', "mass_driver")
-	overlay.transform = matrix().Turn(dir2angle(dir))
-	overlays += overlay
+	driver_overlay.icon_state = panel_open?"mass_driver_o":"mass_driver"
+	driver_overlay.transform = matrix().Turn(dir2angle(dir))
 
 	return ..()
+
+/obj/effect/overlay/driver_overlay
+	icon = 'singulostation/icons/obj/mass_driver.dmi'
+	icon_state = "mass_driver"
+	anchored = TRUE
+	plane = FLOAT_PLANE
+	layer = FLOAT_LAYER
+	vis_flags = VIS_INHERIT_ID
+	appearance_flags = KEEP_TOGETHER | LONG_GLIDE | PIXEL_SCALE
