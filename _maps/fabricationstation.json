@@ -1,0 +1,11 @@
+{
+    "map_name": "Fabrication Station",
+    "map_path": "map_files/FabricationStation",
+    "map_file": "FabricationStation.dmm",
+    "shuttles": {
+	    "cargo": "cargo_con",
+	    "ferry": "ferry_fancy",
+	    "whiteship": "whiteship_meta",
+	    "emergency": "emergency_box"
+    }
+}
