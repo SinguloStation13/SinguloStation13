@@ -3869,6 +3869,7 @@
 #include "singulostation\code\game\area\areas\asteroid.dm"
 #include "singulostation\code\game\machinery\autodoc.dm"
 #include "singulostation\code\game\machinery\cryopod.dm"
+#include "singulostation\code\game\machinery\mass_driver.dm"
 #include "singulostation\code\game\machinery\doors\airlock_electronics.dm"
 #include "singulostation\code\game\objects\obj_defense.dm"
 #include "singulostation\code\game\objects\effects\displacement.dm"

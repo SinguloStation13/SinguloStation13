@@ -3,11 +3,24 @@
 	proper_name = "Mass Driver"
 
 /datum/wires/mass_driver/New(atom/holder)
-	wires = list(WIRE_LAUNCH)
+	wires = list(WIRE_LAUNCH, WIRE_MOTOR1, WIRE_MOTOR2) // Singulo edit - diagonal mass driver
 	..()
 
 /datum/wires/mass_driver/on_pulse(wire)
 	var/obj/machinery/mass_driver/M = holder
-	M.drive()
+//Singulo start - diagonal mass drivers
+	if(M.machine_stat & (NOPOWER|BROKEN))
+		return
 
+	switch(wire)
+		if(WIRE_LAUNCH)
+			M.drive()
+		if(WIRE_MOTOR1)
+			M.setDir(turn(M.dir, -45))
+			M.update_icon()
+		if(WIRE_MOTOR2)
+			M.setDir(turn(M.dir, 45))
+			M.update_icon()
 
+	M.use_power(M.active_power_usage)
+//Singulo end

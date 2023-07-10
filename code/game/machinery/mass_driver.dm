@@ -1,8 +1,8 @@
 /obj/machinery/mass_driver
 	name = "mass driver"
 	desc = "The finest in spring-loaded piston toy technology, now on a space station near you."
-	icon = 'icons/obj/stationobjs.dmi'
-	icon_state = "mass_driver"
+//	icon = 'singulostation/icons/obj/mass_driver.dmi' // Singulo edit - diagonal mass drivers
+//	icon_state = "mass_driver"
 	use_power = IDLE_POWER_USE
 	idle_power_usage = 2
 	active_power_usage = 50
@@ -12,11 +12,14 @@
 	var/id = 1
 	var/drive_range = 10
 	var/power_per_obj = 1000
-
+	var/obj/effect/overlay/driver_overlay/driver_overlay // Singulo edit - diagonal mass driver
 
 /obj/machinery/mass_driver/Initialize(mapload)
 	. = ..()
-	wires = new /datum/wires/mass_driver(src)
+	wires = new /datum/wires/mass_driver(src) // Singulo start - diagonal mass driver
+	driver_overlay = new /obj/effect/overlay/driver_overlay(null)
+	vis_contents += driver_overlay
+	update_icon() // Singulo end
 
 /obj/machinery/mass_driver/Destroy()
 	QDEL_NULL(wires)
@@ -38,14 +41,14 @@
 				break
 			use_power(power_per_obj)
 			O.throw_at(target, drive_range * power, power)
-	flick("mass_driver1", src)
+	flick("mass_driver1", driver_overlay) // Singulo edit - diagonal mass driver
 
 /obj/machinery/mass_driver/attackby(obj/item/I, mob/living/user, params)
-
 	if(is_wire_tool(I) && panel_open)
 		wires.interact(user)
 		return
-	if(default_deconstruction_screwdriver(user, "mass_driver_o", "mass_driver", I))
+	if(default_deconstruction_screwdriver(user, null, null, I))
+		update_icon() // Singulo edit - diagonal mass driver
 		return
 	if(default_change_direction_wrench(user, I))
 		return
@@ -71,3 +74,5 @@
 	if(machine_stat & (BROKEN|NOPOWER))
 		return
 	drive()
+
+// See more at /singulostation/code/game/machinery/mass_driver.dm
