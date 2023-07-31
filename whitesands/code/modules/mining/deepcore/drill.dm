@@ -21,7 +21,7 @@
 
 /obj/machinery/deepcore/drill/interact(mob/user, special_state)
 	. = ..()
-	if(stat & BROKEN)
+	if(machine_stat & BROKEN)
 		return .
 	if(deployed)
 		if(active)
@@ -56,7 +56,7 @@
 		addtimer(CALLBACK(src, .proc/Undeploy), 13)
 
 /obj/machinery/deepcore/drill/process()
-	if(stat & BROKEN || (active && !active_vein))
+	if(machine_stat & BROKEN || (active && !active_vein))
 		active = FALSE
 		update_overlays()
 		update_icon_state()
@@ -107,7 +107,7 @@
 
 /obj/machinery/deepcore/drill/update_icon_state()
 	if(deployed)
-		if(stat & BROKEN)
+		if(machine_stat & BROKEN)
 			icon_state = "deep_core_drill-deployed-broken"
 			return
 		if(active)
@@ -115,7 +115,7 @@
 		else
 			icon_state = "deep_core_drill-idle"
 	else
-		if(stat & BROKEN)
+		if(machine_stat & BROKEN)
 			icon_state = "deep_core_drill-broken"
 		else
 			icon_state = "deep_core_drill"
