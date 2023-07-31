@@ -37,7 +37,7 @@
 
 	var/dust_time = dust_animation() // Singulo edit - Dust animation
 	spawn_dust(just_ash)
-	addtimer(CALLBACK(src, .proc/after_dust), dust_time) // Singulo edit - Dust animation
+	addtimer(CALLBACK(src, PROC_REF(after_dust)), dust_time) // Singulo edit - Dust animation
 
 //Singulo begin - Dust animation
 /mob/living/proc/dust_animation()
