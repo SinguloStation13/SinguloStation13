@@ -1,4 +1,20 @@
 
+//Singulostation begin - Technology tweaks
+/*
+This file contains multiple changes to make technology more suited to SinguloStation Blue.
+Instead of sprinkling comments around the file, the changes are noted down here:
+
+- Ore Silo was moved from Applied Bluespace Research to Advanced Engineering
+- Basic Shuttle Technology has been moved up:
+ - Tech tier lowered from 3 to 1
+ - Dependencies removed - can be researched roundstart
+ - Cost halved from 10000 to 5000
+- Plasma Refining has been moved up
+ - Tech tier lowered from 4 to 2
+ - Added dependency on basic_plasma
+ - No longer a hidden research
+*/
+
 //Current rate: 135000 research points in 90 minutes
 
 //Base Nodes
@@ -345,6 +361,7 @@
 		"surgery_revival",
 		"surgery_vein_thread",
 		"surgery_viral_bond",
+		"autodoc", //Singulostation edit; adds autodoc
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
 	export_price = 5000
@@ -427,6 +444,20 @@
 		"suit_storage_unit",
 		"tesla_coil",
 		"thermomachine",
+		//Singulostation begin - Printable techfabs and protolathes
+		"techfab_departmental_engineering",
+		"techfab_departmental_science",
+		"techfab_departmental_medical",
+		"techfab_departmental_cargo",
+		"techfab_departmental_security",
+		"techfab_departmental_service", 
+		"protolathe_departmental_engineering",
+		"protolathe_departmental_science",
+		"protolathe_departmental_medical",
+		"protolathe_departmental_cargo",
+		"protolathe_departmental_security",
+		"protolathe_departmental_service",
+		//Singulostation end - Printable techfabs and protolathes
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 7500)
 	export_price = 5000
@@ -447,6 +478,7 @@
 		"rcd_loaded",
 		"rpd_loaded",
 		"weldingmask",
+		"ore_silo",// Singulo edit - tech tree tweaks
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 	export_price = 5000
@@ -685,12 +717,13 @@
 /////////////////////////shuttle tech/////////////////////////
 /datum/techweb_node/basic_shuttle_tech
 	id = "basic_shuttle"
-	tech_tier = 3
+	tech_tier = 1 //Singulo edit - tech tree tweaks
 	display_name = "Basic Shuttle Research"
 	description = "Research the technology required to create and use basic shuttles."
-	prereq_ids = list(
-		"adv_engi",
-		"basic_plasma",
+	prereq_ids = list( //Singulo edit - tech tree tweaks
+//		"adv_engi",
+//		"basic_plasma",
+		"base",
 	)
 	design_ids = list(
 		"engine_heater",
@@ -699,7 +732,7 @@
 		"shuttle_creator",
 		"wingpack",
 	)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500) //Singulo edit - tech tree tweaks
 	export_price = 5000
 
 /datum/techweb_node/nullspacebreaching
@@ -709,24 +742,25 @@
 	prereq_ids = list(
 		"alientech",
 		"basic_shuttle",
+		"bluespace_travel", //Singulo edit - tech tree tweaks
 	)
 	design_ids = list(
 		"engine_void",
 		"wingpack_ayy",
-		)
+	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 12500)
 	export_price = 5000
 
 /datum/techweb_node/plasma_refiner
 	id = "plasmarefiner"
-	tech_tier = 4
+	tech_tier = 2 //Singulo edit - tech tree tweaks
 	display_name = "Plasma Refining"
 	description = "Development of a machine capable of safely and efficently converting plasma from a solid state to a gaseous state."
-	prereq_ids = list("basic_shuttle")
+	prereq_ids = list("basic_shuttle", "basic_plasma") //Singulo edit - tech tree tweaks
 	design_ids = list("plasma_refiner")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 7500) //Singulo edit - tech tree tweaks
 	export_price = 5000
-	hidden = TRUE
+//	hidden = TRUE //Singulo edit - tech tree tweaks
 
 /////////////////////////integrated circuits tech/////////////////////////
 /datum/techweb_node/math_circuits
@@ -1262,6 +1296,8 @@
 		"noreactsyringe",
 		"splitbeaker",
 		"stasis",
+		"cryogenicpod", // SinguloStation13 Edit (Cryogenic freezers change - added cryogenic pods to research)
+		"cryogenicpodcontrol", // SinguloStation13 Edit (Cryogenic freezers change - added cryogenic pods to research)
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2000)
 	export_price = 4000
@@ -1543,6 +1579,7 @@
 		"mechanicalpinches",
 		"searingtool",
 		"wirebrush_adv",
+		"advancedmultitool", //Singulostation edit - Advanced multitool
 	)
 	prereq_ids = list("adv_engi")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
@@ -2233,6 +2270,7 @@
 		"purging_plus_nanites",
 		"regenerative_plus_nanites",
 		"sensor_species_nanites",
+		"nanite_heart", //Singulostation edit - Added nanite heart
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2000, TECHWEB_POINT_TYPE_NANITES = 2000)
 	export_price = 8000

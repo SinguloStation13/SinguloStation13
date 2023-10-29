@@ -80,6 +80,40 @@
 	build_type = /obj/structure/transit_tube/station/reverse/flipped
 	flipped_build_type = /obj/structure/transit_tube/station/reverse
 
+//Singulo begin - Transit tube dispenser stations
+//all the dispenser stations
+
+/obj/structure/c_transit_tube/station/dispenser
+	icon_state = "open_dispenser0" //Singulostation edit - Buildable transit tube dispenser stations
+	name = "unattached dispenser station"
+	build_type = /obj/structure/transit_tube/station/dispenser
+	flipped_build_type = /obj/structure/transit_tube/station/dispenser/flipped
+	base_icon = "open_dispenser" //Singulostation edit - Buildable transit tube dispenser stations 
+
+/obj/structure/c_transit_tube/station/dispenser/flipped
+	icon_state = "open_dispenser1" //Singulostation edit - Buildable transit tube dispenser stations
+	flipped = 1
+	build_type = /obj/structure/transit_tube/station/dispenser/flipped
+	flipped_build_type = /obj/structure/transit_tube/station/dispenser
+
+//and the ones that reverse
+
+/obj/structure/c_transit_tube/station/dispenser/reverse
+	name = "unattached terminus dispenser station"
+	icon = 'singulostation/icons/obj/atmospherics/pipes/transit_tube.dmi' //Singulostation edit - Buildable transit tube dispenser stations
+	icon_state = "open_terminusdispenser0" //Singulostation edit - Buildable transit tube dispenser stations
+	build_type = /obj/structure/transit_tube/station/dispenser/reverse
+	flipped_build_type = /obj/structure/transit_tube/station/dispenser/reverse/flipped
+	base_icon = "open_terminusdispenser" //Singulostation edit - Buildable transit tube dispenser stations 
+
+/obj/structure/c_transit_tube/station/dispenser/reverse/flipped
+	icon_state = "open_terminusdispenser1" //Singulostation edit - Buildable transit tube dispenser stations
+	flipped = 1
+	build_type = /obj/structure/transit_tube/station/dispenser/reverse/flipped
+	flipped_build_type = /obj/structure/transit_tube/station/dispenser/reverse
+
+//onto some special tube types
+//Singulo end - Transit tube dispenser stations
 
 /obj/structure/c_transit_tube/crossing
 	icon_state = "crossing"

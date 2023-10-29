@@ -74,7 +74,7 @@ if grep -Pzo '"\w+" = \([^)]*?\n/obj/machinery/door/airlock[/\w,\n]*?[^)]*?\n/ob
     echo -e "${RED}ERROR: Found multiple airlocks on the same tile, please remove them.${NC}"
     st=1
 fi;
-if grep -Pzo '"\w+" = \([^)]*?\n/obj/machinery/door/firedoor[/\w,\n]*?[^)]*?\n/obj/machinery/door/firedoor[/\w,\n]*?[^)]*?\n/area/.+\)' _maps/**/*.dmm;	then
+if grep -Pzo '"\w+" = \([^)]*?\n/obj/machinery/door/firedoor(?!/border_only)[/\w,\n]*?[^)]*?\n/obj/machinery/door/firedoor(?!/border_only)[/\w,\n]*?[^)]*?\n/area/.+\)' _maps/**/*.dmm;	then #Singulo edit - Fix border_only firelocks
 	echo
     echo -e "${RED}ERROR: Found multiple firelocks on the same tile, please remove them.${NC}"
     st=1

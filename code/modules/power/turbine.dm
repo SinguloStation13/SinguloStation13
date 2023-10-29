@@ -134,12 +134,15 @@
 		return
 	cut_overlays()
 
-	rpm = 0.9* rpm + 0.1 * rpmtarget
+	//Singulostation begin - fix wall turbines
+	if(istype(inturf, /turf/open))
+		rpm = 0.9* rpm + 0.1 * rpmtarget
 
-	// It's a simplified version taking only 1/10 of the moles from the turf nearby. It should be later changed into a better version
-	// above todo 7 years and counting
+		// It's a simplified version taking only 1/10 of the moles from the turf nearby. It should be later changed into a better version
+		// above todo 7 years and counting
 
-	inturf.transfer_air_ratio(gas_contained, 0.1)
+		inturf.transfer_air_ratio(gas_contained, 0.1)
+	//Singulostation end - fix wall turbines
 
 // RPM function to include compression friction - be advised that too low/high of a compfriction value can make things screwy
 

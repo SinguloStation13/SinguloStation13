@@ -112,6 +112,8 @@ In all, this is a lot like the monkey code. /N
 	updatehealth()
 
 /mob/living/carbon/alien/ex_act(severity, target, origin)
+	if(status_flags & GODMODE) // SinguloStation13 Edit (Cryogenic freezers change - Explosion proof if Godmode is enabled)
+		return
 	if(origin && istype(origin, /datum/spacevine_mutation) && isvineimmune(src))
 		return
 	. = ..()

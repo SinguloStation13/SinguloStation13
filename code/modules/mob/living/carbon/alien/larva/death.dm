@@ -18,5 +18,7 @@
 /mob/living/carbon/alien/larva/spawn_dust()
 	new /obj/effect/decal/remains/xeno(loc)
 
+/*Singulostation begin - Dust animation
 /mob/living/carbon/alien/larva/dust_animation()
 	new /obj/effect/temp_visual/dust_animation(loc, "dust-l")
+*///Singulostation end

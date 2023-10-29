@@ -213,7 +213,7 @@ NO_DEAD_VOTE
 DEFAULT_NO_VOTE
 
 ## disable abandon mob
-NORESPAWN
+# NORESPAWN
 
 ## disables calling del(src) on newmobs if they logout before spawnin in
 # DONT_DEL_NEWMOB
@@ -538,7 +538,7 @@ DEFAULT_VIEW 17x15
 
 ## Name your perpetual currency here
 ## This is used within the metashop and earned by playing the game.
-METACURRENCY_NAME BeeCoin
+METACURRENCY_NAME SinguloCoin
 
 ## Grant metacurrency
 ## Comment this out if you don't want players to earn metacurrency
@@ -589,7 +589,7 @@ CENTCOM_BAN_DB https://centcom.melonmesa.com/ban/search
 
 ### Autotransfer Settings
 ## Uncomment to enable shuttle autotransfer
-VOTE_AUTOTRANSFER_ENABLED
+#VOTE_AUTOTRANSFER_ENABLED
 ## Time (in deciseconds) before the first transfer vote. Default: 90 minutes
 VOTE_AUTOTRANSFER_INITIAL 54000
 ## Time (in deciseconds) between subsequent transfer votes. Default: 30 minutes

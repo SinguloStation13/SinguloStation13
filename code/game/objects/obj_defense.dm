@@ -4,6 +4,8 @@
 	if(QDELETED(src))
 		stack_trace("[src] taking damage after deletion")
 		return
+	if (CheckGodmode()) // SinguloStation13 Edit (Cryogenic freezers change - Items worn by Godmoded mobs are immune to damage)
+		return
 	if(sound_effect)
 		play_attack_sound(damage_amount, damage_type, damage_flag)
 	if((resistance_flags & INDESTRUCTIBLE) || obj_integrity <= 0)

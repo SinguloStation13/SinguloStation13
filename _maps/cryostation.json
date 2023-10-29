@@ -1,0 +1,11 @@
+{
+    "map_name": "Cryo Station",
+    "map_path": "map_files/CryoStation",
+    "map_file": "CryoStation.dmm",
+    "shuttles": {
+	    "cargo": "cargo_cryo",
+	    "ferry": "ferry_fancy",
+	    "whiteship": "whiteship_box",
+	    "emergency": "emergency_box"
+    }
+}

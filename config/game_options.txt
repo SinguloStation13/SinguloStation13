@@ -99,7 +99,7 @@ NO_INTERCEPT_REPORT
 ## Default probablity is 1, increase to make that mode more likely to be picked.
 ## Set to 0 to disable that mode.
 
-PROBABILITY DYNAMIC 1
+PROBABILITY DYNAMIC 0
 PROBABILITY TRAITOR 0
 PROBABILITY CULT 0
 PROBABILITY TRAITORCHAN 0
@@ -110,6 +110,11 @@ PROBABILITY NUCLEAR 0
 PROBABILITY CLOCKCULT 0
 PROBABILITY SECRET_EXTENDED 0
 PROBABILITY CLOWNOPS 0
+PROBABILITY CLOCKCULT 0
+PROBABILITY MONKEY 0
+PROBABILITY GANG 0
+PROBABILITY METEOR 0
+PROBABILITY SECRET_EXTENDED 0
 PROBABILITY DEVIL 0
 PROBABILITY DEVIL_AGENTS 0
 PROBABILITY GANG 0
@@ -121,14 +126,14 @@ PROBABILITY WIZARD 0
 PROBABILITY REVOLUTION 0
 
 ## Creates issues when NO_INTERCEPT_REPORT is enabled
-PROBABILITY EXTENDED 0
+PROBABILITY EXTENDED 1
 
 ## You probably want to keep sandbox off by default for secret and random.
 PROBABILITY SANDBOX 0
 
 ## Percent weight reductions for three of the most recent modes
 
-REPEATED_MODE_ADJUST 45 30 10
+REPEATED_MODE_ADJUST 0 0 0
 
 ## Toggles for continuous modes.
 ## Modes that aren't continuous will end the instant all antagonists are dead.
@@ -162,16 +167,16 @@ CONTINUOUS SECRET_EXTENDED
 ## Toggles for allowing midround antagonists (aka mulligan antagonists).
 ## In modes that are continuous, if all antagonists should die then a new set of antagonists will be created.
 
-MIDROUND_ANTAG TRAITOR
-MIDROUND_ANTAG INCURSION
+#MIDROUND_ANTAG TRAITOR
+#MIDROUND_ANTAG INCURSION
 #MIDROUND_ANTAG TRAITORBRO
-MIDROUND_ANTAG TRAITORCHAN
-MIDROUND_ANTAG INTERNAL_AFFAIRS
+#MIDROUND_ANTAG TRAITORCHAN
+#MIDROUND_ANTAG INTERNAL_AFFAIRS
 #MIDROUND_ANTAG  NUCLEAR
 #MIDROUND_ANTAG  REVOLUTION
-MIDROUND_ANTAG CULT
-MIDROUND_ANTAG CHANGELING
-MIDROUND_ANTAG WIZARD
+#MIDROUND_ANTAG CULT
+#MIDROUND_ANTAG CHANGELING
+#MIDROUND_ANTAG WIZARD
 
 ## Uncomment these for overrides of the minimum / maximum number of players in a round type.
 ## If you set any of these occasionally check to see if you still need them as the modes
@@ -266,7 +271,7 @@ PROTECT_HEADS_FROM_ANTAGONIST
 #ENFORCE_HUMAN_AUTHORITY
 
 ## If late-joining players have a chance to become a traitor/changeling
-ALLOW_LATEJOIN_ANTAGONISTS
+#ALLOW_LATEJOIN_ANTAGONISTS
 
 ## The minimum amount of players for malfunctioning AI to be occur.
 MALF_AI_MINIMUM_POP 30
@@ -306,7 +311,7 @@ DEFAULT_REP_VALUE 5
 #SHOW_GAME_TYPE_ODDS
 
 ## Uncomment to enable dynamic ruleset config file.
-DYNAMIC_CONFIG_ENABLED
+#DYNAMIC_CONFIG_ENABLED
 
 ## RANDOM EVENTS ###
 ## Comment this out to disable random events during the round.
@@ -314,7 +319,7 @@ ALLOW_RANDOM_EVENTS
 
 ## Multiplier for earliest start time of dangerous events.
 ## Set to 0 to make dangerous events avaliable from round start.
-EVENTS_MIN_TIME_MUL 1
+EVENTS_MIN_TIME_MUL 15
 
 ## Multiplier for minimal player count (players = alive non-AFK humans) for dangerous events to start.
 ## Set to 0 to make dangerous events avaliable for all populations.
@@ -331,7 +336,7 @@ ALLOW_AI_MULTICAM
 
 ## Secborg ###
 ## Uncomment to prevent the security cyborg module from being chosen
-DISABLE_SECBORG
+#DISABLE_SECBORG
 
 ## Peacekeeper Borg ###
 ## Uncomment to prevent the peacekeeper cyborg module from being chosen
@@ -534,7 +539,7 @@ ROUNDSTART_RACES plasmaman
 JOIN_WITH_MUTANT_HUMANS
 
 ##Overflow job. Default is assistant
-OVERFLOW_JOB Assistant
+OVERFLOW_JOB Station Engineer
 
 ## Overflow slot cap. Set to -1 for unlimited. If limited, it will still open up if every other job is full.
 OVERFLOW_CAP -1
@@ -586,7 +591,7 @@ BOMBCAP 24
 LAVALAND_BUDGET 60
 
 ## Space Ruin Budget
-Space_Budget 8
+Space_Budget 26
 
 ## Time in ds from when a player latejoins till the arrival shuttle docks at the station
 ## Must be at least 30. At least 55 recommended to be visually/aurally appropriate
@@ -600,7 +605,7 @@ ARRIVALS_SHUTTLE_DOCK_WINDOW 55
 
 ## How many wirechewing rodents you want to spawn on exposed maintenane wires at the start of the round. You may wish to set this to 0 if you're testing powernets.
 
-MICE_ROUNDSTART 10
+MICE_ROUNDSTART 2
 
 ## If the percentage of players alive (doesn't count conversions) drops below this threshold the emergency shuttle will be forcefully called (provided it can be)
 #EMERGENCY_SHUTTLE_AUTOCALL_THRESHOLD 0.2
